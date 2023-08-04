@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64" height="64" viewBox="0 0 64 64">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="長方形_23002" data-name="長方形 23002" width="64" height="64" transform="translate(178.612 4550.612)" fill="#fff" stroke="#707070" stroke-width="1" opacity="0.488"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect id="長方形_22880" data-name="長方形 22880" width="56.773" height="56.773" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="マスクグループ_62" data-name="マスクグループ 62" transform="translate(-178.612 -4550.612)" clip-path="url(#clip-path)">
+    <g id="マスクグループ_7" data-name="マスクグループ 7" transform="translate(179 4553.974)" clip-path="url(#clip-path-2)">
+      <g id="グループ_5334" data-name="グループ 5334" transform="translate(5.419 9.29)">
+        <g id="グループ_5333" data-name="グループ 5333" transform="translate(0 0)">
+          <g id="グループ_5331" data-name="グループ 5331" transform="translate(0 4.968)">
+            <g id="グループ_5330" data-name="グループ 5330">
+              <g id="グループ_5329" data-name="グループ 5329" transform="translate(10.645)">
+                <path id="パス_3267" data-name="パス 3267" d="M862.245,79.922h-2V52.6H852.6v-2h8.645a1,1,0,0,1,1,1Z" transform="translate(-829.568 -45.987)"/>
+                <g id="グループ_5326" data-name="グループ 5326" transform="translate(24.838 11.29)">
+                  <path id="線_926" data-name="線 926" d="M1.935,1H0A1,1,0,0,1-1,0,1,1,0,0,1,0-1H1.935a1,1,0,0,1,1,1A1,1,0,0,1,1.935,1Z"/>
+                  <path id="線_927" data-name="線 927" d="M1.935,1H0A1,1,0,0,1-1,0,1,1,0,0,1,0-1H1.935a1,1,0,0,1,1,1A1,1,0,0,1,1.935,1Z" transform="translate(0 5.677)"/>
+                  <path id="線_928" data-name="線 928" d="M1.935,1H0A1,1,0,0,1-1,0,1,1,0,0,1,0-1H1.935a1,1,0,0,1,1,1A1,1,0,0,1,1.935,1Z" transform="translate(0 11.355)"/>
+                  <path id="線_929" data-name="線 929" d="M1.935,1H0A1,1,0,0,1-1,0,1,1,0,0,1,0-1H1.935a1,1,0,0,1,1,1A1,1,0,0,1,1.935,1Z" transform="translate(0 16.967)"/>
+                </g>
+                <g id="グループ_5327" data-name="グループ 5327" transform="translate(23.032 11.29)">
+                  <path id="線_930" data-name="線 930" d="M1.806,1H0V-1H1.806Z"/>
+                  <path id="線_931" data-name="線 931" d="M1.806,1H0V-1H1.806Z" transform="translate(0 5.677)"/>
+                  <path id="線_932" data-name="線 932" d="M1.806,1H0V-1H1.806Z" transform="translate(0 11.355)"/>
+                  <path id="線_933" data-name="線 933" d="M1.806,1H0V-1H1.806Z" transform="translate(0 16.967)"/>
+                </g>
+                <path id="線_934" data-name="線 934" d="M0,36.935a3,3,0,0,1-3-3V0A3,3,0,0,1,0-3,3,3,0,0,1,3,0V33.935A3,3,0,0,1,0,36.935Z" transform="translate(20.451)" fill="#fff"/>
+                <g id="グループ_5328" data-name="グループ 5328" transform="translate(0 5.613)">
+                  <path id="線_935" data-name="線 935" d="M14.387,1H0A1,1,0,0,1-1,0,1,1,0,0,1,0-1H14.387a1,1,0,0,1,1,1A1,1,0,0,1,14.387,1Z"/>
+                  <path id="線_936" data-name="線 936" d="M14.387,1H0A1,1,0,0,1-1,0,1,1,0,0,1,0-1H14.387a1,1,0,0,1,1,1A1,1,0,0,1,14.387,1Z" transform="translate(0 5.677)"/>
+                  <path id="線_937" data-name="線 937" d="M14.387,1H0A1,1,0,0,1-1,0,1,1,0,0,1,0-1H14.387a1,1,0,0,1,1,1A1,1,0,0,1,14.387,1Z" transform="translate(0 11.355)"/>
+                  <path id="線_938" data-name="線 938" d="M14.387,1H0A1,1,0,0,1-1,0,1,1,0,0,1,0-1H14.387a1,1,0,0,1,1,1A1,1,0,0,1,14.387,1Z" transform="translate(0 17.032)"/>
+                </g>
+                <path id="パス_3268" data-name="パス 3268" d="M823.2,92.377h-2V86.7a1,1,0,0,1,1-1h7.548v2H823.2Z" transform="translate(-818.781 -58.442)"/>
+              </g>
+              <path id="線_939" data-name="線 939" d="M46.838,1H0A1,1,0,0,1-1,0,1,1,0,0,1,0-1H46.838a1,1,0,0,1,1,1A1,1,0,0,1,46.838,1Z" transform="translate(0 36.709)"/>
+            </g>
+          </g>
+          <g id="グループ_5332" data-name="グループ 5332" transform="translate(4.581)">
+            <path id="パス_3269" data-name="パス 3269" d="M835.016,74.1h-2V41.168h-5.064a1,1,0,0,1-1-1V36.2H814.564v3.968a1,1,0,0,1-1,1H808.5V74.1h-2V40.168a1,1,0,0,1,1-1h5.064V35.2a1,1,0,0,1,1-1h14.387a1,1,0,0,1,1,1v3.968h5.064a1,1,0,0,1,1,1Z" transform="translate(-807.5 -35.2)"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

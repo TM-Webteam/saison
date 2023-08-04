@@ -1,0 +1,73 @@
+/*
+  ----------------
+  各　見出し
+  ----------------
+*/
+.ttl-primary {
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 1.5;
+  text-align: center;
+	margin-bottom: 40px;
+	@media #{$sp} {
+		font-size: 24px;
+		margin-bottom: 20px;
+	}
+  &.cW {
+    color: #fff;
+  }
+}
+
+.ttl-secondary {
+	font-size: 36px;
+	font-weight: 700;
+	line-height: 1.5;
+	text-align: center;
+	margin-bottom: 40px;
+	@media #{$sp} {
+		font-size: 20px;
+		margin-bottom: 20px;
+	}
+  &.cW {
+    color: #fff;
+  }
+}
+
+.ttl-tertiary {
+	font-size: 20px;
+	font-weight: 700;
+	margin-bottom: 30px;
+	@media #{$sp} {
+		font-size: 16px;
+		margin-bottom: 15px;
+	}
+  &.cW {
+    color: #fff;
+  }
+}
+
+.ttl-quaternary {
+	
+}
+
+.ttl-quinary {
+	
+}
+
+.lead {
+	font-size: 18px;
+	font-weight: 500;
+	text-align: center;
+	margin-bottom: 30px;
+	@media #{$sp} {
+		font-size: 14px;
+		margin-bottom: 15px;
+	}
+  &.cW {
+    color: #fff;
+  }
+}
+
+.note {
+	font-size: 12px;
+}

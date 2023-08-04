@@ -1,0 +1,35 @@
+/*
+  ----------------
+  thanks
+  ----------------
+*/
+
+.thanks {
+
+  .containers {
+    padding: 70px 30px 100px;
+    @media #{$sp} {
+      padding: 35px 15px 50px;
+    }
+  }
+
+  .ttl-primary-lower {
+    font-size: 35px;
+    color: #000;
+    @media #{$sp} {
+      font-size: 20px;
+    }
+  }
+
+  .lead {
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 70px;
+    @media #{$sp} {
+      font-size: 14px;
+      margin-bottom: 40px;
+    }
+  }
+
+}
+

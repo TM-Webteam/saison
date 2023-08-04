@@ -1,0 +1,51 @@
+/*
+  ----------------
+  Animations
+  ----------------
+*/
+
+.fadein {
+	opacity : 0;
+	transform : translate(0, 50px);
+	transition : all 1s;
+}
+
+.fadein.scrollin {
+	opacity : 1;
+	transform : translate(0, 0);
+}
+
+.fadein:nth-of-type(1) {
+	-moz-transition-delay:100ms;
+	-webkit-transition-delay:100ms;
+	-o-transition-delay:100ms;
+	-ms-transition-delay:100ms;
+}
+
+.fadein:nth-of-type(2) {
+	-moz-transition-delay:200ms;
+	-webkit-transition-delay:200ms;
+	-o-transition-delay:200ms;
+	-ms-transition-delay:200ms;
+}
+
+.fadein:nth-of-type(3) {
+	-moz-transition-delay:300ms;
+	-webkit-transition-delay:300ms;
+	-o-transition-delay:300ms;
+	-ms-transition-delay:300ms;
+}
+
+.fadein:nth-of-type(4) {
+	-moz-transition-delay:400ms;
+	-webkit-transition-delay:400ms;
+	-o-transition-delay:400ms;
+	-ms-transition-delay:400ms;
+}
+
+.fadein:nth-of-type(5) {
+	-moz-transition-delay:500ms;
+	-webkit-transition-delay:500ms;
+	-o-transition-delay:500ms;
+	-ms-transition-delay:500ms;
+}

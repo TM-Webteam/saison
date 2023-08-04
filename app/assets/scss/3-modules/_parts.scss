@@ -1,0 +1,517 @@
+/*
+  ----------------
+  common-parts
+  ----------------
+*/
+
+// カテゴリ
+.cat {
+  display: inline-block;
+  text-align: center;
+  line-height: 1.4;
+  font-size: 14px;
+  padding: 5px 15px;
+  color: #fff;
+  border: 1px solid #0D5BAB;
+  background: #0D5BAB;
+  @media #{$sp} {
+    font-size: 12px;
+    padding: 3px 10px;
+  }
+  &:not(:last-child) {
+    margin-right: 10px;
+    @media #{$sp} {
+      margin-right: 5px;
+    }
+  }
+}
+
+// 日付
+.time {
+  display: inline-block;
+  font-size: 14px;
+  @media #{$sp} {
+    font-size: 12px;
+  }
+}
+
+// 検索
+.search {
+  max-width: 500px;
+  margin: 0 auto 50px;
+  @media #{$sp} {
+    width: 80%;
+    margin: 0 auto 20px;
+  }
+  &__form {
+    position: relative;
+  }
+  &__input[type=search] {
+    display: block;
+    width: 100%;
+    height: 55px;
+    padding: 5px 10px;
+    font-size: 16px;
+    background: #ccc;
+    border-radius: 27px;
+    &::placeholder {
+      color: #777777;
+      text-align: center;
+      font-weight: 500;
+    }
+    @media #{$sp} {
+      height: 40px;
+    }
+  }
+  &__btn {
+    display: block;
+    width: 55px;
+    height: 55px;
+    padding: 15px;
+    position: absolute;
+    top: 0;
+    right: 5px;
+    z-index: 3;
+    border-radius: 50%;
+    @media #{$sp} {
+      width: 35px;
+      height: 35px;
+      padding: 6px 7px;
+    }
+    img {
+      transition: all .3s;
+    }
+    &:hover {
+      img {
+        transform: scale(1.2);
+      }
+    }
+  }
+}
+
+// 吹き出し（ボタン等）
+.speech {
+  text-align: center;
+  span {
+    display: inline-block;
+    margin-bottom: 10px;
+    line-height: 1.3;
+    font-size: 18px;
+    font-weight: 700;
+    position: relative;
+    @media #{$sp} {
+      font-size: 13px;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      left: -1.5em;
+      bottom: 10px;
+      display: inline-block;
+      margin-right: 3px;
+      width: 20px;
+      height: 1px;
+      background-color: #333;
+      transform: rotate(60deg);
+      vertical-align: 0.3em;
+      @media #{$sp} {
+        width: 15px;
+      }
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      right: -1.5em;
+      bottom: 10px;
+      display: inline-block;
+      margin-left: 3px;
+      width: 20px;
+      height: 1px;
+      background-color: #333;
+      transform: rotate(-60deg);
+      vertical-align: 0.3em;
+      @media #{$sp} {
+        width: 15px;
+      }
+    }
+    &.cW {
+      color: #fff;
+      &::before {
+        background-color: #fff;
+      }
+      &::after {
+        background-color: #fff;
+      }
+    }
+  }
+}
+
+// マーカーライン
+.marker {
+  background-image: linear-gradient(top, transparent 60%, #FFF826 60%);
+}
+
+// 強調打点
+ruby {
+  rt {
+    font-size: 18px;
+    @media #{$sp} {
+      font-size: 14px;
+    }
+  }
+}
+
+// 記事詳細カードリンク
+.cardLink {
+  padding: 30px;
+  margin-bottom: 30px;
+  box-shadow: 0 3px 6px rgba(0,30,78,0.16);
+  @media #{$sp} {
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+  &__img {
+    width: 25%;
+    @media #{$sp} {
+      width: 85%;
+      margin: 0 auto 15px;
+    }
+    img {
+      aspect-ratio: 3 / 2;
+      object-fit: cover;
+    }
+  }
+  &__box {
+    width: calc(100% - 25% - 30px);
+    @media #{$sp} {
+      width: 100%;
+    }
+    &--ttl {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    &--txt {
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+    }
+  }
+  &:hover {
+    opacity: 1;
+    background: #0D5BAB;
+    color: #fff;
+  }
+}
+
+// SNSシェアボタン
+.sns-share {
+  margin-bottom: 30px;
+  @media #{$sp} {
+    margin-bottom: 15px;
+  }
+}
+
+// 記事詳細下部お役立ち資料
+.useful {
+  .item {
+    margin-bottom: 40px;
+    padding: 30px;
+    background: #F7F7F7;
+    @media #{$sp} {
+      padding: 15px;
+      margin-bottom: 20px;
+    }
+    &__img {
+      width: 30%;
+      @media #{$sp} {
+        width: 85%;
+        margin: 0 auto 15px;
+      }
+      img {
+        aspect-ratio: 3 / 2;
+        object-fit: cover;
+      }
+    }
+    &__box {
+      width: calc(100% - 30% - 30px);
+      @media #{$sp} {
+        width: 100%;
+      }
+      &--ttl {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        @media #{$sp} {
+          font-size: 16px;
+          margin-bottom: 15px;
+        }
+      }
+      &--txt {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        overflow: hidden;
+        margin-bottom: 20px;
+        @media #{$sp} {
+          margin-bottom: 15px;
+        }
+      }
+    }
+    .more.small {
+      width: 350px;
+      box-shadow: none;
+      border: 1px solid #0D5BAB;
+      &::before {
+        border-top: 2px solid #0D5BAB;
+        border-right: 2px solid #0D5BAB;
+      }
+      @media #{$sp} {
+        width: 85%;
+        margin: 0 auto;
+      }
+      &:hover {
+        &::before {
+          border-top: 2px solid #fff;
+          border-right: 2px solid #fff;
+        }
+      }
+    }
+  }
+}
+
+// 記事詳細下部関連コラム
+.relation {
+  .item {
+    padding: 30px;
+    background: #F7F7F7;
+    @media #{$sp} {
+      padding: 15px;
+    }
+    &__box {
+      &:not(:last-child) {
+        margin-bottom: 30px;
+        @media #{$sp} {
+          margin-bottom: 15px;
+        }
+      }
+      &--img {
+        width: 25%;
+        img {
+          aspect-ratio: 16 / 9;
+          object-fit: cover;
+        }
+      }
+      &--txt {
+        width: calc(100% - 25% - 30px);
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+        @media #{$sp} {
+          width: calc(100% - 25% - 15px);
+        }
+      }
+    }
+  }
+}
+
+// サイドナビバナー
+.bnr-contact,
+.bnr-catalog {
+  margin-bottom: 30px;
+  @media #{$sp} {
+    margin-bottom: 15px;
+  }
+}
+
+// カテゴリで探す
+.catSearch {
+  margin-bottom: 30px;
+  @media #{$sp} {
+    margin-bottom: 15px;
+  }
+  &__list {
+    li {
+      a {
+        display: block;
+        position: relative;
+        padding: 10px 0 10px 40px;
+        border-bottom: 1px solid #DDDDDD;
+        &::before {
+          content: " ";
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 15px;
+          margin: auto;
+          width: 6px;
+          height: 6px;
+          border: 1px solid;
+          border-color: #111 #111 transparent transparent;
+          transform: rotate(45deg);
+          transition: all .3s;
+        }
+        &:hover {
+          opacity: 1;
+          background: #0D5BAB;
+          color: #fff;
+          &::before {
+            left: 20px;
+            border-color: #fff #fff transparent transparent;
+          }
+        }
+      }
+    }
+  }
+}
+
+// よく読まれている記事
+.blogList {
+  .item {
+    padding: 20px 0;
+    border-bottom: 1px solid #DDDDDD;
+    @media #{$sp} {
+      padding: 10px 0;
+    }
+    &__img {
+      width: 30%;
+      img {
+        aspect-ratio: 3 / 2;
+        object-fit: cover;
+      }
+    }
+    &__ttl {
+      width: calc(100% - 30% - 20px);
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      overflow: hidden;
+      font-size: 14px;
+    }
+  }
+}
+
+// 資料のスライダー
+.wp-slick {
+  width: 85%;
+  margin: 0 auto 30px;
+  .slick-arrow {
+    z-index: 2;
+    width: 42px;
+    height: 42px;
+    &::before{
+      content: "";
+      width: 42px;
+      height: 42px;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+  .slick-next,
+  .slick-prev {
+    transform: none;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+
+  .slick-next {
+    right: -60px;
+    &::before{
+      background: url("../img/slick/arrow_r.svg") 50% / contain no-repeat;
+    }
+    @media #{$sp} {
+      right: -40px;
+    }
+  }
+
+  .slick-prev {
+    left: -60px;
+    &::before{
+      background: url("../img/slick/arrow_l.svg") 50% / contain no-repeat;
+    }
+    @media #{$sp} {
+      left: -40px;
+    }
+  }
+}
+
+// 記事監修者
+.writer {
+  &__ttl {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: .01em;
+    color: #070707;
+    border-bottom: 2px solid #6785c1;
+    margin-bottom: 15px;
+    padding: 5px 0 5px 50px;
+    position: relative;
+    @media #{$sp} {
+      font-size: 16px;
+      padding: 5px 0 5px 40px;
+    }
+    &::before {
+      content: " ";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+      width: 30px;
+      height: 30px;
+      background: url("../img/common/icon-writer.png") 50% / contain no-repeat;
+      @media #{$sp} {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+  .card {
+    margin: 40px 0;
+    border: 2px solid #6785c1;
+    background: #fff;
+    border-radius: 20px;
+    padding: 15px 15px 15px 20px;
+    @media #{$sp} {
+      padding: 15px;
+      border: 3px solid #6785c1;
+      margin: 20px 0;
+    }
+    &__img {
+      width: 15%;
+      @media #{$sp} {
+        width: 85%;
+        margin: 0 auto 15px;
+      }
+      img {
+        aspect-ratio: 16 / 9;
+        object-fit: cover;
+      }
+    }
+    &__box {
+      width: calc(100% - 15% - 20px);
+      transition: all .3s;
+      @media #{$sp} {
+        width: 100%;
+      }
+      &--ttl {
+        font-size: 15px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        @media #{$sp} {
+          font-size: 14px;
+        }
+      }
+      &--txt {
+        font-size: 14px;
+        font-weight: normal;
+        @media #{$sp} {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}

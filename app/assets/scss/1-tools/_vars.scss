@@ -1,0 +1,38 @@
+// Breakpoint設定
+
+$sp: "all and (max-width : 768px)";
+//$sm: "all and (max-width : 840px)";
+//$md: "all and (max-width : 1000px)";
+//$lg: "all and (max-width : 1100px)";
+$tab: "all and (max-width : 860px)";
+//$xl: "all and (max-width : 1200px)";
+$pc: "all and (min-width: 769px)";
+
+
+$font-family: 'Noto Sans JP','ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','游ゴシック','Yu Gothic','游ゴシック体','YuGothic','ＭＳ Ｐゴシック','MS PGothic',sans-serif;
+
+
+// カラー
+
+$primary-color: #000;
+
+$secondary-color: #ccc;
+
+$tertiary-color: #eee;
+
+
+// テキストカラー
+
+
+
+// コンテナー設定
+
+$container: 1160px;
+$container-full: 100%;
+
+// グリッド設定
+
+$gutter: 20px;
+$small-gutter: 10px;
+
+

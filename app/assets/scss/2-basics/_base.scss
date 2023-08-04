@@ -1,0 +1,300 @@
+/*
+  ----------------
+  common styles
+  ----------------
+*/
+
+/*** 表示・非表示 ***/
+
+
+.pc-only-inline-block {
+  display: inline-block;
+  @media #{$sp} {
+    display: none;
+  }
+}
+
+
+/*** FlexBox ***/
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  @media #{$sp} {
+    align-items: center;
+    justify-content: center;
+  }
+  &.nowrap {
+    flex-wrap: nowrap;
+  }
+  &.inherit {
+    @media #{$sp} {
+      justify-content: space-between;
+      align-content: space-between;
+      align-items: stretch;
+    }
+  }
+  &.jcA {
+    justify-content: space-around;
+  }
+  &.jcE {
+    justify-content: flex-end;
+  }
+  &.sp-jcA {
+    @media #{$sp} {
+      justify-content: space-around;
+    }
+  }
+  &.jcC {
+    justify-content: center;
+  }
+  &.fS {
+    justify-content: flex-start;
+  }
+  &.fE {
+    justify-content: flex-end;
+  }
+  &.sp-fS {
+    @media #{$sp} {
+      justify-content: flex-start;
+    }
+  }
+  &.aiC {
+    align-items: center;
+  }
+  &.aiE {
+    align-items: flex-end;
+  }
+  &.aifS {
+    align-items: flex-start;
+  }
+  &.sp-aifS {
+    @media #{$sp} {
+      align-items: flex-start;
+    }
+  }
+  &.row-re {
+    flex-direction: row-reverse;
+  }
+  &.sp-row-re {
+    @media #{$sp} {
+      flex-direction: row-reverse;
+    }
+  }
+  &.sp-reverse {
+    @media #{$sp} {
+      flex-direction: column-reverse;
+    }
+  }
+  &.sp-sB {
+    @media #{$sp} {
+      justify-content: space-between;
+    }
+  }
+  &.gap10 {
+    gap: 10px;
+    @media #{$sp} {
+      gap: 5px;
+    }
+  }
+  &.gap20 {
+    gap: 20px;
+    @media #{$sp} {
+      gap: 10px;
+    }
+  }
+  &.gap30 {
+    gap: 30px;
+    @media #{$sp} {
+      gap: 15px;
+    }
+  }
+  &.gap40 {
+    gap: 40px;
+    @media #{$sp} {
+      gap: 15px;
+    }
+  }
+  &.gap50 {
+    gap: 50px;
+    @media #{$sp} {
+      gap: 15px;
+    }
+  }
+  &.gap60 {
+    gap: 60px;
+    @media #{$sp} {
+      gap: 15px;
+    }
+  }
+  // 3カラムの場合
+  &.gather {
+    &::after {
+      content:"";
+      display: block;
+      width: 30%;
+    }
+  }
+  // 4カラムの場合
+  &.gather {
+    &::before {
+      content:"";
+      display: block;
+      width: 25%;
+      order:1;
+    }
+    &::after {
+      content:"";
+      display: block;
+      width: 25%;
+    }
+  }
+}
+.sp-flex {
+  @media #{$sp} {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-around;
+  }
+}
+
+.core {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/***********/
+
+a,button[type="submit"] {
+	transition: all .3s;
+  &:hover {
+    opacity: .7;
+  }
+}
+
+/*** Container ***/
+
+.containers {
+	max-width: $container;
+	width: 100%;
+	margin: 0 auto;
+	padding: 70px 30px;
+	@media #{$sp} {
+		padding: 35px 15px;
+	}
+}
+.containers-full {
+  max-width: $container-full;
+  width: 100%;
+  margin: 0 auto;
+  padding: 70px 0;
+  @media #{$sp} {
+    padding: 35px 15px;
+  }
+}
+
+/*** Shadow ***/
+
+.box-shadow {
+	box-shadow: 0 0 8px rgba(0,0,0,0.2);
+}
+.txt-shadow {
+  text-shadow: 0 0 18px rgba(0,0,0,0.8);
+}
+
+/*** Scroll ***/
+
+.scroll {
+  @media #{$sp} {
+    overflow-x: scroll;
+  }
+}
+// ↑※sp時scroll-hint発動
+
+/*** Clearfix ***/
+
+.cf:before,
+.cf:after {
+  content:"";
+  display:block;
+  overflow:hidden;
+}
+.cf:after { clear:both; }
+.cf { 
+  zoom:1;
+  display: inline-table;
+}
+
+
+/*** その他 ***/
+
+main {
+  padding-top: 140px;
+  @media #{$sp} {
+    padding-top: 60px;
+  }
+}
+
+.disabled {
+  pointer-events: none;
+}
+
+.floating {
+  position: fixed;
+  top: 150px;
+  right: 0;
+  width: 300px;
+  opacity: 0;
+  transition: all .3s;
+  display: none;
+  z-index: 99;
+  @media #{$sp} {
+    display: none;
+  }
+  &.fixed {
+    display: block;
+    opacity: 1;
+    @media #{$sp} {
+      display: none;
+    }
+  }
+}
+
+/*** 2カラム　右側にform ***/
+.sub-conts {
+  width: calc(100% - 360px - 60px);
+  @media #{$sp} {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+}
+
+.side-form {
+  width: 360px;
+  @media #{$sp} {
+    width: 100%;
+  }
+}
+
+/*** 2カラム　右側にnav ***/
+.main-conts {
+  width: calc(100% - 300px - 60px);
+  @media #{$sp} {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+}
+
+.side-nav {
+  width: 300px;
+  @media #{$sp} {
+    width: 100%;
+  }
+}
+

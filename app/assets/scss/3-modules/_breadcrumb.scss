@@ -1,0 +1,48 @@
+/*
+  ----------------
+  パンくずのスタイル設定
+  ----------------
+*/
+
+.breadcrumb {
+  font-size: 12px;
+  @media #{$sp} {
+    font-size: 10px;
+  }
+  .containers {
+    padding: 5px 15px;
+  }
+  ul {
+    li {
+      position: relative;
+
+      &:not(:last-child) {
+        margin-right: 40px;
+
+        @media #{$sp} {
+          margin-right: 20px;
+        }
+
+        &::before {
+          content: '>';
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          right: -25px;
+          margin: auto;
+
+          @media #{$sp} {
+            right: -14px;
+          }
+        }
+      }
+
+      a {
+        &:hover {
+          opacity: 1;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

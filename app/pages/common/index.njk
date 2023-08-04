@@ -1,0 +1,36 @@
+{% extends "layout/default.njk" %}
+
+{# Custom SEO tags, leave blank to apply the default values #}
+{% set title = "" %}
+{% set description = "" %}
+{% set keywords = "" %}
+
+{# Page settings and also body class #}
+{% set page = "" %}
+
+{# Custom tags before </head> #}
+{% block customHead %}
+{% endblock %}
+
+{# Custom tags before </body> #}
+{% block customJs %}  
+{% endblock %}
+
+{# Main content #}
+{% block content %}
+
+<main>
+
+  <nav class="pagination">
+		<div class="nav-links">
+      <a class="prev page-numbers" href="#"><span>Previous</span></a>
+      <a class="page-numbers" href="#">1</a>
+      <span class="page-numbers current">2</span>
+      <a class="page-numbers" href="#">3</a>
+      <a class="next page-numbers" href="#"><span>Next</span></a>
+    </div>
+	</nav>
+
+</main>
+
+{% endblock %}
