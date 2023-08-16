@@ -1,7 +1,7 @@
 .home-page {
   max-width: 1440px;
   margin: auto;
-  padding: 140px 0 30px;
+  padding: 140px 0 0px;
 
   .welcome-section {
     padding: 61px 0 62px 0;
@@ -65,6 +65,7 @@
 
           li {
             width: auto;
+            flex: 1;
 
             a {
               span {
@@ -74,7 +75,8 @@
               }
 
               border: 0;
-              padding: 93px 101px 90px 100px;
+              padding: 93px 0 90px;
+              max-width: 379px;
               background-color: #111450;
             }
 
