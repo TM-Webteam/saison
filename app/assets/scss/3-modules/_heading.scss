@@ -47,11 +47,20 @@
 }
 
 .ttl-quaternary {
-	
+	font-size: 20px;
+	font-weight: 700;
+	margin-bottom: 30px;
+	@media #{$sp} {
+		font-size: 16px;
+		margin-bottom: 15px;
+	}
+  &.cW {
+    color: #fff;
+  }
 }
 
 .ttl-quinary {
-	
+
 }
 
 .lead {

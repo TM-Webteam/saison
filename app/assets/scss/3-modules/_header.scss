@@ -3,79 +3,88 @@
   Header
   ----------------
 */
+
 header {
+  margin: auto;
+  max-width: 1440px;
   position: fixed;
   top: 0;
-  left: 0;
+  left: 50%;
+  transform: translateX(-50%);
   width: 100%;
   z-index: 30;
-  transition: all .3s;
+  transition: all 0.3s;
   &.hide {
     transform: translateY(-150px);
   }
 
-
   // 構築範囲　ここから　↓
 
   .in {
-    background: #880024;
+    background: #111450;
     color: #fff;
+    border-bottom: 1px solid #fff;
     &__logo {
       &__img {
         padding: 20px;
         width: 200px;
-        
+
         @media #{$sp} {
           padding: 0 15px;
         }
       }
       span {
         font-size: 14px;
-        
-      } 
+      }
     }
     &__nav {
       font-size: 16px;
       font-weight: 700;
-      letter-spacing: .04em;
-      
+      letter-spacing: 0.04em;
+
       li {
         &:not(:last-child) {
           margin-right: 1px;
         }
         a {
           display: block;
-          padding: 30px 40px;
-          background: #F37D07;
+          padding: 16px 19px 16px 42px;
+          background: #111450;
           position: relative;
-          
+
           &::before {
-            content: '';
+            content: "";
             position: absolute;
             top: 0;
             bottom: 0;
-            left: 10px;
+            left: -1px;
             margin: auto;
-            width: 7px;
-            height: 7px;
-            border: 1px solid;
-            border-color: #fff #fff transparent transparent;
-            transform: rotate(45deg);
-            
+            border-color: currentcolor;
+            border-color: #fff #fff rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+            background-color: white;
+            height: 100%;
+            width: 1px;
           }
         }
       }
     }
   }
   .nav-list {
-    background: #F4F5F6;
+    padding-left: 17px;
+    background: #fff;
     color: #333333;
     font-size: 16px;
     font-weight: 700;
     line-height: 1.375;
-    
+
+    .nav-list-bar {
+      height: 80px;
+      align-items: center;
+      background-color: #fff;
+    }
+
     ul {
-      width: 80%;
+      width: 50%;
       margin: 0 auto;
       li {
         a {
@@ -83,7 +92,7 @@ header {
           position: relative;
           &::before {
             content: "";
-            width: 0%; 
+            width: 0%;
             height: 1px;
             background-color: #333;
             display: block;
@@ -91,7 +100,7 @@ header {
             bottom: 5px;
             left: 50%;
             transform: translateX(-50%);
-            transition: all .3s linear;
+            transition: all 0.3s linear;
           }
           &:hover {
             opacity: 1;
@@ -101,6 +110,14 @@ header {
           }
         }
       }
+    }
+
+    .nav-list-button {
+      background-color: #f29600;
+      height: 100%;
+      color: white;
+      line-height: 80px;
+      padding: 0px 16px;
     }
   }
 
@@ -123,7 +140,7 @@ header {
 
   #gloval-nav {
     display: none;
-    background: #F4F5F6;
+    background: #f4f5f6;
     padding: 30px;
     ul {
       font-size: 14px;
@@ -142,7 +159,7 @@ header {
       &.aside {
         li {
           &:not(:last-child) {
-            border-bottom: 1px solid #F4F5F6;
+            border-bottom: 1px solid #f4f5f6;
           }
           a {
             display: block;
@@ -151,7 +168,7 @@ header {
             color: #fff;
             position: relative;
             &::before {
-              content: '';
+              content: "";
               position: absolute;
               top: 0;
               bottom: 0;
@@ -200,5 +217,4 @@ header.open {
       width: 27px;
     }
   }
-
 }
