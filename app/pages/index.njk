@@ -57,8 +57,8 @@
 
       <div class="anc">
         <div class="containers">
-          <ul class="flex jcC gap30 inherit anc__box">
-            <li>
+          <ul class="flex jcC gap30 inherit anc__box carousel">
+            <li class="carousel-item">
               <a href="#">
                 <span>
                   おすすめサービス
@@ -66,12 +66,22 @@
               </a>
             </li>
 
-            <li>
+            <li class="carousel-item">
               <a href="#">
                 <span>おすすめサービス</span></a>
             </li>
 
-            <li>
+            <li class="carousel-item">
+              <a href="#">
+                <span>おすすめサービス</span></a>
+            </li>
+
+            <li class="carousel-item">
+              <a href="#">
+                <span>おすすめサービス</span></a>
+            </li>
+
+            <li class="carousel-item">
               <a href="#">
                 <span>おすすめサービス</span></a>
             </li>
@@ -425,5 +435,17 @@
       </div>
     </section>
   </main>
+
+  <script>
+    $(document).ready(function () {
+      $(".carousel").slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        dots: false,
+        prevArrow: '<button type="button" class="slick-prev">Previous</button>',
+        nextArrow: '<button type="button" class="slick-next">Next</button>',
+      });
+    });
+  </script>
 
 {% endblock %}
