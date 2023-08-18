@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+{% include 'partial/meta.njk' %}
+{# Custom head #}
+{%- block customHead %}
+{% endblock -%}
+<script src="/assets/js/all.min.js"></script>
+</head>
+<body class="{% if page %}{{ page }}{% endif %}">
+  {% include 'partial/header.njk' %}
+  {# Page content #}
+  {%- block content %}
+  {% endblock -%}
+
+  {%- block customJs %}
+  {% endblock -%}
+</body>
+</html>
