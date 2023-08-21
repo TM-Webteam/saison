@@ -1,0 +1,504 @@
+{% extends "layout/default.njk" %}
+
+{# Custom SEO tags, leave blank to apply the default values #}
+{% set title = "" %}
+{% set description = "" %}
+{% set keywords = "" %}
+
+{# Page settings and also body class #}
+{% set page = "" %}
+
+{# Custom tags before </head> #}
+{% block customHead %}
+{% endblock %}
+
+{# Custom tags before </body> #}
+{% block customJs %}
+{% endblock %}
+
+{# Main content #}
+{% block content %}
+
+<main class="quaternary-page">
+  <section class="section-welcome">
+    <h3 class="ttl-tertiary">ビジネスオーナー様の「うれしい」をご提供！</h3>
+
+    <h2 class="ttl-primary">個人事業主様向けサービス</h2>
+
+    <a href="#" class="btn01">まとめて資料をダウンロードする</a>
+  </section>
+
+  <section class="section-primary">
+    <h4 class="ttl-quaternary">中小企業の経営者様・経理ご担当者様へ</h4>
+
+    <h2 class="ttl-primary">こんなニーズやお悩みありませんか？</h2>
+
+    <div class="anc">
+      <div class="containers">
+        <ul class="flex jcC gap30 inherit anc__box">
+          <li>
+            <a href="#">
+              <div class="ttl-quaternary-container">
+                <h4 class="ttl-quaternary">経費清算に時間がとられている</h4>
+              </div>
+
+
+              <div class="circle-container">
+                イラスト <br> または <br> アイコン
+              </div>
+
+              <h5 class="ttl-senary">カード利用明細から個人の利用と経費を分けるのが大変。確定申告時も大変だ。</h5>
+
+              <div class="circle-with-arrow">
+                <div class="arrow-down"></div>
+              </div>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <div class="ttl-quaternary-container">
+                <h4 class="ttl-quaternary">資金繰りを改善したい</h4>
+              </div>
+
+              <div class="circle-container">
+                イラスト <br> または <br> アイコン
+              </div>
+
+              <h5 class="ttl-senary">借りずに資金繰りを改善したい。期限の迫った請求書の支払いを先延ばししたい。</h5>
+
+              <div class="circle-with-arrow">
+                <div class="arrow-down"></div>
+              </div>
+
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <div class="ttl-quaternary-container">
+                <h4 class="ttl-quaternary">請求・回収業務に <br> 工数がとられている</h4>
+              </div>
+
+              <div class="circle-container">
+                イラスト <br> または <br> アイコン
+              </div>
+
+              <h5 class="ttl-senary">カード利用明細から個人の利用と経費を分けるのが大変。確定申告時も大変だ。</h5>
+
+              <div class="circle-with-arrow">
+                <div class="arrow-down"></div>
+              </div>
+
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-secondary">
+    <div class="notification-primary">
+      <div class="panel-01">
+        <section class="card-type4">
+          <div class="card">
+            <h2 class="card__ttl">課題：確定申告や経費処理が面倒</h2>
+
+            <summary class="flex gap30 aiC inquiry__box">
+              <div class="flex inquiry__box--btn">
+                <a href="#" class="btn01">解決策！</a>
+              </div>
+
+              <div class="inquiry__box--txt">ビジネスでの支払いを<span>セゾンのビジネスカードに一本化</span>することで経費計上の手間を簡略化！</div>
+            </summary>
+
+            <div class="latest">
+              <div class="containers">
+                <div class="lastest-wrapper">
+                  <a href="#" class="item">
+                    <div class="flex gap60">
+                      <div class="item__img"><img src="/assets/img/common/img-placeholder01.png" alt=""></div>
+
+                      <div class="item__box">
+                        <div class="item__box--txt">
+                          事業を行うなかでかかる費用を現金で支払うと、レシートの管理や経費計上が面倒になりがちです。また、プライベートとビジネスでの出費の区別が難しいという問題もあります。 <br>
+                          ビジネスでの支払いをビジネスカードに一本化すると、<strong>経費の金額が自動的に明らかになり経費計上の手間を簡略化できます。</strong>
+                        </div>
+
+                        <div class="item__box--txt">
+                          カードの明細は支払いが経費にあたることを証明する手段にもなるため、<strong>確定申告の際に情報が足りないという理由で困ることもなくなります。ま</strong> た、引き落としの口座として法人口座を利用することで、法人利用と個人利用を区別でき、経費管理がしやすくなります。</div>
+
+                        <div class="item__box--txt item__box--txt-last">
+                           セゾンのビジネスカードでは、個人口座、法人口座のどちらも選択が可能です。将来法人化を考えている個人事業主の方は、法人口座が設定できるビジネスカードを利用しておくと便利です。</div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="panel-02">
+        <div class="relation">
+          <h3 class="single__ttl"><span>個人事業主様・中小企業経営者様におすすめのビジネスカード</span></h3>
+
+          <div class="card-type1">
+            <div class="containers">
+              <ul class="flex gap30 card">
+                <li class="card__box">
+                  <h3 class="card__box--ttl">ポイント・マイルの還元率を重視したいという方へ</h3>
+
+                  <div class="container">
+                    <div class="flex gap20 card__box-wrapper">
+                      <div class="card__box-credit-card">
+                        <img src="/assets/img/credit_cards/american-express-01-01.png" alt="Your Image" class="card-img">
+                      </div>
+
+                      <div class="card__box-title">
+                        <h3 class="ttl-terianry">セゾンコバルト・ビジネス・ アメリカン・エキスプレス®・カード</h3>
+
+                        <ul class="price-list">
+                          <li>
+                            <dd>年会費：22,000円（税込） <br>→初年度年会費無料</dd>
+                          </li>
+                          <li>
+                            <dd>追加カード年会費：3,300円（税込）</dd>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <a href="#" class="btn01">カードの詳細はこちら</a>
+                </li>
+
+                <li class="card__box">
+                  <h3 class="card__box--ttl">年会費無料にこだわりたいという方へ</h3>
+
+                  <div class="container">
+                    <div class="flex gap20 card__box-wrapper">
+                      <div class="card__box-credit-card">
+                        <img src="/assets/img/credit_cards/saison-01.png" alt="Your Image" class="card-img">
+                      </div>
+
+                      <div class="card__box-title">
+                        <h3 class="ttl-terianry">セゾンコバルト・ビジネス・ アメリカン・エキスプレス®・カード</h3>
+
+                        <ul class="price-list">
+                          <li>
+                            <dd>本会員・追加カード会員ともに年会費永年無料</dd>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <a href="#" class="btn01">カードの詳細はこちら</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="notification-secondary">
+      <div class="panel-04">
+        <section class="card-type4">
+          <div class="card">
+            <h2 class="card__ttl">課題：資金繰りを改善したい</h2>
+
+            <summary class="flex aiC inquiry__box">
+              <div class="flex inquiry__box--btn">
+                <a href="#" class="btn01">解決策！</a>
+              </div>
+
+              <div class="inquiry__box--txt"><span>「支払い.com」</span>で請求書払いをカードで先のばし。振り込みはお任せ！</div>
+            </summary>
+
+            <section class="sec01">
+              <div class="containers">
+                <dd>「支払い.com」を利用すれば、期限の迫った請求書も、支払いまで最長60日余裕をプラス。資金繰りを改善し、借りずに事業を加速できます。 必要なのはお手持ちのカードだけ。審査も書類も必要ありません。</dd>
+
+               <div class="cash-flow-img">
+                <img src="/assets/img/terinary_page/cash-flow.png" alt="Your Image" class="card-img">
+               </div>
+              </div>
+            </section>
+
+            <a href="#" class="btn01">支払い.comをもっと詳しく</a>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <div class="notification-terinary">
+      <div class="panel-05 panel-primary-type">
+        <section class="card-type4">
+          <div class="card">
+            <h2 class="card__ttl">課題：資金調達をしたい</h2>
+
+            <summary class="flex aiC inquiry__box">
+              <div class="flex inquiry__box--btn">
+                <a href="#" class="btn01">解決策！</a>
+              </div>
+
+              <div class="inquiry__box--txt"><span>セゾンビジネスサポートローン</span> でビジネスのあらゆる事業資金ニーズに対応</div>
+            </summary>
+
+            <section class="sec01">
+              <div class="containers">
+                <dd>セゾンビジネスサポートローンは、下記対象のビジネスカードでご利用頂ける中小企業・個人事業主の経営を支援する融資サービスです。<br> お持ちのビジネスカードに、<strong>最大950万円のゆとりあるご融資可能枠と借り入れ額に応じた優遇金利</strong> をご用意しております。カード1枚で用途を問わず、ビジネスのあらゆるシーンで幅広くご利用いただけます。</dd>
+
+                <div class="card-type1">
+                  <div class="containers">
+                    <ul class="flex gap30 card">
+                      <li class="card__box">
+                        <h3 class="card__box--ttl">対象（下記カードをお持ちの方）</h3>
+
+                        <div class="container">
+                          <div class="flex gap20 card__box-wrapper">
+                            <div class="card__box-credit-card">
+                              <img src="/assets/img/credit_cards/american-express-01-01.png" alt="Your Image" class="card-img">
+                            </div>
+
+                            <div class="card__box-title">
+                              <h3 class="ttl-terianry">セゾンコバルト・ビジネス・ アメリカン・エキスプレス®・カード</h3>
+                            </div>
+                          </div>
+
+                          <div class="flex gap20 card__box-wrapper">
+                            <div class="card__box-credit-card">
+                              <img src="/assets/img/credit_cards/american-express-01-02.png" alt="Your Image" class="card-img">
+                            </div>
+
+                            <div class="card__box-title">
+                              <h3 class="ttl-terianry">セゾンコバルト・ビジネス・ アメリカン・エキスプレス®・カード</h3>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+
+                      <li class="card__box">
+                        <h3 class="card__box--ttl card__box-ttl02">融資サービスの内容</h3>
+
+                        <div class="container">
+                          <div class="flex gap30 card__box-wrapper card__box__wrapper-right">
+                            <div ><dd>融資枠</dd><h3 class="ttl-terinary">最大950万円 <small>※1</small></h3></div>
+                            <div ><dd>金利</dd><h3 class="ttl-terinary">2.8％～9.6% <small>※1</small></h3></div>
+                          </div>
+                        </div>
+
+                        <dd>※1 初回は融資実行となります。ご融資枠の上限は、年収の1/3以内となります。 ※2 ご利用可能枠が110万円以上の方が対象。本サービスご利用前の金利はセゾンプラチナ・ビジネス・アメリカン・エキスプレス®・カードの場合14.5％、セゾンコバルト・ビジネス・アメリカン・エキスプレス®・カードの場合18.0％です。</dd>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <a href="#" class="btn01">セゾンインボイスをもっと詳しく</a>
+              </div>
+            </section>
+          </div>
+        </section>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-terinary">
+
+    <h2 class="ttl-secondary">各種サービス資料をまとめてダウンロード</h2>
+
+    <h3 class="ttl-tertiary">興味のあるサービス資料をまとめてダウンロードできます。</h3>
+
+    <a href="#" class="btn01">まとめて資料をダウンロードする</a>
+  </section>
+
+  <section class="section-quaternary">
+
+    <h2 class="ttl-secondary">お客様の声</h2>
+
+    <div class="grid">
+      <div class="containers">
+        <div class="flex gap30 grid">
+          <div class="grid__card">
+            <div class="flex fS grid__card--cat">
+              <span class="cat">ビジネスカード</span>
+            </div>
+
+            <h4 class="ttl-quaternary">
+              最強のコスパとマイル還元率です。
+            </h4>
+
+            <h5 class="ttl-quinary">
+              truck LLC/代表/善利光雅　様
+            </h5>
+
+            <h6 class="ttl-senary">ビジネスカードを探していたのですが、どのカードが自分に合うのかが分からず迷っていました。そこで、自身がビジネスカードに求める事項が備わっているか・・</h6>
+
+            <a href="#" class="btn01">インタビューの続きを見る</a>
+          </div>
+
+          <div class="grid__card">
+            <div class="flex fS grid__card--cat">
+              <span class="cat">支払い.com</span>
+            </div>
+
+            <h4 class="ttl-quaternary">
+              本当に60秒で300万円の支払いが完了してびっくりしています。
+            </h4>
+
+            <h5 class="ttl-quinary">
+              建設業　代表　様
+            </h5>
+
+            <h6 class="ttl-senary">月末の職人への支払いに迫られ本当に困っていましたが、圧倒的に簡単に振込が完了し、手数料も安かったので大変助かりました。また利用させていただきます。</h6>
+          </div>
+
+          <div class="grid__card">
+            <div class="flex fS grid__card--cat">
+              <span class="cat">支払い.com</span>
+            </div>
+
+            <h4 class="ttl-quaternary">
+              ファクタリングの10%と比べて安くとても助かりました。
+            </h4>
+
+            <h5 class="ttl-quinary">
+              フリーランスエンジニア　様
+            </h5>
+
+            <h6 class="ttl-senary">引越しの初期費用が必要で急いでいたのですが、スピードはもちろん、ファクタリングの10%と比べて安くとても助かりました。 <br>条件の良い物件に引っ越せたので大満足です。</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-question-and-answer">
+
+    <h2 class="ttl-secondary">お客様の声</h2>
+
+    <div class="flex gap20 question-tab open">
+      <div class="qa-marker">
+        <h2 class="ttl-secondary">Q.</h2>
+      </div>
+
+      <div class="qa-content">
+        <h3 class="ttl-terinary">質問内容が入ります。質問内容が入ります。質問内容が入ります。質問内容が入ります。質問内容が入ります。</h3>
+      </div>
+
+      <div class="qa-button">
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+          <g id="Group_3812" data-name="Group 3812" transform="translate(-1355.5 -5395.5)">
+            <line id="Line_379" data-name="Line 379" x2="40" transform="translate(1355.5 5415.5)" fill="none" stroke="#707070" stroke-width="10"/>
+            <line id="Line_380" data-name="Line 380" y1="40" transform="translate(1375.5 5395.5)" fill="none" stroke="#707070" stroke-width="10"/>
+          </g>
+        </svg>
+      </div>
+    </div>
+
+    <div class="flex gap20 answer-tab">
+      <div class="qa-marker">
+        <h2 class="ttl-secondary">A.</h2>
+      </div>
+
+      <div class="qa-content">
+        <h3 class="ttl-terinary">質問内容が入ります。質問内容が入ります。質問内容が入ります。質問内容が入ります。質問内容が入ります。</h3>
+      </div>
+
+      <div class="qa-button">
+        <svg xmlns="http://www.w3.org/2000/svg" width="44" height="10" viewBox="0 0 44 10">
+          <g id="Group_3811" data-name="Group 3811" transform="translate(-1355.5 -5410.5)">
+            <line id="Line_379" data-name="Line 379" x2="44" transform="translate(1355.5 5415.5)" fill="none" stroke="#2680eb" stroke-width="10"/>
+          </g>
+        </svg>
+      </div>
+    </div>
+
+    <div class="flex gap20 question-tab">
+      <div class="qa-marker">
+        <h2 class="ttl-secondary">Q.</h2>
+      </div>
+
+      <div class="qa-content">
+        <h3 class="ttl-terinary">質問内容が入ります。質問内容が入ります。質問内容が入ります。質問内容が入ります。質問内容が入ります。</h3>
+      </div>
+
+      <div class="qa-button">
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+          <g id="Group_3812" data-name="Group 3812" transform="translate(-1355.5 -5395.5)">
+            <line id="Line_379" data-name="Line 379" x2="40" transform="translate(1355.5 5415.5)" fill="none" stroke="#707070" stroke-width="10"/>
+            <line id="Line_380" data-name="Line 380" y1="40" transform="translate(1375.5 5395.5)" fill="none" stroke="#707070" stroke-width="10"/>
+          </g>
+        </svg>
+      </div>
+    </div>
+
+    <div class="flex gap20 question-tab">
+      <div class="qa-marker">
+        <h2 class="ttl-secondary">Q.</h2>
+      </div>
+
+      <div class="qa-content">
+        <h3 class="ttl-terinary">質問内容が入ります。質問内容が入ります。質問内容が入ります。質問内容が入ります。質問内容が入ります。</h3>
+      </div>
+
+      <div class="qa-button">
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+          <g id="Group_3812" data-name="Group 3812" transform="translate(-1355.5 -5395.5)">
+            <line id="Line_379" data-name="Line 379" x2="40" transform="translate(1355.5 5415.5)" fill="none" stroke="#707070" stroke-width="10"/>
+            <line id="Line_380" data-name="Line 380" y1="40" transform="translate(1375.5 5395.5)" fill="none" stroke="#707070" stroke-width="10"/>
+          </g>
+        </svg>
+      </div>
+    </div>
+
+    <div class="flex gap20 question-tab">
+      <div class="qa-marker">
+        <h2 class="ttl-secondary">Q.</h2>
+      </div>
+
+      <div class="qa-content">
+        <h3 class="ttl-terinary">質問内容が入ります。質問内容が入ります。質問内容が入ります。質問内容が入ります。質問内容が入ります。</h3>
+      </div>
+
+      <div class="qa-button">
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+          <g id="Group_3812" data-name="Group 3812" transform="translate(-1355.5 -5395.5)">
+            <line id="Line_379" data-name="Line 379" x2="40" transform="translate(1355.5 5415.5)" fill="none" stroke="#707070" stroke-width="10"/>
+            <line id="Line_380" data-name="Line 380" y1="40" transform="translate(1375.5 5395.5)" fill="none" stroke="#707070" stroke-width="10"/>
+          </g>
+        </svg>
+      </div>
+    </div>
+
+    <div class="flex gap20 question-tab">
+      <div class="qa-marker">
+        <h2 class="ttl-secondary">Q.</h2>
+      </div>
+
+      <div class="qa-content">
+        <h3 class="ttl-terinary">質問内容が入ります。質問内容が入ります。質問内容が入ります。質問内容が入ります。質問内容が入ります。</h3>
+      </div>
+
+      <div class="qa-button">
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+          <g id="Group_3812" data-name="Group 3812" transform="translate(-1355.5 -5395.5)">
+            <line id="Line_379" data-name="Line 379" x2="40" transform="translate(1355.5 5415.5)" fill="none" stroke="#707070" stroke-width="10"/>
+            <line id="Line_380" data-name="Line 380" y1="40" transform="translate(1375.5 5395.5)" fill="none" stroke="#707070" stroke-width="10"/>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <section class="breadcrumb">
+    <ul class="flex">
+      <li><a href="#">TOP</a></li>
+      <li><a href="#">中小企業様向け</a></li>
+    </ul>
+  </section>
+</main>
+{% endblock %}
