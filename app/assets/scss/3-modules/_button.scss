@@ -560,6 +560,19 @@
   }
 }
 
+.btn01-orange {
+  background-color: #f29600;
+  border-color: #f29600;
+
+  &:hover {
+    color: #f29600;
+  }
+
+  &::before {
+    display: none;
+  }
+}
+
 // 吹き出し付きボタン
 .ctabtn {
   position: relative;
