@@ -20,10 +20,6 @@
     .ttl-quaternary {
       font-size: 20px;
     }
-
-    .btn01:hover {
-      color: #fff;
-    }
   }
 
   .section-primary {
@@ -60,164 +56,17 @@
     padding: 90px 120px 70px;
     background-color: #eeeeee;
 
-    // ======= Common and usable panel ========
-    .panel-primary-type {
-      margin-bottom: 60px;
-
-      .card-type4 {
-        background-color: #fff;
-
-        .card {
-          padding: 30px 30px 30px 30px;
-
-          .card__ttl {
-            background-color: #000;
-            font-size: 16px;
-            color: #fff;
-            max-width: 480px;
-            padding: 7px 0 6px;
-          }
-
-          .inquiry__box {
-            background-color: #e1e1e1;
-            padding: 10px 20px;
-            width: 100%;
-            margin: 0;
-            justify-content: flex-start;
-            margin-bottom: 30px;
-
-            .inquiry__box--btn {
-              width: auto;
-
-              .btn01 {
-                padding: 5px 35px;
-                background-color: #000;
-                border-color: #000;
-                font-size: 16px;
-                color: #fff;
-
-                &::before {
-                  display: none;
-                }
-              }
-
-              &:hover {
-                .btn01 {
-                  color: #fff;
-                }
-              }
-            }
-
-            .inquiry__box--txt {
-              width: auto;
-
-              span {
-                color: #00aba0;
-              }
-            }
-          }
-
-          .sec01 {
-            padding: 30px;
-            background-color: #fff;
-
-            .containers {
-              padding: 0;
-
-              dd {
-                text-align: left;
-                margin-bottom: 60px;
-              }
-
-              .sp-reverse {
-                justify-content: flex-start;
-                align-items: flex-start;
-                flex-wrap: nowrap;
-                margin-bottom: 60px;
-
-                .sec01__img {
-                  max-width: 391px;
-                  max-height: 262px;
-
-                  img {
-                    width: 100%;
-                    height: 100%;
-                  }
-                }
-
-                .sec01-right-wrapper {
-                  .sec01-right-box {
-                    margin-bottom: 10px;
-
-                    dt {
-                      flex-wrap: nowrap;
-
-                      .number-circle {
-                        width: 45px;
-                        height: 45px;
-                        flex-shrink: 0;
-                        border-radius: 50%;
-                        background-color: #003f98;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        color: white;
-                        font-size: 24px;
-                        font-weight: bold;
-                        align-self: flex-start;
-                      }
-
-                      .ttl-senary {
-                        font-size: 20px;
-                        font-weight: 400;
-                        white-space: normal;
-                        letter-spacing: 3px;
-                        text-align: left;
-                        max-width: 458px;
-                        white-space: normal;
-
-                        .yellow-bottom {
-                          font-weight: 600;
-
-                          background: linear-gradient(
-                            to bottom,
-                            transparent 50%,
-                            yellow 50%
-                          );
-                          display: inline;
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-
-              .btn01 {
-                background-color: #fff;
-                font-size: 16px;
-                font-weight: 450;
-                color: #003f98;
-                padding: 9px 22px 9px 0;
-                border-radius: 10px;
-                text-align: right;
-                font-weight: bold;
-                max-width: 340px;
-                box-shadow: none;
-
-                &::before {
-                  display: none;
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-
     .notification-primary {
       padding-bottom: 30px;
       margin-bottom: 60px;
       background-color: #fff;
+
+      .notification-panel2 {
+        .card-list {
+          padding: 0 30px;
+          margin-bottom: 30px;
+        }
+      }
     }
 
     .notification-secondary {
