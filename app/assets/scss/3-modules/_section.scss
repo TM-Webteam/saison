@@ -23,15 +23,15 @@
       a {
         display: block;
         color: #fff;
-        background: #0D5BAB;
+        background: #0d5bab;
         text-align: center;
         padding: 17px;
-        box-shadow: 0 7px 20px rgba(0,0,0,0.22);
-        border: 3px solid #0D5BAB;
+        box-shadow: 0 7px 20px rgba(0, 0, 0, 0.22);
+        border: 3px solid #0d5bab;
         position: relative;
         @media #{$sp} {
           padding: 10px;
-          border: 2px solid #0D5BAB;
+          border: 2px solid #0d5bab;
         }
         &::before {
           content: "";
@@ -43,13 +43,13 @@
           width: 5px;
           height: 5px;
           border: 2px solid;
-          border-color:  transparent transparent #0D5BAB #0D5BAB;
+          border-color: transparent transparent #0d5bab #0d5bab;
           transform: rotate(-45deg);
-          transition: all .3s;
+          transition: all 0.3s;
         }
         &:hover {
           opacity: 1;
-          color: #0D5BAB;
+          color: #0d5bab;
           background: #fff;
           &::before {
             bottom: -20px;
@@ -195,7 +195,6 @@
   }
 }
 
-
 // 何かの要素
 .element {
   .item {
@@ -210,7 +209,7 @@
         width: 100%;
       }
       &--num {
-        background: #0D5BAB;
+        background: #0d5bab;
         color: #fff;
         font-size: 32px;
         font-weight: bold;
@@ -239,7 +238,6 @@
         }
       }
       &--img {
-
       }
       &:not(:last-child) {
         @media #{$sp} {
@@ -250,11 +248,10 @@
   }
 }
 
-
 // 企業ロゴ・スライダーなしの場合
 .praise {
   &__box {
-    border: 1px solid #CCCCCC;
+    border: 1px solid #cccccc;
     padding: 30px 70px;
     margin-bottom: 70px;
     @media #{$sp} {
@@ -295,16 +292,16 @@
       .tag {
         text-align: center;
         background: #fff;
-        border: 1px solid #0D5BAB;
+        border: 1px solid #0d5bab;
         padding: 3px 10px;
-        color: #0D5BAB;
+        color: #0d5bab;
         font-weight: 500;
       }
     }
     &--cmt {
       width: calc(100% - 200px - 60px);
       background: #fff;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
       padding: 30px;
       position: relative;
       @media #{$sp} {
@@ -343,7 +340,6 @@
         }
       }
       dd {
-
       }
     }
   }
@@ -351,34 +347,38 @@
 
 // 会社情報
 .info {
-  background: #F2F4F4;
+  background: #f2f4f4;
   .card {
     &__box {
       width: calc(100% / 2 - 20px);
       padding: 30px 30px 30px 120px;
-      box-shadow: 0 10px 20px rgba(0,0,0,0.11);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.11);
       @media #{$sp} {
         width: 100%;
         padding: 15px;
       }
       &:first-child {
-        background: url("../img/common/img-info01.svg") 30px 50% / 64px auto no-repeat #fff;
+        background: url("../img/common/img-info01.svg") 30px 50% / 64px auto
+          no-repeat #fff;
         @media #{$sp} {
-          background: url("../img/common/img-info01.svg") 15px 50% / 32px auto no-repeat #fff;
+          background: url("../img/common/img-info01.svg") 15px 50% / 32px auto
+            no-repeat #fff;
         }
       }
 
       &:last-child {
-        background: url("../img/common/img-info02.svg") 30px 50% / 64px auto no-repeat #fff;
+        background: url("../img/common/img-info02.svg") 30px 50% / 64px auto
+          no-repeat #fff;
         @media #{$sp} {
-          background: url("../img/common/img-info02.svg") 15px 50% / 32px auto no-repeat #fff;
+          background: url("../img/common/img-info02.svg") 15px 50% / 32px auto
+            no-repeat #fff;
         }
       }
-      
+
       &--txt {
         font-size: 20px;
         font-weight: bold;
-        transition: all .3s;
+        transition: all 0.3s;
         @media #{$sp} {
           width: 100%;
           font-size: 16px;
@@ -387,7 +387,7 @@
       }
       &:hover {
         opacity: 1;
-        box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
       }
     }
   }
@@ -399,7 +399,7 @@
   color: #fff;
   &__box {
     margin: 30px auto 0;
-    background-color:rgba(255,255,255,0.37);
+    background-color: rgba(255, 255, 255, 0.37);
     padding: 30px 45px;
     width: 80%;
     @media #{$sp} {
@@ -442,7 +442,7 @@
     }
     &--ttl {
       font-size: 28px;
-      color: #223B80;
+      color: #223b80;
       font-weight: bold;
       margin-bottom: 20px;
       @media #{$sp} {
@@ -490,14 +490,14 @@
         margin: auto;
         width: 100%;
         height: 1px;
-        background: #223B80;
+        background: #223b80;
         z-index: -1;
       }
       span {
         display: inline-block;
         background: #fff;
         padding: 0 1.5em;
-        color: #223B80;
+        color: #223b80;
         font-weight: bold;
       }
     }
@@ -541,7 +541,7 @@
     }
     &:first-child {
       background: url("../img/common/bg-dl.jpg") 50% / cover no-repeat;
-      transition: all .3s;
+      transition: all 0.3s;
       // border-right: 1px solid #fff;
       @media #{$sp} {
         border-bottom: 1px solid #fff;
@@ -550,7 +550,7 @@
     }
     &:last-child {
       background: url("../img/common/bg-contact.jpg") 50% / cover no-repeat;
-      transition: all .3s;
+      transition: all 0.3s;
       // border-left: 1px solid #fff;
       @media #{$sp} {
         // border-left: 0;
@@ -598,14 +598,15 @@
             margin: auto;
             width: 25px;
             height: 25px;
-            background: url("../img/common/icon-arrow-o.png") 50% / contain no-repeat;
-            transition: all .3s;
+            background: url("../img/common/icon-arrow-o.png") 50% / contain
+              no-repeat;
+            transition: all 0.3s;
           }
         }
       }
     }
     &:hover {
-      opacity: .8;
+      opacity: 0.8;
       .item__box--txt span:before {
         left: 105%;
       }
@@ -615,7 +616,7 @@
 
 // ホワイトペーパー　※CMS対応
 .material {
-  background: #0D5BAB;
+  background: #0d5bab;
   color: #fff;
   .desc {
     &__img {
@@ -746,7 +747,6 @@
         }
       }
       &--txt {
-
       }
     }
   }
@@ -791,7 +791,6 @@
         }
       }
       &--txt {
-
       }
     }
   }
@@ -825,7 +824,6 @@
         background: url("../img/common/cardlink.svg") 50% / contain no-repeat;
       }
       &--img {
-        
       }
     }
     &__box {
@@ -845,7 +843,6 @@
         }
       }
       &--txt {
-
       }
     }
   }
@@ -870,7 +867,7 @@
       margin: auto;
       max-width: 620px;
       text-align: center;
-      background: #0D5BAB;
+      background: #0d5bab;
       color: #fff;
       font-size: 18px;
       font-weight: bold;
@@ -881,13 +878,13 @@
         font-size: 14px;
       }
       span {
-        color: #FFF841;
+        color: #fff841;
       }
     }
     &__box {
       padding: 50px 30px 30px;
       background: #fff;
-      box-shadow: 0 3px 6px rgba(0,30,78,0.16);
+      box-shadow: 0 3px 6px rgba(0, 30, 78, 0.16);
       @media #{$sp} {
         padding: 50px 15px 15px;
       }
@@ -934,7 +931,6 @@
         width: 100%;
       }
       &--img {
-        
       }
       &--ttl {
         padding: 30px;
@@ -943,6 +939,583 @@
         @media #{$sp} {
           padding: 15px;
           font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+// カード型 type6
+.card-type6 {
+  width: auto;
+
+  .card {
+    max-width: 380px;
+    border: 0;
+    padding: 0px 34px 60px 34px;
+    background-color: #e1e1e1;
+    box-shadow: none;
+
+    .ttl-quaternary-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 117px;
+      border: 0;
+
+      .ttl-quaternary {
+        font-size: 20px;
+        font-weight: 600;
+        margin: 0;
+        text-align: center;
+        color: #000;
+      }
+    }
+
+    .circle-container {
+      margin: auto;
+      width: 138px;
+      height: 138px;
+      border-radius: 50%;
+      background-color: #3498db;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      font-size: 16px;
+      padding: 30px 0px;
+      background-color: #fff;
+      color: #000000;
+      border: 1px solid #747171;
+      margin-bottom: 30px;
+    }
+
+    .ttl-senary {
+      font-size: 16px;
+      font-weight: 400;
+      color: #000000;
+      margin-bottom: 30px;
+    }
+
+    .circle-with-arrow {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      margin: auto;
+    }
+
+    .arrow-down {
+      width: 18px;
+      height: 19px;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+      margin-bottom: 10px;
+      border-right: 3px solid #fff;
+      border-bottom: 3px solid #fff;
+      position: absolute;
+    }
+  }
+
+  a:before {
+    display: none;
+  }
+}
+
+// カード型 type7
+.card-type7 {
+  background-color: #fff;
+
+  .containers {
+    padding: 0;
+
+    .card-wrapper {
+      .item {
+        background-color: #fff;
+        box-shadow: none;
+        padding: 0;
+        width: 100%;
+
+        .ttl-tertiary {
+          letter-spacing: 2px;
+          line-height: 28px;
+          margin-bottom: 30px;
+        }
+
+        .item__img {
+          max-width: 540px;
+          max-height: 306px;
+          background-color: #fff;
+          font-size: 16px;
+          vertical-align: middle;
+          background-color: #e1e1e1;
+
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+
+        .item__box {
+          flex: 1;
+
+          .item__box--title {
+            text-align: left;
+            font-size: 16px;
+            color: #000;
+            font-weight: 500;
+            margin-bottom: 20px;
+          }
+
+          .item__box--txt {
+            text-align: left;
+            font-size: 16px;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: unset;
+            overflow: hidden;
+            line-height: 1.78;
+            margin-bottom: 30px;
+          }
+
+          .item__box--txt.item__box--txt-last {
+            font-weight: 400;
+          }
+        }
+      }
+      padding: 0;
+    }
+  }
+}
+
+// カード型 type8
+.card-type8 {
+  padding: 0;
+  flex: 1;
+
+  .card__box--ttl {
+    padding: 10px 0;
+    background-color: #000;
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+
+  .container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    height: 185px;
+    border: 0;
+    width: 100%;
+    margin-bottom: 30px;
+
+    .card__box-wrapper {
+      flex-wrap: nowrap;
+
+      .card__box-credit-card {
+        max-width: 160px;
+        max-height: 101px;
+
+        .card-img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .card__box-title {
+        max-width: 345px;
+
+        .ttl-terianry {
+          text-align: left;
+          font-size: 20px;
+          font-weight: 600;
+          letter-spacing: 2px;
+        }
+
+        .price-list {
+          list-style-type: none;
+          padding-left: 0;
+        }
+
+        .price-list li {
+          text-align: left;
+          position: relative;
+          padding-left: 15px;
+          margin-bottom: 10px;
+        }
+
+        .price-list li::before {
+          content: "•";
+          position: absolute;
+          left: 0;
+          top: -9px;
+          font-size: 24px;
+          padding-right: 5px;
+        }
+      }
+    }
+  }
+}
+
+// カード型 type9
+.card-type9 {
+  padding: 0;
+  flex: 1;
+  box-shadow: none;
+
+  .card__box--ttl {
+    padding: 10px 0;
+    background-color: #000;
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+
+  .card__box--ttl.card__box-ttl02 {
+    background-color: #00aba0;
+  }
+
+  .container {
+    display: block;
+    margin-bottom: 30px;
+
+    .card__box-wrapper {
+      flex-wrap: nowrap;
+      margin-bottom: 20px;
+
+      .card__box-credit-card {
+        max-width: 160px;
+        max-height: 101px;
+
+        .card-img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .card__box-title {
+        max-width: 345px;
+
+        .ttl-terianry {
+          text-align: left;
+          font-size: 20px;
+          font-weight: 600;
+          letter-spacing: 2px;
+        }
+
+        .price-list {
+          list-style-type: none;
+          padding-left: 0;
+        }
+
+        .price-list li {
+          text-align: left;
+          position: relative;
+          padding-left: 15px;
+          margin-bottom: 10px;
+        }
+
+        .price-list li::before {
+          content: "•";
+          position: absolute;
+          left: 0;
+          top: -9px;
+          font-size: 24px;
+          padding-right: 5px;
+        }
+      }
+    }
+
+    .card__box-wrapper.card__box__wrapper-right {
+      div {
+        flex: 1;
+        padding: 34px 0;
+        text-align: center;
+        border-radius: 17px;
+        background-color: #e1e1e1;
+
+        dd {
+          text-align: center;
+        }
+
+        .ttl-tertinary {
+          font-size: 20px;
+          font-weight: 600;
+
+          small {
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+
+  dd {
+    font-size: 14px;
+    line-height: 30px;
+  }
+}
+
+// カード型 type10
+.card-type10 {
+  width: auto;
+  max-width: 380px;
+  padding: 35px 30px 30px 30px;
+  background-color: #fff;
+
+  .grid__card--cat {
+    margin-bottom: 15px;
+
+    .cat {
+      background-color: #111450;
+      font-weight: 600;
+      font-size: 14px;
+    }
+  }
+
+  .ttl-quaternary {
+    text-align: left;
+    font-size: 20px;
+    font-weight: 600;
+    min-width: 315px;
+    margin-bottom: 20px;
+    height: 60px;
+  }
+
+  .ttl-quinary {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+
+  .ttl-senary {
+    text-align: left;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+  }
+}
+
+// カード型 type11
+.card-type11 {
+  width: calc(50% - 15px);
+
+  .card {
+    background-color: #e1e1e1;
+    box-shadow: none;
+    padding: 30px 30px 34px 30px;
+
+    .ttl-tertiary {
+      letter-spacing: 2px;
+      line-height: 28px;
+      margin-bottom: 30px;
+    }
+
+    .item__img {
+      width: 163px;
+      height: 163px;
+      background-color: #fff;
+      border-radius: 10px;
+      font-size: 16px;
+      padding: 55px 40px;
+      vertical-align: middle;
+    }
+
+    .item__box {
+      flex: 1;
+
+      .item__box--title {
+        text-align: left;
+        font-size: 16px;
+        color: #000;
+        font-weight: 500;
+        margin-bottom: 20px;
+      }
+
+      .item__box--txt {
+        max-width: 290px;
+        text-align: left;
+        font-size: 16px;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: unset;
+        overflow: hidden;
+        line-height: 1.78;
+      }
+    }
+  }
+}
+
+// カード型 type12
+.card-type12 {
+  padding: 0;
+  width: calc(33.33333% - 20px);
+
+  .card__box--ttl {
+    padding: 10px 0;
+    background-color: #000;
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+
+  .container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    height: 185px;
+    border: 0;
+    width: 100%;
+    margin-bottom: 30px;
+
+    .centered-text {
+      font-size: 20px;
+      text-align: center;
+      margin: 0;
+      letter-spacing: 4px;
+      line-height: 1.4;
+      font-weight: 500;
+    }
+
+    .credit-card {
+      position: absolute;
+      width: 170px;
+      height: 107px;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      border: 1px solid #000;
+
+      .card-img {
+        width: 170px;
+        height: 107px;
+      }
+    }
+  }
+
+  .price-list {
+    list-style-type: none;
+    padding-left: 15px;
+    margin-bottom: 30px;
+  }
+
+  .price-list li {
+    text-align: left;
+    position: relative;
+    padding-left: 15px;
+    margin-bottom: 10px;
+  }
+
+  .price-list li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    padding-right: 5px;
+  }
+}
+
+// カード型 type13
+.card-type13 {
+  padding: 0px 30px;
+  margin-bottom: 30px;
+
+  dd {
+    text-align: left;
+    margin-bottom: 60px;
+  }
+
+  .sp-reverse {
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    margin-bottom: 30px;
+
+    .sec__img {
+      max-width: 441px;
+      height: 281px;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .sec-right-wrapper {
+      .sec01-right-box {
+        margin-bottom: 10px;
+        min-height: 70px;
+
+        dt {
+          flex-wrap: nowrap;
+
+          .number-circle {
+            width: 45px;
+            height: 45px;
+            flex-shrink: 0;
+            border-radius: 50%;
+            background-color: #003f98;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            align-self: flex-start;
+          }
+
+          .ttl-senary {
+            font-size: 20px;
+            font-weight: 400;
+            white-space: normal;
+            letter-spacing: 3px;
+            text-align: left;
+            max-width: 100%;
+            white-space: normal;
+
+            .yellow-bottom {
+              font-weight: 600;
+              background: linear-gradient(
+                to bottom,
+                transparent 50%,
+                yellow 50%
+              );
+              display: inline;
+            }
+          }
+
+          .sub-list {
+            margin-top: 23px;
+            list-style: none;
+            padding: 0;
+
+            li {
+              text-align: left;
+              font-size: 12px;
+              font-weight: 400;
+              max-width: 591px;
+              margin-left: 10px;
+              padding-left: 10px;
+              position: relative;
+            }
+
+            li::before {
+              content: "※";
+              margin-right: 5px;
+              position: absolute;
+              font-size: 12px;
+              left: -6px;
+              top: 0;
+            }
+          }
         }
       }
     }
@@ -960,7 +1533,7 @@
       width: 100%;
     }
     &__img {
-      background: #F6F6F6;
+      background: #f6f6f6;
       text-align: center;
       padding: 30px;
       margin-bottom: 0;
@@ -971,7 +1544,7 @@
         max-width: none;
         width: auto;
         height: 220px;
-        transition: all .3s;
+        transition: all 0.3s;
         @media #{$sp} {
           height: 150px;
         }
@@ -1008,7 +1581,7 @@
       }
       .more {
         font-size: 16px;
-        transition: all .3s;
+        transition: all 0.3s;
         @media #{$sp} {
           font-size: 14px;
         }
@@ -1018,15 +1591,15 @@
       opacity: 1;
       .more.bgY {
         background: #fff;
-        color: #F7A307;
-        border: 3px solid #F7A307;
+        color: #f7a307;
+        border: 3px solid #f7a307;
         &::before {
-          border-top: solid 3px #F7A307;
-          border-right: solid 3px #F7A307;
+          border-top: solid 3px #f7a307;
+          border-right: solid 3px #f7a307;
         }
       }
       .card__img img {
-        transform:scale(1.1,1.1);
+        transform: scale(1.1, 1.1);
       }
     }
   }
@@ -1073,7 +1646,7 @@
     border-top: 8px solid #004664;
     padding: 20px;
     text-align: center;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     @media #{$sp} {
       padding: 15px;
       margin: 0 auto;
@@ -1139,7 +1712,6 @@
       margin-bottom: 10px;
     }
     .ttl-primary {
-      
     }
     .btn01 {
       margin: 0;
@@ -1269,7 +1841,7 @@
 
 // 多くの企業様に選ばれています。
 .reason02 {
-  background: #F8F8F8;
+  background: #f8f8f8;
   .item {
     margin-bottom: 40px;
     @media #{$sp} {
@@ -1296,7 +1868,7 @@
           margin: auto;
           width: 1px;
           height: 100px;
-          background: #CBCBCB;
+          background: #cbcbcb;
           @media #{$sp} {
             top: auto;
             left: 0;
@@ -1306,13 +1878,12 @@
         }
       }
       &--ttl {
-        
       }
       &--txt {
-        color: #1C83D1;
+        color: #1c83d1;
         span {
           font-size: 92px;
-          font-family:"din-2014";
+          font-family: "din-2014";
           @media #{$sp} {
             font-size: 36px;
           }
@@ -1324,9 +1895,8 @@
 
 // サービス資料
 .catalog-menu {
-
   .card {
-    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     background: #fff;
     padding: 30px;
     @media #{$sp} {
@@ -1349,7 +1919,7 @@
       img {
         aspect-ratio: 3 / 2;
         object-fit: contain;
-        transition: all .3s;
+        transition: all 0.3s;
       }
     }
     &__box {
@@ -1365,7 +1935,7 @@
         -webkit-box-orient: vertical;
         -webkit-line-clamp: 2;
         overflow: hidden;
-        transition: all .3s;
+        transition: all 0.3s;
         @media #{$sp} {
           font-size: 16px;
           margin-bottom: 10px;
@@ -1377,7 +1947,7 @@
         -webkit-box-orient: vertical;
         -webkit-line-clamp: 2;
         overflow: hidden;
-        transition: all .3s;
+        transition: all 0.3s;
         @media #{$sp} {
           margin-bottom: 15px;
         }
@@ -1386,7 +1956,7 @@
         max-width: 360px;
         margin: 0 auto;
         font-size: 16px;
-        transition: all .3s;
+        transition: all 0.3s;
         @media #{$sp} {
           width: 100%;
           margin: 0 auto;
@@ -1396,13 +1966,119 @@
     }
     &:hover {
       opacity: 1;
-      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
       .card__box--ttl {
-        color: #F7701B;
+        color: #f7701b;
       }
       .more {
         background-position: 99% 50%;
       }
+    }
+  }
+}
+
+// Notification-panel1
+.notification-panel1 {
+  padding: 30px 30px 30px 30px;
+  background-color: #fff;
+  position: relative;
+
+  .card__ttl {
+    margin: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -20px;
+    background-color: #000;
+    font-size: 16px;
+    color: #fff;
+    max-width: 480px;
+    padding: 7px 0 6px;
+  }
+
+  .inquiry__box {
+    background-color: #e1e1e1;
+    padding: 10px 20px;
+    width: 100%;
+    margin: 0;
+    justify-content: flex-start;
+    margin-bottom: 30px;
+
+    .inquiry__box--btn {
+      width: auto;
+
+      .btn01 {
+        padding: 5px 35px;
+        background-color: #000;
+        border-color: #000;
+        font-size: 16px;
+        box-shadow: none;
+
+        &::before {
+          display: none;
+        }
+      }
+
+      &:hover {
+        .btn01 {
+          color: #fff;
+        }
+      }
+    }
+
+    .inquiry__box--txt {
+      width: auto;
+
+      span {
+        color: #00aba0;
+      }
+    }
+  }
+
+  .card__box--txt {
+    font-size: 16px;
+    width: auto;
+    margin-bottom: 30px;
+    text-align: left;
+  }
+
+  .inquiry__box.inquiry__box_02 {
+    padding: 13px 0;
+    background-color: #00aba0;
+
+    .inquiry__box--txt {
+      color: #fff;
+      width: 100%;
+    }
+  }
+
+  .notification-panel1-body {
+    dd {
+      text-align: left;
+      margin-bottom: 30px;
+    }
+
+    margin-bottom: 60px;
+  }
+}
+
+// Notification-panel2
+.notification-panel2 {
+  padding: 0 30px;
+  background-color: #fff;
+
+  .relation {
+    border: 1px solid #00aba0;
+
+    .single__ttl {
+      padding: 13px 0;
+      background-color: #00aba0;
+      margin-bottom: 30px;
+    }
+
+    .notification-panel2-body {
+      padding: 0 30px;
+      margin-bottom: 30px;
     }
   }
 }

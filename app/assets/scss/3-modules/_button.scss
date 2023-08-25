@@ -4,49 +4,49 @@
   ----------------
 */
 .more {
-	display: block;
+  display: block;
   max-width: 560px;
-	color: #fff;
-	font-size: 20px;
-	font-weight: bold;
-	text-align: center;
-	padding: 17px;
-	background: #0D5BAB;
-  box-shadow: 0 7px 20px rgba(0,0,0,0.22);
-	position: relative;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  padding: 17px;
+  background: #0d5bab;
+  box-shadow: 0 7px 20px rgba(0, 0, 0, 0.22);
+  position: relative;
   border-radius: 50px;
   margin: 0 auto;
-  border: 3px solid #0D5BAB;
-	@media #{$sp} {
-		font-size: 14px;
+  border: 3px solid #0d5bab;
+  @media #{$sp} {
+    font-size: 14px;
     padding: 13px;
     max-width: 85%;
-    border: 2px solid #0D5BAB;
-	}
+    border: 2px solid #0d5bab;
+  }
   &:before {
-		content: "";
-		position: absolute;
-		top: 0;
-		bottom: 0;
-		margin: auto;
-		right: 30px;
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    right: 30px;
     width: 8px;
     height: 8px;
     border-top: solid 3px #fff;
     border-right: solid 3px #fff;
     transform: rotate(45deg);
-    transition: all .3s;
+    transition: all 0.3s;
     @media #{$sp} {
       right: 20px;
     }
-	}
+  }
   &:hover {
     opacity: 1;
     background: #fff;
-    color: #0D5BAB;
+    color: #0d5bab;
     &::before {
-      border-top: solid 3px #0D5BAB;
-      border-right: solid 3px #0D5BAB;
+      border-top: solid 3px #0d5bab;
+      border-right: solid 3px #0d5bab;
     }
   }
   // サムネ付きボタン
@@ -61,7 +61,7 @@
       width: 126px;
       height: 88px;
       background: url("../img/common/img-thumb01.png") 50% / contain no-repeat;
-      transition: all .3s;
+      transition: all 0.3s;
       @media #{$sp} {
         left: -30px;
         width: 90px;
@@ -87,8 +87,8 @@
     }
     &:hover {
       &::before {
-        border-top: solid 2px #F7A307;
-        border-right: solid 2px #F7A307;
+        border-top: solid 2px #f7a307;
+        border-right: solid 2px #f7a307;
       }
     }
   }
@@ -98,7 +98,7 @@
     width: 140px;
     padding: 10px;
     border-radius: 10px;
-    box-shadow: 0 5px 10px rgba(0,0,0,0.16);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.16);
     &:before {
       content: none;
     }
@@ -126,59 +126,59 @@
     margin: auto;
     width: 22px;
     height: 33px;
-    background: url('../img/common/tel.svg') 50% / contain no-repeat;
+    background: url("../img/common/tel.svg") 50% / contain no-repeat;
     @media #{$sp} {
       width: 15px;
       height: 25px;
     }
-  } 
+  }
 }
 
-// ボタン
+// ボタン01
 .btn01 {
-	display: block;
+  display: block;
   max-width: 560px;
-	color: #fff;
-	font-size: 20px;
-	font-weight: bold;
-	text-align: center;
-	padding: 17px;
-	background: #0D5BAB;
-  box-shadow: 0 7px 20px rgba(0,0,0,0.22);
-	position: relative;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  padding: 17px;
+  background: #0d5bab;
+  box-shadow: 0 7px 20px rgba(0, 0, 0, 0.22);
+  position: relative;
   border-radius: 50px;
   margin: 0 auto;
-  border: 3px solid #0D5BAB;
-	@media #{$sp} {
-		font-size: 14px;
+  border: 3px solid #0d5bab;
+  @media #{$sp} {
+    font-size: 14px;
     padding: 13px;
     max-width: 85%;
-    border: 2px solid #0D5BAB;
-	}
+    border: 2px solid #0d5bab;
+  }
   &:before {
-		content: "";
-		position: absolute;
-		top: 0;
-		bottom: 0;
-		margin: auto;
-		right: 30px;
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    right: 30px;
     width: 8px;
     height: 8px;
     border-top: solid 3px #fff;
     border-right: solid 3px #fff;
     transform: rotate(45deg);
-    transition: all .3s;
+    transition: all 0.3s;
     @media #{$sp} {
       right: 20px;
     }
-	}
+  }
   &:hover {
     opacity: 1;
     background: #fff;
-    color: #0D5BAB;
+    color: #0d5bab;
     &::before {
-      border-top: solid 3px #0D5BAB;
-      border-right: solid 3px #0D5BAB;
+      border-top: solid 3px #0d5bab;
+      border-right: solid 3px #0d5bab;
     }
   }
   // サムネ付きボタン
@@ -193,7 +193,7 @@
       width: 126px;
       height: 88px;
       background: url("../img/common/img-thumb01.png") 50% / contain no-repeat;
-      transition: all .3s;
+      transition: all 0.3s;
       @media #{$sp} {
         left: -30px;
         width: 90px;
@@ -219,8 +219,8 @@
     }
     &:hover {
       &::before {
-        border-top: solid 2px #F7A307;
-        border-right: solid 2px #F7A307;
+        border-top: solid 2px #f7a307;
+        border-right: solid 2px #f7a307;
       }
     }
   }
@@ -230,7 +230,330 @@
     width: 140px;
     padding: 10px;
     border-radius: 10px;
-    box-shadow: 0 5px 10px rgba(0,0,0,0.16);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.16);
+    &:before {
+      content: none;
+    }
+  }
+}
+
+// ボタン02
+.btn02 {
+  display: block;
+  max-width: 560px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  padding: 21px 0;
+  background: #f29600;
+  box-shadow: 0 7px 20px rgba(0, 0, 0, 0.22);
+  position: relative;
+  border-radius: 50px;
+  margin: 0 auto;
+  border: 3px solid #f29600;
+  @media #{$sp} {
+    font-size: 14px;
+    padding: 13px;
+    max-width: 85%;
+    border: 2px solid #0d5bab;
+  }
+  &:hover {
+    opacity: 1;
+    background: #f29600;
+    color: white;
+    &::before {
+      border-top: solid 3px #f29600;
+      border-right: solid 3px #f29600;
+    }
+  }
+  // サムネ付きボタン
+  &.thumb {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: -50px;
+      margin: auto;
+      width: 126px;
+      height: 88px;
+      background: url("../img/common/img-thumb01.png") 50% / contain no-repeat;
+      transition: all 0.3s;
+      @media #{$sp} {
+        left: -30px;
+        width: 90px;
+        height: 55px;
+      }
+    }
+    &:hover {
+      &::after {
+        width: 136px;
+        height: 98px;
+      }
+    }
+  }
+  // 小さいボタン
+  &.small {
+    max-width: 330px;
+    padding: 10px;
+    &:before {
+      width: 6px;
+      height: 6px;
+      border-top: solid 2px #fff;
+      border-right: solid 2px #fff;
+    }
+    &:hover {
+      &::before {
+        border-top: solid 2px #f7a307;
+        border-right: solid 2px #f7a307;
+      }
+    }
+  }
+  // 最小ボタン
+  &.tiny {
+    font-size: 13px;
+    width: 140px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.16);
+    &:before {
+      content: none;
+    }
+  }
+}
+
+// ボタン03
+.btn03 {
+  display: block;
+  max-width: 560px;
+  color: #003f98;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  padding: 9px 0;
+  background: #fff;
+  box-shadow: none;
+  position: relative;
+  border-radius: 10px;
+  margin: 0 auto;
+  border: 3px solid #0d5bab;
+  @media #{$sp} {
+    font-size: 14px;
+    padding: 5px;
+    max-width: 85%;
+    border: 2px solid #0d5bab;
+  }
+  &:hover {
+    opacity: 1;
+    background: #fff;
+    color: #0d5bab;
+    &::before {
+      border-top: solid 3px #0d5bab;
+      border-right: solid 3px #0d5bab;
+    }
+  }
+  // サムネ付きボタン
+  &.thumb {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: -50px;
+      margin: auto;
+      width: 126px;
+      height: 88px;
+      background: url("../img/common/img-thumb01.png") 50% / contain no-repeat;
+      transition: all 0.3s;
+      @media #{$sp} {
+        left: -30px;
+        width: 90px;
+        height: 55px;
+      }
+    }
+    &:hover {
+      &::after {
+        width: 136px;
+        height: 98px;
+      }
+    }
+  }
+  // 小さいボタン
+  &.small {
+    max-width: 330px;
+    padding: 10px;
+    &:before {
+      width: 6px;
+      height: 6px;
+      border-top: solid 2px #0d5bab;
+      border-right: solid 2px #0d5bab;
+    }
+    &:hover {
+      &::before {
+        border-top: solid 2px #0d5bab;
+        border-right: solid 2px #0d5bab;
+      }
+    }
+  }
+  // 最小ボタン
+  &.tiny {
+    font-size: 13px;
+    width: 140px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.16);
+    &:before {
+      content: none;
+    }
+  }
+}
+
+// ボタン04
+.btn04 {
+  display: block;
+  max-width: 560px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  padding: 5px 35px;
+  background: #000;
+  box-shadow: none;
+  position: relative;
+  border-radius: 50px;
+  margin: 0 auto;
+  border: 3px solid #000;
+  @media #{$sp} {
+    font-size: 14px;
+    padding: 5px;
+    max-width: 85%;
+    border: 2px solid #000;
+  }
+  &:hover {
+  }
+  // サムネ付きボタン
+  &.thumb {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: -50px;
+      margin: auto;
+      width: 126px;
+      height: 88px;
+      background: url("../img/common/img-thumb01.png") 50% / contain no-repeat;
+      transition: all 0.3s;
+      @media #{$sp} {
+        left: -30px;
+        width: 90px;
+        height: 55px;
+      }
+    }
+    &:hover {
+      &::after {
+        width: 136px;
+        height: 98px;
+      }
+    }
+  }
+  // 小さいボタン
+  &.small {
+    max-width: 330px;
+    padding: 5px 35px;
+    &:before {
+      width: 6px;
+      height: 6px;
+      border-top: solid 2px #000;
+      border-right: solid 2px #000;
+    }
+    &:hover {
+      &::before {
+        border-top: solid 2px #000;
+        border-right: solid 2px #000;
+      }
+    }
+  }
+  // 最小ボタン
+  &.tiny {
+    font-size: 13px;
+    width: 140px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.16);
+    &:before {
+      content: none;
+    }
+  }
+}
+
+// ボタン05
+.btn05 {
+  max-width: 560px;
+  color: #111450;
+  font-size: 16px;
+  font-weight: 450;
+  text-align: center;
+  padding: 5px 35px;
+  background: #fff;
+  box-shadow: none;
+  position: relative;
+  border-radius: 50px;
+  margin: 0 auto;
+  border: 3px solid #111450;
+  @media #{$sp} {
+    font-size: 14px;
+    padding: 5px;
+    max-width: 85%;
+    border: 2px solid #000;
+  }
+  &:hover {
+  }
+  // サムネ付きボタン
+  &.thumb {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: -50px;
+      margin: auto;
+      width: 126px;
+      height: 88px;
+      background: url("../img/common/img-thumb01.png") 50% / contain no-repeat;
+      transition: all 0.3s;
+      @media #{$sp} {
+        left: -30px;
+        width: 90px;
+        height: 55px;
+      }
+    }
+    &:hover {
+      &::after {
+        width: 136px;
+        height: 98px;
+      }
+    }
+  }
+  // 小さいボタン
+  &.small {
+    padding: 9px 23px;
+
+    &:hover {
+      &::before {
+        border-top: solid 2px #000;
+        border-right: solid 2px #000;
+      }
+    }
+  }
+  // 最小ボタン
+  &.tiny {
+    font-size: 13px;
+    width: 140px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.16);
     &:before {
       content: none;
     }
@@ -276,7 +599,7 @@
         margin: auto;
         width: 0;
         height: 0;
-        border-color: #fff rgba(0,0,0,0) rgba(0,0,0,0);
+        border-color: #fff rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
         border-style: solid;
         border-width: 6px 6px 0;
         z-index: 2;
@@ -290,7 +613,7 @@
         margin: auto;
         width: 0;
         height: 0;
-        border-color: #f29600 rgba(0,0,0,0) rgba(0,0,0,0);
+        border-color: #f29600 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
         border-style: solid;
         border-width: 6px 6px 0;
         z-index: 1;
@@ -301,7 +624,7 @@
     margin-top: 5px;
     font-size: 13px;
     font-weight: bold;
-    color: #0D5BAB;
+    color: #0d5bab;
     @media #{$sp} {
       font-size: 12px;
     }
