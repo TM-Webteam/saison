@@ -60,6 +60,64 @@
   }
 }
 
+.anc01 {
+  &__box {
+
+    &.gap30 {
+      @media #{$sp} {
+        gap: 30px 15px;
+      }
+    }
+    li {
+      width: calc(33.33% - 30px);
+      font-size: 20px;
+      font-weight: bold;
+      @media #{$sp} {
+        width: calc(100% / 2 - 10px);
+        font-size: 14px;
+      }
+      a {
+        display: block;
+        color: #fff;
+        background-color: #111450;
+        text-align: center;
+        padding: 17px 0px 32px;
+        box-shadow: 0 7px 20px rgba(0,0,0,0.22);
+        border-width: 2px;
+        border: 3px solid #111450;
+        position: relative;
+
+        @media #{$sp} {
+          padding: 10px;
+          border: 2px solid #111450;
+        }
+        &::before {
+          content: "";
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: 15px;
+          margin: auto;
+          width: 5px;
+          height: 5px;
+          border: 2px solid;
+          border-color: #111450 #111450 #d9dfe4 #e6eaef;
+          transform: rotate(-45deg);
+          transition: all .3s;
+        }
+        &:hover {
+          opacity: 1;
+          color: #111450;
+          background: #fff;
+          &::before {
+            bottom: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+
 // 左に説明文・右に画像
 .sec01 {
   &__box {

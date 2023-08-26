@@ -27,36 +27,13 @@
   }
 
   .section-primary {
-    .anc {
+    .anc01 {
       background-color: #e1e1e1;
       padding: 0;
 
       .containers {
         padding: 15px 0;
-
-        .anc__box {
-          li {
-            width: calc(33.33% - 30px);
-            max-width: 252px;
-
-            a {
-              background-color: #111450;
-              border-color: #111450;
-              padding: 17px 0px 32px;
-              line-height: 25px;
-              border-width: 2px;
-
-              &:hover {
-                color: #fff;
-              }
-            }
-
-            a::before {
-              bottom: 15px;
-              border-color: #111450 #111450 #d9dfe4 #e6eaef;
-            }
-          }
-        }
+        background-color: #E1E1E1;
       }
     }
   }
