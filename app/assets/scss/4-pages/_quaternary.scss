@@ -494,11 +494,11 @@
                     .card__box-wrapper {
                       flex-wrap: nowrap;
 
-                      .card__box-credit-card {
+                      .credit-card02 {
                         max-width: 160px;
                         max-height: 101px;
 
-                        .card-img {
+                        .credit-card-img {
                           width: 100%;
                           height: 100%;
                         }
@@ -661,7 +661,7 @@
       }
     }
 
-    .notification-terinary {
+    .notification-tertiary {
       .panel-05.panel-primary-type {
         .card-type4 {
           .card {
@@ -708,11 +708,11 @@
                             flex-wrap: nowrap;
                             margin-bottom: 20px;
 
-                            .card__box-credit-card {
+                            .credit-card02 {
                               max-width: 160px;
                               max-height: 101px;
 
-                              .card-img {
+                              .credit-card-img {
                                 width: 100%;
                                 height: 100%;
                               }
@@ -763,7 +763,7 @@
                                 text-align: center;
                               }
 
-                              .ttl-terinary {
+                              .ttl-tertiary {
                                 font-size: 20px;
                                 font-weight: 600;
 
@@ -949,7 +949,7 @@
     }
   }
 
-  .section-terinary {
+  .section-tertiary {
     padding: 70px 0;
     text-align: center;
     background-color: #fff;
@@ -1099,7 +1099,7 @@
       .qa-content {
         flex: 1;
 
-        .ttl-terinary {
+        .ttl-tertiary {
           text-align: left;
           font-size: 20px;
         }
