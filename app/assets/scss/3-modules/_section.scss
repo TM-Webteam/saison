@@ -62,7 +62,6 @@
 
 .anc01 {
   &__box {
-
     &.gap30 {
       @media #{$sp} {
         gap: 30px 15px;
@@ -82,7 +81,7 @@
         background-color: #111450;
         text-align: center;
         padding: 17px 0px 32px;
-        box-shadow: 0 7px 20px rgba(0,0,0,0.22);
+        box-shadow: 0 7px 20px rgba(0, 0, 0, 0.22);
         border-width: 2px;
         border: 3px solid #111450;
         position: relative;
@@ -103,7 +102,7 @@
           border: 2px solid;
           border-color: #111450 #111450 #d9dfe4 #e6eaef;
           transform: rotate(-45deg);
-          transition: all .3s;
+          transition: all 0.3s;
         }
         &:hover {
           opacity: 1;
@@ -1014,6 +1013,7 @@
     background-color: #e1e1e1;
     box-shadow: none;
     height: 100%;
+    text-align: left;
 
     .ttl-quaternary-container {
       display: flex;
@@ -1195,27 +1195,6 @@
           font-size: 20px;
           font-weight: 600;
           letter-spacing: 2px;
-        }
-
-        .price-list {
-          list-style-type: none;
-          padding-left: 0;
-        }
-
-        .price-list li {
-          text-align: left;
-          position: relative;
-          padding-left: 15px;
-          margin-bottom: 10px;
-        }
-
-        .price-list li::before {
-          content: "•";
-          position: absolute;
-          left: 0;
-          top: -9px;
-          font-size: 24px;
-          padding-right: 5px;
         }
       }
     }
@@ -1542,31 +1521,6 @@
               display: inline;
             }
           }
-
-          .sub-list {
-            margin-top: 23px;
-            list-style: none;
-            padding: 0;
-
-            li {
-              text-align: left;
-              font-size: 12px;
-              font-weight: 400;
-              max-width: 591px;
-              margin-left: 10px;
-              padding-left: 10px;
-              position: relative;
-            }
-
-            li::before {
-              content: "※";
-              margin-right: 5px;
-              position: absolute;
-              font-size: 12px;
-              left: -6px;
-              top: 0;
-            }
-          }
         }
       }
     }
@@ -1698,6 +1652,86 @@
 
     &:hover {
       color: #fff;
+    }
+  }
+}
+
+// カード型 type16
+.card-type16 {
+  width: calc(50% - 20px);
+  padding: 0;
+  background: #fff;
+
+  .card--ttl {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    border-bottom: 5px solid #707070;
+  }
+
+  .card-item-list {
+    padding: 0 10px;
+  }
+}
+
+// カード型 type17
+.card-type17 {
+  display: flex;
+
+  .card__left {
+    max-width: 197px;
+    background-color: #003f98;
+    display: flex;
+    align-items: center;
+    padding: 0 17px 0 20px;
+    color: white;
+    font-size: 20px;
+    text-align: left;
+    font-weight: bold;
+  }
+
+  .card__right {
+    background-color: #E9E9E9;
+    padding: 10px 34px 10px 30px;
+
+    .card-item-list {
+      .card-item02 {
+        padding: 30px 0;
+        display: flex;
+        flex-wrap: nowrap;
+        text-align: left;
+        border-bottom: 1px solid #707070;
+        align-items: center;
+
+        &:last-child {
+          border-bottom: 0;
+        }
+
+        .card__box-wrapper {
+          flex-wrap: nowrap;
+
+          .credit-card02 {
+            min-width: 213px;
+            max-height: 135px;
+          }
+
+          .card__box-title {
+            .ttl-quaternary {
+              margin-bottom: 10px;
+            }
+
+            .ttl-tertiary {
+              margin-bottom: 10px;
+            }
+          }
+        }
+
+        .btn06 {
+          min-width: 120px;
+        }
+      }
     }
   }
 }
@@ -2394,14 +2428,6 @@
         font-weight: 400;
         margin-bottom: 0;
       }
-
-      .cat {
-        background-color: #F29600;
-        padding: 30px 0;
-        width: 100%;
-        border: 0;
-        border-radius: 10px;
-      }
     }
   }
 
@@ -2434,5 +2460,54 @@
   .credit-card-img {
     width: 100%;
     height: 100%;
+  }
+}
+
+// Price-list
+.price-list {
+  list-style-type: none;
+  padding-left: 0;
+
+  li {
+    text-align: left;
+    position: relative;
+    padding-left: 15px;
+    margin-bottom: 10px;
+
+    &::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      top: -9px;
+      font-size: 24px;
+      padding-right: 5px;
+    }
+  }
+}
+
+// Sublist
+
+.sub-list {
+  margin-top: 23px;
+  list-style: none;
+  padding: 0;
+
+  li {
+    text-align: left;
+    font-size: 12px;
+    font-weight: 400;
+    max-width: 591px;
+    margin-left: 10px;
+    padding-left: 10px;
+    position: relative;
+  }
+
+  li::before {
+    content: "※";
+    margin-right: 5px;
+    position: absolute;
+    font-size: 12px;
+    left: -6px;
+    top: 0;
   }
 }

@@ -490,12 +490,13 @@
 
 // ボタン05
 .btn05 {
+  display: block;
   max-width: 560px;
   color: #111450;
-  font-size: 16px;
-  font-weight: 450;
+  font-size: 20px;
+  font-weight: bold;
   text-align: center;
-  padding: 5px 35px;
+  padding: 22px 0;
   background: #fff;
   box-shadow: none;
   position: relative;
@@ -538,6 +539,8 @@
   }
   // 小さいボタン
   &.small {
+    font-size: 16px;
+    display: inline-block;
     padding: 9px 23px;
 
     &:hover {
@@ -558,6 +561,18 @@
       content: none;
     }
   }
+}
+
+// ボタン06
+.btn06 {
+  background-color: #f29600;
+  padding: 30px 0;
+  width: 100%;
+  border: 0;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  font-weight: bold;
 }
 
 // 吹き出し付きボタン
