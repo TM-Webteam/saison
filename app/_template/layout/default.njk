@@ -5,7 +5,7 @@
 {# Custom head #}
 {%- block customHead %}
 {% endblock -%}
-
+<script src="/assets/js/all.min.js"></script>
 </head>
 <body class="{% if page %}{{ page }}{% endif %}">
   {% include 'partial/header.njk' %}
@@ -18,5 +18,5 @@
   {%- block customJs %}
   {% endblock -%}
 </body>
-<script src="/assets/js/all.min.js"></script>
+
 </html>
