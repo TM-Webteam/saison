@@ -4,7 +4,6 @@
   ----------------
 */
 footer {
-  max-width: 1440px;
   margin: auto;
 
   .primary-section {
@@ -63,7 +62,7 @@ footer {
       margin: 0;
 
       ul {
-        justify-content: space-between;
+        justify-content: center;
 
         li {
           text-align: center;
@@ -106,16 +105,23 @@ footer {
 
     .sec-news__box--item {
       margin-bottom: 10px;
+      flex-wrap: nowrap;
+      white-space: nowrap;
+
+      dt {
+        width: auto;
 
       img {
         width: 302px;
         height: 33px;
         max-width: unset;
       }
+      }
 
       .custom-list {
         list-style: none;
         padding: 0;
+        flex-wrap: nowrap;
 
         li {
           font-size: 14px;

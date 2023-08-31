@@ -6,7 +6,6 @@
 
 header {
   margin: auto;
-  max-width: 1440px;
   position: fixed;
   top: 0;
   left: 50%;
@@ -81,11 +80,16 @@ header {
       height: 80px;
       align-items: center;
       background-color: #fff;
+
+      .nav-list-logo {
+        max-width: 268px;
+      }
     }
 
     ul {
-      width: 50%;
+      width: 100%;
       margin: 0 auto;
+      flex-shrink: 0;
       li {
         a {
           padding: 10px 0;
