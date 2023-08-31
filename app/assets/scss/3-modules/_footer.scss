@@ -121,7 +121,7 @@ footer {
       .custom-list {
         list-style: none;
         padding: 0;
-        flex-wrap: nowrap;
+        justify-content: flex-start;
 
         li {
           font-size: 14px;
