@@ -454,6 +454,25 @@
   }
   &:hover {
   }
+  &.show-arrow {
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      right: 30px;
+      width: 8px;
+      height: 8px;
+      border-top: solid 3px #fff;
+      border-right: solid 3px #fff;
+      transform: rotate(45deg);
+      transition: all 0.3s;
+      @media #{$sp} {
+        right: 20px;
+      }
+    }
+  }
   // サムネ付きボタン
   &.thumb {
     &::after {
@@ -493,13 +512,13 @@
     &:before {
       width: 6px;
       height: 6px;
-      border-top: solid 2px #000;
-      border-right: solid 2px #000;
+      border-top: solid 2px #fff;
+      border-right: solid 2px #fff;
     }
     &:hover {
       &::before {
-        border-top: solid 2px #000;
-        border-right: solid 2px #000;
+        border-top: solid 2px #fff;
+        border-right: solid 2px #fff;
       }
     }
   }
