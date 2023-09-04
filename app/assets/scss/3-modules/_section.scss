@@ -1332,6 +1332,10 @@
     font-weight: 400;
     margin-bottom: 30px;
     letter-spacing: 1px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
   }
 }
 
