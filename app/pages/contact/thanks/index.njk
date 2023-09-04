@@ -1,0 +1,43 @@
+{% extends "layout/default.njk" %}
+
+{# Custom SEO tags, leave blank to apply the default values #}
+{% set title = "" %}
+{% set description = "" %}
+{% set keywords = "" %}
+
+{# Page settings and also body class #}
+{% set page = "" %}
+
+{# Custom tags before </head> #}
+{% block customHead %}{% endblock %}
+
+{# Custom tags before </body> #}
+{% block customJs %}{% endblock %}
+
+{# Main content #}
+{% block content %}
+
+<main class="contact-thanks-page">
+  <section class="section-welcome">
+    <div class="container-1200">
+      <h2 class="ttl-secondary">ご相談・お問い合わせありがとうございます。</h2>
+
+      <h3 class="ttl-tertiary"><strong>2営業日以内に</strong> <span>担当者より連絡させていただきます。 <br>
+        もうしばらくお待ちください。</span></h3>
+    </div>
+  </section>
+</main>
+
+<script>
+  $(".default_option").click(function () {
+    $(this).parent().toggleClass("active");
+  })
+
+  $(".select_ul li").click(function () {
+    var currentele = $(this).html();
+    $(".default_option li").html(currentele);
+    $(this).parents(".select_wrap").removeClass("active");
+  })
+</script>
+
+{% endblock %}
