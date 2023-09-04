@@ -53,14 +53,19 @@
         .card--content {
           padding: 25px 32px 30px;
 
-          .btn04 {
-            padding: 5px 20px;
-            font-size: 12px;
-            max-width: 220px;
-            line-height: 13px;
-            margin-right: auto;
-            margin-left: 0;
-            margin-bottom: 15px;
+          .card__header--btn {
+            text-align: left;
+
+            .btn04 {
+              padding: 5px 20px;
+              font-size: 12px;
+              line-height: 13px;
+              margin-right: auto;
+              margin-left: 0;
+              margin-bottom: 15px;
+              width: auto;
+              display: inline-block;
+            }
           }
 
           .ttl-quaternary {
