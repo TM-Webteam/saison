@@ -1,0 +1,126 @@
+{% extends "layout/default.njk" %}
+
+{# Custom SEO tags, leave blank to apply the default values #}
+{% set title = "" %}
+{% set description = "" %}
+{% set keywords = "" %}
+
+{# Page settings and also body class #}
+{% set page = "" %}
+
+{# Custom tags before </head> #}
+{% block customHead %}{% endblock %}
+
+{# Custom tags before </body> #}
+{% block customJs %}{% endblock %}
+
+{# Main content #}
+{% block content %}
+
+<main class="no38-page">
+  <section class="section-welcome">
+    <div class="container-1200">
+      <h2 class="ttl-secondary">ご相談・お問い合わせ</h2>
+    </div>
+  </section>
+
+  <section class="section-primary">
+    <div class="container-1200">
+      <div class="des-icon-list flex gap60">
+        <div class="des-icon flex gap20">
+          <div class="des-icon-img">
+            <img src="/assets/img/common/img-account-01.png" alt="">
+          </div>
+
+          <div class="des-icon-content">
+            <h5 class="ttl-quinary">
+              株式会社サカイ引越センター
+            </h5>
+
+            <h6 class="ttl-senary">管理部　次長　清水幸治　様 <br>管理部　川出彩香　様</h6>
+          </div>
+        </div>
+
+        <div class="des-icon flex gap20">
+          <div class="des-icon-img">
+            <img src="/assets/img/common/img-bag-02.png" alt="">
+          </div>
+
+          <div class="des-icon-content">
+            <h5 class="ttl-quinary">
+              引越運送、引越付帯サービス業務
+            </h5>
+          </div>
+        </div>
+      </div>
+
+      <ul class="question-list">
+        <li class="question-item">
+          <h3 class="ttl-tertiary">Q1.弊社商品の導入前に抱えていた課題についてお聞かせください。</h3>
+
+          <div class="question-content">
+            <p>以前からETCカードは利用はしていましたが、実際利用したETCカードの使用実績は報告書から集計を手作業で作成しており、毎月の事務処理や経費計算処理にもにかなりの手間と時間がかかっていました。</p>
+          </div>
+        </li>
+
+        <li class="question-item">
+          <h3 class="ttl-tertiary">Q2.ご導入いただいたポイント（またはきっかけなど）をお聞かせください。</h3>
+
+          <div class="question-content flex gap30">
+            <div class="question-img">
+              <img src="/assets/img/common/img-question-01.png" alt="">
+            </div>
+
+            <div class="question-txt">
+              <p>クレディセゾンの営業担当者より使用実績のデータ化についての説明を聞き、経費計算処理および事務処理の効率化が図れると考えたため導入をしようと思いました。<br> <br>
+                また、カード券面自体に自社の管理区分である文字が印字することが可能と聞き、当社の管理上でも業務効率化の向上がはかれると考えました。
+              </p>
+            </div>
+          </div>
+        </li>
+
+        <li class="question-item">
+          <h3 class="ttl-tertiary">Q3.弊社商品を導入後、貴社が抱えていた課題がどのように解決されたかお聞かせください。</h3>
+
+          <div class="question-content">
+            <p>集計業務が手作業からデータでの処理が可能になり、効率化が大幅に改善されました。</p>
+          </div>
+        </li>
+      </ul>
+
+      <div class="section-card">
+        <h6 class="ttl-senary">SERVICES USED</h6>
+
+        <h2 class="ttl-secondary">本事例でご利用されたサービス</h2>
+
+        <div class="card-item flex">
+          <div class="card-item--img">
+            <img src="/assets/img/credit_cards/plastic-mockup.png" alt="">
+          </div>
+
+          <div class="card-item--content">
+            <h3 class="ttl-tertiary">有料道路の料金所をキャッシュレスで通過できるETCカード</h3>
+
+            <p>お手持ちのUC法人・コーポレートカードへの追加や、<br>
+              法人様向けにETCカードだけをご用意することも可能です。
+            </p>
+
+            <a href="#" class="btn05 small">詳細はこちら</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="breadcrumb">
+    <ul class="flex">
+      <li>
+        <a href="#">TOP</a>
+      </li>
+      <li>
+        <a href="#">資金繰りを改善したい</a>
+      </li>
+    </ul>
+  </section>
+</main>
+{% endblock %}
