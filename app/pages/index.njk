@@ -1,4 +1,4 @@
-{% extends "layout/default.njk" %}
+{% extends "layout/top.njk" %}
 
 {# Custom SEO tags, leave blank to apply the default values #}
 {% set title = "" %}
@@ -18,383 +18,500 @@
 {% block content %}
 
 <main class="home-page">
-  <section class="welcome-section">
-    <div class="container-1200">
-      <h3 class="ttl-tertiary">法人・個人事業主のお客様向け</h3>
-
-      <h2 class="ttl-primary">クレディセゾンの決済・ビジネスソリューション</h2>
-
-      <h4 class="ttl-quaternary">クレディセゾンは、法人・個人事業主の方向けに、カード会社の枠を超えた
-        <br>
-        ビジネス成長につながる幅広いソリューションをご提供しています。
-      </h4>
-      <div class="anc">
-        <div class="containers">
-          <ul class="flex jcC gap30 inherit anc__box">
-            <li>
-              <a href="#">
-                <span>
-                  中小企業様向け
-                  <br>
-                  サービスはこちら
-                </span>
-              </a>
-            </li>
-
-            <li>
-              <a href="#">
-                <span>個人事業主様向け
-                  <br>
-                  サービスはこちら</span></a>
-            </li>
-          </ul>
-        </div>
+  <section class="section-welcome">
+    <h3 class="ttl-tertiary">法人・個人事業主のお客様向け</h3>
+    <h2 class="ttl-primary">クレディセゾンの <br />決済・ビジネスソリューション</h2>
+    <h4 class="ttl-quaternary">クレディセゾンは、法人・個人事業主の方向けに、カード会社の枠を超えた
+      <br>
+      ビジネス成長につながる幅広いソリューションをご提供しています。
+    </h4>
+    <div class="anc">
+      <div class="containers">
+        <ul class="flex jcC gap30 inherit anc__box">
+          <li>
+            <a href="#">
+              <div class="anc__box__img">
+                <img src="/assets/img/common/smes.png" alt="For SMEs">
+              </div>
+              <div class="anc__box__content">
+                <span class="font-20px">中小企業様向け</span>
+                <span class="font-16px">サービスはこちら</span>
+              </div>
+              <div class="anc__box__svg">
+                <svg xmlns="http://www.w3.org/2000/svg" width="15.848" height="15.848" viewBox="0 0 15.848 15.848">
+                  <path id="Path_1214" data-name="Path 1214" d="M9.706,0V9.706H0"
+                    transform="translate(0 7.924) rotate(-45)" fill="none" stroke="#0497b5" stroke-width="3" />
+                </svg>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="anc__box__img">
+                <img src="/assets/img/common/sole_proprietors.png" alt="For Sole Proprietors">
+              </div>
+              <div class="anc__box__content">
+                <span class="font-20px">個人事業主様向け</span>
+                <span class="font-16px">サービスはこちら</span>
+              </div>
+              <div class="anc__box__svg">
+                <svg xmlns="http://www.w3.org/2000/svg" width="15.848" height="15.848" viewBox="0 0 15.848 15.848">
+                  <path id="Path_1214" data-name="Path 1214" d="M9.706,0V9.706H0"
+                    transform="translate(0 7.924) rotate(-45)" fill="none" stroke="#0497b5" stroke-width="3" />
+                </svg>
+              </div>
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
   </section>
 
   <section class="secondary-section">
-    <div class="container-1200">
-      <h2 class="ttl-primary">おすすめサービス</h2>
-
-      <div class="anc">
-        <div class="containers">
-          <ul class="flex jcC gap30 inherit anc__box carousel">
-            <li class="carousel-item">
-              <a href="#">
-                <span>
-                  おすすめサービス
-                </span>
-              </a>
-            </li>
-
-            <li class="carousel-item">
-              <a href="#">
-                <span>おすすめサービス</span></a>
-            </li>
-
-            <li class="carousel-item">
-              <a href="#">
-                <span>おすすめサービス</span></a>
-            </li>
-
-            <li class="carousel-item">
-              <a href="#">
-                <span>おすすめサービス</span></a>
-            </li>
-
-            <li class="carousel-item">
-              <a href="#">
-                <span>おすすめサービス</span></a>
-            </li>
-          </ul>
-        </div>
+    <div class="ttl-notice">RECOMMEND</div>
+    <h2 class="ttl-primary">おすすめサービス</h2>
+    <div class="anc container">
+      <div class="containers">
+        <ul class="flex jcC gap30 inherit anc__box carousel">
+          <li class="carousel-item">
+            <a href="#">
+              <img src="/assets/img/common/carousel_recommend_1.png" alt="Recommend carousel image 1">
+            </a>
+          </li>
+          <li class="carousel-item">
+            <a href="#">
+              <img src="/assets/img/common/carousel_recommend_2.png" alt="Recommend carousel image 2">
+            </a>
+          </li>
+          <li class="carousel-item">
+            <a href="#">
+              <img src="/assets/img/common/carousel_recommend_3.png" alt="Recommend carousel image 3">
+            </a>
+          </li>
+          <li class="carousel-item">
+            <a href="#">
+              <img src="/assets/img/common/carousel_recommend_4.png" alt="Recommend carousel image 4">
+            </a>
+          </li>
+          <li class="carousel-item">
+            <a href="#">
+              <img src="/assets/img/common/carousel_recommend_5.png" alt="Recommend carousel image 5">
+            </a>
+          </li>
+          <li class="carousel-item">
+            <a href="#">
+              <img src="/assets/img/common/carousel_recommend_6.png" alt="Recommend carousel image 6">
+            </a>
+          </li>
+          <li class="carousel-item">
+            <a href="#">
+              <img src="/assets/img/common/carousel_recommend_7.png" alt="Recommend carousel image 7">
+            </a>
+          </li>
+          <li class="carousel-item">
+            <a href="#">
+              <img src="/assets/img/common/carousel_recommend_8.png" alt="Recommend carousel image 8">
+            </a>
+          </li>
+          <li class="carousel-item">
+            <a href="#">
+              <img src="/assets/img/common/carousel_recommend_9.png" alt="Recommend carousel image 9">
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
   </section>
 
   <section class="tertiary-section">
-    <div class="container-1200">
-      <h2 class="ttl-primary">目的から探す</h2>
-
-      <h4 class="ttl-quaternary">お客様のニーズや目的に合わせて様々なソリューションをご提供しています。</h4>
-
-      <div class="anc">
-        <div class="containers">
-          <ul class="flex jcC gap30 inherit anc__box">
-            <li>
-              <a href="#">
-                <span>
-                  ビジネスカードを作りたい
-                </span>
-              </a>
-            </li>
-
-            <li>
-              <a href="#">
-                <span>経費を削減したい</span></a>
-            </li>
-
-            <li>
-              <a href="#">
-                <span>業務を効率化したい</span></a>
-            </li>
-
-            <li>
-              <a href="#">
-                <span>資金繰りを改善したい</span></a>
-            </li>
-
-            <li>
-              <a href="#">
-                <span>資金繰りを改善したい</span></a>
-            </li>
-          </ul>
-        </div>
+    <div class="ttl-notice">SEARCH</div>
+    <h2 class="ttl-primary">目的から探す</h2>
+    <h4 class="ttl-quaternary">お客様のニーズや目的に合わせて様々なソリューションをご提供しています。</h4>
+    <div class="anc container">
+      <div class="containers">
+        <ul class="flex gap30 inherit anc__box">
+          <li>
+            <a href="#" class="anc__box_image_1">
+              <span>ビジネスカードを作りたい</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="anc__box_image_2">
+              <span>経費を削減したい</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="anc__box_image_3">
+              <span>業務を効率化したい</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="anc__box_image_4">
+              <span>資金繰りを改善したい</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="anc__box_image_5">
+              <span>資金繰りを改善したい</span>
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
   </section>
 
   <section class="quaternary-section">
-    <div class="container-1200">
-
-      <h2 class="ttl-secondary">さまざまなニーズや課題を解決しています</h2>
-
-      <div class="grid">
-        <div class="containers">
-          <div class="flex gap30 grid">
-            <div class="grid__card">
-              <h4 class="ttl-quaternary">
-                ETCカードの導入で毎月の経費計算処理の手間と時間が削減！
-              </h4>
-
-              <div class="grid__card--img"><img src="/assets/img/common/img01.jpg" alt=""></div>
-
-              <h5 class="ttl-quinary">
-                株式会社サカイ引越センター 様
-              </h5>
-
-              <h6 class="ttl-senary">ETCカードの使用実績は報告書から集計を手作業で作成しており、毎月の事務処理や経費計算処理にもにかなりの手間と時間が・・</h6>
-
-              <h5 class="ttl-quinary sub-title">
-                利用サービス
-              </h5>
-
-              <div class="flex fS grid__card--cat">
-                <span class="cat">カテゴリ名</span>
-              </div>
-
-              <a href="#" class="btn01">導入事例を見る</a>
+    <div class="ttl-notice">WORKS</div>
+    <h2 class="ttl-secondary">さまざまなニーズや課題を解決しています</h2>
+    <div class="grid container">
+      <div class="containers">
+        <div class="flex jcC gap30">
+          <div class="grid__card">
+            <h4 class="ttl-quaternary">
+              ETCカードの導入で毎月の経費計算処理の手間と時間が削減！
+            </h4>
+            <div class="grid__card--img"><img src="/assets/img/common/work_image.png" alt="work image"></div>
+            <div class="grid__card--logo"><img src="/assets/img/common/sakai_company.png" alt="sakai company logo">
             </div>
-
-            <div class="grid__card">
-              <h4 class="ttl-quaternary">
-                ETCカードの導入で毎月の経費計算処理の手間と時間が削減！
-              </h4>
-
-              <div class="grid__card--img"><img src="/assets/img/common/img01.jpg" alt=""></div>
-
-              <h5 class="ttl-quinary">
-                株式会社サカイ引越センター 様
-              </h5>
-
-              <h6 class="ttl-senary">ETCカードの使用実績は報告書から集計を手作業で作成しており、毎月の事務処理や経費計算処理にもにかなりの手間と時間が・・</h6>
-
-              <h5 class="ttl-quinary sub-title">
-                利用サービス
-              </h5>
-
-              <div class="flex fS grid__card--cat">
-                <span class="cat">UCエクスプレスゴールドカード</span>
-                <span class="cat">パーチェシングカード</span>
-              </div>
-
-              <a href="#" class="btn01">導入事例を見る</a>
+            <h5 class="ttl-quinary">
+              株式会社サカイ引越センター 様
+            </h5>
+            <h6 class="ttl-senary">ETCカードの使用実績は報告書から集計を手作業で作成しており、毎月の事務処理や経費計算処理にもにかなりの手間と時間が・・</h6>
+            <h5 class="grid__card--footer">
+              <span class="sub-title">利用サービス</span>
+            </h5>
+            <div class="flex fS grid__card--cat">
+              <span class="cat">ETCカード</span>
             </div>
-
-            <div class="grid__card">
-              <h4 class="ttl-quaternary">
-                ETCカードの導入で毎月の経費計算処理の手間と時間が削減！
-              </h4>
-
-              <div class="grid__card--img"><img src="/assets/img/common/img01.jpg" alt=""></div>
-
-              <h5 class="ttl-quinary">
-                株式会社サカイ引越センター 様
-              </h5>
-
-              <h6 class="ttl-senary">ETCカードの使用実績は報告書から集計を手作業で作成しており、毎月の事務処理や経費計算処理にもにかなりの手間と時間が・・</h6>
-
-              <h5 class="ttl-quinary sub-title">
-                利用サービス
-              </h5>
-
-              <div class="flex fS grid__card--cat">
-                <span class="cat">UCエクスプレスゴールドカード</span>
-                <span class="cat">パーチェシングカード</span>
-              </div>
-
-              <a href="#" class="btn01">導入事例を見る</a>
+            <a href="#" class="btn01">
+              導入事例を見る
+              <svg xmlns="http://www.w3.org/2000/svg" width="15.095" height="15.095" viewBox="0 0 15.095 15.095">
+                <path id="Path_44704" data-name="Path 44704" d="M9.674,0V9.674H0"
+                  transform="translate(0 7.548) rotate(-45)" fill="none" stroke="#fff" stroke-width="2" />
+              </svg>
+            </a>
+          </div>
+          <div class="grid__card">
+            <h4 class="ttl-quaternary">
+              総務部での現金・新幹線回数券管理がなくなった！
+            </h4>
+            <div class="grid__card--img"><img src="/assets/img/common/work_image.png" alt="work image"></div>
+            <div class="grid__card--logo"><img src="/assets/img/common/topack_company.png" alt="sakai company logo">
             </div>
+            <h5 class="ttl-quinary">
+              株式会社トパック　様
+            </h5>
+            <h6 class="ttl-senary">当社では従業員の出張が多く、交通費や宿泊費の仮払いの為に現金管理を行っていました。・・・</h6>
+            <h5 class="grid__card--footer">
+              <span class="sub-title">活用ソリューション</span>
+            </h5>
+            <div class="flex fS grid__card--cat">
+              <span class="cat">UCエクスプレスゴールドカード</span>
+              <span class="cat">パーチェシングカード</span>
+            </div>
+            <a href="#" class="btn01">
+              導入事例を見る
+              <svg xmlns="http://www.w3.org/2000/svg" width="15.095" height="15.095" viewBox="0 0 15.095 15.095">
+                <path id="Path_44704" data-name="Path 44704" d="M9.674,0V9.674H0"
+                  transform="translate(0 7.548) rotate(-45)" fill="none" stroke="#fff" stroke-width="2" />
+              </svg>
+            </a>
+          </div>
+          <div class="grid__card">
+            <h4 class="ttl-quaternary">
+              コーポレートカードの導入で小口現金管理を廃止できた
+            </h4>
+            <div class="grid__card--img"><img src="/assets/img/common/work_image.png" alt="work image"></div>
+            <div class="grid__card--logo"><img src="/assets/img/common/taiyo_company.png" alt="sakai company logo">
+            </div>
+            <h5 class="ttl-quinary">
+              太洋ヒロセ株式会社　様
+            </h5>
+            <h6 class="ttl-senary">従業員の出張や経費精算の為の立替払いや仮払いをなくし、小口現金処理を廃止したいと考えていました。</h6>
+            <h5 class="grid__card--footer">
+              <span class="sub-title">活用ソリューション</span>
+            </h5>
+            <div class="flex fS grid__card--cat">
+              <span class="cat">UCエクスプレスゴールドカード</span>
+              <span class="cat">パーチェシングカード</span>
+            </div>
+            <a href="#" class="btn01">
+              導入事例を見る
+              <svg xmlns="http://www.w3.org/2000/svg" width="15.095" height="15.095" viewBox="0 0 15.095 15.095">
+                <path id="Path_44704" data-name="Path 44704" d="M9.674,0V9.674H0"
+                  transform="translate(0 7.548) rotate(-45)" fill="none" stroke="#fff" stroke-width="2" />
+              </svg>
+            </a>
           </div>
         </div>
       </div>
-
-      <a href="#" class="btn01">
-        <h4 class="ttl-quaternary">導入事例を見る</h4>
-      </a>
     </div>
+    <a href="#" class="blue__outline__button">
+      <span class="blue__outline__button__tittle">
+        導入事例一覧を見る
+      </span>
+    </a>
   </section>
 
   <section class="quinary-section">
-    <div class="container-1200">
-      <h3 class="ttl-tertiary">お役立ち資料（無料）ダウンロード</h3>
-
-      <h4 class="ttl-quaternary">中小企業の経営者様や個人事業主のよくある課題に対して解決のヒントになる資料を無料でご提供しています。是非ご活用下さい。</h4>
-
-      <div class="grid">
-        <div class="containers">
-          <div class="flex gap30 grid">
-            <div class="grid__card">
-              <div class="grid__card--img">
-                <img class="primary-img" src="/assets/img/common/img01.jpg" alt="">
-                <img class="secondary-img" src="/assets/img/common/img01.jpg" alt="">
-              </div>
-
-              <h5 class="ttl-quinary">
-                資料タイトルが入ります。
-              </h5>
-
-              <h6 class="ttl-senary">資料の紹介文が入ります。資料の紹介文が入ります。資料の紹介文が入ります。資料</h6>
-
-              <div>
-                <a href="#" class="btn01">資料をダウンロード</a>
-              </div>
+    <div class="ttl-notice">DOCUMENTS</div>
+    <h3 class="ttl-tertiary">お役立ち資料（無料）ダウンロード</h3>
+    <h4 class="ttl-quaternary">中小企業の経営者様や個人事業主のよくある課題に対して<br />解決のヒントになる資料を無料でご提供しています。是非ご活用下さい。</h4>
+    <div class="grid container">
+      <div class="containers">
+        <div class="flex gap30 grid">
+          <div class="grid__card">
+            <div class="grid__card--img">
+              <img class="primary-img" src="/assets/img/common/documents_image.png" alt="Documents image 1">
+              <img class="secondary-img" src="/assets/img/common/documents_image.png" alt="Documents image 2">
             </div>
-
-            <div class="grid__card">
-              <div class="grid__card--img">
-                <img class="primary-img" src="/assets/img/common/img01.jpg" alt="">
-                <img class="secondary-img" src="/assets/img/common/img01.jpg" alt="">
-              </div>
-
-              <h5 class="ttl-quinary">
-                資料タイトルが入ります。
-              </h5>
-
-              <h6 class="ttl-senary">資料の紹介文が入ります。資料の紹介文が入ります。資料の紹介文が入ります。資料</h6>
-
-              <div>
-                <a href="#" class="btn01">資料をダウンロード</a>
-              </div>
+            <h5 class="ttl-quinary">
+              資料タイトルが入ります。
+            </h5>
+            <h6 class="ttl-senary">資料の紹介文が入ります。資料の紹介文が入ります。資料の紹介文が入ります。資料</h6>
+            <div class="quinary-btn">
+              <a href="#" class="btn01">資料をダウンロード</a>
             </div>
+          </div>
 
-            <div class="grid__card">
-              <div class="grid__card--img">
-                <img class="primary-img" src="/assets/img/common/img01.jpg" alt="">
-                <img class="secondary-img" src="/assets/img/common/img01.jpg" alt="">
-              </div>
+          <div class="grid__card">
+            <div class="grid__card--img">
+              <img class="primary-img" src="/assets/img/common/documents_image.png" alt="Documents image 1">
+              <img class="secondary-img" src="/assets/img/common/documents_image.png" alt="Documents image 2">
+            </div>
+            <h5 class="ttl-quinary">
+              資料タイトルが入ります。
+            </h5>
+            <h6 class="ttl-senary">資料の紹介文が入ります。資料の紹介文が入ります。資料の紹介文が入ります。資料</h6>
+            <div class="quinary-btn">
+              <a href="#" class="btn01">資料をダウンロード</a>
+            </div>
+          </div>
 
-              <h5 class="ttl-quinary">
-                資料タイトルが入ります。
-              </h5>
-
-              <h6 class="ttl-senary">資料の紹介文が入ります。資料の紹介文が入ります。資料の紹介文が入ります。資料</h6>
-
-              <div>
-                <a href="#" class="btn01">資料をダウンロード</a>
-              </div>
+          <div class="grid__card">
+            <div class="grid__card--img">
+              <img class="primary-img" src="/assets/img/common/documents_image.png" alt="Documents image 1">
+              <img class="secondary-img" src="/assets/img/common/documents_image.png" alt="Documents image 2">
+            </div>
+            <h5 class="ttl-quinary">
+              資料タイトルが入ります。
+            </h5>
+            <h6 class="ttl-senary">資料の紹介文が入ります。資料の紹介文が入ります。資料の紹介文が入ります。資料</h6>
+            <div class="quinary-btn">
+              <a href="#" class="btn01">資料をダウンロード</a>
             </div>
           </div>
         </div>
       </div>
-
-      <a href="#" class="btn01">
-        <h4 class="ttl-quaternary">お役立ち資料一覧を見る</h4>
-      </a>
     </div>
+
+    <a href="#" class="blue__outline__button">
+      <span class="blue__outline__button__tittle">
+        お役立ち資料一覧を見る
+      </span>
+    </a>
   </section>
 
   <section class="senary-section">
-    <div class="container-1200"></div>
+    <div class="ttl-notice">INFORMATION</div>
+    <h3 class="ttl-tertiary">セミナー・イベント情報</h3>
+    <div class="sec-news container">
+      <div class="containers">
+        <div class="flex nowrap gap30">
+          <div href="#" class="sec-news__box">
+            <div class="sec-news__box--info">
+              <dl class="flex aiC gap12 sec-news__box--item-primary">
+                <dt class="flex aiC gap20 sp-fS">
+                  <time class="time">2022.9.20</time>
+                </dt>
+                <h4 class="black__pill__button">お知らせ</h4>
+              </dl>
+            </div>
+            <h2 class="ttl-tertiary">タイトルが入ります。タイトルが入ります。</h2>
+            <dl class="sec-news__box--item-secondary">
+              <dt class="core flex-start sp-fS">
+                <span>
+                  <svg id="Component_35_1" data-name="Component 35 – 1" xmlns="http://www.w3.org/2000/svg"
+                    width="13.738" height="13" viewBox="0 0 13.738 13">
+                    <circle id="Ellipse_136" data-name="Ellipse 136" cx="6.5" cy="6.5" r="6.5" fill="#0497b5" />
+                    <path id="Path_44707" data-name="Path 44707"
+                      d="M124.662,86.317l-1.581.895-3.6,2.034-1.648-.774-1.414-.666,0,0,0,0,3.063,4.553,3.6-3.495,1.581-1.536,1.277-1.24,1.218-1.18-.007,0,.006-.006Z"
+                      transform="translate(-113.418 -82.645)" fill="#fff" />
+                  </svg>
+                  開催日時
+                </span>
+                <span>
+                  <svg id="Component_35_1" data-name="Component 35 – 1" xmlns="http://www.w3.org/2000/svg"
+                    width="13.738" height="13" viewBox="0 0 13.738 13">
+                    <circle id="Ellipse_136" data-name="Ellipse 136" cx="6.5" cy="6.5" r="6.5" fill="#0497b5" />
+                    <path id="Path_44707" data-name="Path 44707"
+                      d="M124.662,86.317l-1.581.895-3.6,2.034-1.648-.774-1.414-.666,0,0,0,0,3.063,4.553,3.6-3.495,1.581-1.536,1.277-1.24,1.218-1.18-.007,0,.006-.006Z"
+                      transform="translate(-113.418 -82.645)" fill="#fff" />
+                  </svg>
+                  主催
+                </span>
+                <span>
+                  <svg id="Component_35_1" data-name="Component 35 – 1" xmlns="http://www.w3.org/2000/svg"
+                    width="13.738" height="13" viewBox="0 0 13.738 13">
+                    <circle id="Ellipse_136" data-name="Ellipse 136" cx="6.5" cy="6.5" r="6.5" fill="#0497b5" />
+                    <path id="Path_44707" data-name="Path 44707"
+                      d="M124.662,86.317l-1.581.895-3.6,2.034-1.648-.774-1.414-.666,0,0,0,0,3.063,4.553,3.6-3.495,1.581-1.536,1.277-1.24,1.218-1.18-.007,0,.006-.006Z"
+                      transform="translate(-113.418 -82.645)" fill="#fff" />
+                  </svg>
+                  対象
+                </span>
+              </dt>
+              <dt class="core flex-start gap30 sp-fS">
+                <h4 class="ttl-quaternary">2022年9月22日　10:00～11:00</h4>
+                <h4 class="ttl-quaternary">株式会社〇〇〇〇</h4>
+                <h4 class="ttl-quaternary">○○○○○のニーズ・課題をお持ちの〇〇</h4>
+              </dt>
+            </dl>
+          </div>
+          <div href="#" class="sec-news__box">
+            <div class="sec-news__box--info">
+              <dl class="flex aiC gap12 sec-news__box--item-primary">
+                <dt class="flex aiC gap20 sp-fS">
+                  <time class="time">2022.9.20</time>
+                </dt>
+                <h4 class="black__pill__button">お知らせ</h4>
+              </dl>
+            </div>
+            <h2 class="ttl-tertiary">タイトルが入ります。タイトルが入ります。</h2>
+            <dl class="sec-news__box--item-secondary">
+              <dt class="core flex-start sp-fS">
+                <span>
+                  <svg id="Component_35_1" data-name="Component 35 – 1" xmlns="http://www.w3.org/2000/svg"
+                    width="13.738" height="13" viewBox="0 0 13.738 13">
+                    <circle id="Ellipse_136" data-name="Ellipse 136" cx="6.5" cy="6.5" r="6.5" fill="#0497b5" />
+                    <path id="Path_44707" data-name="Path 44707"
+                      d="M124.662,86.317l-1.581.895-3.6,2.034-1.648-.774-1.414-.666,0,0,0,0,3.063,4.553,3.6-3.495,1.581-1.536,1.277-1.24,1.218-1.18-.007,0,.006-.006Z"
+                      transform="translate(-113.418 -82.645)" fill="#fff" />
+                  </svg>
+                  開催日時
+                </span>
+                <span>
+                  <svg id="Component_35_1" data-name="Component 35 – 1" xmlns="http://www.w3.org/2000/svg"
+                    width="13.738" height="13" viewBox="0 0 13.738 13">
+                    <circle id="Ellipse_136" data-name="Ellipse 136" cx="6.5" cy="6.5" r="6.5" fill="#0497b5" />
+                    <path id="Path_44707" data-name="Path 44707"
+                      d="M124.662,86.317l-1.581.895-3.6,2.034-1.648-.774-1.414-.666,0,0,0,0,3.063,4.553,3.6-3.495,1.581-1.536,1.277-1.24,1.218-1.18-.007,0,.006-.006Z"
+                      transform="translate(-113.418 -82.645)" fill="#fff" />
+                  </svg>
+                  主催
+                </span>
+                <span>
+                  <svg id="Component_35_1" data-name="Component 35 – 1" xmlns="http://www.w3.org/2000/svg"
+                    width="13.738" height="13" viewBox="0 0 13.738 13">
+                    <circle id="Ellipse_136" data-name="Ellipse 136" cx="6.5" cy="6.5" r="6.5" fill="#0497b5" />
+                    <path id="Path_44707" data-name="Path 44707"
+                      d="M124.662,86.317l-1.581.895-3.6,2.034-1.648-.774-1.414-.666,0,0,0,0,3.063,4.553,3.6-3.495,1.581-1.536,1.277-1.24,1.218-1.18-.007,0,.006-.006Z"
+                      transform="translate(-113.418 -82.645)" fill="#fff" />
+                  </svg>
+                  対象
+                </span>
+              </dt>
+              <dt class="core flex-start gap30 sp-fS">
+                <h4 class="ttl-quaternary">2022年9月22日　10:00～11:00</h4>
+                <h4 class="ttl-quaternary">株式会社〇〇〇〇</h4>
+                <h4 class="ttl-quaternary">○○○○○のニーズ・課題をお持ちの〇〇</h4>
+              </dt>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="#" class="blue__outline__button">
+      <span class="blue__outline__button__tittle">
+        セミナー・イベント情報一覧を見る
+      </span>
+    </a>
   </section>
 
   <section class="septenary-section">
-    <div class="container-1200">
-      <h3 class="ttl-tertiary">お知らせ</h3>
-
-      <div class="sec-news">
-        <div class="containers">
-          <a href="#" class="sec-news__box">
-            <dl class="flex aiC sec-news__box--item">
-              <dt class="flex aiC sp-fS">
-                <time class="time">2022.9.20</time>
-                <span class="cat">カテゴリ</span>
-              </dt>
-
-              <dd>お知らせタイトルが入ります。</dd>
-            </dl>
-          </a>
-
-          <a href="#" class="sec-news__box">
-            <dl class="flex aiC sec-news__box--item">
-              <dt class="flex aiC sp-fS">
-                <time class="time">2022.9.20</time>
-                <span class="cat">カテゴリ</span>
-              </dt>
-
-              <dd>お知らせタイトルが入ります。お知らせタイトルが入ります。お知らせタイトルが入</dd>
-            </dl>
-          </a>
-
-          <a href="#" class="sec-news__box">
-            <dl class="flex aiC sec-news__box--item">
-              <dt class="flex aiC sp-fS">
-                <time class="time">2022.9.20</time>
-                <span class="cat">カテゴリ</span>
-              </dt>
-
-              <dd>お知らせタイトルが入ります。お知らせタイトルが入ります。</dd>
-            </dl>
-          </a>
-
-          <a href="#" class="sec-news__box">
-            <dl class="flex aiC sec-news__box--item">
-              <dt class="flex aiC sp-fS">
-                <time class="time">2022.9.20</time>
-                <span class="cat">カテゴリ</span>
-              </dt>
-
-              <dd>お知らせタイトルが入ります。お知らせタイトルが入ります。お知らせタ</dd>
-            </dl>
-          </a>
-
-          <a href="#" class="sec-news__box">
-            <dl class="flex aiC sec-news__box--item">
-              <dt class="flex aiC sp-fS">
-                <time class="time">2022.9.20</time>
-                <span class="cat">カテゴリ</span>
-              </dt>
-
-              <dd>お知らせタイトルが入ります。お知らせタイトルが入ります。</dd>
-            </dl>
-          </a>
+    <div class="ttl-notice">NEWS</div>
+    <h3 class="ttl-tertiary">お知らせ</h3>
+    <div class="sec-news">
+      <div class="containers">
+        <div class="sec-news__box">
+          <dl class="flex aiC sec-news__box--item">
+            <dt class="flex aiC sp-fS">
+              <time class="time">2022.9.20</time>
+              <span class="black__pill__button">お知らせ</span>
+            </dt>
+            <dd>お知らせタイトルが入ります。</dd>
+          </dl>
+        </div>
+        <div class="sec-news__box">
+          <dl class="flex aiC sec-news__box--item">
+            <dt class="flex aiC sp-fS">
+              <time class="time">2022.9.20</time>
+              <span class="black__pill__button">セミナー</span>
+            </dt>
+            <dd>お知らせタイトルが入ります。お知らせタイトルが入ります。お知らせタイトルが入ります</dd>
+          </dl>
+        </div>
+        <div class="sec-news__box">
+          <dl class="flex aiC sec-news__box--item">
+            <dt class="flex aiC sp-fS">
+              <time class="time">2022.9.20</time>
+              <span class="black__pill__button">お知らせ</span>
+            </dt>
+            <dd>お知らせタイトルが入ります。お知らせタイトルが入ります。</dd>
+          </dl>
+        </div>
+        <div class="sec-news__box">
+          <dl class="flex aiC sec-news__box--item">
+            <dt class="flex aiC sp-fS">
+              <time class="time">2022.9.20</time>
+              <span class="black__pill__button">セミナー</span>
+            </dt>
+            <dd>お知らせタイトルが入ります。お知らせタイトルが入ります。お知らせタ</dd>
+          </dl>
+        </div>
+        <div class="sec-news__box">
+          <dl class="flex aiC sec-news__box--item">
+            <dt class="flex aiC sp-fS">
+              <time class="time">2022.9.20</time>
+              <span class="black__pill__button">お知らせ</span>
+            </dt>
+            <dd>お知らせタイトルが入ります。お知らせタイトルが入ります。</dd>
+          </dl>
         </div>
       </div>
-
-      <a href="#" class="btn01">
-        <h4 class="ttl-quaternary">お知らせ一覧を見る</h4>
-      </a>
     </div>
+    <a href="#" class="blue__outline__button">
+      <span class="blue__outline__button__tittle">
+        お知らせ一覧を見る
+      </span>
+    </a>
   </section>
 
   <section class="octonary-section">
-    <div class="container-1200">
-      <h3 class="ttl-tertiary">決済・ビジネスソリューションに関するお問合せ</h3>
-
-      <div class="useful-wp">
-        <div class="containers">
-          <div class="flex gap60">
-            <a href="#" class="card">
-              <summary class="card__box">
-                <div class="card__box--ttl">サービス資料ダウンロード</div>
-                <div class="card__box--txt">クレディセゾンのソリューションの詳細が分かる
-                  <br>
-                  サービス資料をダウンロードいただけます。
-                </div>
-                <div class="more bgY small">サービス資料ダウンロード</div>
-              </summary>
-            </a>
-            <a href="#" class="card">
-              <summary class="card__box">
-                <div class="card__box--ttl">サービス資料ダウンロード</div>
-                <div class="card__box--txt">クレディセゾンのソリューションの詳細が分かる
-                  <br>
-                  サービス資料をダウンロードいただけます。
-                </div>
-                <div class="more bgY small">サービス資料ダウンロード</div>
-              </summary>
-            </a>
+    <div class="ttl-notice">CONTACT</div>
+    <h3 class="ttl-tertiary">決済・ビジネスソリューションに関するお問合せ</h3>
+    <div class="useful-wp">
+      <div class="containers">
+        <div class="flex jcC gap60">
+          <div href="#" class="card">
+            <summary class="card__box">
+              <div class="card__box--ttl">サービス資料ダウンロードはこちら</div>
+              <div class="card__box--txt">クレディセゾンのソリューションの詳細が分かる 
+                <br>
+                サービス資料をダウンロードいただけます。
+              </div>
+              <div class="gradient__button"><a href="#">サービス資料ダウンロード</a></div>
+            </summary>
+          </div>
+          <div href="#" class="card">
+            <summary class="card__box">
+              <div class="card__box--ttl">ご相談・お問合せはこちら</div>
+              <div class="card__box--txt">各種ソリューションに関するお問合せは
+                <br>
+                サービス資料をダウンロードいただけます。
+              </div>
+              <div class="gradient__button"><a href="#">お気軽にお問い合わせください。</a></div>
+            </summary>
           </div>
         </div>
       </div>
@@ -406,10 +523,10 @@
   $(document).ready(function () {
     $(".carousel").slick({
       slidesToShow: 3,
-      slidesToScroll: 1,
-      dots: false,
-      prevArrow: '<button type="button" class="slick-prev">Previous</button>',
-      nextArrow: '<button type="button" class="slick-next">Next</button>',
+      slidesToScroll: 3,
+      dots: true,
+      prevArrow: '<button type="button" class="slick-prev"><svg xmlns="http://www.w3.org/2000/svg" width="15.095" height="15.095" viewBox="0 0 15.095 15.095"><path id="Path_44704" data-name="Path 44704" d="M9.674,9.674V0H0" transform="translate(8.255 14.388) rotate(-135)" fill="none" stroke="#fff" stroke-width="2"/></svg></button>',
+      nextArrow: '<button type="button" class="slick-next"><svg xmlns="http://www.w3.org/2000/svg" width="15.095" height="15.095" viewBox="0 0 15.095 15.095"><path id="Path_44704" data-name="Path 44704" d="M9.674,0V9.674H0" transform="translate(0 7.548) rotate(-45)" fill="none" stroke="#fff" stroke-width="2"/></svg></button>',
     });
   });
 </script>

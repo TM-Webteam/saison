@@ -59,10 +59,6 @@
   }
 }
 
-.ttl-quinary {
-
-}
-
 .lead {
 	font-size: 18px;
 	font-weight: 500;
@@ -79,4 +75,12 @@
 
 .note {
 	font-size: 12px;
+}
+
+.ttl-notice {
+	color: $blue-color;
+	font-size: 14px;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
 }
