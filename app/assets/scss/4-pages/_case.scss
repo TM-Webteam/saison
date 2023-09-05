@@ -1,0 +1,88 @@
+.case-page {
+  margin: auto;
+  padding: 140px 0 0px;
+
+  .section-welcome {
+    text-align: center;
+    padding: 140px 0;
+    background: url(../img/common/lower_visual.png) 50%/cover no-repeat;
+
+    .ttl-secondary {
+      font-size: 42px;
+      margin-bottom: 31px;
+      line-height: 1;
+    }
+
+    .ttl-quaternary {
+      font-size: 20px;
+      font-weight: 400;
+      margin-bottom: 0;
+    }
+  }
+
+  .section-primary {
+    text-align: center;
+    padding: 70px 0;
+    background-color: #fff;
+
+    .ttl-secondary {
+      font-size: 32px;
+      margin-bottom: 50px;
+    }
+
+    .card-list {
+      justify-content: flex-start;
+
+      .card-type10 {
+        width: calc(100% / 3 - 20px);
+        padding: 0;
+        box-shadow: 0 10px 20px rgba(0,0,0,.11);
+
+        .card--img {
+          position: relative;
+
+          .card__img--content {
+            color: #fff;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+          }
+        }
+
+        .card--content {
+          padding: 25px 32px 30px;
+
+          .card__header--btn {
+            text-align: left;
+
+            .black_pill_btn{
+              padding: 5px 20px;
+              font-size: 12px;
+              line-height: 13px;
+              margin-right: auto;
+              margin-left: 0;
+              margin-bottom: 15px;
+              width: auto;
+              display: inline-block;
+            }
+          }
+
+          .ttl-quaternary {
+            margin-bottom: 10px;
+          }
+
+          .ttl-quinary {
+            margin-bottom: 15px;
+            text-align: right;
+          }
+
+          .ttl-senary {
+            margin-bottom: 20px;
+          }
+
+        }
+      }
+    }
+  }
+}
