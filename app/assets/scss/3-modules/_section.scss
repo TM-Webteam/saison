@@ -229,7 +229,7 @@
           margin-bottom: 15px;
         }
       }
-      .btn01 {
+      .blue_more {
         margin: 0;
         max-width: 380px;
         font-size: 16px;
@@ -516,7 +516,7 @@
         margin-bottom: 15px;
       }
     }
-    .btn01 {
+    .blue_more {
       width: 70%;
       margin: 0 auto 15px;
       @media #{$sp} {
@@ -558,7 +558,7 @@
         font-weight: bold;
       }
     }
-    .btn01.small {
+    .blue_more.small {
       width: calc(100% / 3 - 20px);
       font-size: 16px;
       margin: 0;
@@ -714,7 +714,7 @@
           margin-bottom: 15px;
         }
       }
-      .btn01 {
+      .blue_more {
         margin: 0;
         max-width: 400px;
         font-size: 16px;
@@ -759,7 +759,7 @@
       }
     }
   }
-  .btn01 {
+  .blue_more {
     margin-top: 70px;
     @media #{$sp} {
       margin-top: 30px;
@@ -1332,6 +1332,10 @@
     font-weight: 400;
     margin-bottom: 30px;
     letter-spacing: 1px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
   }
 }
 
@@ -1674,7 +1678,7 @@
     }
   }
 
-  .btn01 {
+  .blue_more {
     background-color: #f29600;
     border-color: #f29600;
     padding: 21px 0;
@@ -1761,7 +1765,7 @@
           }
         }
 
-        .btn06 {
+        .orange_fill_btn {
           min-width: 120px;
         }
       }
@@ -1796,7 +1800,7 @@
 
 // カード型 type19
 .card-type19 {
-  padding:0 30px 30px;
+  padding: 0 30px 30px;
 
   dd {
     margin-bottom: 30px;
@@ -1820,7 +1824,7 @@
 
 // カード型 type20
 .card-type20 {
-  padding:0 30px 30px;
+  padding: 0 30px 30px;
 
   &__box {
     &--ttl {
@@ -1875,6 +1879,98 @@
       padding: 30px 0;
       border: 1px solid #707070;
       text-align: center;
+    }
+  }
+}
+
+// カード型 type22
+.card-type22 {
+  position: relative;
+  color: white;
+  background-image: url("/assets/img/common/contact_banner.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 70px 120px;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.55);
+  }
+  .ttl-notice {
+    position: relative;
+    color: $white-color;
+    z-index: 1;
+  }
+
+  .ttl-tertiary {
+    position: relative;
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 45px;
+    line-height: 51px;
+  }
+
+  .useful-wp {
+    position: relative;
+    margin-bottom: 0px;
+
+    .containers {
+      max-width: unset;
+      padding: 0;
+
+      .card {
+        max-width: 570px;
+
+        .card__box {
+          background-color: #fff;
+          padding: 40px 93px;
+
+          .card__box--ttl {
+            text-align: center;
+            color: #000000;
+            font-size: 22px;
+            margin-bottom: 20px;
+          }
+
+          .card__box--txt {
+            font-size: 16px;
+            font-weight: 400;
+            margin-bottom: 30px;
+            color: #000000;
+            text-align: center;
+          }
+
+          .more {
+            padding: 7px 0;
+            max-width: 287px;
+            background-color: #f29600;
+            border-color: #f29600;
+
+            &:hover {
+              color: white;
+
+              &::before {
+                color: white;
+              }
+            }
+          }
+        }
+
+        &:hover {
+          .more.bgY {
+            color: #fff;
+          }
+
+          .more.bgY:before {
+            border-top: 2px solid #fff;
+            border-right: 2px solid #fff;
+          }
+        }
+      }
     }
   }
 }
@@ -2016,7 +2112,7 @@
         text-align: center;
       }
     }
-    .btn01 {
+    .blue_more {
       margin: 0;
       @media #{$sp} {
         margin: 0 auto;
@@ -2057,7 +2153,7 @@
     &:hover {
       opacity: 1;
       box-shadow: 0 0 15px #0083d8;
-      .btn01 {
+      .blue_more {
         box-shadow: 0 0 15px #0083d8;
         border-radius: 10px;
       }
@@ -2079,7 +2175,7 @@
         text-align: center;
       }
     }
-    .btn01 {
+    .blue_more {
       margin: 0;
       @media #{$sp} {
         margin: 0 auto;
@@ -2098,7 +2194,7 @@
     }
     .ttl-primary {
     }
-    .btn01 {
+    .blue_more {
       margin: 0;
       @media #{$sp} {
         margin: 0 auto;
@@ -2392,7 +2488,7 @@
     .inquiry__box--btn {
       width: auto;
 
-      .btn01 {
+      .blue_more {
         padding: 5px 35px;
         background-color: #000;
         border-color: #000;
@@ -2405,7 +2501,7 @@
       }
 
       &:hover {
-        .btn01 {
+        .blue_more {
           color: #fff;
         }
       }
@@ -2500,7 +2596,7 @@
     .inquiry__box--btn {
       width: auto;
 
-      .btn01 {
+      .blue_more {
         padding: 5px 35px;
         background-color: #000;
         border-color: #000;
@@ -2513,7 +2609,7 @@
       }
 
       &:hover {
-        .btn01 {
+        .blue_more {
           color: #fff;
         }
       }
@@ -2737,7 +2833,7 @@
 .circle-list {
   padding: 30px;
   list-style-type: none;
-  background-color: #E1E1E1;
+  background-color: #e1e1e1;
 
   li {
     position: relative;
