@@ -650,6 +650,7 @@
   border-radius: 3px;
   align-items: center;
   margin: 0 auto;
+  position: relative;
   @media #{$sp} {
     font-size: 14px;
     padding: 13px;
@@ -721,7 +722,10 @@
   }
 
   svg {
-    margin-left: 15px;
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
   }
 }
 
