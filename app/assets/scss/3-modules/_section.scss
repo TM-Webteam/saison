@@ -1071,8 +1071,8 @@
     }
 
     .arrow-down {
-      width: 18px;
-      height: 19px;
+      width: 16px;
+      height: 16px;
       -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
       transform: rotate(45deg);
@@ -1214,6 +1214,7 @@
     color: #fff;
     font-size: 16px;
     margin-bottom: 30px;
+    font-weight: bold;
   }
 
   .card__box--ttl.card__box-ttl02 {
@@ -1760,6 +1761,31 @@
           min-width: 120px;
         }
       }
+    }
+  }
+}
+
+// カード型 type18
+.card-type18 {
+  .cat {
+    background-color: #000;
+    padding: 10px 0;
+    font-size: 16px;
+    margin: 0;
+  }
+
+  .card-body {
+    padding: 43px 30px 0 30px;
+    border: 1px solid #707070;
+
+    .sec__img {
+      max-width: 100px;
+      margin: auto;
+      margin-bottom: 30px;
+    }
+
+    p {
+      text-align: left;
     }
   }
 }
