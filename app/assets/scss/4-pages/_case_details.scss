@@ -1,0 +1,170 @@
+.case-details-page {
+  margin: auto;
+  padding: 140px 0 0px;
+
+  .section-welcome {
+    text-align: center;
+    padding: 140px 0;
+    background: url(../img/common/lower_visual.png) 50% / cover no-repeat;
+
+    .container-1200 {
+      align-items: center;
+
+      .section-welcome--img {
+        width: 257px;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .section-welcome--content {
+        width: calc(100% - 257px -60px);
+        text-align: left;
+
+        .ttl-secondary {
+          font-size: 42px;
+          margin-bottom: 28px;
+          line-height: 1.4;
+          text-align: left;
+        }
+
+        .ttl-tertiary {
+          margin-bottom: 21px;
+          font-size: 24px;
+          font-weight: bold;
+          line-height: 1;
+        }
+
+        .black_pill_btn {
+          display: inline-flex;
+          align-items: center;
+          padding: 8px 30px 8px 17px;
+          width: auto;
+
+          &.show-arrow {
+            &:before {
+              right: 12px;
+            }
+          }
+
+          span {
+            font-size: 11px;
+            font-weight: 400;
+            margin-right: 12px;
+          }
+
+          strong {
+            border-left: 2px solid #cccccc;
+            line-height: 14px;
+            padding-left: 12px;
+            padding-top: 2px;
+            padding-bottom: 2px;
+          }
+        }
+      }
+    }
+  }
+
+  .section-primary {
+    text-align: center;
+    padding: 70px 0;
+    background-color: #f5f5f5;
+
+    .des-icon-list {
+      justify-content: center;
+      margin-bottom: 50px;
+
+      .des-icon {
+        align-items: center;
+
+        .des-icon-img {
+          width: 100px;
+        }
+
+        .des-icon-content {
+          width: calc(100% - 100px - 20px);
+
+          .ttl-quinary {
+            margin-bottom: 10px;
+            font-weight: 600;
+          }
+
+          .ttl-senary {
+            text-align: left;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+
+    .question-list {
+      text-align: left;
+
+      .question-item {
+        padding: 70px 100px;
+        background-color: #fff;
+        margin-bottom: 50px;
+
+        .ttl-tertiary {
+          font-size: 26px;
+          margin-bottom: 20px;
+        }
+
+        .question-content {
+          .question-img {
+            width: calc(50% - 15px);
+          }
+
+          .question-txt {
+            width: calc(50% - 15px);
+          }
+        }
+
+        &:last-child {
+          margin-bottom: 70px;
+        }
+      }
+    }
+
+    .section-card {
+      .ttl-senary {
+        color: #0497b5;
+        font-size: 14px;
+        font-weight: bold;
+        margin-bottom: 14px;
+      }
+
+      .ttl-secondary {
+        font-size: 32px;
+        margin-bottom: 30px;
+      }
+
+      .card-item {
+        gap: 50px;
+        padding: 0 100px;
+        background-color: #fff;
+        align-items: center;
+        text-align: left;
+
+        .card-item--img {
+          width: 294px;
+        }
+
+        .card-item--content {
+          width: calc(100% - 50px -294px);
+
+          .ttl-tertiary {
+            font-size: 24px;
+            margin-bottom: 20px;
+          }
+
+          p {
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+  }
+}

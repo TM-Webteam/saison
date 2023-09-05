@@ -1,20 +1,33 @@
-<header>
-  <div class="in">
-    <div class="flex inherit">
-      <div class="in__logo"></div>
-      <nav class="in__nav pc-only">
-        <ul class="flex">
+<header class="top__header flex">
+  <div class="header__logo">
+    <a href="#"><img src="/assets/img/logo/header-nav-list-logo.png" /></a>
+  </div>
+  <div class="nav__list__container flex gap16">
+    <div class="nav__list__bar">
+      <nav class="nav__list__item pc-only">
+        <ul class="flex jcE gap7">
+          <li class="nav__list__item__button">
+            <a href="#" class="font-12px">セミナー・動画</a>
+          </li>
+          <li class="nav__list__item__button">
+            <a href="#" class="font-12px">お役立ち資料</a>
+          </li>
+        </ul>
+        <ul class="flex gap30">
           <li>
-            <a href="#">セミナー・動画</a>
+            <a href="#">クレディセゾンの強み</a>
           </li>
           <li>
-            <a href="#">お役立ち資料</a>
+            <a href="#">中小企業様向け</a>
           </li>
           <li>
-            <a href="#">お役立ちコラム</a>
+            <a href="#">個人事業主様向け</a>
           </li>
-          <li>
-            <a href="#">よくある質問</a>
+          <li class="nav__list__item__dropdown">
+            <a href="#">目的から探す</a>
+          </li>
+          <li class="nav__list__item__dropdown">
+            <a href="#">サポート情報</a>
           </li>
         </ul>
       </nav>
@@ -24,37 +37,8 @@
         <span></span>
       </div>
     </div>
-  </div>
-
-  {# this is for temporarily prevent all.min.js errors #}
-  <div class="show"></div>
-  <div class="hide"></div>
-  <div class="floating"></div>
-
-  <div class="nav-list pc-only">
-    <div class="nav-list-bar flex">
-      <div class="nav-list-logo">
-        <a href="#"><img src="/assets/img/logo/header-nav-list-logo.png"/>
-        </a>
-      </div>
-
-      <ul class="container-1200 gap30 flex">
-        <li>
-          <a href="#">クレディセゾンの強み中小企業様向け</a>
-        </li>
-        <li>
-          <a href="#">個人事業主様向け</a>
-        </li>
-        <li>
-          <a href="#">目的から探す</a>
-        </li>
-        <li>
-          <a href="#">導入事例</a>
-        </li>
-      </ul>
-
-      <div class="nav-list-button">
-        <a href="#">ご相談・お問合せ</a>
-      </div>
+    <div class="nav__list__button pc-only">
+      <a href="#">ご相談・お問合せ</a>
     </div>
-  </header>
+  </div>
+</header>
