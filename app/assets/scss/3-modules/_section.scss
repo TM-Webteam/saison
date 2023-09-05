@@ -229,7 +229,7 @@
           margin-bottom: 15px;
         }
       }
-      .blue__more {
+      .blue_more {
         margin: 0;
         max-width: 380px;
         font-size: 16px;
@@ -516,7 +516,7 @@
         margin-bottom: 15px;
       }
     }
-    .blue__more {
+    .blue_more {
       width: 70%;
       margin: 0 auto 15px;
       @media #{$sp} {
@@ -558,7 +558,7 @@
         font-weight: bold;
       }
     }
-    .blue__more.small {
+    .blue_more.small {
       width: calc(100% / 3 - 20px);
       font-size: 16px;
       margin: 0;
@@ -714,7 +714,7 @@
           margin-bottom: 15px;
         }
       }
-      .blue__more {
+      .blue_more {
         margin: 0;
         max-width: 400px;
         font-size: 16px;
@@ -759,7 +759,7 @@
       }
     }
   }
-  .blue__more {
+  .blue_more {
     margin-top: 70px;
     @media #{$sp} {
       margin-top: 30px;
@@ -1678,7 +1678,7 @@
     }
   }
 
-  .blue__more {
+  .blue_more {
     background-color: #f29600;
     border-color: #f29600;
     padding: 21px 0;
@@ -1765,7 +1765,7 @@
           }
         }
 
-        .orange__fill__button {
+        .orange_fill_button {
           min-width: 120px;
         }
       }
@@ -2112,7 +2112,7 @@
         text-align: center;
       }
     }
-    .blue__more {
+    .blue_more {
       margin: 0;
       @media #{$sp} {
         margin: 0 auto;
@@ -2153,7 +2153,7 @@
     &:hover {
       opacity: 1;
       box-shadow: 0 0 15px #0083d8;
-      .blue__more {
+      .blue_more {
         box-shadow: 0 0 15px #0083d8;
         border-radius: 10px;
       }
@@ -2175,7 +2175,7 @@
         text-align: center;
       }
     }
-    .blue__more {
+    .blue_more {
       margin: 0;
       @media #{$sp} {
         margin: 0 auto;
@@ -2194,7 +2194,7 @@
     }
     .ttl-primary {
     }
-    .blue__more {
+    .blue_more {
       margin: 0;
       @media #{$sp} {
         margin: 0 auto;
@@ -2488,7 +2488,7 @@
     .inquiry__box--btn {
       width: auto;
 
-      .blue__more {
+      .blue_more {
         padding: 5px 35px;
         background-color: #000;
         border-color: #000;
@@ -2501,7 +2501,7 @@
       }
 
       &:hover {
-        .blue__more {
+        .blue_more {
           color: #fff;
         }
       }
@@ -2596,7 +2596,7 @@
     .inquiry__box--btn {
       width: auto;
 
-      .blue__more {
+      .blue_more {
         padding: 5px 35px;
         background-color: #000;
         border-color: #000;
@@ -2609,7 +2609,7 @@
       }
 
       &:hover {
-        .blue__more {
+        .blue_more {
           color: #fff;
         }
       }
