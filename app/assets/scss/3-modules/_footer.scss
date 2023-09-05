@@ -5,11 +5,16 @@
 */
 footer {
   margin: auto;
+  background-color: $black_color;
+  .footer-container {
+    max-width: 1200px;
+    margin: auto;
+  }
 
   .primary-section {
     text-align: center;
-    padding: 70px 120px;
-    background-color: #7d7d7d;
+    padding: 70px 0;
+    background-color: $black_color;
 
     .containers {
       justify-content: flex-start;
@@ -18,18 +23,25 @@ footer {
       gap: 80px;
 
       .group {
+        .footer__logo {
+          margin-bottom: 25px;
+          img {
+            width: 288px;
+          }
+        }
         .group__ttl {
           font-size: 14px;
           color: #fff;
           font-weight: 600;
           text-align: left;
-          margin-bottom: 20px;
+          margin-bottom: 17px;
         }
 
         .group__list {
           li {
             color: #fff;
             text-align: left;
+            line-height: 22px;
 
             a {
               color: #fff;
@@ -38,12 +50,21 @@ footer {
             }
 
             &::before {
-              content: "•"; /* You can use any character you prefer for the bullet */
+              content: "-";
               display: inline-block;
-              width: 10px; /* Adjust the width of the bullet */
+              width: 10px;
               text-align: center;
               margin-right: 4px;
               font-size: 12px;
+            }
+          }
+        }
+        &.footer__first__list {
+          .group__list {
+            li {
+              &::before {
+                display: none;
+              }
             }
           }
         }
@@ -53,8 +74,8 @@ footer {
 
   .secondary-section {
     text-align: center;
-    padding: 10px 120px;
-    background-color: #000000;
+    padding: 10px 0;
+    background-color: $black_color;
 
     .containers {
       max-width: unset;
@@ -73,16 +94,11 @@ footer {
           flex: 1;
 
           a {
-            display: block;
-            color: #fff;
-            text-align: center;
-            font-size: 20px;
-            font-weight: 600;
-            width: 100%;
-            max-width: 380px;
-            padding: 21px 0;
-            background-color: #f29600;
-            border-color: #f29600;
+            color: $blue-color;
+            padding: 20px 35px;
+            background-color: $white-color;
+            border: none;
+            box-shadow: none;
 
             &::before {
               display: none;
@@ -94,9 +110,13 @@ footer {
   }
 
   .tertiary-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     text-align: center;
-    padding: 30px 101px;
-    background-color: #fff;
+    padding: 80px 47px 33px;
+    color: $white-color;
+    background-color: $black_color;
 
     .ttl-secondary {
       font-size: 32px;
@@ -130,13 +150,6 @@ footer {
           margin-bottom: 10px; // Add some spacing between list items
 
           position: relative;
-
-          &::before {
-            content: "|";
-            position: absolute;
-            right: 0;
-            top: 0;
-          }
 
           &:last-child::before {
             content: ""; // Remove the pipe for the last item
@@ -179,7 +192,7 @@ footer {
 
     .copy-right {
       p {
-        font-size: 14px;
+        font-size: 12px;
       }
     }
   }

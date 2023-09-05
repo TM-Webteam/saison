@@ -15,10 +15,23 @@ $font-family: 'Noto Sans JP','ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic P
 // カラー
 
 $primary-color: #000;
+$black_color: #191919;
 
 $secondary-color: #ccc;
 
 $tertiary-color: #eee;
+
+$white-color: #fff;
+
+$gradient-bg: transparent linear-gradient(61deg, #0497B5 0%, #53D2B2 100%) 0% 0% no-repeat padding-box;
+
+$blue-color: #0497B5; 
+
+$gray-color: #F1F1F1;
+$gray-color-2: #A7A7A7;
+$gray-color-3: #DDDDDD;
+$gray-color-4: #0000001C;
+$gray-color-5: #666666;
 
 
 // テキストカラー
@@ -27,7 +40,7 @@ $tertiary-color: #eee;
 
 // コンテナー設定
 
-$container: 1160px;
+$container: 1200px;
 $container-full: 100%;
 
 // グリッド設定
