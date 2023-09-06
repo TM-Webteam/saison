@@ -1,0 +1,93 @@
+{% extends "layout/top.njk" %}
+
+{# Custom SEO tags, leave blank to apply the default values #}
+{% set title = "" %}
+{% set description = "" %}
+{% set keywords = "" %}
+
+{# Page settings and also body class #}
+{% set page = "" %}
+
+{# Custom tags before </head> #}
+{% block customHead %}{% endblock %}
+
+{# Custom tags before </body> #}
+{% block customJs %}{% endblock %}
+
+{# Main content #}
+{% block content %}
+
+<main class="faq" style="  margin: auto;
+  padding: 140px 0 0;">
+  <section class="section-welcome" style="position: relative;
+    padding: 140px 0;
+    text-align: center;
+    background-image: url('/assets/img/common/lower_visual.png');
+    background-size: cover;
+    background-repeat: no-repeat;">
+    <div></div>
+    <h3 class="ttl-tertiary">中小企業・個人事業主のお客様向け</h3>
+    <h2 class="ttl-primary">よくある質問</h2>
+  </section>
+  <section class="section-search" style="">
+    <div class="search">
+      <form action="" class="search__form">
+        <input class="search__input" type="search" style="background: #FFFFFF 0% 0% no-repeat padding-box;
+          border: 2px solid #444444;
+          border-radius: 3px;
+          opacity: 1;" placeholder="キーワードから探す">
+        <button class="search__btn" style="border-radius: 0px 3px 3px 0px;background: #444444 0% 0% no-repeat padding-box;
+          opacity: 1;" type="submit"><img src="/assets/img/common/faq-search.svg"></button>
+      </form>
+    </div>
+  </section>
+  <section class="bottom-banner" style="padding:150px 0;position:relative;background-color:white;display:block;">
+    <div style="position:absolute; text-align:center;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;">
+      <h3 class="ttl-tertiary" style="margin-top:70px;font-size:32px;text-align:center; margin-bottom:30px;">導入前のご質問・ご相談を受け付けています。<br>お気軽にお問い合わせください</h3>
+      <div class="quinary-btn" style="margin-bottom:30px;">
+        <a href="#" class="blue_gradient_btn" style="display:inline-block;">導入のご相談・お問い合わせ（無料）</a>
+      </div>
+      <div class="ttl-quaternary" style="margin-bottom:70px;font-size:20px;font-weight:normal;">2営業日以内に回答いたします。</div>
+    </div>
+  </section>
+  <section class="octonary-section">
+    <div class="card-type22">
+      <div class="ttl-notice">CONTACT</div>
+      <h3 class="ttl-tertiary">決済・ビジネスソリューションに関するお問合せ</h3>
+      <div class="useful-wp">
+        <div class="containers">
+          <div class="flex jcC gap60">
+            <div href="#" class="card">
+              <summary class="card__box">
+                <div class="card__box--ttl">サービス資料ダウンロードはこちら</div>
+                <div class="card__box--txt">クレディセゾンのソリューションの詳細が分かる
+                  <br>
+                  サービス資料をダウンロードいただけます。
+                </div>
+                <div ><a class="blue_gradient_btn" href="#">サービス資料ダウンロード</a></div>
+              </summary>
+            </div>
+            <div href="#" class="card">
+              <summary class="card__box">
+                <div class="card__box--ttl">ご相談・お問合せはこちら</div>
+                <div class="card__box--txt">各種ソリューションに関するお問合せは
+                  <br>
+                  サービス資料をダウンロードいただけます。
+                </div>
+                <div><a class="blue_gradient_btn" href="#">お気軽にお問い合わせください。</a></div>
+              </summary>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script src="/assets/js/main.js"></script>
+
+{% endblock %}
