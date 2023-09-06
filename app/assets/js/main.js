@@ -1,51 +1,49 @@
-$(document).ready(function() {
+$(document).ready(function () {
   //---------------------------------
   // SP時横スクロール UI
   //---------------------------------
 
-  new ScrollHint('.scroll', {
+  new ScrollHint(".scroll", {
     i18n: {
-      scrollable: '横スクロールできます'
-    }
+      scrollable: "横スクロールできます",
+    },
   });
 
-  
   //---------------------------------
   // Smooth Scrolling
   //---------------------------------
 
-  $('a[href^="#"]').click(function(){
-
+  $('a[href^="#"]').click(function () {
     var the_id = $(this).attr("href");
 
-    $('html, body').animate({
-      scrollTop:$(the_id).offset().top-50
-    }, 'slow');
+    $("html, body").animate(
+      {
+        scrollTop: $(the_id).offset().top - 50,
+      },
+      "slow"
+    );
 
     return false;
   });
-
 });
-
 
 //--------------------------------------
 //　header　演出
 //--------------------------------------
 
-$(function(){
+$(function () {
   var pos = 0;
-  var header = $('header');
-  
-  $(window).on('scroll', function(){
-    if($(this).scrollTop() < pos || $(this).scrollTop() < 400){
-      header.removeClass('hide');
-    }else{
-      header.addClass('hide');
+  var header = $("header");
+
+  $(window).on("scroll", function () {
+    if ($(this).scrollTop() < pos || $(this).scrollTop() < 400) {
+      header.removeClass("hide");
+    } else {
+      header.addClass("hide");
     }
     pos = $(this).scrollTop();
   });
 });
-
 
 //--------------------------------------
 //　アコーディオンメニュー
@@ -53,74 +51,71 @@ $(function(){
 
 (function ($) {
   $(function () {
-    $('#nav-toggle').on('click', function () {
-      $('header').toggleClass('open');
-      $('#gloval-nav').slideToggle();
+    $("#nav-toggle").on("click", function () {
+      $("header").toggleClass("open");
+      $("#gloval-nav").slideToggle();
     });
   });
 })(jQuery);
 
-
 //--------------------------------------
 //　アニメーション　ふわっと演出
 //--------------------------------------
-window.onload = function() {
+window.onload = function () {
   scroll_effect();
 
-  $(window).scroll(function(){
-   scroll_effect();
+  $(window).scroll(function () {
+    scroll_effect();
   });
 
-  function scroll_effect(){
-   $('.fadein').each(function(){
-    var elemPos = $(this).offset().top;
-    var scroll = $(window).scrollTop();
-    var windowHeight = $(window).height();
-    if (scroll > elemPos - windowHeight){
-     $(this).addClass('scrollin');
-    }
-   });
+  function scroll_effect() {
+    $(".fadein").each(function () {
+      var elemPos = $(this).offset().top;
+      var scroll = $(window).scrollTop();
+      var windowHeight = $(window).height();
+      if (scroll > elemPos - windowHeight) {
+        $(this).addClass("scrollin");
+      }
+    });
   }
 };
-
 
 //--------------------------------------
 //　loop-slick
 //--------------------------------------
 
-$(document).ready(function() {
-  $('#loop-slick').slick({
-      arrows: false,
-      autoplay: true,
-      autoplaySpeed: 1,
-      cssEase: 'linear',
-      speed: 5000,
-      slidesToShow: 7,
-      slidesToScroll: 1,
-      responsive: [
-        {
-          breakpoint: 769, // 768px以下のサイズに適用
-          settings: {
+$(document).ready(function () {
+  $("#loop-slick").slick({
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 1,
+    cssEase: "linear",
+    speed: 5000,
+    slidesToShow: 7,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 769, // 768px以下のサイズに適用
+        settings: {
           slidesToShow: 4,
-          },
         },
-        {
-          breakpoint: 400, // 399px以下のサイズに適用
-          settings: {
+      },
+      {
+        breakpoint: 400, // 399px以下のサイズに適用
+        settings: {
           slidesToShow: 2,
-          },
         },
-      ],
+      },
+    ],
   });
 });
-
 
 //--------------------------------------
 //　wp-slick
 //--------------------------------------
 
-$(document).ready(function() {
-  $('#wp-slick').slick({
+$(document).ready(function () {
+  $("#wp-slick").slick({
     arrows: true,
     autoplay: true,
     slidesToShow: 1,
@@ -128,57 +123,53 @@ $(document).ready(function() {
   });
 });
 
-
-
 //--------------------------------------
 //　faq　プルダウン
 //--------------------------------------
 
-$(document).ready(function(){
-  $(".question").on("click", function() {
-    $(this).toggleClass('open');
+$(document).ready(function () {
+  $(".question").on("click", function () {
+    $(this).toggleClass("open");
     $(this).next().slideToggle(400);
   });
 });
-
 
 //--------------------------------------
 //　バナー　追従
 //--------------------------------------
 
-$(function(){
-  var scrollStart = $('.show').offset().top;
-  var scrollEnd = $('.hide').offset().top;
+$(function () {
+  var scrollStart = $(".show").offset().top;
+  var scrollEnd = $(".hide").offset().top;
   var distance = 0;
 
-  $(document).scroll(function(){
+  $(document).scroll(function () {
     distance = $(this).scrollTop();
 
     if (scrollStart <= distance) {
-      $('.floating').addClass('fixed');
+      $(".floating").addClass("fixed");
     } else if (scrollStart >= distance) {
-      $('.floating').removeClass('fixed');
+      $(".floating").removeClass("fixed");
     }
 
     if (scrollEnd <= distance) {
-      $('.floating').fadeOut();
-    } else{
-      $('.floating').fadeIn();
+      $(".floating").fadeOut();
+    } else {
+      $(".floating").fadeIn();
     }
-  });      
+  });
 });
 
-
-$(window).on('load', function(){
+$(window).on("load", function () {
   //---------------------------------
   // AOS
   //---------------------------------
   AOS.init({
     offset: 120, //初期値
     delay: 0, //初期値
-    anchor: 'top-bottom', //初期値
+    anchor: "top-bottom", //初期値
     duration: 1000, //初期値　400
-    easing: 'ease', //初期値
+    easing: "ease", //初期値
     once: true, //初期値　false
   });
 });
@@ -192,7 +183,7 @@ $(window).on('load', function(){
     var $searchDropdown = $(".nav__item__dropdown__search");
     var $supportDropdown = $(".nav__item__dropdown__support");
     var $searchList = $(".nav__dropdown__list__search");
-    var $supportList = $(".nav__dropdown__list__support")
+    var $supportList = $(".nav__dropdown__list__support");
 
     $searchDropdown.on("click", function () {
       $(".nav__dropdown__list__search").toggleClass("open");
@@ -209,3 +200,35 @@ $(window).on('load', function(){
     });
   });
 })(jQuery);
+
+// ----------------------------------
+// Homepage Header Slider
+// ----------------------------------
+
+$(document).ready(function () {
+  $(".section-welcome__banner").slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: false,
+    autoplay: true,
+    autoplaySpeed: 8000,
+    arrows: false,
+    fade: true,
+  });
+});
+
+// ----------------------------------
+// Recommend Slider
+// ----------------------------------
+
+$(document).ready(function () {
+  $(".carousel").slick({
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    dots: true,
+    prevArrow:
+      '<button type="button" class="slick-prev"><svg xmlns="http://www.w3.org/2000/svg" width="15.095" height="15.095" viewBox="0 0 15.095 15.095"><path id="Path_44704" data-name="Path 44704" d="M9.674,9.674V0H0" transform="translate(8.255 14.388) rotate(-135)" fill="none" stroke="#fff" stroke-width="2"/></svg></button>',
+    nextArrow:
+      '<button type="button" class="slick-next"><svg xmlns="http://www.w3.org/2000/svg" width="15.095" height="15.095" viewBox="0 0 15.095 15.095"><path id="Path_44704" data-name="Path 44704" d="M9.674,0V9.674H0" transform="translate(0 7.548) rotate(-45)" fill="none" stroke="#fff" stroke-width="2"/></svg></button>',
+  });
+});
