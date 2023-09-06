@@ -188,6 +188,7 @@
       padding: 50px 75px;
       background-color: #F7F7F7;
       margin: auto;
+      max-width: 800px;
 
       .ttl-tertiary {
         font-size: 22px;
@@ -200,6 +201,16 @@
         line-height: 1.8;
         font-weight: 400;
         margin-bottom: 28px;
+      }
+
+      .section-btn {
+        justify-content: center;
+
+        .bondi_blue_btn {
+          width: 270px;
+          font-weight: 400;
+          margin: unset;
+        }
       }
     }
   }
