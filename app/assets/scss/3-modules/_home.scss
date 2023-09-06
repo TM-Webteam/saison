@@ -1,16 +1,24 @@
 .home-page {
   margin: auto;
-  padding: 133px 0 0px;
+  padding: 140px 0 0px;
 
   .section-welcome {
     position: relative;
     text-align: center;
 
     .slick-slider {
-      height: 732px;
+      height: 551px;
 
       .slick-list {
         height: 100%;
+
+        .slick-track {
+          height: 100%;
+
+          img {
+            height: 100%;
+          }
+        }
       }
     }
 
