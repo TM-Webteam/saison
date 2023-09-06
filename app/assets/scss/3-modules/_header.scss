@@ -132,7 +132,7 @@ header {
     height: 50px;
     span {
       display: block;
-      background: #fff;
+      background-color: $black_color;
       height: 2px;
       transition: transform 0.5s ease-in-out, top 0.5s ease;
     }
@@ -194,7 +194,7 @@ header.open {
   #nav-toggle {
     position: relative;
     span {
-      background: #fff;
+      background: $black_color;
     }
     span:first-child {
       transform: rotate(45deg);

@@ -31,19 +31,20 @@ $(document).ready(function () {
 //　header　演出
 //--------------------------------------
 
-$(function () {
-  var pos = 0;
-  var header = $("header");
+// $(function () {
+//   var pos = 0;
+//   var header = $("header");
+//   var windowWidth = $(window).width();
 
-  $(window).on("scroll", function () {
-    if ($(this).scrollTop() < pos || $(this).scrollTop() < 400) {
-      header.removeClass("hide");
-    } else {
-      header.addClass("hide");
-    }
-    pos = $(this).scrollTop();
-  });
-});
+//   $(window).on("scroll", function () {
+//     if (windowWidth > 768 && $(this).scrollTop() < pos || $(this).scrollTop() < 400) {
+//       header.removeClass("hide");
+//     } else {
+//       header.addClass("hide");
+//     }
+//     pos = $(this).scrollTop();
+//   });
+// });
 
 //--------------------------------------
 //　アコーディオンメニュー
@@ -201,6 +202,22 @@ $(window).on("load", function () {
   });
 })(jQuery);
 
+
+//--------------------------------------
+// Toggle menu Sp
+//--------------------------------------
+
+(function ($) {
+  $(function () {
+    var $menuList = $(".nav__dropdown__sp");
+    var $toggleMenu = $("#nav-toggle");
+
+    $toggleMenu.on("click", function () {
+      $menuList.toggleClass("open");
+    });
+  });
+})(jQuery);
+
 // ----------------------------------
 // Homepage Header Slider
 // ----------------------------------
@@ -230,5 +247,14 @@ $(document).ready(function () {
       '<button type="button" class="slick-prev"><svg xmlns="http://www.w3.org/2000/svg" width="15.095" height="15.095" viewBox="0 0 15.095 15.095"><path id="Path_44704" data-name="Path 44704" d="M9.674,9.674V0H0" transform="translate(8.255 14.388) rotate(-135)" fill="none" stroke="#fff" stroke-width="2"/></svg></button>',
     nextArrow:
       '<button type="button" class="slick-next"><svg xmlns="http://www.w3.org/2000/svg" width="15.095" height="15.095" viewBox="0 0 15.095 15.095"><path id="Path_44704" data-name="Path 44704" d="M9.674,0V9.674H0" transform="translate(0 7.548) rotate(-45)" fill="none" stroke="#fff" stroke-width="2"/></svg></button>',
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   });
 });

@@ -37,6 +37,9 @@ $grid-breakpoints: (
   }
   &.nowrap {
     flex-wrap: nowrap;
+    @media #{$sp} {
+      flex-wrap: wrap;
+    }
   }
   &.inherit {
     @media #{$sp} {
