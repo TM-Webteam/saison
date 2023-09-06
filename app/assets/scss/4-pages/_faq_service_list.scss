@@ -1,17 +1,32 @@
-.faq-service-page {
+.faq-service_list-page {
+
   .section-welcome {
     background-image: url("/assets/img/common/lower_visual.png");
     background-size: cover;
     background-repeat: no-repeat;
     padding: 46px 0 35px;
     text-align: center;
+
+    @media #{$sp} {
+      padding: 50px 10px;
+    }
+
     .ttl-primary {
       font-size: 42px;
       margin-bottom: 16px;
+
+      @media #{$sp} {
+        font-size: 32px;
+      }
     }
+
     .ttl-tertiary {
       display: inline-block;
       font-size: 20px;
+
+      @media #{$sp} {
+        font-size: 16px;
+      }
     }
   }
 
@@ -23,6 +38,10 @@
       padding: 70px 30px;
       background-color: #e1e1e1;
 
+      @media #{$sp} {
+        padding: 30px 10px;
+      }
+
       .anc01__content {
         .anc01__content-head {
           font-size: 32px;
@@ -31,12 +50,21 @@
           font-weight: bold;
           margin-bottom: 31px;
           margin-right: 10px;
+
+          @media #{$sp} {
+            font-size: 22px;
+          }
         }
         .anc01__content-detail {
           font-size: 20px;
           text-align: left;
           letter-spacing: 0px;
           color: #000000;
+
+          @media #{$sp} {
+            font-size: 16px;
+          }
+
           a {
             color: $blue-color;
             text-decoration: underline;
@@ -47,8 +75,21 @@
   }
 
   .section-secondary {
+    .containers {
+      @media #{$sp} {
+        padding: 30px 10px;
+      }
+    }
+
     .QA__content {
       padding: 50px 0px;
+
+      @media #{$sp} {
+        font-size: 22px;
+
+        padding: 20px 0;
+      }
+
       border-bottom: 0.1px solid #707070;
       .question__content {
         cursor: pointer;
@@ -67,6 +108,10 @@
         font-size: 20px;
         margin: 0 15px;
         font-weight: bold;
+
+        @media #{$sp} {
+          font-size: 16px;
+        }
       }
       .answer__content {
         .QA__content-head {
@@ -81,6 +126,14 @@
   }
 
   .section-tertiary {
+    .card-type22 {
+      .ttl-tertiary {
+        @media #{$sp} {
+          font-size: 20px;
+        }
+      }
+    }
+
     .card__box {
       padding: 40px !important;
       .card__info {
@@ -88,6 +141,11 @@
         grid-template-columns: 1fr 2fr;
         color: #000000;
         margin-left: -15px;
+
+        @media #{$sp} {
+          grid-template-columns: 1fr;
+        }
+
         .card__info-content {
           display: flex;
           flex-direction: column;
@@ -95,6 +153,12 @@
           h2 {
             font-weight: bold;
             font-size: 24px;
+
+            @media #{$sp} {
+              margin-top: 20px;
+              font-size: 18px;
+              text-align: center;
+            }
           }
           span {
             text-align: left;
@@ -116,16 +180,34 @@
       }
       .col-right {
         grid-template-columns: 1fr 1.2fr;
+
+        @media #{$sp} {
+          grid-template-columns: 1fr;
+        }
+
         .card__info-image {
           img {
             height: 111px;
+
+            @media #{$sp} {
+              height: auto;
+            }
           }
         }
       }
       .btn-container {
         padding: 0 57px;
+
+        @media #{$sp} {
+          padding: 0 10px;
+        }
+
         .blue_gradient_btn {
           margin-top: 35px;
+
+          @media #{$sp} {
+            max-width: 100%;
+          }
         }
       }
     }
