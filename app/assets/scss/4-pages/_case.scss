@@ -2,21 +2,37 @@
   margin: auto;
   padding: 140px 0 0px;
 
+  @media #{$sp} {
+    padding: 50px 0 0px;
+  }
+
   .section-welcome {
     text-align: center;
     padding: 140px 0;
     background: url(../img/common/lower_visual.png) 50%/cover no-repeat;
 
+    @media #{$sp} {
+      padding: 50px 10px;
+    }
+
     .ttl-secondary {
       font-size: 42px;
       margin-bottom: 31px;
       line-height: 1;
+
+      @media #{$sp} {
+        font-size: 32px;
+      }
     }
 
     .ttl-quaternary {
       font-size: 20px;
       font-weight: 400;
       margin-bottom: 0;
+
+      @media #{$sp} {
+      font-size: 14px;
+      }
     }
   }
 
@@ -25,16 +41,28 @@
     padding: 70px 0;
     background-color: #fff;
 
+    @media #{$sp} {
+      padding: 30px 10px;
+    }
+
     .ttl-secondary {
       font-size: 32px;
       margin-bottom: 50px;
+
+      @media #{$sp} {
+        font-size: 22px;
+      }
     }
 
     .card-list {
       justify-content: flex-start;
 
+      @media #{$sp} {
+        justify-content: center;
+      }
+
       .card-type10 {
-        width: calc(100% / 3 - 20px);
+        width: 100%;
         padding: 0;
         box-shadow: 0 10px 20px rgba(0,0,0,.11);
 
