@@ -8,6 +8,13 @@
 {# Page settings and also body class #}
 {% set page = "" %}
 
+{# Breadcrumb #}
+{% set breadcrumb = [{
+  text:"ご相談・お問い合わせ",
+  link:"#"
+  }] %}
+
+
 {# Custom tags before </head> #}
 {% block customHead %}{% endblock %}
 
@@ -255,17 +262,6 @@
         </a>
       </div>
     </div>
-  </section>
-
-  <section class="breadcrumb">
-    <ul class="flex">
-      <li>
-        <a href="#">TOP</a>
-      </li>
-      <li>
-        <a href="#">資金繰りを改善したい</a>
-      </li>
-    </ul>
   </section>
 </main>
 

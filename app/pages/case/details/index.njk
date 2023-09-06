@@ -8,6 +8,15 @@
 {# Page settings and also body class #}
 {% set page = "" %}
 
+{# Breadcrumb #}
+{% set breadcrumb = [{
+text:"導入事例",
+link:"/case"
+},{
+text:"ETCカードの導入で毎月の経費計算処理の手間と時間が削減！",
+link:"#"
+}] %}
+
 {# Custom tags before </head> #}
 {% block customHead %}{% endblock %}
 
@@ -93,7 +102,7 @@
           <h3 class="ttl-tertiary">Q3.弊社商品を導入後、貴社が抱えていた課題がどのように解決されたかお聞かせください。</h3>
 
           <div class="question-content">
-            <p>集計業務が手作業からデータでの処理が可能になり、効率化が大幅に改善されました。</p>
+            <p>集計業務が手作業からデータでの処理が可能になり、効率化が大幅に改善さ れました。</p>
           </div>
         </li>
       </ul>
@@ -126,17 +135,6 @@
         </div>
       </div>
     </div>
-  </section>
-
-  <section class="breadcrumb">
-    <ul class="flex">
-      <li>
-        <a href="#">TOP</a>
-      </li>
-      <li>
-        <a href="#">資金繰りを改善したい</a>
-      </li>
-    </ul>
   </section>
 </main>
 {% endblock %}
