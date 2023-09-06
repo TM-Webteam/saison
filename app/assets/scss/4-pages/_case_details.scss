@@ -2,10 +2,18 @@
   margin: auto;
   padding: 140px 0 0px;
 
+  @media #{$sp} {
+    padding: 50px 0 0px;
+  }
+
   .section-welcome {
     text-align: center;
     padding: 140px 0;
     background: url(../img/common/lower_visual.png) 50% / cover no-repeat;
+
+    @media #{$sp} {
+      padding: 30px 10px;
+    }
 
     .container-1200 {
       align-items: center;
@@ -23,11 +31,20 @@
         width: calc(100% - 257px -60px);
         text-align: left;
 
+        @media #{$sp} {
+          width: 100%;
+        }
+
         .ttl-secondary {
           font-size: 42px;
           margin-bottom: 28px;
           line-height: 1.4;
           text-align: left;
+
+          @media #{$sp} {
+            font-size: 26px;
+            text-align: center;
+          }
         }
 
         .ttl-tertiary {
@@ -35,6 +52,11 @@
           font-size: 24px;
           font-weight: bold;
           line-height: 1;
+
+          @media #{$sp} {
+            font-size: 16px;
+            text-align: center;
+          }
         }
 
         .black_pill_btn {
@@ -42,6 +64,13 @@
           align-items: center;
           padding: 8px 30px 8px 17px;
           width: auto;
+          margin: auto;
+
+          @media #{$sp} {
+            display: flex;
+            max-width: 240px;
+            margin: auto;
+          }
 
           &.show-arrow {
             &:before {
@@ -72,12 +101,25 @@
     padding: 70px 0;
     background-color: #f5f5f5;
 
+    @media #{$sp} {
+      padding: 30px 10px;
+    }
+
     .des-icon-list {
       justify-content: center;
       margin-bottom: 50px;
 
+      @media #{$sp} {
+        margin-bottom: 30px;
+      }
+
       .des-icon {
         align-items: center;
+
+        @media #{$sp} {
+          width: 100%;
+          max-width: 400px;
+        }
 
         .des-icon-img {
           width: 100px;
@@ -107,23 +149,43 @@
         background-color: #fff;
         margin-bottom: 50px;
 
+        @media #{$sp} {
+          padding: 30px 10px;
+        }
+
         .ttl-tertiary {
           font-size: 26px;
           margin-bottom: 20px;
+
+          @media #{$sp} {
+            font-size: 20px;
+          }
         }
 
         .question-content {
           .question-img {
             width: calc(50% - 15px);
+
+            @media #{$sp} {
+              width: 100%;
+            }
           }
 
           .question-txt {
             width: calc(50% - 15px);
+
+            @media #{$sp} {
+              width: 100%;
+            }
           }
         }
 
         &:last-child {
           margin-bottom: 70px;
+
+          @media #{$sp} {
+            margin-bottom:20px;
+          }
         }
       }
     }
@@ -148,12 +210,25 @@
         align-items: center;
         text-align: left;
 
+        @media #{$sp} {
+          padding: 0 10px;
+          gap:0;
+        }
+
         .card-item--img {
           width: 294px;
+
+          @media #{$sp} {
+            width: 100%;
+          }
         }
 
         .card-item--content {
           width: calc(100% - 50px -294px);
+
+          @media #{$sp} {
+            width: 100%;
+          }
 
           .ttl-tertiary {
             font-size: 24px;
@@ -162,6 +237,11 @@
 
           p {
             margin-bottom: 20px;
+          }
+
+          .bondi_blue_btn.small {
+            display: block;
+            margin: auto;
           }
         }
       }

@@ -2,10 +2,18 @@
   margin: auto;
   padding: 133px 0 0px;
 
+  @media #{$sp} {
+    padding: 50px 0 0px;
+  }
+
   .section-welcome {
     text-align: center;
     padding: 123px 0;
     background: url(../img/common/lower_visual.png) 50% / cover no-repeat;
+
+    @media #{$sp} {
+      padding: 30px 10px;
+    }
 
     .container-1200 {
       align-items: center;
@@ -13,11 +21,19 @@
       .ttl-secondary {
         font-size: 42px;
         margin-bottom: 38px;
+
+        @media #{$sp} {
+          font-size: 32px;
+        }
       }
 
       .ttl-tertiary {
         font-size: 20px;
         font-weight: 400;
+
+        @media #{$sp} {
+          font-size: 14px;
+        }
       }
     }
   }
@@ -27,20 +43,37 @@
     padding: 70px 0;
     background-color: #fff;
 
+    @media #{$sp} {
+      padding: 30px 10px;
+    }
+
     .section-wrapper {
       align-items: center;
 
       .section-img {
         width: calc(50% - 30px);
+
+        @media #{$sp} {
+          width: 100%;
+        }
       }
 
       .section-txt {
         width: calc(50% - 30px);
 
+        @media #{$sp} {
+          width: 100%;
+        }
+
         .ttl-secondary {
           font-size: 32px;
           text-align: left;
           margin-bottom: 20px;
+
+          @media #{$sp} {
+            font-size: 20px;
+            text-align: center;
+          }
         }
 
         p {
@@ -57,26 +90,52 @@
     padding: 70px 0 80px;
     background-color: #f7f7f7;
 
+    @media #{$sp} {
+      padding: 30px 10px 30px;
+    }
+
     .ttl-secondary {
       font-size: 32px;
       margin-bottom: 50px;
+
+      @media #{$sp} {
+        font-size: 22px;
+        text-align: center;
+        margin-bottom: 30px;
+      }
     }
 
     .section-wrapper-primary {
       align-items: center;
       margin-bottom: 60px;
 
+      @media #{$sp} {
+        margin-bottom: 30px;
+      }
+
       .section-img {
         width: calc(50% - 30px);
+
+        @media #{$sp} {
+          width: 100%;
+        }
       }
 
       .section-txt {
         width: calc(50% - 30px);
 
+        @media #{$sp} {
+          width: 100%;
+        }
+
         .ttl-tertiary {
           font-size: 22px;
           text-align: left;
           margin-bottom: 20px;
+
+          @media #{$sp} {
+            font-size: 20px;;
+          }
         }
 
         p {
@@ -90,8 +149,12 @@
     .section-wrapper-secondary {
       .ttl-tertiary {
         font-size: 22px;
-        text-align: left;
+        text-align: center;
         margin-bottom: 25px;
+
+        @media #{$sp} {
+          font-size: 20px;;
+        }
       }
 
       p {
@@ -112,6 +175,10 @@
 
             li {
               width: auto;
+
+              @media #{$sp} {
+                width: 100%;
+              }
 
               a {
                 position: relative;
@@ -179,16 +246,28 @@
     padding: 80px 0 70px;
     background-color: #fff;
 
+    @media #{$sp} {
+      padding: 30px 10px;
+    }
+
     .ttl-secondary {
       font-size: 32px;
       margin-bottom: 45px;
+
+      @media #{$sp} {
+        font-size: 22px;
+      }
     }
 
     .section-wrapper {
       padding: 50px 75px;
-      background-color: #F7F7F7;
+      background-color: #f7f7f7;
       margin: auto;
       max-width: 800px;
+
+      @media #{$sp} {
+        padding: 30px 10px;
+      }
 
       .ttl-tertiary {
         font-size: 22px;
@@ -210,6 +289,11 @@
           width: 270px;
           font-weight: 400;
           margin: unset;
+
+          @media #{$sp} {
+            padding-top: 10px;
+            padding-bottom: 10px;
+          }
         }
       }
     }

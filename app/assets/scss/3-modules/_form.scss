@@ -308,6 +308,8 @@
       margin-right: 10px;
       gap: 7px;
       margin-top: 7px;
+      align-items: center;
+      flex-wrap: nowrap;
 
       input[type="checkbox"] {
         display: none;
@@ -323,6 +325,7 @@
         border-radius: 5px;
         cursor: pointer;
         margin-right: 5px;
+        flex-shrink: 0;
 
         &::after {
           content: "";

@@ -2,14 +2,26 @@
   margin: auto;
   padding: 140px 0 0px;
 
+  @media #{$sp} {
+    padding: 50px 0 0px;
+  }
+
   .section-welcome {
     text-align: center;
     padding: 70px 0;
     background: url(../img/common/lower_visual.png) 50% / cover no-repeat;
 
+    @media #{$sp} {
+      padding: 30px 10px;
+    }
+
     .ttl-secondary {
       font-size: 42px;
       text-align: center;
+
+      @media #{$sp} {
+        font-size: 32px;
+      }
     }
   }
 
@@ -19,14 +31,26 @@
     background-color: #fff;
     margin: auto;
 
+    @media #{$sp} {
+      padding: 30px 10px;
+    }
+
     .section-ttl {
       margin-bottom: 50px;
       text-align: center;
+
+      @media #{$sp} {
+        margin-bottom: 20px;
+      }
     }
 
     .form-primary {
       max-width: 800px;
       margin: auto;
+
+      @media #{$sp} {
+        padding: 20px 10px;
+      }
 
       .company-name-field {
         input {
