@@ -1,5 +1,21 @@
 <footer>
   <div class="footer-container">
+    {% if breadcrumb %}
+      <section class="breadcrumb">
+        <ul class="flex">
+          <li>
+            <a href="#">TOP</a>
+          </li>
+
+          {% for crumb in breadcrumb %}
+          <li>
+            <a href="{{ crumb.link }}">{{ crumb.text }}</a>
+          </li>
+          {% endfor %}
+        </ul>
+      </section>
+    {% endif %}
+
     <section class="primary-section">
       <div class="containers flex">
 
@@ -155,21 +171,21 @@
           <div class="square-container">
             <div class="square before"></div>
             <div class="square after"></div>
-          </li>
+        </li>
 
-          <li>「個人情報の保護に関する法律」に基づく公表事項
-            <div class="square-container">
-              <div class="square before"></div>
-              <div class="square after"></div>
-            </div>
-          </li>
+        <li>「個人情報の保護に関する法律」に基づく公表事項
+          <div class="square-container">
+            <div class="square before"></div>
+            <div class="square after"></div>
+          </div>
+        </li>
 
-          <li>cookieポリシー
-            <div class="square-container">
-              <div class="square before"></div>
-              <div class="square after"></div>
-            </div>
-          </li>
+        <li>cookieポリシー
+          <div class="square-container">
+            <div class="square before"></div>
+            <div class="square after"></div>
+          </div>
+        </li>
 
           <li>サイトマップ
             <div class="square-container">
