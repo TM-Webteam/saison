@@ -182,3 +182,30 @@ $(window).on('load', function(){
     once: true, //初期値　false
   });
 });
+
+//--------------------------------------
+//　dropdown header
+//--------------------------------------
+
+(function ($) {
+  $(function () {
+    var $searchDropdown = $(".nav__item__dropdown__search");
+    var $supportDropdown = $(".nav__item__dropdown__support");
+    var $searchList = $(".nav__dropdown__list__search");
+    var $supportList = $(".nav__dropdown__list__support")
+
+    $searchDropdown.on("click", function () {
+      $(".nav__dropdown__list__search").toggleClass("open");
+      $supportDropdown.removeClass("open");
+      $supportList.removeClass("open");
+      $searchDropdown.toggleClass("open");
+    });
+
+    $supportDropdown.on("click", function () {
+      $(".nav__dropdown__list__support").toggleClass("open");
+      $searchDropdown.removeClass("open");
+      $searchList.removeClass("open");
+      $supportDropdown.toggleClass("open");
+    });
+  });
+})(jQuery);

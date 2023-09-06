@@ -5,8 +5,10 @@
 */
 
 header {
-  &.top__header {
+  .top__header {
+    position: relative;
     background-color: $white-color;
+    box-shadow: 0px 3px 6px $gray-color-6;
     .header__logo {
       width: 250px;
       display: flex;
@@ -64,6 +66,102 @@ header {
         height: 100%;
         padding: 0px 16px;
         vertical-align: middle;
+      }
+    }
+    .nav__item__dropdown {
+      display: flex;
+      align-items: center;
+      svg {
+        margin-left: 5px;
+      }
+      &__search,
+      &__support {
+        &.open {
+          svg {
+            transform: rotate(180deg);
+          }
+        }
+      }
+    }
+  }
+  .nav__dropdown {
+    &__list__search {
+      width: 100%;
+      background-color: $white-color;
+      display: none;
+      &.open {
+        display: flex;
+      }
+    }
+    &__list__support {
+      width: 100%;
+      background-color: $white-color;
+      display: none;
+      &.open {
+        display: flex;
+      }
+    }
+    &__search {
+      width: 33%;
+      position: relative;
+      background-color: rgba(0, 117, 140, 0.1);
+      &__container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+      &__title {
+        color: $blue-color-1;
+        font-weight: bold;
+        font-size: 22px;
+        margin-bottom: 20px;
+      }
+      .blue__outline__button {
+        max-width: 200px;
+        padding: 12px 23px;
+        color: $blue-color;
+        font-size: 16px;
+        font-weight: lighter;
+        white-space: nowrap;
+
+        &::before {
+          right: 12px;
+          border-width: 2px;
+        }
+      }
+    }
+    &__list {
+      display: flex;
+      width: 100%;
+      padding: 50px 60px 60px 60px;
+      justify-content: space-between;
+      gap: 50px;
+      &__first {
+        width: 50%;
+        li {
+          &:first-child {
+            padding: 0 0 10px;
+          }
+        }
+      }
+      &__secondary {
+        width: 50%;
+        li {
+          &:first-child {
+            padding: 0 0 10px;
+          }
+        }
+      }
+      li {
+        padding: 20px 0 10px;
+        border-bottom: 1px solid $gray-color-7;
+        a {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
       }
     }
   }
