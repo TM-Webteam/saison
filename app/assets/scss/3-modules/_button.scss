@@ -507,7 +507,7 @@
     border-radius: 11px;
 
     padding: 0 15px 3px;
-    background-color: $primary-color;
+    background-color: #000;
     &:before {
       width: 6px;
       height: 6px;
@@ -730,11 +730,11 @@
 // ボタン09
 .bondi_blue_outline_btn {
   position: relative;
-  max-width: 400px;
+  max-width: 384px;
   display: block;
   margin: auto;
 
-  color: white;
+  color: $primary-color;
   background-color: transparent;
   padding: 18px 0;
   font-size: 16px;
@@ -772,7 +772,7 @@
 // ボタン10
 .blue_gradient_btn {
   display: block;
-  max-width: 560px;
+  max-width: 384px;
   color: #fff;
   font-size: 20px;
   font-weight: 400;
@@ -787,8 +787,7 @@
   @media #{$sp} {
     font-size: 14px;
     padding: 13px;
-    max-width: 85%;
-    border: 2px solid $blue-color;
+    max-width: 65%;
   }
   &:before {
     content: "";

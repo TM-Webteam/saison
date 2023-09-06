@@ -1,29 +1,83 @@
 .personal-page {
   margin: auto;
-  padding: 140px 0 0px;
+  padding: 133px 0 0px;
+  @media #{$sp} {
+    padding: 50px 0 0;
+  }
+
+  // ===========START SECTIONS==========
 
   .section-welcome {
     padding: 133px 0 133px 0;
     text-align: center;
-    background-color: #f7f7f7;
+    position: relative;
 
-    .ttl-primary {
-      font-size: 42px;
-      margin-bottom: 31px;
+    .slick-slider {
+      .slick-list {
+        height: 100%;
+
+        .slick-track {
+          height: 100%;
+
+          img {
+            height: 100%;
+          }
+        }
+      }
     }
 
-    .ttl-tertiary {
-      font-size: 24px;
+    &__banner {
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: inherit;
+      overflow: hidden;
+      background: linear-gradient(114deg, #343434 0%, #486799 100%) 0% 0%
+        no-repeat padding-box;
+
+      img {
+        position: static;
+        transform: none;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
     }
 
-    .ttl-quaternary {
-      font-size: 20px;
+    &__inner {
+      display: inline-block;
+      background: $primary-color;
+      transform: skewX(-15deg);
+      padding: 0px 20px;
+
+      .ttl-tertiary {
+        transform: skewX(15deg);
+        color: #ffffff;
+        margin-bottom: 0;
+      }
+    }
+
+    &__title {
+      margin-top: 30px;
+      margin-bottom: 56px;
+      color: #ffffff;
+
+      .ttl-primary {
+        margin-bottom: 0;
+      }
     }
   }
 
   .section-primary {
     text-align: center;
     padding: 60px 120px 70px;
+
+    @media #{$sp} {
+      padding: 35px 15px;
+    }
 
     .ttl-primary {
       font-size: 32px;
@@ -36,17 +90,7 @@
       margin: 0;
       text-align: center;
       margin-bottom: 30px;
-    }
-
-    .section-primary-wrapper {
-      .containers {
-        max-width: unset;
-        padding: 0;
-
-        .card-list {
-          justify-content: center;
-        }
-      }
+      color: $primary-color;
     }
   }
 
@@ -55,33 +99,60 @@
     padding: 90px 120px 70px;
     background-color: #eeeeee;
 
+    @media #{$sp} {
+      padding: 35px 15px;
+    }
+
     .notification-primary {
       padding-bottom: 30px;
       margin-bottom: 60px;
       background-color: #fff;
+      box-shadow: 0px 3px 20px #00000029;
 
       .notification-panel2 {
         .card-list {
           padding: 0 30px;
           margin-bottom: 30px;
+
+          @media #{$sp} {
+            flex-direction: column;
+            padding: 0 10px;
+          }
         }
       }
     }
 
     .notification-secondary {
+      box-shadow: 0px 3px 20px #00000029;
+
       .notification-panel1 {
         margin-bottom: 60px;
       }
     }
 
     .notification-tertiary {
+      box-shadow: 0px 3px 20px #00000029;
+
       .notification-panel1 {
-        .notification-panel1-body {
+        &-body {
           padding: 0;
+          margin-bottom: 0;
 
           .card-list {
             padding: 0;
             background-color: #fff;
+
+            @media #{$sp} {
+              flex-direction: column;
+            }
+          }
+        }
+        .bondi_blue_outline_btn {
+          margin-top: 20px;
+          max-width: 522px;
+
+          @media #{$sp} {
+            font-size: 18px;
           }
         }
       }
@@ -91,16 +162,24 @@
   .section-tertiary {
     padding: 70px 0;
     text-align: center;
-    background-color: #fff;
+    background-color: $green-color;
+    color: #ffffff;
+
+    .ttl-sub {
+      font-size: 14px;
+      font-weight: bold;
+      font-family: "Futura";
+    }
 
     .ttl-secondary {
       font-size: 32px;
-      margin-bottom: 31px;
+      margin-bottom: 40px;
     }
 
     .ttl-tertiary {
       font-size: 20px;
       font-weight: 400;
+      margin-bottom: 50px;
     }
   }
 
@@ -108,6 +187,17 @@
     text-align: center;
     padding: 60px 120px 70px;
     background-color: #f7f7f7;
+
+    @media #{$sp} {
+      padding: 35px 15px;
+    }
+
+    .ttl-sub {
+      font-size: 14px;
+      font-weight: bold;
+      font-family: "Futura";
+      color: $primary-color;
+    }
 
     .ttl-secondary {
       font-size: 32px;
@@ -119,6 +209,17 @@
     text-align: center;
     padding: 60px 120px 70px;
     background-color: #fff;
+
+    .ttl-sub {
+      font-size: 14px;
+      font-weight: bold;
+      font-family: "Futura";
+      color: $primary-color;
+    }
+
+    @media #{$sp} {
+      padding: 35px 15px;
+    }
 
     .ttl-secondary {
       font-size: 32px;
@@ -132,9 +233,11 @@
       position: relative;
       padding: 4px 30px;
       width: 100%;
-      border-radius: 10px;
-      box-shadow: 0px 3px 6px #00000029;
       margin-bottom: 30px;
+
+      @media #{$sp} {
+        padding: 4px 8px;
+      }
 
       .ttl-secondary {
         font-size: 30px;
@@ -149,22 +252,33 @@
           font-size: 20px;
           margin-bottom: 0;
           font-weight: 400;
+
+          @media #{$sp} {
+            font-size: 16px;
+          }
         }
       }
 
       .qa-button {
         svg {
           margin-top: 5px;
-
-          line {
-            stroke: #707070;
-          }
         }
       }
     }
 
     .question-tab {
-      background-color: #eeeeee;
+      background: $blue-color-2 0% 0% no-repeat padding-box;
+      box-shadow: 0px 3px 20px #00000029;
+
+      .qa-marker {
+        color: $primary-color;
+      }
+
+      .qa-content {
+        .ttl-tertiary {
+          font-weight: bold;
+        }
+      }
     }
 
     .question-tab.open {
@@ -176,6 +290,31 @@
     .answer-tab {
       background-color: #ffffff;
       margin-top: -30px;
+      padding-right: 60px;
+
+      .qa-marker {
+        color: $green-color-1;
+      }
+    }
+  }
+
+  // ===========END SECTIONS==========
+
+  .section-primary-wrapper {
+    .containers {
+      max-width: unset;
+      padding: 0;
+
+      .card-list {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(auto, 380px));
+        gap: 30px;
+        justify-content: center;
+
+        @media #{$tab} {
+          grid-template-columns: auto;
+        }
+      }
     }
   }
 }
