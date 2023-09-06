@@ -1,0 +1,170 @@
+{% extends "layout/default.njk" %}
+
+{# Custom SEO tags, leave blank to apply the default values #}
+{% set title = "" %}
+{% set description = "" %}
+{% set keywords = "" %}
+
+{# Page settings and also body class #}
+{% set page = "" %}
+
+{# Breadcrumb #}
+{% set breadcrumb = [{
+  text:"当社の強み",
+  link:"#"
+  }] %}
+
+{# Custom tags before </head> #}
+{% block customHead %}{% endblock %}
+
+{# Custom tags before </body> #}
+{% block customJs %}{% endblock %}
+
+{# Main content #}
+{% block content %}
+
+<main class="strength-page">
+  <section class="section-welcome">
+    <div class="container-1200">
+      <h2 class="ttl-secondary">クレディセゾンの強み</h2>
+
+      <h3 class="ttl-tertiary">クレディセゾンはビジネス分野においても45万社以上のお客様に選ばれ続けています。 <br>その理由は「お客様起点」のコンサルティングとサポートにあります。 </h3>
+    </div>
+  </section>
+
+  <section class="section-primary">
+    <div class="container-1200">
+      <div class="section-wrapper flex gap60">
+        <div class="section-img">
+          <img src="/assets/img/common/img-strength-01.png" alt="">
+        </div>
+
+        <div class="section-txt">
+          <h2 class="ttl-secondary">ビジネスで挑戦する方々の、<br>
+            身近なサポーターとして。</h2>
+
+          <p>新たにビジネスを始めたり、継続させたりしていくのはとても大変なことです。
+          </p>
+
+          <p>クレディセゾンの法人向けサービスは、ビジネスに挑戦する方々の頼れるバックオフィスでありたい。
+          </p>
+
+          <p>そんな思いで、日々ビジネスワーカーの方々と向き合っています。</p>
+
+          <p>
+            事業に困ったとき、さらなる成長を目指したいとき。いかなる時においても「身近に相談できる」安心のビジネスサポーターでいることを目指しています。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-secondary">
+    <div class="container-1200">
+      <h2 class="ttl-secondary">クレディセゾンが選ばれる理由</h2>
+
+      <div class="section-wrapper-primary flex gap60">
+        <div class="section-txt">
+          <h3 class="ttl-tertiary">ビジネス成功をサポートする「潤沢な人材リソース」</h3>
+
+          <p>世の中に溢れる多様な企業支援ツールの中から、本当にご自身の事業に必要なサービスを見極めるのは難しいもの。
+          </p>
+
+          <p>クレディセゾンでは専任の担当者が、皆様のお困りごとを伺い、解決策を共に考え、最適なサポートを提案いたします。もちろん、導入後のサポートもお任せください。
+          </p>
+
+          <p>そんな思いで、日々ビジネスワーカーの方々と向き合っています。</p>
+
+          <p>
+            経験豊富なコンサルタントやカスタマーサポートなど、豊富な人材リソースで顔の見えるサービスを提供いたします。</p>
+        </div>
+
+        <div class="section-img">
+          <img src="/assets/img/common/img-strength-02.png" alt="">
+        </div>
+      </div>
+
+      <div class="section-wrapper-secondary">
+        <h3 class="ttl-tertiary">個々の課題に寄り添う豊富なサービスラインナップ</h3>
+
+        <p>
+          さまざまなビジネスシーンで発生するニーズや課題に寄り添い、お客様の声をもとに最適なサービスを開発・提供し続けています。<br>お客様のニーズに合わせた柔軟な対応力が評価され、45万社以上のお客様に選ばれ続けています。<br>是非皆様のお悩みをお聞かせ下さい。
+        </p>
+
+        <div class="anc container">
+          <div class="containers">
+            <ul class="flex gap30 inherit anc__box">
+              <li>
+                <a href="#" class="anc__box_image_1">
+                  <span>ビジネスカードを作りたい</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="anc__box_image_2">
+                  <span>経費を削減したい</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="anc__box_image_3">
+                  <span>業務を効率化したい</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="anc__box_image_4">
+                  <span>資金繰りを改善したい</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="anc__box_image_5">
+                  <span>資金繰りを改善したい</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-tertiary">
+    <div class="container-1200">
+      <h2 class="ttl-secondary">個人事業主から中小企業からまで</h2>
+
+      <div class="section-wrapper">
+        <p>立場がかわれば最適なサービスは異なるものです。クレディセゾンでは、個人事業主様、<br>中小企業様から大企業様向けサービスまで幅広くラインアップしています。
+        </p>
+
+        <div class="section-btn flex gap30">
+          <a href="#" class="bondi_blue_btn">
+            <span>個人事業主様向けサービス</span>
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="15.095" height="15.095" viewBox="0 0 15.095 15.095">
+              <path id="Path_44704" data-name="Path 44704" d="M9.674,0V9.674H0"
+                transform="translate(0 7.548) rotate(-45)" fill="none" stroke="#fff" stroke-width="2" />
+            </svg>
+          </a>
+
+          <a href="#" class="bondi_blue_btn">
+            <span>中小企業様向けサービス</span>
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="15.095" height="15.095" viewBox="0 0 15.095 15.095">
+              <path id="Path_44704" data-name="Path 44704" d="M9.674,0V9.674H0"
+                transform="translate(0 7.548) rotate(-45)" fill="none" stroke="#fff" stroke-width="2" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="breadcrumb">
+    <ul class="flex">
+      <li>
+        <a href="#">TOP</a>
+      </li>
+      <li>
+        <a href="#">資金繰りを改善したい</a>
+      </li>
+    </ul>
+  </section>
+</main>
+{% endblock %}

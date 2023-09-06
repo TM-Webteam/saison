@@ -8,7 +8,11 @@ footer {
   background-color: $black_color;
   .footer-container {
     max-width: 1200px;
-    margin: auto;
+    margin: 0 auto 60px;
+
+    @media #{$sp} {
+      margin-bottom: 30px;
+    }
   }
 
   .primary-section {
@@ -16,15 +20,34 @@ footer {
     padding: 70px 0;
     background-color: $black_color;
 
+    @media #{$sp} {
+      padding: 30px 10px;
+    }
+
     .containers {
       justify-content: flex-start;
       padding: 0;
       margin: 0;
       gap: 80px;
 
+      @media #{$sp} {
+        flex-direction: column;
+        gap: 10px;
+      }
+
       .group {
+        @media #{$sp} {
+          width: 100%;
+        }
+
         .footer__logo {
           margin-bottom: 25px;
+
+          @media #{$sp} {
+            text-align: left;
+            margin-bottom: 10px;
+          }
+
           img {
             width: 288px;
           }
@@ -35,6 +58,11 @@ footer {
           font-weight: 600;
           text-align: left;
           margin-bottom: 17px;
+
+          @media #{$sp} {
+            text-align: left;
+            margin-bottom: 5px;
+          }
         }
 
         .group__list {
@@ -74,7 +102,6 @@ footer {
 
   .secondary-section {
     text-align: center;
-    padding: 10px 0;
     background-color: $black_color;
 
     .containers {
@@ -85,6 +112,11 @@ footer {
       ul {
         justify-content: center;
 
+        @media #{$sp} {
+          flex-direction: column;
+          padding: 0 50px;
+        }
+
         li {
           text-align: center;
           color: #fff;
@@ -92,6 +124,11 @@ footer {
           display: block;
           max-width: 380px;
           flex: 1;
+
+          @media #{$sp} {
+            width: 100%;
+            max-width: unset;
+          }
 
           a {
             color: $blue-color;
@@ -114,9 +151,16 @@ footer {
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    padding: 80px 47px 33px;
     color: $white-color;
-    background-color: $black_color;
+    background-color: $black-color-01;
+    padding: 30px 43px;
+
+    @media #{$sp} {
+      padding: 0;
+      flex-direction: column;
+      gap: 20px;
+      padding: 20px 0;
+    }
 
     .ttl-secondary {
       font-size: 32px;
@@ -124,18 +168,17 @@ footer {
     }
 
     .sec-news__box--item {
-      margin-bottom: 10px;
       flex-wrap: nowrap;
       white-space: nowrap;
 
       dt {
         width: auto;
 
-      img {
-        width: 302px;
-        height: 33px;
-        max-width: unset;
-      }
+        img {
+          width: 302px;
+          height: 33px;
+          max-width: unset;
+        }
       }
 
       .custom-list {
@@ -143,13 +186,14 @@ footer {
         padding: 0;
         justify-content: flex-start;
 
+        @media #{$sp} {
+          flex-direction: column;
+        }
+
         li {
-          font-size: 14px;
+          font-size: 12px;
           position: relative;
           padding-right: 25px; // Add space for the pipe
-          margin-bottom: 10px; // Add some spacing between list items
-
-          position: relative;
 
           &:last-child::before {
             content: ""; // Remove the pipe for the last item

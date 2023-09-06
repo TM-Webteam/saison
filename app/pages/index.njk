@@ -18,21 +18,70 @@
 {% block content %}
 
 <main class="home-page">
-  <section class="section-welcome">
-    <h3 class="ttl-tertiary">法人・個人事業主のお客様向け</h3>
-    <h2 class="ttl-primary">クレディセゾンの <br />決済・ビジネスソリューション</h2>
-    <h4 class="ttl-quaternary">クレディセゾンは、法人・個人事業主の方向けに、カード会社の枠を超えた
-      <br>
-      ビジネス成長につながる幅広いソリューションをご提供しています。
-    </h4>
+  <section class="section-welcome"> 
+    <div class="section-welcome__banner">
+       <div class="carousel-item">
+        <img src="/assets/img/common/banner_1.png" alt="Banner 1">
+        <div class="carousel-banner">
+          <h3 class="ttl-tertiary"><div class="sub-title">法人・個人事業主のお客様向け</div></h3>
+          <h2 class="ttl-primary">クレディセゾンの <br />決済・ビジネスソリューション</h2>
+          <h4 class="ttl-quaternary">クレディセゾンは、法人・個人事業主の方向けに、カード会社の枠を超えた
+            <br>
+            ビジネス成長につながる幅広いソリューションをご提供しています。
+          </h4>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="/assets/img/common/banner_1.png" alt="Banner 1">
+        <div class="carousel-banner">
+          <h3 class="ttl-tertiary"><div class="sub-title">法人・個人事業主のお客様向け</div></h3>
+          <h2 class="ttl-primary">あたなのビジネスに、セゾンのチカラを。</h2>
+          <h4 class="ttl-quaternary">クレディセゾンは、法人・個人事業主の方向けに、カード会社の枠を超えた
+            <br>
+            ビジネス成長につながる幅広いソリューションをご提供しています。
+          </h4>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="/assets/img/common/banner_2.png" alt="Banner 2">
+        <div class="carousel-banner">
+          <h3 class="ttl-tertiary dark"><div class="sub-title">法人・個人事業主のお客様向け</div></h3>
+          <h2 class="ttl-primary dark">クレディセゾンの <br />決済・ビジネスソリューション</h2>
+          <h4 class="ttl-quaternary dark">クレディセゾンは、法人・個人事業主の方向けに、カード会社の枠を超えた
+            <br>
+            ビジネス成長につながる幅広いソリューションをご提供しています。
+          </h4>
+        </div>
+      </div>
+        <div class="carousel-item">
+        <img src="/assets/img/common/banner_2.png" alt="Banner 2">
+        <div class="carousel-banner">
+          <h3 class="ttl-tertiary dark"><div class="sub-title">法人・個人事業主のお客様向け</div></h3>
+          <h2 class="ttl-primary dark">あたなのビジネスに、セゾンのチカラを。</h2>
+          <h4 class="ttl-quaternary dark">クレディセゾンは、法人・個人事業主の方向けに、カード会社の枠を超えた
+            <br>
+            ビジネス成長につながる幅広いソリューションをご提供しています。
+          </h4>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="/assets/img/common/banner_3.png" alt="Banner 3">
+        <div class="carousel-banner">
+          <h3 class="ttl-tertiary"><div class="sub-title">法人・個人事業主のお客様向け</div></h3>
+          <h2 class="ttl-primary">クレディセゾンの <br />決済・ビジネスソリューション</h2>
+          <h4 class="ttl-quaternary">クレディセゾンは、法人・個人事業主の方向けに、カード会社の枠を超えた
+            <br>
+            ビジネス成長につながる幅広いソリューションをご提供しています。
+          </h4>
+        </div>
+      </div>
+    </div>
     <div class="anc">
       <div class="containers">
         <ul class="flex jcC gap30 inherit anc__box">
           <li>
             <a href="#">
-              <div class="anc__box__img">
-                <img src="/assets/img/common/smes.png" alt="For SMEs">
-              </div>
+              <div class="anc__box__img smes"></div>
               <div class="anc__box__content">
                 <span class="font-20px">中小企業様向け</span>
                 <span class="font-16px">サービスはこちら</span>
@@ -47,9 +96,7 @@
           </li>
           <li>
             <a href="#">
-              <div class="anc__box__img">
-                <img src="/assets/img/common/sole_proprietors.png" alt="For Sole Proprietors">
-              </div>
+              <div class="anc__box__img sole"></div>
               <div class="anc__box__content">
                 <span class="font-20px">個人事業主様向け</span>
                 <span class="font-16px">サービスはこちら</span>
@@ -317,7 +364,7 @@
     <h3 class="ttl-tertiary">セミナー・イベント情報</h3>
     <div class="sec-news container">
       <div class="containers">
-        <div class="flex nowrap gap30">
+        <div class="flex jcC nowrap gap30">
           <div href="#" class="sec-news__box">
             <div class="sec-news__box--info">
               <dl class="flex aiC gap12 sec-news__box--item-primary">
@@ -491,7 +538,7 @@
     <div class="card-type22">
       <div class="ttl-notice">CONTACT</div>
       <h3 class="ttl-tertiary">決済・ビジネスソリューションに関するお問合せ</h3>
-      <div class="useful-wp">
+      <div class="useful-wp container">
         <div class="containers">
           <div class="flex jcC gap60">
             <div href="#" class="card">
@@ -521,16 +568,6 @@
   </section>
 </main>
 
-<script>
-  $(document).ready(function () {
-    $(".carousel").slick({
-      slidesToShow: 3,
-      slidesToScroll: 3,
-      dots: true,
-      prevArrow: '<button type="button" class="slick-prev"><svg xmlns="http://www.w3.org/2000/svg" width="15.095" height="15.095" viewBox="0 0 15.095 15.095"><path id="Path_44704" data-name="Path 44704" d="M9.674,9.674V0H0" transform="translate(8.255 14.388) rotate(-135)" fill="none" stroke="#fff" stroke-width="2"/></svg></button>',
-      nextArrow: '<button type="button" class="slick-next"><svg xmlns="http://www.w3.org/2000/svg" width="15.095" height="15.095" viewBox="0 0 15.095 15.095"><path id="Path_44704" data-name="Path 44704" d="M9.674,0V9.674H0" transform="translate(0 7.548) rotate(-45)" fill="none" stroke="#fff" stroke-width="2"/></svg></button>',
-    });
-  });
-</script>
+<script src="/assets/js/main.js"></script>
 
 {% endblock %}
