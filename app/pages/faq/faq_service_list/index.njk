@@ -1,0 +1,140 @@
+{% extends "layout/default.njk" %}
+
+{# Custom SEO tags, leave blank to apply the default values #}
+{% set title = "" %}
+{% set description = "" %}
+{% set keywords = "" %}
+
+{# Page settings and also body class #}
+{% set page = "" %}
+
+{# Custom tags before </head> #}
+{% block customHead %}{% endblock %}
+
+{# Custom tags before </body> #}
+{% block customJs %}{% endblock %}
+
+{# Main content #}
+{% block content %}
+
+  <main class="faq-service-page">
+    <section class="section-welcome">
+      <div class="containers">
+        <h1 class="ttl-primary">「支払い.com」に関するよくある質問</h1>
+
+        <h3 class="ttl-tertiary">自分に合ったビジネスカードを。</h3>
+      </div>
+    </section>
+    
+    <section class="section-primary">
+      <div class="anc01">
+        <div class="containers">
+          <div class="anc01__content">
+            <h1 class="anc01__content-head">よくあるご質問</h1>
+            <p class="anc01__content-detail">
+              お客様からよくいただくご質問にお答えします。この他にご質問がある方は、
+              <br> 
+              <a>お問い合わせ</a>より、お気軽に連絡ください。<br>
+              2営業日以内に担当者からご連絡させて頂きます。
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-secondary">
+      <div class="containers">
+        <div class="QA__content">
+          <div id="question__content" class="question__content">
+            <div class="QA__content-head">Q.</div>
+            <div class="QA__content-content">質問内容が入ります。質問内容が入ります。質問内容が入ります。質問内容が入ります。質問内容が入ります。質問内容が入ります。質問内容が入ります。質問内容が入ります。質問内容が入ります。質問内容が入ります。</div>
+            <div class="QA__content-icon">
+              {% include "component/icons/arrow-up.njk" %}
+            </div>
+          </div>
+          <div id="answer__content" class="answer__content">
+            <div class="QA__content-head">A.</div>
+            <div class="QA__content-content">質問内容が入ります。質問内容が入ります。質問内容が入ります。質問内容が入ります。質問内容が入ります。質問内容が入ります。質問内容が入ります。質問内容が入ります。</div>
+            <div></div>
+          </div>
+        </div>
+
+        <div class="QA__content">
+          <div class="question__content">
+            <div class="QA__content-head">Q.</div>
+            <div class="QA__content-content">質問内容が入ります。質問内容が入ります。質問内容が入ります。質問内容が入ります。質問内容が入ります。質問内容が入ります。質問内容が入ります。質問内容が入ります。質問内容が入ります。質問内容が入ります。</div>
+            <div class="QA__content-icon">
+              {% include "component/icons/arrow-down.njk" %}
+            </div>
+          </div>
+        </div>
+
+
+        <div class="QA__content">
+          <div class="question__content">
+            <div class="QA__content-head">Q.</div>
+            <div class="QA__content-content">質問内容が入ります。質問内容が入ります。質問内容が入ります。質問内容が入ります。質問内容が入ります。質問内容が入ります。質問内容が入ります。質問内容が入ります。質問内容が入ります。質問内容が入ります。</div>
+            <div class="QA__content-icon">
+              {% include "component/icons/arrow-down.njk" %}
+            </div>
+          </div>
+        </div>
+
+        <div class="QA__content">
+          <div class="question__content">
+            <div class="QA__content-head">Q.</div>
+            <div class="QA__content-content">質問内容が入ります。質問内容が入ります。質問内容が入ります。質問内容が入ります。質問内容が入ります。質問内容が入ります。質問内容が入ります。質問内容が入ります。質問内容が入ります。質問内容が入ります。</div>
+            <div class="QA__content-icon">
+              {% include "component/icons/arrow-down.njk" %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-tertiary">
+      <div class="card-type22">
+        <div class="ttl-notice">FOR THOSE CONSIDERING</div>
+        <h3 class="ttl-tertiary">支払い.comをご検討中の方へ</h3>
+        <div class="useful-wp">
+          <div class="containers">
+            <div class="flex jcC gap60">
+              <div href="#" class="card">
+                <summary class="card__box">
+                  <div class="card__info">
+                    <div class="card__info-image">
+                      <img src="/assets/img/common/book.png" alt="Your Image">
+                    </div>
+                    <div class="card__info-content">
+                      <h2>サービス内容について <br> 詳しく知りたい方はこちら</h2>
+                      <span>支払い.comのサービス資料をダウンロートできます。フォーム入力後リアルタイムでお送りいたします。</span>
+                    </div>
+
+                  </div>
+                  <div class="btn-container"><a class="blue_gradient_btn" href="#">サービス資料ダウンロード</a></div>
+                </summary>
+              </div>
+              <div href="#" class="card">
+                <summary class="card__box">
+                  <div class="card__info col-right">
+                    <div class="card__info-image">
+                      <img src="/assets/img/common/laptop.png" alt="Your Image">
+                    </div>
+                    <div class="card__info-content">
+                      <h2>利用イメージを <br> 知りたい方はこちら</h2>
+                      <span>Webから無料登録してすぐにお試しいただけます。面倒な面談や、書類提出は必要ありません。</span>
+                    </div>
+
+                  </div>
+                  <div class="btn-container"><a class="blue_gradient_btn" href="#">今すぐ無料で登録</a></div>
+                </summary>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+{% endblock %}

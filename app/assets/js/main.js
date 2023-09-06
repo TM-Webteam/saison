@@ -134,6 +134,24 @@ $(document).ready(function () {
   });
 });
 
+//______________________________________
+// QA
+//______________________________________
+$(document).ready(function() {
+  // Select the question and answer elements
+  var $question = $('#question__content');
+  var $answer = $('#answer__content');
+
+  // Initially hide the answer
+  $answer.hide();
+
+  // Add a click event handler to the question
+  $question.click(function() {
+    // Toggle the visibility of the answer
+    $answer.slideToggle();
+  });
+});
+
 //--------------------------------------
 //　バナー　追従
 //--------------------------------------
