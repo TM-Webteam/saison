@@ -30,6 +30,10 @@
       left: 50%;
       transform: translate(-50%, -50%);
       width: 100%;
+      @media #{$sp} {
+        padding: 0 15px;
+        transform: translate(-50%, -70%);
+      }
     }
 
     .ttl-primary {
@@ -39,6 +43,10 @@
 
       &.dark {
         color: $black_color;
+      }
+
+      @media #{$sp} {
+        font-size: 22px;
       }
     }
 
@@ -59,6 +67,9 @@
 
       .sub-title {
         transform: skew(20deg);
+        @media #{$sp} {
+          font-size: 16px;
+        }
       }
     }
 
@@ -69,6 +80,10 @@
 
       &.dark {
         color: $black_color;
+      }
+
+      @media #{$sp} {
+        font-size: 16px;
       }
     }
 
@@ -125,6 +140,10 @@
             &.sole {
               background-image: url("/assets/img/common/sole_proprietors.png");
             }
+            @media #{$sp} {
+              width: 80px;
+              height: 60px;
+            }
           }
           &__content {
             display: flex;
@@ -132,6 +151,11 @@
           }
           &__svg {
             margin-right: 24px;
+          }
+          @media #{$sp} {
+            gap: 20px;
+            top: 50%;
+            transform: translate(-50%, -100%);
           }
         }
       }
@@ -145,6 +169,10 @@
     .ttl-primary {
       font-size: 32px;
       margin-bottom: 51px;
+      @media #{$sp} {
+        font-size: 22px;
+        margin-bottom: 20px;
+      }
     }
 
     .anc {
@@ -188,6 +216,11 @@
             background-color: rgba(0, 0, 0, 0.56);
             border-radius: 50%;
             z-index: 1;
+            @media #{$sp} {
+              width: 30px;
+              height: 30px;
+              left: -20px;
+            }
           }
 
           .slick-next {
@@ -199,6 +232,11 @@
             background-color: rgba(0, 0, 0, 0.56);
             border-radius: 50%;
             z-index: 1;
+            @media #{$sp} {
+              width: 30px;
+              height: 30px;
+              right: -20px;
+            }
           }
 
           svg {
@@ -215,6 +253,9 @@
         }
       }
     }
+    @media #{$sp} {
+      padding: 50px 15px;
+    }
   }
 
   .tertiary-section {
@@ -223,12 +264,19 @@
 
     .ttl-primary {
       font-size: 32px;
+      @media #{$sp} {
+        font-size: 22px;
+      }
     }
 
     .ttl-quaternary {
       font-size: 20px;
       font-weight: 400;
       margin-bottom: 50px;
+      @media #{$sp} {
+        font-size: 14px;
+        margin-bottom: 20px;
+      }
     }
 
     .anc {
@@ -297,9 +345,15 @@
                 width: 100%;
               }
             }
+            @media #{$sp} {
+              width: 100%;
+            }
           }
         }
       }
+    }
+    @media #{$sp} {
+      padding: 50px 15px;
     }
   }
 
@@ -311,6 +365,10 @@
     .ttl-secondary {
       font-size: 32px;
       margin-bottom: 50px;
+      @media #{$sp} {
+        font-size: 22px;
+        margin-bottom: 20px;
+      }
     }
 
     .grid {
@@ -394,6 +452,9 @@
               border: none;
               border-radius: 15px;
             }
+            @media #{$sp} {
+              margin-bottom: 20px;
+            }
           }
 
           .btn01 {
@@ -439,6 +500,9 @@
         border-right: 3px px solid $blue-color;
       }
     }
+    @media #{$sp} {
+      padding: 50px 15px;
+    }
   }
 
   .quinary-section {
@@ -449,6 +513,10 @@
       font-size: 32px;
       margin-bottom: 40px;
       line-height: 51px;
+      @media #{$sp} {
+        font-size: 22px;
+        margin-bottom: 20px;
+      }
     }
 
     .ttl-quaternary {
@@ -456,6 +524,10 @@
       font-size: 20px;
       font-weight: 400;
       margin-bottom: 50px;
+      @media #{$sp} {
+        font-size: 14px;
+        margin-bottom: 20px;
+      }
     }
 
     .grid {
@@ -553,6 +625,9 @@
           }
         }
       }
+      @media #{$sp} {
+        margin-bottom: 20px;
+      }
     }
 
     .btn01 {
@@ -570,6 +645,9 @@
         margin: 0;
       }
     }
+    @media #{$sp} {
+      padding: 50px 15px;
+    }
   }
 
   .senary-section {
@@ -581,6 +659,10 @@
       font-size: 32px;
       margin-bottom: 50px;
       line-height: 51px;
+      @media #{$sp} {
+        font-size: 22px;
+        margin-bottom: 20px;
+      }
     }
 
     .ttl-quaternary {
@@ -696,6 +778,9 @@
         margin: 0;
       }
     }
+    @media #{$sp} {
+      padding: 50px 0;
+    }
   }
 
   .septenary-section {
@@ -707,6 +792,9 @@
       font-size: 32px;
       margin-bottom: 20px;
       line-height: 50px;
+      @media #{$sp} {
+        font-size: 22px;
+      }
     }
 
     .sec-news {
@@ -740,12 +828,21 @@
             dd {
               width: auto;
               font-size: 16px;
+              @media #{$sp} {
+                font-size: 14px;
+              }
             }
             .black_pill_btn {
               &.small {
                 border-radius: 30px;
               }
             }
+            @media #{$sp} {
+              gap: 10px;
+            }
+          }
+          @media #{$sp} {
+            padding: 15px 0;
           }
         }
       }
@@ -765,6 +862,9 @@
         font-size: 20px;
         margin: 0;
       }
+    }
+    @media #{$sp} {
+      padding: 50px 15px;
     }
   }
 
@@ -796,6 +896,10 @@
       font-size: 32px;
       margin-bottom: 45px;
       line-height: 51px;
+      @media #{$sp} {
+        font-size: 22px;
+        line-height: 35px;
+      }
     }
 
     .useful-wp {
@@ -842,6 +946,9 @@
                 }
               }
             }
+            @media #{$sp} {
+              padding: 15px;
+            }
           }
 
           &:hover {
@@ -857,5 +964,8 @@
         }
       }
     }
+  }
+  @media #{$sp} {
+    padding: 47px 0 0;
   }
 }
