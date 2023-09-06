@@ -174,124 +174,32 @@
     }
   }
 
-  .section-secondary {
+  .section-tertiary {
     text-align: center;
-    padding: 70px 0 80px;
-    background-color: #f7f7f7;
+    padding: 80px 0 70px;
+    background-color: #fff;
 
     .ttl-secondary {
       font-size: 32px;
-      margin-bottom: 50px;
+      margin-bottom: 45px;
     }
 
-    .section-wrapper-primary {
-      align-items: center;
-      margin-bottom: 60px;
+    .section-wrapper {
+      padding: 50px 75px;
+      background-color: #F7F7F7;
+      margin: auto;
 
-      .section-img {
-        width: calc(50% - 30px);
-      }
-
-      .section-txt {
-        width: calc(50% - 30px);
-
-        .ttl-tertiary {
-          font-size: 22px;
-          text-align: left;
-          margin-bottom: 20px;
-        }
-
-        p {
-          text-align: left;
-          line-height: 1.8;
-          font-weight: 400;
-        }
-      }
-    }
-
-    .section-wrapper-secondary {
       .ttl-tertiary {
         font-size: 22px;
         text-align: left;
-        margin-bottom: 25px;
+        margin-bottom: 20px;
       }
 
       p {
         text-align: left;
         line-height: 1.8;
         font-weight: 400;
-        margin-bottom: 30px;
-      }
-
-      .anc {
-        .containers {
-          max-width: unset;
-          padding: 0;
-
-          .anc__box {
-            gap: 30px;
-            justify-content: flex-start;
-
-            li {
-              width: auto;
-
-              a {
-                position: relative;
-                width: 380px;
-                height: 180px;
-                border: 0;
-                padding: 76px 65px 74px 65px;
-
-                background-size: cover;
-                background-repeat: no-repeat;
-                &.anc__box_image_1 {
-                  background-image: url("/assets/img/common/search_1.png");
-                }
-                &.anc__box_image_2 {
-                  background-image: url("/assets/img/common/search_2.png");
-                }
-                &.anc__box_image_3 {
-                  background-image: url("/assets/img/common/search_3.png");
-                }
-                &.anc__box_image_4 {
-                  background-image: url("/assets/img/common/search_4.png");
-                }
-                &.anc__box_image_5 {
-                  background-image: url("/assets/img/common/search_5.png");
-                }
-
-                &::before {
-                  content: "";
-                  position: absolute;
-                  top: 0;
-                  left: 0;
-                  bottom: 0;
-                  width: 100%;
-                  height: 100%;
-                  background-color: rgba(0, 0, 0, 0.63);
-                  transform: none;
-                  border: none;
-                }
-
-                &:hover {
-                  color: $white-color;
-                }
-
-                span {
-                  position: absolute;
-                  top: 50%;
-                  left: 50%;
-                  transform: translate(-50%, -50%);
-                  width: 100%;
-                  font-weight: normal;
-                }
-                @media (max-width: 768px) {
-                  width: 100%;
-                }
-              }
-            }
-          }
-        }
+        margin-bottom: 28px;
       }
     }
   }
