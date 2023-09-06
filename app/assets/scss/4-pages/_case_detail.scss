@@ -1,4 +1,4 @@
-.case-details-page {
+.case_detail-page {
   margin: auto;
   padding: 140px 0 0px;
 
@@ -240,8 +240,10 @@
           }
 
           .bondi_blue_btn.small {
-            display: block;
-            margin: auto;
+            @media #{$sp} {
+              display: block;
+              margin: auto;
+            }
           }
         }
       }
