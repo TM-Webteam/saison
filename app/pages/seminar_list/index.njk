@@ -1,0 +1,156 @@
+{% extends "layout/default.njk" %}
+
+{# Custom SEO tags, leave blank to apply the default values #}
+{% set title = "" %}
+{% set description = "" %}
+{% set keywords = "" %}
+
+{% set breadcrumb = [{
+text:"セミナー（一覧）",
+link:"/seminar_list"
+}] %}
+
+{# Page settings and also body class #}
+{% set page = "" %}
+
+{# Custom tags before </head> #}
+{% block customHead %}{% endblock %}
+
+{# Custom tags before </body> #}
+{% block customJs %}{% endblock %}
+
+{# Main content #}
+{% block content %}
+
+  <main class="seminar_list-page">
+    <section class="banner section-welcome">
+      <div class="section-welcome__banner">
+        <img src="/assets/img/common/lower_visual.png">
+      </div>
+      <div class="section-welcome__title">
+        <h2 class="ttl-primary">セミナー情報</h2>
+      </div>
+      <div>
+        <h4 class="ttl-sub-primary">クレディセゾンが開催するセミナー情報です。過去に開催したセミナーをオンラインでもご視聴いただけます。</h4>
+      </div>
+    </section>
+    
+    <section class="seminar hero-lower core">
+      <div class="containers">
+        <div class="hero-lower__box">
+          <h4 class="ttl-quaternary">SEMINAR</h4>
+          <h1 class="ttl-primary">申込受付中のセミナー</h1>
+          <div class="hero-lower__box--sub">現在開予定のセミナーはありません</div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="archire card-type1">
+      <div class="containers">
+        <h4 class="ttl-quaternary">ARCHIVE</h4>
+        <h2 class="ttl-secondary">アーカイブ動画</h2>
+        <ul class="flex gap30 card">
+          <li class="card__box">
+            <figure class="card__box--img"><img src="/assets/img/common/seminar_01.png" alt=""></figure>
+            <div class="card__box-body">
+              <h3 class="card__box--ttl">法改正を前にした今やるべき経理のデジタル化とは？</h3>
+              <div class="card__box--txt">電子帳簿保存法改正・インボイス制度開始を踏まえて、経理が取り組むべきデジタル化のポイントと対策をお伝えします。</div>
+              <div class="date-time"><img src="/assets/img/common/date-time.svg" alt=""> <span class="date-time--txt">2022年3月17日（木）15:00～16:00</span></div>
+            </div>
+            <div class="card__box--button">
+              <a href="#" class="blue_more">動画を視聴する</a>
+            </div>
+          </li>
+          <li class="card__box">
+            <figure class="card__box--img"><img src="/assets/img/common/seminar_02.png" alt=""></figure>
+            <div class="card__box-body">
+              <h3 class="card__box--ttl">経理DXツール紹介セミナー</h3>
+              <div class="card__box--txt">経理業務のコスト削減・生産性向上につながる経理DXノウハウをお伝えします。</div>
+              <div class="date-time"><img src="/assets/img/common/date-time.svg" alt=""> <span class="date-time--txt">2022年2月24日（木）16:00～17:00</span></div>
+            </div>
+            <div class="card__box--button">
+              <a href="#" class="blue_more">動画を視聴する</a>
+            </div>
+          </li>
+          <li class="card__box">
+            <figure class="card__box--img"><img src="/assets/img/common/seminar_03.png" alt=""></figure>
+            <div class="card__box-body">
+              <h3 class="card__box--ttl">“電帳法対応”で変わるバックオフィス業務</h3>
+              <div class="card__box--txt">活用シーンの補足説明文が入ります。活用シーンの補足説明文が入ります。活用シーンの補足説明文が入ります。活用シーンの補足説明文が入ります。</div>
+              <div class="date-time"><img src="/assets/img/common/date-time.svg" alt=""> <span class="date-time--txt">2022年2月24日（木）16:00～17:00</span></div>
+            </div>
+            <div class="card__box--button">
+              <a href="#" class="blue_more">動画を視聴する</a>
+            </div>
+          </li>
+          <li class="card__box">
+            <figure class="card__box--img"><img src="/assets/img/common/seminar_01.png" alt=""></figure>
+            <div class="card__box-body">
+              <h3 class="card__box--ttl">法改正を前にした今やるべき経理のデジタル化とは？</h3>
+              <div class="card__box--txt">電子帳簿保存法改正・インボイス制度開始を踏まえて、経理が取り組むべきデジタル化のポイントと対策をお伝えします。</div>
+              <div class="date-time"><img src="/assets/img/common/date-time.svg" alt=""> <span class="date-time--txt">2022年3月17日（木）15:00～16:00</span></div>
+            </div>
+            <div class="card__box--button">
+              <a href="#" class="blue_more">動画を視聴する</a>
+            </div>
+          </li>
+          <li class="card__box">
+            <figure class="card__box--img"><img src="/assets/img/common/seminar_02.png" alt=""></figure>
+            <div class="card__box-body">
+              <h3 class="card__box--ttl">経理DXツール紹介セミナー</h3>
+              <div class="card__box--txt">経理業務のコスト削減・生産性向上につながる経理DXノウハウをお伝えします。</div>
+              <div class="date-time"><img src="/assets/img/common/date-time.svg" alt=""> <span class="date-time--txt">2022年2月24日（木）16:00～17:00</span></div>
+            </div>
+            <div class="card__box--button">
+              <a href="#" class="blue_more">動画を視聴する</a>
+            </div>
+          </li>
+          <li class="card__box">
+            <figure class="card__box--img"><img src="/assets/img/common/seminar_03.png" alt=""></figure>
+            <div class="card__box-body">
+              <h3 class="card__box--ttl">“電帳法対応”で変わるバックオフィス業務</h3>
+              <div class="card__box--txt">活用シーンの補足説明文が入ります。活用シーンの補足説明文が入ります。活用シーンの補足説明文が入ります。活用シーンの補足説明文が入ります。</div>
+              <div class="date-time"><img src="/assets/img/common/date-time.svg" alt=""> <span class="date-time--txt">2022年2月24日（木）16:00～17:00</span></div>
+            </div>
+            <div class="card__box--button">
+              <a href="#" class="blue_more">動画を視聴する</a>
+            </div>
+          </li>
+          <li class="card__box">
+            <figure class="card__box--img"><img src="/assets/img/common/seminar_01.png" alt=""></figure>
+            <div class="card__box-body">
+              <h3 class="card__box--ttl">法改正を前にした今やるべき経理のデジタル化とは？</h3>
+              <div class="card__box--txt">電子帳簿保存法改正・インボイス制度開始を踏まえて、経理が取り組むべきデジタル化のポイントと対策をお伝えします。</div>
+              <div class="date-time"><img src="/assets/img/common/date-time.svg" alt=""> <span class="date-time--txt">2022年3月17日（木）15:00～16:00</span></div>
+            </div>
+            <div class="card__box--button">
+              <a href="#" class="blue_more">動画を視聴する</a>
+            </div>
+          </li>
+          <li class="card__box">
+            <figure class="card__box--img"><img src="/assets/img/common/seminar_02.png" alt=""></figure>
+            <div class="card__box-body">
+              <h3 class="card__box--ttl">経理DXツール紹介セミナー</h3>
+              <div class="card__box--txt">経理業務のコスト削減・生産性向上につながる経理DXノウハウをお伝えします。</div>
+              <div class="date-time"><img src="/assets/img/common/date-time.svg" alt=""> <span class="date-time--txt">2022年2月24日（木）16:00～17:00</span></div>
+            </div>
+            <div class="card__box--button">
+              <a href="#" class="blue_more">動画を視聴する</a>
+            </div>
+          </li>
+          <li class="card__box">
+            <figure class="card__box--img"><img src="/assets/img/common/seminar_03.png" alt=""></figure>
+            <div class="card__box-body">
+              <h3 class="card__box--ttl">“電帳法対応”で変わるバックオフィス業務</h3>
+              <div class="card__box--txt">活用シーンの補足説明文が入ります。活用シーンの補足説明文が入ります。活用シーンの補足説明文が入ります。活用シーンの補足説明文が入ります。</div>
+              <div class="date-time"><img src="/assets/img/common/date-time.svg" alt=""> <span class="date-time--txt">2022年2月24日（木）16:00～17:00</span></div>
+            </div>
+            <div class="card__box--button">
+              <a href="#" class="blue_more">動画を視聴する</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+{% endblock %}
