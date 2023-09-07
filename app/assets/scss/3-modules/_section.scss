@@ -1431,27 +1431,30 @@
 
   .card {
     width: 100%;
-    background-color: #e1e1e1;
+    background-color: #ffffff;
     box-shadow: none;
     padding: 30px 30px 34px 30px;
+    box-shadow: 0px 3px 20px #00000029;
+    border-radius: 3px;
+
+    &-content {
+      @media #{$sp} {
+        display: grid;
+      }
+    }
 
     .ttl-tertiary {
       letter-spacing: 2px;
       line-height: 28px;
-      margin-bottom: 0px;
+      margin-bottom: 30px;
     }
 
     .item__img {
-      width: 163px;
-      height: 163px;
-      background-color: #fff;
       border-radius: 10px;
-      font-size: 16px;
-      padding: 55px 40px;
-      vertical-align: middle;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+
+      img {
+        object-fit: cover;
+      }
     }
 
     .item__box {
@@ -1462,7 +1465,7 @@
         font-size: 16px;
         color: #000;
         font-weight: 500;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
       }
 
       .item__box--txt {
@@ -1482,6 +1485,8 @@
 .card-type12 {
   padding: 0;
   width: calc(33.33333% - 20px);
+  display: flex;
+  flex-direction: column;
 
   .card__box--ttl {
     padding: 10px 0;
@@ -1491,51 +1496,29 @@
     margin-bottom: 30px;
   }
 
-  .container {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    height: 185px;
-    border: 0;
+  .credit-card {
+    padding: 0 70px;
+  }
+
+  .card__box--des {
+    flex: 1;
+    margin-top: 20px;
+    .price-list {
+      list-style-type: none;
+      padding-left: 15px;
+      margin-bottom: 30px;
+    }
+
+    & li {
+      text-align: left;
+      position: relative;
+      padding-left: 15px;
+      margin-bottom: 10px;
+    }
+  }
+
+  .bondi_blue_outline_btn {
     width: 100%;
-    margin-bottom: 30px;
-
-    .centered-text {
-      font-size: 20px;
-      text-align: center;
-      margin: 0;
-      letter-spacing: 4px;
-      line-height: 1.4;
-      font-weight: 500;
-    }
-
-    .credit-card {
-      position: absolute;
-      width: 170px;
-      height: 107px;
-      bottom: 0;
-      left: 50%;
-      transform: translateX(-50%);
-      border: 1px solid #000;
-
-      .credit-card-img {
-        width: 170px;
-        height: 107px;
-      }
-    }
-  }
-
-  .price-list {
-    list-style-type: none;
-    padding-left: 15px;
-    margin-bottom: 30px;
-  }
-
-  .price-list li {
-    text-align: left;
-    position: relative;
-    padding-left: 15px;
-    margin-bottom: 10px;
   }
 
   .price-list li::before {
@@ -1552,7 +1535,6 @@
 // カード型 type13
 .card-type13 {
   padding: 0px 30px;
-  margin-bottom: 30px;
 
   dd {
     text-align: left;
@@ -1604,8 +1586,7 @@
 
     .sec-right-wrapper {
       .sec01-right-box {
-        margin-bottom: 10px;
-        min-height: 70px;
+        margin-bottom: 20px;
 
         dt {
           flex-wrap: nowrap;
@@ -1615,7 +1596,7 @@
             height: 45px;
             flex-shrink: 0;
             border-radius: 50%;
-            background-color: #003f98;
+            background-color: $primary-color;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -1629,7 +1610,6 @@
             font-size: 20px;
             font-weight: 400;
             white-space: normal;
-            letter-spacing: 3px;
             text-align: left;
             max-width: 100%;
             white-space: normal;
