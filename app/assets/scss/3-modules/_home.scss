@@ -362,6 +362,9 @@
     }
     @media #{$sp} {
       padding: 50px 15px;
+      .container {
+        padding: 0;
+      }
     }
   }
 
@@ -483,10 +486,16 @@
               margin-left: 15px;
             }
           }
+          @media #{$sp} {
+            padding: 15px;
+          }
         }
       }
       @media #{$sp} {
         margin-bottom: 20px;
+        &.container {
+          padding: 0;
+        }
       }
     }
 
@@ -638,6 +647,9 @@
       }
       @media #{$sp} {
         margin-bottom: 20px;
+        &.container {
+          padding: 0;
+        }
       }
     }
 
