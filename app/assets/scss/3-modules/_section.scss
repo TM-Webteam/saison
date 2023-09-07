@@ -1585,6 +1585,10 @@
         max-height: 281px;
         margin-bottom: 30px;
 
+        @media #{$sp} {
+          margin-bottom: 0px;
+        }
+
         img {
           width: 100%;
           height: 100%;
