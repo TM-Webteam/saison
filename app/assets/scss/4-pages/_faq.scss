@@ -1,6 +1,10 @@
 .faq-page {
   margin: auto;
-  padding: 140px 0 0;
+  padding: 130px 0 0;
+
+  @media #{$sp} {
+    padding: 54px 0 0;
+  }
 
   .section-welcome {
     position: relative;
@@ -36,6 +40,11 @@
         border-radius: 0px 3px 3px 0px;
         background: #444444;
         opacity: 1;
+
+        @media #{$sp} {
+          width: 40px;
+          height: 40px;
+        }
       }
     }
 
@@ -48,12 +57,22 @@
         grid-gap: 30px;
         padding: 0 120px;
 
+        @media #{$sp} {
+          display: block;
+          width: 100%;
+          padding: 0 20px;
+        }
+
         .grid-item {
           border: 1px solid #ccc;
           padding: 50px 30px;
           text-align: center;
           background: #444444;
           position: relative;
+
+          @media #{$sp} {
+            margin-bottom: 10px;
+          }
 
           .grid-item__title {
             text-align: center;
@@ -95,6 +114,10 @@
         font-size: 32px;
         text-align: center;
         margin-bottom: 30px;
+
+        @media #{$sp} {
+          font-size: 16px;
+        }
       }
 
       .quinary-btn {
@@ -110,6 +133,32 @@
         margin-bottom: 70px;
         font-size: 20px;
         font-weight: normal;
+
+        @media #{$sp} {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  .octonary-section {
+    .card-type22 {
+      .ttl-tertiary {
+        @media #{$sp} {
+          font-size: 20px;
+        }
+      }
+    }
+
+    .card__box {
+      padding: 40px !important;
+
+      .blue_gradient_btn {
+        margin-top: 35px;
+
+        @media #{$sp} {
+          max-width: 100%;
+        }
       }
     }
   }
