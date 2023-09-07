@@ -522,6 +522,11 @@
     }
     @media #{$sp} {
       padding: 50px 15px;
+      .bondi_blue_btn {
+        width: 85%;
+        text-align: center;
+        display: inline-block;
+      }
     }
   }
 
@@ -670,6 +675,9 @@
     }
     @media #{$sp} {
       padding: 50px 15px;
+      .blue_gradient_btn.small {
+        width: 85%;
+      }
     }
   }
 
