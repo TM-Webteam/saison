@@ -56,10 +56,17 @@
       .section-welcome__title {
         line-height: 60px;
         margin-bottom: 30px;
+        @media #{$sp} {
+          font-size: 22px;
+        }
       }
       .ttl-sub-primary {
         font-size: 20px;
         line-height: 30px;
+        @media #{$sp} {
+          font-size: 16px;
+          line-height: 24px;
+        }
       }
     }
   }
@@ -67,18 +74,27 @@
     .ttl-primary {
       font-size: 32px;
       margin-bottom: 23px;
+      @media #{$sp} {
+        font-size: 22px;
+      }
     }
     .hero-lower__box--sub {
       font-size: 18px;
       line-height: 26px;
       font-weight: 600;
       color: #808080;
+      @media #{$sp} {
+        font-size: 16px;
+      }
     }
   }
   .archire.card-type1 {
     .ttl-secondary {
       font-size: 32px;
       margin-bottom: 51px;
+      @media #{$sp} {
+        font-size: 22px;
+      }
     }
     .card__box {
       position: relative;
