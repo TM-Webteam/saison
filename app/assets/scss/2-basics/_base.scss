@@ -74,7 +74,7 @@ $grid-breakpoints: (
     }
   }
   &.aiC {
-    align-items: center;
+    align-items: center !important;
   }
   &.aiE {
     align-items: flex-end;

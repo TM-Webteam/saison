@@ -1441,6 +1441,16 @@
 .card-type11 {
   width: calc(50% - 15px);
 
+  @media #{$tab} {
+    width: 80%;
+    margin: auto;
+  }
+
+  @media #{$sp} {
+    width: 100%;
+    margin: auto;
+  }
+
   .card {
     width: 100%;
     background-color: #ffffff;
@@ -1548,9 +1558,17 @@
 .card-type13 {
   padding: 0px 30px;
 
+  @media #{$sp} {
+    padding: 0px 15px;
+  }
+
   dd {
     text-align: left;
     margin-bottom: 60px;
+
+    @media #{$sp} {
+      margin-bottom: 30px;
+    }
   }
 
   .sp-reverse {
@@ -1625,6 +1643,10 @@
             text-align: left;
             max-width: 100%;
             white-space: normal;
+
+            @media #{$sp} {
+              font-size: 18px;
+            }
 
             .yellow-bottom {
               font-weight: 600;
@@ -2610,6 +2632,17 @@
     }
   }
 
+  .inquiry__box--content {
+    display: flex;
+    justify-content: space-between;
+
+    @media #{$sp} {
+      display: grid;
+      gap: 20px;
+      justify-content: center;
+    }
+  }
+
   .card__box--txt {
     font-size: 16px;
     width: auto;
@@ -2642,6 +2675,10 @@
   padding: 0 30px;
   background-color: #fff;
 
+  @media #{$sp} {
+    padding: 0 15px;
+  }
+
   .relation {
     border: 1px solid #00aba0;
 
@@ -2654,6 +2691,10 @@
     .notification-panel2-body {
       padding: 0 30px;
       margin-bottom: 30px;
+
+      @media #{$sp} {
+        padding: 0 15px;
+      }
     }
   }
 }
