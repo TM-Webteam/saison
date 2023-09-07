@@ -820,7 +820,7 @@
   }
   &:hover {
     opacity: 1;
-    background: $gradient-bg;
+    background: $gradient-bg-reverse;
     color: #fff;
     &::before {
       border-top: 2px solid #fff;

@@ -1355,10 +1355,26 @@
 
 // カード型 type10
 .card-type10 {
+  display: block;
   width: auto;
   max-width: 380px;
   padding: 35px 30px 30px 30px;
   background-color: #fff;
+
+  &:hover {
+    .bondi_blue_btn {
+      border: 2px solid #0497b5;
+      opacity: 1;
+      background: white;
+      color: #0497b5;
+
+      svg {
+        path {
+          stroke: #0497b5;
+        }
+      }
+    }
+  }
 
   .grid__card--cat {
     margin-bottom: 15px;
