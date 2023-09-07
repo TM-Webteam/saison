@@ -680,6 +680,7 @@
         padding: 0;
 
         .sec-news__box {
+          width: 500px;
           background-color: #fff;
           box-shadow: 0 3px 20px $gray-color-4;
           padding: 30px 30px 30px 39px;
@@ -688,6 +689,9 @@
           .ttl-tertiary {
             margin-bottom: 20px;
             font-size: 20px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
           }
           .sec-news__box--info {
             border-bottom: 1px solid $gray-color-3;
@@ -826,8 +830,13 @@
             }
 
             dd {
+              width: 670px !important;
+              display: block;
               width: auto;
               font-size: 16px;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
               @media #{$sp} {
                 font-size: 14px;
               }
