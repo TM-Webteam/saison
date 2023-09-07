@@ -641,7 +641,7 @@
   font-size: 16px;
   font-weight: bold;
   text-align: center;
-  padding: 12px 35px;
+  padding: 10px 35px;
   background: #0497b5;
   box-shadow: none;
   position: relative;
@@ -649,6 +649,7 @@
   align-items: center;
   margin: 0 auto;
   position: relative;
+  border: 2px solid #0497b5;
   @media #{$sp} {
     font-size: 14px;
     padding: 13px;
@@ -656,12 +657,15 @@
     border: 2px solid #0497b5;
   }
   &:hover {
+    border: 2px solid #0497b5;
     opacity: 1;
-    background: #0497b5;
-    color: #fff;
-    &::before {
-      border-top: solid 3px #0497b5;
-      border-right: solid 3px #0497b5;
+    background: white;
+    color: #0497b5;
+
+    svg {
+      path {
+        stroke: #0497b5;
+      }
     }
   }
   // サムネ付きボタン

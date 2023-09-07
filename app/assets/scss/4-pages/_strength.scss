@@ -189,6 +189,12 @@
 
                 background-size: cover;
                 background-repeat: no-repeat;
+
+                &:hover {
+                  transform: scale(1.03);
+                  transition: linear 0.2s;
+                }
+
                 &.anc__box_image_1 {
                   background-image: url("/assets/img/common/search_1.png");
                 }
