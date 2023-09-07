@@ -1,0 +1,30 @@
+.whitepaper-thanks-page {
+  margin: auto;
+  padding: 130px 0 0px;
+
+  .section-welcome {
+    text-align: center;
+    padding: 70px 0;
+    background-image: url("/assets/img/common/lower_visual.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .ttl-secondary {
+      font-size: 32px;
+      text-align: center;
+      margin-bottom: 31px;
+    }
+
+    .ttl-tertiary {
+      span {
+        font-weight: 400;
+      }
+    }
+
+    .bondi_blue_btn {
+      display: block;
+      max-width: 460px;
+      font-weight: 400;
+    }
+  }
+}
