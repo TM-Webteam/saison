@@ -32,12 +32,23 @@ footer {
 
       @media #{$sp} {
         flex-direction: column;
-        gap: 10px;
+        gap: 20px;
       }
 
       .group {
         @media #{$sp} {
           width: 100%;
+          position: relative;
+
+          &::after {
+            content: "";
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background: #ccc;
+          }
         }
 
         .footer__logo {
@@ -194,31 +205,15 @@ footer {
           font-size: 12px;
           position: relative;
           padding-right: 25px; // Add space for the pipe
+          position: relative;
 
           &:last-child::before {
             content: ""; // Remove the pipe for the last item
           }
 
-          .square {
+          svg {
             position: absolute;
-            width: 8px;
-            height: 8px;
-          }
-
-          .before {
-            background-color: #fff;
-            border: 1px solid #000;
             right: 10px;
-            top: 0;
-            z-index: 2;
-          }
-
-          .after {
-            background-color: #fff; /* Example color for after square */
-            border: 1px solid #000;
-            right: 13px;
-            top: 3px;
-            z-index: 1;
           }
         }
       }
