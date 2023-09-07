@@ -1016,6 +1016,10 @@
     display: flex;
     flex-direction: column;
 
+    @media #{$sp} {
+      padding: 30px 15px;
+    }
+
     .ttl-quaternary-container {
       display: flex;
       align-items: center;
@@ -1082,73 +1086,77 @@
 .card-type7 {
   background-color: #fff;
 
-  .containers {
+  .card-wrapper {
     padding: 0;
 
-    .card-wrapper {
-      .item {
+    .item {
+      background-color: #fff;
+      box-shadow: none;
+      padding: 0;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      gap: 60px;
+
+      @media #{$tab} {
+        display: grid;
+        gap: 20px;
+      }
+
+      &__img {
+        position: relative;
+        width: 50%;
+        max-width: 540px;
+        max-height: 306px;
+        height: 306px;
         background-color: #fff;
-        box-shadow: none;
-        padding: 0;
-        width: 100%;
+        font-size: 16px;
+        vertical-align: middle;
+        background-color: #e1e1e1;
+        border-radius: 4px;
 
-        .ttl-tertiary {
-          letter-spacing: 2px;
-          line-height: 28px;
-          margin-bottom: 30px;
+        @media #{$tab} {
+          width: 100%;
+          max-width: unset;
+          max-height: unset;
         }
 
-        .item__img {
-          // padding-top: 56.666666%;
-          position: relative;
-          width: 50%;
-          max-width: 540px;
-          max-height: 306px;
-          height: 306px;
-          background-color: #fff;
+        img {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          object-position: center;
+          object-fit: cover;
+        }
+      }
+
+      &__box {
+        flex: 1;
+
+        &--title {
+          text-align: left;
           font-size: 16px;
-          vertical-align: middle;
-          background-color: #e1e1e1;
-          border-radius: 4px;
-
-          img {
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            top: 0;
-            left: 0;
-            object-position: center;
-            object-fit: cover;
-          }
+          color: #000;
+          font-weight: 500;
+          margin-bottom: 20px;
         }
 
-        .item__box {
-          flex: 1;
+        &--txt {
+          text-align: left;
+          font-size: 16px;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: unset;
+          overflow: hidden;
+          line-height: 1.78;
+          margin-bottom: 30px;
 
-          .item__box--title {
-            text-align: left;
-            font-size: 16px;
-            color: #000;
-            font-weight: 500;
-            margin-bottom: 20px;
-          }
-
-          .item__box--txt {
-            text-align: left;
-            font-size: 16px;
-            -webkit-box-orient: vertical;
-            -webkit-line-clamp: unset;
-            overflow: hidden;
-            line-height: 1.78;
-            margin-bottom: 30px;
-          }
-
-          .item__box--txt.item__box--txt-last {
+          &-last {
             font-weight: 400;
           }
         }
       }
-      padding: 0;
     }
   }
 }
@@ -1199,9 +1207,13 @@
       }
 
       .credit-card02 {
-        @media #{$sp} {
-          width: 100%;
+        @media #{$tab} {
+          width: 50%;
         }
+
+        // @media #{$sp} {
+        //   width: 100%;
+        // }
 
         .credit-card-img {
           width: 100%;
@@ -1241,10 +1253,6 @@
     margin-bottom: 30px;
     font-weight: bold;
     border-radius: 4px;
-  }
-
-  .card__box--ttl.card__box-ttl02 {
-    background-color: #00aba0;
   }
 
   .container {
@@ -1422,6 +1430,10 @@
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 4;
+
+    @media #{$sp} {
+      font-size: 14px;
+    }
   }
 }
 
@@ -2529,9 +2541,13 @@
 
 // Notification-panel1
 .notification-panel1 {
-  padding: 30px 30px 30px 30px;
+  padding: 30px;
   background-color: #fff;
   position: relative;
+
+  @media #{$sp} {
+    padding: 30px 15px;
+  }
 
   .card__ttl {
     margin: auto;
@@ -2560,7 +2576,7 @@
     }
 
     .inquiry__box--btn {
-      width: auto;
+      width: 16%;
 
       .blue_more {
         padding: 5px 35px;
@@ -2582,7 +2598,11 @@
     }
 
     .inquiry__box--txt {
-      width: auto;
+      width: calc(100% - 16% - 30px);
+
+      @media #{$sp} {
+        width: 100%;
+      }
 
       span {
         color: #00aba0;
