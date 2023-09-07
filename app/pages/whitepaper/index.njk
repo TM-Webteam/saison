@@ -1,0 +1,255 @@
+{% extends "layout/default.njk" %}
+
+{# Custom SEO tags, leave blank to apply the default values #}
+{% set title = "" %}
+{% set description = "" %}
+{% set keywords = "" %}
+
+{# Page settings and also body class #}
+{% set page = "" %}
+
+{# Breadcrumb #}
+{% set breadcrumb = [{
+  text:"お役立ち資料",
+  link:"#"
+  }] 
+%}
+
+{# Custom tags before </head> #}
+{% block customHead %}{% endblock %}
+
+{# Custom tags before </body> #}
+{% block customJs %}{% endblock %}
+
+{# Main content #}
+{% block content %}
+
+
+  <main class="whitepaper_list_page">
+    <section class="section-welcome">
+      <div class="containers">
+        <h1 class="ttl-primary">お役立ち資料</h1>
+
+        <h3 class="ttl-tertiary">中小企業様・個人事業主様のよくある課題に対して解決のヒントになる資料を <br> 無料でご提供しています。是非ご活用下さい。</h3>
+      </div>
+    </section>
+
+    <section class="section-primary">
+      <div class="containers">
+        <div class="text-center section__header">ご興味のある資料にチェックをいれて「チェックした資料をダウンロードする」ボタンをクリックしてください。</div>
+
+        <div class="whitepaper__section__header text-center">
+          <div class="whitepaper__section__header-sub">RECOMMEND</div>
+          <div class="whitepaper__section__header-main">おすすめ資料</div>
+        </div>
+
+
+        <div class="whitepaper__section__cards">
+          <div class="grid__card">
+            <div class="grid__card--img">
+              <img class="primary-img" src="/assets/img/common/documents_image.png" alt="Documents image 1">
+              <img class="secondary-img" src="/assets/img/common/documents_image.png" alt="Documents image 2">
+            </div>
+            <div class="grid__card--content">
+              <label class="custom-checkbox flex fS aiC">
+                <input type="checkbox" >
+                <span class="checkmark"></span> <span class="custom-check-box-label">資料タイトルが入ります資料タイトルが入ります資料タイトルが入ります資料タイトルが入ります資料</span>
+              </label>
+
+              <h6 class="ttl-senary">資料リード文が入ります。資料リード文が入ります。資料リード文が入ります。資料リード文が入ります。資料リード文が入ります。資料リード文が資料…</h6>
+          </div>
+          </div>
+
+          <div class="grid__card">
+            <div class="grid__card--img">
+              <img class="primary-img" src="/assets/img/common/documents_image.png" alt="Documents image 1">
+              <img class="secondary-img" src="/assets/img/common/documents_image.png" alt="Documents image 2">
+            </div>
+            <div class="grid__card--content">
+              <label class="custom-checkbox flex fS aiC">
+                <input type="checkbox" >
+                <span class="checkmark"></span> <span class="custom-check-box-label">資料タイトルが入ります資料タイトルが入ります資料タイトルが入ります資料タイトルが入ります資料</span>
+              </label>
+
+              <h6 class="ttl-senary">資料リード文が入ります。資料リード文が入ります。資料リード文が入ります。資料リード文が入ります。資料リード文が入ります。資料リード文が資料…</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="section-secondary">
+      <div class="containers">
+        <div class="grid__card--container">
+          <div class="grid__card">
+            <div class="grid__card--img">
+              <img class="primary-img" src="/assets/img/common/documents_image.png" alt="Documents image 1">
+              <img class="secondary-img" src="/assets/img/common/documents_image.png" alt="Documents image 2">
+            </div>
+            <h5 class="ttl-quinary">
+              <label class="custom-checkbox flex fS aiC">
+                <input type="checkbox" >
+                <span class="checkmark"></span> <span class="custom-check-box-label">資料タイトルが入ります。</span>
+              </label>
+
+            </h5>
+            <h6 class="ttl-senary">資料の紹介文が入ります。資料の紹介文が入ります。資料の紹介文が入ります。資料</h6>
+            <div class="quinary-btn">
+              <a href="#" class="blue_gradient_btn small">資料をダウンロード</a>
+            </div>
+          </div>
+
+          <div class="grid__card">
+            <div class="grid__card--img">
+              <img class="primary-img" src="/assets/img/common/documents_image.png" alt="Documents image 1">
+              <img class="secondary-img" src="/assets/img/common/documents_image.png" alt="Documents image 2">
+            </div>
+            <h5 class="ttl-quinary">
+              <label class="custom-checkbox flex fS aiC">
+                <input type="checkbox" >
+                <span class="checkmark"></span> <span class="custom-check-box-label">資料タイトルが入ります。</span>
+              </label>
+
+            </h5>
+            <h6 class="ttl-senary">資料の紹介文が入ります。資料の紹介文が入ります。資料の紹介文が入ります。資料</h6>
+            <div class="quinary-btn">
+              <a href="#" class="blue_gradient_btn small">資料をダウンロード</a>
+            </div>
+          </div>
+
+          <div class="grid__card">
+            <div class="grid__card--img">
+              <img class="primary-img" src="/assets/img/common/documents_image.png" alt="Documents image 1">
+              <img class="secondary-img" src="/assets/img/common/documents_image.png" alt="Documents image 2">
+            </div>
+            <h5 class="ttl-quinary">
+              <label class="custom-checkbox flex fS aiC">
+                <input type="checkbox" >
+                <span class="checkmark"></span> <span class="custom-check-box-label">資料タイトルが入ります。</span>
+              </label>
+
+            </h5>
+            <h6 class="ttl-senary">資料の紹介文が入ります。資料の紹介文が入ります。資料の紹介文が入ります。資料</h6>
+            <div class="quinary-btn">
+              <a href="#" class="blue_gradient_btn small">資料をダウンロード</a>
+            </div>
+          </div>
+
+          <div class="grid__card">
+            <div class="grid__card--img">
+              <img class="primary-img" src="/assets/img/common/documents_image.png" alt="Documents image 1">
+              <img class="secondary-img" src="/assets/img/common/documents_image.png" alt="Documents image 2">
+            </div>
+            <h5 class="ttl-quinary">
+              <label class="custom-checkbox flex fS aiC">
+                <input type="checkbox" >
+                <span class="checkmark"></span> <span class="custom-check-box-label">資料タイトルが入ります。</span>
+              </label>
+
+            </h5>
+            <h6 class="ttl-senary">資料の紹介文が入ります。資料の紹介文が入ります。資料の紹介文が入ります。資料</h6>
+            <div class="quinary-btn">
+              <a href="#" class="blue_gradient_btn small">資料をダウンロード</a>
+            </div>
+          </div>
+
+          <div class="grid__card">
+            <div class="grid__card--img">
+              <img class="primary-img" src="/assets/img/common/documents_image.png" alt="Documents image 1">
+              <img class="secondary-img" src="/assets/img/common/documents_image.png" alt="Documents image 2">
+            </div>
+            <h5 class="ttl-quinary">
+              <label class="custom-checkbox flex fS aiC">
+                <input type="checkbox" >
+                <span class="checkmark"></span> <span class="custom-check-box-label">資料タイトルが入ります。</span>
+              </label>
+
+            </h5>
+            <h6 class="ttl-senary">資料の紹介文が入ります。資料の紹介文が入ります。資料の紹介文が入ります。資料</h6>
+            <div class="quinary-btn">
+              <a href="#" class="blue_gradient_btn small">資料をダウンロード</a>
+            </div>
+          </div>
+
+          <div class="grid__card">
+            <div class="grid__card--img">
+              <img class="primary-img" src="/assets/img/common/documents_image.png" alt="Documents image 1">
+              <img class="secondary-img" src="/assets/img/common/documents_image.png" alt="Documents image 2">
+            </div>
+            <h5 class="ttl-quinary">
+              <label class="custom-checkbox flex fS aiC">
+                <input type="checkbox" >
+                <span class="checkmark"></span> <span class="custom-check-box-label">資料タイトルが入ります。</span>
+              </label>
+
+            </h5>
+            <h6 class="ttl-senary">資料の紹介文が入ります。資料の紹介文が入ります。資料の紹介文が入ります。資料</h6>
+            <div class="quinary-btn">
+              <a href="#" class="blue_gradient_btn small">資料をダウンロード</a>
+            </div>
+          </div>
+
+          <div class="grid__card">
+            <div class="grid__card--img">
+              <img class="primary-img" src="/assets/img/common/documents_image.png" alt="Documents image 1">
+              <img class="secondary-img" src="/assets/img/common/documents_image.png" alt="Documents image 2">
+            </div>
+            <h5 class="ttl-quinary">
+              <label class="custom-checkbox flex fS aiC">
+                <input type="checkbox" >
+                <span class="checkmark"></span> <span class="custom-check-box-label">資料タイトルが入ります。</span>
+              </label>
+
+            </h5>
+            <h6 class="ttl-senary">資料の紹介文が入ります。資料の紹介文が入ります。資料の紹介文が入ります。資料</h6>
+            <div class="quinary-btn">
+              <a href="#" class="blue_gradient_btn small">資料をダウンロード</a>
+            </div>
+          </div>
+
+          <div class="grid__card">
+            <div class="grid__card--img">
+              <img class="primary-img" src="/assets/img/common/documents_image.png" alt="Documents image 1">
+              <img class="secondary-img" src="/assets/img/common/documents_image.png" alt="Documents image 2">
+            </div>
+            <h5 class="ttl-quinary">
+              <label class="custom-checkbox flex fS aiC">
+                <input type="checkbox" >
+                <span class="checkmark"></span> <span class="custom-check-box-label">資料タイトルが入ります。</span>
+              </label>
+
+            </h5>
+            <h6 class="ttl-senary">資料の紹介文が入ります。資料の紹介文が入ります。資料の紹介文が入ります。資料</h6>
+            <div class="quinary-btn">
+              <a href="#" class="blue_gradient_btn small">資料をダウンロード</a>
+            </div>
+          </div>
+
+          <div class="grid__card">
+            <div class="grid__card--img">
+              <img class="primary-img" src="/assets/img/common/documents_image.png" alt="Documents image 1">
+              <img class="secondary-img" src="/assets/img/common/documents_image.png" alt="Documents image 2">
+            </div>
+            <h5 class="ttl-quinary">
+              <label class="custom-checkbox flex fS aiC">
+                <input type="checkbox" >
+                <span class="checkmark"></span> <span class="custom-check-box-label">資料タイトルが入ります。</span>
+              </label>
+
+            </h5>
+            <h6 class="ttl-senary">資料の紹介文が入ります。資料の紹介文が入ります。資料の紹介文が入ります。資料</h6>
+            <div class="quinary-btn">
+              <a href="#" class="blue_gradient_btn small">資料をダウンロード</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="quinary-btn">
+          <a href="#" class="blue_gradient_btn btn-more">チェックした資料をダウンロードする</a>
+        </div>
+      </div>
+    </section>
+  </main>  
+
+{% endblock %}
