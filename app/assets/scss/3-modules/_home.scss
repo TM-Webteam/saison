@@ -763,6 +763,9 @@
               margin-bottom: 0;
             }
           }
+          @media #{$sp} {
+            width: 100%;
+          }
         }
       }
     }
@@ -830,15 +833,15 @@
             }
 
             dd {
-              width: 670px !important;
+              width: 670px;
               display: block;
-              width: auto;
               font-size: 16px;
               white-space: nowrap;
               overflow: hidden;
               text-overflow: ellipsis;
               @media #{$sp} {
                 font-size: 14px;
+                width: auto;
               }
             }
             .black_pill_btn {

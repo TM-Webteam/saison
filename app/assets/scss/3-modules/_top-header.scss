@@ -174,13 +174,12 @@ header {
       }
     }
     &__sp {
-      transform: translateX(-100%);
+      display: none;
       background-color: $white-color;
       height: calc(100vh - 50px);
       padding: 50px 25px;
       &.open {
         display: block;
-        transform: translateX(0);
         transition: 0.2s ease-in;
       }
       li {
