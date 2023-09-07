@@ -1,0 +1,376 @@
+.whitepaper_list_page {
+  .section-welcome {
+    background-image: url("/assets/img/common/lower_visual.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 46px 0 35px;
+    text-align: center;
+
+    @media #{$sp} {
+      padding: 50px 10px;
+    }
+
+    .ttl-primary {
+      font-size: 42px;
+      margin-bottom: 16px;
+
+      @media #{$sp} {
+        font-size: 32px;
+      }
+    }
+
+    .ttl-tertiary {
+      display: inline-block;
+      font-size: 20px;
+      font-weight: normal;
+
+      @media #{$sp} {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .text-center {
+    text-align: center;
+  }
+
+  .section-primary {
+    .section__header {
+      letter-spacing: 0px;
+      font-size: 16px;
+      @media #{$sp} {
+        font-size: 14px;
+      }
+    }
+
+    .whitepaper__section__header {
+      margin-top: 50px;
+      .whitepaper__section__header-sub {
+        letter-spacing: 0.14px;
+        color: #0497b5;
+        font-weight: bold;
+        font-size: 14px;
+      }
+      .whitepaper__section__header-main {
+        letter-spacing: 0px;
+        color: #000000;
+        font-size: 31px;
+        font-weight: bold;
+      }
+
+      @media #{$sp} {
+        margin-top: 30px;
+        .whitepaper__section__header-main {
+          font-size: 24px;
+        }
+      }
+    }
+
+    .whitepaper__section__cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      margin-top: 20px;
+      .grid__card {
+        width: 100%;
+        .ttl-quaternary {
+          text-align: left;
+          font-size: 20px;
+          font-weight: 600;
+          min-width: 315px;
+          margin-bottom: 20px;
+        }
+
+        .grid__card--img {
+          display: block;
+          width: 55%;
+          height: 183px;
+          margin-bottom: -60px;
+          position: relative;
+          margin-left: 22.5%;
+
+          .primary-img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 237.5px;
+            height: 164.43px;
+            z-index: 10;
+          }
+
+          .secondary-img {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 237.5px;
+            height: 164.43px;
+            z-index: 1;
+          }
+        }
+
+        .grid__card--content {
+          background: #f5f5f5 0% 0% no-repeat padding-box;
+          padding: 90px 40px 40px 40px;
+
+          .custom-checkbox {
+            position: relative;
+            display: flex;
+            margin-right: 10px;
+            gap: 7px;
+            margin-top: 7px;
+            align-items: center;
+            flex-wrap: nowrap;
+
+            input[type="checkbox"] {
+              display: none;
+            }
+
+            .checkmark {
+              background-color: #fff;
+              position: relative;
+              display: inline-block;
+              width: 21px;
+              height: 21px;
+              border: 1px solid #707070;
+              border-radius: 5px;
+              cursor: pointer;
+              margin-right: 5px;
+              flex-shrink: 0;
+
+              &::after {
+                content: "";
+                position: absolute;
+                left: 10px;
+                top: -1px;
+                width: 5px;
+                height: 14px;
+                border: solid #0497b5;
+                border-width: 0 2px 2px 0px;
+                -webkit-transform: rotate(45deg);
+                -ms-transform: rotate(45deg);
+                transform: rotate(45deg);
+                display: none;
+              }
+            }
+
+            input[type="checkbox"]:checked + .checkmark::after {
+              display: block;
+            }
+
+            .custom-check-box-label {
+              font-size: 18px;
+              font-weight: bold;
+            }
+          }
+
+          .ttl-senary {
+            margin-top: 15px;
+            font-size: 16px;
+          }
+        }
+      }
+      @media #{$sp} {
+        grid-template-columns: 1fr;
+        .grid__card {
+          .grid__card--img {
+            width: 75%;
+            margin-left: 12.5%;
+          }
+
+          .custom-check-box-label {
+            font-size: 14px !important;
+          }
+
+          .ttl-senary {
+            font-size: 14px !important;
+          }
+        }
+      }
+    }
+  }
+
+  .section-secondary {
+    background: #f7f7f7 0% 0% no-repeat padding-box;
+
+    .grid__card--container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+
+      .grid__card {
+        width: 100%;
+        padding: 30px 32px 30px 32px;
+        box-shadow: 0 3px 20px $gray-color-4;
+
+        .ttl-quaternary {
+          text-align: left;
+          font-size: 20px;
+          font-weight: 600;
+          min-width: 315px;
+          margin-bottom: 20px;
+        }
+
+        .grid__card--img {
+          display: block;
+          width: 100%;
+          height: 183px;
+          margin-bottom: 30px;
+          position: relative;
+
+          .primary-img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 237.5px;
+            height: 164.43px;
+            z-index: 10;
+          }
+
+          .secondary-img {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 237.5px;
+            height: 164.43px;
+            z-index: 1;
+          }
+        }
+
+        .ttl-quinary {
+          .custom-checkbox {
+            position: relative;
+            display: flex;
+            margin-right: 10px;
+            gap: 7px;
+            margin-top: 7px;
+            align-items: center;
+            flex-wrap: nowrap;
+
+            input[type="checkbox"] {
+              display: none;
+            }
+
+            .checkmark {
+              background-color: #fff;
+              position: relative;
+              display: inline-block;
+              width: 21px;
+              height: 21px;
+              border: 1px solid #707070;
+              border-radius: 5px;
+              cursor: pointer;
+              margin-right: 5px;
+              flex-shrink: 0;
+
+              &::after {
+                content: "";
+                position: absolute;
+                left: 10px;
+                top: -1px;
+                width: 5px;
+                height: 14px;
+                border: solid #0497b5;
+                border-width: 0 2px 2px 0px;
+                -webkit-transform: rotate(45deg);
+                -ms-transform: rotate(45deg);
+                transform: rotate(45deg);
+                display: none;
+              }
+            }
+
+            input[type="checkbox"]:checked + .checkmark::after {
+              display: block;
+            }
+
+            .custom-check-box-label {
+              font-size: 18px;
+              font-weight: bold;
+            }
+          }
+        }
+
+        .ttl-quinary.sub-title {
+          text-align: left;
+        }
+
+        .ttl-senary {
+          text-align: left;
+          font-size: 16px;
+          font-weight: 400;
+          margin-bottom: 32px;
+        }
+
+        .grid__card--cat {
+          .cat {
+            background-color: #111450;
+            font-weight: 600;
+            font-size: 14px;
+            margin-bottom: 15px;
+          }
+        }
+
+        div {
+          text-align: center;
+          .btn01 {
+            display: inline-block;
+            background: $gradient-bg;
+            padding: 12px 35px;
+            color: #fff;
+            font-size: 16px;
+            box-shadow: none;
+            border: none;
+            border-radius: 3px;
+          }
+
+          .btn01:before {
+            right: 12px;
+            border-top: 2px solid #fff;
+            border-right: 2px solid #fff;
+          }
+        }
+      }
+    }
+
+    .quinary-btn {
+      .blue_gradient_btn {
+        background: #0497b5 0% 0% no-repeat padding-box !important;
+      }
+
+      .btn-more {
+        margin-top: 60px;
+        white-space: nowrap;
+        max-width: 460px;
+        height: 67px;
+        padding: 16px 35px;
+      }
+    }
+
+    @media #{$sp} {
+      .grid__card--container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+        .custom-check-box-label {
+          font-size: 16px !important;
+        }
+        .ttl-senary {
+          font-size: 14px !important;
+        }
+        .grid__card {
+          .blue_gradient_btn {
+            width: 65%;
+            font-size: 14px !important;
+          }
+        }
+      }
+      .quinary-btn {
+        .btn-more {
+          max-width: 65%;
+          margin-top: 30px;
+          white-space: pre-wrap;
+          height: unset;
+        }
+      }
+    }
+  }
+}

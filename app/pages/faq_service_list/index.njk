@@ -8,6 +8,16 @@
 {# Page settings and also body class #}
 {% set page = "" %}
 
+{# Breadcrumb #}
+{% set breadcrumb = [{
+    text:"よくある質問",
+    link:"#"
+  },{
+    text:"「支払い.com」に関するよくある質問",
+    link:"#"
+  }] 
+%}
+
 {# Custom tags before </head> #}
 {% block customHead %}{% endblock %}
 
