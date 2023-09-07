@@ -2012,6 +2012,10 @@
     font-size: 32px;
     margin-bottom: 45px;
     line-height: 51px;
+
+    @media #{$sp} {
+      font-size: 20px;
+    }
   }
 
   .useful-wp {
@@ -2028,6 +2032,10 @@
         .card__box {
           background-color: #fff;
           padding: 40px 93px;
+
+          @media #{$sp} {
+            padding: 30px 20px;
+          }
 
           .card__box--ttl {
             text-align: center;
