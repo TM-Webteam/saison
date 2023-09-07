@@ -1,10 +1,13 @@
 .news_list-page {
   margin: auto;
   padding: 140px 0 0px;
+  @media only screen and (max-width: 770px) {
+    padding: 50px 0 0px;
+  }
   .containers {
     padding: 0;
     @media only screen and (max-width: 1260px) {
-      padding: 0 30px;
+      padding: 0 15px;
     }
   }
   .section-new {
