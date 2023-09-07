@@ -39,17 +39,17 @@
       letter-spacing: 0px;
       font-size: 16px;
       @media #{$sp} {
-        font-size: 14px;
+        font-size: 13px;
       }
     }
 
     .whitepaper__section__header {
       margin-top: 50px;
       .whitepaper__section__header-sub {
-        letter-spacing: 0.14px;
+        letter-spacing: 0.13px;
         color: #0497b5;
         font-weight: bold;
-        font-size: 14px;
+        font-size: 13px;
       }
       .whitepaper__section__header-main {
         letter-spacing: 0px;
@@ -143,7 +143,7 @@
                 left: 10px;
                 top: -1px;
                 width: 5px;
-                height: 14px;
+                height: 13px;
                 border: solid #0497b5;
                 border-width: 0 2px 2px 0px;
                 -webkit-transform: rotate(45deg);
@@ -173,16 +173,16 @@
         grid-template-columns: 1fr;
         .grid__card {
           .grid__card--img {
-            width: 75%;
+            width: 85%;
             margin-left: 12.5%;
           }
 
           .custom-check-box-label {
-            font-size: 14px !important;
+            font-size: 13px !important;
           }
 
           .ttl-senary {
-            font-size: 14px !important;
+            font-size: 13px !important;
           }
         }
       }
@@ -268,7 +268,7 @@
                 left: 10px;
                 top: -1px;
                 width: 5px;
-                height: 14px;
+                height: 13px;
                 border: solid #0497b5;
                 border-width: 0 2px 2px 0px;
                 -webkit-transform: rotate(45deg);
@@ -304,7 +304,7 @@
           .cat {
             background-color: #111450;
             font-weight: 600;
-            font-size: 14px;
+            font-size: 13px;
             margin-bottom: 15px;
           }
         }
@@ -354,18 +354,19 @@
           font-size: 16px !important;
         }
         .ttl-senary {
-          font-size: 14px !important;
+          font-size: 13px !important;
         }
         .grid__card {
           .blue_gradient_btn {
-            width: 65%;
-            font-size: 14px !important;
+            width: 75%;
+            font-size: 13px !important;
           }
         }
       }
       .quinary-btn {
         .btn-more {
-          max-width: 65%;
+          max-width: 75%;
+          font-size: 13px;
           margin-top: 30px;
           white-space: pre-wrap;
           height: unset;
