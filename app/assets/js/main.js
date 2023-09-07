@@ -272,3 +272,20 @@ $(document).ready(function () {
     ],
   });
 });
+
+//--------------------------------------
+// Collapse sole proprietorship
+//--------------------------------------
+
+$(document).ready(function () {
+  var $answer = $(".answer-tab");
+  var $question = $(".section-question-and-answer > div:nth-child(3)");
+  var $iconToggle = $(".qa-button");
+
+  $answer.hide();
+
+  $question.click(function () {
+    $answer.slideToggle();
+    $iconToggle.toggleClass("open");
+  });
+});

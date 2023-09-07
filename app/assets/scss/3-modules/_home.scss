@@ -117,10 +117,18 @@
                 display: inline-block;
                 min-width: 263px;
                 &:first-child {
+                  font-size: 20px;
                   color: $blue-color;
+                  @media #{$sp} {
+                    font-size: 16px;
+                  }
                 }
                 &:last-child {
+                  font-size: 16px;
                   color: $primary-color;
+                  @media #{$sp} {
+                    font-size: 12px;
+                  }
                 }
               }
             }
@@ -477,6 +485,9 @@
           }
         }
       }
+      @media #{$sp} {
+        margin-bottom: 20px;
+      }
     }
 
     .btn01 {
@@ -701,6 +712,9 @@
                 border-radius: 30px;
               }
             }
+            @media #{$sp} {
+              margin-bottom: 20px;
+            }
           }
 
           .sec-news__box--item-primary {
@@ -753,6 +767,9 @@
               span {
                 font-size: 16px;
                 font-weight: bold;
+                @media #{$sp} {
+                  font-size: 14px;
+                }
               }
             }
 
@@ -761,10 +778,26 @@
               font-weight: 400;
               flex-grow: 1;
               margin-bottom: 0;
+              @media #{$sp} {
+                font-size: 14px;
+              }
+            }
+            @media #{$sp} {
+              gap: 10px;
+              .w30 {
+                width: 30%;
+              }
+              .w70 {
+                width: 70%;
+              }
+              .core {
+                text-align: left;
+              }
             }
           }
           @media #{$sp} {
             width: 100%;
+            margin-bottom: 0;
           }
         }
       }
