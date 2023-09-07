@@ -815,6 +815,12 @@
       }
     }
 
+    .bondi_blue_outline_btn {
+      @media #{$sp} {
+        margin: 0 25px;
+      }
+    }
+
     .btn01 {
       background-color: #fff;
       padding: 19px 0;
