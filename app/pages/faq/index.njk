@@ -1,0 +1,112 @@
+{% extends "layout/default.njk" %}
+
+{# Custom SEO tags, leave blank to apply the default values #}
+{% set title = "" %}
+{% set description = "" %}
+{% set keywords = "" %}
+
+{# Page settings and also body class #}
+{% set page = "" %}
+
+{# Custom tags before </head> #}
+{% block customHead %}{% endblock %}
+
+{# Custom tags before </body> #}
+{% block customJs %}{% endblock %}
+
+{# Main content #}
+{% block content %}
+
+<main class="faq-page">
+  <section class="section-welcome">
+    <h3 class="ttl-tertiary">中小企業・個人事業主のお客様向け</h3>
+    <h2 class="ttl-primary">よくある質問</h2>
+  </section>
+  <section class="section-search">
+    <div class="search">
+      <form action="" class="search__form">
+        <input class="search__input" type="search" placeholder="キーワードから探す">
+        <button class="search__btn" type="submit"><img src="/assets/img/common/faq-search.svg"></button>
+      </form>
+    </div>
+    <div class="search-block">
+      <div class="grid-container">
+        <div class="grid-item">
+          <p class="grid-item__title">個人与信型ビジネスカード</p>
+          <img src="/assets/img/common/arrow-down.svg">
+        </div>
+        <div class="grid-item">
+          <p class="grid-item__title">法人与信型ビジネスカード</p>
+          <img src="/assets/img/common/arrow-down.svg">
+        </div>
+        <div class="grid-item">
+          <p class="grid-item__title">支払い.com</p>
+          <img src="/assets/img/common/arrow-down.svg">
+        </div>
+        <div class="grid-item">
+          <p class="grid-item__title">セゾンインボイス </p>
+          <img src="/assets/img/common/arrow-down.svg">
+        </div>
+        <div class="grid-item">
+          <p class="grid-item__title">セゾンフクリコ</p>
+          <img src="/assets/img/common/arrow-down.svg">
+        </div>
+        <div class="grid-item">
+          <p class="grid-item__title">ビジネスサポートローン</p>
+          <img src="/assets/img/common/arrow-down.svg">
+        </div>
+        <div class="grid-item">
+          <p class="grid-item__title">Concur Expense</p>
+          <img src="/assets/img/common/arrow-down.svg">
+        </div>
+        <div class="grid-item">
+          <p class="grid-item__title">CosPro</p>
+          <img src="/assets/img/common/arrow-down.svg">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="text-banner-section">
+    <div class="banner__title">
+      <h3 class="ttl-tertiary">導入前のご質問・ご相談を受け付けています。<br>お気軽にお問い合わせください</h3>
+      <div class="quinary-btn">
+        <a href="#" class="blue_gradient_btn">導入のご相談・お問い合わせ（無料）</a>
+      </div>
+      <div class="ttl-quaternary">2営業日以内に回答いたします。</div>
+    </div>
+  </section>
+  <section class="octonary-section">
+    <div class="card-type22">
+      <div class="ttl-notice">CONTACT</div>
+      <h3 class="ttl-tertiary">決済・ビジネスソリューションに関するお問合せ</h3>
+      <div class="useful-wp">
+        <div class="containers">
+          <div class="flex jcC gap60">
+            <div href="#" class="card">
+              <summary class="card__box">
+                <div class="card__box--ttl">サービス資料ダウンロードはこちら</div>
+                <div class="card__box--txt">クレディセゾンのソリューションの詳細が分かる
+                  <br>
+                  サービス資料をダウンロードいただけます。
+                </div>
+                <div ><a class="blue_gradient_btn" href="#">サービス資料ダウンロード</a></div>
+              </summary>
+            </div>
+            <div href="#" class="card">
+              <summary class="card__box">
+                <div class="card__box--ttl">ご相談・お問合せはこちら</div>
+                <div class="card__box--txt">各種ソリューションに関するお問合せは
+                  <br>
+                  サービス資料をダウンロードいただけます。
+                </div>
+                <div><a class="blue_gradient_btn" href="#">お気軽にお問い合わせください。</a></div>
+              </summary>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+{% endblock %}
