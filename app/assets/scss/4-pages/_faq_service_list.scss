@@ -1,5 +1,4 @@
 .faq-service_list-page {
-
   .section-welcome {
     background-image: url("/assets/img/common/lower_visual.png");
     background-size: cover;
@@ -121,6 +120,13 @@
         .QA__content-content {
           font-weight: normal;
         }
+      }
+      .arrow-svg {
+        transition: transform 0.3s ease;
+      }
+
+      .is__open .arrow-svg {
+        transform: rotate(180deg);
       }
     }
   }
