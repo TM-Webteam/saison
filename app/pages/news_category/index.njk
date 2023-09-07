@@ -1,0 +1,161 @@
+{% extends "layout/default.njk" %}
+
+{# Custom SEO tags, leave blank to apply the default values #}
+{% set title = "" %}
+{% set description = "" %}
+{% set keywords = "" %}
+
+{% set breadcrumb = [{
+text:"ニュース",
+link:"#"
+},
+{
+text:"○○○○（カテゴリ名）に関するお知らせ",
+link:"#"
+}] %}
+
+{# Page settings and also body class #}
+{% set page = "" %}
+
+{# Custom tags before </head> #}
+{% block customHead %}{% endblock %}
+
+{# Custom tags before </body> #}
+{% block customJs %}{% endblock %}
+
+{# Main content #}
+{% block content %}
+
+<main class="news_list-page">
+  <section class="section-new containers flex">
+    <div class="section-main">
+      <div class="section-title">○○○○（カテゴリ名）に関するお知らせ</div>
+      <div class="section-subtitle"></div>
+      <div class="section-list">
+        <div class="list-item">
+          <div class="item-header">
+            <div class="item-date">2021.3.8</div>
+            <div class="item-tag">カテゴリ名</div>
+          </div>
+          <div class="item-title">ニュースタイトルが入ります。ニュースタイトルが入ります。ニュースタイトルが入ります。ニュースタイトルが入ります。ニュースタイトルが入ります。ニュースタイトル</div>
+        </div>
+        <div class="list-item">
+          <div class="item-header">
+            <div class="item-date">2021.3.8</div>
+            <div class="item-tag">カテゴリ名</div>
+          </div>
+          <div class="item-title">ニュースタイトルが入ります。ニュースタイトルが入ります。ニュースタイトルが入ります。ニュースタイトルが入ります。ニュースタイトルが入ります。ニュースタイトル</div>
+        </div>
+        <div class="list-item">
+          <div class="item-header">
+            <div class="item-date">2021.3.8</div>
+            <div class="item-tag">カテゴリ名</div>
+          </div>
+          <div class="item-title">ニュースタイトルが入ります。ニュースタイトルが入ります。ニュースタイトルが入ります。ニュースタイトルが入ります。ニュースタイトルが入ります。ニュースタイトル</div>
+        </div>
+        <div class="list-item">
+          <div class="item-header">
+            <div class="item-date">2021.3.8</div>
+            <div class="item-tag">カテゴリ名</div>
+          </div>
+          <div class="item-title">ニュースタイトルが入ります。ニュースタイトルが入ります。ニュースタイトルが入ります。ニュースタイトルが入ります。ニュースタイトルが入ります。ニュースタイトル</div>
+        </div>
+        <div class="list-item">
+          <div class="item-header">
+            <div class="item-date">2021.3.8</div>
+            <div class="item-tag">カテゴリ名</div>
+          </div>
+          <div class="item-title">ニュースタイトルが入ります。ニュースタイトルが入ります。ニュースタイトルが入ります。ニュースタイトルが入ります。ニュースタイトルが入ります。ニュースタイトル</div>
+        </div>
+        <div class="list-item">
+          <div class="item-header">
+            <div class="item-date">2021.3.8</div>
+            <div class="item-tag">カテゴリ名</div>
+          </div>
+          <div class="item-title">ニュースタイトルが入ります。ニュースタイトルが入ります。ニュースタイトルが入ります。ニュースタイトルが入ります。ニュースタイトルが入ります。ニュースタイトル</div>
+        </div>
+        <div class="list-item">
+          <div class="item-header">
+            <div class="item-date">2021.3.8</div>
+            <div class="item-tag">カテゴリ名</div>
+          </div>
+          <div class="item-title">ニュースタイトルが入ります。ニュースタイトルが入ります。ニュースタイトルが入ります。ニュースタイトルが入ります。ニュースタイトルが入ります。ニュースタイトル</div>
+        </div>
+        <div class="list-item">
+          <div class="item-header">
+            <div class="item-date">2021.3.8</div>
+            <div class="item-tag">カテゴリ名</div>
+          </div>
+          <div class="item-title">ニュースタイトルが入ります。ニュースタイトルが入ります。ニュースタイトルが入ります。ニュースタイトルが入ります。ニュースタイトルが入ります。ニュースタイトル</div>
+        </div>
+        <div class="list-item">
+          <div class="item-header">
+            <div class="item-date">2021.3.8</div>
+            <div class="item-tag">カテゴリ名</div>
+          </div>
+          <div class="item-title">ニュースタイトルが入ります。ニュースタイトルが入ります。ニュースタイトルが入ります。ニュースタイトルが入ります。ニュースタイトルが入ります。ニュースタイトル</div>
+        </div>
+      </div>
+    </div>
+    <div class="section-aside">
+      <div class="menu-title">カテゴリで探す</div>
+      <div class="menu-item">
+        <div class="item-icon"></div>
+        <div class="item-title">ニュースリリース</div>
+      </div>
+      <div class="menu-item">
+        <div class="item-icon"></div>
+        <div class="item-title">お知らせ</div>
+      </div>
+      <div class="menu-item">
+        <div class="item-icon"></div>
+        <div class="item-title">ウェビナー</div>
+      </div>
+      <div class="menu-item">
+        <div class="item-icon"></div>
+        <div class="item-title">導入事例</div>
+      </div>
+    </div>
+  </section>
+  <div class="section-pagination containers">
+    <div class="page-num active">1</div>
+    <div class="page-num">2</div>
+    <div class="page-num">3</div>
+    <div class="page-num">4</div>
+    <div class="page-num">5</div>
+    <div class="page-next"></div>
+  </div>
+  <section class="octonary-section">
+    <div class="card-type22">
+      <div class="ttl-notice">CONTACT</div>
+      <h3 class="ttl-tertiary">決済・ビジネスソリューションに関するお問い合わせ</h3>
+      <div class="useful-wp container">
+        <div class="containers">
+          <div class="flex jcC gap60">
+            <div href="#" class="card">
+              <summary class="card__box">
+                <div class="card__box--ttl">サービス資料ダウンロード</div>
+                <div class="card__box--txt">クレディセゾンのソリューションの詳細がわかる
+                  <br>
+                  サービス資料をダウンロードいただけます。
+                </div>
+                <div><a class="blue_gradient_btn" href="#">サービス資料一覧を見る</a></div>
+              </summary>
+            </div>
+            <div href="#" class="card">
+              <summary class="card__box">
+                <div class="card__box--ttl">お役立ち資料ダウンロード</div>
+                <div class="card__box--txt">中小企業様や個人事業主様のよくある課題に対して解決のヒントに
+                  <br>
+                  なる資料を無料でご提供しています。ぜひご活用ください。
+                </div>
+                <div><a class="blue_gradient_btn" href="#">お役立ち資料一覧を見る</a></div>
+              </summary>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+{% endblock %}
