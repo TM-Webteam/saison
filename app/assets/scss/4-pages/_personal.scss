@@ -53,6 +53,10 @@
       transform: skewX(-15deg);
       padding: 0px 20px;
 
+      @media #{$sp} {
+        padding: 0px 10px;
+      }
+
       .ttl-tertiary {
         transform: skewX(15deg);
         color: #ffffff;
@@ -91,6 +95,10 @@
       text-align: center;
       margin-bottom: 30px;
       color: $primary-color;
+
+      @media #{$sp} {
+        font-size: 18px;
+      }
     }
   }
 
@@ -150,10 +158,6 @@
         .bondi_blue_outline_btn {
           margin-top: 20px;
           max-width: 522px;
-
-          @media #{$sp} {
-            font-size: 18px;
-          }
         }
       }
     }
