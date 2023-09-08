@@ -18,12 +18,10 @@
     font-size: 22px;
     font-weight: bold;
     padding: 15px 0;
-    border-bottom: 2px solid #000000;
     margin-bottom: 30px;
     @media #{$sp} {
       font-size: 18px;
       padding: 10px 0;
-      border-bottom: 1px solid #000000;
       margin-bottom: 15px;
     }
   }
@@ -105,7 +103,7 @@
         }
       }
     }
-    
+
   }
   &__txt {
     margin-bottom: 30px;
