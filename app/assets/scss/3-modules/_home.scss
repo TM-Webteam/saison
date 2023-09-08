@@ -113,6 +113,7 @@
               border: none;
               padding: 0;
               background-color: $white-color;
+              transition: all .3s;
               span {
                 display: inline-block;
                 min-width: 263px;
@@ -131,6 +132,17 @@
                   }
                 }
               }
+              &:hover {
+                background-color: $black-color;
+                span {
+                  color: $white-color;
+                }
+                svg {
+                  path {
+                    stroke: $white-color;
+                  }
+                }
+              }
             }
 
             a:before {
@@ -141,12 +153,12 @@
             width: 116px;
             height: 90px;
             background-repeat: no-repeat;
-            background-size: contain;
+            background-size: cover;
             &.smes {
               background-image: url("/assets/img/common/smes.png");
             }
             &.sole {
-              background-image: url("/assets/img/common/sole_proprietors.png");
+              background-image: url("/assets/img/common/sole_proprietors.svg");
             }
             @media #{$sp} {
               width: 80px;
@@ -312,6 +324,12 @@
                 width: 100%;
               }
             }
+
+            &:hover {
+              a {
+                transform: scale(1.03);
+              }
+            }
             @media #{$sp} {
               width: 100%;
             }
@@ -351,9 +369,33 @@
         .grid__card {
           width: auto;
           max-width: 380px;
-          padding: 30px;
           background-color: $white-color;
           box-shadow: 0 3px 20px $gray-color-4;
+          a.grid__card__container {
+            padding: 30px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: all .3s;
+            &:hover {
+              opacity: 1;
+              .bondi_blue_btn {
+                border: 2px solid $blue-color;
+                opacity: 1;
+                background: $white-color;
+                color: $blue-color;
+                svg {
+                  path {
+                    stroke: #0497b5;
+                  }
+                }
+              }
+            }
+            @media #{$sp} {
+              padding: 15px;
+            }
+          }
 
           .ttl-quaternary {
             color: $blue-color;
@@ -444,9 +486,6 @@
             svg {
               margin-left: 15px;
             }
-          }
-          @media #{$sp} {
-            padding: 15px;
           }
         }
       }
@@ -673,15 +712,20 @@
           width: 500px;
           background-color: #fff;
           box-shadow: 0 3px 20px $gray-color-4;
-          padding: 30px 30px 30px 39px;
           margin-bottom: 30px;
           border: none;
+          padding: 0;
+          transition: all .3s;
+          a.sec-news__box__container {
+            padding: 30px 30px 30px 39px;
+          }
           .ttl-tertiary {
             margin-bottom: 20px;
             font-size: 20px;
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
+            line-height: 30px;
           }
           .sec-news__box--info {
             border-bottom: 1px solid $gray-color-3;
@@ -772,6 +816,15 @@
               .core {
                 text-align: left;
               }
+            }
+          }
+          &:hover {
+            box-shadow: 0 0 10px rgba(0,0,0,.4);
+            a.sec-news__box__container {
+              opacity: 1;
+            }
+            .ttl-tertiary {
+              color: $blue-color;
             }
           }
           @media #{$sp} {

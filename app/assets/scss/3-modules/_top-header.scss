@@ -26,11 +26,23 @@ header {
       &__item {
         margin-top: 17px;
         &__button {
-          color: $white-color;
-          padding: 6px 20px 12px 20px;
-          background: $gradient-bg-2;
-          border-radius: 3px;
-          line-height: initial;
+          a {
+            display: inline-block;
+            font-weight: 500;
+            color: $white-color;
+            padding: 15px 20px;
+            background: $gradient-bg-2;
+            border-radius: 3px;
+            line-height: initial;
+            transition: all 0.3s;
+            border: 1px solid $black-color;
+            &:hover {
+              opacity: 1;
+              color: $black_color;
+              background: $white-color;
+              border: 1px solid $black-color;
+            }
+          }
         }
         ul {
           &:first-child {
@@ -64,14 +76,21 @@ header {
         }
       }
       &__button {
-        display: flex;
-        align-items: center;
-        color: white;
-        background: $gradient-bg;
-        height: 100%;
-        padding: 0px 16px;
-        vertical-align: middle;
-        font-weight: 700;
+        a {
+          display: flex;
+          align-items: center;
+          color: white;
+          background: $gradient-bg;
+          height: 100%;
+          padding: 0px 26px;
+          vertical-align: middle;
+          font-weight: 700;
+          transition: all .3s;
+          &:hover {
+            opacity: 1;
+            background: $gradient-bg-reverse;
+          }
+        }
       }
     }
     .nav__item__dropdown {
