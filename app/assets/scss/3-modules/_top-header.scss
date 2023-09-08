@@ -120,6 +120,13 @@ header {
       &.open {
         display: flex;
       }
+
+      @media #{$sp} {
+        height: 100vh;
+        position: absolute;
+        top: 50px;
+        left: 0;
+      }
     }
     &__list__support {
       width: 100%;
@@ -127,6 +134,13 @@ header {
       display: none;
       &.open {
         display: flex;
+      }
+
+      @media #{$sp} {
+        height: 100vh;
+        position: absolute;
+        top: 50px;
+        left: 10px;
       }
     }
     &__search {
@@ -166,8 +180,19 @@ header {
       padding: 50px 60px 60px 60px;
       justify-content: space-between;
       gap: 50px;
+
+      @media #{$sp} {
+        display: block;
+        padding: 20px 30px 30px 20px;
+      }
+
       &__first {
         width: 50%;
+
+        @media #{$sp} {
+          width: 100%;
+        }
+
         li {
           &:first-child {
             padding: 0 0 10px;
@@ -176,6 +201,11 @@ header {
       }
       &__secondary {
         width: 50%;
+
+        @media #{$sp} {
+          width: 100%;
+        }
+
         li {
           &:first-child {
             padding: 0 0 10px;
@@ -185,7 +215,7 @@ header {
       li {
         padding: 20px 0 10px;
         border-bottom: 1px solid $gray-color-7;
-        a {
+        a, div {
           display: flex;
           justify-content: space-between;
           align-items: center;
@@ -227,6 +257,10 @@ header {
           padding: 0 0 10px;
         }
       }
+    }
+    &__back {
+      margin-top: 30px;
+      text-align: center;
     }
   }
 }
