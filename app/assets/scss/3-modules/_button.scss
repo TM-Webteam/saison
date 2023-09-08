@@ -818,7 +818,7 @@
   border-radius: 3px;
   margin: 0 auto;
   border: none;
-  transition: all .3s;
+  transition: all 0.3s;
   @media #{$sp} {
     font-size: 14px;
     padding: 13px;
@@ -927,8 +927,6 @@
     right: 20px;
 
     margin: auto;
-    border-top: 2px solid $white-color;
-    border-right: 2px px solid $white-color;
     transition: all 0.3s;
   }
   a {

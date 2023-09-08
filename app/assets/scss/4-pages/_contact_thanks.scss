@@ -7,6 +7,8 @@
   }
 
   .section-welcome {
+    position: relative;
+    min-height: 574px;
     text-align: center;
     padding: 70px 0;
     background-image: url("/assets/img/common/lower_visual.png");
@@ -20,6 +22,17 @@
 
     @media #{$sp} {
       height: auto;
+    }
+
+    .container-1200 {
+      width: 100%;
+      max-width: 1200px;
+      margin: auto;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 0 15px;
     }
 
     .ttl-primary {
