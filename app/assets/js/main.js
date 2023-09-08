@@ -138,15 +138,11 @@ $(document).ready(function () {
 // QA
 //______________________________________
 $(document).ready(function () {
-  var $question = $("#question__content");
-  var $answer = $("#answer__content");
-  var $arrowIcon = $("#arrow-icon");
-
-  $answer.hide();
-
-  $question.click(function () {
-    $answer.slideToggle();
-    $arrowIcon.toggleClass("is__open");
+  $(".question__content").each(function(index) {
+    $(this).on("click", function () {
+      $(this).find('.QA__content-icon').toggleClass("is__open");
+      $(this).closest('.QA__content').find('.answer__content').slideToggle().css("display", "flex");
+    });
   });
 });
 
@@ -252,9 +248,8 @@ $(document).ready(function () {
 // Recommend Slider
 // ----------------------------------
 
-$(window).on('load',function(){
-  setTimeout(function(){
-
+$(window).on("load", function () {
+  setTimeout(function () {
     $(".carousel").slick({
       slidesToShow: 3,
       slidesToScroll: 3,
@@ -277,23 +272,4 @@ $(window).on('load',function(){
 
     $(".carousel").show();
   }, 100);
-
-  
-});
-
-//--------------------------------------
-// Collapse sole proprietorship
-//--------------------------------------
-
-$(document).ready(function () {
-  var $answer = $(".answer-tab");
-  var $question = $(".section-question-and-answer > div:nth-child(3)");
-  var $iconToggle = $(".qa-button");
-
-  $answer.hide();
-
-  $question.click(function () {
-    $answer.slideToggle();
-    $iconToggle.toggleClass("open");
-  });
 });

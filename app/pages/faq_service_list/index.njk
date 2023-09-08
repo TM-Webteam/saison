@@ -9,14 +9,15 @@
 {% set page = "" %}
 
 {# Breadcrumb #}
-{% set breadcrumb = [{
-    text:"よくある質問",
-    link:"#"
-  },{
-    text:"「支払い.com」に関するよくある質問",
-    link:"#"
-  }] 
-%}
+{% set breadcrumb = [
+  {
+    text: "よくある質問",
+    link: "#"
+  }, {
+    text: "「支払い.com」に関するよくある質問",
+    link: "#"
+  }
+] %}
 
 {# Custom tags before </head> #}
 {% block customHead %}{% endblock %}
@@ -54,51 +55,22 @@
 
     <section class="section-secondary section">
       <div class="containers">
-        <div class="QA__content">
-          <div id="question__content" class="question__content">
-            <div class="QA__content-head">Q.</div>
-            <div class="QA__content-content">質問内容が入ります。質問内容が入ります。質問内容が入ります。質問内容が入ります。質問内容が入ります。質問内容が入ります。質問内容が入ります。質問内容が入ります。質問内容が入ります。質問内容が入ります。</div>
-            <div id="arrow-icon" class="QA__content-icon">
-              {% include "component/icons/arrow.njk" %}
+
+        {% for i in range(1, 5) %}
+          <div class="QA__content">
+            <div class="question__content" >
+              <div class="QA__content-head">Q.</div>
+              <div class="QA__content-content">質問内容が入ります。質問内容が入ります。質問内容が入ります。質問内容が入ります。質問内容が入ります。質問内容が入ります。質問内容が入ります。質問内容が入ります。質問内容が入ります。質問内容が入ります。</div>
+              <div id="arrow-icon" class="QA__content-icon">
+                {% include "component/icons/arrow.njk" %}
+              </div>
+            </div>
+            <div class="answer__content">
+              <div class="QA__content-head">A.</div>
+              <div class="QA__content-content">質問内容が入ります。質問内容が入ります。質問内容が入ります。質問内容が入ります。質問内容が入ります。質問内容が入ります。質問内容が入ります。質問内容が入ります。</div>
             </div>
           </div>
-          <div id="answer__content" class="answer__content">
-            <div class="QA__content-head">A.</div>
-            <div class="QA__content-content">質問内容が入ります。質問内容が入ります。質問内容が入ります。質問内容が入ります。質問内容が入ります。質問内容が入ります。質問内容が入ります。質問内容が入ります。</div>
-            <div></div>
-          </div>
-        </div>
-
-        <div class="QA__content">
-          <div class="question__content">
-            <div class="QA__content-head">Q.</div>
-            <div class="QA__content-content">質問内容が入ります。質問内容が入ります。質問内容が入ります。質問内容が入ります。質問内容が入ります。質問内容が入ります。質問内容が入ります。質問内容が入ります。質問内容が入ります。質問内容が入ります。</div>
-            <div class="QA__content-icon">
-              {% include "component/icons/arrow.njk" %}
-            </div>
-          </div>
-        </div>
-
-
-        <div class="QA__content">
-          <div class="question__content">
-            <div class="QA__content-head">Q.</div>
-            <div class="QA__content-content">質問内容が入ります。質問内容が入ります。質問内容が入ります。質問内容が入ります。質問内容が入ります。質問内容が入ります。質問内容が入ります。質問内容が入ります。質問内容が入ります。質問内容が入ります。</div>
-            <div class="QA__content-icon">
-              {% include "component/icons/arrow.njk" %}
-            </div>
-          </div>
-        </div>
-
-        <div class="QA__content">
-          <div class="question__content">
-            <div class="QA__content-head">Q.</div>
-            <div class="QA__content-content">質問内容が入ります。質問内容が入ります。質問内容が入ります。質問内容が入ります。質問内容が入ります。質問内容が入ります。質問内容が入ります。質問内容が入ります。質問内容が入ります。質問内容が入ります。</div>
-            <div class="QA__content-icon">
-              {% include "component/icons/arrow.njk" %}
-            </div>
-          </div>
-        </div>
+        {% endfor %}
       </div>
     </section>
 
@@ -121,7 +93,9 @@
                     </div>
 
                   </div>
-                  <div class="btn-container"><a class="blue_gradient_btn" href="#">サービス資料ダウンロード</a></div>
+                  <div class="btn-container">
+                    <a class="blue_gradient_btn" href="#">サービス資料ダウンロード</a>
+                  </div>
                 </summary>
               </div>
               <div href="#" class="card">
@@ -136,7 +110,9 @@
                     </div>
 
                   </div>
-                  <div class="btn-container"><a class="blue_gradient_btn" href="#">今すぐ無料で登録</a></div>
+                  <div class="btn-container">
+                    <a class="blue_gradient_btn" href="#">今すぐ無料で登録</a>
+                  </div>
                 </summary>
               </div>
             </div>
