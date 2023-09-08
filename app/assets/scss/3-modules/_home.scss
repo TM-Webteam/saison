@@ -907,9 +907,10 @@
               width: 670px;
               display: block;
               font-size: 16px;
-              white-space: nowrap;
+              display: -webkit-box;
+              -webkit-box-orient: vertical;
+              -webkit-line-clamp: 2;
               overflow: hidden;
-              text-overflow: ellipsis;
               @media #{$sp} {
                 font-size: 14px;
                 width: auto;
