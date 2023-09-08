@@ -34,7 +34,15 @@
       .section-list {
         .list-item {
           border-bottom: 1px solid #cccccc;
-          padding: 30px 0;
+          a {
+            padding: 30px 0;
+            &:hover {
+              opacity: 1;
+              .item-title {
+                text-decoration: underline;
+              }
+            }
+          }
           .item-header {
             display: flex;
             justify-content: start;
