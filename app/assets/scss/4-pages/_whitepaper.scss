@@ -333,7 +333,18 @@
 
     .quinary-btn {
       .blue_gradient_btn {
+        border: 2px solid $blue-color;
         background: #0497b5 0% 0% no-repeat padding-box !important;
+        &:hover {
+          color: $blue-color;
+          background-color: transparent !important;
+          border: 2px solid $blue-color;
+
+          &::before {
+            border-top: 2px solid $blue-color;
+            border-right: 2px solid $blue-color;
+          }
+        }
       }
 
       .btn-more {
@@ -370,6 +381,9 @@
           margin-top: 30px;
           white-space: pre-wrap;
           height: unset;
+          @media #{$sp} {
+            white-space: nowrap
+          }
         }
       }
     }
