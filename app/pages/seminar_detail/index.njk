@@ -1,0 +1,206 @@
+{% extends "layout/default.njk" %}
+
+{# Custom SEO tags, leave blank to apply the default values #}
+{% set title = "" %}
+{% set description = "" %}
+{% set keywords = "" %}
+
+{# Page settings and also body class #}
+{% set page = "" %}
+
+{# Breadcrumb #}
+{% set breadcrumb = [{
+  text:"セミナー情報",
+  link:"seminar"
+  },{
+  text:"セミナータイトルが入ります",
+  link:"#"
+  }] %}
+
+{# Custom tags before </head> #}
+{% block customHead %}{% endblock %}
+
+{# Custom tags before </body> #}
+{% block customJs %}{% endblock %}
+
+{# Main content #}
+{% block content %}
+
+<main class="seminar_detail-page">
+  <section class="section-welcome">
+    <div class="container-1200">
+      <div class="section-content">
+        <h2 class="ttl-secondary">法改正を前にした今やるべき経理のデジタル化とは？</h2>
+
+        <div class="section-img">
+          <img src="/assets/img/common/img-seminar-detail-01.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-primary">
+
+    <div class="container-1200">
+      <div class="section-content">
+        <a href="#" class="bondi_blue_btn">
+          <span>動画の視聴はこちら</span>
+          {% include 'component/icons/arrow-right.njk' %}
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-secondary">
+    <div class="container-1200">
+      <div class="section-content">
+        <h2 class="ttl-secondary">電子帳簿保存法改正・インボイス制度開始を踏まえて、経理が取り組むべきデジタル化のポイントと対策をお伝えします。、</h2>
+
+        <p>法改正やコロナによる急激な時代の変化に、これまで通りにはいかなくなる場面が増えてきました。
+          しかしながら、どのように変化させるのがいいのかお悩みではありませんか？
+        </p>
+        <br>
+        <p>
+          本セミナーでは、株式会社コンカーの谷田咲江氏、エキサイト株式会社の岡野健三氏、株式会社クレディセゾンの飯沼宏次朗の3名で、日々経理の方とコミュニケーションを取る中で考えている「法改正を前に、まず取り組むべきデジタル化」や「企業にとって貢献できる経理組織の特徴」等についてディスカッション形式でお話しします。
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-tertiary">
+    <div class="container-1200">
+      <div class="section-content">
+        <h2 class="ttl-secondary">こんな方におすすめです</h2>
+
+        <div class="section-content__form"><label class="custom-checkbox flex fS aiC">
+            <input type="checkbox" checked>
+            <span class="checkmark"></span> <span class="custom-check-box-label">経営層、経理・管理部長の方 </span>
+          </label>
+
+          <label class="custom-checkbox flex fS aiC">
+            <input type="checkbox" checked>
+            <span class="checkmark"></span> <span class="custom-check-box-label">請求業務のコスト・生産性に課題間をお持ちの方 </span>
+          </label>
+
+          <label class="custom-checkbox flex fS aiC">
+            <input type="checkbox" checked>
+            <span class="checkmark"></span> <span class="custom-check-box-label">経費精算業務のコスト生産性に課題感をお持ちの方 </span>
+          </label>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-quaternary">
+    <div class="container-1200">
+      <div class="section-content">
+        <h2 class="ttl-secondary">プログラム</h2>
+
+        <div class="section-content__txt">
+          <div class="sub-section">
+            <h3 class="sub-section-heading">Part1</h3>
+
+            <h4 class="sub-section-ttl">法改正を前にした、今やるべき経理のデジタル化とは</h4>
+
+            <p>
+              ‍①電子帳簿保存法改正、インボイス制度による経理の変化</p>
+            <p>②法改正を前に、まず取り組むべきデジタル化とは</p>
+            <p>③企業にとって貢献できる経理組織の特徴とは</p>
+          </div>
+
+          <div class="sub-section">
+            <h3 class="sub-section-heading">Part2</h3>
+
+            <h4 class="sub-section-ttl">プロダクト紹介</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-quinary">
+    <div class="container-1200">
+      <div class="section-content">
+        <h2 class="ttl-secondary">登壇者紹介</h2>
+
+        <div class="card-list">
+          <div class="card flex gap30">
+            <div class="card-img">
+              <img src="/assets/img/common/img-placeholder-01.png" alt="">
+
+              <div class="card-img-content">登壇者 <br>
+                写真画像</div>
+            </div>
+
+            <div class="card-note">
+              <h3 class="card-note-primary">登壇者名が入ります。</h3>
+              <h4 class="card-note-secondary">●●株式会社</h4>
+              <p class="card-note-tertiary">●●部　●●コンサルタント</p>
+            </div>
+
+            <div class="card-txt">
+              <p>
+                登壇者紹介文が入ります。登壇者紹介文が入ります。登壇者紹介文が入ります。登壇者紹介文が入ります。登壇者紹介文が入ります。登壇者紹介文が入ります。登壇者紹介文が入ります。登壇者紹介文が入ります。登壇者紹介文が入ります。登壇者紹介文が入ります。登壇者紹介文が入ります。登壇者紹介文が入ります。
+              </p>
+            </div>
+          </div>
+
+          <div class="card flex gap30">
+            <div class="card-img">
+              <img src="/assets/img/common/img-placeholder-01.png" alt="">
+
+              <div class="card-img-content">登壇者 <br>
+                写真画像</div>
+            </div>
+
+            <div class="card-note">
+              <h3 class="card-note-primary">登壇者名が入ります。</h3>
+              <h4 class="card-note-secondary">●●株式会社</h4>
+              <p class="card-note-tertiary">●●部　●●コンサルタント</p>
+            </div>
+
+            <div class="card-txt">
+              <p>
+                登壇者紹介文が入ります。登壇者紹介文が入ります。登壇者紹介文が入ります。登壇者紹介文が入ります。登壇者紹介文が入ります。登壇者紹介文が入ります。登壇者紹介文が入ります。登壇者紹介文が入ります。登壇者紹介文が入ります。登壇者紹介文が入ります。登壇者紹介文が入ります。登壇者紹介文が入ります。
+              </p>
+            </div>
+          </div>
+
+          <div class="card flex gap30">
+            <div class="card-img">
+              <img src="/assets/img/common/img-placeholder-01.png" alt="">
+
+              <div class="card-img-content">登壇者 <br>
+                写真画像</div>
+            </div>
+
+            <div class="card-note">
+              <h3 class="card-note-primary">登壇者名が入ります。</h3>
+              <h4 class="card-note-secondary">●●株式会社</h4>
+              <p class="card-note-tertiary">●●部　●●コンサルタント</p>
+            </div>
+
+            <div class="card-txt">
+              <p>
+                登壇者紹介文が入ります。登壇者紹介文が入ります。登壇者紹介文が入ります。登壇者紹介文が入ります。登壇者紹介文が入ります。登壇者紹介文が入ります。登壇者紹介文が入ります。登壇者紹介文が入ります。登壇者紹介文が入ります。登壇者紹介文が入ります。登壇者紹介文が入ります。登壇者紹介文が入ります。
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-senary">
+
+    <div class="container-1200">
+      <div class="section-content">
+        <a href="#" class="bondi_blue_btn">
+          <span>動画の視聴はこちら</span>
+          {% include 'component/icons/arrow-right.njk' %}
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+{% endblock %}

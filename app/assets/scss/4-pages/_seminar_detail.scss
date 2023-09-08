@@ -1,0 +1,317 @@
+.seminar_detail-page {
+  margin: auto;
+
+  @media #{$sp} {
+    padding: 50px 0 0px;
+  }
+
+  .section-welcome {
+    text-align: center;
+    padding: 70px 0;
+    background-color: #fff;
+
+    @media screen and (max-width: 1200px) {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    @media #{$sp} {
+      padding: 30px 10px;
+    }
+
+    .container-1200 {
+      align-items: center;
+
+      .section-content {
+        position: relative;
+        padding-bottom: 35%;
+
+        .section-img {
+          position: absolute;
+        }
+
+        .ttl-secondary {
+          font-size: 32px;
+          margin-bottom: 30px;
+          text-align: left;
+
+          @media #{$sp} {
+            text-align: center;
+            font-size: 22px;
+          }
+        }
+      }
+    }
+  }
+
+  .section-primary {
+    background-color: #f5f5f5;
+
+    .section-content {
+      text-align: center;
+      padding-top: 13%;
+      padding-bottom: 70px;
+      position: relative;
+
+      @media #{$sp} {
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 30px;
+      }
+
+      .bondi_blue_btn {
+        max-width: 460px;
+        display: block;
+        font-weight: 400;
+
+
+      @media #{$sp} {
+        max-width: 260px;
+      }
+      }
+    }
+  }
+
+  .section-secondary {
+    text-align: left;
+    padding: 70px 0;
+    background-color: #fff;
+
+    @media #{$sp} {
+      padding: 30px 10px 30px;
+    }
+
+    .section-content {
+      padding: 0 200px;
+
+      @media #{$sp} {
+        padding: 0;
+      }
+
+      .ttl-secondary {
+        text-align: left;
+        font-size: 26px;
+        margin-bottom: 30px;
+
+        @media #{$sp} {
+          font-size: 22px;
+          text-align: center;
+          margin-bottom: 30px;
+        }
+      }
+    }
+  }
+
+  .section-tertiary {
+    text-align: left;
+    padding: 70px 0;
+    background-color: #f5f5f5;
+
+    @media #{$sp} {
+      padding: 30px 10px 30px;
+    }
+
+    .section-content {
+      padding: 0 200px 0 200px;
+
+      @media #{$sp} {
+        padding: 0;
+      }
+
+      .ttl-secondary {
+        text-align: center;
+        font-size: 26px;
+        margin-bottom: 30px;
+
+        @media #{$sp} {
+          font-size: 22px;
+          text-align: center;
+          margin-bottom: 30px;
+        }
+      }
+
+      .section-content__form {
+        padding-left: 180px;
+
+        @media screen and (max-width: 1200px) {
+          padding-left: 50px;
+        }
+
+        @media #{$sp} {
+          padding: 0;
+        }
+
+        .custom-checkbox {
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+
+  .section-quaternary {
+    text-align: left;
+    padding: 70px 0;
+    background-color: #fff;
+
+    @media #{$sp} {
+      padding: 30px 10px 30px;
+    }
+
+    .section-content {
+      padding: 0 200px 0 200px;
+
+      @media #{$sp} {
+        padding: 0;
+        text-align: center;
+      }
+
+      .ttl-secondary {
+        text-align: center;
+        font-size: 26px;
+        margin-bottom: 30px;
+
+        @media #{$sp} {
+          font-size: 22px;
+          text-align: center;
+          margin-bottom: 30px;
+        }
+      }
+
+      .section-content__txt {
+        padding: 40px;
+        border: 1px solid #cccccc;
+
+        .sub-section {
+          &:last-child {
+            margin-bottom: 0;
+          }
+
+          margin-bottom: 30px;
+
+          .sub-section-heading {
+            font-size: 26px;
+            color: #0497b5;
+            font-weight: bold;
+          }
+
+          .sub-section-ttl {
+            font-size: 22px;
+            font-weight: 500;
+            margin-bottom: 10px;
+          }
+
+          p {
+            font-size: 14px;
+            line-height: 1.8;
+          }
+        }
+      }
+    }
+  }
+
+  .section-quinary {
+    text-align: center;
+    padding: 70px 0;
+    background-color: #f5f5f5;
+
+    @media #{$sp} {
+      padding: 30px 10px 30px;
+    }
+
+    .section-content {
+      .ttl-secondary {
+        text-align: center;
+        font-size: 26px;
+        margin-bottom: 50px;
+
+        @media #{$sp} {
+          font-size: 22px;
+          text-align: center;
+          margin-bottom: 30px;
+        }
+      }
+
+      .card-list {
+        .card {
+          padding: 30px;
+          background-color: #fff;
+          align-items: center;
+          margin-bottom: 30px;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+
+          .card-img {
+            width: calc(20% - 20px);
+            position: relative;
+            max-width: 220px;
+
+            @media #{$sp} {
+              width: 100%;
+            }
+
+            .card-img-content {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translateX(-50%) translateY(-50%);
+            }
+          }
+
+          .card-note {
+            width: calc(25% - 20px);
+            text-align: left;
+
+            @media #{$sp} {
+              width: 100%;
+            }
+
+            .card-note-primary {
+              font-size: 22px;
+              font-weight: 500;
+            }
+
+            .card-note-secondary {
+              font-size: 18px;
+              font-weight: 500;
+            }
+
+            .card-note-tertiary {
+              font-weight: 400;
+              font-size: 14px;
+            }
+          }
+
+          .card-txt {
+            width: calc(55% - 20px);
+            text-align: left;
+
+            @media #{$sp} {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .section-senary {
+    padding: 70px 0;
+    background-color: #fff;
+
+    @media #{$sp} {
+      padding: 30px 10px;
+    }
+
+    .section-content {
+      text-align: center;
+
+      .bondi_blue_btn {
+        max-width: 460px;
+        display: block;
+        font-weight: 400;
+      }
+    }
+  }
+}
