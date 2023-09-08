@@ -305,56 +305,6 @@
       }
     }
 
-    .custom-checkbox {
-      position: relative;
-      display: flex;
-      margin-right: 10px;
-      gap: 7px;
-      margin-top: 7px;
-      align-items: center;
-      flex-wrap: nowrap;
-
-      input[type="checkbox"] {
-        display: none;
-      }
-
-      .checkmark {
-        background-color: #fff;
-        position: relative;
-        display: inline-block;
-        width: 21px;
-        height: 21px;
-        border: 1px solid #707070;
-        border-radius: 5px;
-        cursor: pointer;
-        margin-right: 5px;
-        flex-shrink: 0;
-
-        &::after {
-          content: "";
-          position: absolute;
-          left: 10px;
-          top: -1px;
-          width: 5px;
-          height: 14px;
-          border: solid #0497b5;
-          border-width: 0 2px 2px 0px;
-          -webkit-transform: rotate(45deg);
-          -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
-          display: none;
-        }
-      }
-
-      input[type="checkbox"]:checked + .checkmark::after {
-        display: block;
-      }
-
-      .custom-check-box-label {
-        font-size: 14px;
-      }
-    }
-
     textarea,
     input[type="text"],
     input[type="email"],
@@ -474,5 +424,55 @@
         transform: rotate(-225deg);
       }
     }
+  }
+}
+
+.custom-checkbox {
+  position: relative;
+  display: flex;
+  margin-right: 10px;
+  gap: 7px;
+  margin-top: 7px;
+  align-items: center;
+  flex-wrap: nowrap;
+
+  input[type="checkbox"] {
+    display: none;
+  }
+
+  .checkmark {
+    background-color: #fff;
+    position: relative;
+    display: inline-block;
+    width: 21px;
+    height: 21px;
+    border: 1px solid #707070;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 5px;
+    flex-shrink: 0;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 10px;
+      top: -1px;
+      width: 5px;
+      height: 14px;
+      border: solid #0497b5;
+      border-width: 0 2px 2px 0px;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+      display: none;
+    }
+  }
+
+  input[type="checkbox"]:checked + .checkmark::after {
+    display: block;
+  }
+
+  .custom-check-box-label {
+    font-size: 14px;
   }
 }
