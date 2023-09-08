@@ -216,6 +216,7 @@
           }
 
           .slick-prev {
+            position: absolute;
             width: 45px;
             height: 45px;
             left: -30px;
@@ -232,6 +233,7 @@
           }
 
           .slick-next {
+            position: absolute;
             width: 45px;
             height: 45px;
             right: -5px;

@@ -299,6 +299,7 @@
 
     .form-ttl {
       margin-bottom: 10px;
+      display: block;
       .item {
         font-weight: 700;
         margin-right: 10px;
@@ -377,6 +378,7 @@
         background: #fff;
         border-radius: 5px;
         display: none;
+        z-index: 1;
       }
 
       .select_wrap .select_ul li {
