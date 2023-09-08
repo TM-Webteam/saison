@@ -138,10 +138,31 @@ $(document).ready(function () {
 // QA
 //______________________________________
 $(document).ready(function () {
-  $(".question__content").each(function(index) {
+  $(".question__content").each(function (index) {
     $(this).on("click", function () {
-      $(this).find('.QA__content-icon').toggleClass("is__open");
-      $(this).closest('.QA__content').find('.answer__content').slideToggle().css("display", "flex");
+      $(this).find(".QA__content-icon").toggleClass("is__open");
+      $(this)
+        .closest(".QA__content")
+        .find(".answer__content")
+        .slideToggle()
+        .css("display", "flex");
+    });
+  });
+});
+
+//______________________________________
+// QA sole_proprietorship
+//______________________________________
+$(document).ready(function () {
+  $(".qa-button").each(function (index) {
+
+    $(this).on("click", function () {
+      $(this).toggleClass("open");
+      $(this)
+        .closest(".qa")
+        .find(".answer-tab")
+        .slideToggle()
+        .css("display", "flex");
     });
   });
 });
@@ -215,7 +236,7 @@ $(window).on("load", function () {
 
     $listBack.on("click", function () {
       $supportList.removeClass("open");
-      $searchList .removeClass("open");
+      $searchList.removeClass("open");
     });
   });
 })(jQuery);
@@ -235,7 +256,7 @@ $(window).on("load", function () {
     $toggleMenu.on("click", function () {
       $menuList.toggleClass("open");
       $supportList.removeClass("open");
-      $searchList .removeClass("open");
+      $searchList.removeClass("open");
     });
   });
 })(jQuery);
@@ -284,22 +305,4 @@ $(window).on("load", function () {
 
     $(".carousel").show();
   }, 100);
-});
-
-
-//--------------------------------------
-// Collapse sole proprietorship
-//--------------------------------------
-
-$(document).ready(function () {
-  var $answer = $(".answer-tab");
-  var $question = $(".section-question-and-answer > div:nth-child(3)");
-  var $iconToggle = $(".qa-button");
-
-  $answer.hide();
-
-  $question.click(function () {
-    $answer.slideToggle();
-    $iconToggle.toggleClass("open");
-  });
 });
