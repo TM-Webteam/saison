@@ -138,6 +138,9 @@
         width: 100%;
       }
     }
+    @media #{$sp} {
+      padding-top: 35px;
+    }
   }
   .section-pagination {
     display: flex;
