@@ -155,11 +155,9 @@ $(document).ready(function () {
 //______________________________________
 $(document).ready(function () {
   $(".qa-button").each(function (index) {
-    console.log("this", this);
 
     $(this).on("click", function () {
       $(this).toggleClass("open");
-
       $(this)
         .closest(".qa")
         .find(".answer-tab")

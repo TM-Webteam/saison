@@ -221,8 +221,10 @@
 
   .section-question-and-answer {
     text-align: center;
-    padding: 60px 120px 70px;
+    padding: 60px 0px 70px;
     background-color: #fff;
+    margin: auto;
+    max-width: 1200px;
 
     .ttl-sub {
       font-size: 14px;
@@ -318,6 +320,10 @@
       margin-top: -30px;
       padding: 0 60px 0 30px;
       display: none;
+
+      @media #{$sp} {
+        padding: 8px;
+      }
 
       .qa-marker {
         color: $green-color-1;
