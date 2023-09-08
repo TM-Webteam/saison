@@ -1,4 +1,4 @@
-.contact-thanks-page {
+.catalog-thanks-page {
   margin: auto;
   padding: 130px 0 0px;
 
@@ -33,12 +33,10 @@
     }
 
     .ttl-tertiary {
-      @media #{$sp} {
-        font-size: 14px;
-      }
+      font-weight: 400;
 
-      span {
-        font-weight: 400;
+      @media #{$sp} {
+        font-size: 12px;
       }
     }
 
