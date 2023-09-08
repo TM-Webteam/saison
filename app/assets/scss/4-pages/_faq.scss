@@ -56,6 +56,7 @@
         grid-template-columns: repeat(4, 1fr);
         grid-gap: 30px;
         padding: 0 120px;
+        transition: all .3s;
 
         @media #{$sp} {
           display: block;
@@ -65,13 +66,20 @@
 
         .grid-item {
           border: 1px solid #ccc;
-          padding: 50px 30px;
           text-align: center;
           background: #444444;
           position: relative;
 
-          @media #{$sp} {
-            margin-bottom: 10px;
+          a {
+            width: 100%;
+            padding: 50px 30px;
+            transition: all .3s;
+            &:hover {
+              opacity: 1;
+              img {
+                bottom: 15%;
+              }
+            }
           }
 
           .grid-item__title {
@@ -89,6 +97,10 @@
             width: 10px;
             height: 10px;
           }
+
+          @media #{$sp} {
+            margin-bottom: 10px;
+          }
         }
       }
     }
@@ -100,6 +112,7 @@
     position: relative;
     background-color: white;
     display: block;
+    transition: all .3s;
 
     .banner__title {
       position: absolute;

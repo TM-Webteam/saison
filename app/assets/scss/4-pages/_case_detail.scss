@@ -209,8 +209,10 @@
         background-color: #fff;
         align-items: center;
         text-align: left;
+        transition: all .3s;
 
         &:hover {
+          opacity: 1;
           .bondi_blue_btn {
             border: 2px solid #0497b5;
             opacity: 1;

@@ -783,6 +783,16 @@
     font-weight: bold;
     margin: 0;
   }
+  &:hover {
+    background-color: $blue-color;
+    &::before {
+      border-top: 3px solid $white-color;
+      border-right: 3px solid $white-color;
+    }
+    span {
+      color: white;
+    }
+  }
 
   @media #{$sp} {
     padding: 13px 20px;
@@ -805,6 +815,7 @@
   border-radius: 3px;
   margin: 0 auto;
   border: none;
+  transition: all .3s;
   @media #{$sp} {
     font-size: 14px;
     padding: 13px;

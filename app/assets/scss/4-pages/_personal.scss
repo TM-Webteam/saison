@@ -136,6 +136,12 @@
       .notification-panel1 {
         margin-bottom: 60px;
       }
+      .bondi_blue_outline_btn {
+        font-weight: 700;
+        &:hover {
+          color: $white-color;
+        }
+      }
     }
 
     .notification-tertiary {
@@ -158,6 +164,10 @@
         .bondi_blue_outline_btn {
           margin-top: 20px;
           max-width: 522px;
+          font-weight: 700;
+          &:hover {
+            color: $white-color;
+          }
         }
       }
     }
@@ -327,6 +337,40 @@
         grid-template-columns: repeat(3, minmax(auto, 380px));
         gap: 30px;
         justify-content: center;
+        a.card {
+          transition: all 0.3s;
+          .arrow-down {
+            transition: all 0.3s;
+          }
+          &:hover {
+            opacity: 1;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+            .arrow-down {
+              top: 15px;
+            }
+          }
+        }
+        .card-type10 {
+          padding: 0;
+          a.card-type10-container {
+            padding: 35px 30px 30px;
+            transition: all .3s;
+            .bondi_blue_outline_btn {
+              font-weight: 700;
+            }
+            &:hover {
+              opacity: 1;
+              .bondi_blue_outline_btn {
+                color: $white-color;
+                background-color: $blue-color;
+                &::before {
+                  border-top: 3px solid $white-color;
+                  border-right: 3px solid $white-color;
+                }
+              }
+            }
+          }
+        }
 
         @media #{$tab} {
           grid-template-columns: auto;
