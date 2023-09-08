@@ -197,6 +197,8 @@ $(window).on("load", function () {
     var $searchList = $(".nav__dropdown__list__search");
     var $supportList = $(".nav__dropdown__list__support");
 
+    var $listBack = $(".nav__dropdown__back");
+
     $searchDropdown.on("click", function () {
       $(".nav__dropdown__list__search").toggleClass("open");
       $supportDropdown.removeClass("open");
@@ -210,6 +212,11 @@ $(window).on("load", function () {
       $searchList.removeClass("open");
       $supportDropdown.toggleClass("open");
     });
+
+    $listBack.on("click", function () {
+      $supportList.removeClass("open");
+      $searchList .removeClass("open");
+    });
   });
 })(jQuery);
 
@@ -222,8 +229,13 @@ $(window).on("load", function () {
     var $menuList = $(".nav__dropdown__sp");
     var $toggleMenu = $("#nav-toggle");
 
+    var $searchList = $(".nav__dropdown__list__search");
+    var $supportList = $(".nav__dropdown__list__support");
+
     $toggleMenu.on("click", function () {
       $menuList.toggleClass("open");
+      $supportList.removeClass("open");
+      $searchList .removeClass("open");
     });
   });
 })(jQuery);
@@ -272,4 +284,22 @@ $(window).on("load", function () {
 
     $(".carousel").show();
   }, 100);
+});
+
+
+//--------------------------------------
+// Collapse sole proprietorship
+//--------------------------------------
+
+$(document).ready(function () {
+  var $answer = $(".answer-tab");
+  var $question = $(".section-question-and-answer > div:nth-child(3)");
+  var $iconToggle = $(".qa-button");
+
+  $answer.hide();
+
+  $question.click(function () {
+    $answer.slideToggle();
+    $iconToggle.toggleClass("open");
+  });
 });
