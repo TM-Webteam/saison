@@ -16,7 +16,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: calc(100vh - 672px);
+    height: calc(100vh - 671px);
 
     @media #{$sp} {
       height: auto;

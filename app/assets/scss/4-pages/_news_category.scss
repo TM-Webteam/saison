@@ -1,14 +1,20 @@
 .news_category-page {
   margin: auto;
   padding: 140px 0 0px;
+
+  @media only screen and (max-width: 770px) {
+    padding: 50px 0 0px;
+  }
+
   .containers {
     padding: 0;
     @media only screen and (max-width: 1260px) {
-      padding: 0 30px;
+      padding: 0 15px;
     }
   }
   .section-new {
     padding-top: 80px;
+
     .section-main {
       width: calc(100% - 400px);
       .section-title {
@@ -19,15 +25,12 @@
         opacity: 0.8;
         width: fit-content;
         font-weight: bold;
+
+        @media #{$sp} {
+          font-size: 28px;
+        }
       }
-      .section-subtitle {
-        text-align: left;
-        font: normal normal normal 20px/28px Noto Sans CJK JP;
-        letter-spacing: 0px;
-        color: #000000;
-        opacity: 1;
-        margin-bottom: 46px;
-      }
+
       .section-list {
         .list-item {
           border-bottom: 1px solid #cccccc;
@@ -67,6 +70,10 @@
             color: #000000;
             opacity: 1;
             padding-top: 17px;
+
+            @media #{$sp} {
+              font-size: 16px;
+            }
           }
         }
       }
@@ -78,10 +85,17 @@
       border-top: 4px solid #0497b5;
       .menu-title {
         text-align: center;
-        font: normal normal bold 20px/51px Noto Sans CJK JP;
+        font-size: 20px;
+        font-weight: bold;
         letter-spacing: 0px;
         color: #000000;
         padding-top: 5px;
+
+        @media #{$sp} {
+          font-size: 22px;
+          text-align: left;
+          margin-left: 21px;
+        }
       }
       .menu-item {
         height: 62px;
@@ -121,7 +135,10 @@
       }
     }
     @media only screen and (max-width: 830px) {
-      display: block;
+      padding-top: 0;
+      display: flex;
+      flex-direction: column-reverse;
+
       .section-main,
       .section-aside {
         width: 100%;
@@ -147,6 +164,10 @@
       }
       &:not(.active) {
         border-bottom: 2px solid #444444;
+      }
+
+      @media #{$sp} {
+        font-size: 18px;
       }
     }
     .active {

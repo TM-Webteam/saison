@@ -3,7 +3,7 @@
   padding: 130px 0 0;
 
   @media #{$sp} {
-    padding: 54px 0 0;
+    padding: 50px 0 0;
   }
 
   .section-welcome {
@@ -56,7 +56,7 @@
         grid-template-columns: repeat(4, 1fr);
         grid-gap: 30px;
         padding: 0 120px;
-        transition: all .3s;
+        transition: all 0.3s;
 
         @media #{$sp} {
           display: block;
@@ -73,7 +73,7 @@
           a {
             width: 100%;
             padding: 50px 30px;
-            transition: all .3s;
+            transition: all 0.3s;
             &:hover {
               opacity: 1;
               img {
@@ -112,7 +112,11 @@
     position: relative;
     background-color: white;
     display: block;
-    transition: all .3s;
+    transition: all 0.3s;
+
+    @media #{$sp} {
+      padding: 70px 30px;
+    }
 
     .banner__title {
       position: absolute;
@@ -137,7 +141,7 @@
         margin-bottom: 30px;
 
         .blue_gradient_btn {
-          display: inline-block;
+          width: 75%;
           max-width: 460px;
         }
       }

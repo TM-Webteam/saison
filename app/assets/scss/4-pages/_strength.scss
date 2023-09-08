@@ -134,7 +134,7 @@
           margin-bottom: 20px;
 
           @media #{$sp} {
-            font-size: 20px;;
+            font-size: 20px;
           }
         }
 
@@ -153,7 +153,7 @@
         margin-bottom: 25px;
 
         @media #{$sp} {
-          font-size: 20px;;
+          font-size: 20px;
         }
       }
 
@@ -299,6 +299,7 @@
           @media #{$sp} {
             padding-top: 10px;
             padding-bottom: 10px;
+            display: block;
           }
         }
       }
