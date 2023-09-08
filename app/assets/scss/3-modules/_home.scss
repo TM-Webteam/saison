@@ -113,7 +113,7 @@
               border: none;
               padding: 0;
               background-color: $white-color;
-              transition: all .3s;
+              transition: all 0.3s;
               span {
                 display: inline-block;
                 min-width: 263px;
@@ -377,7 +377,7 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            transition: all .3s;
+            transition: all 0.3s;
             &:hover {
               opacity: 1;
               .bondi_blue_btn {
@@ -715,9 +715,12 @@
           margin-bottom: 30px;
           border: none;
           padding: 0;
-          transition: all .3s;
+          transition: all 0.3s;
           a.sec-news__box__container {
             padding: 30px 30px 30px 39px;
+            @media #{$sp} {
+              width: 100%;
+            }
           }
           .ttl-tertiary {
             margin-bottom: 20px;
@@ -819,7 +822,7 @@
             }
           }
           &:hover {
-            box-shadow: 0 0 10px rgba(0,0,0,.4);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
             a.sec-news__box__container {
               opacity: 1;
             }
@@ -926,6 +929,9 @@
           }
           @media #{$sp} {
             padding: 15px 0;
+            &__container {
+              width: 100%;
+            }
           }
         }
       }
