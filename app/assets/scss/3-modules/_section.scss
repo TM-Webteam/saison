@@ -1632,6 +1632,10 @@
 
     .sec-right-wrapper {
       width: 60%;
+      @media #{$sp} {
+        width: 100%;
+      }
+
       .sec01-right-box {
         margin-bottom: 20px;
         justify-content: left;
