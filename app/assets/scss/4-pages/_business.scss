@@ -141,137 +141,79 @@
       padding: 35px 15px;
     }
 
-    .notification-primary {
-      padding-bottom: 30px;
+    .notification {
       margin-bottom: 60px;
-      background-color: #fff;
       box-shadow: 0px 3px 20px #00000029;
 
-      .notification-panel1 {
-        .latest {
-          background-color: #fff;
-          padding: 0 12px;
+      &.primary {
+        background-color: #fff;
+        padding-bottom: 30px;
+
+        .notification-panel1 {
+          .latest {
+            background-color: #fff;
+            padding: 0 12px;
+
+            .lastest-list {
+              justify-content: flex-start;
+              margin: auto;
+              padding: 0;
+            }
+          }
 
           .lastest-list {
-            justify-content: flex-start;
-            margin: auto;
-            padding: 0;
-          }
-        }
-
-        .lastest-list {
-          @media #{sp} {
-            display: grid;
-          }
-        }
-      }
-
-      .notification-panel2 {
-        margin-bottom: 30px;
-
-        .relation {
-          border: 1px solid #00aba0;
-
-          .single__ttl {
-            padding: 13px 0;
-            background-color: #00aba0;
-          }
-
-          .card-type13 {
-            .bondi_blue_outline_btn {
-              margin-bottom: 20px;
-            }
-          }
-        }
-
-        &:last-child {
-          margin-bottom: 0;
-        }
-
-        &-body {
-          .card-list {
-            @media #{$sp} {
+            @media #{sp} {
               display: grid;
-              grid-template-rows: repeat(3, auto);
-              row-gap: 30px;
+            }
+          }
+        }
+
+        .notification-panel2 {
+          margin-bottom: 30px;
+
+          .relation {
+            border: 1px solid #00aba0;
+
+            .single__ttl {
+              padding: 13px 0;
+              background-color: #00aba0;
             }
 
-            .card-type12 {
-              @media #{$sp} {
-                width: 100%;
-                position: relative;
-
-                &::after {
-                  position: absolute;
-                  content: "";
-                  width: calc(100% + 10px);
-                  height: 1px;
-                  bottom: -15px;
-                  left: 0;
-                  background: #ccc;
-                }
+            .card-type13 {
+              .bondi_blue_outline_btn {
+                margin-bottom: 20px;
               }
             }
           }
-        }
-      }
-    }
 
-    .notification-secondary {
-      margin-bottom: 60px;
-      box-shadow: 0px 3px 20px #00000029;
-    }
-
-    .notification-tertiary {
-      margin-bottom: 60px;
-      box-shadow: 0px 3px 20px #00000029;
-
-      .notification-panel1 {
-        .card-type13 {
-          padding: 0;
-          margin-bottom: 60px;
-
-          .sp-reverse {
-            .sec__img {
-              max-width: 391px;
-            }
+          &:last-child {
+            margin-bottom: 0;
           }
-        }
-      }
-    }
 
-    .notification-quaterary {
-      margin-bottom: 60px;
-      box-shadow: 0px 3px 20px #00000029;
+          &-body {
+            .card-list {
+              @media #{$sp} {
+                display: grid;
+                grid-template-rows: repeat(3, auto);
+                row-gap: 30px;
+              }
 
-      .notification-panel1 {
-        .card-type13 {
-          padding: 0;
-          margin-bottom: 60px;
+              .card-type12 {
+                @media #{$sp} {
+                  width: 100%;
+                  position: relative;
 
-          .sp-reverse {
-            .sec__img {
-              margin-top: 50px;
-              max-width: 429px;
-              max-height: 153px;
-            }
-          }
-        }
-      }
-    }
-
-    .notification-quinary {
-      box-shadow: 0px 3px 20px #00000029;
-
-      .notification-panel1 {
-        .card-type13 {
-          padding: 0;
-          margin-bottom: 30px;
-
-          .sp-reverse {
-            .sec__img {
-              max-width: 439px;
-              max-height: 153px;
+                  &::after {
+                    position: absolute;
+                    content: "";
+                    width: calc(100% + 10px);
+                    height: 1px;
+                    bottom: -15px;
+                    left: 0;
+                    background: #ccc;
+                  }
+                }
+              }
             }
           }
         }

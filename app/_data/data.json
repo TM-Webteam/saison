@@ -1,3 +1,210 @@
 {
-  "test": "test"
+  "test": "312321",
+  "common": {
+    "button": {
+      "download": "まとめて資料をダウンロードする",
+      "solution": "解決策！",
+      "detail": "カードの詳細はこちら",
+      "more": "をもっと詳しく"
+    }
+  },
+
+  "smaller_companies": {
+    "welcome": {
+      "image": "/assets/img/smaller_companies/business_banner.png",
+      "inner": "<strong>業務効率化</strong>から<strong>資金繰り</strong>まで",
+      "title": "中小企業様向けサービス"
+    },
+    "primary": {
+      "sub_title": "中小企業の経営者様・経理ご担当者様へ",
+      "title": "こんなニーズやお悩みありませんか？",
+      "list": [
+        {
+          "title": "経費精算に時間がとられている",
+          "image": "/assets/img/smaller_companies/business_card_1.png",
+          "description": [
+            "カード利用明細から個人の利用と経費を分けるのが大変",
+            "確定申告時も大変だ。"
+          ]
+        },
+        {
+          "title": "資金繰りを改善したい",
+          "image": "/assets/img/smaller_companies/business_card_2.png",
+          "description": [
+            "借りずに資金繰りを改善したい。",
+            "期限の迫った請求書の支払いを先延ばししたい。"
+          ]
+        },
+        {
+          "title": "請求・回収業務に <br/> 工数がとられている",
+          "image": "/assets/img/smaller_companies/business_card_3.png",
+          "description": [
+            "できるだけ早く資金調達を実現したい。",
+            "できる限り低金利で融資してほしい。"
+          ]
+        },
+        {
+          "title": "福利厚生サービスを導入したい",
+          "image": "/assets/img/smaller_companies/business_card_4.png",
+          "description": [
+            "従業員がなかなか定着しない。",
+            "従業員に喜んでもらえる福利厚生がほしい。"
+          ]
+        },
+        {
+          "title": "出張費用の適正化・削減をしたい",
+          "image": "/assets/img/smaller_companies/business_card_5.png",
+          "description": [
+            "出張の手配を個々の社員に任せているため費用が適切かどうかがわからない。"
+          ]
+        }
+      ]
+    },
+    "secondary": {
+      "sub_title": "課題：経費精算に時間がとられている",
+      "title": "<span>「法人カード」や「経費精算クラウド」</span>で経費清算を効率化できます！",
+      "panel1": [
+        {
+          "title": "従業員もラクに！",
+          "image": "/assets/img/smaller_companies/personal_1.png",
+          "description": "法人へ一括請求にできるから<br/>仮払いや立替清算が不要に！<br/><br/>社員の方にとっても立替払いとその精算は、手間ばかりかかって得がありません。法人カードを導入することで、社員の方も清算業務から解放されます。"
+        },
+        {
+          "title": "従業員もラクに！",
+          "image": "/assets/img/smaller_companies/personal_2.png",
+          "description": "法人へ一括請求にできるから<br/>仮払いや立替清算が不要に！<br/><br/>社員の方にとっても立替払いとその精算は、手間ばかりかかって得がありません。法人カードを導入することで、社員の方も清算業務から解放されます。"
+        }
+      ],
+      "panel2": {
+        "title": "経費清算におすすめの法人カード",
+        "cards": [
+          {
+            "title": "キャッシュバックを重視したいという方へ",
+            "image": "/assets/img/credit_cards/american-express-01.png",
+            "content": "セゾンプラチナ・ビジネス プロ・<br>アメリカン・エキスプレス®・カード",
+            "detail": [
+              "年会費：27,500円（税込）",
+              "追加カード年会費：3,300円（税込）"
+            ]
+          },
+          {
+            "title": "年会費を重視したいという方へ",
+            "image": "/assets/img/credit_cards/saison-01.png",
+            "content": "セゾンゴールド・ビジネス プロ・カード",
+            "detail": [
+              "年会費：3,300円（税込）",
+              "追加カード年会費：1,100円（税込）"
+            ]
+          },
+          {
+            "title": "不正利用のリスクを軽減したい方へ",
+            "image": "/assets/img/credit_cards/saison-02.png",
+            "content": "セゾン・アメリカン・エキスプレス®・ビジネス プロ・パーチェシング・カード",
+            "detail": [
+              "年会費：11,000円（税込）",
+              "追加カード年会費：1,100円（税込）"
+            ]
+          }
+        ]
+      },
+      "panel3": {
+        "title": "経費精算クラウド「Concur Expense」",
+        "description": "経費精算クラウド「Concur Expense」は、法人カード、交通系ICカード（スイカ、パスモなど）、ホテル手配やタクシー配車アプリなどさまざまなサービスと連携。経費明細が自動で Concur Expense に取り込まれるので、ペーパーレス化はもちろん経費精算を自動化することができます。",
+        "image": "/assets/img/common/concur-expense.png",
+        "detail": [
+          "様々な決済手段と連携。<span class='yellow-bottom'>経費明細が自動で取り込み！</span>",
+          "定期券経路分は自動で控除＆二重申請も自動的にチェック",
+          "スマホ・モバイ<span class='yellow-bottom'>ルで、いつでも申請・承認が可能</span>"
+        ]
+      }
+    },
+    "solutions": [
+      {
+        "issue": "課題：資金繰りを改善したい",
+        "highlight": "支払い.com」",
+        "title": "で請求書払いをカードで先のばし。振り込みはお任せ!",
+        "description": "を利用すれば、期限の迫った請求書も、支払いまで最長60日余裕をプラス。資金繰りを改善し、借りずに事業を加速できます。必要なのはお手持ちのカードだけ。審査も書類も必要ありません。",
+        "image": "/assets/img/common/cash-flow.png",
+        "more": "支払い.comをもっと詳しく"
+      },
+      {
+        "issue": "課題：請求・回収業務に工数がとられている",
+        "highlight": "「セゾンインボイス」",
+        "title": "で未入金対応を0に。さらに毎月の請求業務を最短15分で!",
+        "description": "セゾンインボイスとは、請求業務“すべて”を代行するサービスです。顧客を登録し、取引情報を入力するだけ。与信審査、請求書作成・発行、入金確認、督促まですべてクレディセゾンが代行いたします。顧客の与信枠内であれば、その後未払いになったとしても貴社に振込。未回収リスクがなくなります。",
+        "image": "/assets/img/common/saison-invoice.png",
+        "detail": [
+          "請求業務はすべて代行<span class='yellow-bottom'>。業務を15分で完了！</span>",
+          "未払いでも全額振込<span class='yellow-bottom'>。未回収リスク100%保証。</span>",
+          "<span class='yellow-bottom'>最短翌日の入金</span>で運用資金をスピード確保。"
+        ],
+        "more": "セゾンインボイスをもっと詳しく"
+      },
+      {
+        "issue": "課題：福利厚生サービスを導入したい",
+        "highlight": "「セゾンフクリコ」",
+        "title": "で従業員の満足度を高めて人材が定着する会社に。!",
+        "description": "セゾンフクリコとは、従業員のみなさまの暮らしに役立つ様々なサービスを、<strong>最大66％OFFで利用できるお得な福利厚生優待サービス</strong>です。1人あたり月額385円（税込）とお手頃な価格なので、はじめての福利厚生を導入する企業様でもお気軽に利用できますす。",
+        "image": "/assets/img/common/saison-fukurico.png",
+        "detail": [
+          "<span class='yellow-bottom'>全国25,000以上</span>の施設で使えるコンテンツ",
+          "ビジネスサポートメニ<span class='yellow-bottom'>ューで大幅コ</span>スト削減が可能",
+          "<span class='yellow-bottom'>完全アウトソーシングで手間がかか</span>らない",
+          "会員様だけでなく、<span class='yellow-bottom'>ご家族※もご利用で</span>きます"
+        ],
+        "sub_list": [
+          "ご利用者の範囲は会員様と配偶者、およびそれぞれの二親等内（両親・祖父母・兄弟・子・孫）のご家族となります。",
+          "施設によって会員特典が適用される範囲や人数が異なる場合がございます。"
+        ],
+        "more": "セゾンフクリコをもっと詳しく"
+      },
+      {
+        "issue": "課題：出張費用の適正化・削減をしたい",
+        "highlight": "「CosPro」",
+        "title": "で出張手配にまつわる問題をまとめて解決!",
+        "description": "CosProとは、法人企業様の出張手配に関わる様々な課題を解決するために生まれた出張手配サービスです。<strong>社員様が予約されたチケットの料金が適正かどうかのチェックを行う、弊社独自の「適正化チェック」のサービスで法人企業様の出張コスト削減に寄与</strong>いたします。",
+        "image": "/assets/img/common/cos-pro.png",
+        "detail": [
+          "出張手配に社内ルールを！<br><span class='yellow-bottom'>手配を一本化して業務の透明化とコスト削減を</span>",
+          "<span class='yellow-bottom'>初期費用・ランニングコスト・国内発券手数料</span>",
+          "<span class='yellow-bottom'>365日稼働のコールセンターからも予約ＯＫ！※</span>",
+          "<span class='yellow-bottom'>適正化チェッ</span>クで出張コストを抑制！"
+        ],
+        "sub_list": [
+          "365日稼働のコールセンターは国内出張の手配専用の窓口です。海外出張の手配窓口に関しては平日のみの稼働となります。"
+        ],
+        "more": "CosProをもっと詳しく"
+      }
+    ],
+    "tertiary": {
+      "sub_title": "DOCUMENTS",
+      "title": "各種サービス資料をまとめてダウンロード",
+      "description": "興味のあるサービス資料をまとめてダウンロードできます。"
+    },
+    "quaternary": {
+      "sub_title": "VOICE",
+      "title": "お客様の声",
+      "comments": [
+        {
+          "tag": "ビジネスカード",
+          "title": "最強のコスパとマイル還元率です。",
+          "sub_title": "truck LLC/代表/善利光雅 様",
+          "content": "ビジネスカードを探していたのですが、どのカードが自分に合うのかが分からず迷っていました。そこで、自身がビジネスカードに求める事項が備わっているか・・",
+          "more": "インタビューの続きを見る"
+        },
+        {
+          "tag": "支払い.com",
+          "title": "本当に60秒で300万円の支払いが完了してびっくりしています。",
+          "sub_title": "建設業　代表　様",
+          "content": "月末の職人への支払いに迫られ本当に困っていましたが、圧倒的に簡単に振込が完了し、手数料も安かったので大変助かりました。また利用させていただきます。"
+        },
+        {
+          "tag": "支払い.com",
+          "title": "ファクタリングの10%と比べて安く",
+          "sub_title": "フリーランスエンジニア　様",
+          "content": "引越しの初期費用が必要で急いでいたのですが、スピードはもちろん、ファクタリングの10%と比べて安くとても助かりました。条件の良い物件に引っ越せたので大満足です。"
+        }
+      ]
+    }
+  }
 }
