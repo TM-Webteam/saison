@@ -199,6 +199,9 @@
               }
 
               .card-type12 {
+                .ttl-terianry {
+                  font-weight: 700;
+                }
                 @media #{$sp} {
                   width: 100%;
                   position: relative;
@@ -265,6 +268,13 @@
       font-size: 32px;
       margin-bottom: 61px;
     }
+  }
+
+  .section-license {
+    font-size: 13px;
+    color: $white-color;
+    background-color: $gray-color-8;
+    padding: 20px 0;
   }
   // ===========END SECTIONS==========
 
