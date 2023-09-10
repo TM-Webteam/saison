@@ -288,6 +288,8 @@ $(window).on("load", function () {
       slidesToScroll: 3,
       dots: true,
       useTransform: false,
+      autoplay: true,
+      autoplaySpeed: 3000,
       prevArrow:
         '<button type="button" class="slick-prev"><svg xmlns="http://www.w3.org/2000/svg" width="15.095" height="15.095" viewBox="0 0 15.095 15.095"><path id="Path_44704" data-name="Path 44704" d="M9.674,9.674V0H0" transform="translate(8.255 14.388) rotate(-135)" fill="none" stroke="#fff" stroke-width="2"/></svg></button>',
       nextArrow:

@@ -149,7 +149,7 @@
     .section-wrapper-secondary {
       .ttl-tertiary {
         font-size: 22px;
-        text-align: center;
+        text-align: left;
         margin-bottom: 25px;
 
         @media #{$sp} {
@@ -235,6 +235,9 @@
                   transform: translate(-50%, -50%);
                   width: 100%;
                   font-weight: normal;
+                  @media #{$sp} {
+                    font-size: 16px;
+                  }
                 }
                 @media (max-width: 768px) {
                   width: 100%;
