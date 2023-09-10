@@ -16,14 +16,13 @@ $(document).ready(function () {
   $('a[href^="#"]').click(function () {
     var the_id = $(this).attr("href");
 
-    window.location.hash = the_id;
-
     $("html, body").animate(
       {
         scrollTop: $(the_id).offset().top - 200,
       },
       "slow"
     );
+    window.location.hash = the_id;
 
     return false;
   });

@@ -1,5 +1,4 @@
 {
-  "test": "312321",
   "common": {
     "button": {
       "download": "まとめて資料をダウンロードする",
@@ -20,6 +19,7 @@
       "title": "こんなニーズやお悩みありませんか？",
       "list": [
         {
+          "href": "#expenses",
           "title": "経費精算に時間がとられている",
           "image": "/assets/img/smaller_companies/business_card_1.png",
           "description": [
@@ -28,6 +28,7 @@
           ]
         },
         {
+          "href": "#cash-flow",
           "title": "資金繰りを改善したい",
           "image": "/assets/img/smaller_companies/business_card_2.png",
           "description": [
@@ -36,6 +37,7 @@
           ]
         },
         {
+          "href": "#billing-collection-task",
           "title": "請求・回収業務に <br/> 工数がとられている",
           "image": "/assets/img/smaller_companies/business_card_3.png",
           "description": [
@@ -44,6 +46,7 @@
           ]
         },
         {
+          "href": "#employee-benefits",
           "title": "福利厚生サービスを導入したい",
           "image": "/assets/img/smaller_companies/business_card_4.png",
           "description": [
@@ -52,6 +55,7 @@
           ]
         },
         {
+          "href": "#optimize-reduce-travel-expenses",
           "title": "出張費用の適正化・削減をしたい",
           "image": "/assets/img/smaller_companies/business_card_5.png",
           "description": [
@@ -61,6 +65,7 @@
       ]
     },
     "secondary": {
+      "id": "expenses",
       "sub_title": "課題：経費精算に時間がとられている",
       "title": "<span>「法人カード」や「経費精算クラウド」</span>で経費清算を効率化できます！",
       "panel1": [
@@ -120,6 +125,7 @@
     },
     "solutions": [
       {
+        "id": "cash-flow",
         "issue": "課題：資金繰りを改善したい",
         "highlight": "支払い.com」",
         "title": "で請求書払いをカードで先のばし。振り込みはお任せ!",
@@ -128,6 +134,7 @@
         "more": "支払い.comをもっと詳しく"
       },
       {
+        "id": "billing-collection-task",
         "issue": "課題：請求・回収業務に工数がとられている",
         "highlight": "「セゾンインボイス」",
         "title": "で未入金対応を0に。さらに毎月の請求業務を最短15分で!",
@@ -141,6 +148,7 @@
         "more": "セゾンインボイスをもっと詳しく"
       },
       {
+        "id": "employee-benefits",
         "issue": "課題：福利厚生サービスを導入したい",
         "highlight": "「セゾンフクリコ」",
         "title": "で従業員の満足度を高めて人材が定着する会社に。!",
@@ -159,6 +167,7 @@
         "more": "セゾンフクリコをもっと詳しく"
       },
       {
+        "id": "optimize-reduce-travel-expenses",
         "issue": "課題：出張費用の適正化・削減をしたい",
         "highlight": "「CosPro」",
         "title": "で出張手配にまつわる問題をまとめて解決!",
