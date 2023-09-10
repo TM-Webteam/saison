@@ -16,9 +16,11 @@ $(document).ready(function () {
   $('a[href^="#"]').click(function () {
     var the_id = $(this).attr("href");
 
+    window.location.hash = the_id;
+
     $("html, body").animate(
       {
-        scrollTop: $(the_id).offset().top - 50,
+        scrollTop: $(the_id).offset().top - 200,
       },
       "slow"
     );
@@ -155,7 +157,6 @@ $(document).ready(function () {
 //______________________________________
 $(document).ready(function () {
   $(".qa-button").each(function (index) {
-
     $(this).on("click", function () {
       $(this).toggleClass("open");
       $(this)
@@ -305,4 +306,38 @@ $(window).on("load", function () {
 
     $(".carousel").show();
   }, 100);
+});
+
+// Sidebar
+$(document).ready(function (e) {
+  e.preventDefault;
+
+  $(".rbt-item").each(function (index) {
+    $(this).on("click", function () {
+      if (window.location.hash == $(this).attr("href")) {
+        $(".rbt-item.active").removeClass("active");
+
+        $(this).toggleClass("active");
+      }
+    });
+  });
+});
+
+// Handle active sidebar
+$(document).ready(function () {
+  var item = $(".rbt-item").filter(function () {
+    return $(this).attr("href") == window.location.hash;
+  });
+
+  item.length
+    ? item.addClass("active")
+    : $(".rbt-item:first").addClass("active");
+});
+
+$(window).on("popstate", function () {
+  var item = $(".rbt-item").attr("href") == window.location.hash;
+  if (item) {
+    $(".rbt-item.active").removeClass("active");
+    item.addClass("active");
+  }
 });
