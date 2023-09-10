@@ -1,0 +1,9 @@
+{% if menuSidebar %}
+  <section class="rbt-sidearea rbt-select rbt-btn-horizontal-right rbt-btn-alt-no rbt-loaded">
+    <ul class="rbt-list">
+      {% for item in menuSidebar %}
+        <a class="rbt-item" href="{{ item.link }}">{{ item.text }}</a>
+      {% endfor %}
+    </ul>
+  </section>
+{% endif %}
