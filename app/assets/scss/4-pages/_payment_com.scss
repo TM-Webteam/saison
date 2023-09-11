@@ -184,6 +184,12 @@
       .ttl-tertiary {
         color: $white-color;
         margin-bottom: 105px;
+        text-align: left;
+
+        @media #{$sp} {
+          text-align: center;
+        }
+
         .special {
           font-size: 28px;
           text-shadow: 0px 0px 20px #05172c8d;
@@ -200,22 +206,25 @@
 
           @media #{$sp} {
             max-width: unset;
-            padding: 0;
+            // padding: 0;
             // margin: 14px 0;
           }
 
           &-tooltip {
             position: absolute;
-            width: auto;
+            width: 100%;
             top: -65px;
-            width: auto;
             white-space: nowrap;
             left: 50%;
             transform: translateX(-50%);
 
+            @media #{$sp} {
+              width: auto;
+            }
+
             &__content {
               position: relative;
-              width: fit-content;
+              // width: fit-content;
               font-size: 14px;
               font-weight: 600;
               margin-bottom: 25px;
@@ -231,7 +240,7 @@
               &::before {
                 position: absolute;
                 content: "\A";
-                top: 100%;
+                top: calc(100% - 1px);
                 left: calc(50% - 15px);
                 width: 0;
                 height: 0;
@@ -399,7 +408,6 @@
           position: absolute;
           width: auto;
           top: -65px;
-          width: auto;
           white-space: nowrap;
           left: 50%;
           transform: translateX(-50%);
@@ -576,7 +584,7 @@
         @media #{$sp} {
           padding: 15px;
         }
-        
+
         span {
           font-weight: bold;
         }
@@ -592,7 +600,6 @@
           position: absolute;
           width: auto;
           top: -65px;
-          width: auto;
           white-space: nowrap;
           left: 50%;
           transform: translateX(-50%);
@@ -624,7 +631,7 @@
             &::before {
               position: absolute;
               content: "\A";
-              top: 100%;
+              top: calc(100% - 1px);
               left: calc(50% - 15px);
               width: 0;
               height: 0;
