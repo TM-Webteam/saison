@@ -121,7 +121,7 @@
     .ttl-tertiary {
       .yellow-bottom {
         font-weight: 600;
-        background: linear-gradient(to bottom, transparent 50%, yellow 50%);
+        background: linear-gradient(to bottom, transparent 70%, $yellow-color 30%);
         display: inline;
       }
     }
@@ -341,7 +341,7 @@
 
   .section-quaterary {
     padding: 70px 0;
-    background-color: #E1E1E1;
+    background-color: #e1e1e1;
 
     .card-type21 {
       .card-list {

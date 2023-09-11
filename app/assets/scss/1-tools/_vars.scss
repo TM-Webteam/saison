@@ -8,13 +8,13 @@ $tab: "all and (max-width : 860px)";
 //$xl: "all and (max-width : 1200px)";
 $pc: "all and (min-width: 769px)";
 
-
-$font-family: 'Noto Sans JP','ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','游ゴシック','Yu Gothic','游ゴシック体','YuGothic','ＭＳ Ｐゴシック','MS PGothic',sans-serif;
-
+$font-family: "Noto Sans JP", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",
+  "游ゴシック", "Yu Gothic", "游ゴシック体", "YuGothic", "ＭＳ Ｐゴシック",
+  "MS PGothic", sans-serif;
 
 // カラー
 
-$primary-color: #0297B5;
+$primary-color: #0297b5;
 $black_color: #191919;
 $black-color-01: #121212;
 
@@ -24,31 +24,42 @@ $tertiary-color: #eee;
 
 $white-color: #fff;
 
-$gradient-bg: transparent linear-gradient(61deg, #0497B5 0%, #53D2B2 100%) 0% 0% no-repeat padding-box;
-$gradient-bg-reverse: transparent linear-gradient(241deg, #0497B5 0%, #53D2B2 100%) 0% 0% no-repeat padding-box;
-$gradient-bg-2: transparent linear-gradient(90deg, #111111 0%, #444444 100%) 0% 0% no-repeat padding-box;
+$orange-color: #ef783e;
 
-$blue-color: #0497B5;
-$blue-color-1: #00758C;
-$blue-color-2: #E5F4F8;
+$orange-gradient: transparent linear-gradient(78deg, #f29a39 0%, #ef783e 100%)
+  0% 0% no-repeat padding-box;
+$orange-gradient-reserve: transparent
+  linear-gradient(258deg, #f29a39 0%, #ef783e 100%) 0% 0% no-repeat padding-box;
+
+$gradient-bg: transparent linear-gradient(61deg, #0497b5 0%, #53d2b2 100%) 0% 0%
+  no-repeat padding-box;
+$gradient-bg-reverse: transparent
+  linear-gradient(241deg, #0497b5 0%, #53d2b2 100%) 0% 0% no-repeat padding-box;
+$gradient-bg-2: transparent linear-gradient(90deg, #111111 0%, #444444 100%) 0%
+  0% no-repeat padding-box;
+
+$blue-color: #0497b5;
+$blue-color-1: #00758c;
+$blue-color-2: #e5f4f8;
+$blue-color-3: #004098;
+$blue-color-4: #014A58;
 
 $green-color: #007477;
-$green-color-1: #53D2B2;
+$green-color-1: #53d2b2;
+$green-color-2: #24A4A4;
 
-$gray-color: #F1F1F1;
-$gray-color-2: #A7A7A7;
-$gray-color-3: #DDDDDD;
-$gray-color-4: #0000001C;
+$gray-color: #f1f1f1;
+$gray-color-2: #a7a7a7;
+$gray-color-3: #dddddd;
+$gray-color-4: #0000001c;
 $gray-color-5: #666666;
 $gray-color-6: #00000029;
-$gray-color-7: #EEEEEE;
+$gray-color-7: #eeeeee;
 $gray-color-8: #797979;
 
-$yellow-color: #FFFF01;
+$yellow-color: #ffff01;
 
 // テキストカラー
-
-
 
 // コンテナー設定
 
