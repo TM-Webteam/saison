@@ -1049,6 +1049,12 @@
         display: flex;
         align-items: baseline;
         gap: 6px;
+        svg {
+          width: 20px;
+        }
+        span {
+          width: calc(100% - 20px);
+        }
       }
     }
 
