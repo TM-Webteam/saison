@@ -2084,6 +2084,16 @@
             margin-bottom: 20px;
           }
 
+          .card__box--cont {
+            display: grid;
+            gap: 20px;
+            grid-template-columns: 45% 55%;
+
+            @media #{$sp} {
+              grid-template-columns: auto;
+            }
+          }
+
           .card__box--txt {
             font-size: 16px;
             font-weight: 400;

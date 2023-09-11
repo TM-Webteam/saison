@@ -19,31 +19,31 @@ link:"payment"
 {% set menuSidebar = [
 {
 text: "TOP",
-link: "/"
+link: "#top"
 },
 {
 text: "支払い.comとは",
-link: "#"
+link: "#payment"
 },
 {
 text: "ご利用までの流れ",
-link: "#"
+link: "#flow-of-usage"
 },
 {
 text: "選ばれる理由",
-link: "#"
+link: "#reason-chosing"
 },
 {
 text: "ご利用者様の声",
-link: "#"
+link: "#comment"
 },
 {
 text: "よくある質問",
-link: "#"
+link: "#faq"
 },
 {
 text: "資料・無料登録",
-link: ""
+link: "#material"
 }
 ] %}
 
@@ -57,7 +57,7 @@ link: ""
 {% block content %}
 {% include 'partial/sidebar.njk' %}
 <main class="payment_com-page">
-  <section class="section-welcome fadein">
+  <section id="top" class="section-welcome fadein">
     <div class="section-welcome-container">
       <div class="section-welcome-left">
         <div class="title-notice">
@@ -98,7 +98,7 @@ link: ""
     </div>
   </section>
 
-  <section class="section-primary fadein">
+  <section id="payment" class="section-primary fadein">
     <div class="container-1000">
       <div class="ttl-notice">支払い.comとは</div>
       <h1 class="ttl-primary">中小企業様向けの「第三の資金繰り改善策」です。</h1>
@@ -110,7 +110,7 @@ link: ""
     </div>
   </section>
 
-  <section class="section-secondary fadein">
+  <section id="payment" class="section-secondary fadein">
     <div class="container-1200">
       <h1 class="ttl-primary">このようなお悩みをお持ちの企業様向けのサービスです。</h1>
       <div class="section-secondary-content">
@@ -174,7 +174,7 @@ link: ""
     </div>
   </section>
 
-  <section class="section-quaternary fadein">
+  <section id="flow-of-usage" class="section-quaternary fadein">
     <div class="container-1200">
       <div class="ttl-notice">ご利用までの流れ</div>
       <h1 class="ttl-primary">顧客・取引データを入力したら、あとはお任せ！</h1>
@@ -297,6 +297,114 @@ link: ""
           </li>
           {% endfor %}
         </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="comment" class="section-voice fadein">
+    <h5 class="ttl-sub">{{ payment_page.voice.sub_title }}</h5>
+    <h2 class="ttl-secondary">{{ payment_page.voice.title }}</h2>
+    <div class="section-primary__wrapper">
+      <div class="containers">
+        <ul class="inherit card-list">
+          {% for comment in payment_page.voice.comments %}
+            <div class="card-type10">
+              <h5 class="ttl-quinary">
+                {{ comment.title }}
+              </h5>
+              <h6 class="ttl-senary">
+                {{ comment.content | safe}}
+              </h6>
+            </div>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" class="section-question-and-answer fadein">
+    <div class="container">
+      <h5 class="ttl-sub">FAQ</h5>
+      <h2 class="ttl-secondary">よくある質問</h2>
+      <span class="section-question-and-answer__description">
+        お客様からよくいただくご質問にお答えします。この他にご質問がある方は、<a href="#">お問い合わせフォーム</a>より、お気軽にご連絡ください。
+        </br>
+        2営業日以内に担当者からご連絡させて頂きます。
+      </span>
+      <ul class="section-question-and-answer__list">
+        {% for i in range(1, 5) %}
+          <li class="qa">
+            <div class="flex gap20 question-tab">
+              <div class="qa-marker">
+                <h2 class="ttl-secondary">Q</h2>
+              </div>
+              <div class="qa-content">
+                <h3 class="ttl-tertiary">
+                  質問内容が入ります。質問内容が入ります。質問内容が入ります。質問内容が入ります。質問内容が入ります。
+                </h3>
+              </div>
+              <button class="qa-button">
+                <span class="svg__plus">{% include 'component/icons/plus.njk' %}</span>
+                <span class="svg__minus">{% include 'component/icons/minus.njk' %}</span>
+              </button>
+            </div>
+            <div class="flex gap20 answer-tab">
+              <div class="qa-marker">
+                <h2 class="ttl-secondary">A</h2>
+              </div>
+              <div class="qa-content">
+                <h3 class="ttl-tertiary">
+                  質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。
+                </h3>
+              </div>
+            </div>
+          </li>
+        {% endfor %}
+      </ul>
+      <a href="#" class="faq_more bondi_blue_outline_btn">
+        <span class="bondi_blue_outline_btn__tittle">
+          もっと見る
+        </span>
+      </a>
+    </div>
+  </section>
+
+  <section id="material" class="section-contact fadein">
+    <div class="card-type22">
+      <div class="ttl-notice">CONTACT</div>
+      <h3 class="ttl-tertiary">支払い.comをご検討中の方へ</h3>
+      <div class="useful-wp container">
+        <div class="containers">
+          <div class="flex jcC gap60">
+            <div href="#" class="card">
+              <summary class="card__box">
+                <div class="card__box--ttl">サービス内容について詳しく知りたい方はこちら</div>
+                <div class="card__box--cont">
+                  <div class="card__box--image">
+                    <img src="/assets/img/payment_com/payment_contact1.png"/>
+                  </div>
+                  <div class="card__box--txt">
+                    支払い.comのサービス資料をダウンロートできます。フォーム入力後リアルタイムでお送りいたします。
+                  </div>
+                </div>
+                <div><a class="blue_gradient_btn" href="#">ご相談・お問い合わせ（無料）</a></div>
+              </summary>
+          </div>
+          <div href="#" class="card">
+            <summary class="card__box">
+              <div class="card__box--ttl">利用イメージを知りたい方はこちら</div>
+              <div class="card__box--cont">
+                  <div class="card__box--image">
+                    <img src="/assets/img/payment_com/payment_contact2.png"/>
+                  </div>
+                  <div class="card__box--txt">
+                    支払い.comのサービス資料をダウンロートできます。フォーム入力後リアルタイムでお送りいたします。
+                  </div>
+                </div>
+              <div><a class="blue_gradient_btn" href="#">審査おお申し込み</a></div>
+            </summary>
+          </div>
+        </div>
       </div>
     </div>
   </section>

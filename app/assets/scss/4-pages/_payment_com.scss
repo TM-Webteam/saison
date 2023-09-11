@@ -8,7 +8,7 @@
 .payment_com-page {
   section {
     .ttl-notice {
-      font-size: 13px;
+      font-size: 14px;
       color: $primary-color;
       margin-bottom: 45px;
     }
@@ -450,6 +450,181 @@
     padding: 70px 0;
   }
 
+  .section-voice {
+    text-align: center;
+    padding: 70px 0;
+    background-color: #fff;
+
+    @media #{$sp} {
+      padding: 35px 15px;
+    }
+
+    .ttl-sub {
+      font-size: 14px;
+      font-weight: bold;
+      font-family: "Futura";
+      color: $primary-color;
+    }
+
+    .ttl-secondary {
+      font-size: 32px;
+      margin-bottom: 61px;
+    }
+  }
+
+  .section-question-and-answer {
+    text-align: center;
+    padding: 60px 0px 70px;
+    background: #f5f5f5;
+    margin: auto;
+
+    @media #{$sp} {
+      padding: 35px 15px;
+    }
+
+    &__description {
+      font-size: 20px;
+      line-height: 35px;
+
+      a {
+        text-decoration: underline;
+        color: $primary-color;
+      }
+    }
+
+    &__list {
+      margin-bottom: 50px;
+    }
+
+    .ttl-sub {
+      font-size: 14px;
+      font-weight: bold;
+      font-family: "Futura";
+      color: $primary-color;
+    }
+
+    .ttl-secondary {
+      font-size: 32px;
+      margin-bottom: 61px;
+    }
+
+    .question-tab,
+    .answer-tab {
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      padding: 4px 30px;
+      width: 100%;
+      margin-bottom: 30px;
+
+      @media #{$sp} {
+        padding: 4px 8px;
+      }
+
+      .ttl-secondary {
+        font-size: 30px;
+        margin-bottom: 0;
+      }
+
+      .qa-content {
+        flex: 1;
+
+        .ttl-tertiary {
+          text-align: left;
+          font-size: 20px;
+          margin-bottom: 0;
+          font-weight: 400;
+
+          @media #{$sp} {
+            font-size: 16px;
+          }
+        }
+      }
+
+      .qa-button {
+        svg {
+          margin-top: 5px;
+        }
+        .svg__minus {
+          display: none;
+        }
+        &.open {
+          .svg__plus {
+            display: none;
+          }
+          .svg__minus {
+            display: block;
+          }
+        }
+      }
+    }
+
+    .question-tab {
+      margin-top: 50px;
+
+      cursor: pointer;
+      background: $blue-color-2 0% 0% no-repeat padding-box;
+      box-shadow: 0px 3px 20px #00000029;
+
+      .qa-marker {
+        color: $primary-color;
+      }
+
+      .qa-content {
+        .ttl-tertiary {
+          font-weight: bold;
+        }
+      }
+    }
+
+    .question-tab.open {
+      svg {
+        display: none;
+      }
+    }
+
+    .answer-tab {
+      background-color: #ffffff;
+      margin-top: -30px;
+      padding: 0 60px 0 30px;
+      display: none;
+
+      @media #{$sp} {
+        padding: 8px;
+      }
+
+      .qa-marker {
+        color: $green-color-1;
+      }
+    }
+  }
+
+  .section-contact {
+    .ttl-notice {
+      font-family: "Futura";
+      margin-bottom: 0;
+      color: $white-color;
+    }
+
+    .card-type22 .useful-wp .containers .card .card__box {
+      padding: 38px 44px;
+      @media #{$sp} {
+        padding: 30px 15px;
+      }
+
+      .card__box--ttl {
+        font-size: 20px;
+      }
+
+      .card__box--cont {
+        margin-bottom: 30px;
+        .card__box--txt {
+          text-align: left;
+        }
+      }
+    }
+  }
+
   // ===========END SECTIONS==========
 
   .section-primary__wrapper {
@@ -483,24 +658,12 @@
         }
 
         .card-type10 {
-          padding: 0;
-          a.card-type10-container {
-            padding: 35px 30px 30px;
-            transition: all 0.3s;
-            .bondi_blue_outline_btn {
-              font-weight: 700;
-            }
-            &:hover {
-              opacity: 1;
-              .bondi_blue_outline_btn {
-                color: $white-color;
-                background-color: $blue-color;
-                &::before {
-                  border-top: 3px solid $white-color;
-                  border-right: 3px solid $white-color;
-                }
-              }
-            }
+          box-shadow: 0px 3px 20px #0000001c;
+          border-radius: 3px;
+
+          .ttl-senary {
+            -webkit-line-clamp: unset;
+            margin-bottom: 0;
           }
         }
 
