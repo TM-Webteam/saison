@@ -66,16 +66,32 @@
       &-left {
         width: 60%;
         text-align: left;
+        @media #{$sp} {
+          width: 100%;
+          text-align: center;
+        }
       }
 
       &-right {
         width: 50%;
+        @media #{$sp} {
+          width: 100%;
+        }
 
         .section-welcome-right__img {
           position: relative;
           height: 413px;
           width: 618px;
-          padding-top: 66.828478964;
+
+          @media #{$sp} {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+          }
+
           img {
             position: absolute;
             width: 100%;
@@ -132,6 +148,10 @@
       .ttl-primary {
         margin-bottom: 0;
         text-align: left;
+
+        @media #{$sp} {
+          text-align: center;
+        }
       }
     }
 
@@ -148,6 +168,10 @@
       .act-more {
         margin-left: 0;
         position: relative;
+
+        @media #{$sp} {
+          margin: auto;
+        }
 
         &-tooltip {
           position: absolute;
@@ -473,14 +497,7 @@
             padding: 10px 0;
             padding-right: 10px;
             margin-left: -5px;
-            clip-path: polygon(
-            0 0,
-            72px 0,
-            100% 50%,
-            72px 100%,
-            0 100%,
-            0 0
-          );
+            clip-path: polygon(0 0, 72px 0, 100% 50%, 72px 100%, 0 100%, 0 0);
           }
 
           .flow-index {
