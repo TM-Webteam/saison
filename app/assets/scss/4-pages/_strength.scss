@@ -8,7 +8,7 @@
 
   .section-welcome {
     text-align: center;
-    padding: 123px 0;
+    padding: 119px 0;
     background: url(../img/common/lower_visual.png) 50% / cover no-repeat;
 
     @media #{$sp} {
@@ -20,7 +20,7 @@
 
       .ttl-primary {
         font-size: 42px;
-        margin-bottom: 38px;
+        margin-bottom: 29px;
 
         @media #{$sp} {
           font-size: 32px;
@@ -30,6 +30,7 @@
       .ttl-tertiary {
         font-size: 20px;
         font-weight: 400;
+        margin-bottom: 0;
 
         @media #{$sp} {
           font-size: 14px;
@@ -134,7 +135,7 @@
           margin-bottom: 20px;
 
           @media #{$sp} {
-            font-size: 20px;;
+            font-size: 20px;
           }
         }
 
@@ -149,11 +150,11 @@
     .section-wrapper-secondary {
       .ttl-tertiary {
         font-size: 22px;
-        text-align: center;
+        text-align: left;
         margin-bottom: 25px;
 
         @media #{$sp} {
-          font-size: 20px;;
+          font-size: 20px;
         }
       }
 
@@ -235,6 +236,9 @@
                   transform: translate(-50%, -50%);
                   width: 100%;
                   font-weight: normal;
+                  @media #{$sp} {
+                    font-size: 16px;
+                  }
                 }
                 @media (max-width: 768px) {
                   width: 100%;

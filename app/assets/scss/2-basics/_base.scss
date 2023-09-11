@@ -345,6 +345,12 @@ main {
   max-width: 1200px;
   margin: auto;
  }
+
+ .container-800 {
+  max-width: 800px;
+  margin: auto;
+ }
+
 /*** Font size ***/
 @each $value in $font-sizes {
   .font-#{$value} {

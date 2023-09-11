@@ -11,7 +11,32 @@
 {# Breadcrumb #}
 {% set breadcrumb = [
   {
-    text: "個人事業主様向けサービス",
+    text: "セゾンインボイス",
+    link: "#"
+  }
+] %}
+
+{% set menuSidebar = [
+  {
+    text: "年会費・入会資格",
+    link: "#"
+  }, {
+    text: "付帯サービス",
+    link: "#"
+  }, {
+    text: "ご利用シーン",
+    link: "#"
+  }, {
+    text: "カード比較",
+    link: "#"
+  }, {
+    text: "よくある質問",
+    link: "#faq"
+  }, {
+    text: "お申し込みまでの流れ",
+    link: "#"
+  }, {
+    text: "お申し込み",
     link: "#"
   }
 ] %}
@@ -24,8 +49,9 @@
 
 {# Main content #}
 {% block content %}
+  {% include 'partial/sidebar.njk' %}
   <main class="personal-page">
-    <section class="section-welcome">
+    <section class="section-welcome fadein">
       <div class="section-welcome__banner">
         <img src="/assets/img/personal_page/personal_banner.png"/>
       </div>
@@ -39,7 +65,7 @@
         <a href="#" class="blue_gradient_btn">{{ common.button.download }}</a>
       </div>
     </section>
-    <section class="section-primary">
+    <section class="section-primary fadein">
       <h4 class="ttl-quaternary">中小企業の経営者様・経理ご担当者様へ</h4>
       <h2 class="ttl-primary">こんなニーズやお悩みありませんか？</h2>
       <div class="section-primary-wrapper">
@@ -92,7 +118,7 @@
               </a>
             </li>
             <li class="card-type6">
-              <a href="#challenge-raise-funds" class="card">
+              <a href="#" class="card">
                 <div class="ttl-quaternary-container">
                   <h4 class="ttl-quaternary">資金調達をしたい</h4>
                 </div>
@@ -118,7 +144,7 @@
         </div>
       </div>
     </section>
-    <section class="section-secondary">
+    <section class="section-secondary fadein">
       <div class="container-1200">
         <div id="challenge-tax-returns" class="notification-primary">
           <div class="notification-panel1">
@@ -324,7 +350,7 @@
         </div>
       </div>
     </section>
-    <section class="section-tertiary">
+    <section class="section-tertiary fadein">
       <h5 class="ttl-sub">DOCUMENTS</h5>
       <h2 class="ttl-secondary">各種サービス資料をまとめてダウンロード</h2>
       <h3 class="ttl-tertiary">
@@ -332,7 +358,7 @@
       </h3>
       <a href="#" class="blue_gradient_btn">{{ common.button.download }}</a>
     </section>
-    <section class="section-quaternary">
+    <section class="section-quaternary fadein">
       <h5 class="ttl-sub">VOICE</h5>
       <h2 class="ttl-secondary">お客様の声</h2>
       <div class="section-primary-wrapper">
@@ -369,7 +395,7 @@
         </div>
       </div>
     </section>
-    <section class="section-question-and-answer">
+    <section id="faq" class="section-question-and-answer fadein">
       <h5 class="ttl-sub">FAQ</h5>
       <h2 class="ttl-secondary">よくある質問</h2>
       {% for i in range(1, 5) %}
@@ -400,11 +426,6 @@
           </div>
         </div>
       {% endfor %}
-    </section>
-    <section class="section-license">
-      <div class="container">
-        ※「アメリカン・エキスプレス」は、アメリカン・エキスプレスの登録商標です。(株)クレディセゾンは、アメリカン・エキスプレスのライセンスに基づき使用しています。
-      </div>
     </section>
   </main>
 {% endblock %}

@@ -18,10 +18,11 @@ $(document).ready(function () {
 
     $("html, body").animate(
       {
-        scrollTop: $(the_id).offset().top - 50,
+        scrollTop: $(the_id).offset().top - 200,
       },
       "slow"
     );
+    window.location.hash = the_id;
 
     return false;
   });
@@ -155,7 +156,6 @@ $(document).ready(function () {
 //______________________________________
 $(document).ready(function () {
   $(".qa-button").each(function (index) {
-
     $(this).on("click", function () {
       $(this).toggleClass("open");
       $(this)
@@ -288,6 +288,8 @@ $(window).on("load", function () {
       slidesToScroll: 3,
       dots: true,
       useTransform: false,
+      autoplay: true,
+      autoplaySpeed: 3000,
       prevArrow:
         '<button type="button" class="slick-prev"><svg xmlns="http://www.w3.org/2000/svg" width="15.095" height="15.095" viewBox="0 0 15.095 15.095"><path id="Path_44704" data-name="Path 44704" d="M9.674,9.674V0H0" transform="translate(8.255 14.388) rotate(-135)" fill="none" stroke="#fff" stroke-width="2"/></svg></button>',
       nextArrow:
@@ -305,4 +307,38 @@ $(window).on("load", function () {
 
     $(".carousel").show();
   }, 100);
+});
+
+// Sidebar
+$(document).ready(function (e) {
+  e.preventDefault;
+
+  $(".rbt-item").each(function (index) {
+    $(this).on("click", function () {
+      if (window.location.hash == $(this).attr("href")) {
+        $(".rbt-item.active").removeClass("active");
+
+        $(this).toggleClass("active");
+      }
+    });
+  });
+});
+
+// Handle active sidebar
+$(document).ready(function () {
+  var item = $(".rbt-item").filter(function () {
+    return $(this).attr("href") == window.location.hash;
+  });
+
+  item.length
+    ? item.addClass("active")
+    : $(".rbt-item:first").addClass("active");
+});
+
+$(window).on("popstate", function () {
+  var item = $(".rbt-item").attr("href") == window.location.hash;
+  if (item) {
+    $(".rbt-item.active").removeClass("active");
+    item.addClass("active");
+  }
 });

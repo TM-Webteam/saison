@@ -105,35 +105,39 @@
           transform: translate(-50%, -50%);
 
           li {
-            width: auto;
+            position: relative;
+            width: 436px;
 
             a {
               display: flex;
-              justify-content: space-between;
+              justify-content: center;
               align-items: center;
               border: none;
-              padding: 0;
+              padding: 18px 0;
               background-color: $white-color;
               transition: all 0.3s;
-              span {
-                display: inline-block;
-                min-width: 263px;
-                &:first-child {
-                  font-size: 20px;
-                  color: $blue-color;
-                  @media #{$sp} {
+              .anc__box__content {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+                span {
+                  display: inline-block;
+                  &:first-child {
+                    font-size: 20px;
+                    color: $blue-color;
+                    line-height: 26px;
+                    @media #{$sp} {
+                      font-size: 16px;
+                    }
+                  }
+                  &:last-child {
                     font-size: 16px;
+                    color: $primary-color;
+                    @media #{$sp} {
+                      font-size: 12px;
+                    }
                   }
-                }
-                &:last-child {
-                  font-size: 16px;
-                  color: $primary-color;
-                  @media #{$sp} {
-                    font-size: 12px;
-                  }
-                }
-                @media #{$sp} {
-                  min-width: auto;
                 }
               }
               &:hover {
@@ -153,32 +157,46 @@
               display: none;
             }
 
+            &.anc__box__smes {
+              &::before {
+                background-image: url("/assets/img/common/smes.svg");
+              }
+            }
+
+            &.anc__box__sole {
+              &::before {
+                background-image: url("/assets/img/common/sole_proprietors.svg");
+              }
+            }
+
+            &::before {
+              content: "";
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 116px;
+              height: 100%;
+              background-size: contain;
+              background-repeat: no-repeat;
+              z-index: 1;
+            }
+
+            &::after {
+              content: "";
+              position: absolute;
+              top: 50%;
+              right: 25px;
+              transform: translateY(-50%);
+              width: 13px;
+              height: 13px;
+              background-image: url("/assets/img/common/arrow-right.svg");
+              background-size: contain;
+              z-index: 1;
+            }
+
             @media #{$sp} {
               width: 90%;
             }
-          }
-          &__img {
-            width: 116px;
-            height: 90px;
-            background-repeat: no-repeat;
-            background-size: cover;
-            &.smes {
-              background-image: url("/assets/img/common/smes.png");
-            }
-            &.sole {
-              background-image: url("/assets/img/common/sole_proprietors.svg");
-            }
-            @media #{$sp} {
-              width: 80px;
-              height: 60px;
-            }
-          }
-          &__content {
-            display: flex;
-            flex-direction: column;
-          }
-          &__svg {
-            margin-right: 24px;
           }
           @media #{$sp} {
             gap: 20px;
@@ -327,6 +345,9 @@
                 transform: translate(-50%, -50%);
                 width: 100%;
                 font-weight: normal;
+                @media #{$sp} {
+                  font-size: 16px;
+                }
               }
               @media (max-width: 768px) {
                 width: 100%;
@@ -1046,6 +1067,10 @@
             }
             @media #{$sp} {
               padding: 15px;
+            }
+
+            .blue_gradient_btn {
+              padding: 18px 35px;
             }
           }
 

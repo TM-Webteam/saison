@@ -8,7 +8,7 @@
   // ===========START SECTIONS==========
 
   .section-welcome {
-    padding: 133px 0 133px 0;
+    padding: 136px 0;
     text-align: center;
     position: relative;
 
@@ -65,8 +65,8 @@
     }
 
     &__title {
-      margin-top: 30px;
-      margin-bottom: 56px;
+      margin-top: 38px;
+      margin-bottom: 54px;
       color: #ffffff;
 
       .ttl-primary {
@@ -331,6 +331,13 @@
     }
   }
 
+  .section-license {
+    font-size: 13px;
+    color: $white-color;
+    background-color: $gray-color-8;
+    padding: 20px 0;
+  }
+
   // ===========END SECTIONS==========
 
   .section-primary-wrapper {
@@ -360,7 +367,7 @@
           padding: 0;
           a.card-type10-container {
             padding: 35px 30px 30px;
-            transition: all .3s;
+            transition: all 0.3s;
             .bondi_blue_outline_btn {
               font-weight: 700;
             }

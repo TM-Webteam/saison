@@ -7,7 +7,7 @@
 
   // ===========START SECTIONS==========
   .section-welcome {
-    padding: 133px 0 133px 0;
+    padding: 136px 0;
     text-align: center;
     position: relative;
 
@@ -64,8 +64,8 @@
     }
 
     &__title {
-      margin-top: 30px;
-      margin-bottom: 56px;
+      margin-top: 37px;
+      margin-bottom: 54px;
       color: #ffffff;
 
       .ttl-primary {
@@ -108,6 +108,16 @@
           li {
             flex-basis: calc(33.33% - 60px);
             max-width: 380px;
+            .card {
+              transition: all 0.3s;
+              &:hover {
+                opacity: 1;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+                .arrow-down {
+                  margin-bottom: 0px;
+                }
+              }
+            }
 
             @media #{$sp} {
               max-width: unset;
@@ -199,6 +209,9 @@
               }
 
               .card-type12 {
+                .ttl-terianry {
+                  font-weight: 700;
+                }
                 @media #{$sp} {
                   width: 100%;
                   position: relative;
@@ -265,6 +278,13 @@
       font-size: 32px;
       margin-bottom: 61px;
     }
+  }
+
+  .section-license {
+    font-size: 13px;
+    color: $white-color;
+    background-color: $gray-color-8;
+    padding: 20px 0;
   }
   // ===========END SECTIONS==========
 
