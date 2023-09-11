@@ -10,6 +10,10 @@ section.rbt-sidearea {
 
   -webkit-transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
   transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+
+  @media #{$sp} {
+    display: none;
+  }
 }
 
 .rbt-theme-dropdown {
@@ -58,7 +62,7 @@ span.rbt-text-name {
     &:hover,
     &.active {
       background: transparent
-        linear-gradient(90deg, $primary-color 0%, #24a4a4 100%) 0% 0% no-repeat
+        linear-gradient(90deg, $primary-color 0%, $green-color-2 100%) 0% 0% no-repeat
         padding-box;
       color: #fff;
       cursor: pointer;
