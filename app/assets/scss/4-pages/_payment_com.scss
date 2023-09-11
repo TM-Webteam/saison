@@ -17,6 +17,9 @@
       span {
         font-size: 15px;
       }
+      @media #{$sp} {
+        font-size: 20px;
+      }
     }
     .ttl-quaternary {
       text-align: center;
@@ -48,6 +51,12 @@
       transform: translate(-50%, -50%);
       display: flex;
       justify-content: center;
+      @media #{$sp} {
+        flex-direction: column;
+        top: 0;
+        left: 0;
+        transform: none;
+      }
     }
     .section-welcome-left {
       .title-notice {
@@ -76,6 +85,9 @@
         text-align: left;
         margin-bottom: 20px;
         text-shadow: 0px 0px 20px #05172c8d;
+        @media #{$sp} {
+          font-size: 24px;
+        }
       }
       .ttl-tertiary {
         color: $white-color;
@@ -132,6 +144,10 @@
             }
           }
         }
+
+        @media #{$sp} {
+          flex-direction: column;
+        }
       }
     }
     .section-welcome-right {
@@ -158,6 +174,9 @@
           }
         }
       }
+      @media #{$sp} {
+        width: 100%;
+      }
     }
     .info-note {
       position: absolute;
@@ -170,6 +189,9 @@
       color: $gray-color-8;
       line-height: 22px;
     }
+    @media #{$sp} {
+      height: 100vh;
+    }
   }
 
   .section-primary {
@@ -177,6 +199,9 @@
 
     img {
       object-fit: contain;
+    }
+    @media #{$sp} {
+      padding: 130px 0;
     }
   }
 
@@ -222,6 +247,9 @@
             font-size: 16px;
           }
         }
+        @media #{$sp} {
+          width: 100%;
+        }
       }
     }
   }
@@ -236,6 +264,9 @@
       .ttl-primary {
         font-size: 32px;
         margin-bottom: 100px;
+        @media #{$sp} {
+          font-size: 20px;
+        }
       }
       .act-more {
         margin-left: 0;
