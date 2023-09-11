@@ -24,21 +24,30 @@
 
       .section-content {
         position: relative;
-        padding-bottom: 35%;
+        padding-bottom: 10%;
 
         .section-img {
           position: absolute;
+          width: 50%;
+          left: 50%;
+          transform: translateX(-50%);
+          @media #{$sp} {
+            width: 100%;
+          }
         }
 
         .ttl-primary {
           font-size: 32px;
           margin-bottom: 30px;
-          text-align: left;
+          text-align: center;
 
           @media #{$sp} {
             text-align: center;
             font-size: 22px;
           }
+        }
+        @media #{$sp} {
+          padding-bottom: 35%;
         }
       }
     }
@@ -60,14 +69,13 @@
       }
 
       .bondi_blue_btn {
-        max-width: 460px;
+        max-width: 360px;
         display: block;
         font-weight: 400;
 
-
-      @media #{$sp} {
-        max-width: 260px;
-      }
+        @media #{$sp} {
+          max-width: 260px;
+        }
       }
     }
   }

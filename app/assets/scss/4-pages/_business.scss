@@ -108,6 +108,16 @@
           li {
             flex-basis: calc(33.33% - 60px);
             max-width: 380px;
+            .card {
+              transition: all .3s;
+              &:hover {
+                opacity: 1;
+                box-shadow: 0 0 10px rgba(0,0,0,.4);
+                .arrow-down {
+                  margin-bottom: 0px;
+                }
+              }
+            }
 
             @media #{$sp} {
               max-width: unset;
