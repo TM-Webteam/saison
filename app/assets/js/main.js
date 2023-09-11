@@ -32,19 +32,19 @@ $(document).ready(function () {
 //　header　演出
 //--------------------------------------
 
-// $(function () {
-//   var pos = 0;
-//   var header = $("header");
+$(function () {
+  var pos = 0;
+  var header = $("header");
 
-//   $(window).on("scroll", function () {
-//     if ($(this).scrollTop() < pos || $(this).scrollTop() < 400) {
-//       header.removeClass("hide");
-//     } else {
-//       header.addClass("hide");
-//     }
-//     pos = $(this).scrollTop();
-//   });
-// });
+  $(window).on("scroll", function () {
+    if ($(this).scrollTop() < pos || $(this).scrollTop() < 400) {
+      header.removeClass("hide");
+    } else {
+      header.addClass("hide");
+    }
+    pos = $(this).scrollTop();
+  });
+});
 
 
 //--------------------------------------
