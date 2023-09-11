@@ -159,7 +159,7 @@
 
             &.anc__box__smes {
               &::before {
-                background-image: url("/assets/img/common/smes.png");
+                background-image: url("/assets/img/common/smes.svg");
               }
             }
 
@@ -176,12 +176,9 @@
               left: 0;
               width: 116px;
               height: 100%;
-              background-size: cover;
+              background-size: contain;
               background-repeat: no-repeat;
               z-index: 1;
-              @media #{$sp} {
-                background-size: contain;
-              }
             }
 
             &::after {

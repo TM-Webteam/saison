@@ -30,12 +30,11 @@
   }
 
   .section-primary {
-    background-color: #e1e1e1;
+    background-color: #F5F5F5;  
     padding: 0;
 
-    .containers {
-      padding: 70px 30px;
-      background-color: #e1e1e1;
+    .container-800 {
+      padding: 70px 0;
 
       @media #{$sp} {
         padding: 30px 10px;
@@ -74,7 +73,7 @@
   }
 
   .section-secondary {
-    .containers {
+    .container-800 {
       @media #{$sp} {
         padding: 30px 10px;
       }
@@ -101,6 +100,7 @@
       .QA__content-head {
         font-size: 32px;
         color: #0497b5;
+        font-weight: 500;
       }
       .QA__content-content {
         color: #333333;

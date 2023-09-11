@@ -132,6 +132,13 @@
 
       .section-content__form {
         padding-left: 180px;
+        .custom-check-box-label {
+          font-size: 18px;
+          font-weight: 500;
+          @media #{$sp} {
+            font-size: 14px;
+          }
+        }
 
         @media screen and (max-width: 1200px) {
           padding-left: 50px;
