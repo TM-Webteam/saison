@@ -1,19 +1,19 @@
 <footer>
   <div class="footer-container">
     {% if breadcrumb %}
-      <section class="breadcrumb">
-        <ul class="flex">
-          <li>
-            <a href="/">TOP</a>
-          </li>
+    <section class="breadcrumb">
+      <ul class="flex">
+        <li>
+          <a href="/">TOP</a>
+        </li>
 
-          {% for crumb in breadcrumb %}
-          <li>
-            <a href="{{ crumb.link }}">{{ crumb.text }}</a>
-          </li>
-          {% endfor %}
-        </ul>
-      </section>
+        {% for crumb in breadcrumb %}
+        <li>
+          <a href="{{ crumb.link }}">{{ crumb.text }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </section>
     {% endif %}
 
     <section class="primary-section">
@@ -40,13 +40,13 @@
           <div class="group__ttl">サービス</div>
           <ul class="group__list">
             <li>
+              <a href="#">サービス一覧</a>
+            </li>
+            <li>
               <a href="#">中小企業様向けサービス</a>
             </li>
             <li>
               <a href="#">個人事業主様向けサービス</a>
-            </li>
-            <li>
-              <a href="#">カード会員様向けサービス</a>
             </li>
             <li>
               <a href="#">よくある質問</a>
@@ -55,7 +55,7 @@
               <a href="#">導入事例</a>
             </li>
             <li>
-              <a href="#">当社の強み</a>
+              <a href="#">クレディセゾンの強み</a>
             </li>
           </ul>
         </div>
@@ -125,16 +125,28 @@
   <section class="tertiary-section">
     <div class="flex aiC gap50 sec-news__box--item">
       <ul class="flex custom-list gap27">
-        <li>会社概要
+        <li><a href="https://corporate.saisoncard.co.jp/company/about_cs/">
+            会社概要
+            {% include 'component/icons/external.njk' %}
+          </a>
+        </li>
+
+        <li>プライバシーポリシー
           {% include 'component/icons/external.njk' %}
         </li>
 
-        <li>「個人情報の保護に関する法律」に基づく公表事項
-          {% include 'component/icons/external.njk' %}
+        <li>
+          <a href="https://www.saisoncard.co.jp/privacy.html">
+            「個人情報の保護に関する法律」に基づく公表事項
+            {% include 'component/icons/external.njk' %}
+          </a>
         </li>
 
-        <li>cookieポリシー
-          {% include 'component/icons/external.njk' %}
+        <li>
+          <a href="https://www.saisoncard.co.jp/cookie-policy/　">
+            cookieポリシー
+            {% include 'component/icons/external.njk' %}
+          </a>
         </li>
 
         <li>サイトマップ</li>
