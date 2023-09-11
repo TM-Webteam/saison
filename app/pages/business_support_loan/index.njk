@@ -19,25 +19,25 @@
 {% set menuSidebar = [
   {
     text: "TOP",
-    link: "/"
+    link: "#top"
   }, {
     text: "ビジネスサポートローンとは",
-    link: "#"
+    link: "#loan-support"
   }, {
     text: "活用シーン",
-    link: "#"
+    link: "#usage-scene"
   }, {
     text: "ご利用者様の声",
-    link: "#"
+    link: "#comment"
   }, {
     text: "ご融資までの流れ",
-    link: "#faq"
+    link: "#financing"
   }, {
     text: "よくある質問",
-    link: "#"
+    link: "#faq"
   }, {
     text: "お問い合わせ・お申込み",
-    link: "#"
+    link: "#inquiry-application"
   }
 ] %}
 
@@ -51,7 +51,7 @@
 {% block content %}
   {% include 'partial/sidebar.njk' %}
   <main class="business-support-loan-page">
-    <section class="section-welcome fadein">
+    <section id="top" class="section-welcome fadein">
       <div class="section-welcome__banner">
         <img src="/assets/img/common/banner_service.png"/>
       </div>
@@ -88,7 +88,7 @@
       </div>
     </section>
 
-    <section id="card-support" class="section-card-support">
+    <section id="loan-support" class="section-card-support fadein">
       <h2 class="ttl-secondary">本サービスは以下いずれかのカードをお持ちの会員様向けのサービスです。</h2>
 
       <div class="card-support-list">
@@ -115,7 +115,8 @@
       </div>
 
     </section>
-    <section class="section-primary fadein">
+
+    <section id="loan-support" class="section-primary fadein">
       <h4 class="ttl-quaternary">セゾンビジネスサポートローンとは</h4>
       <h2 class="ttl-primary">このような中小企業様・個人事業主様にピッタリのサービスです。</h2>
       <span class="section-primary__description">お持ちのビジネスカードに、<strong>最大950万円のゆとりあるご融資可能枠</strong>とお借り入れ額に応じた<strong>優遇金利</strong>をご用意しております。</span>
@@ -160,308 +161,250 @@
               </a>
             </li>
           </ul>
-        </div>
-      </div>
-      <div class="section-primary__flow">
-        <ul class="sub-list">
-          <li class="text-muted">※1　初回はご融資枠全額をご融資いたします。ご融資枠の上限は、年収の1/3以内です。</li>
-          <li class="text-muted">※2　ご利用可能枠が110万円以上の方が対象。本サービスご利用前の金利はセゾンプラチナ・ビジネス・アメリカン・エキスプレス®・カードの場合14.5％、セゾンコバルト・ビジネス・
-　　   アメリカン・エキスプレス®・カードの場合18.0％です。</li>
-          <li class="text-muted">※　   審査の結果、110万円未満のご利用可能枠となる場合は、書面にてご連絡いたします。</li>
-        </ul>
-      </div>
-      <div class="section-primary__notice">
-        <ul class="sub-list">
-          <li class="text-muted">※1　初回はご融資枠全額をご融資いたします。ご融資枠の上限は、年収の1/3以内です。</li>
-          <li class="text-muted">※2　ご利用可能枠が110万円以上の方が対象。本サービスご利用前の金利はセゾンプラチナ・ビジネス・アメリカン・エキスプレス®・カードの場合14.5％、セゾンコバルト・ビジネス・
-　　   アメリカン・エキスプレス®・カードの場合18.0％です。</li>
-          <li class="text-muted">※　   審査の結果、110万円未満のご利用可能枠となる場合は、書面にてご連絡いたします。</li>
-        </ul>
-      </div>
 
-    </section>
-    <section class="section-secondary fadein">
-      <div class="container-1200">
-        <div id="challenge-tax-returns" class="notification-primary">
-          <div class="notification-panel1">
-            <h2 class="card__ttl">課題：確定申告や経費処理が面倒</h2>
-            <summary class="flex gap30 aiC inquiry__box">
-              <div class="flex inquiry__box--btn">
-                <a href="#" class="black_pill_btn">{{ common.button.solution }}</a>
-              </div>
-              <div class="inquiry__box--txt">
-                ビジネスでの支払いを<span>セゾンのビジネスカードに一本化</span>することで経費計上の手間を簡略化！
-              </div>
-            </summary>
-            <div class="card-type7">
-              <div class="card-wrapper">
-                <div class="item">
-                  <div class="item__img">
-                    <img src="/assets/img/personal_page/business_card.png" alt=""/>
-                  </div>
-                  <div class="item__box text-left">
-                    <div class="item__box--txt">
-                        事業を行うなかでかかる費用を現金で支払うと、レシートの管理や経費計上が面倒になりがちです。また、プライベートとビジネスでの出費の区別が難しいという問題もあります。
-                        <br/>
-                        ビジネスでの支払いをビジネスカードに一本化すると、<strong >経費の金額が自動的に明らかになり経費計上の手間を簡略化できます。</strong >
-                    </div>
-                    <div class="item__box--txt">
-                      カードの明細は支払いが経費にあたることを証明する手段にもなるため、<strong >確定申告の際に情報が足りないという理由で困ることもなくなります。ま</strong >
-                      た、引き落としの口座として法人口座を利用することで、法人利用と個人利用を区別でき、経費管理がしやすくなります。
-                    </div>
-                    <div class="item__box--txt item__box--txt-last">
-                      セゾンのビジネスカードでは、個人口座、法人口座のどちらも選択が可能です。将来法人化を考えている個人事業主の方は、法人口座が設定できるビジネスカードを利用しておくと便利です。
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div class="section-primary__flow">
+            <ul class="flow-list">
+              <li class="text-muted">※1　初回はご融資枠全額をご融資いたします。ご融資枠の上限は、年収の1/3以内です。</li>
+              <li class="text-muted">※2　ご利用可能枠が110万円以上の方が対象。本サービスご利用前の金利はセゾンプラチナ・ビジネス・アメリカン・エキスプレス®・カードの場合14.5％、セゾンコバルト・ビジネス・
+                </br>　　アメリカン・エキスプレス®・カードの場合18.0％です。
+              </li>
+              <li class="text-muted">※　   審査の結果、110万円未満のご利用可能枠となる場合は、書面にてご連絡いたします。</li>
+            </ul>
           </div>
-          <div class="notification-panel2">
-            <div class="relation">
-              <h3 class="single__ttl">
-                <span >個人事業主様・中小企業経営者様におすすめのビジネスカード</span >
-              </h3>
-              <ul class="flex gap30 card-list">
-                <li class="card-type8">
-                  <h3 class="card__box--ttl">
-                    ポイント・マイルの還元率を重視したいという方へ
-                  </h3>
-                  <div class="container">
-                    <div class="flex gap20 card__box-wrapper">
-                      <div class="credit-card02">
-                        <img src="/assets/img/credit_cards/american-express-01.png" alt="Your Image" class="credit-card-img"/>
-                      </div>
-                      <div class="card__box-title">
-                        <h3 class="ttl-terianry">
-                          セゾンプラチナ・ビジネス・アメリカン・エキスプレス®・カード
-                        </h3>
-                        <ul class="price-list">
-                          <li>
-                            <dd>
-                              年会費：22,000円（税込）
-                              <br/>
-                              <strong>→初年度年会費無料</strong>
-                            </dd>
-                          </li>
-                          <li>
-                            <dd>追加カード年会費：3,300円（税込）</dd>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                  <a href="#" class="bondi_blue_outline_btn">{{ common.button.detail }}</a >
-                </li>
-                <li class="card-type8">
-                  <h3 class="card__box--ttl">
-                    年会費無料にこだわりたいという方へ
-                  </h3>
-                  <div class="container">
-                    <div class="flex gap20 card__box-wrapper">
-                      <div class="credit-card02">
-                        <img src="/assets/img/credit_cards/american-express-02.png" alt="Your Image" class="credit-card-img"/>
-                      </div>
-                      <div class="card__box-title">
-                        <h3 class="ttl-terianry">
-                          セゾンコバルト・ビジネス・アメリカン・エキスプレス®・カード
-                        </h3>
-                        <ul class="price-list">
-                          <li>
-                            <dd>本会員・追加カード会員ともに</dd>
-                            <strong>年会費永年無料</strong>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                  <a href="#" class="bondi_blue_outline_btn small">{{ common.button.detail }}</a >
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div id="challenge-improve-cash" class="notification-secondary">
-          <div class="notification-panel1">
-            <h2 class="card__ttl">課題：資金繰りを改善したい</h2>
-            <summary class="flex gap30 aiC inquiry__box">
-              <div class="flex inquiry__box--btn">
-                <a href="#" class="black_pill_btn">{{ common.button.solution }}</a>
-              </div>
-              <div class="inquiry__box--txt">
-                <span>「支払い.com」</span >で請求書払いをカードで先のばし。振り込みはお任せ！
-              </div>
-            </summary>
-            <div class="notification-panel1-body">
-              <dd>
-                「支払い.com」を利用すれば、期限の迫った請求書も、支払いまで最長60日余裕をプラス。資金繰りを改善し、借りずに事業を加速できます。
-                必要なのはお手持ちのカードだけ。審査も書類も必要ありません。
-              </dd>
-              <div class="cash-flow-img">
-                <img src="/assets/img/common/cash-flow.png" alt="Your Image" class="credit-card-img"/>
-              </div>
-            </div>
-            <a href="#" class="bondi_blue_outline_btn">支払い.comをもっと詳しく</a >
-          </div>
-        </div>
-        <div id="challenge-raise-funds" class="notification-tertiary">
-          <div class="notification-panel1">
-            <h2 class="card__ttl">課題：資金調達をしたい</h2>
-            <summary class="flex gap30 aiC inquiry__box">
-              <div class="flex inquiry__box--btn">
-                <a href="#" class="black_pill_btn">{{ common.button.solution }}</a>
-              </div>
-              <div class="inquiry__box--txt">
-                <span>セゾンビジネスサポートローン</span>
-                でビジネスのあらゆる事業資金ニーズに対応
-              </div>
-            </summary>
-            <div class="notification-panel1-body">
-              <dd>
-                セゾンビジネスサポートローンは、下記対象のビジネスカードでご利用頂ける中小企業・個人事業主の経営を支援する融資サービスです。<br/>
-                お持ちのビジネスカードに、<strong >最大950万円のゆとりあるご融資可能枠と借り入れ額に応じた優遇金利</strong >
-                をご用意しております。カード1枚で用途を問わず、ビジネスのあらゆるシーンで幅広くご利用いただけます。
-              </dd>
-              <ul class="flex gap30 card-list">
-                <li class="card-type9">
-                  <h3 class="card__box--ttl">対象（下記カードをお持ちの方）</h3>
-                  <div class="container">
-                    <div class="flex gap20 card__box-wrapper">
-                      <div class="credit-card02">
-                        <img src="/assets/img/credit_cards/american-express-01.png" alt="Your Image" class="credit-card-img"/>
-                      </div>
-                      <div class="card__box-title">
-                        <h3 class="ttl-terianry">
-                          セゾンコバルト・ビジネス・
-                          アメリカン・エキスプレス®・カード
-                        </h3>
-                      </div>
-                    </div>
-                    <div class="flex gap20 card__box-wrapper">
-                      <div class="credit-card02">
-                        <img src="/assets/img/credit_cards/american-express-02.png" alt="Your Image" class="credit-card-img"/>
-                      </div>
-                      <div class="card__box-title">
-                        <h3 class="ttl-terianry">
-                          セゾンコバルト・ビジネス・
-                          アメリカン・エキスプレス®・カード
-                        </h3>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                <li class="card-type9">
-                  <h3 class="card__box--ttl card__box-ttl02">
-                    融資サービスの内容
-                  </h3>
-                  <div class="container">
-                    <div class="flex card__box-wrapper card__box__wrapper-right">
-                      <div class="card01">
-                        <dd>融資枠</dd>
-                        <h3 class="ttl-tertiary">
-                          最大<strong>950</strong>万円
-                          <small>※1</small>
-                        </h3>
-                      </div>
-                      <div class="card02">
-                        <dd>金利</dd>
-                        <h3 class="ttl-tertiary">
-                          <strong>2.8％～9.6%</strong>
-                          <small>※2</small>
-                        </h3>
-                      </div>
-                    </div>
-                  </div>
-                  <dd>
-                    ※1
-                    初回は融資実行となります。ご融資枠の上限は、年収の1/3以内となります。<br/>
-                    ※2
-                    ご利用可能枠が110万円以上の方が対象。本サービスご利用前の金利はセゾンプラチナ・ビジネス・アメリカン・エキスプレス®・カードの場合14.5％、セゾンコバルト・ビジネス・アメリカン・エキスプレス®・カードの場合18.0％です。
-                  </dd>
-                </li>
-              </ul>
-            </div>
-            <a href="#" class="bondi_blue_outline_btn">セゾンビジネスサポートローンをもっと詳しく</a >
+
+          <div class="section-primary__notice">
+            <h4 class="ttl-quaternary">中小企業様・個人事業主様向けのローンサービスです。</h4>
+            <ul class="notice-list">
+              <li>
+                {% include 'component/icons/circle-checked.njk' %}
+                キャッシングよりも、<strong>まとまった資金を調達したい</strong>
+              </li>
+              <li>
+                {% include 'component/icons/circle-checked.njk' %}
+                キャッシングよりも、<strong>低金利で借り入れしたい</strong>
+              </li>
+              <li>
+                {% include 'component/icons/circle-checked.njk' %}
+                <strong>使用用途に縛られない</strong>資金を調達したい
+              </li>
+            </ul>
           </div>
         </div>
       </div>
     </section>
-    <section class="section-tertiary fadein">
-      <h5 class="ttl-sub">DOCUMENTS</h5>
-      <h2 class="ttl-secondary">各種サービス資料をまとめてダウンロード</h2>
-      <h3 class="ttl-tertiary">
-        興味のあるサービス資料をまとめてダウンロードできます。
-      </h3>
-      <a href="#" class="blue_gradient_btn">{{ common.button.download }}</a>
+
+    <section id="comment" class="section-contact fadein">
+      <div class="card-type22">
+        <div class="ttl-notice">CONTACT</div>
+        <h3 class="ttl-tertiary">ビジネスサポートローンのお問い合わせ・お申し込みはこちら</h3>
+        <div class="useful-wp container">
+          <div class="containers">
+            <div class="flex jcC gap60">
+              <div href="#" class="card">
+                <summary class="card__box">
+                  <div class="card__box--ttl">まずは相談・お問い合わせをしたい</br>という方はこちら</div>
+                  <div><a class="blue_gradient_btn" href="#">ご相談・お問い合わせ（無料）</a></div>
+                </summary>
+            </div>
+            <div href="#" class="card">
+              <summary class="card__box">
+                <div class="card__box--ttl">今すぐお申し込みをしたい</br>という方はこちら</div>
+                <div><a class="blue_gradient_btn" href="#">審査おお申し込み</a></div>
+              </summary>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-    <section class="section-quaternary fadein">
-      <h5 class="ttl-sub">VOICE</h5>
-      <h2 class="ttl-secondary">お客様の声</h2>
-      <div class="section-primary-wrapper">
+
+    <section id="usage-scene" class="section-primary fadein">
+      <h4 class="ttl-quaternary">活用シーン</h4>
+      <h2 class="ttl-primary">用途を問わず、ビジネスのあらゆるシーンで幅広くご利用いただけます。</h2>
+
+      <div class="section-primary__wrapper">
         <div class="containers">
           <ul class="inherit card-list">
-            <div class="card-type10">
-              <a href="#" class="card-type10-container">
-                <div class="flex fS grid__card--cat">
-                  <span class="cat">ビジネスカード</span>
+            <li class="card-type6">
+              <a href="#challenge-tax-returns" class="card">
+                <div class="card-image">
+                  <img src="/assets/img/business_support_loan/usage1.png"/>
                 </div>
-                <h4 class="ttl-quaternary">最強のコスパとマイル還元率です。</h4>
-                <h5 class="ttl-quinary">truck LLC/代表/善利光雅 様</h5>
-                <h6 class="ttl-senary">
-                  ビジネスカードを探していたのですが、どのカードが自分に合うのかが分からず迷っていました。そこで、自身がビジネスカードに求める事項が備わっているか・・
-                </h6>
-                <div class="bondi_blue_outline_btn">インタビューの続きを見る</div >
-              </a>
-            </div>
-            <div class="card-type10">
-              <a href="#" class="card-type10-container">
-                <div class="flex fS grid__card--cat">
-                  <span class="cat">支払い.com</span>
+                <div class="ttl-quaternary-container">
+                  <h4 class="ttl-quaternary">
+                    低金利で資金の調達に
+                  </h4>
                 </div>
-                <h4 class="ttl-quaternary">
-                  コメントが入ります。コメントが入ります。コメントが入ります。
-                </h4>
-                <h5 class="ttl-quinary">建設業 代表 様</h5>
-                <h6 class="ttl-senary">
-                  月末の職人への支払いに迫られ本当に困っていましたが、圧倒的に簡単に振込が完了し、手数料も安かったので大変助かりました。また利用させていただきます。
-                </h6>
               </a>
-            </div>
+            </li>
+            <li class="card-type6">
+              <a href="#challenge-improve-cash" class="card">
+                <div class="card-image">
+                  <img src="/assets/img/business_support_loan/usage2.png"/>
+                </div>
+                <div class="ttl-quaternary-container">
+                  <h4 class="ttl-quaternary">
+                    一時的なつなぎ<br/>資金の調達に
+                  </h4>
+                </div>
+              </a>
+            </li>
+            <li class="card-type6">
+              <a href="#" class="card">
+                <div class="card-image">
+                  <img src="/assets/img/business_support_loan/usage3.png"/>
+                </div>
+                <div class="ttl-quaternary-container">
+                  <h4 class="ttl-quaternary">
+                    設備投資や<br/>仕入れ資金の調達に
+                  </h4>
+                </div>
+              </a>
+            </li>
           </ul>
         </div>
       </div>
     </section>
+
+    <section id="financing" class="section-financing fadein">
+      <h4 class="ttl-quaternary">ご融資までの流れ</h4>
+      <h2 class="ttl-primary">お申し込みからご融資までの流れ（1週間～10日程度）</h2>
+
+      <ul class="flow-container">
+        <li class="flow-item">
+          <div class="flow-item-detail">
+            <div class="flow-index">1</div>
+            <p class="flow-content">お申し込み</br>（Netアンサー、お電話、紙申込書）</p>
+          </div>
+        </li>
+        <li class="flow-item">
+          <div class="flow-item-detail">
+            <div class="flow-index">2</div>
+            <p class="flow-content">所得証明書類提出</br>（郵送）</p>
+          </div>
+        </li>
+        <li class="flow-item">
+          <div class="flow-item-detail">
+            <div class="flow-index">3</div>
+            <p class="flow-content">審査後、審査結果を当社よりお客様にお電話でご連絡</p>
+          </div>
+        </li>
+        <li class="flow-item">
+          <div class="flow-item-detail">
+            <div class="flow-index">4</div>
+            <p class="flow-content">お電話でご連絡後、翌営業日にお客様のご口座へお振り込み</p>
+          </div>
+        </li>
+      </ul>
+
+      <div><a class="blue_gradient_btn" href="#">お申し込みはこちら</a></div>
+    </section>
+
     <section id="faq" class="section-question-and-answer fadein">
       <h5 class="ttl-sub">FAQ</h5>
       <h2 class="ttl-secondary">よくある質問</h2>
-      {% for i in range(1, 5) %}
-        <div class="qa">
-          <div class="flex gap20 question-tab">
-            <div class="qa-marker">
-              <h2 class="ttl-secondary">Q</h2>
+      <span class="section-question-and-answer__description">
+        お客様からよくいただくご質問にお答えします。この他にご質問がある方は、<a href="#">お問い合わせフォーム</a>より、お気軽にご連絡ください。
+        </br>
+        2営業日以内に担当者からご連絡させて頂きます。
+      </span>
+
+      <ul class="section-question-and-answer__list">
+        {% for i in range(1, 5) %}
+          <li class="qa">
+            <div class="flex gap20 question-tab">
+              <div class="qa-marker">
+                <h2 class="ttl-secondary">Q</h2>
+              </div>
+              <div class="qa-content">
+                <h3 class="ttl-tertiary">
+                  質問内容が入ります。質問内容が入ります。質問内容が入ります。質問内容が入ります。質問内容が入ります。
+                </h3>
+              </div>
+              <button class="qa-button">
+                <span class="svg__plus">{% include 'component/icons/plus.njk' %}</span>
+                <span class="svg__minus">{% include 'component/icons/minus.njk' %}</span>
+              </button>
             </div>
-            <div class="qa-content">
-              <h3 class="ttl-tertiary">
-                質問内容が入ります。質問内容が入ります。質問内容が入ります。質問内容が入ります。質問内容が入ります。
-              </h3>
+            <div class="flex gap20 answer-tab">
+              <div class="qa-marker">
+                <h2 class="ttl-secondary">A</h2>
+              </div>
+              <div class="qa-content">
+                <h3 class="ttl-tertiary">
+                  質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。
+                </h3>
+              </div>
             </div>
-            <button class="qa-button">
-              <span class="svg__plus">{% include 'component/icons/plus.njk' %}</span>
-              <span class="svg__minus">{% include 'component/icons/minus.njk' %}</span>
-            </button>
-          </div>
-          <div class="flex gap20 answer-tab">
-            <div class="qa-marker">
-              <h2 class="ttl-secondary">A</h2>
+          </li>
+        {% endfor %}
+      </ul>
+
+
+      <a href="#" class="faq_more bondi_blue_outline_btn">
+        <span class="bondi_blue_outline_btn__tittle">
+          もっと見る
+        </span>
+      </a>
+    </section>
+
+    <section class="section-contact fadein">
+      <div class="card-type22">
+        <div class="ttl-notice">CONTACT</div>
+        <h3 class="ttl-tertiary">ビジネスサポートローンのお問い合わせ・お申し込みはこちら</h3>
+        <div class="useful-wp container">
+          <div class="containers">
+            <div class="flex jcC gap60">
+              <div href="#" class="card">
+                <summary class="card__box">
+                  <div class="card__box--ttl">まずは相談・お問い合わせをしたい</br>という方はこちら</div>
+                  <div><a class="blue_gradient_btn" href="#">ご相談・お問い合わせ（無料）</a></div>
+                </summary>
             </div>
-            <div class="qa-content">
-              <h3 class="ttl-tertiary">
-                質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。
-              </h3>
+            <div href="#" class="card">
+              <summary class="card__box">
+                <div class="card__box--ttl">今すぐお申し込みをしたい</br>という方はこちら</div>
+                <div><a class="blue_gradient_btn" href="#">審査おお申し込み</a></div>
+              </summary>
             </div>
           </div>
         </div>
-      {% endfor %}
+      </div>
+    </section>
+
+    <section class="section-license fadein">
+      <div class="container">
+        ※「アメリカン・エキスプレス」は、アメリカン・エキスプレスの登録商標です。(株)クレディセゾンは、アメリカン・エキスプレスのライセンスに基づき使用しています。
+      </div>
+    </section>
+
+    <section id="inquiry-application" class="section-loan-conditions fadein">
+      <div class="container">
+        <ul class="external-list">
+          <li class="external-item">
+            <a class="external-item-link" href="#">
+              {% include 'component/icons/circle-list-style.njk' %}
+              カードキャッシングご利用に関するお知らせ
+            </a>
+          </li>
+          <li class="external-item">
+            <a class="external-item-link" href="#">
+              {% include 'component/icons/circle-list-style.njk' %}
+              貸付条件表はこちら
+            </a>
+          </li>
+        </ul>
+
+        <ul class="loan-condition-list">
+          <h4 class="loan-condition-title">貸付条件をよくご確認のうえ、計画的にご利用ください。</h4>
+
+          <li class="loan-condition-item">※ 審査によりご希望の意に添えない場合がございます。あらかじめご了承ください。</li>
+          <li class="loan-condition-item">※ お申し込みからご融資まで1週間～10日程度かかります。</li>
+          <li class="loan-condition-item">※ 所得証明書類（コピー）の提出が必要となります。</li>
+          <li class="loan-condition-item">※ キャッシングご利用可能枠の上限は年収の1/3以内です。</li>
+          <li class="loan-condition-item">※ お申し込みにあたり、運転免許証等の交付を受けている場合には運転免許証等の番号が必要です。</li>
+          <li class="loan-condition-item">※ 本ページ記載の情報は2023年3月1日現在のものです。変更になる場合もございますので、あらかじめご了承ください。</li>
+        </ul>
+      </div>
     </section>
   </main>
 {% endblock %}

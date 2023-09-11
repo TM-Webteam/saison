@@ -7,6 +7,28 @@
 
   // ===========START SECTIONS==========
 
+  section {
+    @media #{$sp} {
+      padding: 35px 15px;
+    }
+
+    .ttl-primary {
+      font-size: 32px;
+      margin-bottom: 40px;
+    }
+
+    .ttl-quaternary {
+      margin: 0;
+      text-align: center;
+      margin-bottom: 45px;
+      color: $primary-color;
+
+      @media #{$sp} {
+        font-size: 18px;
+      }
+    }
+  }
+
   .section-welcome {
     padding: 133px 0 133px 0;
     text-align: center;
@@ -220,36 +242,51 @@
 
   .section-primary {
     text-align: center;
-    padding: 60px 120px 70px;
+    padding: 70px 0;
+    max-width: 1200px;
+    margin: auto;
 
     @media #{$sp} {
       padding: 35px 15px;
-    }
-
-    .ttl-primary {
-      font-size: 32px;
-      margin-bottom: 40px;
-    }
-
-    .ttl-quaternary {
-      margin: 0;
-      text-align: center;
-      margin-bottom: 45px;
-      color: $primary-color;
-
-      @media #{$sp} {
-        font-size: 18px;
-      }
     }
 
     &__description {
       font-size: 20px;
     }
 
+    &__flow {
+      margin-top: 40px;
+      .flow-list {
+        text-align: left;
+        padding: 0 30px;
+      }
+    }
+
     &__notice {
       box-shadow: 0px 3px 20px #0000001c;
       border-radius: 3px;
       padding: 40px 30px;
+      max-width: 70%;
+      margin: auto;
+      margin-top: 32px;
+
+      @media #{$sp} {
+        max-width: 100%;
+        padding: 30px 15px;
+      }
+
+      .ttl-quaternary {
+        font-size: 20px;
+        margin-bottom: 25px;
+      }
+
+      .notice-list {
+        display: grid;
+        width: fit-content;
+        gap: 10px;
+        text-align: left;
+        margin: auto;
+      }
     }
   }
 
@@ -370,6 +407,139 @@
     }
   }
 
+  .section-contact {
+    .ttl-notice {
+      font-family: "Futura";
+    }
+  }
+
+  .section-financing {
+    padding: 70px 0;
+    background: #f5f5f5;
+
+    ul li a:after {
+      content: " ";
+      height: 0;
+      width: 0;
+      position: absolute;
+      right: -15px;
+      border-style: solid;
+      border-width: 15px 0 15px 15px;
+      border-color: transparent transparent transparent #ccc;
+      z-index: 10;
+    }
+
+    .flow-container {
+      max-width: 1200px;
+      margin: auto;
+      margin-bottom: 60px;
+      display: grid;
+      grid-template-columns: 27% 27% 27% 19%;
+      box-shadow: 0 3px 20px #00000029;
+      background: $white-color;
+
+      .flow-item {
+        position: relative;
+        display: inline-block;
+        padding-right: 24px;
+        padding-left: 0;
+        filter: drop-shadow(10px 0px 4px #00000029);
+
+        &:last-child {
+          padding: 0;
+          .flow-item-detail {
+            clip-path: unset;
+          }
+        }
+
+        &-detail {
+          position: relative;
+          padding: 30px 60px 30px 20px;
+          height: 100%;
+          text-align: center;
+          display: flex;
+          flex-direction: column;
+          background: $white-color;
+          clip-path: polygon(
+            0 0,
+            calc(100% - 2em) 0,
+            100% 50%,
+            calc(100% - 2em) 100%,
+            0 100%,
+            0 0
+          );
+
+          @media #{$sp} {
+            padding: 10px 0;
+            padding-right: 10px;
+            margin-left: -5px;
+            clip-path: polygon(
+            0 0,
+            72px 0,
+            100% 50%,
+            72px 100%,
+            0 100%,
+            0 0
+          );
+          }
+
+          .flow-index {
+            color: $white-color;
+            font-family: "Futura";
+            margin: auto;
+            text-align: center;
+            position: relative;
+            font-size: 34px;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: $primary-color;
+
+            @media #{$sp} {
+              width: 30px;
+              height: 30px;
+              font-size: 16px;
+            }
+          }
+
+          .flow-content {
+            font-size: 16px;
+            font-weight: bold;
+            margin-top: 20px;
+            flex-grow: 1;
+
+            @media #{$sp} {
+              font-size: 9px;
+              margin-top: 8px;
+            }
+          }
+        }
+
+        &:first-child {
+          border-top-left-radius: 3px;
+          border-bottom-left-radius: 3px;
+        }
+
+        &:last-child {
+          border-top-right-radius: 3px;
+          border-bottom-right-radius: 3px;
+          clip-path: unset;
+
+          .flow-item-detail {
+            padding: 30px 35px 30px 30px;
+
+            @media #{$sp} {
+              padding: 5px;
+            }
+          }
+          .flow-item-detail::after {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
   .section-question-and-answer {
     text-align: center;
     padding: 60px 0px 70px;
@@ -377,15 +547,29 @@
     margin: auto;
     max-width: 1200px;
 
+    @media #{$sp} {
+      padding: 35px 15px;
+    }
+
+    &__description {
+      font-size: 20px;
+      line-height: 35px;
+
+      a {
+        text-decoration: underline;
+        color: $primary-color;
+      }
+    }
+
+    &__list {
+      margin-bottom: 50px;
+    }
+
     .ttl-sub {
       font-size: 14px;
       font-weight: bold;
       font-family: "Futura";
       color: $primary-color;
-    }
-
-    @media #{$sp} {
-      padding: 35px 15px;
     }
 
     .ttl-secondary {
@@ -445,6 +629,8 @@
     }
 
     .question-tab {
+      margin-top: 50px;
+
       cursor: pointer;
       background: $blue-color-2 0% 0% no-repeat padding-box;
       box-shadow: 0px 3px 20px #00000029;
@@ -487,6 +673,35 @@
     color: $white-color;
     background-color: $gray-color-8;
     padding: 20px 0;
+  }
+
+  .section-loan-conditions {
+    padding: 40px 0;
+    .external-list {
+      display: grid;
+      gap: 10px;
+      margin-bottom: 40px;
+      .external-item {
+        &-link {
+          display: flex;
+          gap: 10px;
+          align-items: center;
+        }
+      }
+    }
+
+    .loan-condition-list {
+      margin-bottom: 8px;
+      .loan-condition-title {
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 24px;
+      }
+
+      .loan-condition-item {
+        font-size: 13px;
+      }
+    }
   }
 
   // ===========END SECTIONS==========
@@ -549,4 +764,18 @@
       }
     }
   }
+
+  // .tag-wrap {
+  //   filter: drop-shadow(4px 0px 1px rgba(50, 50, 0, 0.5));
+  // }
+  // .tag {
+  //   clip-path: polygon(
+  //     0 0,
+  //     calc(100% - 2em) 0,
+  //     100% 50%,
+  //     calc(100% - 2em) 100%,
+  //     0 100%,
+  //     0 0
+  //   );
+  // }
 }
