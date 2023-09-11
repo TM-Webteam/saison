@@ -1,0 +1,552 @@
+.business-support-loan-page {
+  margin: auto;
+  padding: 133px 0 0px;
+  @media #{$sp} {
+    padding: 50px 0 0;
+  }
+
+  // ===========START SECTIONS==========
+
+  .section-welcome {
+    padding: 133px 0 133px 0;
+    text-align: center;
+    position: relative;
+    // background-image: url("/assets/img/business_support_loan/business_support_loan.png");
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // background-position: center;
+    // padding-top: 41.927083333%;
+
+    .slick-slider {
+      .slick-list {
+        height: 100%;
+
+        .slick-track {
+          height: 100%;
+
+          img {
+            height: 100%;
+          }
+        }
+      }
+    }
+
+    &-info {
+      display: flex;
+      align-items: center;
+      max-width: 1200px;
+      margin: auto;
+
+      @media #{$sp} {
+        display: block;
+      }
+
+      &-left {
+        width: 60%;
+        text-align: left;
+      }
+
+      &-right {
+        width: 50%;
+
+        .section-welcome-right__img {
+          position: relative;
+          height: 413px;
+          width: 618px;
+          padding-top: 66.828478964;
+          img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+
+    &__banner {
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: inherit;
+      overflow: hidden;
+      background: $primary-color;
+
+      img {
+        position: static;
+        transform: none;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    &__inner {
+      display: inline-block;
+      background: #014a58;
+      transform: skewX(-15deg);
+      padding: 0px 20px;
+
+      @media #{$sp} {
+        padding: 0px 10px;
+      }
+
+      .ttl-tertiary {
+        transform: skewX(15deg);
+        color: #ffffff;
+        margin-bottom: 0;
+      }
+    }
+
+    &__title {
+      margin: 20px 0;
+      color: #ffffff;
+
+      .ttl-primary {
+        margin-bottom: 0;
+        text-align: left;
+      }
+    }
+
+    &__desc {
+      text-align: left;
+      margin-bottom: 123px;
+      .ttl-quaternary {
+        font-size: 24px;
+        color: #fff;
+      }
+    }
+
+    &__act {
+      .act-more {
+        margin-left: 0;
+        position: relative;
+
+        &-tooltip {
+          position: absolute;
+          top: -68px;
+          left: calc(50% - 87px);
+          width: auto;
+          height: auto;
+
+          &__content {
+            position: relative;
+            width: fit-content;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 25px;
+            background-color: #fff;
+            border-radius: 3px;
+            color: $orange-color;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &::before {
+              position: absolute;
+              content: "\A";
+              top: calc(100% - 1px);
+              left: calc(50% - 15px);
+              width: 0;
+              height: 0;
+              border-left: 15px solid transparent;
+              border-right: 15px solid transparent;
+              border-top: 10px solid #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .section-card-support {
+    background: #343434;
+    padding: 70px 170px;
+    @media #{$sp} {
+      padding: 30px 15px;
+    }
+
+    .ttl-secondary {
+      color: #fff;
+      font-size: 32px;
+    }
+
+    .card-support-list {
+      max-width: 1200px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 40px;
+
+      @media #{$sp} {
+        grid-template-columns: auto;
+      }
+
+      .card-support-detail {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: 42% 58%;
+        background: #fff;
+        border-radius: 3px;
+        color: #000;
+        padding: 30px;
+
+        @media #{$sp} {
+          grid-template-columns: auto;
+        }
+
+        .card-content {
+          @media #{$sp} {
+            text-align: center;
+          }
+
+          .ttl-quaternary {
+            margin-bottom: 20px;
+          }
+        }
+
+        button {
+          width: 100%;
+          margin: auto;
+        }
+      }
+    }
+  }
+
+  .section-primary {
+    text-align: center;
+    padding: 60px 120px 70px;
+
+    @media #{$sp} {
+      padding: 35px 15px;
+    }
+
+    .ttl-primary {
+      font-size: 32px;
+      margin-bottom: 40px;
+    }
+
+    .ttl-quaternary {
+      margin: 0;
+      text-align: center;
+      margin-bottom: 45px;
+      color: $primary-color;
+
+      @media #{$sp} {
+        font-size: 18px;
+      }
+    }
+
+    &__description {
+      font-size: 20px;
+    }
+
+    &__notice {
+      box-shadow: 0px 3px 20px #0000001c;
+      border-radius: 3px;
+      padding: 40px 30px;
+    }
+  }
+
+  .section-secondary {
+    text-align: center;
+    padding: 90px 120px 70px;
+    background-color: #eeeeee;
+
+    @media #{$sp} {
+      padding: 35px 15px;
+    }
+
+    .notification-primary {
+      padding-bottom: 30px;
+      margin-bottom: 60px;
+      background-color: #fff;
+      box-shadow: 0px 3px 20px #00000029;
+
+      .notification-panel2 {
+        .card-list {
+          padding: 0 30px;
+          margin-bottom: 30px;
+
+          @media #{$sp} {
+            flex-direction: column;
+            padding: 0 10px;
+          }
+        }
+      }
+    }
+
+    .notification-secondary {
+      box-shadow: 0px 3px 20px #00000029;
+
+      .notification-panel1 {
+        margin-bottom: 60px;
+      }
+      .bondi_blue_outline_btn {
+        font-weight: 700;
+        &:hover {
+          color: $white-color;
+        }
+      }
+    }
+
+    .notification-tertiary {
+      box-shadow: 0px 3px 20px #00000029;
+
+      .notification-panel1 {
+        &-body {
+          padding: 0;
+          margin-bottom: 0;
+
+          .card-list {
+            padding: 0;
+            background-color: #fff;
+
+            @media #{$sp} {
+              flex-direction: column;
+            }
+          }
+        }
+        .bondi_blue_outline_btn {
+          margin-top: 20px;
+          max-width: 522px;
+          font-weight: 700;
+          &:hover {
+            color: $white-color;
+          }
+        }
+      }
+    }
+  }
+
+  .section-tertiary {
+    padding: 70px 0;
+    text-align: center;
+    background-color: $green-color;
+    color: #ffffff;
+
+    .ttl-sub {
+      font-size: 14px;
+      font-weight: bold;
+      font-family: "Futura";
+    }
+
+    .ttl-secondary {
+      font-size: 32px;
+      margin-bottom: 40px;
+    }
+
+    .ttl-tertiary {
+      font-size: 20px;
+      font-weight: 400;
+      margin-bottom: 50px;
+    }
+  }
+
+  .section-quaternary {
+    text-align: center;
+    padding: 60px 120px 70px;
+    background-color: #f7f7f7;
+
+    @media #{$sp} {
+      padding: 35px 15px;
+    }
+
+    .ttl-sub {
+      font-size: 14px;
+      font-weight: bold;
+      font-family: "Futura";
+      color: $primary-color;
+    }
+
+    .ttl-secondary {
+      font-size: 32px;
+      margin-bottom: 61px;
+    }
+  }
+
+  .section-question-and-answer {
+    text-align: center;
+    padding: 60px 0px 70px;
+    background-color: #fff;
+    margin: auto;
+    max-width: 1200px;
+
+    .ttl-sub {
+      font-size: 14px;
+      font-weight: bold;
+      font-family: "Futura";
+      color: $primary-color;
+    }
+
+    @media #{$sp} {
+      padding: 35px 15px;
+    }
+
+    .ttl-secondary {
+      font-size: 32px;
+      margin-bottom: 61px;
+    }
+
+    .question-tab,
+    .answer-tab {
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      padding: 4px 30px;
+      width: 100%;
+      margin-bottom: 30px;
+
+      @media #{$sp} {
+        padding: 4px 8px;
+      }
+
+      .ttl-secondary {
+        font-size: 30px;
+        margin-bottom: 0;
+      }
+
+      .qa-content {
+        flex: 1;
+
+        .ttl-tertiary {
+          text-align: left;
+          font-size: 20px;
+          margin-bottom: 0;
+          font-weight: 400;
+
+          @media #{$sp} {
+            font-size: 16px;
+          }
+        }
+      }
+
+      .qa-button {
+        svg {
+          margin-top: 5px;
+        }
+        .svg__minus {
+          display: none;
+        }
+        &.open {
+          .svg__plus {
+            display: none;
+          }
+          .svg__minus {
+            display: block;
+          }
+        }
+      }
+    }
+
+    .question-tab {
+      cursor: pointer;
+      background: $blue-color-2 0% 0% no-repeat padding-box;
+      box-shadow: 0px 3px 20px #00000029;
+
+      .qa-marker {
+        color: $primary-color;
+      }
+
+      .qa-content {
+        .ttl-tertiary {
+          font-weight: bold;
+        }
+      }
+    }
+
+    .question-tab.open {
+      svg {
+        display: none;
+      }
+    }
+
+    .answer-tab {
+      background-color: #ffffff;
+      margin-top: -30px;
+      padding: 0 60px 0 30px;
+      display: none;
+
+      @media #{$sp} {
+        padding: 8px;
+      }
+
+      .qa-marker {
+        color: $green-color-1;
+      }
+    }
+  }
+
+  .section-license {
+    font-size: 13px;
+    color: $white-color;
+    background-color: $gray-color-8;
+    padding: 20px 0;
+  }
+
+  // ===========END SECTIONS==========
+
+  .section-primary__wrapper {
+    .containers {
+      max-width: unset;
+      padding: 0;
+      margin-top: 40px;
+
+      .card-list {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(auto, 380px));
+        gap: 30px;
+        justify-content: center;
+        a.card {
+          transition: all 0.3s;
+          .arrow-down {
+            transition: all 0.3s;
+          }
+          &:hover {
+            opacity: 1;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+            .arrow-down {
+              top: 15px;
+            }
+          }
+        }
+        .card-type6 {
+          .ttl-quaternary-container {
+            margin-bottom: 0;
+          }
+        }
+
+        .card-type10 {
+          padding: 0;
+          a.card-type10-container {
+            padding: 35px 30px 30px;
+            transition: all 0.3s;
+            .bondi_blue_outline_btn {
+              font-weight: 700;
+            }
+            &:hover {
+              opacity: 1;
+              .bondi_blue_outline_btn {
+                color: $white-color;
+                background-color: $blue-color;
+                &::before {
+                  border-top: 3px solid $white-color;
+                  border-right: 3px solid $white-color;
+                }
+              }
+            }
+          }
+        }
+
+        @media #{$tab} {
+          grid-template-columns: auto;
+        }
+      }
+    }
+  }
+}

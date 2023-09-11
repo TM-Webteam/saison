@@ -340,6 +340,12 @@ main {
   }
 }
 
+.text-muted {
+  font-size: 13px;
+  font-weight: normal;
+  color: $gray-color-8;
+}
+
 /*** custom container ***/
  .container-1200 {
   max-width: 1200px;
