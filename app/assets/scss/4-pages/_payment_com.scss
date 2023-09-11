@@ -792,7 +792,7 @@
 
       @media #{$sp} {
         margin-top: 30px;
-        margin-bottom: 15px;
+        margin-bottom: 0;
       }
     }
 
@@ -810,6 +810,7 @@
 
       @media #{$sp} {
         padding: 8px;
+        margin-top: 0;
       }
 
       .qa-marker {
