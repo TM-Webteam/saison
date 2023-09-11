@@ -64,7 +64,7 @@
     }
 
     &__title {
-      margin-top: 38 px;
+      margin-top: 37px;
       margin-bottom: 54px;
       color: #ffffff;
 
@@ -109,10 +109,10 @@
             flex-basis: calc(33.33% - 60px);
             max-width: 380px;
             .card {
-              transition: all .3s;
+              transition: all 0.3s;
               &:hover {
                 opacity: 1;
-                box-shadow: 0 0 10px rgba(0,0,0,.4);
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
                 .arrow-down {
                   margin-bottom: 0px;
                 }
