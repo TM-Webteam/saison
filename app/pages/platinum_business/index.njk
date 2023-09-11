@@ -1,0 +1,562 @@
+{% extends "layout/default.njk" %}
+
+{# Custom SEO tags, leave blank to apply the default values #}
+{% set title = "" %}
+{% set description = "" %}
+{% set keywords = "" %}
+
+{# Page settings and also body class #}
+{% set page = "" %}
+
+{# Custom tags before </head> #}
+{% block customHead %}{% endblock %}
+
+{# Custom tags before </body> #}
+{% block customJs %}{% endblock %}
+
+{# Breadcrumb #}
+{% set breadcrumb = [
+  {
+    text: "セゾンプラチナ・ビジネス・アメリカン・エキスプレス®・カード",
+    link: "#"
+  }
+] %}
+
+
+{% set menuSidebar = [
+  {
+  text: "年会費・入会資格",
+  link: "#"
+  },
+  {
+  text: "付帯サービス",
+  link: "#"
+  },
+  {
+  text: "ご利用シーン",
+  link: "#"
+  },
+  {
+  text: "カード比較",
+  link: "#"
+  },
+  {
+  text: "よくある質問",
+  link: "#"
+  },
+  {
+  text: "お申し込みまでの流れ",
+  link: "#"
+  },
+  {
+  text: "お申し込み",
+  link: "#"
+  }
+  ] %}
+
+{# Main content #}
+{% block content %}
+{% include 'partial/sidebar.njk' %}
+<main class="platinum_business-page">
+  <section id="top" class="section-welcome fadein">
+    <div class="section-welcome__banner">
+      <img src="/assets/img/common/bannet_10.png"/>
+    </div>
+
+    <div class="section-welcome-container">
+      <div class="section-welcome-info">
+        <div class="section-welcome-left">
+          <div class="title-notice">
+            <div class="title-content">
+              個人与信型ビジネスカード
+            </div>
+          </div>
+          <h1 class="ttl-primary">セゾンプラチナ・ビジネス・ <br> アメリカン・エキスプレス®・カード</h1>
+          
+          <div class="card-content">
+            <div class="card">
+              <img src="/assets/img/credit_cards/american-express-01.png" />
+            </div>
+            <div class="ttl-quaternary">
+              初年度年会費無料
+            </div>
+          </div>
+
+          <div class="btn-containers">
+            <a class="blue_gradient_btn" href="#">お申し込みはこちら</a>
+          </div>
+        </div>
+
+        <div class="section-welcome-right pc-only">
+          ビジネスに <br> 余裕をもたらす <br> 一枚なら。
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-tertiary">
+    <div class="containers">
+      <h2 class="ttl-primary">使うだけ「得」をする！2つの特典</h2>
+
+      <div class="grid-card-containers">   
+        <div class="card">
+          <div class="card-head">SAISON MILE CLUB</div>
+          <div class="card-content">
+            <div>JALのマイル還元率 : <span class="percent blue-text"> 1.125％</span></div> 
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-head">永久不滅ポイント優遇</div>
+          <div class="card-content">
+            <div><span class="blue-text"> 国内：</span> 1,000円で <span class="percent blue-text">1</span> <span class="blue-text">ポイント</span></div>
+            <div class="minus-margin"><span class="blue-text"> 海外：</span> 1,000円で <span class="percent blue-text">2</span> <span class="blue-text">ポイント</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-secondary">
+    <div class="containers">
+      <h2 class="ttl-secondary">うれしいビジネス機能が充実</h2>
+
+      <ul class="card-list">
+        <li class="card">
+          <h2>支払い猶予が最長56日</h2>
+          <div class="grid__card--img"><img src="/assets/img/common/MaskGroup4.png" alt="work image"></div>
+          <p>請求サイクルは、毎月10日締めの翌月4日支払い。そのため、カード1回払いで決済した場合、決済からお支払いまでに最大56日間の猶予があるので、キャッシュフローにゆとりができます。</p>
+        </li>
+        <li class="card">
+          <h2>ご利用額の増枠・一時増枠</h2>
+          <div class="grid__card--img"><img src="/assets/img/common/MaskGroup6.png" alt="work image"></div>
+          <p>増枠期間や利用目的を定めた「一時的な増枠」か、定めのない「継続的な増枠」にて、ご利用可能枠を引き上げることが可能です。※初回から1000万円のご利用枠が設定されるケースもございます。</p>
+        </li>
+        <li class="card">
+          <h2>選べる引き落とし口座</h2>
+          <div class="grid__card--img"><img src="/assets/img/common/MaskGroup5.png" alt="work image"></div>
+          <p>お引き落とし口座を本会員様の「個人名義口座」、または「法人名義口座」よりお選びいただけます。法人名義口座をご指定いただけるので、経費管理がしやすくなります。</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section-quaternary">
+    <div class="containers">
+    
+      <h2 class="ttl-primary">登記簿や決算書の提出は不要です！</h2>
+      <h4 class="ttl-tertiary">登記簿や決算書といった業務内容や実績を示す書類の提出が不要です。<br> 書類郵送に取られる期間がなくなるため、発行までにかかる期間の短縮ができます。
+      </h4>
+      <div>
+        <a href="" class="blue_gradient_btn">お申し込みはこちら</a>
+      </div>
+
+      <div class="sub-content">
+        ※申込み時にフォームにて、決算内容の入力は必要です。決算内容がわかるものをご用意をお願いいたします。
+      </div>
+
+
+    </div>
+  </section>
+
+  <section class="section-quinary">
+    <div class="containers">
+      <h2 class="ttl-primary">年会費・入会資格</h2>
+
+      <div class="card-contents">
+        <div class="grid-card-containers">
+          <div class="col-left">
+            年会費
+          </div>
+          <div class="col-right">
+            <div class="ttl-quaternary">22,000円（税込） 追加カード年会費：3,300円（税込）</div>
+            <div class="ttl-quaternary normal-text">年会費は会計上経費として計上可能です。詳しくは税理士等にご確認ください。 <br> 年間200万円以上のショッピングのご利用で、次年度本会員年会費を11,000円（税込）に優遇いたします。</div>
+          </div>
+        </div>
+  
+        <div class="grid-card-containers">
+          <div class="col-left">
+            入会資格
+          </div>
+          <div class="col-right">
+            <div class="ttl-quaternary">個人事業主様・経営者様をはじめ、安定した収入があり、<br> 社会的信用を有するご連絡可能な方（学生、未成年を除く）</div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <a href="" class="blue_gradient_btn">お申し込みはこちら</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-septenary">
+    <div class="containers">
+      <h4 class="ttl-primary">付帯サービス</h4>
+      <div class="grid-card-containers">
+        <div class="card">
+          <div class="card-img">
+            <img src="/assets/img/common/plat5.png" alt="work image" >
+          </div>
+          <div class="card-content">
+            <h4 class="ttl-quaternary">国内空港ラウンジ</h4>
+            <div class="ttl-normal">国内の主要空港ラウンジを無料でご利用いただけます。ご搭乗までのひとときを、ゆったりとお過ごしください。従業員様のカードもご利用いただけます。</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img">
+            <img src="/assets/img/common/plat6.png" alt="work image" >
+          </div>
+          <div class="card-content">
+            <h4 class="ttl-quaternary">海外空港ラウンジ</h4>
+            <div class="ttl-normal">148以上の国や地域、1,300ヵ所以上の空港ラウンジをご利用いただける「プライオリティ・パス（通常年会費469米ドル／プレステージ会員）」に代表者様カード限定の特別なサービスとして無料でご登録いただけます。</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img">
+            <img src="/assets/img/common/plat3.png" alt="work image" >
+          </div>
+          <div class="card-content">
+            <h4 class="ttl-quaternary">一休プレミアサービス</h4>
+            <div class="ttl-normal">全国の厳選されたホテル・旅館・レストランをお得に予約できる「一休プレミアサービス」。特典を体験いただけるご優待をご用意いたしました。</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img">
+            <img src="/assets/img/common/plat4.png" alt="work image" >
+          </div>
+          <div class="card-content">
+            <h4 class="ttl-quaternary">セゾンプレミアムセレクション by クラブ・コンシェルジュ</h4>
+            <div class="ttl-normal">一見さんお断りの老舗料亭のご利用や、祇園でのお茶屋遊び、予約の取りずらい美食店の特別リザーブなど多彩なサービスを提供する「セゾンプレミアムセレクション」を無料にてご登録いただけます。</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img">
+            <img src="/assets/img/common/plat2.png" alt="work image" >
+          </div>
+          <div class="card-content">
+            <h4 class="ttl-quaternary">プラチナ会員専用コールセンター</h4>
+            <div class="ttl-normal">出張の手配や会食の設定などは、専用のコールセンターへ。<br> 24時間365日、専任のスタッフが誠心誠意お応えします。</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img">
+            <img src="/assets/img/common/plat1.png" alt="work image" >
+          </div>
+          <div class="card-content">
+            <h4 class="ttl-quaternary">従業員様も対象の旅行傷害保険</h4>
+            <div class="ttl-normal">海外・国内の旅行中の事故について補償いたします。海外旅行中の事故について最高１億円※1まで、国内旅行中の事故について最高5,000万円※2まで補償いたします。代表者様はもちろん追加カードを発行された従業員様も対象となります。</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sub-content">
+        ※1 海外旅行傷害保険の死亡・後遺障害保険金額。事前のカード決済等の条件により適用される金額です。決済等がない場合は最高5,000万円となります。<br>
+        ※2 国内旅行傷害保険の死亡・後遺障害保険金額 <br>
+        ※3 別途「プライオリティ・パス」へのご登録が必要です。
+      </div>
+    </div>
+  </section>
+
+  <section class="section-octonary">
+    <div class="containers">
+      <h4 class="ttl-primary">ご利用シーン</h4>
+      <h2 class="ttl-quaternary">起業から事業成長まで、あらゆるビジネスシーンをサポート。経費管理から資金管理、会食や出張で役立つサービスなど、 個人事業主様や経営者にゆとりと安心を提供する一枚です。</h2>
+      
+      <div class="grid-card-containers">
+        <div class="card">
+          <h2 class="ttl-head">毎⽇の経費管理で</h2>
+          <img src="/assets/img/common/plat8.png" alt="work image" class="card-img">
+          <div class="ttl-normal">起業したばかりで、できるだけ本業に専念したい。しかし、経費管理がいかに大変かを思い知る。セゾンプラチナ・ビジネス・アメリカン・エキスプレス®・カードに出会い、支払いにおける振り込みの手間や手数料が省けただけでなく、明細もすぐにわかるので、領収書管理といった煩わしさからも解放された。</div>
+        </div>
+        
+        <div class="card">
+          <h2 class="ttl-head">毎⽉の資⾦管理で</h2>
+          <img src="/assets/img/common/plat7.png" alt="work image" class="card-img">
+          <div class="ttl-normal">起業したばかりで、できるだけ本業に専念したい。しかし、経費管理がいかに大変かを思い知る。セゾンプラチナ・ビジネス・アメリカン・エキスプレス®・カードに出会い、支払いにおける振り込みの手間や手数料が省けただけでなく、明細もすぐにわかるので、領収書管理といった煩わしさからも解放された。</div>
+        </div>
+
+        <div class="card">
+          <h2 class="ttl-head">利用可能額を超えた時に</h2>
+          <img src="/assets/img/common/plat9.png" alt="work image" class="card-img">
+          <div class="ttl-normal">起業したばかりで、できるだけ本業に専念したい。しかし、経費管理がいかに大変かを思い知る。セゾンプラチナ・ビジネス・アメリカン・エキスプレス®・カードに出会い、支払いにおける振り込みの手間や手数料が省けただけでなく、明細もすぐにわかるので、領収書管理といった煩わしさからも解放された。</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-senary">
+    <div class="containers">
+      <h3 class="ttl-tertiary">DOCUMENTS</h3>
+      <h1 class="ttl-quaternary">ビジネスカードを検討しているなら、知らないともったいない！</h1>
+      <h4 class="ttl-primary">「ビジネスカードの🉐活用ガイド」</h4>
+
+      <div class="senary-content">
+        <div class="content-img">
+          <img src="/assets/img/common/work_image.png" alt="work image" class="img-top">
+          <img src="/assets/img/common/work_image.png" alt="work image" class="img-bot">
+        </div>
+        <div class="content-detail">
+          <div class="content-head">ビジネスカードのメリットを使い倒すためのオトクな活用方法をまるっと紹介！</div>
+          <p>
+            ビジネスカードが役立つ場面はたくさんありますが、多くの場合においてそのメリットや特典を使いこなしていないケースもあります。本資料では、ビジネスカードのメリットや特典を使い倒すために具体的な使い方や活用シーンを紹介しています。これからビジネスカードを利用したいという方は参考にしてみてください。
+          </p>
+        </div>
+      </div>
+
+      <div class="btn-container">
+        <a class="blue_gradient_btn" href="#">資料ダウンロード（無料）</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-card-info">
+    <div class="containers">
+      <h4 class="ttl-primary">カード比較</h4>
+
+      <div class="container-content">
+        <div class="grid-card-containers">
+            <div class="margin-bottom">
+              <div></div>
+            </div>
+            <div class="margin-bottom">
+              <div>
+                <div class="ttl-quinary">セゾンプラチナ・ビジネス・<br> アメリカン・エキスプレス®・カード</div>
+                <img src="/assets/img/credit_cards/american-express-01.png" alt="Your Image" class="credit-card-img">
+              </div>
+            </div>
+            <div class="margin-bottom">
+              <div>
+                <div class="ttl-quinary">セゾンコバルト・ビジネス・<br> アメリカン・エキスプレス®・カード</div>
+                <img src="/assets/img/credit_cards/american-express-02.png" alt="Your Image" class="credit-card-img">
+              </div>
+            </div>
+
+            <div class="title-col">
+              <div>特長</div>
+            </div>
+            <div class="">
+              <div class="content-col height-160">
+                <ul>
+                  <li>プラチナカード</li>
+                  <li>キャッシュバック率 1％※1</li>
+                  <li>支払いサイト 最長84日間※1</li>
+                  <li>海外最高1億円、国内最高5,000万円の旅行傷害保険</li>
+                </ul>
+              </div>
+            </div>
+            <div class="">
+              <div class="content-col height-160">
+                <ul>
+                  <li>登記簿がなくても個人与信で審査ができる</li>
+                  <li>ビジネスに役立つウェブサービスご利用で最大2％還元（通常の4倍）</li>
+                  <li>ビジネスに役立つメリットがたくさんあります</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="title-col">
+              <div>代表者 年会費</div>
+            </div>
+            <div class="">
+              <div class="content-col">
+                <div class="normal-text">
+                  22,000円（税込）
+                </div>
+              </div>
+            </div>
+            <div class="">
+              <div class="content-col">
+                <div class="normal-text">
+                  永年無料
+                </div>
+              </div>
+            </div>
+
+
+            <div class="title-col">
+              <div>追加カード 年会費</div>
+            </div>
+            <div class="">
+              <div class="content-col">
+                <div class="normal-text">
+                  3,300円（税込）
+                </div>
+              </div>
+            </div>
+            <div class="">
+              <div class="content-col">
+                <div class="normal-text">
+                  永年無料
+                </div>
+              </div>
+            </div>
+
+
+            <div class="title-col">
+              <div>追加カード 年会費</div>
+            </div>
+            <div class="">
+              <div class="content-col">
+                <div class="normal-text">
+                  3,300円（税込）
+                </div>
+              </div>
+            </div>
+            <div class="">
+              <div class="content-col">
+                <div class="normal-text">
+                  永年無料
+                </div>
+              </div>
+            </div>
+
+            <div class="title-col">
+              <div>申し込み 資格</div>
+            </div>
+            <div class="">
+              <div class="content-col">
+                <div class="normal-text">
+                  中小規模法人代表者（未成年者除く）
+                </div>
+              </div>
+            </div>
+            <div class="">
+              <div class="content-col">
+                <div class="normal-text">
+                  個人事業主またはフリーランス、経営者の方（高校生除く）
+                </div>
+              </div>
+            </div>
+
+
+            <div class="title-col">
+              <div>MORE</div>
+            </div>
+            <div class="">
+              <div class="content-col height-180">
+                <ul>
+                  <li>プラチナ会員専用デスク</li>
+                  <li>AMEXセンチュリオンデザイン採用</li>
+                  <li>支払いサイト 最長84日間※1</li>
+                  <li>通常429米ドルのプライオリティパスを代表者様は無料で ご登録可能</li>
+                </ul>
+              </div>
+            </div>
+            <div class="">
+              <div class="content-col height-180">
+                <ul>
+                  <li>コバルトビジネスカードの特典・優待サービス</li>
+                </ul>
+                <div class="content-btn">
+                  <a href="" class="blue_gradient_btn">お申し込みはこちら</a>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>     
+    </div>
+  </section>
+
+  <section class="section-question-and-answer">
+    <h5 class="ttl-sub">FAQ</h5>
+    <h2 class="ttl-secondary">よくある質問</h2>
+    {% for i in range(1, 5) %}
+      <div class="qa">
+        <div class="flex gap20 question-tab">
+          <div class="qa-marker">
+            <h2 class="ttl-secondary">Q</h2>
+          </div>
+          <div class="qa-content">
+            <h3 class="ttl-tertiary">
+              質問内容が入ります。質問内容が入ります。質問内容が入ります。質問内容が入ります。質問内容が入ります。
+            </h3>
+          </div>
+          <button class="qa-button">
+            <span class="svg__plus">{% include 'component/icons/plus.njk' %}</span>
+            <span class="svg__minus">{% include 'component/icons/minus.njk' %}</span>
+          </button>
+        </div>
+        <div class="flex gap20 answer-tab">
+          <div class="qa-marker">
+            <h2 class="ttl-secondary">A</h2>
+          </div>
+          <div class="qa-content">
+            <h3 class="ttl-tertiary">
+              質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。
+            </h3>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </section>
+
+  <section class="section-steps">
+    <div class="containers">
+      <div class="ttl-primary">お申し込みまでの流れ</div>
+
+      <div class="grid-card-containers">
+        <div class="step">
+          <div class="ttl-quaternary">Step 1</div> 
+          {% include "component/icons/step1.njk" %}
+          <div class="ttl-quinary">Webから 簡単お申し込み</div>  
+        </div>
+
+        <div>  {% include "component/icons/arrowStep.njk" %}</div>
+
+        <div class="step">
+          <div class="ttl-quaternary">Step 2</div> 
+          {% include "component/icons/step2.njk" %}
+          <div class="ttl-quinary">契約確認書類の 受領</div>  
+        </div>
+
+        <div>  {% include "component/icons/arrowStep.njk" %}</div>
+
+        <div class="step">
+          <div class="ttl-quaternary">Step 3</div> 
+          {% include "component/icons/step3.njk" %}
+          <div class="ttl-quinary">審査結果の ご案内</div>  
+        </div>
+
+        <div>  {% include "component/icons/arrowStep.njk" %}</div>
+
+        <div class="step">
+          <div class="ttl-quaternary">Step 4</div> 
+          {% include "component/icons/step4.njk" %}
+          <div class="ttl-quinary">郵送で カードお受け取り</div>  
+        </div>
+
+        <div>  {% include "component/icons/arrowStep.njk" %}</div>
+
+        <div class="step">
+          <div class="ttl-quaternary">Step 5</div> 
+          {% include "component/icons/step5.njk" %}
+          <div class="ttl-quinary">カードと一緒に届く 口座設定用紙を返送</div>  
+        </div>
+      </div>
+
+      <div class="btn-container">
+        <span class="bondi_blue_btn">
+          お申し込みはこちら
+          <svg xmlns="http://www.w3.org/2000/svg" width="15.095" height="15.095" viewBox="0 0 15.095 15.095">
+            <path id="Path_44704" data-name="Path 44704" d="M9.674,0V9.674H0"
+              transform="translate(0 7.548) rotate(-45)" fill="none" stroke="#fff" stroke-width="2" />
+          </svg>
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-subinfo">
+    <div class="sub-infos">
+      <div class="containers">
+        ※「アメリカン・エキスプレス」は、アメリカン・エキスプレスの登録商標です。(株)クレディセゾンは、アメリカン・エキスプレスのライセンスに基づき使用しています。
+      </div>
+    </div>
+  </section>
+</main>
+{% endblock %}
