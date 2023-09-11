@@ -1160,3 +1160,40 @@
     }
   }
 }
+
+// ボタン08
+.bondi_green_btn {
+  display: inline-flex;
+  max-width: 560px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px 35px;
+  background: $green-color-2;
+  box-shadow: none;
+  position: relative;
+  border-radius: 3px;
+  align-items: center;
+  margin: 0 auto;
+  position: relative;
+  border: 2px solid $green-color-2;
+  @media #{$sp} {
+    font-size: 14px;
+    padding: 13px;
+    max-width: 85%;
+    border: 2px solid $green-color-2;
+  }
+  &:hover {
+    border: 2px solid $green-color-2;
+    opacity: 1;
+    background: white;
+    color: $green-color-2;
+
+    svg {
+      path {
+        stroke: $green-color-2;
+      }
+    }
+  }
+}
