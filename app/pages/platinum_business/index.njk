@@ -58,16 +58,41 @@
 {% block content %}
 {% include 'partial/sidebar.njk' %}
 <main class="platinum_business-page">
-  {# <section class="section-welcome">
-    <div class="container-1200">
-      <h3 class="ttl-tertiary">自分に合ったビジネスカードを</h3>
-
-      <h1 class="ttl-primary">クレディセゾンのビジネスカード</h1>
-
-      <h4 class="ttl-quaternary">お客さまの活用シーンやニーズに合わせて、<br>
-        最適なビジネスカードをご用意しています。</h4>
+  <section id="top" class="section-welcome fadein">
+    <div class="section-welcome__banner">
+      <img src="/assets/img/common/bannet_10.png"/>
     </div>
-  </section> #}
+
+    <div class="section-welcome-container">
+      <div class="section-welcome-info">
+        <div class="section-welcome-left">
+          <div class="title-notice">
+            <div class="title-content">
+              個人与信型ビジネスカード
+            </div>
+          </div>
+          <h1 class="ttl-primary">セゾンプラチナ・ビジネス・ <br> アメリカン・エキスプレス®・カード</h1>
+          
+          <div class="card-content">
+            <div class="card">
+              <img src="/assets/img/credit_cards/american-express-01.png" />
+            </div>
+            <div class="ttl-quaternary">
+              初年度年会費無料
+            </div>
+          </div>
+
+          <div class="btn-containers">
+            <a class="blue_gradient_btn" href="#">お申し込みはこちら</a>
+          </div>
+        </div>
+
+        <div class="section-welcome-right pc-only">
+          ビジネスに <br> 余裕をもたらす <br> 一枚なら。
+        </div>
+      </div>
+    </div>
+  </section>
 
   <section class="section-tertiary">
     <div class="containers">
@@ -97,18 +122,18 @@
 
       <ul class="card-list">
         <li class="card">
-          <h2>test</h2>
-          <div class="grid__card--img"><img src="/assets/img/common/mask-group1.png" alt="work image"></div>
+          <h2>支払い猶予が最長56日</h2>
+          <div class="grid__card--img"><img src="/assets/img/common/MaskGroup4.png" alt="work image"></div>
           <p>請求サイクルは、毎月10日締めの翌月4日支払い。そのため、カード1回払いで決済した場合、決済からお支払いまでに最大56日間の猶予があるので、キャッシュフローにゆとりができます。</p>
         </li>
         <li class="card">
-          <h2>test</h2>
-          <div class="grid__card--img"><img src="/assets/img/common/mask-group2.png" alt="work image"></div>
+          <h2>ご利用額の増枠・一時増枠</h2>
+          <div class="grid__card--img"><img src="/assets/img/common/MaskGroup6.png" alt="work image"></div>
           <p>増枠期間や利用目的を定めた「一時的な増枠」か、定めのない「継続的な増枠」にて、ご利用可能枠を引き上げることが可能です。※初回から1000万円のご利用枠が設定されるケースもございます。</p>
         </li>
         <li class="card">
-          <h2>test</h2>
-          <div class="grid__card--img"><img src="/assets/img/common/mask-group3.png" alt="work image"></div>
+          <h2>選べる引き落とし口座</h2>
+          <div class="grid__card--img"><img src="/assets/img/common/MaskGroup5.png" alt="work image"></div>
           <p>お引き落とし口座を本会員様の「個人名義口座」、または「法人名義口座」よりお選びいただけます。法人名義口座をご指定いただけるので、経費管理がしやすくなります。</p>
         </li>
       </ul>
@@ -170,7 +195,7 @@
       <div class="grid-card-containers">
         <div class="card">
           <div class="card-img">
-            <img src="/assets/img/common/card-img-1.png" alt="work image" >
+            <img src="/assets/img/common/plat5.png" alt="work image" >
           </div>
           <div class="card-content">
             <h4 class="ttl-quaternary">国内空港ラウンジ</h4>
@@ -180,7 +205,7 @@
 
         <div class="card">
           <div class="card-img">
-            <img src="/assets/img/common/card-img-1.png" alt="work image" >
+            <img src="/assets/img/common/plat6.png" alt="work image" >
           </div>
           <div class="card-content">
             <h4 class="ttl-quaternary">海外空港ラウンジ</h4>
@@ -190,7 +215,7 @@
 
         <div class="card">
           <div class="card-img">
-            <img src="/assets/img/common/card-img-1.png" alt="work image" >
+            <img src="/assets/img/common/plat3.png" alt="work image" >
           </div>
           <div class="card-content">
             <h4 class="ttl-quaternary">一休プレミアサービス</h4>
@@ -200,7 +225,7 @@
 
         <div class="card">
           <div class="card-img">
-            <img src="/assets/img/common/card-img-1.png" alt="work image" >
+            <img src="/assets/img/common/plat4.png" alt="work image" >
           </div>
           <div class="card-content">
             <h4 class="ttl-quaternary">セゾンプレミアムセレクション by クラブ・コンシェルジュ</h4>
@@ -210,7 +235,7 @@
 
         <div class="card">
           <div class="card-img">
-            <img src="/assets/img/common/card-img-1.png" alt="work image" >
+            <img src="/assets/img/common/plat2.png" alt="work image" >
           </div>
           <div class="card-content">
             <h4 class="ttl-quaternary">プラチナ会員専用コールセンター</h4>
@@ -220,7 +245,7 @@
 
         <div class="card">
           <div class="card-img">
-            <img src="/assets/img/common/card-img-1.png" alt="work image" >
+            <img src="/assets/img/common/plat1.png" alt="work image" >
           </div>
           <div class="card-content">
             <h4 class="ttl-quaternary">従業員様も対象の旅行傷害保険</h4>
@@ -244,20 +269,20 @@
       
       <div class="grid-card-containers">
         <div class="card">
-          <h2 class="ttl-primary">test</h2>
-          <img src="/assets/img/common/work_image.png" alt="work image" class="card-img">
+          <h2 class="ttl-head">毎⽇の経費管理で</h2>
+          <img src="/assets/img/common/plat8.png" alt="work image" class="card-img">
           <div class="ttl-normal">起業したばかりで、できるだけ本業に専念したい。しかし、経費管理がいかに大変かを思い知る。セゾンプラチナ・ビジネス・アメリカン・エキスプレス®・カードに出会い、支払いにおける振り込みの手間や手数料が省けただけでなく、明細もすぐにわかるので、領収書管理といった煩わしさからも解放された。</div>
         </div>
         
         <div class="card">
-          <h2 class="ttl-primary">test</h2>
-          <img src="/assets/img/common/work_image.png" alt="work image" class="card-img">
+          <h2 class="ttl-head">毎⽉の資⾦管理で</h2>
+          <img src="/assets/img/common/plat7.png" alt="work image" class="card-img">
           <div class="ttl-normal">起業したばかりで、できるだけ本業に専念したい。しかし、経費管理がいかに大変かを思い知る。セゾンプラチナ・ビジネス・アメリカン・エキスプレス®・カードに出会い、支払いにおける振り込みの手間や手数料が省けただけでなく、明細もすぐにわかるので、領収書管理といった煩わしさからも解放された。</div>
         </div>
 
         <div class="card">
-          <h2 class="ttl-primary">test</h2>
-          <img src="/assets/img/common/work_image.png" alt="work image" class="card-img">
+          <h2 class="ttl-head">利用可能額を超えた時に</h2>
+          <img src="/assets/img/common/plat9.png" alt="work image" class="card-img">
           <div class="ttl-normal">起業したばかりで、できるだけ本業に専念したい。しかし、経費管理がいかに大変かを思い知る。セゾンプラチナ・ビジネス・アメリカン・エキスプレス®・カードに出会い、支払いにおける振り込みの手間や手数料が省けただけでなく、明細もすぐにわかるので、領収書管理といった煩わしさからも解放された。</div>
         </div>
       </div>
