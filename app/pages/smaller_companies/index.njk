@@ -61,7 +61,7 @@
                     {% for des in item.description %}
                       <li class="card-description__detail">
                         {% include 'component/icons/circle-checked.njk' %}
-                        {{ des }}
+                        <span>{{ des }}</span>
                       </li>
                     {% endfor %}
                   </ul>
