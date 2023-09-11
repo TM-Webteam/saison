@@ -357,6 +357,11 @@ main {
   margin: auto;
  }
 
+ .container-1000 {
+  max-width: 1000px;
+  margin: auto;
+ }
+
 /*** Font size ***/
 @each $value in $font-sizes {
   .font-#{$value} {
