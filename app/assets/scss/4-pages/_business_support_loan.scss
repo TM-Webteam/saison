@@ -35,14 +35,11 @@
   }
 
   .section-welcome {
-    padding: 133px 0 133px 0;
+    padding-top: 70px;
+    padding-bottom: 40px;
+    min-height: 558px;
     text-align: center;
     position: relative;
-    // background-image: url("/assets/img/business_support_loan/business_support_loan.png");
-    // background-repeat: no-repeat;
-    // background-size: cover;
-    // background-position: center;
-    // padding-top: 41.927083333%;
 
     .slick-slider {
       .slick-list {
@@ -69,7 +66,7 @@
       }
 
       &-left {
-        width: 60%;
+        width: 50%;
         text-align: left;
         @media #{$sp} {
           width: 100%;
@@ -161,12 +158,14 @@
     }
 
     &__desc {
-      text-align: left;
       margin-bottom: 123px;
       .ttl-quaternary {
+        text-align: left;
         font-size: 24px;
         color: #fff;
         @media #{$sp} {
+          text-align: center;
+
           font-size: 20px;
         }
       }
@@ -833,18 +832,4 @@
       }
     }
   }
-
-  // .tag-wrap {
-  //   filter: drop-shadow(4px 0px 1px rgba(50, 50, 0, 0.5));
-  // }
-  // .tag {
-  //   clip-path: polygon(
-  //     0 0,
-  //     calc(100% - 2em) 0,
-  //     100% 50%,
-  //     calc(100% - 2em) 100%,
-  //     0 100%,
-  //     0 0
-  //   );
-  // }
 }

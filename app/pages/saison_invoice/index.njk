@@ -50,21 +50,49 @@
 {# Main content #}
 {% block content %}
   {% include 'partial/sidebar.njk' %}
-  <main class="personal-page">
-    <section class="section-welcome fadein">
-      <div class="section-welcome__banner">
-        <img src="/assets/img/personal_page/personal_banner.png"/>
+  <main class="saison-invoice-page">
+  <section id="top" class="section-welcome fadein">
+    <div class="section-welcome__banner">
+      <img src="/assets/img/common/banner_service.png"/>
+    </div>
+
+    <div class="section-welcome-info">
+      <div class="section-welcome-info-left">
+        <div class="section-welcome__inner">
+          <h3 class="ttl-tertiary">BtoB向け後払い決済・請求代行サービス</h3>
+        </div>
+        <div class="section-welcome__title">
+          <h1 class="ttl-primary">セゾンインボイス</h1>
+        </div>
+        <div class="section-welcome__desc">
+          <h5 class="ttl-quaternary">最短翌⽇⼊⾦。未⼊⾦対応をゼロに。<br/>
+            毎⽉の請求業務を最短15分に短縮！
+          </h5>
+        </div>
+        <div class="section-welcome__act">
+          <a href="#" class="act-more orange_more2">
+            <div class="act-more-tooltip">
+              <h4 class="act-more-tooltip__content">セゾンインボイスが3分でわかる！</h4>
+            </div>
+            資料ダウンロード
+          </a>
+        </div>
       </div>
-      <div class="section-welcome__inner">
-        <h3 class="ttl-tertiary">ビジネスオーナー様の「うれしい」をご提供！</h3>
+
+      <div class="section-welcome-info-right pc-only">
+        <div class="section-welcome-right__img">
+          <img src="/assets/img/saison_invoice/saison-invoice_inner.png"/>
+
+          <ul class="info-list">
+            <li class="info-item">月額固定費0円・手数料率は<span class="special">業界最低水準！</span></li>
+            <li class="info-item">請求から回収業務の督促まで<span class="special">すべて委託！</span></li>
+            <li class="info-item">最短翌日入金で、<span class="special">キャッシュフローも改善</span></li>
+          </ul>
+        </div>
       </div>
-      <div class="section-welcome__title">
-        <h1 class="ttl-primary">個人事業主様向けサービス</h1>
-      </div>
-      <div>
-        <a href="#" class="blue_gradient_btn">{{ common.button.download }}</a>
-      </div>
-    </section>
+    </div>
+  </section>
+
     <section class="section-primary fadein">
       <h4 class="ttl-quaternary">中小企業の経営者様・経理ご担当者様へ</h4>
       <h2 class="ttl-primary">こんなニーズやお悩みありませんか？</h2>
