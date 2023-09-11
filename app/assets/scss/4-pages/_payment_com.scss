@@ -25,6 +25,12 @@
         font-weight: normal;
       }
     }
+    .yellow-underline {
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0) 70%, #ffff01 0);
+    }
+    .primary-txt {
+      color: $primary-color;
+    }
   }
 
   .section-welcome {
@@ -310,69 +316,198 @@
     }
   }
 
-  .section-reason-chosing {
-    background: #F5F5F5;
+  .section-quaternary {
     padding: 70px 0;
-  }
-
-    // ===========END SECTIONS==========
-
-    .section-primary__wrapper {
-      .containers {
-        max-width: unset;
-        padding: 0;
-        margin-top: 40px;
-
-        .card-list {
-          display: grid;
-          grid-template-columns: repeat(3, minmax(auto, 380px));
-          gap: 30px;
-          justify-content: center;
-          a.card {
-            transition: all 0.3s;
-            .arrow-down {
-              transition: all 0.3s;
-            }
-            &:hover {
-              opacity: 1;
-              box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-              .arrow-down {
-                top: 15px;
-              }
+    .ttl-notice {
+      margin-bottom: 25px;
+    }
+    .section-quaternary-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .card {
+        position: relative;
+        width: 360px;
+        border-radius: 3px;
+        box-shadow: 0px 3px 20px #0000001c;
+        .card-title {
+          width: 100%;
+          display: flex;
+          .step-no {
+            font-size: 16px;
+            font-weight: 500;
+            color: $white-color;
+            padding: 20px 13px;
+            background: $gradient-bg-2;
+          }
+          .step-title {
+            width: 100%;
+            text-align: center;
+            color: $black-color;
+            font-size: 18px;
+            font-weight: bold;
+            background-color: $blue-color-2;
+            padding: 17px 0;
+          }
+        }
+        .card-content {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding: 30px 30px 60px 30px;
+          .tag {
+            display: inline-block;
+            color: $white-color;
+            font-size: 16px;
+            font-weight: bold;
+            padding: 3px 38px;
+            border-radius: 20px;
+            background-color: $primary-color;
+            &.outline {
+              color: $green-color-2;
+              background-color: transparent;
+              border: 2px solid $green-color-2;
             }
           }
-          .card-type6 {
-            .ttl-quaternary-container {
-              margin-bottom: 0;
+          img {
+            width: 119px;
+            object-fit: contain;
+            margin: 30px 0;
+          }
+          .card-description {
+            font-size: 16px;
+            .text-note {
+              color: $gray-color-8;
+              font-size: 13px;
+              line-height: 20px;
+              font-weight: bold;
             }
           }
+        }
+      }
+      .information {
+        display: inline-block;
+        padding: 14px 66px;
+        font-size: 20px;
+        background-color: $blue-color-2;
+        border-radius: 3px;
+        margin: 60px 0 105px;
+        span {
+          font-weight: bold;
+        }
+      }
+      .act-more {
+        margin-left: 0;
+        position: relative;
+        padding: 14px 64px 14px 48px;
+        white-space: nowrap;
+        background: $gradient-bg;
 
-          .card-type10 {
-            padding: 0;
-            a.card-type10-container {
-              padding: 35px 30px 30px;
-              transition: all 0.3s;
-              .bondi_blue_outline_btn {
-                font-weight: 700;
-              }
-              &:hover {
-                opacity: 1;
-                .bondi_blue_outline_btn {
-                  color: $white-color;
-                  background-color: $blue-color;
-                  &::before {
-                    border-top: 3px solid $white-color;
-                    border-right: 3px solid $white-color;
-                  }
-                }
-              }
+        &-tooltip {
+          position: absolute;
+          width: auto;
+          top: -65px;
+          width: auto;
+          white-space: nowrap;
+          left: 50%;
+          transform: translateX(-50%);
+
+          &__content {
+            position: relative;
+            width: fit-content;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 25px;
+            background-color: #fff;
+            border-radius: 3px;
+            border: 1px solid $primary-color;
+            color: $primary-color;
+            padding: 10px 20px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &::before {
+              position: absolute;
+              content: "\A";
+              top: calc(100% - 1px);
+              left: calc(50% - 15px);
+              width: 0;
+              height: 0;
+              border-left: 15px solid transparent;
+              border-right: 15px solid transparent;
+              border-top: 10px solid $primary-color;
             }
-          }
-
-          @media #{$tab} {
-            grid-template-columns: auto;
           }
         }
       }
     }
+  }
+
+  .section-reason-chosing {
+    background: #f5f5f5;
+    padding: 70px 0;
+  }
+
+  // ===========END SECTIONS==========
+
+  .section-primary__wrapper {
+    .containers {
+      max-width: unset;
+      padding: 0;
+      margin-top: 40px;
+
+      .card-list {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(auto, 380px));
+        gap: 30px;
+        justify-content: center;
+        a.card {
+          transition: all 0.3s;
+          .arrow-down {
+            transition: all 0.3s;
+          }
+          &:hover {
+            opacity: 1;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+            .arrow-down {
+              top: 15px;
+            }
+          }
+        }
+        .card-type6 {
+          .ttl-quaternary-container {
+            margin-bottom: 0;
+          }
+        }
+
+        .card-type10 {
+          padding: 0;
+          a.card-type10-container {
+            padding: 35px 30px 30px;
+            transition: all 0.3s;
+            .bondi_blue_outline_btn {
+              font-weight: 700;
+            }
+            &:hover {
+              opacity: 1;
+              .bondi_blue_outline_btn {
+                color: $white-color;
+                background-color: $blue-color;
+                &::before {
+                  border-top: 3px solid $white-color;
+                  border-right: 3px solid $white-color;
+                }
+              }
+            }
+          }
+        }
+
+        @media #{$tab} {
+          grid-template-columns: auto;
+        }
+      }
+    }
+  }
 }
