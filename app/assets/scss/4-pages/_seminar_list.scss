@@ -56,6 +56,9 @@
       .section-welcome__title {
         line-height: 60px;
         margin-bottom: 30px;
+        .ttl-primary {
+          margin-bottom: 31px;
+        }
         @media #{$sp} {
           font-size: 22px;
         }

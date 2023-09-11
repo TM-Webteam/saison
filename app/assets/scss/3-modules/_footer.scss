@@ -135,7 +135,7 @@ footer {
           &:hover {
             a {
               border: 2px solid $blue-color;
-              background-color: black;
+            background-color: $blue-color;
               color: $white-color;
             }
 
