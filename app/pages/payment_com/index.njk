@@ -84,7 +84,20 @@ link: "#material"
           </a>
         </div>
       </div>
-      <div class="section-welcome-right">
+      <div class="section-welcome-right pc-only">
+        <ul class="info-list">
+          <li><span class="special">最短1日後</span>の振り込みに対応！※1</li>
+          <li><span class="special">一律4%</span>のお得な手数料</li>
+          <li>サービス開始1年で導入企業数 <span class="special">20,000社</span>突破！</li>
+        </ul>
+        <div class="info-note">
+          <span>※1 …UPSIDERカード・セゾンカード利用で</span>
+          <span>　前営業日正午までに振り込みを行った場合</span>
+        </div>
+      </div>
+
+      <div class="section-welcome-right-sp sp-only">
+        <img>
         <ul class="info-list">
           <li><span class="special">最短1日後</span>の振り込みに対応！※1</li>
           <li><span class="special">一律4%</span>のお得な手数料</li>
@@ -230,7 +243,7 @@ link: "#material"
         <div>
           <a href="#" class="act-more orange_more2">
             <div class="act-more-tooltip">
-              <h4 class="act-more-tooltip__content">お急ぎの方はまずは無料登録！審査や書類提出は必要ありません。</h4>
+              <h4 class="act-more-tooltip__content">{{ "お急ぎの方はまずは無料登録！\n 審査や書類提出は必要ありません。" | safe }}</h4>
             </div>
             まずは無料登録からスタート
           </a>
@@ -244,7 +257,7 @@ link: "#material"
       <h1 class="ttl-primary">支払い.comが、「資金繰りのお悩み」を解決します。</h1>
       <div class="act-more">
         <div class="act-more-tooltip">
-          <h4 class="act-more-tooltip__content">支払い.comの仕組みとメリットが3分でわかる！</h4>
+          <h4 class="act-more-tooltip__content">{{"支払い.comの仕組みとメリットが \n 3分でわかる！" | safe}}</h4>
         </div>
         <div class="act-more-content">
           <div class="act-more-content-img">

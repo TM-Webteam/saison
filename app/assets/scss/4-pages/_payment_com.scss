@@ -19,6 +19,7 @@
       }
       @media #{$sp} {
         font-size: 20px;
+        text-align: center !important;
       }
     }
     .ttl-quaternary {
@@ -56,9 +57,15 @@
         top: 0;
         left: 0;
         transform: none;
+        width: 100%;
+        padding-top: 30px;
       }
     }
     .section-welcome-left {
+      @media #{$sp} {
+        text-align: center;
+      }
+
       .title-notice {
         position: relative;
         display: inline-block;
@@ -101,10 +108,14 @@
         display: inline-flex;
         gap: 20px;
         .act-more {
-          margin-left: 0;
+          margin: auto;
           position: relative;
           padding: 14px 64px 14px 48px;
           white-space: nowrap;
+
+          @media #{$sp} {
+            max-width: unset;
+          }
 
           &-tooltip {
             position: absolute;
@@ -133,7 +144,7 @@
               &::before {
                 position: absolute;
                 content: "\A";
-                top: calc(100% - 1px);
+                top: 100%;
                 left: calc(50% - 15px);
                 width: 0;
                 height: 0;
@@ -147,6 +158,7 @@
 
         @media #{$sp} {
           flex-direction: column;
+          gap: 100px;
         }
       }
     }
@@ -298,6 +310,10 @@
             align-items: center;
             justify-content: center;
 
+            @media #{$sp} {
+              white-space: pre;
+            }
+
             &::before {
               position: absolute;
               content: "\A";
@@ -428,7 +444,7 @@
         }
       }
       .act-more {
-        margin-left: 0;
+        margin: auto;
         position: relative;
         padding: 14px 64px 14px 48px;
         white-space: nowrap;
@@ -442,6 +458,10 @@
           white-space: nowrap;
           left: 50%;
           transform: translateX(-50%);
+
+          @media #{$sp} {
+            top: -90px;
+          }
 
           &__content {
             position: relative;
@@ -459,10 +479,14 @@
             align-items: center;
             justify-content: center;
 
+            @media #{$sp} {
+              white-space: pre;
+            }
+
             &::before {
               position: absolute;
               content: "\A";
-              top: calc(100% - 1px);
+              top: 100%;
               left: calc(50% - 15px);
               width: 0;
               height: 0;
