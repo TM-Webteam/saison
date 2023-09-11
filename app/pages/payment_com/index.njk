@@ -195,5 +195,45 @@ link: ""
       </div>
     </div>
   </section>
+
+  <section id="reason-chosing" class="section-reason-chosing fadein">
+    <div class="ttl-notice">選ばれる理由.com?</div>
+    <h1 class="ttl-primary">サービス開始1年で、導入企業数20,000社突破！<span>※1</span></h1>
+    <h4 class="ttl-quaternary">
+      個人事業主様から1,000名を超える規模の法人様まで、選ばれるのには理由があります。
+    </h4>
+
+    <div class="section-primary__wrapper">
+      <div class="containers">
+        <ul class="inherit card-list">
+          {% for item in payment_page.reason_chosing %}
+            <li class="card-type23">
+              <a href="#" class="card">
+                <div class="ttl-quaternary-container">
+                  <h4 class="ttl-quaternary">
+                    {{ item.title }}
+                  </h4>
+                </div>
+                <div class="card-image">
+                  <img src={{item.image}}>
+                </div>
+                <div class="card-description">
+                  {{ item.description | safe }}
+                </div>
+
+                {% if item.notes %}
+                  <ul class="card-note">
+                    {% for note in item.notes %}
+                      <li class="text-muted">{{ note}}</li>
+                    {% endfor %}
+                  </ul>
+                {% endif %}
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </section>
 </main>
 {% endblock %}
