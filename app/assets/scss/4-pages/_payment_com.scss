@@ -1,10 +1,13 @@
-.rbt-list {
-  .rbt-item {
-    &.active {
-      background: $orange-gradient;
+.payment_com {
+  .rbt-list {
+    .rbt-item {
+      &.active {
+        background: $orange-gradient;
+      }
     }
   }
 }
+
 .payment_com-page {
   section {
     .ttl-notice {
