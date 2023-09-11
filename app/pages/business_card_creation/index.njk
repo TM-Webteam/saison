@@ -14,747 +14,785 @@
 {# Custom tags before </body> #}
 {% block customJs %}{% endblock %}
 
+{# Breadcrumb #}
+{% set breadcrumb = [
+  {
+    text: "ビジネスカードを作りたい",
+    link: "#"
+  }
+] %}
+
 {# Main content #}
 {% block content %}
 
-  <main class="business_card_creation-page">
-    <section class="section-welcome">
-      <div class="container-1200">
-        <h3 class="ttl-tertiary">自分に合ったビジネスカードを。</h3>
+<main class="business_card_creation-page">
+  <section class="section-welcome">
+    <div class="container-1200">
+      <h3 class="ttl-tertiary">自分に合ったビジネスカードを</h3>
 
-        <h1 class="ttl-primary">クレディセゾンのビジネスカード</h1>
+      <h1 class="ttl-primary">クレディセゾンのビジネスカード</h1>
 
-        <h4 class="ttl-quaternary">お客さまの活用シーンやニーズに合わせて、<br>
-          最適なビジネスカードをご用意しています。</h4>
+      <h4 class="ttl-quaternary">お客さまの活用シーンやニーズに合わせて、<br>
+        最適なビジネスカードをご用意しています。</h4>
+    </div>
+  </section>
+
+  <section class="section-primary">
+    <div class="anc01">
+      <div class="containers">
+        <ul class="flex jcC gap30 inherit anc01__box">
+          <li>
+            <a href="#">ビジネス規模で選ぶ</a>
+          </li>
+          <li>
+            <a href="#">目的や使い方で選ぶ</a>
+          </li>
+          <li>
+            <a href="#">選ばれる理由</a>
+          </li>
+          <li>
+            <a href="#">選ばれる理由</a>
+          </li>
+        </ul>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="section-primary">
-      <div class="anc01">
-        <div class="containers">
-          <ul class="flex jcC gap30 inherit anc01__box">
-            <li>
-              <a href="#">ビジネス規模で選ぶ</a>
-            </li>
-            <li>
-              <a href="#">目的や使い方で選ぶ</a>
-            </li>
-            <li>
-              <a href="#">選ばれる理由</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section class="section-secondary">
+  <section class="section-secondary">
+    <div class="containers">
       <h2 class="ttl-secondary">ビジネスカードを選ぶときのポイント</h2>
 
-      <ul class="flex jcC gap30 card-list">
-        <li class="card-type6">
-          <a href="#" class="card">
-            <div class="ttl-quaternary-container">
-              <h4 class="ttl-quaternary">ビジネス規模</h4>
-            </div>
-
-            <div class="flex gap30">
-              <div class="circle-container">
-                個人事業者
-              </div>
-
-              <div class="circle-container">
-                法人
-              </div>
-            </div>
-
-            <h5 class="ttl-senary">
-              ビジネスで利用できるカードは、一般的に個人事業者向けの「ビジネスカード」と事業者向けの「法人カード」の2つのタイプに分けられます。規模に合ったカードを選択することが大切です。</h5>
-          </a>
+      <ul class="card-list">
+        <li class="card">
+          <h2>ビジネス規模</h2>
+          <div class="grid__card--img"><img src="/assets/img/common/mask-group1.png" alt="work image"></div>
+          <p>ビジネスで利用できるカードは、一般的に個人事業主様向けの「ビジネスカード」と事業者向けの「法人カード」の2つのタイプに分けられます。ビジネス規模に合ったカードを選択することが大切です。</p>
         </li>
-
-        <li class="card-type6">
-          <a href="#" class="card">
-            <div class="ttl-quaternary-container">
-              <h4 class="ttl-quaternary">利用目的と利用枠</h4>
-            </div>
-
-            <div class="circle-container">
-              イラスト
-              <br>
-              または
-              <br>
-              アイコン
-            </div>
-
-            <h5 class="ttl-senary">
-              ビジネスカードは、利用目的により必要とする利用額も異なります。まずは利用目的・使い方と毎月の利用金額をシミュレーションして必要な利用枠のあるビジネスカードを選びましょう。</h5>
-          </a>
+        <li class="card">
+          <h2>利用目的と利用枠</h2>
+          <div class="grid__card--img"><img src="/assets/img/common/mask-group2.png" alt="work image"></div>
+          <p>ビジネスカードは、利用目的により必要なご利用可能枠も異なります。まずは利用目的・使い方と毎月の利用金額をシミュレーションして必要な利用枠のあるビジネスカードを選びましょう。</p>
         </li>
-
-        <li class="card-type6">
-          <a href="#" class="card">
-            <div class="ttl-quaternary-container">
-              <h4 class="ttl-quaternary">付帯サービス</h4>
-            </div>
-
-            <div class="circle-container">
-              イラスト
-              <br>
-              または
-              <br>
-              アイコン
-            </div>
-
-            <h5 class="ttl-senary">ビジネス用のカードにもさまざまな付帯サービスがあります。自社にとって有益な、優先したい付帯サービスをピックアップして、ビジネスカードを選んでいきましょう。</h5>
-          </a>
+        <li class="card">
+          <h2>付帯サービス</h2>
+          <div class="grid__card--img"><img src="/assets/img/common/mask-group3.png" alt="work image"></div>
+          <p>ビジネス用のカードにもさまざまな付帯サービスがあります。自社にとって有益な、活用しやすいサービスが付帯しているかどうかをひとつの基準に、ビジネスカードを選んでいきましょう。</p>
         </li>
       </ul>
-    </section>
+    </div>
+  </section>
 
-    <section class="section-tertiary">
-      <div class="container-1200">
-        <h3 class="ttl-tertiary">ビジネス規模で選ぶ</h3>
+  <section class="section-tertiary">
+    <div class="containers">
+      <h3 class="ttl-tertiary">ビジネス規模で選ぶ</h3>
+      <h1 class="ttl-primary">ビジネスカード一覧</h1>
 
-        <h2 class="ttl-secondary">ビジネスカード一覧</h2>
+      <div class="table-card">
+        <div class="table-card-head card-type-1">中小企業様向け（法人与信型ビジネスカード）</div>
+        <div class="grid-card-container">
+          <div>
+            <div class="title-row">
+              カード名
+            </div>
 
-        <div class="notification-primary">
-          <div class="notification-panel2">
-            <div class="relation">
-              <h3 class="single__ttl">
-                <span>中小企業様向け（法人与信型ビジネスカード）</span></h3>
+            <div class="card-row">
+              <div class="ttl-quaternary">
+                キャッシュバックを重視したい方へ
+              </div>
+              <div class="ttl-tertiary">セゾンプラチナ・ビジネス プロ アメリカン・エキスプレス®・カード</div>
+              <div class="card-img">
+                <img src="/assets/img/credit_cards/american-express-01.png" alt="Your Image" class="credit-card-img">
+              </div>
+            </div>
 
-              <div class="table01">
-                <table>
-                  <tr>
-                    <th style="width: 292px;">
-                      <div>カード名</div>
-                    </th>
-                    <th style="width: 144px;">
-                      <div>年会費</div>
-                    </th>
-                    <th style="width: 160px;">
-                      <div>申込資格</div>
-                    </th>
-                    <th style="width: 102px;">
-                      <div>支払い サイクル</div>
-                    </th>
-                    <th style="width: 105px;">
-                      <div>キャッシュ バック 還元率</div>
-                    </th>
-                    <th style="width: 105px;">
-                      <div>永久不滅 ポイント 還元率</div>
-                    </th>
-                    <th style="width: 107px;">
-                      <div>JALマイル 還元率</div>
-                    </th>
-                    <th style="width: 115px;">
-                      <div>詳細</div>
-                    </th>
-                  </tr>
+            <div class="card-row">
+              <div class="ttl-quaternary">
+                年会費を重視したい方へ
+              </div>
+              <div class="ttl-tertiary">セゾンゴールド・<br> ビジネス プロ・カード</div>
+              <div class="card-img">
+                <img src="/assets/img/credit_cards/saison-01.png" alt="Your Image" class="credit-card-img">
+              </div>
+            </div>
 
-                  <tr>
-                    <td class="table-data-primary">
-                      <div class="container">
-                        <h6 class="ttl-septenary">キャッシュバックを重視したいという方へ</h6>
-                        <h5 class="ttl-senary">&nbsp; &nbsp; セゾンプラチナ・ビジネス プロ
-                          <br>
-                          アメリカン・エキスプレス®・カード</h5>
+            <div class="card-row">
+              <div class="ttl-quaternary">
+                カードレスの法人カードをお探しの方へ
+              </div>
+              <div class="ttl-tertiary">セゾン・アメリカン・エキスプレス®・ビジネス プロ・パーチェシング・カード</div>
+              <div class="card-img">
+                <img src="/assets/img/credit_cards/saison-02.png" alt="Your Image" class="credit-card-img">
+              </div>
+            </div>
 
-                        <div class="credit-card01">
-                          <img src="/assets/img/credit_cards/american-express-01.png" alt="Your Image" class="credit-card-img">
-                        </div>
-                      </div>
-                    </td>
+          </div>
+          <div>
+            <div class="title-row">
+              年会費
+            </div>
 
-                    <td class="table-data-secondary">
-                      <h6 class="ttl-septenary">27,500円（税込）</h6>
-                      <h6 class="ttl-septenary sub-content">追加カード年会費 3,300円（税込）</h6>
-                    </td>
+            <div class="card-row">
+              <div class="ttl-secondary">
+                27,500円（税込）
+              </div>
+              <div class="ttl-normal">セゾンプラチナ・ビジネス プロ アメリカン・エキスプレス®・カード</div>
 
-                    <td class="table-data-tertiary">
-                      <div>
-                        中小規模
-                        <br>法人事業者
-                      </div>
-                    </td>
+            </div>
 
-                    <td class="table-data-tertiary">
-                      <div>
-                        最大84日間
-                      </div>
-                    </td>
+            <div class="card-row">
+              <div class="ttl-secondary">
+                3,300円（税込）
+              </div>
+              <div class="ttl-normal">追加カード年会費 1,100円（税込）</div>
 
-                    <td class="table-data-tertiary">
-                      <div>
-                        1.0%
-                      </div>
-                    </td>
+            </div>
 
-                    <td class="table-data-tertiary">
-                      <div>
-                        なし
-                      </div>
-                    </td>
+            <div class="card-row">
+              <div class="ttl-secondary">
+                11,000円（税込）
+              </div>
+              <div class="ttl-normal">追加カード年会費 1,100円（税込）</div>
+            </div>
+          </div>
+          <div>
+            <div class="title-row">申込資格</div>
+            <div class="card-row">
+              <div class="ttl-secondary">
+                中小規模 <br> 法人事業者
+              </div>
+            </div>
 
-                    <td class="table-data-tertiary">
-                      <div>
-                        なし
-                      </div>
-                    </td>
+            <div class="card-row">
+              <div class="ttl-secondary">
+                中小規模 <br> 法人事業者
+              </div>
+            </div>
 
-                    <td class="table-data-tertiary">
-                      <div>
-                        <a class="orange_fill_btn">詳細</a>
-                      </div>
-                    </td>
-                  </tr>
-
-                  <tr>
-                    <td class="table-data-primary">
-                      <div class="container">
-                        <h6 class="ttl-septenary">年会費を重視したいという方へ</h6>
-                        <h5 class="ttl-senary">セゾンゴールド・ビジネス プロ・カード</h5>
-
-                        <div class="credit-card01">
-                          <img src="/assets/img/credit_cards/saison-01.png" alt="Your Image" class="credit-card-img">
-                        </div>
-                      </div>
-                    </td>
-
-                    <td class="table-data-secondary">
-                      <h6 class="ttl-septenary">3,300円（税込）</h6>
-                      <h6 class="ttl-septenary sub-content">追加カード年会費 1,100円（税込）</h6>
-                    </td>
-
-                    <td class="table-data-tertiary">
-                      <div>
-                        中小規模
-                        <br>法人事業者
-                      </div>
-                    </td>
-
-                    <td class="table-data-tertiary">
-                      <div>
-                        最大84日間
-                      </div>
-                    </td>
-
-                    <td class="table-data-tertiary">
-                      <div>
-                        0.5%
-                      </div>
-                    </td>
-
-                    <td class="table-data-tertiary">
-                      <div>
-                        なし
-                      </div>
-                    </td>
-
-                    <td class="table-data-tertiary">
-                      <div>
-                        なし
-                      </div>
-                    </td>
-
-                    <td class="table-data-tertiary">
-                      <div>
-                        <a class="orange_fill_btn">詳細</a>
-                      </div>
-                    </td>
-                  </tr>
-
-                  <tr>
-                    <td class="table-data-primary">
-                      <div class="container">
-                        <h5 class="ttl-senary">セゾン・アメリカン・エキスプレス®・ビジネス プロ・パーチェシング・カード</h5>
-
-                        <div class="credit-card01">
-                          <img src="/assets/img/credit_cards/saison-02.png" alt="Your Image" class="credit-card-img">
-                        </div>
-                      </div>
-                    </td>
-
-                    <td class="table-data-secondary">
-                      <h6 class="ttl-septenary">11,000円（税込）</h6>
-                      <h6 class="ttl-septenary sub-content">追加カード年会費 1,100円（税込）</h6>
-                    </td>
-
-                    <td class="table-data-tertiary">
-                      <div>
-                        中小規模
-                        <br>法人事業者
-                      </div>
-                    </td>
-
-                    <td class="table-data-tertiary">
-                      <div>
-                        最大84日間
-                      </div>
-                    </td>
-
-                    <td class="table-data-tertiary">
-                      <div>
-                        0.5%
-                      </div>
-                    </td>
-
-                    <td class="table-data-tertiary">
-                      <div>
-                        なし
-                      </div>
-                    </td>
-
-                    <td class="table-data-tertiary">
-                      <div>
-                        なし
-                      </div>
-                    </td>
-
-                    <td class="table-data-tertiary">
-                      <div>
-                        <a class="orange_fill_btn">詳細</a>
-                      </div>
-                    </td>
-                  </tr>
-                </table>
+            <div class="card-row">
+              <div class="ttl-secondary">
+                中小規模 <br> 法人事業者
               </div>
             </div>
           </div>
+          <div>
+            <div class="title-row">支払い サイクル</div>
+            <div class="card-row">
+              <div class="ttl-secondary">
+                最大84日間
+              </div>
+            </div>
 
-          <div class="notification-panel2 second-of-type">
-            <div class="relation">
-              <h3 class="single__ttl">
-                <span>中小規模ビジネスオーナー、個人事業主様向け（個人与信型ビジネスカード）</span></h3>
+            <div class="card-row">
+              <div class="ttl-secondary">
+                最大84日間
+              </div>
+            </div>
 
-              <div class="table01">
-                <table>
-                  <tr>
-                    <th style="width: 292px;">
-                      <div>カード名</div>
-                    </th>
-                    <th style="width: 144px;">
-                      <div>年会費</div>
-                    </th>
-                    <th style="width: 160px;">
-                      <div>申込資格</div>
-                    </th>
-                    <th style="width: 102px;">
-                      <div>支払い サイクル</div>
-                    </th>
-                    <th style="width: 105px;">
-                      <div>キャッシュ バック 還元率</div>
-                    </th>
-                    <th style="width: 105px;">
-                      <div>永久不滅 ポイント 還元率</div>
-                    </th>
-                    <th style="width: 107px;">
-                      <div>JALマイル 還元率</div>
-                    </th>
-                    <th style="width: 115px;">
-                      <div>詳細</div>
-                    </th>
-                  </tr>
+            <div class="card-row">
+              <div class="ttl-secondary">
+                最大84日間
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="title-row">キャッシュ バック 還元率</div>
+            <div class="card-row">
+              <div class="ttl-secondary">
+                1.0%
+              </div>
+            </div>
 
-                  <tr>
-                    <td class="table-data-primary">
-                      <div class="container">
-                        <h6 class="ttl-septenary">キャッシュバックを重視したいという方へ</h6>
-                        <h5 class="ttl-senary">&nbsp; &nbsp; セゾンプラチナ・ビジネス プロ
-                          <br>
-                          アメリカン・エキスプレス®・カード</h5>
+            <div class="card-row">
+              <div class="ttl-secondary">
+                0.5%
+              </div>
+            </div>
 
-                        <div class="credit-card01">
-                          <img src="/assets/img/credit_cards/american-express-01.png" alt="Your Image" class="credit-card-img">
-                        </div>
-                      </div>
-                    </td>
+            <div class="card-row">
+              <div class="ttl-secondary">
+                0.5%
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="title-row">永久不滅 ポイント 還元率</div>
+            <div class="card-row">
+              <div class="ttl-secondary">
+                なし
+              </div>
+            </div>
 
-                    <td class="table-data-secondary">
-                      <h6 class="ttl-septenary">22,000円（税込） 初年度年会費無料</h6>
-                      <h6 class="ttl-septenary sub-content">追加カード年会費 3,300円（税込）</h6>
-                    </td>
+            <div class="card-row">
+              <div class="ttl-secondary">
+                なし
+              </div>
+            </div>
 
-                    <td class="table-data-tertiary">
-                      <div>
-                        <h6 class="ttl-septenary">個人事業主または 経営者の方
-                        </h6>
-                        <h6 class="ttl-septenary sub-content">（学生、未成年除く）</h6>
-                      </div>
-                    </td>
+            <div class="card-row">
+              <div class="ttl-secondary">
+                なし
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="title-row">JALマイル 還元率</div>
 
-                    <td class="table-data-tertiary">
-                      <div>
-                        <h6 class="ttl-septenary">最大56日間
-                        </h6>
-                        <h6 class="ttl-septenary sub-content">毎月10日締め/翌月4日払い</h6>
-                      </div>
-                    </td>
+            <div class="card-row">
+              <div class="ttl-secondary">
+                なし
+              </div>
+            </div>
 
-                    <td class="table-data-tertiary">
-                      <div>
-                        なし
-                      </div>
-                    </td>
+            <div class="card-row">
+              <div class="ttl-secondary">
+                なし
+              </div>
+            </div>
 
-                    <td class="table-data-tertiary no-padding-right">
-                      <div>
-                        <h6 class="ttl-septenary">【国内】0.5%
-                          <br>
-                          【海外】1.0%
-                        </h6>
-                      </div>
-                    </td>
+            <div class="card-row">
+              <div class="ttl-secondary">
+                なし
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="title-row">詳細</div>
 
-                    <td class="table-data-tertiary">
-                      <div>
-                        <h6 class="ttl-septenary">最大1.125%
-                        </h6>
-                      </div>
-                    </td>
+            <div class="card-row">
+              <div class="card-btn card-type-1">
+                <a href="#" class="">詳細</a>
+              </div>
+            </div>
 
-                    <td class="table-data-tertiary">
-                      <div>
-                        <a class="orange_fill_btn">詳細</a>
-                      </div>
-                    </td>
-                  </tr>
+            <div class="card-row">
+              <div class="card-btn card-type-1">
+                <a href="#" class="">詳細</a>
+              </div>
+            </div>
 
-                  <tr>
-                    <td class="table-data-primary">
-                      <div class="container">
-                        <h6 class="ttl-septenary">年会費無料にこだわりたいという方へ</h6>
-                        <h5 class="ttl-senary">セゾンコバルト・ビジネス・アメリカン・ エキスプレス®・カード</h5>
-
-                        <div class="credit-card01">
-                          <img src="/assets/img/credit_cards/american-express-02.png" alt="Your Image" class="credit-card-img">
-                        </div>
-                      </div>
-                    </td>
-
-                    <td class="table-data-secondary">
-                      <h6 class="ttl-septenary">永年無料</h6>
-                    </td>
-
-                    <td class="table-data-tertiary">
-                      <div>
-                        <h6 class="ttl-septenary">個人事業主またはフリーランス、経営者の方</h6>
-                        <h6 class="ttl-septenary sub-content">（学生、未成年除く）</h6>
-                      </div>
-                    </td>
-
-                    <td class="table-data-tertiary">
-                      <div>
-                        <h6 class="ttl-septenary">最大56日間
-                        </h6>
-                        <h6 class="ttl-septenary sub-content">毎月10日締め/翌月4日払い</h6>
-                      </div>
-                    </td>
-
-                    <td class="table-data-tertiary">
-                      <div>
-                        なし
-                      </div>
-                    </td>
-
-                    <td class="table-data-tertiary no-padding-right">
-                      <div>
-                        <h6 class="ttl-septenary">【国内】0.5%
-                          <br>
-                          【海外】1.0%
-                        </h6>
-                      </div>
-                    </td>
-
-                    <td class="table-data-tertiary">
-                      <div>
-                        <h6 class="ttl-septenary">最大0.125%
-                        </h6>
-                      </div>
-                    </td>
-
-                    <td class="table-data-tertiary">
-                      <div>
-                        <a class="orange_fill_btn">詳細</a>
-                      </div>
-                    </td>
-                  </tr>
-                </table>
+            <div class="card-row">
+              <div class="card-btn card-type-1">
+                <a href="#" class="">詳細</a>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
 
-    <section class="section-quaternary">
-      <div class="container-1200">
-        <h3 class="ttl-tertiary">自分にあったカードは？</h3>
+      <div class="table-card">
+        <div class="table-card-head card-type-2">中小規模ビジネスオーナー様、個人事業主様向け（個人与信型ビジネスカード）z</div>
+        <div class="grid-card-container">
+          <div>
+            <div class="title-row">
+              カード名
+            </div>
 
-        <h2 class="ttl-secondary">利用目的や使い方でマッチしたカードを選ぶ</h2>
-
-        <ul class="flex gap30 card-list">
-          <li class="card-type14">
-            <div class="flex card__header gap20">
-              <div class="circle-child">
-                <div class="circle-content">アイコン・ イラスト</div>
+            <div class="card-row">
+              <div class="ttl-quaternary">
+                ポイント・マイルの還元率を <br> 重視したい方へ
               </div>
-              <div class="normal-child">
-                JALの利用が多いのでマイルを貯めたい
+              <div class="ttl-tertiary">セゾンプラチナ・ビジネス・ アメリカン・エキスプレス®・カード</div>
+              <div class="card-img">
+                <img src="/assets/img/credit_cards/american-express-01.png" alt="Your Image" class="credit-card-img">
               </div>
             </div>
 
-            <div class="card-type9">
-              <h3 class="card__box--ttl">JALマイルが最大1.125%貯まる！</h3>
-
-              <div class="container">
-                <div class="flex gap20 card__box-wrapper">
-                  <div class="credit-card02">
-                    <img src="/assets/img/credit_cards/american-express-01.png" alt="Your Image" class="credit-card-img">
-                  </div>
-
-                  <div class="card__box-title">
-                    <h4 class="ttl-quaternary">セゾンプラチナ・ビジネス・アメリカン・エキスプレス®・カード</h4>
-                  </div>
-                </div>
+            <div class="card-row">
+              <div class="ttl-quaternary">
+                年会費無料にこだわりたい方へ
+              </div>
+              <div class="ttl-tertiary">セゾンコバルト・ビジネス・ アメリカン・エキスプレス®・カード</div>
+              <div class="card-img">
+                <img src="/assets/img/credit_cards/american-express-02.png" alt="Your Image" class="credit-card-img">
               </div>
             </div>
-          </li>
-
-          <li class="card-type14">
-            <div class="flex card__header gap20">
-              <div class="circle-child">
-                <div class="circle-content">アイコン・ イラスト</div>
-              </div>
-              <div class="normal-child">
-                公共料金や税金、広告費など経費の支払いで利用したい
-              </div>
+          </div>
+          <div>
+            <div class="title-row">
+              年会費
             </div>
 
-            <div class="card-type9">
-              <h3 class="card__box--ttl">カードで支払った分の
-                <br>
-                0.5%～1%が自動でキャッシュバック！</h3>
+            <div class="card-row">
+              <div class="ttl-secondary">
+                22,000円（税込） <br> <span class="ttl-normal">初年度年会費無料 2年目以降は22,000円（税込）</span>
+              </div>
+              <div class="ttl-normal">追加カード年会費 3,300円（税込）</div>
 
-              <div class="container">
-                <div class="flex gap20 card__box-wrapper">
-                  <div class="credit-card02">
-                    <img src="/assets/img/credit_cards/american-express-01.png" alt="Your Image" class="credit-card-img">
-                  </div>
+            </div>
 
-                  <div class="card__box-title">
-                    <h4 class="ttl-quaternary">セゾンプラチナ・ビジネス・アメリカン・エキスプレス®・カード</h4>
-                  </div>
-                </div>
-
-                <div class="flex gap20 card__box-wrapper">
-                  <div class="credit-card02">
-                    <img src="/assets/img/credit_cards/saison-01.png" alt="Your Image" class="credit-card-img">
-                  </div>
-
-                  <div class="card__box-title">
-                    <h4 class="ttl-quaternary">セゾンゴールド・ビジネス プロ・カード</h4>
-                  </div>
-                </div>
-
-                <div class="flex gap20 card__box-wrapper">
-                  <div class="credit-card02">
-                    <img src="/assets/img/credit_cards/saison-02.png" alt="Your Image" class="credit-card-img">
-                  </div>
-
-                  <div class="card__box-title">
-                    <h4 class="ttl-quaternary">セゾン・アメリカン・エキスプレス®・ビジネス プロ・パーチェシング・カード</h4>
-                  </div>
-                </div>
+            <div class="card-row">
+              <div class="ttl-secondary">
+                永年無料
               </div>
             </div>
-          </li>
-
-          <li class="card-type14">
-            <div class="flex card__header gap20">
-              <div class="circle-child">
-                <div class="circle-content">アイコン・ イラスト</div>
-              </div>
-              <div class="normal-child">
-                確定申告が面倒なので 楽にしたい
+          </div>
+          <div>
+            <div class="title-row">申込資格</div>
+            <div class="card-row">
+              <div class="ttl-secondary">
+                個人事業主または 経営者の方 <br> <br> <span class="ttl-normal">（学生、未成年除く）</span>
               </div>
             </div>
 
-            <div class="card-type9">
-              <h3 class="card__box--ttl">個人事業主やフリーランスの方も申込可能</h3>
-
-              <div class="container">
-                <div class="flex gap20 card__box-wrapper">
-                  <div class="credit-card02">
-                    <img src="/assets/img/credit_cards/american-express-01.png" alt="Your Image" class="credit-card-img">
-                  </div>
-
-                  <div class="card__box-title">
-                    <h4 class="ttl-quaternary">セゾンプラチナ・ビジネス・アメリカン・エキスプレス®・カード</h4>
-                  </div>
-                </div>
-
-                <div class="flex gap20 card__box-wrapper">
-                  <div class="credit-card02">
-                    <img src="/assets/img/credit_cards/american-express-02.png" alt="Your Image" class="credit-card-img">
-                  </div>
-
-                  <div class="card__box-title">
-                    <h4 class="ttl-quaternary">セゾンプラチナ・ビジネス・アメリカン・エキスプレス®・カード</h4>
-                  </div>
-                </div>
+            <div class="card-row">
+              <div class="ttl-secondary">
+                個人事業主または フリーランス、 経営者の方 <br> <br> <span class="ttl-normal">（高校生除く）</span>
               </div>
             </div>
-          </li>
-        </ul>
+          </div>
+          <div>
+            <div class="title-row">支払い サイクル</div>
+            <div class="card-row">
+              <div class="ttl-secondary">
+                最大56日間 <br> <br> <span class="ttl-normal">毎月10日 締め/翌月4 日払い</span>
+              </div>
+            </div>
 
-        <div class="banner">
-          <img src="/assets/img/senary_page/banner-01.png" alt="">
+            <div class="card-row">
+              <div class="ttl-secondary">
+                最大56日間 <br> <br> <span class="ttl-normal">毎月10日 締め/翌月4 日払い</span>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="title-row">キャッシュ バック 還元率</div>
+            <div class="card-row">
+              <div class="ttl-secondary">
+                なし
+              </div>
+            </div>
+
+            <div class="card-row">
+              <div class="ttl-secondary">
+                なし
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="title-row">永久不滅 ポイント 還元率</div>
+            <div class="card-row">
+              <div class="ttl-secondary">
+                【国内】0.5% 【海外】1.0%
+              </div>
+            </div>
+
+            <div class="card-row">
+              <div class="ttl-secondary">
+                【国内】0.5% 【海外】1.0% <br> <br> ※特定加盟店 2.0％
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="title-row">JALマイル 還元率</div>
+
+            <div class="card-row">
+              <div class="ttl-secondary">
+                最大1.125%
+              </div>
+            </div>
+
+            <div class="card-row">
+              <div class="ttl-secondary">
+                最大0.25%
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="title-row">詳細</div>
+
+            <div class="card-row">
+              <div class="card-btn card-type-1">
+                <a href="#" class="">詳細</a>
+              </div>
+            </div>
+
+            <div class="card-row">
+              <div class="card-btn card-type-1">
+                <a href="#" class="">詳細</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </section>
 
-    <section class="section-quinary">
-      <div class="container-1200">
-        <h3 class="ttl-tertiary">一目で各カードの違いがわかる！</h3>
+    </div>
+  </section>
 
-        <div class="ttl-secondary-container">
-          <h2 class="ttl-secondary">「ビジネスカードの比較表」ダウンロード</h2>
-        </div>
+  <section class="section-quaternary">
+    <div class="containers">
+      <h3 class="ttl-tertiary">自分にあったカードは？</h3>
 
-        <div class="card-type15">
-          <div class="flex aiC jcC gap30 desc">
-            <figure class="desc__img"><img src="/assets/img/common/img-overlap-01.png" alt=""></figure>
+      <h2 class="ttl-secondary">利用目的や使い方でマッチしたカードを選ぶ</h2>
 
-            <summary class="desc__box">
-              <div class="desc__box--ttl">ビジネス利用に最適なセゾンのビジネスカードを
-                <br>
-                まとめて比較できる！</div>
-              <h5 class="ttl-senary">
-                自分に合ったビジネスカードが選べるように、カードの選び方・比較ポイントも解説しています。経営者・個人事業主様、中小企業事業者様に役立つ情報を記載しているので、ぜひご一読ください。
-              </h5>
-            </summary>
+      <ul class="flex gap30 card-list">
+        <li>
+          <div class="card-title">
+            <div class="circle-child first">
+            </div>
+            <div class="normal-child">
+              JALの利用が多いのでマイルを貯めたい
+            </div>
           </div>
 
-          <a href="#" class="orange_more">資料ダウンロード（無料）</a>
+          <div class="card-type9">
+            <h3 class="card__box--ttl">JALマイルが最大1.125%貯まる！</h3>
+
+            <div class="container">
+              <div class="card-detail">
+                <div class="credit-card02">
+                  <img src="/assets/img/credit_cards/american-express-01.png" alt="Your Image" class="credit-card-img">
+                </div>
+
+                <div class="card__box-title">
+                  <h4 class="ttl-quaternary">セゾンプラチナ・ビジネス・アメリカン・エキスプレス®・カード</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="card-title">
+            <div class="circle-child second">
+            </div>
+            <div class="normal-child">
+              公共料金や税金、広告費など経費の支払いで利用したい
+            </div>
+          </div>
+
+          <div class="card-type9">
+            <h3 class="card__box--ttl">カードで支払った分の
+              <br>
+              0.5%～1%が自動でキャッシュバック！
+            </h3>
+
+            <div class="container">
+              <div class="card-detail">
+                <div class="credit-card02">
+                  <img src="/assets/img/credit_cards/american-express-01.png" alt="Your Image" class="credit-card-img">
+                </div>
+
+                <div class="card__box-title">
+                  <h4 class="ttl-quaternary">セゾンプラチナ・ビジネス・アメリカン・エキスプレス®・カード</h4>
+                </div>
+              </div>
+
+              <div class="card-detail">
+                <div class="credit-card02">
+                  <img src="/assets/img/credit_cards/saison-01.png" alt="Your Image" class="credit-card-img">
+                </div>
+
+                <div class="card__box-title">
+                  <h4 class="ttl-quaternary">セゾンゴールド・ビジネス プロ・カード</h4>
+                </div>
+              </div>
+
+              <div class="card-detail">
+                <div class="credit-card02">
+                  <img src="/assets/img/credit_cards/saison-02.png" alt="Your Image" class="credit-card-img">
+                </div>
+
+                <div class="card__box-title">
+                  <h4 class="ttl-quaternary">セゾン・アメリカン・エキスプレス®・ビジネス プロ・パーチェシング・カード</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="card-title">
+            <div class="circle-child third">
+            </div>
+            <div class="normal-child">
+              確定申告が面倒なので 楽にしたい
+            </div>
+          </div>
+
+          <div class="card-type9">
+            <h3 class="card__box--ttl">個人事業主やフリーランスの方も申込可能</h3>
+
+            <div class="container">
+              <div class="card-detail">
+                <div class="credit-card02">
+                  <img src="/assets/img/credit_cards/american-express-01.png" alt="Your Image" class="credit-card-img">
+                </div>
+
+                <div class="card__box-title">
+                  <h4 class="ttl-quaternary">セゾンプラチナ・ビジネス・アメリカン・エキスプレス®・カード</h4>
+                </div>
+              </div>
+
+              <div class="card-detail">
+                <div class="credit-card02">
+                  <img src="/assets/img/credit_cards/american-express-02.png" alt="Your Image" class="credit-card-img">
+                </div>
+
+                <div class="card__box-title">
+                  <h4 class="ttl-quaternary">セゾンプラチナ・ビジネス・アメリカン・エキスプレス®・カード</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section-quinary">
+    <div class="containers">
+      <h3 class="ttl-tertiary">気になるカードを選んで、違いを比較!</h3>
+      <h1 class="ttl-primary">カード比較・診断</h1>
+      <h4 class="ttl-quaternary">最大3つのカードをまとめて比較できます。気になるカードにチェックを入れて <br>「選択したカードを比較する」ボタンをクリックしてください。</h4>
+
+
+      <div class="card-list">
+        <div class="card-list-left">
+          <div class="card-list-head left">
+            中小企業様向け <br />（法人与信型ビジネスカード）
+          </div>
+          <div class="card-list-grid left">
+            <div class="card-detail">
+              <div class="card-head">セゾンプラチナ・ビジネス プロ・アメリカン・エキスプレス®・カード</div>
+              <img src="/assets/img/credit_cards/american-express-01.png" alt="Your Image" class="credit-card-img" />
+              <div>
+                <label class="custom-checkbox">
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                  <span class="custom-check-box-label">他のカードと比較する</span>
+                </label>
+              </div>
+            </div>
+            <div class="card-detail">
+              <div class="card-head">セゾンゴールド・ビジネス プロ・カード</div>
+              <img src="/assets/img/credit_cards/saison-01.png" alt="Your Image" class="credit-card-img" />
+              <div>
+                <label class="custom-checkbox">
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                  <span class="custom-check-box-label">他のカードと比較する</span>
+                </label>
+              </div>
+            </div>
+            <div class="card-detail">
+              <div class="card-head">セゾン・アメリカン・エキスプレス®・ビジネス プロ・パーチェシング・カード</div>
+              <img src="/assets/img/credit_cards/saison-02.png" alt="Your Image" class="credit-card-img" />
+              <div>
+                <label class="custom-checkbox">
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                  <span class="custom-check-box-label">他のカードと比較する</span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-list-right">
+          <div class="card-list-head right">
+            中小規模ビジネスオーナー様、個人事業主様向け <br />（個人与信型ビジネスカード）
+          </div>
+
+          <div class="card-list-grid right">
+            <div class="card-detail">
+              <div class="card-head">セゾンコバルト・ビジネス・ アメリカン・エキスプレス® ・カード</div>
+              <img src="/assets/img/credit_cards/american-express-02.png" alt="Your Image" class="credit-card-img" />
+              <div>
+                <label class="custom-checkbox">
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                  <span class="custom-check-box-label">他のカードと比較する</span>
+                </label>
+              </div>
+            </div>
+            <div class="card-detail">
+              <div class="card-head">セゾンプラチナ・ビジネス・アメリカン・エキスプレス®・カード</div>
+              <img src="/assets/img/credit_cards/american-express-01.png" alt="Your Image" class="credit-card-img" />
+              <div>
+                <label class="custom-checkbox">
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                  <span class="custom-check-box-label">他のカードと比較する</span>
+                </label>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </section>
 
-    <section class="section-senary">
+      <div class="btn-container">
+
+        <a href="#" class="bondi_blue_btn">
+          <span>選択したカードを比較する</span>
+          {% include 'component/icons/arrow-right.njk' %}
+        </a>
+      </div>
+
+      <div class="banner-btn">
+        <div class="content-col">
+          <div class="img-content">
+            <img src="/assets/img/common/glass-look.png" alt="Your Image" class="credit-card-img" />
+          </div>
+          <div class="text-content">
+            <div class="ttl-quinary">ご利用目的やビジネス規模に合わせて、最適なビジネスカード探しをお手伝い!</div>
+            <div class="ttl-main">おすすめカード診断 
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="20" class="arrow-svg" viewBox="0 0 25 20">
+                <path id="Polygon_57" data-name="Polygon 57" d="M10,0,20,25H0Z" transform="translate(25) rotate(90)" fill="#0297b5"/>
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="20" class="arrow-svg" viewBox="0 0 25 20">
+                <path id="Polygon_57" data-name="Polygon 57" d="M10,0,20,25H0Z" transform="translate(25) rotate(90)" fill="#0297b5"/>
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="20" class="arrow-svg" viewBox="0 0 25 20">
+                <path id="Polygon_57" data-name="Polygon 57" d="M10,0,20,25H0Z" transform="translate(25) rotate(90)" fill="#0297b5"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="btn-col">
+          診断開始
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-senary">
+    <div class="containers">
+      <h3 class="ttl-tertiary">DOCUMENTS</h3>
+      <h1 class="ttl-quaternary">ビジネスカードを検討しているなら、知らないともったいない！</h1>
+      <h4 class="ttl-primary">「ビジネスカードの🉐活用ガイド」</h4>
+
+      <div class="senary-content">
+        <div class="content-img">
+          <img src="/assets/img/common/work_image.png" alt="work image" class="img-top">
+          <img src="/assets/img/common/work_image.png" alt="work image" class="img-bot">
+        </div>
+        <div class="content-detail">
+          <div class="content-head">ビジネスカードのメリットを使い倒すためのオトクな活用方法をまるっと紹介！</div>
+          <p>
+            あらゆるビジネスシーンで活用できるビジネスカードですが、そのメリットや特典を使いこなせていないケースも多々あります。本資料では、ビジネスカードのメリットや特典を存分に活用するポイントや、具体的な活用シーンを解説しています。ビジネスカードの導入を検討されている方は、ぜひ本資料をご活用ください。
+          </p>
+        </div>
+      </div>
+
+      <div class="btn-container">
+        <a class="blue_gradient_btn" href="#">資料ダウンロード（無料)</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-septenary">
+    <div class="containers">
+      <h4 class="ttl-primary">「クレディセゾンのビジネスカードが選ばれる理由</h4>
+      <h1 class="ttl-quaternary">有効期限のない永久不滅ポイントやキャッシュバックのほか、<br> 利用する機会の多いビジネスサービスが充実! <br> セゾンのビジネスカードが人気の理由をご紹介します。
+      </h1>
+
+      <div class="card-list-grid">
+        <div class="col-left col">
+          <div class="card-header left">個人事業主・中小企業経営者様の場合</div>
+          <div class="card-list">
+            <div class="card">
+              <div class="img-container">
+                <img src="/assets/img/common/card-img-1.png" alt="work image" class="card-img">
+              </div>
+              <div class="card-content">
+                <div class="content-index">
+                  選ばれる理由①
+                </div>
+                <div class="content-subhead">マイルが効率的に貯まる!</div>
+                <div class="content-mainhead">最大還元率 1.125%</div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="img-container">
+                <img src="/assets/img/common/card-img-2.png" alt="work image" class="card-img">
+              </div>
+              <div class="card-content">
+                <div class="content-index">
+                  選ばれる理由②
+                </div>
+                <div class="content-subhead">有効期限のない</div>
+                <div class="content-mainhead">永久不滅ポイントが付与</div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="img-container">
+                <img src="/assets/img/common/card-img-3.png" alt="work image" class="card-img">
+              </div>
+              <div class="card-content">
+                <div class="content-index">
+                  選ばれる理由③
+                </div>
+                <div class="content-subhead">収入証明書・登記簿謄本などが不要</div>
+                <div class="content-mainhead">起業直後でもお申し込み可能</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-right col">
+          <div class="card-header right">中小企業様向けの場合</div>
+          <div class="card-list">
+            <div class="card">
+              <div class="img-container">
+                <img src="/assets/img/common/card-img-4.png" alt="work image" class="card-img">
+              </div>
+              <div class="card-content">
+                <div class="content-index">
+                  選ばれる理由①
+                </div>
+                <div class="content-subhead">カードで支払うだけで、</div>
+                <div class="content-mainhead">最大1%のキャッシュバック</div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="img-container">
+                <img src="/assets/img/common/card-img-5.png" alt="work image" class="card-img">
+              </div>
+              <div class="card-content">
+                <div class="content-index">
+                  選ばれる理由②
+                </div>
+                <div class="content-subhead">立替払いや仮払いをなくして</div>
+                <div class="content-mainhead">経費精算の手間を削減できる</div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="img-container">
+                <img src="/assets/img/common/card-img-6.png" alt="work image" class="card-img">
+              </div>
+              <div class="card-content">
+                <div class="content-index">
+                  選ばれる理由③
+                </div>
+                <div class="content-subhead">利用機会の多い</div>
+                <div class="content-mainhead">ビジネスサービスが充実</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-octonary">
+    <div class="card-type22">
       <div class="containers">
-        <h2 class="ttl-secondary">クレディセゾンのビジネスカードが選ばれる理由</h2>
+        <div class="ttl-notice">CONTACT</div>
+        <h3 class="ttl-tertiary">「今すぐ相談したい」という方へ</h3>
 
-        <h3 class="ttl-terianary">ポイントが失効しない永久不滅ポイントやキャッシュバックの他、利用する機会の多いビジネスサービスが充実！<br>
-          セゾンのビジネスカードが人気の理由をご紹介します。</h3>
+        <div class="ttl-tertiary small">当社のサポート担当がご利用用途やご要望をおうかがいさせていただき、<br> お客様にピッタリのカードをご提案いたします。お気軽にご相談ください。</div>
 
-        <ul class="flex gap30 card-list">
-          <li class="card-type16">
-            <h3 class="card--ttl">個人事業主・中小企業経営者様の場合</h3>
-
-            <ul class="card-item-list">
-              <li class="flex card-item01">
-                <div class="card-item--ttl flex">イメージ
-                  <br>
-                  イラスト</div>
-                <div class="card-item--txt">選ばれる理由①
-                  <br>
-                  マイルが効率的に貯まる！
-                  <br>
-                  <span>最大還元率1.125%</span>
-                </div>
-              </li>
-
-              <li class="flex card-item01">
-                <div class="card-item--ttl flex">イメージ
-                  <br>
-                  イラスト</div>
-                <div class="card-item--txt">選ばれる理由②
-                  <br>
-                  ポイントが失効しない
-                  <br>
-                  <span>永久不滅ポイントが付与</span>
-                </div>
-              </li>
-
-              <li class="flex card-item01">
-                <div class="card-item--ttl flex">イメージ
-                  <br>
-                  イラスト</div>
-                <div class="card-item--txt">選ばれる理由③
-                  <br>
-                  収入証明書・登記簿謄本などが不要
-                  <br>
-                  <span>だから申込が簡単</span>
-                </div>
-              </li>
-            </ul>
-          </li>
-
-          <li class="card-type16">
-            <h3 class="card--ttl">中小企業事業者の場合</h3>
-
-            <ul class="card-item-list">
-              <li class="flex card-item01">
-                <div class="card-item--ttl flex">イメージ
-                  <br>
-                  イラスト</div>
-                <div class="card-item--txt">選ばれる理由①
-                  <br>
-                  カードで支払うだけで、
-                  <br>
-                  <span>最大1%のキャッシュバック</span>
-                </div>
-              </li>
-
-              <li class="flex card-item01">
-                <div class="card-item--ttl flex">イメージ
-                  <br>
-                  イラスト</div>
-                <div class="card-item--txt">選ばれる理由②
-                  <br>
-                  立替払いや仮払いをなくして
-                  <br>
-                  <span>経費清算の工数を削減できる</span>
-                </div>
-              </li>
-
-              <li class="flex card-item01">
-                <div class="card-item--ttl flex">イメージ
-                  <br>
-                  イラスト</div>
-                <div class="card-item--txt">選ばれる理由③<br>
-                  利用機会の多い
-                  <br>
-                  <span>ビジネスサービスが充実</span>
-                </div>
-              </li>
-            </ul>
-          </li>
-        </ul>
+        <div class="quinary-btn">
+          <a href="#" class="blue_gradient_btn">サポート担当に無料で相談する</a>
+        </div>
       </div>
-    </section>
-
-    <section class="section-septenary">
-      <h1 class="ttl-primary">「今すぐ相談したい」という方へ</h1>
-
-      <h3 class="ttl-tertiary">当社のサポート担当がご利用用途やご要望をお伺いさせて頂きお客さまにピッタリのカードをご提案致します。<br>
-        お気軽にご相談下さい。</h3>
-
-      <a href="#" class="orange_more">ボタン名が入ります</a>
-    </section>
-
-    <section class="breadcrumb">
-      <div class="container-1200">
-        <ul class="flex">
-          <li>
-            <a href="#">TOP</a>
-          </li>
-          <li>
-            <a href="#">法人カード・ビジネスカードを作りたい</a>
-          </li>
-        </ul>
+    </div>
+    </div>
+  </section>
+  <section class="section-subinfo">
+    <div class="sub-infos">
+      <div class="containers">
+        ※「アメリカン・エキスプレス」は、アメリカン・エキスプレスの登録商標です。(株)クレディセゾンは、アメリカン・エキスプレスのライセンスに基づき使用しています。
       </div>
-    </section>
-  </main>
+    </div>
+  </section>
+</main>
 {% endblock %}
