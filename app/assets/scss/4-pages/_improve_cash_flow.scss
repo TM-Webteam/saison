@@ -3,13 +3,17 @@
   padding: 140px 0 0px;
 
   .section-welcome {
-    padding: 85px 120px;
+    padding: 140px 0;
     text-align: left;
     background-color: #f7f7f7;
 
+    .container-1200 {
+      margin: 0 200px;
+    }
+
     .ttl-primary {
       font-size: 42px;
-      margin-bottom: 31px;
+      margin-bottom: 40px;
       text-align: left;
       line-height: 1;
     }
@@ -17,7 +21,7 @@
     .ttl-tertiary {
       font-size: 24px;
       font-weight: 500;
-      margin-bottom: 30px;
+      margin-bottom: 14px;
       display: inline-block;
       background-color: #003f98;
       color: white;
