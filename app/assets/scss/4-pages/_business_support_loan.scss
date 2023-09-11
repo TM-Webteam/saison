@@ -705,7 +705,7 @@
         }
       }
       @media #{$sp} {
-        margin: 25px 0 20px;
+        margin: 25px 0 0px;
       }
     }
 
@@ -723,6 +723,7 @@
 
       @media #{$sp} {
         padding: 8px;
+        margin-top: 0px;
       }
 
       .qa-marker {
