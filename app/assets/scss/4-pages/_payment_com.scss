@@ -572,6 +572,11 @@
         background-color: $blue-color-2;
         border-radius: 3px;
         margin: 60px 0 105px;
+
+        @media #{$sp} {
+          padding: 15px;
+        }
+        
         span {
           font-weight: bold;
         }
