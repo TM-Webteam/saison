@@ -14,6 +14,9 @@
     }
     .ttl-primary {
       font-size: 32px;
+      span {
+        font-size: 15px;
+      }
     }
     .ttl-quaternary {
       text-align: center;
@@ -306,4 +309,70 @@
       }
     }
   }
+
+  .section-reason-chosing {
+    background: #F5F5F5;
+    padding: 70px 0;
+  }
+
+    // ===========END SECTIONS==========
+
+    .section-primary__wrapper {
+      .containers {
+        max-width: unset;
+        padding: 0;
+        margin-top: 40px;
+
+        .card-list {
+          display: grid;
+          grid-template-columns: repeat(3, minmax(auto, 380px));
+          gap: 30px;
+          justify-content: center;
+          a.card {
+            transition: all 0.3s;
+            .arrow-down {
+              transition: all 0.3s;
+            }
+            &:hover {
+              opacity: 1;
+              box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+              .arrow-down {
+                top: 15px;
+              }
+            }
+          }
+          .card-type6 {
+            .ttl-quaternary-container {
+              margin-bottom: 0;
+            }
+          }
+
+          .card-type10 {
+            padding: 0;
+            a.card-type10-container {
+              padding: 35px 30px 30px;
+              transition: all 0.3s;
+              .bondi_blue_outline_btn {
+                font-weight: 700;
+              }
+              &:hover {
+                opacity: 1;
+                .bondi_blue_outline_btn {
+                  color: $white-color;
+                  background-color: $blue-color;
+                  &::before {
+                    border-top: 3px solid $white-color;
+                    border-right: 3px solid $white-color;
+                  }
+                }
+              }
+            }
+          }
+
+          @media #{$tab} {
+            grid-template-columns: auto;
+          }
+        }
+      }
+    }
 }
