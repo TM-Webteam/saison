@@ -32,19 +32,41 @@ $(document).ready(function () {
 //　header　演出
 //--------------------------------------
 
-// $(function () {
-//   var pos = 0;
-//   var header = $("header");
+$(function () {
+  var pos = 0;
+  var header = $("header");
 
-//   $(window).on("scroll", function () {
-//     if ($(this).scrollTop() < pos || $(this).scrollTop() < 400) {
-//       header.removeClass("hide");
-//     } else {
-//       header.addClass("hide");
-//     }
-//     pos = $(this).scrollTop();
-//   });
-// });
+  $(window).on("scroll", function () {
+    if ($(this).scrollTop() < pos || $(this).scrollTop() < 400) {
+      header.removeClass("hide");
+    } else {
+      header.addClass("hide");
+    }
+    pos = $(this).scrollTop();
+  });
+});
+
+
+//--------------------------------------
+//　TOP　下部のボタン
+//--------------------------------------
+
+$(window).on("scroll", function() {
+  var scrollPosition = $(this).scrollTop();
+  var footerPosition = $('footer').offset().top; // フッターの位置を取得
+  var fadeOutThreshold = footerPosition - 500; // フッター手前の位置を設定
+
+  if (scrollPosition > 500 && scrollPosition < fadeOutThreshold) {
+    $('.roundbtn').addClass('show');
+    $('.roundbtn').removeClass('fade-out'); // フェードアウトクラスを削除
+  } else if (scrollPosition >= fadeOutThreshold) {
+    $('.roundbtn').removeClass('show');
+    $('.roundbtn').addClass('fade-out'); // フェードアウトクラスを追加
+  } else {
+    $('.roundbtn').removeClass('show');
+    $('.roundbtn').removeClass('fade-out'); // フェードアウトクラスを削除
+  }
+});
 
 //--------------------------------------
 //　アコーディオンメニュー
@@ -171,27 +193,27 @@ $(document).ready(function () {
 //　バナー　追従
 //--------------------------------------
 
-$(function () {
-  var scrollStart = $(".show").offset().top;
-  var scrollEnd = $(".hide").offset().top;
-  var distance = 0;
+// $(function () {
+//   var scrollStart = $(".show").offset().top;
+//   var scrollEnd = $(".hide").offset().top;
+//   var distance = 0;
 
-  $(document).scroll(function () {
-    distance = $(this).scrollTop();
+//   $(document).scroll(function () {
+//     distance = $(this).scrollTop();
 
-    if (scrollStart <= distance) {
-      $(".floating").addClass("fixed");
-    } else if (scrollStart >= distance) {
-      $(".floating").removeClass("fixed");
-    }
+//     if (scrollStart <= distance) {
+//       $(".floating").addClass("fixed");
+//     } else if (scrollStart >= distance) {
+//       $(".floating").removeClass("fixed");
+//     }
 
-    if (scrollEnd <= distance) {
-      $(".floating").fadeOut();
-    } else {
-      $(".floating").fadeIn();
-    }
-  });
-});
+//     if (scrollEnd <= distance) {
+//       $(".floating").fadeOut();
+//     } else {
+//       $(".floating").fadeIn();
+//     }
+//   });
+// });
 
 $(window).on("load", function () {
   //---------------------------------
