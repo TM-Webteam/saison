@@ -9,9 +9,9 @@
     "last 50 version"
   ],
   "devDependencies": {
-    "@babel/core": "^7.22.9",
-    "@babel/preset-env": "^7.22.9",
-    "@babel/register": "^7.22.5",
+    "@babel/core": "^7.22.17",
+    "@babel/preset-env": "^7.22.15",
+    "@babel/register": "^7.22.15",
     "autoprefixer": "^9.8.8",
     "browser-sync": "^2.29.3",
     "cssnano": "^4.1.11",
