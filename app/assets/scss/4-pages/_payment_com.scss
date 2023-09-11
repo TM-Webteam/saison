@@ -6,6 +6,24 @@
   }
 }
 .payment_com-page {
+  section {
+    .ttl-notice {
+      font-size: 13px;
+      color: $primary-color;
+      margin-bottom: 45px;
+    }
+    .ttl-primary {
+      font-size: 32px;
+    }
+    .ttl-quaternary {
+      text-align: center;
+      margin-bottom: 70px;
+      .font-weight-normal {
+        font-weight: normal;
+      }
+    }
+  }
+
   .section-welcome {
     width: 100%;
     height: 560px;
@@ -147,21 +165,7 @@
 
   .section-primary {
     padding: 74px 0 130px 0;
-    .ttl-notice {
-      font-size: 13px;
-      color: $primary-color;
-      margin-bottom: 45px;
-    }
-    .ttl-primary {
-      font-size: 32px;
-    }
-    .ttl-quaternary {
-      text-align: center;
-      margin-bottom: 70px;
-      .font-weight-normal {
-        font-weight: normal;
-      }
-    }
+
     img {
       object-fit: contain;
     }
