@@ -1,0 +1,425 @@
+.search_by_purpose {
+  .section-welcome {
+    position: relative;
+
+    &__container {
+      max-width: 1040px;
+      margin: auto;
+      padding: 135px 30px 77px 30px;
+
+      @media #{$sp} {
+        padding: 64px 30px;
+      }
+    }
+
+    .slick-slider {
+      .slick-list {
+        height: 100%;
+
+        .slick-track {
+          height: 100%;
+
+          img {
+            height: 100%;
+          }
+        }
+      }
+    }
+
+    &__banner {
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: inherit;
+      overflow: hidden;
+      background: linear-gradient(114deg, #343434 0%, #486799 100%) 0% 0%
+        no-repeat padding-box;
+
+      img {
+        position: static;
+        transform: none;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    &__inner {
+      display: inline-block;
+      background: $purple-color;
+      transform: skewX(-15deg);
+      padding: 4px 20px;
+      line-height: 30px;
+
+      .ttl-tertiary {
+        transform: skewX(15deg);
+        color: #ffffff;
+        margin-bottom: 0;
+      }
+
+      @media #{$tab} {
+        line-height: 24px;
+
+        .ttl-tertiary {
+          font-size: 16px;
+        }
+      }
+    }
+
+    &__title {
+      margin-top: 11px;
+      margin-bottom: 40px;
+      color: #ffffff;
+
+      .ttl-primary {
+        text-align: left;
+        font-size: 42px;
+        line-height: 61px;
+        font-weight: 600;
+
+        @media #{$tab} {
+          font-size: 32px;
+          line-height: 38px;
+          margin-bottom: 30px;
+        }
+      }
+
+      @media #{$tab} {
+        margin-bottom: 30px;
+      }
+    }
+
+    &__sub_title {
+      margin-bottom: 30px;
+      color: #ffffff;
+
+      .ttl-primary {
+        text-align: left;
+        font-size: 18px;
+        line-height: 32px;
+        margin-bottom: unset;
+        font-weight: 400;
+        line-height: 28px;
+
+        @media #{$tab} {
+          font-size: 16px;
+          line-height: 30px;
+        }
+      }
+    }
+
+    .blue_gradient_btn {
+      padding: 18px 40px;
+      max-width: unset;
+      display: inline-block;
+      line-height: 35px;
+
+      @media #{$tab} {
+        font-size: 18px;
+        line-height: 30px;
+      }
+    }
+  }
+
+  .section-search-result {
+    text-align: center;
+
+    @media #{$sp} {
+      padding: 30px 16px;
+    }
+
+    .section-search-result-wrapper {
+      .containers {
+        padding: 0;
+
+        .card-list {
+          display: inline-grid;
+          grid-template-columns: auto auto auto;
+          padding: 30px 0;
+          gap: 30px;
+
+          @media #{$tab} {
+            display: grid;
+            grid-template-columns: auto auto;
+            padding: 16px;
+          }
+
+          @media #{$sp} {
+            grid-template-columns: auto;
+            padding: 0;
+          }
+
+          li {
+            flex-basis: calc(33.33% - 60px);
+            .card {
+              transition: all 0.3s;
+              &:hover {
+                opacity: 1;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+                .arrow-down {
+                  margin-bottom: 0px;
+                }
+              }
+            }
+
+            @media #{$sp} {
+              max-width: unset;
+            }
+          }
+        }
+      }
+    }
+
+    .ttl-primary {
+      margin-top: 70px;
+      margin-bottom: 51px;
+      font-size: 32px;
+      line-height: 46px;
+
+      @media #{$sp} {
+        font-size: 20px;
+        line-height: 28px;
+        margin-top: 16px;
+        margin-bottom: 28px;
+      }
+    }
+
+    .ttl-quaternary {
+      font-size: 20px;
+      font-weight: 600;
+      margin: 0;
+      text-align: center;
+      margin-bottom: 30px;
+      color: $primary-color;
+    }
+  }
+
+  .section-reduce-expenses-card {
+    background: #eeeeee;
+    text-align: center;
+    padding: 74px 30px 62px 30px;
+
+    @media #{$sp} {
+      padding: 30px 16px;
+    }
+
+    .sub-title {
+      color: $primary-color;
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: bold;
+      margin-bottom: 25px;
+    }
+
+    .title {
+      font-size: 32px;
+      line-height: 46px;
+      font-weight: bold;
+      margin-bottom: 40px;
+    }
+
+    .card-type17 {
+      @media #{$sp} {
+        width: 100%;
+        flex-direction: column;
+
+        .card__left,
+        .card__right {
+          width: 100% !important;
+        }
+      }
+    }
+
+    .individual-business {
+      box-shadow: 0px 3px 20px #00000029;
+      border-radius: 3px;
+
+      .card-type17 .card__left {
+        background-color: $green-color-2;
+      }
+    }
+
+    .medium-sized-businesses {
+      margin-top: 40px;
+      box-shadow: 0px 3px 20px #00000029;
+      border-radius: 3px;
+
+      .card-type17 .card__left {
+        background-color: $primary-color;
+      }
+    }
+
+    .card-type17 .card__left {
+      background-color: #0297b5;
+      padding: 33px;
+      line-height: 30px;
+      width: 22%;
+      max-width: unset;
+      white-space: pre-line;
+      word-break: keep-all;
+      text-align: center;
+
+      @media #{$lg} {
+        word-break: normal;
+      }
+    }
+
+    .card-type17 .card__right {
+      width: 78%;
+      background: white;
+      padding: 30px;
+
+      .card-item-list {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        .card-item02 {
+          padding: 0;
+          border-bottom: unset;
+          gap: 14px !important;
+
+          @media #{$lg} {
+            flex-direction: column;
+          }
+
+          .card__box-wrapper {
+            @media #{$sp} {
+              flex-direction: column;
+            }
+          }
+
+          .card__box-wrapper .credit-card02 {
+            min-width: 224px;
+            max-height: 141px;
+
+            @media #{$sp} {
+              max-height: unset;
+            }
+          }
+
+          .card__box-wrapper .card__box-title {
+            .ttl-quternary {
+              font-size: 14px;
+              line-height: 20px;
+              color: $green-color-2;
+              font-weight: 500px;
+            }
+
+            h3 {
+              font-size: 20px;
+              line-height: 30px;
+              font-weight: bold;
+              white-space: pre-line;
+              word-break: keep-all;
+              margin-top: 5px;
+            }
+
+            .price-list {
+              margin-top: 10px;
+
+              li {
+                margin-bottom: 0;
+
+                dd {
+                  font-size: 16px;
+                  white-space: pre-line;
+                  word-break: keep-all;
+                  line-height: 26px;
+                }
+              }
+            }
+
+            .note {
+              color: #797979;
+              font-size: 13px;
+            }
+          }
+        }
+      }
+    }
+
+    .action {
+      @media #{$sp} {
+        max-width: 100%;
+        width: 100%;
+        text-align: center;
+      }
+    }
+
+    .action .bondi_blue_btn,
+    .action .bondi_green_btn {
+      font-size: 16px;
+      line-height: 22px;
+      padding: 30px;
+      border-radius: 3px;
+      text-wrap: nowrap;
+
+      @media #{$sp} {
+        max-width: unset;
+        width: 100%;
+        text-align: center;
+        padding: 16px 30px;
+        display: inline-block;
+      }
+    }
+  }
+
+  .section-license {
+    font-size: 13px;
+    color: $white-color;
+    background-color: $gray-color-8;
+    padding: 20px 0;
+  }
+  // ===========END SECTIONS==========
+
+  .section-primary-wrapper {
+    .containers {
+      max-width: unset;
+      padding: 0;
+
+      .card-list {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(auto, 380px));
+        gap: 30px;
+        justify-content: center;
+
+        @media #{$tab} {
+          grid-template-columns: auto;
+        }
+      }
+    }
+  }
+
+  .section-contact {
+    .title {
+      margin-bottom: 44px;
+      padding: 0 16px;
+
+      span.yellow {
+        color: #ffff01;
+      }
+    }
+    .description {
+      padding: 0 16px;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 30px;
+      margin-bottom: 30px;
+
+      @media #{$sp} {
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+
+    .gray-bottom {
+      font-weight: 600;
+      background: linear-gradient(to bottom, transparent 70%, #0297b5 30%);
+      display: inline;
+    }
+  }
+}

@@ -1,0 +1,179 @@
+{% extends "layout/default.njk" %}
+
+{# Custom SEO tags, leave blank to apply the default values #}
+{% set title = "" %}
+{% set description = "" %}
+{% set keywords = "" %}
+
+{# Page settings and also body class #}
+{% set page = "" %}
+
+{# Custom tags before </head> #}
+{% block customHead %}{% endblock %}
+
+{# Custom tags before </body> #}
+{% block customJs %}{% endblock %}
+
+{# Main content #}
+{% block content %}
+  <main class="search_by_purpose">
+    <section class="section-welcome">
+      <div class="section-welcome__banner">
+        <img src={{ search_by_purpose.welcome.image }}>
+      </div>
+      <div class="section-welcome__container">
+        <div class="section-welcome__inner">
+          <h3 class="ttl-tertiary">
+            {{ search_by_purpose.welcome.inner }}
+          </h3>
+        </div>
+        <div class="section-welcome__title">
+          <h1 class="ttl-primary">{{ search_by_purpose.welcome.title }}</h1>
+        </div>
+        <div class="section-welcome__sub_title">
+          {% for sub_title in search_by_purpose.welcome.sub_title %}
+            <p class="ttl-primary">{{ sub_title }}</p>
+          {% endfor %}
+        </div>
+        <div>
+          <a href="#" class="blue_gradient_btn">{{ search_by_purpose.welcome.button }}</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-search-result">
+      <h2 class="ttl-primary">{{ search_by_purpose.search_result.title }}</h2>
+      <div class="section-search-result-wrapper">
+        <div class="containers">
+          <ul class="inherit card-list">
+            {% for item in search_by_purpose.search_result.list %}
+              <li class="card-type6">
+                <a class="card" href={{item.href}}>
+                  <div class="ttl-quaternary-container">
+                    <h4 class="ttl-quaternary">{{ item.title | safe }}</h4>
+                  </div>
+                  <div class="card-image">
+                    <img src={{ item.image }}>
+                  </div>
+                  <ul class="card-description">
+                    {% for des in item.description %}
+                      <li class="card-description__detail">
+                        <span>{{ des }}</span>
+                      </li>
+                    {% endfor %}
+                  </ul>
+                </a>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-reduce-expenses-card">
+      <div class="container-1200">
+        <h3 class="sub-title">{{ search_by_purpose.reduce_expenses.sub_title }}</h3>
+
+        <h2 class="title">{{ search_by_purpose.reduce_expenses.title }}</h2>
+
+        <ul class="flex gap30 card-list individual-business">
+          <li class="card-type17">
+            <div class="card__left">{{ search_by_purpose.reduce_expenses.list_card.individual_business.title }}</div>
+            <div class="card__right">
+              <ul class="card-item-list">
+                {% for content_item in search_by_purpose.reduce_expenses.list_card.individual_business.content %}
+                  <li class="flex card-item02 gap20">
+                    <div class="flex gap20 card__box-wrapper">
+                      <div class="credit-card02">
+                        <img src="{{ content_item.image }}" alt="Your Image"
+                          class="credit-card-img">
+                      </div>
+
+                      <div class="card__box-title">
+                        <h4 class="ttl-quternary">{{ content_item.sub_title }}</h4>
+
+                        <h3>{{ content_item.title }}</h3>
+
+                        <ul class="price-list">
+                          {% for option in content_item.list_option %}
+                          <li>
+                           {% for option_item in option %}
+                            <dd>{{ option_item }}</dd>
+                            {% endfor %}
+                          </li>
+                          {% endfor %}
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="action">
+                      <a class="bondi_green_btn">詳細はこちら</a>
+                    </div>
+                  </li>
+                {% endfor %}
+              </ul>
+            </div>
+          </li>
+        </ul>
+
+        <ul class="flex gap30 card-list medium-sized-businesses">
+          <li class="card-type17">
+            <div class="card__left">{{ search_by_purpose.reduce_expenses.list_card.medium_sized_businesses.title }}</div>
+            <div class="card__right">
+              <ul class="card-item-list">
+                {% for content_item in search_by_purpose.reduce_expenses.list_card.medium_sized_businesses.content %}
+                  <li class="flex card-item02 gap20">
+                    <div class="flex gap20 card__box-wrapper">
+                      <div class="credit-card02">
+                        <img src="{{ content_item.image }}" alt="Your Image"
+                          class="credit-card-img">
+                      </div>
+
+                      <div class="card__box-title">
+                        <h4 class="ttl-quternary">{{ content_item.sub_title }}</h4>
+
+                        <h3>{{ content_item.title }}</h3>
+
+                        <ul class="price-list">
+                          {% for option in content_item.list_option %}
+                          <li>
+                           {% for option_item in option %}
+                            <dd>{{ option_item }}</dd>
+                            {% endfor %}
+                          </li>
+                          {% endfor %}
+                        </ul>
+                        <p class="note">{{ content_item.note }}</p>
+                      </div>
+                    </div>
+
+                    <div class="action">
+                      <a class="bondi_blue_btn">詳細はこちら</a>
+                    </div>
+                  </li>
+                {% endfor %}
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="material" class="section-contact fadein">
+      <div class="card-type22">
+        <div class="ttl-notice">CONTACT</div>
+        <h2 class="ttl-tertiary title">
+          <span class="gray-bottom"><span class="yellow">「どのビジネスカードか迷っている・・・」</span>という方へ</span>
+        </h2>
+        <h3 class="ttl-tertiary description">{{ search_by_purpose.tertiary.description }}</h3>
+        <a href="#" class="blue_gradient_btn">{{ common.button.download }}</a>
+      </div>
+    </section>
+
+    <section class="section-license">
+      <div class="container">
+        {{ search_by_purpose.license.title }}
+      </div>
+    </section>
+  </main>
+{% endblock %}
