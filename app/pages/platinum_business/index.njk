@@ -22,9 +22,41 @@
   }
 ] %}
 
+
+{% set menuSidebar = [
+  {
+  text: "年会費・入会資格",
+  link: "#"
+  },
+  {
+  text: "付帯サービス",
+  link: "#"
+  },
+  {
+  text: "ご利用シーン",
+  link: "#"
+  },
+  {
+  text: "カード比較",
+  link: "#"
+  },
+  {
+  text: "よくある質問",
+  link: "#"
+  },
+  {
+  text: "お申し込みまでの流れ",
+  link: "#"
+  },
+  {
+  text: "お申し込み",
+  link: "#"
+  }
+  ] %}
+
 {# Main content #}
 {% block content %}
-
+{% include 'partial/sidebar.njk' %}
 <main class="platinum_business-page">
   {# <section class="section-welcome">
     <div class="container-1200">
