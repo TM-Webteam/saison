@@ -167,7 +167,7 @@
 
       .notification-panel2 {
         border-radius: 4px;
-        padding: 0 30px;
+        padding: 0 15px;
         background-color: #fff;
         box-shadow: 2px 2px 6px rgba(0,0,0,.5);
 
@@ -219,8 +219,7 @@
 
       .notification-panel2 {
         border-radius: 4px;
-        padding: 0 30px;
-        padding-bottom: 60px;
+        padding: 0 15px 60px;
         background-color: #fff;
         box-shadow: 2px 2px 6px rgba(0,0,0,.5);
 
@@ -285,16 +284,46 @@
             }
 
             .welfare-more-tooltip {
+              position: relative;
               width: calc(50% - 20px);
               font-weight: 500;
               flex-shrink: 0;
               text-align: left;
-              border: 1px solid #ccc;
               padding: 20px;
+              background-color: #FFFFFF;
+              box-shadow: 2px 2px 6px rgba(0,0,0,.5);
 
               @media #{$sp} {
                 width: calc( 100% - 20px);
               }
+
+              .welfare-more-tooltip__content {
+                position: relative;
+                // width: fit-content;
+                font-size: 14px;
+                font-weight: 600;
+                margin-bottom: 25px;
+                background-color: #fff;
+                border-radius: 3px;
+                padding: 10px 20px;
+  
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              }
+
+              // .welfare-more-tooltip__content::before{
+              //   position: absolute;
+              //   content: "\A";
+              //   top: calc(100% - 35px);
+              //   left: calc(100% - 535px);
+              //   width: 0;
+              //   height: 0;
+              //   border-left: 25px solid transparent;
+              //   border-right: 25px solid transparent;
+              //   border-top: 20px solid black;
+              //   transform: rotate(90deg);
+              //  }
             }
           }
         }
