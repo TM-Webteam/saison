@@ -327,8 +327,19 @@
     }
   }
 
-  .section-tertiary {
-    padding: 70px 120px;
-    background-color: #fff;
+  .section-contact2 {
+    .tooltip {
+      left: calc(50%-267px);
+
+      @media #{$sp} {
+        left: calc(50%-170px);
+      }
+
+      &__content {
+        @media #{$sp} {
+          font-size: 12px;
+        }
+      }
+    }
   }
 }
