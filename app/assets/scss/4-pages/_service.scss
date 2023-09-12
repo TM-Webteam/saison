@@ -259,6 +259,10 @@
             &::before {
               content: unset;
             }
+
+            @media #{$sp} {
+              width: unset !important;
+            }
           }
 
           .bondi_blue_outline_btn {
