@@ -8,6 +8,12 @@
     }
   },
 
+  "welfare": {
+    "welcome": {
+      "title": "人材の定着・従業員のモチベーションUPに。"
+    }
+  },
+
   "smaller_companies": {
     "welcome": {
       "image": "/assets/img/smaller_companies/business_banner.png",

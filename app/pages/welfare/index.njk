@@ -18,45 +18,45 @@
 {% block content %}
 
 <main class="welfare-page">
-  <section class="section-welcome">
+  <section class="section-welcome fadein">
     <div class="container-1200">
       <h3 class="ttl-tertiary">人材の定着・従業員のモチベーションUPに。</h3>
 
       <h1 class="ttl-primary">福利厚生を充実できるサービス</h1>
 
-      <h4 class="ttl-quaternary">クレディセゾンは、従業員のみなさまの暮らしに役立つ様々なサービスを、<br>
-        最大66％OFFで利用できるお得な福利厚生優待サービスをご提供しています。</h4>
+      <h4 class="ttl-quaternary">クレディセゾンは、従業員の皆様の暮らしに役立つさまざまなサービスが<br>
+        最大66％オフ。導入しやすい福利厚生優待サービスならセゾンフクリコ。</h4>
     </div>
   </section>
 
-  <section class="section-primary">
+  <section class="section-primary fadein">
     <div class="container-1200">
       <h2 class="ttl-secondary">多くの中小企業が抱える課題</h2>
 
       <ul class="flex jcC gap30 card-list">
         <li class="card-type6">
-          <a href="#" class="card">
+          <a href="#challenge-raise-funds" class="card">
             <div class="ttl-quaternary-container">
-              <h4 class="ttl-quaternary">人材が定着しない・<br>
-                採用難易度も上がっている</h4>
+              <h4 class="ttl-quaternary">人材が定着しない <br/>
+                採用難易度があがっている</h4>
             </div>
-
-            <div class="card-body">
-              <div class="circle-container">
-                イラスト
-                <br>
-                または
-                <br>
-                アイコン
-              </div>
-
-              <ul class="check-list">
-                <li>従業員のモチベーションが低下している</li>
-                <li>従業員のワークライフバランスを充実させたい</li>
-                <li>年々採用コストが上がっている</li>
-              </ul>
+            <div class="card-image">
+              <img src="/assets/img/common/img-welfare-001.png"/>
             </div>
-
+            <ul class="card-description">
+              <li class="card-description__detail">
+                {% include 'component/icons/circle-checked.njk' %}
+                <span>従業員のモチベーションが低下している</span>
+              </li>
+              <li class="card-description__detail">
+                {% include 'component/icons/circle-checked.njk' %}
+                <span>従業員のワークライフバランスを充実させたい</span>
+              </li>
+              <li class="card-description__detail">
+                {% include 'component/icons/circle-checked.njk' %}
+                <span>採用コストが年々上がっている</span>
+              </li>
+            </ul>
             <div class="circle-with-arrow">
               <div class="arrow-down"></div>
             </div>
@@ -64,53 +64,49 @@
         </li>
 
         <li class="card-type6">
-          <a href="#" class="card">
+          <a href="#challenge-raise-funds" class="card">
             <div class="ttl-quaternary-container">
-              <h4 class="ttl-quaternary">福利厚生を入れたいが <br> 費用や手間がかかりそう</h4>
+              <h4 class="ttl-quaternary">福利厚生を導入したいが <br/>
+                費用や手間がかかりそう</h4>
             </div>
-
-            <div class="card-body">
-              <div class="circle-container">
-                イラスト
-                <br>
-                または
-                <br>
-                アイコン
-              </div>
-
-              <ul class="check-list">
-                <li>自社で導入・運用しようとすると多くの費用がかかりそう</li>
-                <li>社内の業務負担を軽減したい</li>
-              </ul>
+            <div class="card-image">
+              <img src="/assets/img/common/img-welfare-002.png" alt="">
             </div>
-
+            <ul class="card-description">
+              <li class="card-description__detail">
+                {% include 'component/icons/circle-checked.njk' %}
+                <span>福利厚生の導入には運用の手間とコストがかかりそう</span>
+              </li>
+              <li class="card-description__detail">
+                {% include 'component/icons/circle-checked.njk' %}
+                <span>社内の業務負担を軽減したい</span>
+              </li>
+            </ul>
             <div class="circle-with-arrow">
               <div class="arrow-down"></div>
             </div>
           </a>
         </li>
-
         <li class="card-type6">
-          <a href="#" class="card">
+          <a href="#challenge-raise-funds" class="card">
             <div class="ttl-quaternary-container">
-              <h4 class="ttl-quaternary">福利厚生を入れているが <br> あまり使われていない</h4>
+              <h4 class="ttl-quaternary">福利厚生を導入しているが
+                <br/>
+                あまり使われていない</h4>
             </div>
-
-            <div class="card-body">
-              <div class="circle-container">
-                イラスト
-                <br>
-                または
-                <br>
-                アイコン
-              </div>
-
-              <ul class="check-list">
-                <li>使用率が低く、使う人が偏ってしまっている</li>
-                <li>多くの従業員に使ってもらえる福利厚生がほしい</li>
-              </ul>
+            <div class="card-image">
+              <img src="/assets/img/common/img-welfare-003.png" alt="">
             </div>
-
+            <ul class="card-description">
+              <li class="card-description__detail">
+                {% include 'component/icons/circle-checked.njk' %}
+                <span>利用率が低く、使う人が偏ってしまっている</span>
+              </li>
+              <li class="card-description__detail">
+                {% include 'component/icons/circle-checked.njk' %}
+                <span>多くの従業員に使ってもらえる福利厚生がほしい</span>
+              </li>
+            </ul>
             <div class="circle-with-arrow">
               <div class="arrow-down"></div>
             </div>
@@ -120,14 +116,14 @@
     </div>
   </section>
 
-  <section class="section-secondary">
+  <section class="section-secondary fadein">
     <div class="container-1200">
       <h2 class="ttl-secondary">「セゾンフクリコ」がまとめて解決します。</h2>
 
       <div class="up-triangle"></div>
 
       <div class="section-img">
-        <img src="/assets/img/common/saison-fukurico.png" alt="">
+        <img src="/assets/img/common/img-welfare-icon-001.png" alt="">
       </div>
 
       <h3 class="ttl-tertiary">
@@ -175,7 +171,7 @@
         </div>
       </div>
 
-      <div class="panel-secondary">
+      <div class="panel-secondary fadein">
         <div class="notification-panel2">
           <div class="relation">
             <h3 class="single__ttl">
@@ -186,25 +182,21 @@
               福利厚生の種類を増やして充実させるほど、運営の手間はかかります。しかし、「セゾンフクリコ」なら、施設などとの直接契約業務や、設備投資・運営はすべて完全アウトソーシングなので導入事業者様に業務をご負担いただく必要はありません。
             </dd>
             <div class="flex gap30 card-container">
-              <div class="card-circle">
-                <div class="card-circle-text"> イラスト
-                  <br>
-                  または
-                  <br>
-                  アイコン
-                </div>
-              </div>
 
               <div class="card-button">
                 <a href="#" class="default_btn">社内規定の作成</a>
                 <a href="#" class="default_btn">申請書の作成や処理</a>
                 <a href="#" class="default_btn">従業員からの質問・対応</a>
-                <a href="#" class="default_btn">利用者の把握や管理</a>
                 <a href="#" class="default_btn">利用後の処理</a>
               </div>
 
-              <div class="card-txt">
-                <h3 class="ttl-tertiary">完全アウトソーシング型の福利厚生サービスなので、新たな業務が増える心配はありません。運用は全てお任せください。</h3>
+              <div class="img-circle">
+                  <img src="/assets/img/common/img-welfare-preview.png" alt="">
+              </div>
+
+              <div class="welfare-more-tooltip">
+                <h2></h2>
+                <h3 class="welfare-more-tooltip__content">完全アウトソーシング型の福利厚生サービスなので、新たな業務が増える心配はありません。運用は全てお任せください。</h3>
               </div>
             </div>
           </div>
@@ -274,15 +266,19 @@
 
   <section class="section-tertiary">
     <div class="container-1200">
-      <h2 class="ttl-secondary">ご利用はわずか月額385円（税込）/1アカウント</h2>
+      <h2 class="ttl-secondary">ご利用はわずか月額385円（税込）〜  / 1アカウント</h2>
 
       <h3 class="ttl-tertiary">ご法人様向け/個人事業主様向けプランをご用意しています。</h3>
 
       <div class="section-img">
-        <img src="/assets/img/common/saison-fukurico.png" alt="">
+        <img src="/assets/img/common/img-welfare-icon-001.png" alt="">
       </div>
 
-      <a href="#" class="dark_blue_outline_btn">セゾンフクリコをもっと詳しく</a>
+      <a href="#" class="faq_more bondi_blue_outline_btn">
+        <span class="bondi_blue_outline_btn__tittle">
+          セゾンフクリコをもっと詳しく
+        </span>
+      </a>
     </div>
   </section>
 

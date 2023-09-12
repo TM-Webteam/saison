@@ -3,30 +3,46 @@
   padding: 140px 0 0px;
 
   .section-welcome {
-    padding: 85px 120px;
+    position: relative;
+    min-height: 518px;
+    padding: 120px;
     text-align: left;
     background-color: #f7f7f7;
+    background-image: url("/assets/img/common/welfare_visual.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @media #{$sp} {
+      padding: 35px;
+    }
+
 
     .ttl-primary {
       font-size: 42px;
       margin-bottom: 31px;
       text-align: left;
       line-height: 1;
+      color: #FFFFFF;
+      text-shadow: 2px 1px 12px rgba(0, 0, 0, 0.5);
     }
 
     .ttl-tertiary {
-      font-size: 24px;
-      font-weight: 500;
+      font-size: 21px;
+      font-weight: 250;
       margin-bottom: 30px;
       display: inline-block;
+      padding: 0px 20px;
       background-color: #003f98;
       color: white;
+      transform: skewX(-12deg);
       font-weight: bold;
     }
 
     .ttl-quaternary {
-      font-size: 20px;
+      color: #ffffff;
+      font-size: 18px;
       font-weight: 400;
+      text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
     }
 
     .dark_blue_outline_rounded_btn {
@@ -40,15 +56,27 @@
     padding: 70px 120px 70px;
     background-color: #fff;
 
+    @media #{$sp} {
+      padding: 70px 0px;
+    }
+
     .ttl-secondary {
       font-size: 32px;
       margin-bottom: 61px;
+
+      @media #{$sp} {
+        font-size: 24px;
+      }
     }
 
     .card-list {
       .card-type6 {
         width: calc(100% / 3 - 20px);
         padding: 0;
+
+        @media #{$sp} {
+          width: calc(100% - 35px);
+        }
 
         .card {
           width: 100%;
@@ -94,6 +122,11 @@
     background-color: #eeeeee;
     position: relative;
 
+    @media #{$sp} {
+      font-size: 18px;
+      padding: 120px 30px 70px;
+    }
+
     .up-triangle {
       width: 0;
       height: 0;
@@ -119,6 +152,8 @@
     }
 
     .ttl-tertiary {
+      font-weight: 500px;
+
       .yellow-bottom {
         font-weight: 600;
         background: linear-gradient(to bottom, transparent 70%, $yellow-color 30%);
@@ -127,48 +162,98 @@
     }
 
     .panel-primary {
+      margin-top: 40px;
       margin-bottom: 60px;
 
       .notification-panel2 {
-        padding: 0;
+        border-radius: 4px;
+        padding: 0 30px;
+        background-color: #fff;
+        box-shadow: 2px 2px 6px rgba(0,0,0,.5);
 
         .relation {
-          border: 1px solid #003f98;
+          border: 1px solid #ffffff;
+
           .single__ttl {
-            background-color: #003f98;
+            top: -20px;
+            color: #0297B5;
+            background-color: #E5F4F8;
+          }
+        }
+
+        .card-type19 {
+          padding: 0px;
+
+          .card-list {
+            padding: 0px;
+
+            .card {
+              margin-bottom: 30px;
+
+              @media #{$sp} {
+                width: 100%;
+              }
+
+              border: 1px solid #24A4A4;
+
+              .cat {
+                padding: 15px 15px;
+                background-color: #24A4A4;
+              }
+
+              .circle-list {
+                background-color: #FFFFFF;
+                @media #{$sp} {
+                 font-size: 14px;
+                }
+              }
+            }
           }
         }
       }
     }
 
     .panel-secondary {
+      margin-top: 40px;
       margin-bottom: 60px;
 
       .notification-panel2 {
-        padding: 0;
+        border-radius: 4px;
+        padding: 0 30px;
+        padding-bottom: 60px;
+        background-color: #fff;
+        box-shadow: 2px 2px 6px rgba(0,0,0,.5);
 
         .relation {
-          border: 1px solid #003f98;
-          padding-bottom: 30px;
+          border: 1px solid #ffffff;
 
           .single__ttl {
-            background-color: #003f98;
+            position: relative;
+            top: -20px;
+            color: #0297B5;
+            background-color: #E5F4F8;
           }
 
           dd {
             margin-bottom: 30px;
             text-align: left;
             padding: 0 30px;
+            @media #{$sp} {
+              padding: 0px;
+            }
           }
 
           .card-container {
             padding: 0 30px;
             flex-wrap: nowrap;
             align-items: center;
+            @media #{$sp} {
+              padding: 0px;
+              flex-direction: column
+            }
 
-            .card-circle {
-              width: calc(28% - 20px);
-              padding-bottom: calc(28% - 20px);
+            .img-circle {
+              width: calc(24% - 20px);
               border-radius: 50%;
               background-color: #ccc;
               display: flex;
@@ -177,33 +262,39 @@
               position: relative;
               flex-shrink: 0;
 
-              .card-circle-text {
-                display: block;
-                position: absolute;
-                display: flex;
-                top: 50%;
-                left: 50%;
-                align-items: center;
-                justify-content: center;
-                transform: translate(-50%, -50%);
-                flex-shrink: 0;
+              @media #{$sp} {
+                width: calc( 100% - 20px);
               }
             }
 
             .card-button {
               width: calc(22% - 20px);
-              flex-shrink: 0;
 
+              @media #{$sp} {
+                width: calc( 100% - 20px);
+              }
+              flex-shrink: 0;
+              .default_btn {
+                background-color: #0297B5;
+                color: #ffffff;
+                border-radius: 3px;
+              }
               .default_btn:last-child {
                 margin-bottom: 0;
               }
             }
 
-            .card-txt {
+            .welfare-more-tooltip {
               width: calc(50% - 20px);
               font-weight: 500;
               flex-shrink: 0;
               text-align: left;
+              border: 1px solid #ccc;
+              padding: 20px;
+
+              @media #{$sp} {
+                width: calc( 100% - 20px);
+              }
             }
           }
         }
@@ -321,6 +412,9 @@
 
   .section-tertiary {
     padding: 70px 0;
+    @media #{$sp} {
+      padding: 70px 30px;
+    }
 
     .ttl-secondary {
       margin-bottom: 30px;
