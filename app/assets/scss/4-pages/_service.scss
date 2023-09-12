@@ -113,6 +113,14 @@
               max-width: unset;
               margin: unset;
             }
+
+            .bondi_green_outline_btn {
+              background: white;
+
+              &:hover {
+                background-color: $green-color-3;
+              }
+            }
           }
 
           &.by-size {
@@ -131,7 +139,7 @@
             }
 
             .right-content {
-              background: yellow-color-1;
+              background: $yellow-color-1;
             }
           }
         }
@@ -214,7 +222,7 @@
 
           span.blue {
             color: white;
-            background: #4A1453;
+            background: #4a1453;
             padding: 6px 12px;
             margin-right: 10px;
             font-weight: 400;
