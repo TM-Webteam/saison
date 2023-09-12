@@ -388,9 +388,13 @@
         }
         .jumbotron_welfare_service {
           max-width: 860px;
-          padding: 35px 30px;
           box-shadow: 0px 3px 20px #0000001c;
           margin: 60px auto 50px;
+          transition: all .3s;
+          a {
+            width: 100%;
+            padding: 35px 30px;
+          }
           ul {
             display: inline-block;
             li {
@@ -415,6 +419,9 @@
                 }
               }
             }
+          }
+          &:hover {
+            box-shadow: 0 0 10px rgba(0,0,0,.4);
           }
           @media #{$sp} {
             margin: 30px auto 20px;
@@ -513,7 +520,7 @@
             justify-content: center;
 
             @media #{$sp} {
-              font-size: 16px;
+              font-size: 14px;
               white-space: pre-wrap;
               top: -35px;
             }
@@ -567,6 +574,10 @@
             .blue_gradient_btn {
               font-size: 20px;
               padding: 12px 72px 12px 40px;
+              @media #{$sp} {
+                font-size: 14px;
+                padding: 12px 40px;
+              }
             }
             @media #{$sp} {
               width: 100%;
@@ -579,6 +590,7 @@
 
           @media #{$sp} {
             flex-direction: column;
+            padding: 10px 5px;
           }
         }
 
@@ -653,15 +665,27 @@
                   .descript-1 {
                     font-size: 38px;
                     font-weight: 500;
+                    @media #{$sp} {
+                      font-size: 24px;
+                    }
                   }
                   .descript-2 {
                     font-size: 20px;
+                    @media #{$sp} {
+                      font-size: 16px;
+                    }
                   }
                   .descript-3 {
                     font-size: 30px;
+                    @media #{$sp} {
+                      font-size: 20px;
+                    }
                   }
                   .descript-4 {
                     font-size: 22px;
+                    @media #{$sp} {
+                      font-size: 18px;
+                    }
                   }
                 }
               }
@@ -727,15 +751,19 @@
             }
             @media #{$sp} {
               margin-bottom: 10px;
+              width: 50%;
             }
           }
           @media #{$sp} {
-            flex-direction: column;
+            flex-wrap: wrap;
           }
         }
         .ttl-quaternary {
           font-size: 16px;
           padding: 40px 0 60px;
+          @media #{$sp} {
+            padding: 30px 0;
+          }
         }
         .card-solution-content__text {
           font-size: 16px;
@@ -761,20 +789,34 @@
           li {
             width: 100%;
             max-width: 502px;
-            padding: 30px;
             box-shadow: 0px 3px 20px #00000029;
             background-color: $white-color;
+            transition: all .3s;
             a {
               display: flex;
               gap: 32px;
+              padding: 30px;
               img {
                 width: 120px;
                 height: 120px;
+              }
+              @media #{$sp} {
+                gap: 10px;
+                padding: 15px;
+              }
+            }
+            &:hover {
+              box-shadow: 0 0 10px rgba(0,0,0,.4);
+              a {
+                opacity: 1;
               }
             }
             @media #{$sp} {
               max-width: 100%;
             }
+          }
+          @media #{$sp} {
+            gap: 20px;
           }
         }
         &-description {
@@ -949,6 +991,9 @@
               border-top: 10px solid $primary-color;
             }
           }
+        }
+        &:hover {
+          background: $gradient-bg-reverse;
         }
       }
     }
