@@ -404,6 +404,7 @@
           font-size: 20px !important;
           color: #0297b5;
           margin-bottom: 30px;
+          font-weight: 700;
         }
         .card-img {
           max-width: 100%;
@@ -585,8 +586,8 @@
         &.height-160 {
           height: 160px;
         }
-        &.height-70 {
-          height: 70px;
+        &.height-80 {
+          height: 80px;
         }
         .bondi_blue_outline_btn {
           margin: 0;
@@ -610,6 +611,12 @@
   }
   .section-steps {
     background: #eeeeee;
+    .ttl-primary {
+      margin-bottom: -10px;
+      @media #{$sp} {
+        margin-bottom: 20px;
+      }
+    }
     .grid-card-containers {
       display: flex;
       justify-content: space-between;
@@ -657,11 +664,16 @@
 
   .section-subinfo {
     .containers {
-      padding: 20px;
+      padding: 15px 0;
+    }
+    @media #{$sp} {
+      .containers {
+        padding: 10px;
+      }
     }
     background: #797979;
     color: #fff;
     font-size: 13px;
-    text-align: center;
+    text-align: left;
   }
 }
