@@ -16,7 +16,7 @@
     }
 
     .ttl-primary {
-      font-size: 32px;
+      font-size: 42px;
       margin-bottom: 40px;
       text-align: center;
       font-weight: bold;
@@ -323,10 +323,20 @@
 
         .ttl-quaternary {
           margin-bottom: 20px;
+          font-size: 20px;
         }
 
         .ttl-tertiary {
           margin-bottom: 10px;
+        }
+        @media #{$sp} {
+          .ttl-quaternary {
+            font-size: 14px;
+            margin-top: 20px;
+          }
+          .ttl-tertiary {
+            font-size: 14px;
+          }
         }
       }
     }
@@ -352,6 +362,10 @@
 
   .section-tertiary {
     padding: 60px 120px 70px;
+    .ttl-primary {
+      margin-bottom: 65px;
+    }
+
     @media #{$sp} {
       padding: 35px 15px;
     }
@@ -518,6 +532,13 @@
     }
 
     .section-more {
+      .blue_gradient_btn {
+        max-width: 500px;
+        @media #{$sp} {
+          font-size: 12px;
+          max-width: 90%;
+        }
+      }
       .act-more-tooltip {
         @media #{$sp} {
           top: -115px;

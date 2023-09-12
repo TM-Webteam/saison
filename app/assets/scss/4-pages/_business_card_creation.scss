@@ -32,6 +32,24 @@
       font-size: 20px;
     }
 
+    .banner-container {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr;
+      gap: 50px;
+      @media #{$sp} {
+        grid-template-columns: 1fr;
+        gap: 0px;
+      }
+      .right-content {
+        margin-top: 25px;
+        width: 100%;
+        .banner-img {
+          max-width: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+
     @media #{$sp} {
       padding: 35px 15px;
       .ttl-primary {
@@ -41,7 +59,7 @@
         font-size: 18px;
       }
       .ttl-quaternary {
-        font-size: 16px;
+        font-size: 14px;
       }
     }
   }
@@ -296,7 +314,7 @@
             margin-bottom: 20px;
             img {
               max-width: 100%;
-              object-fit: cover;
+              object-fit: contain;
             }
           }
           .ttl-quaternary {
