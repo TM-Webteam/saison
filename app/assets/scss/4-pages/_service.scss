@@ -149,6 +149,10 @@
 
   .section-card-list {
     padding: 70px 0;
+    
+    @media #{$tab} {
+      padding: 30px 0;
+    }
 
     .section-wrapper {
       display: flex;
