@@ -19,7 +19,7 @@ link:"/saison_welfare"
 {% set menuSidebar = [
 {
 text: "TOP",
-link: "#top"  
+link: "#top"
 },
 {
 text: "セゾンフクリコとは",
@@ -69,7 +69,7 @@ link: "#material"
 <main class="saison_welfare-page">
   <section id="top" class="section-welcome fadein">
     <div class="section-welcome__banner">
-      <img src="/assets/img/common/banner_.png"/>
+      <img src="/assets/img/saison_welfare/banner_saison_welfare.png" />
     </div>
 
     <div class="section-welcome-container">
@@ -93,20 +93,388 @@ link: "#material"
         </div>
 
         <div class="section-welcome-info-right pc-only">
+          <img src="/assets/img/saison_welfare/banner_saison_welfare_ic.png">
           <ul class="info-list">
-            <li><span class="special">最短1日後</span>の振り込みに対応！※1</li>
+            <li>全国25,000 以上の施設を<span class="special">最大 66% OFF </span>で利用できる！</li>
             <li><span class="special">完全アウトソーシング</span>で手間がかからない！</li>
-            <li><span class="special">外国籍の従業員も利用しやすい環境 を整備！</span></li>
+            <li><span class="special">外国籍の従業員も利用しやすい環境</span>を整備！</li>
           </ul>
         </div>
 
         <div class="section-welcome-right-sp sp-only">
-          <img src="/assets/img/common/payment_com_banner.png" >
+          <img src="/assets/img/saison_welfare/banner_saison_welfare_ic.png">
           <ul class="info-list">
-            <li>全国25,000 以上の施設を<span class="special">最大 66% OFF</span>で利用できる！</li>
-            <li><span class="special">一律4%</span>のお得な手数料</li>
-            <li>サービス開始1年で導入企業数 <span class="special">20,000社</span>突破！</li>
+            <li>全国25,000 以上の施設を<span class="special">最大 66% OFF </span>で利用できる！</li>
+            <li><span class="special">完全アウトソーシング</span>で手間がかからない！</li>
+            <li><span class="special">外国籍の従業員も利用しやすい環境</span>を整備！</li>
           </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-primary fadein">
+    <div class="container-1200">
+      <h5 class="ttl-notice">セゾンフクリコとは</h5>
+      <h1 class="ttl-primary">中小企業様のための福利厚生優待サービスです。</h1>
+      <h4 class="ttl-quaternary">
+        従業員のエンゲージメント向上のために福利厚生を導入したいという中小企業様向け
+        <span class="font-weight-normal">の福利厚生優待サービスです。</span>
+      </h4>
+      <div class="section-primary-wrapper">
+        <div class="containers">
+          <ul class="inherit card-list">
+            <li class="card-type6">
+              <a href="#challenge-tax-returns" class="card">
+                <h5 class="ttl-category">全国を網羅した豊富な</h5>
+                <h3 class="ttl-info">特別優待メニュー</h3>
+                <div class="card-image">
+                  <img src="/assets/img/saison_welfare/saison_fukuriko_intro_1.png" />
+                </div>
+                <div class="card-description">
+                  <div><span class="font-weight-bold">全国25,000以上</span>の施設が</div>
+                  <div><span class="font-weight-bold">最大66%OFF</span>で利用できます。</div>
+                </div>
+                <div class="circle-with-arrow">
+                  <div class="arrow-down"></div>
+                </div>
+              </a>
+            </li>
+            <li class="card-type6">
+              <a href="#challenge-improve-cash" class="card">
+                <h5 class="ttl-category">完全アウトソーシングで</h5>
+                <h3 class="ttl-info">手間いらず</h3>
+                <div class="card-image">
+                  <img src="/assets/img/saison_welfare/saison_fukuriko_intro_2.png" />
+                </div>
+                <div class="card-description">
+                  <div class="font-weight-bold">新たな業務が増える心配はありません。</div>
+                  <div>運用はすべてお任せください。</div>
+                </div>
+                <div class="circle-with-arrow">
+                  <div class="arrow-down"></div>
+                </div>
+              </a>
+            </li>
+            <li class="card-type6">
+              <a href="#challenge-raise-funds" class="card">
+                <h5 class="ttl-category">初めてでも導入しやすい</h5>
+                <h3 class="ttl-info">料金プラン</h3>
+                <div class="card-image">
+                  <img src="/assets/img/saison_welfare/saison_fukuriko_intro_3.png" />
+                </div>
+                <div class="card-description">
+                  <div>ご利用料金はわずか</div>
+                  <div class="font-weight-bold">月額385円（税込）/1人</div>
+                </div>
+                <div class="circle-with-arrow">
+                  <div class="arrow-down"></div>
+                </div>
+              </a>
+            </li>
+          </ul>
+          <div class="jumbotron_welfare_service">
+            <h3 class="ttl-quaternary">このような中小企業様にピッタリの福利厚生サービスです。</h3>
+            <ul class="jumbotron_welfare_service_content">
+              <li>
+                {% include 'component/icons/blue-tick.njk' %}
+                <span class="font-weight-bold">従業員に喜んでもらえる・使ってもらえる</span>福利厚生を導入したい
+              </li>
+              <li>
+                {% include 'component/icons/blue-tick.njk' %}
+                <span class="font-weight-bold">初めて法定外福利厚生サービスを導入</span>するので、最初はコストを抑えたい
+              </li>
+              <li>
+                {% include 'component/icons/blue-tick.njk' %}
+                運用するのに<span class="font-weight-bold">手間をかけたくない</span>
+              </li>
+              <li>
+                {% include 'component/icons/blue-tick.njk' %}
+                <span class="font-weight-bold">外国人の従業員が多い</span>ため、日本語以外の言語にも対応してほしい
+              </li>
+            </ul>
+          </div>
+          <div class="saison-introduce">
+            <div class="saison-introduce-video">
+              <iframe src="https://www.youtube.com/embed/6tmhg_QFPcg"></iframe>
+            </div>
+            <div class="saison-introduce-description">
+              <h5 class="ttl-quinary bold">【サービス紹介動画（43秒）】</h5>
+              <h4 class="ttl-quaternary">事業者様向け福利厚生サービス「セゾンフクリコ」</h4>
+              <p class="ttl-quinary">セゾンフクリコでできることを、動画でご紹介します。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-tertiary fadein">
+    <div class="section-tertiary-container">
+      <h1 class="ttl-primary">セゾンフクリコで福利厚生を始めませんか？</h1>
+      <div class="act-more">
+        <div class="act-more-tooltip">
+          <h4 class="act-more-tooltip__content">{{"セゾンフクリコの優待サービスやメリットがわかる！" | safe}}</h4>
+        </div>
+        <div class="act-more-content">
+          <div class="act-more-content-img">
+            <img class="primary-img" src="/assets/img/common/documents_image.png" alt="Documents image 1">
+            <img class="secondary-img" src="/assets/img/common/documents_image.png" alt="Documents image 2">
+          </div>
+          <div class="act-more-content-btn">
+            <a href="#" class="blue_gradient_btn small">
+              サービス資料ダウンロード
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-quaternary"></section>
+
+  <section class="section-quinary fadein">
+    <div class="ttl-notice">法人向け優待サポート</div>
+    <h1 class="ttl-primary">経費削減・業務効率を上げる法人向けのサポートも充実</h1>
+
+    <div class="section-primary__wrapper">
+      <div class="containers">
+        <ul class="inherit card-list">
+          <li class="card-type23">
+            <a href="#" class="card">
+              <div class="ttl-quaternary-container">
+                <h4 class="ttl-quaternary">
+                  オフィス用品
+                </h4>
+              </div>
+              <div class="card-container">
+                <div class="card-image s1"></div>
+                <ul class="card-description">
+                  <li class="yellow-underline">最大<span class="descript-1">10%OFF</span></li>
+                </ul>
+              </div>
+
+            </a>
+          </li>
+          <li class="card-type23">
+            <a href="#" class="card">
+              <div class="ttl-quaternary-container">
+                <h4 class="ttl-quaternary">
+                  法人携帯
+                </h4>
+              </div>
+              <div class="card-container">
+                <div class="card-image s2"></div>
+                <ul class="card-description">
+                  <li class="yellow-underline">経費削減につながる</li>
+                  <li>通信プランをご提案</li>
+                </ul>
+              </div>
+
+            </a>
+          </li>
+          <li class="card-type23">
+            <a href="#" class="card">
+              <div class="ttl-quaternary-container">
+                <h4 class="ttl-quaternary">
+                  セゾンインボイス
+                </h4>
+              </div>
+              <div class="card-container">
+                <div class="card-image s3"></div>
+                <ul class="card-description">
+                  <li>サービスご利用手数料</li>
+                  <li class="yellow-underline"><span class="descript-1">0.3%</span><span class="descript-3">優遇</span>
+                  </li>
+                </ul>
+              </div>
+            </a>
+          </li>
+          <li class="card-type23">
+            <a href="#" class="card">
+              <div class="ttl-quaternary-container">
+                <h4 class="ttl-quaternary">
+                  企業型確定拠出年金
+                </h4>
+              </div>
+              <div class="card-container">
+                <div class="card-image s4"></div>
+                <ul class="card-description">
+                  <li>成約で</li>
+                  <li><span class="descript-4 yellow-underline">ギフト券プレゼント</span></li>
+                </ul>
+              </div>
+            </a>
+          </li>
+          <li class="card-type23">
+            <a href="#" class="card">
+              <div class="ttl-quaternary-container">
+                <h4 class="ttl-quaternary">
+                  複合機
+                </h4>
+              </div>
+              <div class="card-container">
+                <div class="card-image s5"></div>
+                <ul class="card-description">
+                  <li><span class="descript-4 yellow-underline">経費削減につながる</span></li>
+                  <li>複合機をご提案</li>
+                </ul>
+              </div>
+
+            </a>
+          </li>
+          <li class="card-type23">
+            <a href="#" class="card">
+              <div class="ttl-quaternary-container">
+                <h4 class="ttl-quaternary">
+                  OFFICE DOCTOR
+                </h4>
+              </div>
+              <div class="card-container">
+                <div class="card-image s6"></div>
+                <ul class="card-description">
+                  <li>オフィスのITサポート</li>
+                  <li><span class="descript-4 yellow-underline">2ヵ月間無料</span></li>
+                </ul>
+              </div>
+            </a>
+          </li>
+        </ul>
+        <h4 class="ttl-quaternary">
+          ビジネスに活用いただける法人向けメニューは今後もさらに拡充予定です。
+        </h4>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-senary fadein">
+    <div class="container">
+      <h5 class="ttl-notice">ご利用までの流れ</h5>
+      <h1 class="ttl-primary">ご利用開始までは３ステップのみ。</h1>
+      <h4 class="ttl-quaternary">
+        従業員様のID発行後、すぐにサービスをご利用頂けます。
+      </h4>
+
+      <ul class="flow-container">
+        <li class="flow-item">
+          <div class="flow-item-detail">
+            <h5 class="ttl-tertiary bold">Webから<br /> 簡単お申し込み</h5>
+            <div class="flow-item-image">
+              <img src="/assets/img/saison_invoice/flow2.png">
+            </div>
+          </div>
+        </li>
+        <li class="flow-item">
+          <div class="flow-item-detail">
+            <h5 class="ttl-tertiary bold">入会金・会費を<br /> お支払い</h5>
+            <div class="flow-item-image">
+              <img src="/assets/img/saison_welfare/flow3.png">
+            </div>
+          </div>
+        </li>
+        <li class="flow-item">
+          <div class="flow-item-detail">
+            <h5 class="ttl-tertiary bold">従業員様ID発行・<br /> ご利用開始</h5>
+            <div class="flow-item-image">
+              <img src="/assets/img/saison_welfare/flow1.png">
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      <div class="section-more">
+        <a href="#" class="act-more blue_gradient_btn">
+          <div class="act-more-tooltip">
+            <h4 class="act-more-tooltip__content">{{"まずはお気軽にご相談ください" | safe}}</h4>
+          </div>
+          導入のご相談・お問い合わせ（無料）
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-question-and-answer fadein">
+    <div class="container">
+      <h5 class="ttl-sub">FAQ</h5>
+      <h2 class="ttl-secondary">よくある質問</h2>
+      <span class="section-question-and-answer__description">
+        お客様からよくいただくご質問にお答えします。この他にご質問がある方は、<a href="#">お問い合わせフォーム</a>より、お気軽にご連絡ください。
+        </br>
+        2営業日以内に担当者からご連絡させて頂きます。
+      </span>
+      <ul class="section-question-and-answer__list">
+        {% for i in range(1, 5) %}
+        <li class="qa">
+          <div class="flex gap20 question-tab">
+            <div class="qa-marker">
+              <h2 class="ttl-secondary">Q</h2>
+            </div>
+            <div class="qa-content">
+              <h3 class="ttl-tertiary">
+                質問内容が入ります。質問内容が入ります。質問内容が入ります。質問内容が入ります。質問内容が入ります。
+              </h3>
+            </div>
+            <button class="qa-button">
+              <span class="svg__plus">{% include 'component/icons/plus.njk' %}</span>
+              <span class="svg__minus">{% include 'component/icons/minus.njk' %}</span>
+            </button>
+          </div>
+          <div class="flex gap20 answer-tab">
+            <div class="qa-marker">
+              <h2 class="ttl-secondary">A</h2>
+            </div>
+            <div class="qa-content">
+              <h3 class="ttl-tertiary">
+                質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。
+              </h3>
+            </div>
+          </div>
+        </li>
+        {% endfor %}
+      </ul>
+      <a href="#" class="faq_more bondi_blue_outline_btn">
+        <span class="bondi_blue_outline_btn__tittle">
+          もっと見る
+        </span>
+      </a>
+    </div>
+  </section>
+
+  <section class="section-contact fadein">
+    <div class="card-type22">
+      <div class="ttl-notice">CONTACT</div>
+      <h3 class="ttl-tertiary">支払い.comをご検討中の方へ</h3>
+      <div class="useful-wp container">
+        <div class="containers">
+          <div class="flex jcC gap60">
+            <div href="#" class="card">
+              <summary class="card__box">
+                <div class="card__box--ttl">サービス内容について詳しく知りたい方はこちら</div>
+                <div class="card__box--cont">
+                  <div class="card__box--image">
+                    <img src="/assets/img/payment_com/payment_contact1.png"/>
+                  </div>
+                  <div class="card__box--txt">
+                    支払い.comのサービス資料をダウンロートできます。フォーム入力後リアルタイムでお送りいたします。
+                  </div>
+                </div>
+                <div><a class="blue_gradient_btn" href="#">ご相談・お問い合わせ（無料）</a></div>
+              </summary>
+          </div>
+          <div href="#" class="card">
+            <summary class="card__box">
+              <div class="card__box--ttl">利用イメージを知りたい方はこちら</div>
+              <div class="card__box--cont">
+                  <div class="card__box--image">
+                    <img src="/assets/img/payment_com/payment_contact2.png"/>
+                  </div>
+                  <div class="card__box--txt">
+                    支払い.comのサービス資料をダウンロートできます。フォーム入力後リアルタイムでお送りいたします。
+                  </div>
+                </div>
+              <div><a class="blue_gradient_btn" href="#">審査おお申し込み</a></div>
+            </summary>
+          </div>
         </div>
       </div>
     </div>
