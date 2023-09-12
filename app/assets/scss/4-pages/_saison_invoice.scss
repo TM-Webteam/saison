@@ -555,6 +555,18 @@
     }
   }
 
+  .section-contact {
+    .blue_gradient_btn {
+      &:first-child {
+        padding: 12px 20px;
+      }
+    }
+    .ttl-tertiary {
+      font-size: 32px;
+      font-weight: bold;
+    }
+  }
+
   // ===========END SECTIONS==========
 
   // =========SUPPORT SECTIONS========

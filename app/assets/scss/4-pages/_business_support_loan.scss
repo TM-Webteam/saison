@@ -148,6 +148,7 @@
       color: #ffffff;
 
       .ttl-primary {
+       font-size: 42px;
         margin-bottom: 0;
         text-align: left;
 
@@ -227,7 +228,7 @@
 
     .ttl-secondary {
       color: #fff;
-      font-size: 32px;
+      font-size: 30px;
       @media #{$sp} {
         font-size: 22px;
       }
