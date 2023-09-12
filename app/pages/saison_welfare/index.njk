@@ -1,0 +1,115 @@
+{% extends "layout/default.njk" %}
+
+{# Custom SEO tags, leave blank to apply the default values #}
+{% set title = "" %}
+{% set description = "" %}
+{% set keywords = "" %}
+
+{# Page settings and also body class #}
+{% set page = "" %}
+
+{# Breadcrumb #}
+{% set breadcrumb = [
+{
+text:"セゾンフクリコ",
+link:"/saison_welfare"
+}
+] %}
+
+{% set menuSidebar = [
+{
+text: "TOP",
+link: "#top"  
+},
+{
+text: "セゾンフクリコとは",
+link: "#payment"
+},
+{
+text: "セゾンフクリコの特長",
+link: "#flow-of-usage"
+},
+{
+text: "法人向け優待サポート",
+link: "#reason-chosing"
+},
+{
+text: "ご利用者様の声",
+link: "#comment"
+},
+{
+text: "ご利用までの流れ",
+link: "#faq"
+},
+{
+text: "ご利用料金",
+link: "#material"
+},
+{
+text: "よくある質問",
+link: "#material"
+},
+{
+text: "お申し込み",
+link: "#material"
+}
+] %}
+
+{# Custom tags before </head> #}
+{% block customHead %}{% endblock %}
+
+{# Custom tags before </body> #}
+{% block customJs %}{% endblock %}
+
+{# Main content #}
+{% block content %}
+<div class="saison_welfare">
+  {% include 'partial/sidebar.njk' %}
+</div>
+<main class="saison_welfare-page">
+  <section id="top" class="section-welcome fadein">
+    <div class="section-welcome__banner">
+      <img src="/assets/img/common/banner_.png"/>
+    </div>
+
+    <div class="section-welcome-container">
+      <div class="section-welcome-info">
+        <div class="section-welcome-info-left">
+          <div class="title-notice">
+            <div class="title-content">
+              中小企業様の経営を支援する福利厚生サービス
+            </div>
+          </div>
+          <h1 class="ttl-primary">セゾンフクリコ</h1>
+          <h3 class="ttl-tertiary">従業員が喜ぶ優待メニューが充実！<br />月額385円（税込）～で始められる福利厚生サービス</h3>
+          <div class="btn-action">
+            <a href="#" class="act-more orange_more2">
+              <div class="act-more-tooltip">
+                <h4 class="act-more-tooltip__content">セゾンフクリコの優待内容が分かる！</h4>
+              </div>
+              資料ダウンロード
+            </a>
+          </div>
+        </div>
+
+        <div class="section-welcome-info-right pc-only">
+          <ul class="info-list">
+            <li><span class="special">最短1日後</span>の振り込みに対応！※1</li>
+            <li><span class="special">完全アウトソーシング</span>で手間がかからない！</li>
+            <li><span class="special">外国籍の従業員も利用しやすい環境 を整備！</span></li>
+          </ul>
+        </div>
+
+        <div class="section-welcome-right-sp sp-only">
+          <img src="/assets/img/common/payment_com_banner.png" >
+          <ul class="info-list">
+            <li>全国25,000 以上の施設を<span class="special">最大 66% OFF</span>で利用できる！</li>
+            <li><span class="special">一律4%</span>のお得な手数料</li>
+            <li>サービス開始1年で導入企業数 <span class="special">20,000社</span>突破！</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+{% endblock %}
