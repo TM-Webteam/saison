@@ -56,38 +56,30 @@
 
 {# Main content #}
 {% block content %}
-{% include 'partial/sidebar.njk' %}
+{% include 'partial/sidebar.njk' %} 
 <main class="platinum_business-page">
   <section id="top" class="section-welcome fadein">
-    <div class="section-welcome__banner">
-      <img src="/assets/img/common/bannet_10.png"/>
-    </div>
-
-    <div class="section-welcome-container">
-      <div class="section-welcome-info">
-        <div class="section-welcome-left">
+    <div class="containers">
+      <div class="banner-containers">
+        <div class="banner-left">
           <div class="title-notice">
-            <div class="title-content">
-              個人与信型ビジネスカード
-            </div>
+            自分に合ったビジネスカードを
           </div>
-          <h1 class="ttl-primary">セゾンプラチナ・ビジネス・ <br> アメリカン・エキスプレス®・カード</h1>
-          
-          <div class="card-content">
-            <div class="card">
-              <img src="/assets/img/credit_cards/american-express-01.png" />
-            </div>
-            <div class="ttl-quaternary">
-              初年度年会費無料
-            </div>
+          <div class="ttl-primary">
+            セゾンプラチナ・ビジネス・<br> アメリカン・エキスプレス®・カード
           </div>
 
-          <div class="btn-containers">
-            <a class="blue_gradient_btn" href="#">お申し込みはこちら</a>
+          <div class="card-contents">
+            <div class="card-img">
+              <img src="/assets/img/credit_cards/american-express-01.png" alt="Your Image" class="credit-card-img">
+            </div>
+            <div class="card-description">初年度年会費無料</div>
           </div>
+
+          <div class="banner-btn"><a class="blue_gradient_btn" href="#">お申し込みはこちら</a></div>
+
         </div>
-
-        <div class="section-welcome-right pc-only">
+        <div class="banner-right pc-only">
           ビジネスに <br> 余裕をもたらす <br> 一枚なら。
         </div>
       </div>
@@ -99,19 +91,19 @@
       <h2 class="ttl-primary">使うだけ「得」をする！2つの特典</h2>
 
       <div class="grid-card-containers">   
-        <div class="card">
+        <a class="card">
           <div class="card-head">SAISON MILE CLUB</div>
           <div class="card-content">
             <div>JALのマイル還元率 : <span class="percent blue-text"> 1.125％</span></div> 
           </div>
-        </div>
-        <div class="card">
+        </a>
+        <a class="card">
           <div class="card-head">永久不滅ポイント優遇</div>
           <div class="card-content">
             <div><span class="blue-text"> 国内：</span> 1,000円で <span class="percent blue-text">1</span> <span class="blue-text">ポイント</span></div>
             <div class="minus-margin"><span class="blue-text"> 海外：</span> 1,000円で <span class="percent blue-text">2</span> <span class="blue-text">ポイント</span></div>
           </div>
-        </div>
+        </a>
       </div>
     </div>
   </section>
@@ -193,7 +185,7 @@
     <div class="containers">
       <h4 class="ttl-primary">付帯サービス</h4>
       <div class="grid-card-containers">
-        <div class="card">
+        <a class="card">
           <div class="card-img">
             <img src="/assets/img/common/plat5.png" alt="work image" >
           </div>
@@ -201,9 +193,9 @@
             <h4 class="ttl-quaternary">国内空港ラウンジ</h4>
             <div class="ttl-normal">国内の主要空港ラウンジを無料でご利用いただけます。ご搭乗までのひとときを、ゆったりとお過ごしください。従業員様のカードもご利用いただけます。</div>
           </div>
-        </div>
+        </a>
 
-        <div class="card">
+        <a class="card">
           <div class="card-img">
             <img src="/assets/img/common/plat6.png" alt="work image" >
           </div>
@@ -211,9 +203,9 @@
             <h4 class="ttl-quaternary">海外空港ラウンジ</h4>
             <div class="ttl-normal">148以上の国や地域、1,300ヵ所以上の空港ラウンジをご利用いただける「プライオリティ・パス（通常年会費469米ドル／プレステージ会員）」に代表者様カード限定の特別なサービスとして無料でご登録いただけます。</div>
           </div>
-        </div>
+        </a>
 
-        <div class="card">
+        <a class="card">
           <div class="card-img">
             <img src="/assets/img/common/plat3.png" alt="work image" >
           </div>
@@ -221,9 +213,9 @@
             <h4 class="ttl-quaternary">一休プレミアサービス</h4>
             <div class="ttl-normal">全国の厳選されたホテル・旅館・レストランをお得に予約できる「一休プレミアサービス」。特典を体験いただけるご優待をご用意いたしました。</div>
           </div>
-        </div>
+        </a>
 
-        <div class="card">
+        <a class="card">
           <div class="card-img">
             <img src="/assets/img/common/plat4.png" alt="work image" >
           </div>
@@ -231,9 +223,9 @@
             <h4 class="ttl-quaternary">セゾンプレミアムセレクション by クラブ・コンシェルジュ</h4>
             <div class="ttl-normal">一見さんお断りの老舗料亭のご利用や、祇園でのお茶屋遊び、予約の取りずらい美食店の特別リザーブなど多彩なサービスを提供する「セゾンプレミアムセレクション」を無料にてご登録いただけます。</div>
           </div>
-        </div>
+        </a>
 
-        <div class="card">
+        <a class="card">
           <div class="card-img">
             <img src="/assets/img/common/plat2.png" alt="work image" >
           </div>
@@ -241,9 +233,9 @@
             <h4 class="ttl-quaternary">プラチナ会員専用コールセンター</h4>
             <div class="ttl-normal">出張の手配や会食の設定などは、専用のコールセンターへ。<br> 24時間365日、専任のスタッフが誠心誠意お応えします。</div>
           </div>
-        </div>
+        </a>
 
-        <div class="card">
+        <a class="card">
           <div class="card-img">
             <img src="/assets/img/common/plat1.png" alt="work image" >
           </div>
@@ -251,7 +243,7 @@
             <h4 class="ttl-quaternary">従業員様も対象の旅行傷害保険</h4>
             <div class="ttl-normal">海外・国内の旅行中の事故について補償いたします。海外旅行中の事故について最高１億円※1まで、国内旅行中の事故について最高5,000万円※2まで補償いたします。代表者様はもちろん追加カードを発行された従業員様も対象となります。</div>
           </div>
-        </div>
+        </a>
       </div>
 
       <div class="sub-content">
@@ -268,23 +260,23 @@
       <h2 class="ttl-quaternary">起業から事業成長まで、あらゆるビジネスシーンをサポート。経費管理から資金管理、会食や出張で役立つサービスなど、 個人事業主様や経営者にゆとりと安心を提供する一枚です。</h2>
       
       <div class="grid-card-containers">
-        <div class="card">
+        <a class="card">
           <h2 class="ttl-head">毎⽇の経費管理で</h2>
           <img src="/assets/img/common/plat8.png" alt="work image" class="card-img">
           <div class="ttl-normal">起業したばかりで、できるだけ本業に専念したい。しかし、経費管理がいかに大変かを思い知る。セゾンプラチナ・ビジネス・アメリカン・エキスプレス®・カードに出会い、支払いにおける振り込みの手間や手数料が省けただけでなく、明細もすぐにわかるので、領収書管理といった煩わしさからも解放された。</div>
-        </div>
+        </a>
         
-        <div class="card">
+        <a class="card">
           <h2 class="ttl-head">毎⽉の資⾦管理で</h2>
           <img src="/assets/img/common/plat7.png" alt="work image" class="card-img">
           <div class="ttl-normal">起業したばかりで、できるだけ本業に専念したい。しかし、経費管理がいかに大変かを思い知る。セゾンプラチナ・ビジネス・アメリカン・エキスプレス®・カードに出会い、支払いにおける振り込みの手間や手数料が省けただけでなく、明細もすぐにわかるので、領収書管理といった煩わしさからも解放された。</div>
-        </div>
+        </a>
 
-        <div class="card">
+        <a class="card">
           <h2 class="ttl-head">利用可能額を超えた時に</h2>
           <img src="/assets/img/common/plat9.png" alt="work image" class="card-img">
           <div class="ttl-normal">起業したばかりで、できるだけ本業に専念したい。しかし、経費管理がいかに大変かを思い知る。セゾンプラチナ・ビジネス・アメリカン・エキスプレス®・カードに出会い、支払いにおける振り込みの手間や手数料が省けただけでなく、明細もすぐにわかるので、領収書管理といった煩わしさからも解放された。</div>
-        </div>
+        </a>
       </div>
     </div>
   </section>
@@ -419,14 +411,14 @@
               <div>申し込み 資格</div>
             </div>
             <div class="">
-              <div class="content-col">
+              <div class="content-col height-70">
                 <div class="normal-text">
                   中小規模法人代表者（未成年者除く）
                 </div>
               </div>
             </div>
             <div class="">
-              <div class="content-col">
+              <div class="content-col height-70">
                 <div class="normal-text">
                   個人事業主またはフリーランス、経営者の方（高校生除く）
                 </div>
@@ -452,9 +444,9 @@
                 <ul>
                   <li>コバルトビジネスカードの特典・優待サービス</li>
                 </ul>
-                <div class="content-btn">
-                  <a href="" class="blue_gradient_btn">お申し込みはこちら</a>
-                </div>
+                <a class="bondi_blue_outline_btn">
+                  <span class="bondi_blue_outline_btn__tittle">詳細はこちら</span>
+                </a>
               </div>
             </div>
         </div>
@@ -506,7 +498,7 @@
           <div class="ttl-quinary">Webから 簡単お申し込み</div>  
         </div>
 
-        <div>  {% include "component/icons/arrowStep.njk" %}</div>
+        <div class="arrowStep">  {% include "component/icons/arrowStep.njk" %}</div>
 
         <div class="step">
           <div class="ttl-quaternary">Step 2</div> 
@@ -514,7 +506,7 @@
           <div class="ttl-quinary">契約確認書類の 受領</div>  
         </div>
 
-        <div>  {% include "component/icons/arrowStep.njk" %}</div>
+        <div class="arrowStep">  {% include "component/icons/arrowStep.njk" %}</div>
 
         <div class="step">
           <div class="ttl-quaternary">Step 3</div> 
@@ -522,7 +514,7 @@
           <div class="ttl-quinary">審査結果の ご案内</div>  
         </div>
 
-        <div>  {% include "component/icons/arrowStep.njk" %}</div>
+        <div class="arrowStep">  {% include "component/icons/arrowStep.njk" %}</div>
 
         <div class="step">
           <div class="ttl-quaternary">Step 4</div> 
@@ -530,7 +522,7 @@
           <div class="ttl-quinary">郵送で カードお受け取り</div>  
         </div>
 
-        <div>  {% include "component/icons/arrowStep.njk" %}</div>
+        <div class="arrowStep">  {% include "component/icons/arrowStep.njk" %}</div>
 
         <div class="step">
           <div class="ttl-quaternary">Step 5</div> 
