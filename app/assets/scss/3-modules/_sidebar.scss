@@ -1,5 +1,4 @@
 section.rbt-sidearea {
-
   &.rbt-loaded {
     display: block;
     animation: fadeIn 1s;
@@ -13,7 +12,7 @@ section.rbt-sidearea {
 }
 
 section.rbt-sidearea {
-  min-width: 202px;
+  min-width: 171px;
   padding-right: 10px;
   height: auto;
   position: fixed;
@@ -75,13 +74,22 @@ span.rbt-text-name {
     font-size: 14px;
     font-weight: bold;
 
-    &:hover,
+    &:hover {
+      background: transparent
+        linear-gradient(90deg, $primary-color 0%, $green-color-2 100%) 0% 0%
+        no-repeat padding-box;
+    }
+
     &.active {
       background: transparent
         linear-gradient(90deg, $primary-color 0%, $green-color-2 100%) 0% 0%
         no-repeat padding-box;
       color: #fff;
       cursor: pointer;
+
+      &:hover {
+        background: $orange-color;
+      }
     }
   }
 }
