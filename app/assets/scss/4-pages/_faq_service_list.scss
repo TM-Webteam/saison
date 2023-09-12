@@ -147,6 +147,10 @@
 
     .card__box {
       padding: 40px !important;
+
+      @media #{$sp} {
+        padding: 40px 28px !important;
+      }
       .card__info {
         display: grid;
         grid-template-columns: 1fr 2fr;
@@ -154,13 +158,19 @@
         margin-left: -15px;
 
         @media #{$sp} {
-          grid-template-columns: 1fr;
+          display: flex;
         }
 
         .card__info-content {
           display: flex;
           flex-direction: column;
           justify-content: space-between;
+
+          @media #{$sp} {
+            width: 65%;
+            margin-left: 10px;
+          }
+
           h2 {
             font-weight: bold;
             font-size: 24px;
@@ -183,6 +193,11 @@
           display: flex;
           justify-content: center;
           align-items: center;
+
+          @media #{$sp} {
+            width: 35%;
+          }
+
           img {
             max-width: 100%;
             width: 100%;
