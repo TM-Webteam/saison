@@ -73,7 +73,7 @@ link: "#material"
     </div>
 
     <div class="section-welcome-container">
-      <div class="section-welcome-info">
+      <div class="section-welcome-info">  
         <div class="section-welcome-info-left">
           <div class="title-notice">
             <div class="title-content">
@@ -177,20 +177,22 @@ link: "#material"
             <h3 class="ttl-quaternary">このような中小企業様にピッタリの福利厚生サービスです。</h3>
             <ul class="jumbotron_welfare_service_content">
               <li>
-                {% include 'component/icons/blue-tick.njk' %}
-                <span class="font-weight-bold">従業員に喜んでもらえる・使ってもらえる</span>福利厚生を導入したい
+                <div>{% include 'component/icons/blue-tick.njk' %}</div>
+                <div><span class="font-weight-bold">従業員に喜んでもらえる・使ってもらえる</span>福利厚生を導入したい</div>
+                
               </li>
               <li>
-                {% include 'component/icons/blue-tick.njk' %}
-                <span class="font-weight-bold">初めて法定外福利厚生サービスを導入</span>するので、最初はコストを抑えたい
+                <div>{% include 'component/icons/blue-tick.njk' %}</div>
+                <div><span class="font-weight-bold">初めて法定外福利厚生サービスを導入</span>するので、最初はコストを抑えたい</div>
               </li>
               <li>
-                {% include 'component/icons/blue-tick.njk' %}
-                運用するのに<span class="font-weight-bold">手間をかけたくない</span>
+                <div>{% include 'component/icons/blue-tick.njk' %}</div>
+                <div>運用するのに<span class="font-weight-bold">手間をかけたくない</span></div>
+                
               </li>
               <li>
-                {% include 'component/icons/blue-tick.njk' %}
-                <span class="font-weight-bold">外国人の従業員が多い</span>ため、日本語以外の言語にも対応してほしい
+                <div>{% include 'component/icons/blue-tick.njk' %}</div>
+                <div><span class="font-weight-bold">外国人の従業員が多い</span>ため、日本語以外の言語にも対応してほしい</div>
               </li>
             </ul>
           </div>
@@ -280,21 +282,66 @@ link: "#material"
           <h4 class="ttl-quaternary">
             レジャーや健康増進、食事や旅行のシーンで利用できる優待など、従業員の方々が利用しやすい多彩な優待を取り揃えています。
           </h4>
-          {# <div class="preferential-service">
+          <div class="preferential-service">
             <div class="preferential-service-title">優待サービス一例</div>
-            <div class="preferential-service-conent">
+            <ul class="preferential-service-content">
               <li>
                 <a href="#">
-                  <img src="preferential_service_1" alt="preferential service 1">
+                  <img src="/assets/img/saison_welfare/preferential_service_1.png" alt="preferential service 1">
                   <div class="preferential-service-description">
-                    <span>映画鑑賞で</span>
-                    <span>通常鑑賞チケット</span>
-                    <span> 2,000円 → 1,000円〜に！</span>
+                    <div class="title">映画鑑賞で</div>
+                    <div class="muted">通常鑑賞チケット 2,000円 → <span class="special">1,000円〜に！</span></div>
                   </div>
                 </a>
               </li>
-            </div>
-          </div> #}
+              <li>
+                <a href="#">
+                  <img src="/assets/img/saison_welfare/preferential_service_2.png" alt="preferential service 2">
+                  <div class="preferential-service-description">
+                    <div class="title">食事で</div>
+                    <div class="muted">すかいらーくグループご優待券 通常10,000円 → <span class="special">9,000円に！</span></div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="/assets/img/saison_welfare/preferential_service_3.png" alt="preferential service 3">
+                  <div class="preferential-service-description">
+                    <div class="title">健康相談・メンタル相談で</div>
+                    <div class="special"> 相談料　無料</div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="/assets/img/saison_welfare/preferential_service_4.png" alt="preferential service 4">
+                  <div class="preferential-service-description">
+                    <div class="title">カラオケで</div>
+                    <div class="muted"> 東京ドームシティ得10チケット 1冊最大6,000円相当が</span><span class="special">2,790円(税込)</span></div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="/assets/img/saison_welfare/preferential_service_5.png" alt="preferential service 5">
+                  <div class="preferential-service-description">
+                    <div class="title">引越しで</div>
+                    <div class="muted"> サカイ引越センター 引越基本料金 <span class="special">20%OFF</span></div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="/assets/img/saison_welfare/preferential_service_6.png" alt="preferential service 6">
+                  <div class="preferential-service-description">
+                    <div class="title">eラーニングで</div>
+                    <div class="muted">通常室料</div>
+                    <div class="special"> →約800講座の受講が無料</div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
         </li>
         <li class="card-type25">
           <div class="card-heading">

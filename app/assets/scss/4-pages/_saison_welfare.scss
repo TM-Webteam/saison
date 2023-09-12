@@ -140,6 +140,9 @@
               color: $yellow-color;
             }
           }
+          @media #{$sp} {
+            margin: 0 15px;
+          }
         }
         .ttl-primary {
           color: $white-color;
@@ -158,6 +161,7 @@
           text-align: left;
 
           @media #{$sp} {
+            font-size: 20px;
             text-align: center;
           }
 
@@ -282,6 +286,12 @@
         font-weight: 700;
         display: grid;
         gap: 20px;
+        @media #{$sp} {
+          font-size: 18px;
+        }
+      }
+      @media #{$sp} {
+        margin-top: 20px;
       }
     }
     @media #{$sp} {
@@ -299,6 +309,9 @@
 
     .ttl-primary {
       font-size: 32px;
+      @media #{$sp} {
+        font-size: 24px;
+      }
     }
 
     .ttl-quaternary {
@@ -389,7 +402,22 @@
               &:last-child {
                 margin-bottom: 0;
               }
+              svg {
+                width: 15px;
+                @media #{$sp} {
+                  width: 35px;
+                }
+              }
+              div {
+                @media #{$sp} {
+                  font-size: 14px;
+                  text-align: left;
+                }
+              }
             }
+          }
+          @media #{$sp} {
+            margin: 30px auto 20px;
           }
         }
         .saison-introduce {
@@ -406,7 +434,7 @@
 
           @media #{$sp} {
             grid-template-columns: auto;
-            margin: 30px -15px 0 -15px;
+            margin: 0;
             padding: 30px 15px;
           }
 
@@ -432,6 +460,9 @@
               margin-bottom: 10px;
             }
           }
+          @media #{$sp} {
+            max-width: 100%;
+          }
         }
       }
     }
@@ -449,7 +480,7 @@
         margin-bottom: 100px;
         @media #{$sp} {
           font-size: 20px;
-          margin-bottom: 130px;
+          margin-bottom: 160px;
         }
       }
       .act-more {
@@ -483,7 +514,7 @@
 
             @media #{$sp} {
               font-size: 16px;
-              white-space: pre;
+              white-space: pre-wrap;
               top: -35px;
             }
 
@@ -498,6 +529,9 @@
               border-right: 15px solid transparent;
               border-top: 10px solid #fff;
             }
+          }
+          @media #{$sp} {
+            top: -90px;
           }
         }
 
@@ -681,11 +715,18 @@
             img {
               width: 100%;
               height: 110px;
+              @media #{$sp} {
+                width: 100px;
+                height: auto;
+              }
             }
             span {
               color: $primary-color;
               font-size: 16px;
               font-weight: bold;
+            }
+            @media #{$sp} {
+              margin-bottom: 10px;
             }
           }
           @media #{$sp} {
@@ -711,6 +752,52 @@
           text-align: center;
           border-radius: 3px;
           background-color: $black-color;
+        }
+        &-content {
+          margin: 20px 0;
+          display: flex;
+          gap: 40px;
+          flex-wrap: wrap;
+          li {
+            width: 100%;
+            max-width: 502px;
+            padding: 30px;
+            box-shadow: 0px 3px 20px #00000029;
+            background-color: $white-color;
+            a {
+              display: flex;
+              gap: 32px;
+              img {
+                width: 120px;
+                height: 120px;
+              }
+            }
+            @media #{$sp} {
+              max-width: 100%;
+            }
+          }
+        }
+        &-description {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: flex-start;
+          line-height: 30px;
+          div {
+            text-align: left;
+          }
+          .title {
+            font-size: 20px;
+            font-weight: bold;
+            color: $primary-color;
+          }
+          .muted {
+            font-size: 15px;
+          }
+          .special {
+            font-size: 23px;
+            font-weight: bold;
+          }
         }
       }
       @media #{$sp} {
