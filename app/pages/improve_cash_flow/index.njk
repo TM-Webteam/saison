@@ -19,77 +19,89 @@
 
 <main class="improve_cash_flow-page">
   <section class="section-welcome">
-    <div class="container-1200">
-      <h3 class="ttl-tertiary">法人経営者様・個人事業主様へ。</h3>
-
-      <h1 class="ttl-primary">資金繰り・資金調達をサポートするサービス</h1>
-
-      <h4 class="ttl-quaternary">クレディセゾンは、資金繰り改善や資金調達をもっと手軽に実現できる、<br>
-        サ－ビスをご提供いたします。</h4>
+    <div class="section-welcome__banner">
+      <img src="/assets/img/improve_cash_flow/banner.png">
+    </div>
+    <div class="section-welcome__container">
+      <div class="section-welcome__inner">
+        <h3 class="ttl-tertiary">
+          法人経営者様・個人事業主様へ
+        </h3>
+      </div>
+      <div class="section-welcome__title">
+        <h1 class="ttl-primary">資金繰り・資金調達をサポートするサービス</h1>
+      </div>
+      <div class="section-welcome__sub_title">
+        クレディセゾンは、資金繰り改善や資金調達をもっと手軽に実現できる </br>
+        サ－ビスをご提供いたします。
+      </div>
     </div>
   </section>
 
   <section class="section-primary">
     <div class="container-1200">
-      <h2 class="ttl-secondary">こんなニーズやお悩みありませんか？</h2>
+      <h2 class="ttl-secondary">こんなニーズやお悩みはありませんか?</h2>
 
-      <ul class="flex jcC gap30 card-list">
-        <li class="card-type6">
-          <a href="#" class="card">
-            <div class="ttl-quaternary-container">
-              <h4 class="ttl-quaternary">資金繰りを改善したい</h4>
+      <div class="section-wrapper">
+        <div class="section-item">
+          <div class="title">資金繰りを改善したい</div>
+          <div class="content">
+            <div class="image">
+              <img src="/assets/img/improve_cash_flow/concerns-1.png">
             </div>
-
-            <div class="flex gap30 card-body">
-              <div class="circle-container">
-                イラスト
-                <br>
-                または
-                <br>
-                アイコン
-              </div>
-
-              <ul class="check-list">
-                <li>入金サイトが長く、資金繰りに困っている</li>
-                <li>支払いを先延ばししたい</li>
-                <li>金融機関に知られずに解決したい</li>
+            <div class="list-selection">
+              <ul>
+                <li>
+                  {% include "component/icons/tick-checked.njk" %} 入金サイトが長く、資金繰りに困っている
+                </li>
+                <li>
+                  {% include "component/icons/tick-checked.njk" %} 支払いを先延ばししたい
+                </li>
+                <li>
+                  {% include "component/icons/tick-checked.njk" %} 金融機関に知られずに解決したい
+                </li>
               </ul>
             </div>
-
-            <div class="circle-with-arrow">
-              <div class="arrow-down"></div>
+          </div>
+          <div class="action">
+            <a href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="11.098" height="11.098" viewBox="0 0 11.098 11.098" fill="#fff">
+                <path id="arrow" d="M6.847,0V6.847H0" transform="translate(5.549) rotate(45)" fill="none"
+                  stroke="#fff" stroke-width="2" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="section-item">
+          <div class="title">資金調達をしたい</div>
+          <div class="content">
+            <div class="image">
+              <img src="/assets/img/improve_cash_flow/concerns-2.png">
             </div>
-          </a>
-        </li>
-
-        <li class="card-type6">
-          <a href="#" class="card">
-            <div class="ttl-quaternary-container">
-              <h4 class="ttl-quaternary">資金調達をしたい</h4>
-            </div>
-
-            <div class="flex gap30 card-body">
-              <div class="circle-container">
-                イラスト
-                <br>
-                または
-                <br>
-                アイコン
-              </div>
-
-              <ul class="check-list">
-                <li>金融機関以外から事業資金を調達したい</li>
-                <li>無担保・無保証人で借りたい</li>
-                <li>できる限り低金利で借りたい</li>
+            <div class="list-selection">
+              <ul>
+                <li>
+                  {% include "component/icons/tick-checked.njk" %} 金融機関以外から事業資金を調達したい
+                </li>
+                <li>
+                  {% include "component/icons/tick-checked.njk" %} 無担保・無保証人で借りたい
+                </li>
+                <li>
+                  {% include "component/icons/tick-checked.njk" %} できる限り低金利で借りたい
+                </li>
               </ul>
             </div>
-
-            <div class="circle-with-arrow">
-              <div class="arrow-down"></div>
-            </div>
-          </a>
-        </li>
-      </ul>
+          </div>
+          <div class="action">
+            <a href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="11.098" height="11.098" viewBox="0 0 11.098 11.098" fill="#fff">
+                <path id="arrow" d="M6.847,0V6.847H0" transform="translate(5.549) rotate(45)" fill="none"
+                  stroke="#fff" stroke-width="2" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -103,12 +115,11 @@
         <div class="notification-panel2">
           <div class="relation">
             <h3 class="single__ttl">
-              <span>経費清算クラウド「Concur Expense」</span>
+              <span>「支払い.com」</span>
             </h3>
 
             <div class="card-type13">
-              <dd>「支払い.com」を利用すれば、期限の迫った請求書も、支払いまで最長60日余裕をプラス。資金繰りを改善し、借りずに事業を加速できます。
-                必要なのはお手持ちのカードだけ。審査も書類も必要ありません。</dd>
+              <dd>「支払い.com」を利用すれば、期限の迫った請求書も、<strong>支払いまで最長60日余裕をプラス。</strong> 資金繰りを改善し、借りずに事業を加速できます。<br> 必要なのはお手持ちのカードだけ。審査も書類も必要ありません。</dd>
 
               <div class="flex gap30 aiC sp-reverse">
                 <div class="sec-left-wrapper">
@@ -130,7 +141,7 @@
                 </div>
               </div>
 
-              <a href="#" class="dark_blue_outline_btn small">支払い.comをもっと詳しく</a>
+              <a href="#" class="bondi_blue_outline_btn">支払い.comをもっと詳しく</a>
             </div>
           </div>
         </div>
@@ -147,7 +158,7 @@
 
             <div class="card-type13">
               <dd>
-                セゾンビジネスサポートローンは、下記対象のビジネスカードでご利用頂ける中小企業・個人事業主の経営を支援する融資サービスです。お持ちのビジネスカードに、最大950万円のゆとりあるご融資可能枠と借り入れ額に応じた優遇金利をご用意しております。カード1枚で用途を問わず、ビジネスのあらゆるシーンで幅広くご利用いただけます。。
+                セゾンビジネスサポートローンは、下記対象のビジネスカードでご利用いただける中小企業様・個人事業主様の経営を支援する融資サービスです。お持ちのビジネスカードに、<strong>最大950万円のゆとりあるご融資可能枠と借り入れ額に応じた優遇金利</strong>をご用意しております。カード1枚で用途を問わず、ビジネスのあらゆるシーンで幅広くご利用いただけます。
               </dd>
 
               <ul class="flex gap30 card-list">
@@ -162,7 +173,7 @@
                       </div>
 
                       <div class="card__box-title">
-                        <h3 class="ttl-terianry">セゾンコバルト・ビジネス・ アメリカン・エキスプレス®・カード</h3>
+                        <h3 class="ttl-terianry">セゾンプラチナ・ビジネス・アメリカン・エキスプレス®・カード</h3>
                       </div>
                     </div>
 
@@ -173,97 +184,42 @@
                       </div>
 
                       <div class="card__box-title">
-                        <h3 class="ttl-terianry">セゾンコバルト・ビジネス・ アメリカン・エキスプレス®・カード</h3>
+                        <h3 class="ttl-terianry">セゾンコバルト・ビジネス・ <br> アメリカン・エキスプレス®・カード</h3>
                       </div>
                     </div>
                   </div>
                 </li>
 
                 <li class="card-type9">
-                  <h3 class="card__box--ttl card__box-ttl02">融資サービスの内容</h3>
+                  <h3 class="card__box--ttl card__box-ttl02">ゆとりあるご利用枠と優遇金利</h3>
 
                   <div class="container">
                     <div class="flex gap30 card__box-wrapper card__box__wrapper-right">
-                      <div>
+                      <div class="box-item">
                         <dd>融資枠</dd>
-                        <h3 class="ttl-tertiary">最大950万円
+                        <h3 class="ttl-tertiary">最大<span class="text-yellow">950</span>万円
                           <small>※1</small>
                         </h3>
                       </div>
-                      <div>
+                      <div class="box-item">
                         <dd>金利</dd>
-                        <h3 class="ttl-tertiary">2.8％～9.6%
-                          <small>※1</small>
+                        <h3 class="ttl-tertiary"><span class="text-yellow">2.8％～9.6%</span> 
+                          <small>※2</small>
                         </h3>
                       </div>
                     </div>
                   </div>
 
-                  <dd>※1 初回は融資実行となります。ご融資枠の上限は、年収の1/3以内となります。<br>※2
-                    ご利用可能枠が110万円以上の方が対象。本サービスご利用前の金利はセゾンプラチナ・ビジネス・アメリカン・エキスプレス®・カードの場合14.5％、セゾンコバルト・ビジネス・アメリカン・エキスプレス®・カードの場合18.0％です。
+                  <dd class="description">
+                    ※1 初回はご融資枠全額をご融資いたします。ご融資枠の上限は、年収の1/3以内となります。<br>
+                    ※2 ご利用可能枠が110万円以上の方が対象。本サービスご利用前の金利はセゾンプ ラチナ・ビジネス・アメリカン・エキスプレス®・カードの場合14.5％、セゾンコバ ルト・ビジネス・アメリカン・エキスプレス®・カードの場合18.0％です。 <br>
+                    ※ 審査の結果、110万円未満のご利用可能枠となる場合は、書面にてご連絡いたします。
                   </dd>
                 </li>
               </ul>
 
-              <a href="#" class="dark_blue_outline_btn">セゾンビジネスサポートローンをもっと詳しく</a>
+              <a href="#" class="bondi_blue_outline_btn">セゾンビジネスサポートローンをもっと詳しく</a>
             </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="panel-tertiary">
-        <div class="notification-panel2">
-          <div class="relation">
-            <h3 class="single__ttl">
-              <span>ビジネスファンディング（全東信加盟店様限定）</span>
-            </h3>
-
-            <div class="card-type13">
-              <dd>
-                クレディセゾンのビジネスファンディングは、毎月のクレジットカード売上を「いま」必要な資金に変えるオンライン資金調達サービスです。（将来債権買取サービス）保証人、担保は不要でWebですぐにお申し込みが完了します。
-              </dd>
-
-              <div class="flex gap50 aiC sp-reverse">
-                <figure class="sec__img"><img src="/assets/img/common/business-fantink.png" alt=""></figure>
-
-                <div class="gap-10 sec-right-wrapper">
-                  <dl class="flex aiC gap30 sec01-right-box">
-                    <dt class="flex aiC gap20 sp-fS">
-                      <div class="number-circle">1</div>
-                      <h5 class="ttl-senary"><span class="yellow-bottom">保証人、担保は不要</span></h5>
-                    </dt>
-                  </dl>
-
-                  <dl class="flex aiC gap30 sec01-right-box">
-                    <dt class="flex aiC gap20 sp-fS">
-                      <div class="number-circle">2</div>
-                      <h5 class="ttl-senary"><span class="yellow-bottom">
-                          最短2営業日</span>で入金可能</h5>
-                    </dt>
-                  </dl>
-
-                  <dl class="flex aiC gap30 sec01-right-box">
-                    <dt class="flex aiC gap20 sp-fS">
-                      <div class="number-circle">3</div>
-                      <h5 class="ttl-senary">
-                        <span class="yellow-bottom">初期費用・月額費用、延滞金もな</span> <br> し
-                      </h5>
-                    </dt>
-                  </dl>
-
-                  <dl class="flex aiC gap30 sec01-right-box">
-                    <dt class="flex aiC gap20 sp-fS">
-                      <div class="number-circle">4</div>
-                      <h5 class="ttl-senary">ご精算は
-                        <span class="yellow-bottom">売上に応じた定率精</span>だから <br> 安心
-                      </h5>
-                    </dt>
-                  </dl>
-                </div>
-              </div>
-            </div>
-
-            <a href="#" class="dark_blue_outline_btn small">ビジネスファンディングをもっと詳しく</a>
           </div>
         </div>
       </div>
@@ -277,8 +233,7 @@
 
             <div class="card-type13">
               <dd>
-                MONEY
-                CARDとは、キャッシングリボ専用のローンカードです。全国の郵便局をはじめ、都市銀行、地方銀行、信用金庫、コンビニなどで、ご利用可能枠の範囲内で繰り返しご利用いただけます。目的用途を事業資金としても活用できる余裕のある融資枠を設定しています。
+                MONEY CARDとは、キャッシングリボ専用のローンカードです。全国の郵便局をはじめ、都市銀行、地方銀行、信用金庫、コンビニなどに設置のATMで、ご利用可能枠の範囲内で繰り返しご利用いただけます。<strong>資金使途は事業性用途としてもご利用可能。余裕のある融資枠をご用意しています。</strong>
               </dd>
 
               <div class="flex gap50 aiC sp-reverse">
@@ -288,15 +243,17 @@
                   <dl class="flex aiC gap30 sec01-right-box">
                     <dt class="flex aiC gap20 sp-fS">
                       <div class="number-circle">1</div>
-                      <h5 class="ttl-senary"><span class="yellow-bottom">全国のコンビニ・A</span>TMでご利用可能</h5>
+                      <h5 class="ttl-senary"><span class="yellow-bottom">全国のコンビニ・ATM</span>でご利用可能（ATM手数料は何度でも無料）</h5>
                     </dt>
                   </dl>
 
                   <dl class="flex aiC gap30 sec01-right-box">
                     <dt class="flex aiC gap20 sp-fS">
                       <div class="number-circle">2</div>
-                      <h5 class="ttl-senary"><span class="yellow-bottom">
-                          ご指定の口座</span>に最短数十秒で振り<br>込み</h5>
+                      <h5 class="ttl-senary">
+                        ご指定の口座<span class="yellow-bottom">
+                        に最短数十秒で振り込み</span>
+                      </h5>
                     </dt>
                   </dl>
 
@@ -304,7 +261,7 @@
                     <dt class="flex aiC gap20 sp-fS">
                       <div class="number-circle">3</div>
                       <h5 class="ttl-senary">
-                        ご利用用途は自由<span class="yellow-bottom">。ご利用可能枠：最大300万</span> <br> 円
+                        ご利用用途は自由。<span class="yellow-bottom">ご利用可能枠：最大300万円</span>
                       </h5>
                     </dt>
                   </dl>
@@ -312,8 +269,8 @@
                   <dl class="flex aiC gap30 sec01-right-box">
                     <dt class="flex aiC gap20 sp-fS">
                       <div class="number-circle">4</div>
-                      <h5 class="ttl-senary">新規のご契約＆ご利用
-                        <span class="yellow-bottom">で、最大2カ月分のご利息をキャッ </span>
+                      <h5 class="ttl-senary">新規のご契約&ご利用で、
+                        <span class="yellow-bottom">最大2ヵ月分のご利息を キャッシュバック </span>
                       </h5>
                     </dt>
                   </dl>
@@ -321,7 +278,7 @@
               </div>
             </div>
 
-            <a href="#" class="dark_blue_outline_btn small">MONEY CARDをもっと詳しく</a>
+            <a href="#" class="bondi_blue_outline_btn">MONEY CARDをもっと詳しく</a>
           </div>
         </div>
       </div>
@@ -363,17 +320,6 @@
         </div>
       </div>
     </div>
-  </section>
-
-  <section class="breadcrumb">
-    <ul class="flex">
-      <li>
-        <a href="#">TOP</a>
-      </li>
-      <li>
-        <a href="#">資金繰りを改善したい</a>
-      </li>
-    </ul>
   </section>
 </main>
 {% endblock %}
