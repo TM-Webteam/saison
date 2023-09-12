@@ -50,10 +50,15 @@
     .bondi_blue_btn {
       display: block;
       max-width: 460px;
-      font-weight: 400;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 31px;
+      padding: 16px 0;
 
       @media #{$sp} {
         margin: 0 15px;
+        padding: 10px 0;
+        font-size: 18px;
       }
     }
   }
