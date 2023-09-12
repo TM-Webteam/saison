@@ -388,7 +388,7 @@ $(document).ready(function () {
 
   item.length
     ? item.addClass("active")
-    : $(".rbt-item:first").addClass("active");
+    : $(".rbt-item:last").addClass("active");
 });
 
 $(window).on("popstate", function () {
