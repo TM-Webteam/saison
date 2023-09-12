@@ -935,6 +935,39 @@
   }
 }
 
+// ボタン12
+.bondi_green_outline_btn {
+  color: $green-color-3;
+  background-color: transparent;
+  padding: 18px 0;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+
+  border: 2px solid $green-color-3;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-radius: 3px;
+
+  &:hover {
+    background-color: $green-color-3;
+    color: #ffffff;
+    opacity: 1;
+    &::before {
+      border-top: 3px solid $white-color;
+      border-right: 3px solid $white-color;
+    }
+    span {
+      color: white;
+    }
+  }
+
+  @media #{$sp} {
+    padding: 13px 20px;
+    padding-right: 30px;
+  }
+}
+
 // 吹き出し付きボタン
 .ctabtn {
   position: relative;

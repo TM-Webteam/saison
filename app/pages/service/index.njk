@@ -1,0 +1,133 @@
+{% extends "layout/default.njk" %}
+
+{# Custom SEO tags, leave blank to apply the default values #}
+{% set title = "" %}
+{% set description = "" %}
+{% set keywords = "" %}
+
+{# Page settings and also body class #}
+{% set page = "" %}
+
+{# Breadcrumb #}
+{% set breadcrumb = [{
+  text:"サービス一覧",
+  link:"#"
+}] %}
+
+{# Custom tags before </head> #}
+{% block customHead %}{% endblock %}
+
+{# Custom tags before </body> #}
+{% block customJs %}{% endblock %}
+
+{# Main content #}
+{% block content %}
+
+<main class="service-page">
+  <section class="section-welcome">
+    <div class="container-1200">
+      <h1 class="ttl-primary">サービス一覧</h1>
+
+      <h3 class="ttl-tertiary">クレディセゾンは、法人・個人事業主の方向けに、カード会社の枠を超えた <br> ビジネス成長につながる幅広いソリューションをご提供しています。 </h3>
+    </div>
+  </section>
+
+  <section class="section-secondary">
+    <div class="container-1200 refine-search">
+      <h2 class="ttl-secondary">絞り込み検索</h2>
+
+      <div class="section-wrapper">
+        <div class="card-section by-size">
+          <div class="left-content">
+            規模別
+          </div>
+          <div class="right-content">
+             <a href="#" class="bondi_blue_outline_btn">個人事業主様向け</a>
+             <a href="#" class="bondi_blue_outline_btn">中小企業様向け</a>
+          </div>
+        </div>
+        <div class="card-section by-purpose">
+          <div class="left-content">
+            目的別
+          </div>
+          <div class="right-content">
+             <a href="#" class="bondi_green_outline_btn">個人事業主様向け</a>
+             <a href="#" class="bondi_green_outline_btn">中小企業様向け</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-card-list">
+    <div class="container-1200">
+      <div class="section-wrapper">
+        <div class="card-section">
+          <img src="/assets/img/common/payment-section-card-1.png" alt="cast flow">
+          <div class="content">
+            <div class="title">
+              <span class="primary">法人与信型ビジネスカード</span>
+              セゾンプラチナ・ビジネス プロアメリカン・エキスプレス®・カード
+            </div>
+            <div class="description">
+              中小企業様の経営と事業成長を強力にサポートする一枚。
+            </div>
+            <div class="list-button">
+              <a href="#" class="bondi_blue_outline_btn">中小企業様向け</a>
+              <a href="#" class="bondi_green_outline_btn">ビジネスカードを作りたい</a>
+              <a href="#" class="bondi_green_outline_btn">経費を削減したい</a>
+            </div>
+          </div>
+        </div>
+        <div class="card-section">
+          <img src="/assets/img/common/payment-section-card-1.png" alt="cast flow">
+          <div class="content">
+            <div class="title">
+              <span class="secondary">法人与信型ビジネスカード</span>
+              セゾンプラチナ・ビジネス プロアメリカン・エキスプレス®・カード
+            </div>
+            <div class="description">
+              中小企業様の経営と事業成長を強力にサポートする一枚。
+            </div>
+            <div class="list-button">
+              <a href="#" class="bondi_blue_outline_btn">中小企業様向け</a>
+              <a href="#" class="bondi_green_outline_btn">ビジネスカードを作りたい</a>
+              <a href="#" class="bondi_green_outline_btn">経費を削減したい</a>
+            </div>
+          </div>
+        </div>
+        <div class="card-section">
+          <img src="/assets/img/common/payment-section-card-1.png" alt="cast flow">
+          <div class="content">
+            <div class="title">
+              <span class="blue">法人与信型ビジネスカード</span>
+              セゾンプラチナ・ビジネス プロアメリカン・エキスプレス®・カード
+            </div>
+            <div class="description">
+              中小企業様の経営と事業成長を強力にサポートする一枚。
+            </div>
+            <div class="list-button">
+              <a href="#" class="bondi_blue_outline_btn">中小企業様向け</a>
+              <a href="#" class="bondi_green_outline_btn">ビジネスカードを作りたい</a>
+              <a href="#" class="bondi_green_outline_btn">経費を削減したい</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-tertiary">
+    <h5 class="ttl-sub">DOCUMENTS</h5>
+    <h2 class="ttl-secondary">もっと詳しく知りたい方へ</h2>
+    <h3 class="ttl-tertiary">クレディセゾンのビジネスカードやソリューションの詳細がわかる資料をダウンロードいただけます。</h3>
+    <a href="#" class="blue_gradient_btn">サービス資料一覧を見る</a>
+  </section>
+
+  <section class="section-license">
+    <div class="container">
+      ※「アメリカン・エキスプレス」は、アメリカン・エキスプレスの登録商標です。(株)クレディセゾンは、アメリカン・エキスプレスのライセンスに基づき使用しています。
+    </div>
+  </section>
+</main>
+{% endblock %}
