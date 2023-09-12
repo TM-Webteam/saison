@@ -1,0 +1,285 @@
+.saison_welfare {
+  .rbt-list {
+    .rbt-item {
+      &.active {
+        background: $gradient-bg;
+      }
+    }
+  }
+}
+
+.saison_welfare-page {
+  section {
+    .ttl-notice {
+      font-size: 14px;
+      color: $primary-color;
+      margin-bottom: 45px;
+    }
+    .ttl-primary {
+      font-size: 32px;
+      span {
+        font-size: 15px;
+      }
+      @media #{$sp} {
+        font-size: 20px;
+        text-align: center !important;
+      }
+    }
+    .ttl-quaternary {
+      text-align: center;
+      margin-bottom: 70px;
+      .font-weight-normal {
+        font-weight: normal;
+      }
+      @media #{$sp} {
+        margin-bottom: 30px;
+      }
+    }
+    .yellow-underline {
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0) 70%, #ffff01 0);
+    }
+    .primary-txt {
+      color: $primary-color;
+    }
+  }
+
+  .section-welcome {
+    padding-top: 70px;
+    padding-bottom: 40px;
+    min-height: 558px;
+
+    @media #{$sp} {
+      padding: 70px 0;
+    }
+    text-align: center;
+    position: relative;
+
+    &__banner {
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: inherit;
+      overflow: hidden;
+      background: $primary-color;
+
+      img {
+        position: static;
+        transform: none;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    &-info {
+      display: flex;
+      align-items: center;
+      max-width: 1200px;
+      margin: auto;
+
+      @media #{$sp} {
+        padding: 0;
+        display: block;
+      }
+
+      &-left {
+        width: 60%;
+        text-align: left;
+        @media #{$sp} {
+          width: 100%;
+          text-align: center;
+        }
+      }
+
+      &-right {
+        width: 50%;
+        @media #{$sp} {
+          width: 100%;
+        }
+      }
+    }
+
+    .slick-slider {
+      .slick-list {
+        height: 100%;
+
+        .slick-track {
+          height: 100%;
+
+          img {
+            height: 100%;
+          }
+        }
+      }
+    }
+
+    .section-welcome-info {
+      display: flex;
+      justify-content: center;
+      @media #{$sp} {
+        flex-direction: column;
+        top: 0;
+        left: 0;
+        transform: none;
+        width: 100%;
+        padding-top: 30px;
+      }
+    }
+    .section-welcome-info-left {
+      @media #{$sp} {
+        text-align: center;
+      }
+
+      .title-notice {
+        position: relative;
+        display: inline-block;
+        font-size: 21px;
+        font-weight: 700;
+        padding: 6px 20px;
+
+        color: $white-color;
+        background-color: $blue-color-3;
+        transform: skew(-10deg);
+        margin-bottom: 15px;
+        .title-content {
+          line-height: 28px;
+          transform: skew(10deg);
+          font-size: 21px;
+          .yellow-txt {
+            color: $yellow-color;
+          }
+        }
+      }
+      .ttl-primary {
+        color: $white-color;
+        font-size: 42px;
+        text-align: left;
+        margin-bottom: 20px;
+        text-shadow: 0px 0px 20px #05172c8d;
+        @media #{$sp} {
+          font-size: 24px;
+        }
+      }
+      .ttl-tertiary {
+        color: $white-color;
+        margin-bottom: 105px;
+        text-align: left;
+
+        @media #{$sp} {
+          text-align: center;
+        }
+
+        .special {
+          font-size: 28px;
+          text-shadow: 0px 0px 20px #05172c8d;
+        }
+      }
+      .btn-action {
+        display: inline-flex;
+        gap: 20px;
+        .act-more {
+          margin: auto;
+          position: relative;
+          padding: 14px 64px 14px 48px;
+          white-space: nowrap;
+
+          @media #{$sp} {
+            max-width: unset;
+          }
+
+          &-tooltip {
+            position: absolute;
+            width: 100%;
+            top: -65px;
+            white-space: nowrap;
+            left: 50%;
+            transform: translateX(-50%);
+
+            @media #{$sp} {
+              width: auto;
+            }
+
+            &__content {
+              position: relative;
+              font-size: 14px;
+              font-weight: 600;
+              margin-bottom: 25px;
+              background-color: #fff;
+              border-radius: 3px;
+              color: $orange-color;
+              padding: 10px 20px;
+
+              display: flex;
+              align-items: center;
+              justify-content: center;
+
+              &::before {
+                position: absolute;
+                content: "\A";
+                top: calc(100% - 1px);
+                left: calc(50% - 15px);
+                width: 0;
+                height: 0;
+                border-left: 15px solid transparent;
+                border-right: 15px solid transparent;
+                border-top: 10px solid #fff;
+              }
+            }
+          }
+        }
+
+        @media #{$sp} {
+          flex-direction: column;
+          gap: 100px;
+        }
+      }
+    }
+    .section-welcome-info-right {
+      position: relative;
+      width: 640px;
+      height: 402px;
+      background-image: url("/assets/img/common/payment_com_banner.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      ul {
+        position: absolute;
+        bottom: -27px;
+        right: 0;
+        li {
+          color: $white-color;
+          font-size: 16px;
+          font-weight: 700;
+          background-color: $green-color-2;
+          padding: 10px 20px;
+          border-radius: 3px;
+          margin-bottom: 10px;
+          .special {
+            font-size: 24px;
+          }
+        }
+      }
+      @media #{$sp} {
+        width: 100%;
+      }
+    }
+
+    .section-welcome-right-sp {
+      .info-list {
+        color: $white-color;
+        text-align: left;
+        margin: auto;
+        width: 85%;
+        font-size: 20px;
+        font-weight: 700;
+        display: grid;
+        gap: 20px;
+      }
+    }
+    @media #{$sp} {
+      height: auto;
+    }
+  }
+}
