@@ -9,7 +9,7 @@
   line-height: 1.5;
   text-align: center;
   margin-bottom: 40px;
-  
+
   @media #{$sp} {
     font-size: 24px;
     margin-bottom: 20px;
@@ -57,6 +57,14 @@
   }
   &.cW {
     color: #fff;
+  }
+}
+
+.ttl-quinary {
+  font-size: 16px;
+
+  &.bold {
+    font-weight: bold;
   }
 }
 
