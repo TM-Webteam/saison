@@ -37,6 +37,11 @@ $(function () {
   var header = $("header");
 
   $(window).on("scroll", function () {
+
+    if ($(this).scrollTop() > 50) {
+      hideDropdownMenu();
+    }
+
     if ($(this).scrollTop() < pos || $(this).scrollTop() < 400) {
       header.removeClass("hide");
     } else {
@@ -250,6 +255,8 @@ $(window).on("load", function () {
     });
 
     $supportDropdown.on("click", function () {
+      console.log("here");
+
       $(".nav__dropdown__list__support").toggleClass("open");
       $searchDropdown.removeClass("open");
       $searchList.removeClass("open");
@@ -260,8 +267,27 @@ $(window).on("load", function () {
       $supportList.removeClass("open");
       $searchList.removeClass("open");
     });
+
+    $("main").on("click", function() {
+      hideDropdownMenu();
+    });
+    $("footer").on("click", function() {
+      hideDropdownMenu();
+    });
   });
 })(jQuery);
+
+function hideDropdownMenu() {
+  var $searchDropdown = $(".nav__item__dropdown__search");
+  var $supportDropdown = $(".nav__item__dropdown__support");
+  var $searchList = $(".nav__dropdown__list__search");
+  var $supportList = $(".nav__dropdown__list__support");
+
+  $searchDropdown.removeClass("open");
+  $searchList.removeClass("open");
+  $supportDropdown.removeClass("open");
+  $supportList.removeClass("open");
+}
 
 //--------------------------------------
 // Toggle menu Sp

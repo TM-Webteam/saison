@@ -85,7 +85,7 @@ header {
           padding: 0px 26px;
           vertical-align: middle;
           font-weight: 700;
-          transition: all .3s;
+          transition: all 0.3s;
           &:hover {
             opacity: 1;
             background: $gradient-bg-reverse;
@@ -215,7 +215,8 @@ header {
       li {
         padding: 20px 0 10px;
         border-bottom: 1px solid $gray-color-7;
-        a, div {
+        a,
+        div {
           display: flex;
           justify-content: space-between;
           align-items: center;
