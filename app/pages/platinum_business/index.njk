@@ -56,38 +56,30 @@
 
 {# Main content #}
 {% block content %}
-{% include 'partial/sidebar.njk' %}
+{% include 'partial/sidebar.njk' %} 
 <main class="platinum_business-page">
   <section id="top" class="section-welcome fadein">
-    <div class="section-welcome__banner">
-      <img src="/assets/img/common/bannet_10.png"/>
-    </div>
-
-    <div class="section-welcome-container">
-      <div class="section-welcome-info">
-        <div class="section-welcome-left">
+    <div class="containers">
+      <div class="banner-containers">
+        <div class="banner-left">
           <div class="title-notice">
-            <div class="title-content">
-              個人与信型ビジネスカード
-            </div>
+            自分に合ったビジネスカードを
           </div>
-          <h1 class="ttl-primary">セゾンプラチナ・ビジネス・ <br> アメリカン・エキスプレス®・カード</h1>
-          
-          <div class="card-content">
-            <div class="card">
-              <img src="/assets/img/credit_cards/american-express-01.png" />
-            </div>
-            <div class="ttl-quaternary">
-              初年度年会費無料
-            </div>
+          <div class="ttl-primary">
+            セゾンプラチナ・ビジネス・<br> アメリカン・エキスプレス®・カード
           </div>
 
-          <div class="btn-containers">
-            <a class="blue_gradient_btn" href="#">お申し込みはこちら</a>
+          <div class="card-contents">
+            <div class="card-img">
+              <img src="/assets/img/credit_cards/american-express-01.png" alt="Your Image" class="credit-card-img">
+            </div>
+            <div class="card-description">初年度年会費無料</div>
           </div>
+
+          <div class="banner-btn"><a class="blue_gradient_btn" href="#">お申し込みはこちら</a></div>
+
         </div>
-
-        <div class="section-welcome-right pc-only">
+        <div class="banner-right pc-only">
           ビジネスに <br> 余裕をもたらす <br> 一枚なら。
         </div>
       </div>
@@ -419,14 +411,14 @@
               <div>申し込み 資格</div>
             </div>
             <div class="">
-              <div class="content-col">
+              <div class="content-col height-70">
                 <div class="normal-text">
                   中小規模法人代表者（未成年者除く）
                 </div>
               </div>
             </div>
             <div class="">
-              <div class="content-col">
+              <div class="content-col height-70">
                 <div class="normal-text">
                   個人事業主またはフリーランス、経営者の方（高校生除く）
                 </div>
@@ -452,9 +444,9 @@
                 <ul>
                   <li>コバルトビジネスカードの特典・優待サービス</li>
                 </ul>
-                <div class="content-btn">
-                  <a href="" class="blue_gradient_btn">お申し込みはこちら</a>
-                </div>
+                <a class="bondi_blue_outline_btn">
+                  <span class="bondi_blue_outline_btn__tittle">詳細はこちら</span>
+                </a>
               </div>
             </div>
         </div>
@@ -506,7 +498,7 @@
           <div class="ttl-quinary">Webから 簡単お申し込み</div>  
         </div>
 
-        <div>  {% include "component/icons/arrowStep.njk" %}</div>
+        <div class="arrowStep">  {% include "component/icons/arrowStep.njk" %}</div>
 
         <div class="step">
           <div class="ttl-quaternary">Step 2</div> 
@@ -514,7 +506,7 @@
           <div class="ttl-quinary">契約確認書類の 受領</div>  
         </div>
 
-        <div>  {% include "component/icons/arrowStep.njk" %}</div>
+        <div class="arrowStep">  {% include "component/icons/arrowStep.njk" %}</div>
 
         <div class="step">
           <div class="ttl-quaternary">Step 3</div> 
@@ -522,7 +514,7 @@
           <div class="ttl-quinary">審査結果の ご案内</div>  
         </div>
 
-        <div>  {% include "component/icons/arrowStep.njk" %}</div>
+        <div class="arrowStep">  {% include "component/icons/arrowStep.njk" %}</div>
 
         <div class="step">
           <div class="ttl-quaternary">Step 4</div> 
@@ -530,7 +522,7 @@
           <div class="ttl-quinary">郵送で カードお受け取り</div>  
         </div>
 
-        <div>  {% include "component/icons/arrowStep.njk" %}</div>
+        <div class="arrowStep">  {% include "component/icons/arrowStep.njk" %}</div>
 
         <div class="step">
           <div class="ttl-quaternary">Step 5</div> 

@@ -24,6 +24,8 @@
       background: #004098;
       color: #fff;
       width: fit-content;
+      transform: skew(-10deg);
+      padding: 5px;
     }
 
     .ttl-quaternary {
@@ -131,7 +133,7 @@
       font-size: 16px;
     }
     .table-card-head {
-      padding: 15px 0;
+      padding: 15px;
       text-align: center;
       color: #fff;
       font-size: 20px;
@@ -194,11 +196,22 @@
         .card-btn {
           padding: 25px;
           color: #fff;
+          transition: 0.1s ease-in-out;
           &.card-type-1 {
             background: #0297b5;
+            &:hover {
+              background: #fff;
+              color: #0297b5;
+              border: 2px solid #0297b5;
+            }
           }
           &.card-type-2 {
             background: #24a4a4;
+            &:hover {
+              background: #fff;
+              color: #24a4a4;
+              border: 2px solid #24a4a4;
+            }
           }
         }
       }
@@ -365,8 +378,9 @@
     }
     .btn-container {
       margin-top: 50px;
-      display: flex;
-      justify-content: center;
+      .bondi_blue_outline_btn {
+        max-width: 384px;
+      }
     }
     .banner-btn {
       max-width: 1000px;
