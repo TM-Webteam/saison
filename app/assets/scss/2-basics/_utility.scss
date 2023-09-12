@@ -34,3 +34,9 @@
 .w-100 {
   width: 100% !important;
 }
+
+.yellow-bottom {
+  font-weight: 600;
+  background: linear-gradient(to bottom, transparent 70%, $yellow-color 30%);
+  display: inline;
+}
