@@ -324,14 +324,14 @@
           }
         }
 
-        .sec-left-wrapper {
+        .sec-left-wrapper.visa {
           flex: 1;
         }
 
         .sp-reverse {
           margin-bottom: 50px;
 
-          .sec-right-wrapper {
+          .sec-right-wrapper.visa {
             width: 194px;
           }
         }
@@ -453,6 +453,14 @@
 
       .relation .card-type13 .sp-reverse .sec-right-wrapper {
         flex: 1;
+      }
+
+      .card-type13 {
+        .sec-left-wrapper {
+          img {
+            // max-height: 216px;
+          }
+        }
       }
 
       .bondi_blue_outline_btn {
