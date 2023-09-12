@@ -1,12 +1,14 @@
 section.rbt-sidearea {
-  // display: none;
-
 
   &.rbt-loaded {
     display: block;
     animation: fadeIn 1s;
     opacity: 1;
     transform: translateX(0);
+
+    @media #{$sp} {
+      display: none;
+    }
   }
 }
 
