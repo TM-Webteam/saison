@@ -1,0 +1,450 @@
+{% extends "layout/default.njk" %}
+
+{# Custom SEO tags, leave blank to apply the default values #}
+{% set title = "" %}
+{% set description = "" %}
+{% set keywords = "" %}
+
+{# Page settings and also body class #}
+{% set page = "" %}
+
+{# Breadcrumb #}
+{% set breadcrumb = [
+  {
+    text: "業務効率化を図りたい",
+    link: "#"
+  }
+] %}
+
+{# Custom tags before </head> #}
+{% block customHead %}{% endblock %}
+
+{# Custom tags before </body> #}
+{% block customJs %}{% endblock %}
+
+{# Main content #}
+{% block content %}
+<main class="business_efficiency-page">
+  <section class="section-welcome">
+    <div class="container-1200">
+      <h3 class="ttl-tertiary">
+        <div class="sub-title"> 経費精算・請求・出張手配まで。</div>
+      </h3>
+      <h1 class="ttl-primary">業務効率化をサポートするサービス</h1>
+      <h4 class="ttl-quaternary">クレディセゾンは中小企業様・個人事業主様向けに、<br>
+        今すぐ始められて効果を実感できる業務効率化サービスをご提供いたします。
+      </h4>
+    </div>
+  </section>
+  <section class="section-primary">
+    <div class="container-1200">
+      <h2 class="ttl-secondary">日々の業務でこんなお悩みありませんか?</h2>
+      <ul class="flex jcC gap30 card-list">
+        <li class="card-type6">
+          <a href="#" class="card">
+            <div class="ttl-quaternary-container">
+              <h4 class="ttl-quaternary">請求・回収業務</h4>
+            </div>
+            <div class="flex gap30 card-body">
+              <div class="circle-container">
+                <img src="/assets/img/common/invoice.png">
+              </div>
+              <ul class="check-list">
+                <li>請求・回収業務に忙殺されている</li>
+                <li>支払いを先延ばししたい</li>
+                <li>支払い日までの運転資金確保が大変</li>
+              </ul>
+            </div>
+            <div class="circle-with-arrow">
+              <div class="arrow-down"></div>
+            </div>
+          </a>
+        </li>
+        <li class="card-type6">
+          <a href="#" class="card">
+            <div class="ttl-quaternary-container">
+              <h4 class="ttl-quaternary">経費精算業務</h4>
+            </div>
+            <div class="flex gap30 card-body">
+              <div class="circle-container">
+                <img src="/assets/img/common/calculate.png">
+              </div>
+              <ul class="check-list">
+                <li>仮払い・立替払いの経費精算が面倒</li>
+                <li>精算漏れ・遅れが頻繁に発生している</li>
+                <li>利用明細の入力作業をやめたい</li>
+              </ul>
+            </div>
+            <div class="circle-with-arrow">
+              <div class="arrow-down"></div>
+            </div>
+          </a>
+        </li>
+        <li class="card-type6">
+          <a href="#" class="card">
+            <div class="ttl-quaternary-container">
+              <h4 class="ttl-quaternary">支払い業務</h4>
+            </div>
+            <div class="flex gap30 card-body">
+              <div class="circle-container">
+                <img src="/assets/img/common/reading.png">
+              </div>
+              <ul class="check-list">
+                <li>経理業務負担を削減したい</li>
+                <li>
+                  <div class="check-list__item">
+                    紙請求書対応のため、リモートワークが<br>
+                    できない
+                  </div>
+                </li>
+                <li>急な支払いで現金が足りない</li>
+              </ul>
+            </div>
+            <div class="circle-with-arrow">
+              <div class="arrow-down"></div>
+            </div>
+          </a>
+        </li>
+        <li class="card-type6">
+          <a href="#" class="card">
+            <div class="ttl-quaternary-container">
+              <h4 class="ttl-quaternary">出張手配</h4>
+            </div>
+            <div class="flex gap30 card-body">
+              <div class="circle-container">
+                <img src="/assets/img/common/invoice.png">
+              </div>
+              <ul class="check-list">
+                <li>従業員の出張状況を把握できていない</li>
+                <li>従業員の立替が負担になっている</li>
+                <li>経費の仮払いが面倒</li>
+              </ul>
+            </div>
+            <div class="circle-with-arrow">
+              <div class="arrow-down"></div>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="section-secondary">
+    <div class="container-1200">
+      <h2 class="ttl-secondary">今すぐ始められる! クレディセゾンの業務効率化サービス</h2>
+      <div id="" class="notification quaterary">
+        <div class="notification-panel1">
+          <h2 class="card__ttl">未入金対応を0に。さらに毎月の請求業務を最短15分で!</h2>
+          <summary class="aic inquiry__box">
+            <div class="inquiry__box--txt">                         
+              BtoB向け後払い決済・請求代行サービス<span>「セゾンインボイス」</span>
+            </div>
+          </summary>
+          <div class="card-type13">
+            <dd>セゾンインボイスとは、請求業務の“すべて”を代行するサービスです。顧客情報をご登録いただき、取引情報を誤入力いただくだけで、与信審査、請求書作成・発行、入金確認、督促まですべてクレディセゾンが代行いたします。顧客の与信枠内であれば、その後未払いになったとしても貴社にお振り込みするため、未回収リスクがなくなります。</dd>
+            <div class="flex gap60 aic sp-reverse">
+              <div class="sec-left-wrapper">
+                <figure class="sec__img">
+                  <div><img src="/assets/img/common/invoice-saison.png"></div>
+                  <div class="flex sec__award">
+                    <div class="award">
+                      <img src="/assets/img/common/tiara.png">
+                      <div class="award__txt">最短翌日<br>
+                        に振込
+                      </div>
+                    </div>
+                    <div class="award">
+                      <img src="/assets/img/common/tiara.png">
+                      <div class="award__txt">口座振替<br>
+                        カード払い対応
+                      </div>
+                    </div>
+                    <div class="award">
+                      <img src="/assets/img/common/tiara.png">
+                      <div class="award__txt">月額<br>
+                        固定費0円
+                      </div>
+                    </div>
+                  </div>
+                </figure>
+              </div>
+              <div class="gap-10 sec-right-wrapper">
+                <dl class="flex aic gap30 sec01-right-box">
+                  <dt class="flex aic gap20 sp-fs">
+                    <div class="number-circle">1</div>
+                    <h5 class="ttl-senary">
+                      請求業務はすべて代行。<span class="yellow-bottom">業務を15分で完了！</span>
+                    </h5>
+                  </dt>
+                </dl>
+                <dl class="flex aic gap30 sec01-right-box">
+                  <dt class="flex aic gap20 sp-fs">
+                    <div class="number-circle">2</div>
+                    <h5 class="ttl-senary">
+                      未払いでも全額振込。<span class="yellow-bottom">未回収リスク100%保証。</span>
+                    </h5>
+                  </dt>
+                </dl>
+                <dl class="flex aic gap30 sec01-right-box">
+                  <dt class="flex aic gap20 sp-fs">
+                    <div class="number-circle">3</div>
+                    <h5 class="ttl-senary">
+                      <span class="yellow-bottom">最短翌日の入金</span>で運用資金をスピード確保。
+                    </h5>
+                  </dt>
+                </dl>
+                <a href="#" class="bondi_blue_outline_btn">セゾンインボイスをもっと詳しく</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="" class="notification quaterary">
+        <div class="notification-panel1">
+          <h2 class="card__ttl">仮払い・立替払いを廃止！経費精算を自動化できる!</h2>
+          <summary class="aic inquiry__box">
+            <div class="inquiry__box--txt">                         
+              中小企業様向け経費精算クラウド<span>「Concur Expense」</span>
+            </div>
+          </summary>
+          <div class="card-type13">
+            <dd>経費精算クラウド「Concur Expense」は、法人カード、交通系ICカード（Suica、PASMOなど）、ホテル手配やタクシー配車アプリなどさまざまなサービスと連携。経費明細が自動で Concur Expense に取り込まれるので、<strong>ペーパーレス化はもちろん経費精算を自動化することができます。</strong></dd>
+            <div class="flex gap60 aic sp-reverse">
+              <div class="sec-left-wrapper">
+                <figure class="sec__img">
+                  <div><img src="/assets/img/common/sap-concur-partner.png"></div>
+                  <div class="flex sec__award">
+                    <div class="sec__award--flex">
+                      <div class="award">
+                        <img src="/assets/img/common/tiara.png">
+                        <div class="award__txt">国内売上シェア<br>
+                          9年連続No.1*
+                        </div>
+                      </div>
+                      <div class="award__subtitle">*「ITR Market View：予<br>算・経費・サブスクリプ<br>ション管理市場2023」</div>
+                    </div>
+                    <div class="sec__award--flex">
+                      <div class="award">
+                        <img src="/assets/img/common/tiara.png">
+                        <div class="award__txt">顧客満足度<br>
+                          No.1**
+                        </div>
+                      </div>
+                      <div class="award__subtitle">**ITreviewカテゴリーレ<br>ポート 「経費精算部門/中<br>堅・中小企業」（2023 <br> Winter）</div>
+                    </div>
+                  </div>
+                </figure>
+              </div>
+              <div class="gap-10 sec-right-wrapper">
+                <dl class="flex aic gap30 sec01-right-box">
+                  <dt class="flex aic gap20 sp-fs">
+                    <div class="number-circle">1</div>
+                    <h5 class="ttl-senary">
+                      さまざまな決済手段と連携。<span class="yellow-bottom">経費明細が自動で取り込み!</span>
+                    </h5>
+                  </dt>
+                </dl>
+                <dl class="flex aic gap30 sec01-right-box">
+                  <dt class="flex aic gap20 sp-fs">
+                    <div class="number-circle">2</div>
+                    <h5 class="ttl-senary">
+                      <span class="yellow-bottom">定期券経路分は自動で控除＆二重申請も自動的にチェック</span>
+                    </h5>
+                  </dt>
+                </dl>
+                <dl class="flex aic gap30 sec01-right-box">
+                  <dt class="flex aic gap20 sp-fs">
+                    <div class="number-circle">3</div>
+                    <h5 class="ttl-senary">
+                      スマホで、<span class="yellow-bottom">いつでも申請・承認が可能</span>
+                    </h5>
+                  </dt>
+                </dl>
+                <a href="#" class="bondi_blue_outline_btn">「Concur Expense」をもっと詳しく</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="" class="notification quaterary">
+        <div class="notification-panel1">
+          <h2 class="card__ttl">支払い業務を効率化＆資金繰り改善もできる!</h2>
+          <summary class="aic inquiry__box">
+            <div class="inquiry__box--txt">                         
+              請求書カード払いサービス<span>「支払い.com」</span>
+            </div>
+          </summary>
+          <div class="card-type13">
+            <dd>請求書カード払いサービスとは、あらゆる銀行振込のお支払いをお持ちのクレジットカードで決済できるサービスです。支払い.comを利用することで、<strong>すべての支払いを延長</strong>することができ、急な支払いで手元資金が足りない場合や資金繰りの改善にも役立ちます。</dd>
+            <div class="flex gap60 aic sp-reverse">
+              <div class="sec-left-wrapper">
+                <figure class="sec__img">
+                  <div><img src="/assets/img/common/com.png"></div>
+                  <div class="flex sec__award">
+                    <div class="sec__award--flex">
+                      <div class="award">
+                        <img src="/assets/img/common/tiara.png">
+                        <div class="award__txt">導入企業数<br>
+                          20,000社を突破*
+                        </div>
+                      </div>
+                      <div class="award__subtitle">*2023年6月現在</div>
+                    </div>
+                    <div class="award">
+                      <img src="/assets/img/common/tiara.png">
+                      <div class="award__txt">支払い先延ばし<br>
+                        最長60日
+                      </div>
+                    </div>
+                    <div class="award">
+                      <img src="/assets/img/common/tiara.png">
+                      <div class="award__txt">最短1日後の<br>
+                        振込に対応
+                      </div>
+                    </div>
+                  </div>
+                </figure>
+              </div>
+              <div class="gap-10 sec-right-wrapper">
+                <dl class="flex aic gap30 sec01-right-box">
+                  <dt class="flex aic gap20 sp-fs">
+                    <div class="number-circle">1</div>
+                    <h5 class="ttl-senary">
+                      早くて簡単! 3ステップ、<span class="yellow-bottom">60秒で支払い業務が完了</span>
+                    </h5>
+                  </dt>
+                </dl>
+                <dl class="flex aic gap30 sec01-right-box">
+                  <dt class="flex aic gap20 sp-fs">
+                    <div class="number-circle">2</div>
+                    <h5 class="ttl-senary">
+                      <span class="yellow-bottom">書類提出、審査、面談は不要。</span>
+                    </h5>
+                  </dt>
+                </dl>
+                <dl class="flex aic gap30 sec01-right-box">
+                  <dt class="flex aic gap20 sp-fs">
+                    <div class="number-circle">3</div>
+                    <h5 class="ttl-senary">
+                      <span class="yellow-bottom">支払い期限を最大60日延長! 借りずに資金繰りを改善</span>
+                    </h5>
+                  </dt>
+                </dl>
+                <a href="#" class="bondi_blue_outline_btn">支払い.comをもっと詳しく</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="" class="notification quaterary">
+        <div class="notification-panel1">
+          <h2 class="card__ttl">出張手配の問題をまるごと解決!</h2>
+          <summary class="aic inquiry__box">
+            <div class="inquiry__box--txt">                         
+              出張手配サービス<span>「CosPro」</span>
+            </div>
+          </summary>
+          <div class="card-type13">
+            <dd>CosProとは、法人企業様の出張手配に関わるさまざまな課題を解決するために生まれた出張手配サービスです。<strong>社員様が予約されたチケットの料金が適正かどうかのチェックを行う、弊社独自の「適正化チェック」</strong>のサービスで<strong>法人企業様の出張コスト削減</strong>に寄与いたします。</dd>
+            <div class="flex gap60 aic sp-reverse">
+              <div class="sec-left-wrapper">
+                <figure class="sec__img">
+                  <div><img src="/assets/img/common/cos-pro-solution.png"></div>
+                  <div class="flex sec__award">
+                    <div class="award">
+                      <img src="/assets/img/common/tiara.png">
+                      <div class="award__txt">初期費用<br>
+                        0円
+                      </div>
+                    </div>
+                    <div class="award">
+                      <img src="/assets/img/common/tiara.png">
+                      <div class="award__txt">月額費用<br>
+                        0円
+                      </div>
+                    </div>
+                    <div class="award">
+                      <img src="/assets/img/common/tiara.png">
+                      <div class="award__txt">国内発券手数料<br>
+                        0円
+                      </div>
+                    </div>
+                  </div>
+                </figure>
+              </div>
+              <div class="gap-10 sec-right-wrapper">
+                <dl class="flex aic gap30 sec01-right-box">
+                  <dt class="flex aic gap20 sp-fs">
+                    <div class="number-circle">1</div>
+                    <h5 class="ttl-senary">
+                      出張手配に社内ルールを!<br><span class="yellow-bottom">手配を一本化して業務の透明化とコスト削減を実現</span>
+                    </h5>
+                  </dt>
+                </dl>
+                <dl class="flex aic gap30 sec01-right-box">
+                  <dt class="flex aic gap20 sp-fs">
+                    <div class="number-circle">2</div>
+                    <h5 class="ttl-senary">
+                      <span class="yellow-bottom">初期費用・ランニングコスト・国内発券手数料 無料!</span>
+                    </h5>
+                  </dt>
+                </dl>
+                <dl class="flex aic gap30 sec01-right-box">
+                  <dt class="flex aic gap20 sp-fs">
+                    <div class="number-circle">3</div>
+                    <h5 class="ttl-senary">
+                      <span class="yellow-bottom">365日稼働のコールセンターからも予約OK!※</span>
+                    </h5>
+                  </dt>
+                </dl>
+                <dl class="flex aic gap30 sec01-right-box">
+                  <dt class="flex aic gap20 sp-fs">
+                    <div class="number-circle">4</div>
+                    <h5 class="ttl-senary">
+                      <span class="yellow-bottom">適正化チェック</span>で出張コストを抑制!
+                    </h5>
+                  </dt>
+                </dl>
+                <ul class="sub-list">
+                  <li>365日稼働のコールセンターは国内出張の手配専用の窓口です。海外出張の手配窓口に関しては平日のみの稼働となります。</li>
+                </ul>
+                <a href="#" class="bondi_blue_outline_btn">CosProをもっと詳しく</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section-tertiary">
+    <div class="container-1200">
+      <div class="card-type21">
+        <div class="ttl-tertiary-wrapper">
+          <h3 class="ttl-tertiary border-bottom">業務効率化をご検討中の中小企業・個人事業主の皆様へ</h3>
+        </div>
+        <h2 class="ttl-secondary">
+          「わかりやすい効果」と「メリット」をご提供します
+        </h2>
+        <h3 class="ttl-tertiary fw-normal">
+          業務効率化の取り組み方がわからなかったり、取り組んでもあまり効果が得られなかったりする方も多いのではないでしょうか。<br>
+          クレディセゾンはそのような方向けに <strong>「今すぐ始められる」＆「わかりやすい効果とメリット」</strong>をご提供いたします。<br>
+          お気軽にご相談ください。
+        </h3>
+        <div class="flex gap60 card-list">
+          <div class="card">
+            <h3 class="ttl-tertiary">「詳しい資料が欲しい」
+              <br>という方はこちら
+            </h3>
+            <a href="#" class="blue_gradient_btn small">サービス資料ダウンロード</a>
+          </div>
+          <div class="card">
+            <h3 class="ttl-tertiary">「詳しい話を聞きたい」「相談したい」
+              <br>という方はこちら
+            </h3>
+            <a href="#" class="blue_gradient_btn small">サポート担当に無料で相談する</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+{% endblock %}

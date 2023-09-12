@@ -1,0 +1,334 @@
+.business_efficiency-page {
+  margin: auto;
+  padding: 138px 0 0px;
+
+  @media #{$sp} {
+    padding: 50px 0 0;
+  }
+
+  // ===========START SECTIONS==========
+
+  .section-welcome {
+    padding: 156px 0;
+    text-align: left;
+    background-color: #f7f7f7;
+    background-image: url("/assets/img/common/business_efficiency_bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @media #{$sp} {
+      padding: 50px 10px;
+    }
+
+    .container-1200 {
+      margin: 0 200px;
+      color: $white-color;
+
+      @media #{$sp} {
+        margin: auto;
+        padding: 0 10px;
+      }
+    }
+
+    .ttl-primary {
+      font-size: 42px;
+      margin-bottom: 40px;
+      text-align: left;
+      line-height: 1;
+
+      @media #{$sp} {
+        font-size: 30px;
+        margin-bottom: 18px;
+      }
+    }
+
+    .ttl-tertiary {
+      font-weight: 500;
+      margin-bottom: 14px;
+      display: inline-block;
+      background-color: #003f98;
+      color: white;
+      font-weight: bold;
+      transform: skew(-20deg);
+
+      @media #{$sp} {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .sub-title {
+        font-size: 21px;
+        transform: skew(20deg);
+        padding: 5px 20px;
+
+        @media #{$sp} {
+          font-size: 17px;
+          // padding: 5px 16px;
+        }
+      }
+    }
+
+    .ttl-quaternary {
+      font-size: 18px;
+      font-weight: 400;
+      margin-bottom: 0;
+
+      @media #{$sp} {
+        font-size: 12px;
+      }
+    }
+
+    .dark_blue_outline_rounded_btn {
+      margin: 0;
+      margin-right: auto;
+    }
+  }
+
+  .section-primary {
+    text-align: center;
+    padding: 70px 120px 70px;
+    background-color: #fff;
+
+    @media #{$sp} {
+      padding: 30px 15px;
+    }
+
+    .ttl-secondary {
+      font-size: 32px;
+      margin-bottom: 50px;
+
+      @media #{$sp} {
+        font-size: 22px;
+        margin-bottom: 25px;
+      }
+    }
+
+    .card-list {
+      .card-type6 {
+        width: calc(50% - 15px);
+        padding: 0;
+
+        @media #{$sp} {
+          display: block;
+          width: 100%;
+        }
+
+        .card {
+          width: 100%;
+          max-width: unset;
+
+          &:hover {
+            opacity: 1;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+            .circle-with-arrow {
+              .arrow-down {
+                margin-bottom: 0px;
+              }
+            }
+          }
+
+          .ttl-quaternary-container {
+            margin-bottom: 35px;
+
+            @media #{$sp} {
+              margin-bottom: 15px;
+            }
+          }
+
+          .ttl-senary {
+            margin-bottom: 0;
+          }
+
+          .card-body {
+            justify-content: flex-start;
+            align-items: center;
+            flex-wrap: nowrap;
+
+            .circle-container {
+              width: 140px;
+              height: 140px;
+              border-radius: 50%;
+
+              img {
+                width: 100%;
+              }
+            }
+
+            .check-list {
+              list-style: none;
+
+              &__item {
+                display: inline-flex;
+              }
+
+              li:before {
+                content: "";
+                display: inline-block;
+                width: 20px;
+                height: 13px;
+                margin-right: 0;
+                background: url("/assets/img/common/tick-checked.svg") no-repeat;
+                vertical-align: middle;
+              }
+            }
+          }
+
+          .circle-with-arrow {
+            margin-top: 30px;
+            margin-bottom: 5px;
+            width: 45px;
+            height: 45px;
+
+            @media #{$sp} {
+              margin-top: 15px;
+              width: 40px;
+              height: 40px;
+            }
+
+            .arrow-down {
+              height: 10px;
+              width: 10px;
+              margin-bottom: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .section-secondary {
+    text-align: center;
+    padding: 71px 120px 70px;
+    background-color: #eeeeee;
+
+    @media #{$sp} {
+      padding: 10px 15px;
+    }
+
+    .ttl-secondary {
+      font-size: 32px;
+      margin-bottom: 60px;
+
+      @media #{$sp} {
+        font-size: 22px;
+        margin-bottom: 40px;
+      }
+    }
+
+    .notification {
+      margin-bottom: 60px;
+
+      .notification-panel1 {
+        .inquiry__box {
+          margin: 30px 0;
+          .inquiry__box--txt {
+            text-align: center;
+            margin: auto;
+          }
+        }
+
+        .card-type13 {
+          .sec-left-wrapper {
+            .sec__img {
+              min-width: 386px;
+
+              @media #{$sp} {
+                min-width: 0;
+              }
+
+              img {
+                width: 100%;
+                height: auto;
+              }
+
+              .sec__award {
+                display: flex;
+                justify-content: center;
+                margin-top: 58px;
+                gap: 10px;
+
+                @media #{$sp} {
+                  gap: 7px;
+                  margin-top: 28px;
+                  align-items: baseline;
+                }
+
+                &--flex {
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  gap: 10px;
+                }
+
+                .award {
+                  width: 119px;
+                  height: 112px;
+                  position: relative;
+
+                  @media #{$sp} {
+                    width: 90px;
+                    height: 90px;
+                  }
+
+                  &__txt {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -60%);
+                    font-size: 14px;
+                    text-align: center;
+                    font-weight: 700;
+                    line-height: 22px;
+                    color: #0297b5;
+                    white-space: nowrap;
+
+                    @media #{$sp} {
+                      font-size: 10px;
+                    }
+                  }
+
+                  &__subtitle {
+                    font-size: 12px;
+                    color: #797979;
+                    font-weight: normal;
+                    line-height: 20px;
+                    text-align: left;
+
+                    @media #{$sp} {
+                      font-size: 9px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+
+          .sec-right-wrapper {
+            .sec01-right-box {
+              .number-circle {
+                width: 32px;
+                height: 32px;
+              }
+            }
+
+            .bondi_blue_outline_btn {
+              margin-left: 0;
+              margin-top: 60px;
+
+              @media #{$sp} {
+                margin: 20px auto;
+                font-size: 12px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .section-tertiary {
+    padding: 70px 120px;
+    background-color: #fff;
+  }
+}
