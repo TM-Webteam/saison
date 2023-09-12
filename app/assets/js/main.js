@@ -37,7 +37,6 @@ $(function () {
   var header = $("header");
 
   $(window).on("scroll", function () {
-
     if ($(this).scrollTop() > 50) {
       hideDropdownMenu();
     }
@@ -51,25 +50,34 @@ $(function () {
   });
 });
 
-
 //--------------------------------------
 //　TOP　下部のボタン
 //--------------------------------------
 
-$(window).on("scroll", function() {
+$(window).on("scroll", function () {
   var scrollPosition = $(this).scrollTop();
-  var footerPosition = $('footer').offset().top; // フッターの位置を取得
+  var footerPosition = $("footer").offset().top; // フッターの位置を取得
   var fadeOutThreshold = footerPosition - 500; // フッター手前の位置を設定
+  var visualHeight = $("#top").height() + $("header").height() - 200;
+  var menuSidebar = $(".rbt-sidearea");
+
+  if (scrollPosition > visualHeight) {
+    if (!menuSidebar.hasClass("rbt-loaded")) {
+      menuSidebar.toggleClass("rbt-loaded");
+    }
+  } else {
+    menuSidebar.removeClass("rbt-loaded")
+  }
 
   if (scrollPosition > 500 && scrollPosition < fadeOutThreshold) {
-    $('.roundbtn').addClass('show');
-    $('.roundbtn').removeClass('fade-out'); // フェードアウトクラスを削除
+    $(".roundbtn").addClass("show");
+    $(".roundbtn").removeClass("fade-out"); // フェードアウトクラスを削除
   } else if (scrollPosition >= fadeOutThreshold) {
-    $('.roundbtn').removeClass('show');
-    $('.roundbtn').addClass('fade-out'); // フェードアウトクラスを追加
+    $(".roundbtn").removeClass("show");
+    $(".roundbtn").addClass("fade-out"); // フェードアウトクラスを追加
   } else {
-    $('.roundbtn').removeClass('show');
-    $('.roundbtn').removeClass('fade-out'); // フェードアウトクラスを削除
+    $(".roundbtn").removeClass("show");
+    $(".roundbtn").removeClass("fade-out"); // フェードアウトクラスを削除
   }
 });
 
@@ -268,10 +276,10 @@ $(window).on("load", function () {
       $searchList.removeClass("open");
     });
 
-    $("main").on("click", function() {
+    $("main").on("click", function () {
       hideDropdownMenu();
     });
-    $("footer").on("click", function() {
+    $("footer").on("click", function () {
       hideDropdownMenu();
     });
   });
