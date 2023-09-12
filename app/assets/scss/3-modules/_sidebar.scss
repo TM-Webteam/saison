@@ -1,4 +1,16 @@
 section.rbt-sidearea {
+  // display: none;
+
+
+  &.rbt-loaded {
+    display: block;
+    animation: fadeIn 1s;
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+section.rbt-sidearea {
   min-width: 202px;
   padding-right: 10px;
   height: auto;
@@ -6,10 +18,11 @@ section.rbt-sidearea {
   right: 0;
   top: calc(50% - 233px);
   z-index: 6669991;
-  animation: fadeIn 1s;
+  opacity: 0;
+  transform: translateX(9999px);
 
-  -webkit-transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
-  transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+  -webkit-transition: all 2.2s cubic-bezier(0.77, 0, 0.175, 1);
+  transition: all 2.2s cubic-bezier(0.77, 0, 0.175, 1);
 
   @media #{$sp} {
     display: none;
@@ -63,8 +76,8 @@ span.rbt-text-name {
     &:hover,
     &.active {
       background: transparent
-        linear-gradient(90deg, $primary-color 0%, $green-color-2 100%) 0% 0% no-repeat
-        padding-box;
+        linear-gradient(90deg, $primary-color 0%, $green-color-2 100%) 0% 0%
+        no-repeat padding-box;
       color: #fff;
       cursor: pointer;
     }
@@ -79,5 +92,15 @@ span.rbt-text-name {
   100% {
     opacity: 1;
     transform: translateX(0);
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(9999px);
   }
 }
