@@ -223,17 +223,14 @@
 
         .action {
           text-align: center;
-
-          a {
-            width: 45px;
-            height: 45px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            background: $blue-color;
-          }
+          width: 45px;
+          height: 45px;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: white;
+          background: $blue-color;
         }
       }
     }
@@ -280,6 +277,118 @@
 
     .notification-panel2 {
       padding: 0;
+
+      .card-type13 {
+        .sec-left-wrapper {
+          .sec__img {
+            @media #{$sp} {
+              min-width: 0;
+            }
+
+            img {
+              height: auto;
+
+              &.w-full {
+                width: 100%;
+                max-height: unset;
+              }
+            }
+
+            .sec__award {
+              display: flex;
+              justify-content: center;
+              margin-top: 58px;
+              gap: 10px;
+
+              @media #{$sp} {
+                gap: 7px;
+                margin-top: 28px;
+                align-items: baseline;
+              }
+
+              &--flex {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+              }
+
+              .award {
+                width: 119px;
+                height: 112px;
+                position: relative;
+
+                @media #{$sp} {
+                  width: 90px;
+                  height: 90px;
+                }
+
+                &__txt {
+                  position: absolute;
+                  top: 50%;
+                  left: 50%;
+                  transform: translate(-50%, -60%);
+                  font-size: 14px;
+                  text-align: center;
+                  font-weight: 700;
+                  line-height: 22px;
+                  color: #0297b5;
+                  white-space: nowrap;
+
+                  @media #{$sp} {
+                    font-size: 10px;
+                  }
+                }
+
+                &__subtitle {
+                  font-size: 12px;
+                  color: #797979;
+                  font-weight: normal;
+                  line-height: 20px;
+                  text-align: left;
+
+                  @media #{$sp} {
+                    font-size: 9px;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .sec-right-wrapper {
+          .sec01-right-box {
+            .number-circle {
+              width: 32px;
+              height: 32px;
+            }
+          }
+
+          .bondi_blue_outline_btn {
+            margin-left: 0;
+            margin-top: 60px;
+
+            @media #{$sp} {
+              margin: 20px auto;
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+
+    .notification-panel2 .sec-left-wrapper {
+      width: 38%;
+      text-align: center;
+
+      @media #{$sp} {
+        width: 100%;
+      }
+    }
+
+    .notification-panel2 .sec-left-wrapper .sec__img img {
+      max-height: 269px;
+      width: auto;
     }
 
     .relation {
@@ -456,10 +565,16 @@
       }
 
       .card-type13 {
-        .sec-left-wrapper {
-          img {
-            // max-height: 216px;
-          }
+        padding-left: 60px;
+        padding-right: 60px;
+
+        @media #{$sp} {
+          padding: 0 15px 30px;
+        }
+
+        dd {
+          padding: 0;
+          margin-bottom: 50px;
         }
       }
 

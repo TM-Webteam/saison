@@ -343,7 +343,7 @@
 
     .description {
       text-align: center;
-      font-size: 20;
+      font-size: 20px;
       color: $white-color;
       margin-bottom: 60px;
     }
@@ -429,6 +429,45 @@
     margin-bottom: 61px;
     @media #{$sp} {
       margin-bottom: 25px;
+    }
+  }
+}
+
+.section-subinfo {
+  .containers {
+    padding: 20px;
+    text-align: left;
+  }
+  background: #797979;
+  color: #fff;
+  font-size: 13px;
+}
+
+.section-loan-conditions {
+  padding: 40px 0;
+  .external-list {
+    display: grid;
+    gap: 10px;
+    margin-bottom: 40px;
+    .external-item {
+      &-link {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+      }
+    }
+  }
+
+  .loan-condition-list {
+    margin-bottom: 8px;
+    .loan-condition-title {
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 24px;
+    }
+
+    .loan-condition-item {
+      font-size: 13px;
     }
   }
 }
