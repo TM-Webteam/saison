@@ -79,8 +79,10 @@
         grid-template-columns: 1fr;
         li {
           margin: auto;
+          width: 280px;
           a {
-            height: 110px;
+            height: 70px;
+            font-size: 13px !important;
           }
         }
       }
@@ -150,7 +152,7 @@
 
     .grid-card-container {
       display: grid;
-      grid-template-columns: 280px 150px 120px 100px 100px 100px 100px 120px;
+      grid-template-columns: 290px 150px 120px 100px 100px 100px 100px 110px;
       grid-gap: 10px;
       overflow: auto;
       .title-row {
@@ -270,11 +272,16 @@
         padding: 20px;
         border: 1px solid #0297b5;
         min-height: 500px;
+        @media #{$sp} {
+          min-height: unset;
+        }
 
         .card__box--ttl {
           margin-bottom: 20px;
           min-height: 76px;
-
+          background: transparent
+            linear-gradient(90deg, #111111 0%, #343434 100%) 0% 0% no-repeat
+            padding-box;
           display: flex;
           align-items: center;
           justify-content: center;
@@ -454,8 +461,7 @@
         }
       }
       .banner-btn {
-        grid-template-columns: 3fr 1fr;
-        height: 120px;
+        grid-template-columns: 4fr 1fr;
         .btn-col {
           font-size: 12px !important;
         }
@@ -642,20 +648,19 @@
           .card {
             grid-template-columns: 1fr 2.5fr;
             .card-content {
-              padding: 5px;
+              padding: 10px;
               .content-index {
-                font-size: 12px;
+                font-size: 11px;
               }
               .content-subhead {
                 margin-top: 10px;
-                font-size: 13px;
+                font-size: 12px;
               }
               .content-mainhead {
-                font-size: 16px;
+                font-size: 15px;
                 width: fit-content;
                 &::after {
                   content: "";
-
                   height: 5px;
                   background: #ffff01;
                   display: block;
@@ -674,17 +679,26 @@
     .ttl-tertiary {
       &.small {
         font-size: 20px !important;
+        @media #{$sp} {
+          font-size: 16px !important;
+          line-height: 25px;
+        }
       }
     }
   }
 
   .section-subinfo {
     .containers {
-      padding: 20px;
+      padding: 15px 0;
+    }
+    @media #{$sp} {
+      .containers {
+        padding: 10px;
+      }
     }
     background: #797979;
     color: #fff;
     font-size: 13px;
-    text-align: center;
+    text-align: left;
   }
 }
