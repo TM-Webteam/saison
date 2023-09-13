@@ -77,20 +77,24 @@ span.rbt-text-name {
     max-width: 171px;
 
     &:hover {
-      background: $orange-color;
+      background: transparent
+            linear-gradient(90deg, $primary-color 0%, $green-color-2 100%) 0% 0%
+            no-repeat padding-box;
       transition-timing-function: ease-out;
+      color: #fff;
       opacity: 1;
     }
 
     &.active {
-      background: transparent
-        linear-gradient(90deg, $primary-color 0%, $green-color-2 100%) 0% 0%
-        no-repeat padding-box;
+      background: $orange-gradient;
+
       color: #fff;
       cursor: pointer;
 
       &:hover {
-        background: $orange-color;
+        background: transparent
+            linear-gradient(90deg, $primary-color 0%, $green-color-2 100%) 0% 0%
+            no-repeat padding-box;
       }
     }
   }
