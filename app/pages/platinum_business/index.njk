@@ -26,37 +26,37 @@
 {% set menuSidebar = [
   {
   text: "年会費・入会資格",
-  link: "#"
+  link: "#membership-fee"
   },
   {
   text: "付帯サービス",
-  link: "#"
+  link: "#additional-services"
   },
   {
   text: "ご利用シーン",
-  link: "#"
+  link: "#usage"
   },
   {
   text: "カード比較",
-  link: "#"
+  link: "#card-comparison"
   },
   {
   text: "よくある質問",
-  link: "#"
+  link: "#faq"
   },
   {
   text: "お申し込みまでの流れ",
-  link: "#"
+  link: "#application-flow"
   },
   {
   text: "お申し込み",
-  link: "#"
+  link: "#top"
   }
   ] %}
 
 {# Main content #}
 {% block content %}
-{% include 'partial/sidebar.njk' %} 
+{% include 'partial/sidebar.njk' %}
 <main class="platinum_business-page">
   <section id="top" class="section-welcome fadein">
     <div class="containers">
@@ -90,11 +90,11 @@
     <div class="containers">
       <h2 class="ttl-primary">使うだけ「得」をする！2つの特典</h2>
 
-      <div class="grid-card-containers">   
+      <div class="grid-card-containers">
         <a class="card">
           <div class="card-head">SAISON MILE CLUB</div>
           <div class="card-content">
-            <div>JALのマイル還元率 : <span class="percent blue-text"> 1.125％</span></div> 
+            <div>JALのマイル還元率 : <span class="percent blue-text"> 1.125％</span></div>
           </div>
         </a>
         <a class="card">
@@ -134,7 +134,7 @@
 
   <section class="section-quaternary">
     <div class="containers">
-    
+
       <h2 class="ttl-primary">登記簿や決算書の提出は不要です！</h2>
       <h4 class="ttl-tertiary">登記簿や決算書といった業務内容や実績を示す書類の提出が不要です。<br> 書類郵送に取られる期間がなくなるため、発行までにかかる期間の短縮ができます。
       </h4>
@@ -150,7 +150,7 @@
     </div>
   </section>
 
-  <section class="section-quinary">
+  <section id="membership-fee" class="section-quinary">
     <div class="containers">
       <h2 class="ttl-primary">年会費・入会資格</h2>
 
@@ -164,7 +164,7 @@
             <div class="ttl-quaternary normal-text">年会費は会計上経費として計上可能です。詳しくは税理士等にご確認ください。 <br> 年間200万円以上のショッピングのご利用で、次年度本会員年会費を11,000円（税込）に優遇いたします。</div>
           </div>
         </div>
-  
+
         <div class="grid-card-containers">
           <div class="col-left">
             入会資格
@@ -181,7 +181,7 @@
     </div>
   </section>
 
-  <section class="section-septenary">
+  <section id="additional-services" class="section-septenary">
     <div class="containers">
       <h4 class="ttl-primary">付帯サービス</h4>
       <div class="grid-card-containers">
@@ -254,18 +254,18 @@
     </div>
   </section>
 
-  <section class="section-octonary">
+  <section id="usage" class="section-octonary">
     <div class="containers">
       <h4 class="ttl-primary">ご利用シーン</h4>
       <h2 class="ttl-quaternary">起業から事業成長まで、あらゆるビジネスシーンをサポート。経費管理から資金管理、会食や出張で役立つサービスなど、 個人事業主様や経営者にゆとりと安心を提供する一枚です。</h2>
-      
+
       <div class="grid-card-containers">
         <div class="card">
           <h2 class="ttl-head">毎⽇の経費管理で</h2>
           <img src="/assets/img/common/plat8.png" alt="work image" class="card-img">
           <div class="ttl-normal">起業したばかりで、できるだけ本業に専念したい。しかし、経費管理がいかに大変かを思い知る。セゾンプラチナ・ビジネス・アメリカン・エキスプレス®・カードに出会い、支払いにおける振り込みの手間や手数料が省けただけでなく、明細もすぐにわかるので、領収書管理といった煩わしさからも解放された。</div>
         </div>
-        
+
         <div class="card">
           <h2 class="ttl-head">毎⽉の資⾦管理で</h2>
           <img src="/assets/img/common/plat7.png" alt="work image" class="card-img">
@@ -306,7 +306,7 @@
     </div>
   </section>
 
-  <section class="section-card-info">
+  <section id="card-comparison" class="section-card-info">
     <div class="containers">
       <h4 class="ttl-primary">カード比較</h4>
 
@@ -450,11 +450,11 @@
               </div>
             </div>
         </div>
-      </div>     
+      </div>
     </div>
   </section>
 
-  <section class="section-question-and-answer">
+  <section id="faq" class="section-question-and-answer">
     <h5 class="ttl-sub">FAQ</h5>
     <h2 class="ttl-secondary">よくある質問</h2>
     {% for i in range(1, 5) %}
@@ -487,47 +487,47 @@
     {% endfor %}
   </section>
 
-  <section class="section-steps">
+  <section id="application-flow" class="section-steps">
     <div class="containers">
       <div class="ttl-primary">お申し込みまでの流れ</div>
 
       <div class="grid-card-containers">
         <div class="step">
-          <div class="ttl-quaternary">Step 1</div> 
+          <div class="ttl-quaternary">Step 1</div>
           {% include "component/icons/step1.njk" %}
-          <div class="ttl-quinary">Webから 簡単お申し込み</div>  
+          <div class="ttl-quinary">Webから 簡単お申し込み</div>
         </div>
 
         <div class="arrowStep">  {% include "component/icons/arrowStep.njk" %}</div>
 
         <div class="step">
-          <div class="ttl-quaternary">Step 2</div> 
+          <div class="ttl-quaternary">Step 2</div>
           {% include "component/icons/step2.njk" %}
-          <div class="ttl-quinary">契約確認書類の 受領</div>  
+          <div class="ttl-quinary">契約確認書類の 受領</div>
         </div>
 
         <div class="arrowStep">  {% include "component/icons/arrowStep.njk" %}</div>
 
         <div class="step">
-          <div class="ttl-quaternary">Step 3</div> 
+          <div class="ttl-quaternary">Step 3</div>
           {% include "component/icons/step3.njk" %}
-          <div class="ttl-quinary">審査結果の ご案内</div>  
+          <div class="ttl-quinary">審査結果の ご案内</div>
         </div>
 
         <div class="arrowStep">  {% include "component/icons/arrowStep.njk" %}</div>
 
         <div class="step">
-          <div class="ttl-quaternary">Step 4</div> 
+          <div class="ttl-quaternary">Step 4</div>
           {% include "component/icons/step4.njk" %}
-          <div class="ttl-quinary">郵送で カードお受け取り</div>  
+          <div class="ttl-quinary">郵送で カードお受け取り</div>
         </div>
 
         <div class="arrowStep">  {% include "component/icons/arrowStep.njk" %}</div>
 
         <div class="step">
-          <div class="ttl-quaternary">Step 5</div> 
+          <div class="ttl-quaternary">Step 5</div>
           {% include "component/icons/step5.njk" %}
-          <div class="ttl-quinary">カードと一緒に届く 口座設定用紙を返送</div>  
+          <div class="ttl-quinary">カードと一緒に届く 口座設定用紙を返送</div>
         </div>
       </div>
 
