@@ -2,19 +2,19 @@
 
 .platinum_business-page {
   .section-welcome {
-    background-image: url("/assets/img/common/banner_10.png");
+    background-image: url("/assets/img/common/plantinum_business_banner.png");
     background-size: cover;
     background-repeat: no-repeat;
-    height: 668px;
+    padding: 15px 0;
+    background-position: center;
 
     .banner-containers {
       display: flex;
       justify-content: space-between;
-      padding: 0 100px;
       .banner-left {
         .title-notice {
           position: relative;
-          display: inline-block;
+          width: fit-content;
           font-size: 21px;
           font-weight: 700;
           padding: 6px 20px;
@@ -22,8 +22,16 @@
           color: $white-color;
           background-color: $blue-color-3;
           transform: skew(-10deg);
-          margin-bottom: 15px;
+          margin-bottom: 10px;
+          @media #{$sp} {
+            margin-left: auto;
+            margin-right: auto;
+          }
+
           .title-content {
+            display: flex;
+            align-items: center;
+            gap: 10px;
             line-height: 28px;
             transform: skew(10deg);
             font-size: 21px;
@@ -49,25 +57,45 @@
         .card-contents {
           display: flex;
           gap: 20px;
-          align-items: flex-end;
+          padding: 30px;
+          align-items: center;
+          position: relative;
+
+          &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.9;
+            background: transparent
+              linear-gradient(
+                90deg,
+                #ffffff00 0%,
+                #ffffff 40%,
+                #ffffff 62%,
+                #ffffff00 100%
+              )
+              0% 0% no-repeat padding-box;
+          }
+
+          @media #{$sp} {
+            gap: 10px;
+            padding: 30px 0;
+          }
         }
         .card-description {
           font-size: 32px;
           font-weight: bold;
-          &::after {
-            content: "";
-            width: 100%;
-            height: 20px;
-            display: block;
-            background-color: $yellow-color;
-            margin-top: -20px;
+
+          @media #{$sp} {
+            font-size: 18px;
           }
         }
         .banner-btn {
           margin-top: 40px;
-          a {
-            margin: unset;
-          }
         }
       }
       .banner-right {
@@ -79,22 +107,11 @@
     }
 
     @media #{$sp} {
-      height: 750px;
       .ttl-primary {
         font-size: 28px !important;
       }
       .card-img {
         width: 180px !important;
-      }
-
-      .card-description {
-        font-size: 18px !important;
-        background-color: $yellow-color;
-        transform: skew(-10deg);
-        padding: 2.5px;
-        &::after {
-          display: none;
-        }
       }
     }
   }
@@ -299,14 +316,6 @@
     .ttl-primary {
       width: fit-content;
       margin: auto;
-      &::after {
-        content: "";
-        width: 100%;
-        height: 20px;
-        display: block;
-        background-color: #0497b5;
-        margin-top: -20px;
-      }
     }
     .senary-content {
       display: grid;
@@ -666,7 +675,7 @@
       margin-bottom: -10px;
       font-size: 32px;
       line-height: 70px;
-    
+
       @media #{$sp} {
         margin-bottom: 20px;
       }

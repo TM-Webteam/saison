@@ -2,7 +2,9 @@
   .rbt-list {
     .rbt-item {
       &:hover {
-        background: $orange-gradient;
+        background: transparent
+            linear-gradient(90deg, $primary-color 0%, $green-color-2 100%) 0% 0%
+            no-repeat padding-box;
       }
 
       &.active {
