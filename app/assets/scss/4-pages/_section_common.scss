@@ -287,6 +287,9 @@
       margin-bottom: 30px;
       .card__box--txt {
         text-align: left;
+        @media #{$sp} {
+          margin-bottom: 0;
+        }
       }
     }
   }

@@ -2108,6 +2108,9 @@
             margin-bottom: 30px;
             color: #000000;
             text-align: center;
+            @media #{$sp} {
+              margin-bottom: 0;
+            }
           }
 
           .more {
@@ -2140,7 +2143,7 @@
     }
   }
   @media #{$sp} {
-    padding: 30px 0;
+    padding: 35px 0;
   }
 }
 
