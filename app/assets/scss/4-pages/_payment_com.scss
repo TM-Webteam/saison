@@ -1,25 +1,3 @@
-.payment_com {
-  .rbt-list {
-    .rbt-item {
-      &:hover {
-        background: transparent
-            linear-gradient(90deg, $primary-color 0%, $green-color-2 100%) 0% 0%
-            no-repeat padding-box;
-      }
-
-      &.active {
-        background: $orange-gradient;
-
-        &:hover {
-          background: transparent
-            linear-gradient(90deg, $primary-color 0%, $green-color-2 100%) 0% 0%
-            no-repeat padding-box;
-        }
-      }
-    }
-  }
-}
-
 .payment_com-page {
   section {
     .ttl-notice {

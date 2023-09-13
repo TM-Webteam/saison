@@ -217,6 +217,7 @@
       color: #ffffff;
 
       .ttl-primary {
+        font-size: 42px;
         margin-bottom: 0;
         text-align: left;
 
@@ -421,6 +422,7 @@
     }
   }
 
+
   .section-flow {
     .flow-container {
       display: grid;
@@ -508,6 +510,20 @@
               padding: 15px;
             }
           }
+        }
+      }
+    }
+
+    .section-more {
+      @media #{$sp} {
+        margin-left: -15px;
+        margin-right: -15px;
+      }
+      .blue_gradient_btn {
+        max-width: 500px;
+        @media #{$sp} {
+          font-size: 12px;
+          max-width: 90%;
         }
       }
     }
