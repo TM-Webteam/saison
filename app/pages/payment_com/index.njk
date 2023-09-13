@@ -204,10 +204,6 @@ link: "#material"
           <h4 class="act-more-tooltip__content">{{"支払い.comの仕組みとメリットが \n 3分でわかる！" | safe}}</h4>
         </div>
         <div class="act-more-content">
-          <div class="act-more-content-img">
-            <img class="primary-img" src="/assets/img/common/documents_image.png" alt="Documents image 1">
-            <img class="secondary-img" src="/assets/img/common/documents_image.png" alt="Documents image 2">
-          </div>
           <div class="act-more-content-btn">
             <a href="#" class="blue_gradient_btn small">
               サービス資料ダウンロード
@@ -284,7 +280,7 @@ link: "#material"
   </section>
 
   <section id="reason-chosing" class="section-reason-chosing fadein">
-    <div class="ttl-notice">選ばれる理由.com?</div>
+    <div class="ttl-notice">選ばれる理由</div>
     <h1 class="ttl-primary">サービス開始1年で、導入企業数20,000社突破！<span>※1</span></h1>
     <h4 class="ttl-quaternary">
       個人事業主様から1,000名を超える規模の法人様まで、選ばれるのには理由があります。
@@ -295,7 +291,7 @@ link: "#material"
         <ul class="inherit card-list">
           {% for item in payment_page.reason_chosing %}
           <li class="card-type23">
-            <a href="#" class="card">
+            <div class="card">
               <div class="ttl-quaternary-container">
                 <h4 class="ttl-quaternary">
                   {{ item.title }}
@@ -315,7 +311,7 @@ link: "#material"
                 {% endfor %}
               </ul>
               {% endif %}
-            </a>
+            </div>
           </li>
           {% endfor %}
         </ul>
