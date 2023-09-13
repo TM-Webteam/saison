@@ -240,6 +240,9 @@ header {
         width: 100%;
         padding: 20px 0 10px;
         border-bottom: 1px solid $black-color-01;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
 
         a {
           display: flex;
@@ -260,8 +263,7 @@ header {
       }
 
       .nav__button {
-
-        .flex{
+        .flex {
           display: flex;
           justify-content: space-between;
           margin: 20px 0;
