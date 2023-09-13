@@ -370,10 +370,10 @@
           object-fit: cover;
           margin: 20px 0;
         }
-        .card-description {
+        .card_description {
           li {
             font-size: 16px;
-            margin-bottom: 11px;
+            margin-bottom: 10px;
           }
         }
         @media #{$sp} {
