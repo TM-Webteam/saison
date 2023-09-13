@@ -253,6 +253,7 @@
 
         @media #{$sp} {
           max-width: unset;
+          width: 100%;
         }
 
         &-tooltip {
@@ -298,7 +299,7 @@
 
       @media #{$sp} {
         flex-direction: column;
-        gap: 100px;
+        // gap: 100px;
       }
     }
   }
