@@ -149,7 +149,7 @@
 
   .section-card-list {
     padding: 70px 0;
-    
+
     @media #{$tab} {
       padding: 30px 0;
     }
@@ -300,12 +300,5 @@
       font-weight: 400;
       margin-bottom: 50px;
     }
-  }
-
-  .section-license {
-    font-size: 13px;
-    color: $white-color;
-    background-color: $gray-color-8;
-    padding: 20px 0;
   }
 }

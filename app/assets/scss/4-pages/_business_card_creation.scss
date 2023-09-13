@@ -13,14 +13,39 @@
     }
   }
 
-
   .section-welcome {
-    padding: 150px;
+    padding: 114px 0;
     text-align: left;
     color: #fff;
     background: url("../img/common/banner_4.png") 50% / cover no-repeat;
     background-size: cover;
     background-repeat: no-repeat;
+
+    .bg-title-content {
+      position: relative;
+      width: fit-content;
+      font-size: 21px;
+      font-weight: 700;
+      padding: 6px 20px;
+
+      color: $white-color;
+      background-color: $blue-color-3;
+      transform: skew(-10deg);
+      margin-bottom: 10px;
+      @media #{$sp} {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .title-content {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        line-height: 28px;
+        transform: skew(10deg);
+        font-size: 21px;
+      }
+    }
 
     .ttl-primary {
       font-size: 42px;
@@ -42,13 +67,16 @@
     }
 
     .ttl-quaternary {
-      font-size: 20px;
+      font-size: 18px;
+
+      @media #{$sp} {
+        text-align: center;
+      }
     }
 
     .banner-container {
       display: grid;
-      grid-template-columns: 1.5fr 1fr;
-      gap: 50px;
+      grid-template-columns: 53% 47%;
       @media #{$sp} {
         grid-template-columns: 1fr;
         gap: 0px;
