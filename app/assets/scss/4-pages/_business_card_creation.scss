@@ -1,5 +1,28 @@
 .business_card_creation-page {
   margin: auto;
+  section {
+    .ttl-primary {
+      font-size: 32px;
+      span {
+        font-size: 15px;
+      }
+      @media #{$sp} {
+        font-size: 20px;
+        text-align: center !important;
+      }
+    }
+    .ttl-quaternary {
+      text-align: center;
+      margin-bottom: 70px;
+      .font-weight-normal {
+        font-weight: normal;
+      }
+      @media #{$sp} {
+        margin-bottom: 30px;
+      }
+    }
+  }
+
 
   .section-welcome {
     padding: 150px;
@@ -539,8 +562,9 @@
     .content-img {
       max-width: 400px;
       position: relative;
+      margin-right: 30px;
       img {
-        max-width: 70%;
+        max-width: 100%;
         object-fit: cover;
         &.img-bot {
           position: absolute;
@@ -553,6 +577,9 @@
           box-shadow: 3px 3px 2px #00000029;
           border: 1px solid #707070;
         }
+      }
+      @media #{$sp} {
+        margin-right: 0;
       }
     }
 
@@ -707,7 +734,7 @@
 
   .section-subinfo {
     .containers {
-      padding: 15px 0;
+      padding: 8px 0;
     }
     @media #{$sp} {
       .containers {
