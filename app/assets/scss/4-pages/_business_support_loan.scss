@@ -1,3 +1,11 @@
+.business-support-loan {
+  .rbt-list {
+    .rbt-item:nth-child(2) {
+      font-size: 11px;
+    }
+  }
+}
+
 .business-support-loan-page {
   margin: auto;
   padding: 133px 0 0px;
@@ -148,7 +156,7 @@
       color: #ffffff;
 
       .ttl-primary {
-       font-size: 42px;
+        font-size: 42px;
         margin-bottom: 0;
         text-align: left;
 

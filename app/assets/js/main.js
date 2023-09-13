@@ -66,7 +66,7 @@ $(window).on("scroll", function () {
       menuSidebar.toggleClass("rbt-loaded");
     }
   } else {
-    menuSidebar.removeClass("rbt-loaded")
+    menuSidebar.removeClass("rbt-loaded");
   }
 
   if (scrollPosition > 500 && scrollPosition < fadeOutThreshold) {
@@ -257,14 +257,13 @@ $(window).on("load", function () {
 
     $searchDropdown.on("click", function () {
       $(".nav__dropdown__list__search").toggleClass("open");
+
       $supportDropdown.removeClass("open");
       $supportList.removeClass("open");
       $searchDropdown.toggleClass("open");
     });
 
     $supportDropdown.on("click", function () {
-      console.log("here");
-
       $(".nav__dropdown__list__support").toggleClass("open");
       $searchDropdown.removeClass("open");
       $searchList.removeClass("open");
@@ -286,15 +285,26 @@ $(window).on("load", function () {
 })(jQuery);
 
 function hideDropdownMenu() {
+  // TODO: refactor to use observer
   var $searchDropdown = $(".nav__item__dropdown__search");
   var $supportDropdown = $(".nav__item__dropdown__support");
   var $searchList = $(".nav__dropdown__list__search");
   var $supportList = $(".nav__dropdown__list__support");
 
-  $searchDropdown.removeClass("open");
-  $searchList.removeClass("open");
-  $supportDropdown.removeClass("open");
-  $supportList.removeClass("open");
+  if (!$supportList.hasClass("hiding")) {
+    $supportList.toggleClass("hiding");
+  }
+
+  if (!$searchList.hasClass("hiding")) {
+    $searchList.toggleClass("hiding");
+  }
+
+  setTimeout(function () {
+    $searchDropdown.removeClass("open");
+    $searchList.removeClass("hiding").removeClass("open");
+    $supportDropdown.removeClass("open");
+    $supportList.removeClass("hiding").removeClass("open");
+  }, 300);
 }
 
 //--------------------------------------
