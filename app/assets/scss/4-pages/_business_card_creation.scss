@@ -53,6 +53,7 @@
       text-align: left;
       line-height: 1;
       margin-top: 15px;
+      text-shadow: 0px 0px 20px #05172c8d;
     }
 
     .ttl-tertiary {
@@ -68,6 +69,8 @@
 
     .ttl-quaternary {
       font-size: 18px;
+      line-height: 33px;
+      font-weight: 400;
 
       @media #{$sp} {
         text-align: center;
