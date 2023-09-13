@@ -24,6 +24,9 @@
       font-size: 14px;
       color: $primary-color;
       margin-bottom: 45px;
+      @media #{$sp} {
+        margin-bottom: 15px;
+      }
     }
     .ttl-primary {
       font-size: 32px;
@@ -287,11 +290,16 @@
         font-size: 20px;
         font-weight: 700;
         display: grid;
-        gap: 20px;
+        gap: 10px;
+        li {
+          color: $white-color;
+          background-color: #0e7878;
+          padding: 10px 20px;
+          border-radius: 3px;
+        }
       }
       .info-note-sp {
         display: grid;
-        gap: 10px;
         width: 85%;
         margin: 20px auto 0 auto;
         text-align: left;
@@ -317,7 +325,7 @@
     padding: 74px 0 130px 0;
 
     @media #{$sp} {
-      padding: 70px 0;
+      padding: 35px 15px;
     }
 
     img {
@@ -370,6 +378,11 @@
         }
         @media #{$sp} {
           width: 100%;
+        }
+      }
+      .gap30 {
+        @media #{$sp} {
+          gap: 35px;
         }
       }
     }
@@ -496,10 +509,13 @@
     padding: 70px 0;
 
     @media #{$sp} {
-      padding-top: 0;
+      padding: 35px 0;
     }
     .ttl-notice {
       margin-bottom: 25px;
+      @media #{$sp} {
+        margin-bottom: 15px;
+      }
     }
     .section-quaternary-content {
       display: flex;
@@ -553,14 +569,17 @@
             width: 119px;
             object-fit: contain;
             margin: 30px 0;
+            @media #{$sp} {
+              width: 50%;
+            }
           }
           .card-description {
             font-size: 16px;
             .text-note {
               color: $gray-color-8;
               font-size: 13px;
-              line-height: 20px;
-              font-weight: bold;
+              line-height: 1.75;
+              font-weight: 400;
             }
           }
         }
@@ -575,6 +594,7 @@
 
         @media #{$sp} {
           padding: 15px;
+          margin: 60px 0 125px;
         }
 
         span {
@@ -582,9 +602,11 @@
         }
       }
       .act-more {
+        max-width: 100%;
         margin: auto;
         position: relative;
-        padding: 14px 64px 14px 48px;
+        padding: 14px 62px 14px 62px;
+        background: $gradient-bg;
         white-space: nowrap;
 
         &-tooltip {
@@ -640,7 +662,7 @@
     background: #f5f5f5;
     padding: 70px 0;
     @media #{$sp} {
-      padding: 50px 15px;
+      padding: 35px 15px;
     }
   }
 
@@ -831,6 +853,9 @@
         margin-bottom: 30px;
         .card__box--txt {
           text-align: left;
+          @media #{$sp} {
+            margin-bottom: 0;
+          }
         }
       }
     }
