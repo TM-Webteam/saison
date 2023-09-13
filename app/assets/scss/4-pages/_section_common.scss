@@ -101,7 +101,7 @@
         }
 
         @media #{$sp} {
-          flex-direction: column-reverse;
+          flex-direction: column;
           gap: 10px;
         }
       }
