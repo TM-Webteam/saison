@@ -117,8 +117,13 @@ header {
       width: 100%;
       background-color: $white-color;
       display: none;
+      transition: all 0.3s ease-in-out;
+      animation: fadeInTop 0.3s ease-in;
       &.open {
         display: flex;
+      }
+      &.hiding {
+        transform: translateY(-500px);
       }
 
       @media #{$sp} {
@@ -131,9 +136,15 @@ header {
     &__list__support {
       width: 100%;
       background-color: $white-color;
+      transition: all 0.3s ease-in-out;
+      animation: fadeInTop 0.3s ease-in;
       display: none;
       &.open {
+        animation: fadeOutTop 0.3s;
         display: flex;
+      }
+      &.hiding {
+        transform: translateY(-500px);
       }
 
       @media #{$sp} {

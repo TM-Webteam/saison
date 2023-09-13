@@ -73,11 +73,13 @@ span.rbt-text-name {
     white-space: nowrap;
     font-size: 14px;
     font-weight: bold;
+    transition: background-color 0.3s ease-in;
+    max-width: 171px;
 
     &:hover {
-      background: transparent
-        linear-gradient(90deg, $primary-color 0%, $green-color-2 100%) 0% 0%
-        no-repeat padding-box;
+      background: $orange-color;
+      transition-timing-function: ease-out;
+      opacity: 1;
     }
 
     &.active {
@@ -112,5 +114,28 @@ span.rbt-text-name {
   100% {
     opacity: 0;
     transform: translateX(9999px);
+  }
+}
+
+@keyframes fadeInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+@keyframes fadeOutTop {
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
   }
 }
