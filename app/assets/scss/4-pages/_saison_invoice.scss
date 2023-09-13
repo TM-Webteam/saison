@@ -7,6 +7,7 @@
         padding: 35px 0;
       }
     }
+
     .ttl-secondary {
       font-size: 16px;
       color: $primary-color;
@@ -25,8 +26,8 @@
       font-weight: bold;
 
       @media #{$sp} {
-        margin-bottom: 20px;
         font-size: 22px;
+        margin-bottom: 20px;
       }
     }
 
@@ -37,6 +38,11 @@
 
       &.bold {
         font-weight: bold;
+      }
+
+      @media #{$sp} {
+        font-size: 14px;
+        margin-bottom: 20px;
       }
 
       a {
@@ -79,13 +85,10 @@
       transform: skewX(-15deg);
       padding: 0px 20px;
 
-      @media #{$sp} {
-        padding: 0px 10px;
-      }
-
       .ttl-tertiary {
         transform: skewX(15deg);
         color: #ffffff;
+        font-weight: bold;
         margin-bottom: 0;
 
         @media #{$sp} {
@@ -195,7 +198,7 @@
           gap: 20px;
 
           .info-item {
-            padding: 0 5px;
+            padding: 10px 20px;
             background: $primary-color;
             border-radius: 4px;
             @media #{$sp} {
@@ -379,6 +382,12 @@
       padding: 35px 15px;
     }
 
+    .list__wrapper .containers .card-list {
+      @media #{$sp} {
+        gap: 50px;
+      }
+    }
+
     .card-type24 {
       .ttl-quaternary {
         margin-top: 10px;
@@ -417,7 +426,8 @@
       background: #fff;
 
       @media #{$sp} {
-        grid-template-columns: 38% 38% 26%;
+        grid-template-columns: auto;
+        gap: 20px;
       }
 
       .flow-item {
@@ -426,6 +436,11 @@
         padding-right: 24px;
         padding-left: 0;
         filter: drop-shadow(10px 0px 4px #00000029);
+
+        @media #{$sp} {
+          padding-right: 0;
+          filter: drop-shadow(0 10px 4px #00000029);
+        }
 
         &:last-child {
           padding: 0;
@@ -452,9 +467,8 @@
           );
 
           @media #{$sp} {
-            padding: 10px 23px 10px 10px;
-            margin-left: -5px;
-            clip-path: polygon(0 0, 90px 0, 100% 50%, 90px 100%, 0 100%, 0 0);
+            padding: 15px 15px 55px 15px;
+            clip-path: polygon(50% 100%,0% 85%,0% 0%,100% 0%,100% 85%);
           }
 
           img {
@@ -470,7 +484,7 @@
           flex-grow: 1;
 
           @media #{$sp} {
-            font-size: 12px;
+            font-size: 16px;
           }
         }
 
@@ -488,7 +502,7 @@
             padding: 30px 35px 30px 30px;
 
             @media #{$sp} {
-              padding: 5px 10px 5px 5px;
+              padding: 15px;
             }
           }
         }
