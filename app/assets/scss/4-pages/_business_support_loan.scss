@@ -3,6 +3,22 @@
     .rbt-item:nth-child(2) {
       font-size: 11px;
     }
+
+    .rbt-item {
+      &:hover {
+        background: $orange-color;
+      }
+
+      &.active {
+        background: transparent
+          linear-gradient(90deg, $primary-color 0%, $green-color-2 100%) 0% 0%
+          no-repeat padding-box;
+
+        &:hover {
+          background: $orange-color;
+        }
+      }
+    }
   }
 }
 
@@ -626,7 +642,7 @@
 
           @media #{$sp} {
             padding: 20px 15px 30px 15px;
-            clip-path: polygon(50% 100%,0% 85%,0% 0%,100% 0%,100% 85%);
+            clip-path: polygon(50% 100%, 0% 85%, 0% 0%, 100% 0%, 100% 85%);
           }
 
           .flow-index {

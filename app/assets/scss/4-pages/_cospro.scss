@@ -1,3 +1,24 @@
+.cospro {
+  .rbt-list {
+
+    .rbt-item {
+      &:hover {
+        background: $orange-color;
+      }
+
+      &.active {
+        background: transparent
+          linear-gradient(90deg, $primary-color 0%, $green-color-2 100%) 0% 0%
+          no-repeat padding-box;
+
+        &:hover {
+          background: $orange-color;
+        }
+      }
+    }
+  }
+}
+
 .cospro-page {
   .section-welcome {
     padding-top: 70px;
