@@ -61,6 +61,10 @@ footer {
 
           img {
             width: 288px;
+
+            @media #{$sp} {
+              width: 193px;
+            }
           }
         }
         .group__ttl {

@@ -218,6 +218,10 @@
             font-size: 26px;
             color: #0497b5;
             font-weight: bold;
+
+            @media #{$sp} {
+              text-align: left;
+            }
           }
 
           .sub-section-ttl {
