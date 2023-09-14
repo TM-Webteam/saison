@@ -188,9 +188,9 @@ $(document).ready(function () {
 // QA sole_proprietorship
 //______________________________________
 $(document).ready(function () {
-  $(".qa-button").each(function (index) {
+  $(".question-tab").each(function (index) {
     $(this).on("click", function () {
-      $(this).toggleClass("open");
+      $(this).find(".qa-button").toggleClass("open");
       $(this)
         .closest(".qa")
         .find(".answer-tab")
