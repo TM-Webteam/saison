@@ -722,12 +722,22 @@
       box-shadow: 0 3px 20px #00000029;
       background: $white-color;
 
+      @media #{$sp} {
+        grid-template-columns: auto;
+        gap: 20px;
+      }
+
       .flow-item {
         position: relative;
         display: inline-block;
         padding-right: 24px;
         padding-left: 0;
         filter: drop-shadow(10px 0px 4px #00000029);
+
+        @media #{$sp} {
+          padding-right: 0;
+          filter: drop-shadow(0 10px 4px #00000029);
+        }
 
         .ttl-head {
           font-weight: bold;
@@ -744,6 +754,9 @@
 
         .card-img {
           max-width: 50%;
+          @media #{$sp} {
+            width: auto;
+          }
         }
 
         .bondi_blue_outline_btn {
@@ -790,10 +803,8 @@
           );
 
           @media #{$sp} {
-            padding: 10px 0;
-            padding-right: 10px;
-            margin-left: -5px;
-            clip-path: polygon(0 0, 72px 0, 100% 50%, 72px 100%, 0 100%, 0 0);
+            padding: 15px 15px 55px 15px;
+            clip-path: polygon(50% 100%, 0% 85%, 0% 0%, 100% 0%, 100% 85%);
           }
 
           .flow-content {
@@ -802,8 +813,7 @@
             flex-grow: 1;
 
             @media #{$sp} {
-              font-size: 9px;
-              margin-top: 8px;
+              font-size: 16px;
             }
           }
         }
@@ -822,7 +832,7 @@
             padding: 30px 35px 30px 30px;
 
             @media #{$sp} {
-              padding: 5px;
+              padding: 15px;
             }
           }
           .flow-item-detail::after {
