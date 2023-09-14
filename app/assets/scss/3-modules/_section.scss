@@ -1948,7 +1948,7 @@
   padding: 0 30px 30px;
 
   dd {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     text-align: left;
   }
 
@@ -3314,8 +3314,8 @@
 
   li {
     position: relative;
-    font-size: 20px;
-    font-weight: 500;
+    font-size: 16px;
+    font-weight: 700;
     text-align: left;
     padding-left: 20px;
   }
@@ -3329,6 +3329,6 @@
     width: 8px;
     height: 8px;
     border-radius: 50%;
-    background-color: #333;
+    background-color: $primary-color;
   }
 }

@@ -81,7 +81,7 @@
           }
 
           .left-content {
-            width: 130px;
+            width: 100px;
             color: white;
             font-size: 20px;
             line-height: 29px;
@@ -100,6 +100,10 @@
             gap: 10px;
             height: 100%;
             padding: 30px;
+
+            @media #{$sp} {
+              flex-wrap: wrap;
+            }
 
             a {
               border-radius: 20px;
@@ -176,6 +180,12 @@
       gap: 30px;
       height: 195px;
       box-shadow: 0px 3px 20px #00000029;
+      opacity: 1;
+      transition: all 0.3s;
+
+      &:hover {
+        opacity: 0.7;
+      }
 
       @media #{$tab} {
         flex-direction: column;
@@ -223,6 +233,7 @@
 
           span.secondary {
             color: white;
+            font-size: 14px;
             background: #004097;
             padding: 6px 12px;
             margin-right: 10px;
@@ -237,6 +248,7 @@
 
           span.blue {
             color: white;
+            font-size: 14px;
             background: #4a1453;
             padding: 6px 12px;
             margin-right: 10px;
