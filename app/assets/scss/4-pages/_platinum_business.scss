@@ -335,8 +335,9 @@
     .content-img {
       max-width: 400px;
       position: relative;
+      margin-right: 30px;
       img {
-        max-width: 70%;
+        max-width: 100%;
         object-fit: cover;
         &.img-bot {
           position: absolute;
