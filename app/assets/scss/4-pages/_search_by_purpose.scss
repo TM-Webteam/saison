@@ -7,6 +7,12 @@
       margin: auto;
       padding: 135px 30px 77px 30px;
 
+      .blue_gradient_btn {
+        &::before {
+          transform: rotate(135deg);
+        }
+      }
+
       @media #{$sp} {
         padding: 64px 30px;
       }
@@ -163,6 +169,11 @@
                   margin-bottom: 0px;
                 }
               }
+              .card-description__detail {
+                span {
+                  cursor: default;
+                }
+              }
             }
 
             @media #{$sp} {
@@ -306,7 +317,7 @@
               font-size: 14px;
               line-height: 20px;
               color: $green-color-2;
-              font-weight: 500px;
+              font-weight: bold;
             }
 
             h3 {
@@ -399,13 +410,22 @@
     .description {
       padding: 0 16px;
       font-size: 20px;
-      font-weight: 500;
+      font-weight: 400;
       line-height: 30px;
       margin-bottom: 30px;
 
       @media #{$sp} {
         font-size: 16px;
         line-height: 24px;
+      }
+    }
+
+    .blue_gradient_btn {
+      max-width: fit-content;
+      &::before {
+        @media #{$sp} {
+          right: 10px;
+        }
       }
     }
 

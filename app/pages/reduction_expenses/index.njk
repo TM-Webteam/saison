@@ -36,7 +36,7 @@
           {% endfor %}
         </div>
         <div>
-          <a href="#" class="blue_gradient_btn">{{ search_by_purpose.welcome.button }}</a>
+          <a href="#section-reduce-expenses-card" class="blue_gradient_btn">{{ search_by_purpose.welcome.button }}</a>
         </div>
       </div>
     </section>
@@ -48,7 +48,7 @@
           <ul class="inherit card-list">
             {% for item in search_by_purpose.search_result.list %}
               <li class="card-type6">
-                <a class="card" href={{item.href}}>
+                <div class="card">
                   <div class="ttl-quaternary-container">
                     <h4 class="ttl-quaternary">{{ item.title | safe }}</h4>
                   </div>
@@ -62,7 +62,7 @@
                       </li>
                     {% endfor %}
                   </ul>
-                </a>
+                </div>
               </li>
             {% endfor %}
           </ul>
@@ -70,7 +70,7 @@
       </div>
     </section>
 
-    <section class="section-reduce-expenses-card">
+    <section id="section-reduce-expenses-card" class="section-reduce-expenses-card">
       <div class="container-1200">
         <h3 class="sub-title">{{ search_by_purpose.reduce_expenses.sub_title }}</h3>
 
@@ -165,8 +165,8 @@
         <h2 class="ttl-tertiary title">
           <span class="gray-bottom"><span class="yellow">「どのビジネスカードか迷っている・・・」</span>という方へ</span>
         </h2>
-        <h3 class="ttl-tertiary description">{{ search_by_purpose.tertiary.description }}</h3>
-        <a href="#" class="blue_gradient_btn">{{ common.button.download }}</a>
+        <h3 class="ttl-tertiary description">{{ search_by_purpose.tertiary.description | safe }}</h3>
+        <a href="/contact" class="blue_gradient_btn">{{ common.button.download }}</a>
       </div>
     </section>
 
