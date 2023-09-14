@@ -68,9 +68,15 @@
     }
 
     &-carousel {
-      padding: 30px 100px;
+      // padding: 30px 100px;
+      padding: 0;
       background-color: #f8f8f8;
       margin-bottom: 40px;
+      .slick-slide {
+        img {
+          padding: 0 !important;
+        }
+      }
 
       @media #{$sp} {
         padding: 30px 15px;
