@@ -135,6 +135,11 @@
 
       .notification-panel1 {
         margin-bottom: 60px;
+        .cash-flow-img {
+          img:hover {
+            transform: scale(1.04);
+          }
+        }
       }
       .bondi_blue_outline_btn {
         font-weight: 700;
