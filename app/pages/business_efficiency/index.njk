@@ -10,10 +10,10 @@
 
 {# Breadcrumb #}
 {% set breadcrumb = [
-  {
-    text: "業務効率化を図りたい",
-    link: "#"
-  }
+{
+text: "業務効率化を図りたい",
+link: "#"
+}
 ] %}
 
 {# Custom tags before </head> #}
@@ -41,7 +41,7 @@
       <h2 class="ttl-secondary">日々の業務でこんなお悩みありませんか?</h2>
       <ul class="flex jcC gap30 card-list">
         <li class="card-type6">
-          <a href="#" class="card">
+          <a href="#saison-invoice" class="card">
             <div class="ttl-quaternary-container">
               <h4 class="ttl-quaternary">請求・回収業務</h4>
             </div>
@@ -50,9 +50,12 @@
                 <img src="/assets/img/common/invoice.png">
               </div>
               <ul class="check-list">
-                <li>請求・回収業務に忙殺されている</li>
-                <li>支払いを先延ばししたい</li>
-                <li>支払い日までの運転資金確保が大変</li>
+                <li class="check-list-item">{% include 'component/icons/circle-checked.njk'
+                  %}<span>請求・回収業務に忙殺されている</span></li>
+                <li class="check-list-item">{% include 'component/icons/circle-checked.njk' %}<span>支払いを先延ばししたい</span>
+                </li>
+                <li class="check-list-item">{% include 'component/icons/circle-checked.njk'
+                  %}<span>支払い日までの運転資金確保が大変</span></li>
               </ul>
             </div>
             <div class="circle-with-arrow">
@@ -61,7 +64,7 @@
           </a>
         </li>
         <li class="card-type6">
-          <a href="#" class="card">
+          <a href="#concur-expense" class="card">
             <div class="ttl-quaternary-container">
               <h4 class="ttl-quaternary">経費精算業務</h4>
             </div>
@@ -70,9 +73,12 @@
                 <img src="/assets/img/common/calculate.png">
               </div>
               <ul class="check-list">
-                <li>仮払い・立替払いの経費精算が面倒</li>
-                <li>精算漏れ・遅れが頻繁に発生している</li>
-                <li>利用明細の入力作業をやめたい</li>
+                <li class="check-list-item">{% include 'component/icons/circle-checked.njk'
+                  %}<span>仮払い・立替払いの経費精算が面倒</span></li>
+                <li class="check-list-item">{% include 'component/icons/circle-checked.njk'
+                  %}<span>精算漏れ・遅れが頻繁に発生している</span></li>
+                <li class="check-list-item">{% include 'component/icons/circle-checked.njk'
+                  %}<span>利用明細の入力作業をやめたい</span></li>
               </ul>
             </div>
             <div class="circle-with-arrow">
@@ -81,7 +87,7 @@
           </a>
         </li>
         <li class="card-type6">
-          <a href="#" class="card">
+          <a href="#payment-com" class="card">
             <div class="ttl-quaternary-container">
               <h4 class="ttl-quaternary">支払い業務</h4>
             </div>
@@ -90,14 +96,13 @@
                 <img src="/assets/img/common/reading.png">
               </div>
               <ul class="check-list">
-                <li>経理業務負担を削減したい</li>
-                <li>
-                  <div class="check-list__item">
-                    紙請求書対応のため、リモートワークが<br>
-                    できない
-                  </div>
+                <li class="check-list-item">{% include 'component/icons/circle-checked.njk' %}<span>経理業務負担を削減したい</span>
                 </li>
-                <li>急な支払いで現金が足りない</li>
+                <li class="check-list-item">{% include 'component/icons/circle-checked.njk' %}
+                  <span>紙請求書対応のため、リモートワークができない</span>
+                </li>
+                <li class="check-list-item">{% include 'component/icons/circle-checked.njk' %}<span>急な支払いで現金が足りない</span>
+                </li>
               </ul>
             </div>
             <div class="circle-with-arrow">
@@ -106,18 +111,21 @@
           </a>
         </li>
         <li class="card-type6">
-          <a href="#" class="card">
+          <a href="#cospro" class="card">
             <div class="ttl-quaternary-container">
               <h4 class="ttl-quaternary">出張手配</h4>
             </div>
             <div class="flex gap30 card-body">
               <div class="circle-container">
-                <img src="/assets/img/common/invoice.png">
+                <img src="/assets/img/common/suitcase.png">
               </div>
               <ul class="check-list">
-                <li>従業員の出張状況を把握できていない</li>
-                <li>従業員の立替が負担になっている</li>
-                <li>経費の仮払いが面倒</li>
+                <li class="check-list-item">{% include 'component/icons/circle-checked.njk'
+                  %}<span>従業員の出張状況を把握できていない</span></li>
+                <li class="check-list-item">{% include 'component/icons/circle-checked.njk'
+                  %}<span>従業員の立替が負担になっている</span></li>
+                <li class="check-list-item">{% include 'component/icons/circle-checked.njk' %}<span>経費の仮払いが面倒</span>
+                </li>
               </ul>
             </div>
             <div class="circle-with-arrow">
@@ -131,16 +139,18 @@
   <section class="section-secondary">
     <div class="container-1200">
       <h2 class="ttl-secondary">今すぐ始められる! クレディセゾンの業務効率化サービス</h2>
-      <div id="" class="notification quaterary">
+      <div id="saison-invoice" class="notification quaterary">
         <div class="notification-panel1">
           <h2 class="card__ttl">未入金対応を0に。さらに毎月の請求業務を最短15分で!</h2>
           <summary class="aic inquiry__box">
-            <div class="inquiry__box--txt">                         
+            <div class="inquiry__box--txt">
               BtoB向け後払い決済・請求代行サービス<span>「セゾンインボイス」</span>
             </div>
           </summary>
           <div class="card-type13">
-            <dd>セゾンインボイスとは、請求業務の“すべて”を代行するサービスです。顧客情報をご登録いただき、取引情報を誤入力いただくだけで、与信審査、請求書作成・発行、入金確認、督促まですべてクレディセゾンが代行いたします。顧客の与信枠内であれば、その後未払いになったとしても貴社にお振り込みするため、未回収リスクがなくなります。</dd>
+            <dd>
+              セゾンインボイスとは、請求業務の“すべて”を代行するサービスです。顧客情報をご登録いただき、取引情報を誤入力いただくだけで、与信審査、請求書作成・発行、入金確認、督促まですべてクレディセゾンが代行いたします。顧客の与信枠内であれば、その後未払いになったとしても貴社にお振り込みするため、未回収リスクがなくなります。
+            </dd>
             <div class="flex gap60 aic sp-reverse">
               <div class="sec-left-wrapper">
                 <figure class="sec__img">
@@ -192,22 +202,23 @@
                     </h5>
                   </dt>
                 </dl>
-                <a href="#" class="bondi_blue_outline_btn">セゾンインボイスをもっと詳しく</a>
+                <a href="/payment_com" class="bondi_blue_outline_btn">セゾンインボイスをもっと詳しく</a>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div id="" class="notification quaterary">
+      <div id="concur-expense" class="notification quaterary">
         <div class="notification-panel1">
           <h2 class="card__ttl">仮払い・立替払いを廃止！経費精算を自動化できる!</h2>
           <summary class="aic inquiry__box">
-            <div class="inquiry__box--txt">                         
+            <div class="inquiry__box--txt">
               中小企業様向け経費精算クラウド<span>「Concur Expense」</span>
             </div>
           </summary>
           <div class="card-type13">
-            <dd>経費精算クラウド「Concur Expense」は、法人カード、交通系ICカード（Suica、PASMOなど）、ホテル手配やタクシー配車アプリなどさまざまなサービスと連携。経費明細が自動で Concur Expense に取り込まれるので、<strong>ペーパーレス化はもちろん経費精算を自動化することができます。</strong></dd>
+            <dd>経費精算クラウド「Concur Expense」は、法人カード、交通系ICカード（Suica、PASMOなど）、ホテル手配やタクシー配車アプリなどさまざまなサービスと連携。経費明細が自動で Concur
+              Expense に取り込まれるので、<strong>ペーパーレス化はもちろん経費精算を自動化することができます。</strong></dd>
             <div class="flex gap60 aic sp-reverse">
               <div class="sec-left-wrapper">
                 <figure class="sec__img">
@@ -265,16 +276,18 @@
           </div>
         </div>
       </div>
-      <div id="" class="notification quaterary">
+      <div id="payment-com" class="notification quaterary">
         <div class="notification-panel1">
           <h2 class="card__ttl">支払い業務を効率化＆資金繰り改善もできる!</h2>
           <summary class="aic inquiry__box">
-            <div class="inquiry__box--txt">                         
+            <div class="inquiry__box--txt">
               請求書カード払いサービス<span>「支払い.com」</span>
             </div>
           </summary>
           <div class="card-type13">
-            <dd>請求書カード払いサービスとは、あらゆる銀行振込のお支払いをお持ちのクレジットカードで決済できるサービスです。支払い.comを利用することで、<strong>すべての支払いを延長</strong>することができ、急な支払いで手元資金が足りない場合や資金繰りの改善にも役立ちます。</dd>
+            <dd>
+              請求書カード払いサービスとは、あらゆる銀行振込のお支払いをお持ちのクレジットカードで決済できるサービスです。支払い.comを利用することで、<strong>すべての支払いを延長</strong>することができ、急な支払いで手元資金が足りない場合や資金繰りの改善にも役立ちます。
+            </dd>
             <div class="flex gap60 aic sp-reverse">
               <div class="sec-left-wrapper">
                 <figure class="sec__img">
@@ -335,16 +348,18 @@
           </div>
         </div>
       </div>
-      <div id="" class="notification quaterary">
+      <div id="cospro" class="notification quaterary">
         <div class="notification-panel1">
           <h2 class="card__ttl">出張手配の問題をまるごと解決!</h2>
           <summary class="aic inquiry__box">
-            <div class="inquiry__box--txt">                         
+            <div class="inquiry__box--txt">
               出張手配サービス<span>「CosPro」</span>
             </div>
           </summary>
           <div class="card-type13">
-            <dd>CosProとは、法人企業様の出張手配に関わるさまざまな課題を解決するために生まれた出張手配サービスです。<strong>社員様が予約されたチケットの料金が適正かどうかのチェックを行う、弊社独自の「適正化チェック」</strong>のサービスで<strong>法人企業様の出張コスト削減</strong>に寄与いたします。</dd>
+            <dd>
+              CosProとは、法人企業様の出張手配に関わるさまざまな課題を解決するために生まれた出張手配サービスです。<strong>社員様が予約されたチケットの料金が適正かどうかのチェックを行う、弊社独自の「適正化チェック」</strong>のサービスで<strong>法人企業様の出張コスト削減</strong>に寄与いたします。
+            </dd>
             <div class="flex gap60 aic sp-reverse">
               <div class="sec-left-wrapper">
                 <figure class="sec__img">
@@ -404,9 +419,12 @@
                     </h5>
                   </dt>
                 </dl>
-                <ul class="sub-list">
-                  <li>365日稼働のコールセンターは国内出張の手配専用の窓口です。海外出張の手配窓口に関しては平日のみの稼働となります。</li>
-                </ul>
+                <dl class="flex aic gap30 sec01-right-box note">
+                  <dt class="flex aic gap20 sp-fs">
+                    <div class="number-circle"></div>
+                    <span class="text-muted">※365日稼働のコールセンターは国内出張の手配専用の窓口です。海外出張の手配窓口に関しては平日のみの稼働となります。</span>
+                  </dt>
+                </dl>
                 <a href="#" class="bondi_blue_outline_btn">CosProをもっと詳しく</a>
               </div>
             </div>
@@ -417,38 +435,38 @@
   </section>
   <section id="application" class="section-contact2 fadein">
     <div class="card-type22">
-    <h3 class="ttl-tertiary">
-      <span><strong>「わかりやすい効果」</strong>と<strong>「メリット」</strong>をご提供します</span>
-      <div class="tooltip">
-        <div class="tooltip-container">
-          <h4 class="tooltip__content">業務効率化をご検討中の中小企業・個人事業主の皆様へ</h4>
-        </div>
+      <h3 class="ttl-tertiary">
+        <span><strong>「わかりやすい効果」</strong>と<strong>「メリット」</strong>をご提供します</span>
+        <div class="tooltip">
+          <div class="tooltip-container">
+            <h4 class="tooltip__content">業務効率化をご検討中の中小企業・個人事業主の皆様へ</h4>
+          </div>
 
-      </div>
-    </h3>
-    <div class="useful-wp container">
-      <p class="description">
-        業務効率化の取り組み方がわからなかったり、取り組んでもあまり効果が得られなかったりする方も多いのではないでしょうか。<br>
-        クレディセゾンはそのような方向けに <strong>「今すぐ始められる」＆「わかりやすい効果とメリット」</strong>をご提供いたします。<br>
-        お気軽にご相談ください。
-      </p>
-      <div class="containers">
-        <div class="flex jcC gap60">
-          <div href="#" class="card">
-            <summary class="card__box">
-              <div class="card__box--ttl">「詳しい資料が欲しい」</br>という方はこちら</div>
-              <div><a href="#" class="blue_gradient_btn" href="#">サービス資料ダウンロード</a></div>
-            </summary>
-          </div>
-          <div href="#" class="card">
-            <summary class="card__box">
-              <div class="card__box--ttl">「詳しい話を聞きたい」「相談したい」</br>という方はこちら</div>
-              <div><a href="#" class="blue_gradient_btn" href="#">サポート担当に無料で相談する</a></div>
-            </summary>
+        </div>
+      </h3>
+      <div class="useful-wp container">
+        <p class="description">
+          業務効率化の取り組み方がわからなかったり、取り組んでもあまり効果が得られなかったりする方も多いのではないでしょうか。<br>
+          クレディセゾンはそのような方向けに <strong>「今すぐ始められる」＆「わかりやすい効果とメリット」</strong>をご提供いたします。<br>
+          お気軽にご相談ください。
+        </p>
+        <div class="containers">
+          <div class="flex jcC gap60">
+            <div href="#" class="card">
+              <summary class="card__box">
+                <div class="card__box--ttl">「詳しい資料が欲しい」</br>という方はこちら</div>
+                <div><a href="#" class="blue_gradient_btn" href="#">サービス資料ダウンロード</a></div>
+              </summary>
+            </div>
+            <div href="#" class="card">
+              <summary class="card__box">
+                <div class="card__box--ttl">「詳しい話を聞きたい」「相談したい」</br>という方はこちら</div>
+                <div><a href="/contact" class="blue_gradient_btn">サポート担当に無料で相談する</a></div>
+              </summary>
+            </div>
           </div>
         </div>
       </div>
-    </div>
   </section>
 </main>
 {% endblock %}
