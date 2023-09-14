@@ -1,6 +1,5 @@
 .cospro {
   .rbt-list {
-
     .rbt-item {
       &:hover {
         background: $orange-color;
@@ -100,6 +99,8 @@
               text-align: start;
               background-color: #0297b5;
               padding: 15px 10px;
+              font-weight: bold;
+
               .font-smaller {
                 font-size: 16px;
               }
@@ -156,6 +157,8 @@
       .ttl-primary {
         margin-bottom: 0;
         text-align: left;
+        text-shadow: 0px 0px 20px #05172c8d;
+        font-size: 42px;
 
         @media #{$sp} {
           text-align: center;
@@ -169,6 +172,8 @@
         text-align: left;
         font-size: 24px;
         color: #fff;
+        text-shadow: 0px 0px 20px #05172c8d;
+        font-weight: 500;
         @media #{$sp} {
           text-align: center;
 
@@ -234,7 +239,7 @@
 
     @media #{$sp} {
       .ttl-primary {
-        font-size: 21px;
+        font-size: 22px;
       }
     }
 
@@ -249,6 +254,9 @@
       font-size: 20px;
       font-weight: normal;
       margin-bottom: 40px;
+      @media #{$sp} {
+        font-size: 16px;
+      }
     }
     .font-bold {
       font-weight: bold !important;
@@ -296,7 +304,7 @@
     }
     @media #{$sp} {
       .ttl-primary {
-        font-size: 21px;
+        font-size: 22px;
         margin-bottom: 50px;
       }
     }
@@ -310,6 +318,10 @@
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 30px;
+      @media #{$sp} {
+        gap: 50px;
+      }
+
       .card {
         .card-head {
           position: absolute;
@@ -374,7 +386,7 @@
     text-align: center;
     @media #{$sp} {
       .ttl-primary {
-        font-size: 21px;
+        font-size: 22px;
       }
     }
 
@@ -406,24 +418,48 @@
         transform: rotate(45deg) translateX(-50%);
       }
     }
-    .btn-container {
-      position: relative;
 
-      .blue_gradient_btn {
-        position: relative;
+    .act-more-content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      @media #{$sp} {
+        flex-direction: column;
+        gap: 10px;
       }
-
-      .card-img {
-        position: absolute;
-        max-width: 100%;
+      .act-more-content-img {
+        position: relative;
+        display: block;
+        width: 153px;
         height: 90px;
-        top: -20px;
-        right: 18%;
-        object-fit: contain;
+        margin-bottom: 30px;
+        img {
+          width: 115px;
+          height: 100%;
+          &.primary-img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 2;
+          }
+          &.secondary-img {
+            position: absolute;
+            bottom: -10px;
+            right: 0;
+            z-index: 1;
+          }
+        }
+      }
+      .act-more-content-btn {
+        height: auto;
+        width: 346px;
         @media #{$sp} {
-          height: 70px;
-          right: 35%;
-          top: -15px;
+          width: 100%;
+          a {
+            font-size: 14px;
+            padding: 13px 35px;
+          }
         }
       }
     }
@@ -434,16 +470,17 @@
       &.ttl-tertiary {
         color: #0297b5;
         text-align: center;
+        font-size: 16px;
       }
     }
     @media #{$sp} {
       .ttl-primary {
-        font-size: 21px;
+        font-size: 22px;
       }
     }
     .step-container {
       background: #e5f4f8;
-      padding: 50px;
+      padding: 30px 25px;
       margin-bottom: 40px;
       box-shadow: 0px 3px 20px #00000029;
       border-radius: 3px;
