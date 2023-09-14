@@ -22,21 +22,97 @@
               <a href="/smaller_companies/" class="font-15px">中小企業様向け</a>
             </li>
             <li>
-              <a href="/sole_proprietorship/" class="font-15px">個人事業主様向け</a>
+              <a href="/sole_proprietorship/" class="font-15px"
+                >個人事業主様向け</a
+              >
             </li>
-            <li class="nav__item__dropdown__search">
-              <a class="font-15px">目的から探す</a>
-              <svg xmlns="http://www.w3.org/2000/svg" width="10.287" height="10.287" viewBox="0 0 10.287 10.287">
-                <path id="Path_1216" data-name="Path 1216" d="M6.274,0V6.274H0" transform="translate(5.143) rotate(45)"
-                  fill="none" stroke="#0497b5" stroke-width="2" />
-              </svg>
+            <li class="nav__item__dropdown__search header_menu_trigger _pc">
+              <a class="font-15px"><span>目的から探す</span></a>
+              {% include 'component/icons/arrow-down.njk' %}
+              <div class="nav__dropdown__list__search sub-menu pc-only">
+                <div class="nav__dropdown__search">
+                  <div class="nav__dropdown__search__container">
+                    <div class="nav__dropdown__search__title">目的から探す</div>
+                    <a class="bondi_blue_outline_btn">
+                      <span class="bondi_blue_outline_btn__tittle"
+                        >サービス一覧を見る</span
+                      >
+                    </a>
+                  </div>
+                </div>
+
+                <div class="nav__dropdown__list">
+                  <ul class="nav__dropdown__list__first">
+                    <li>
+                      <a href="#">
+                        <span>ビジネスカードを作りたい</span>
+                        {% include 'component/icons/arrow-right-long.njk' %}
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span>業務を効率化したい</span>
+                        {% include 'component/icons/arrow-right-long.njk' %}
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span>福利厚生を充実させたい</span>
+                        {% include 'component/icons/arrow-right-long.njk' %}
+                      </a>
+                    </li>
+                  </ul>
+                  <ul class="nav__dropdown__list__secondary">
+                    <li>
+                      <a href="#">
+                        <span>経費を削減したい</span>
+                        {% include 'component/icons/arrow-right-long.njk' %}
+                      </a>
+                    </li>
+                    <li>
+                      <a href="/improve_cash_flow">
+                        <span>資金繰りを改善したい</span>
+                        {% include 'component/icons/arrow-right-long.njk' %}
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </li>
-            <li class="nav__item__dropdown__support">
-              <a class="font-15px">サポート情報</a>
-              <svg xmlns="http://www.w3.org/2000/svg" width="10.287" height="10.287" viewBox="0 0 10.287 10.287">
-                <path id="Path_1216" data-name="Path 1216" d="M6.274,0V6.274H0" transform="translate(5.143) rotate(45)"
-                  fill="none" stroke="#0497b5" stroke-width="2" />
-              </svg>
+            <li class="nav__item__dropdown__support header_menu_trigger _pc">
+              <a class="font-15px"><span>サポート情報</span></a>
+              {% include 'component/icons/arrow-down.njk' %}
+              <div class="nav__dropdown__list__support sub-menu pc-only">
+                <div class="nav__dropdown__search">
+                  <div class="nav__dropdown__search__container">
+                    <div class="nav__dropdown__search__title">サポート情報</div>
+                  </div>
+                </div>
+                <div class="nav__dropdown__list">
+                  <ul class="nav__dropdown__list__first">
+                    <li>
+                      <a href="/whitepaper">
+                        <span>お役立ちコラム</span>
+                        {% include 'component/icons/arrow-right-long.njk' %}
+                      </a>
+                    </li>
+                    <li>
+                      <a href="/case_list">
+                        <span>導入事例</span>
+                        {% include 'component/icons/arrow-right-long.njk' %}
+                      </a>
+                    </li>
+                  </ul>
+                  <ul class="nav__dropdown__list__secondary">
+                    <li>
+                      <a href="/faq">
+                        <span>よくある質問</span>
+                        {% include 'component/icons/arrow-right-long.njk' %}
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </li>
           </ul>
         </nav>
@@ -49,133 +125,6 @@
       <div class="nav__list__button pc-only">
         <a href="/contact/">ご相談・お問い合わせ</a>
       </div>
-    </div>
-  </div>
-
-  <div class="nav__dropdown__list__search pc-only">
-    <div class="nav__dropdown__search">
-      <div class="nav__dropdown__search__container">
-        <div class="nav__dropdown__search__title">目的から探す</div>
-        <a class="bondi_blue_outline_btn">
-          <span class="bondi_blue_outline_btn__tittle">サービス一覧を見る</span>
-        </a>
-      </div>
-    </div>
-    <div class="nav__dropdown__list">
-      <ul class="nav__dropdown__list__first">
-        <li>
-          <a href="#">
-            <span>ビジネスカードを作りたい</span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="9.198" height="9.679" viewBox="0 0 9.198 9.679">
-              <g id="矢印アイコン_右3" data-name="矢印アイコン　右3" transform="translate(-12.736)">
-                <path id="Path_43786" data-name="Path 43786"
-                  d="M17.094,0l-.766.766L19.859,4.3H12.736V5.382h7.123L16.328,8.913l.766.766,4.84-4.84Z"
-                  fill="#00758c" />
-              </g>
-            </svg>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <span>業務を効率化したい</span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="9.198" height="9.679" viewBox="0 0 9.198 9.679">
-              <g id="矢印アイコン_右3" data-name="矢印アイコン　右3" transform="translate(-12.736)">
-                <path id="Path_43786" data-name="Path 43786"
-                  d="M17.094,0l-.766.766L19.859,4.3H12.736V5.382h7.123L16.328,8.913l.766.766,4.84-4.84Z"
-                  fill="#00758c" />
-              </g>
-            </svg>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <span>福利厚生を充実させたい</span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="9.198" height="9.679" viewBox="0 0 9.198 9.679">
-              <g id="矢印アイコン_右3" data-name="矢印アイコン　右3" transform="translate(-12.736)">
-                <path id="Path_43786" data-name="Path 43786"
-                  d="M17.094,0l-.766.766L19.859,4.3H12.736V5.382h7.123L16.328,8.913l.766.766,4.84-4.84Z"
-                  fill="#00758c" />
-              </g>
-            </svg>
-          </a>
-        </li>
-      </ul>
-      <ul class="nav__dropdown__list__secondary">
-        <li>
-          <a href="#">
-            <span>経費を削減したい</span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="9.198" height="9.679" viewBox="0 0 9.198 9.679">
-              <g id="矢印アイコン_右3" data-name="矢印アイコン　右3" transform="translate(-12.736)">
-                <path id="Path_43786" data-name="Path 43786"
-                  d="M17.094,0l-.766.766L19.859,4.3H12.736V5.382h7.123L16.328,8.913l.766.766,4.84-4.84Z"
-                  fill="#00758c" />
-              </g>
-            </svg>
-          </a>
-        </li>
-        <li>
-          <a href="/improve_cash_flow">
-            <span>資金繰りを改善したい</span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="9.198" height="9.679" viewBox="0 0 9.198 9.679">
-              <g id="矢印アイコン_右3" data-name="矢印アイコン　右3" transform="translate(-12.736)">
-                <path id="Path_43786" data-name="Path 43786"
-                  d="M17.094,0l-.766.766L19.859,4.3H12.736V5.382h7.123L16.328,8.913l.766.766,4.84-4.84Z"
-                  fill="#00758c" />
-              </g>
-            </svg>
-          </a>
-        </li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="nav__dropdown__list__support pc-only">
-    <div class="nav__dropdown__search">
-      <div class="nav__dropdown__search__container">
-        <div class="nav__dropdown__search__title">サポート情報</div>
-      </div>
-    </div>
-    <div class="nav__dropdown__list">
-      <ul class="nav__dropdown__list__first">
-        <li>
-          <a href="/whitepaper">
-            <span>お役立ちコラム</span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="9.198" height="9.679" viewBox="0 0 9.198 9.679">
-              <g id="矢印アイコン_右3" data-name="矢印アイコン　右3" transform="translate(-12.736)">
-                <path id="Path_43786" data-name="Path 43786"
-                  d="M17.094,0l-.766.766L19.859,4.3H12.736V5.382h7.123L16.328,8.913l.766.766,4.84-4.84Z"
-                  fill="#00758c" />
-              </g>
-            </svg>
-          </a>
-        </li>
-        <li>
-          <a href="/case_list">
-            <span>導入事例</span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="9.198" height="9.679" viewBox="0 0 9.198 9.679">
-              <g id="矢印アイコン_右3" data-name="矢印アイコン　右3" transform="translate(-12.736)">
-                <path id="Path_43786" data-name="Path 43786"
-                  d="M17.094,0l-.766.766L19.859,4.3H12.736V5.382h7.123L16.328,8.913l.766.766,4.84-4.84Z"
-                  fill="#00758c" />
-              </g>
-            </svg>
-          </a>
-        </li>
-      </ul>
-      <ul class="nav__dropdown__list__secondary">
-        <li>
-          <a href="/faq_list">
-            <span>よくある質問</span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="9.198" height="9.679" viewBox="0 0 9.198 9.679">
-              <g id="矢印アイコン_右3" data-name="矢印アイコン　右3" transform="translate(-12.736)">
-                <path id="Path_43786" data-name="Path 43786"
-                  d="M17.094,0l-.766.766L19.859,4.3H12.736V5.382h7.123L16.328,8.913l.766.766,4.84-4.84Z"
-                  fill="#00758c" />
-              </g>
-            </svg>
-          </a>
-        </li>
-      </ul>
     </div>
   </div>
 
@@ -196,19 +145,151 @@
           <span>個人事業主様向け</span>
         </a>
       </li>
-      <li class="nav__item__dropdown__search">
-        <span>目的から探す</span>
-        <svg xmlns="http://www.w3.org/2000/svg" width="15.848" height="15.848" viewBox="0 0 15.848 15.848">
-          <path id="Path_1214" data-name="Path 1214" d="M9.706,0V9.706H0" transform="translate(0 7.924) rotate(-45)"
-            fill="none" stroke="#0497b5" stroke-width="3" />
+      <li class="nav__item__dropdown__search header_menu_trigger _sp">
+        <a><span>目的から探す</span></a>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="15.848"
+          height="15.848"
+          viewBox="0 0 15.848 15.848"
+        >
+          <path
+            id="Path_1214"
+            data-name="Path 1214"
+            d="M9.706,0V9.706H0"
+            transform="translate(0 7.924) rotate(-45)"
+            fill="none"
+            stroke="#0497b5"
+            stroke-width="3"
+          />
         </svg>
+
+        <div class="nav__dropdown__list__search sub-menu sp-only">
+          <div class="nav__dropdown__list">
+            <ul class="nav__dropdown__list__first">
+              <li>
+                <a href="#">
+                  <span>ビジネスカードを作りたい</span>
+                  {% include 'component/icons/arrow-right-long.njk' %}
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span>業務を効率化したい</span>
+                  {% include 'component/icons/arrow-right-long.njk' %}
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span>福利厚生を充実させたい</span>
+                  {% include 'component/icons/arrow-right-long.njk' %}
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <span>経費を削減したい</span>
+                  {% include 'component/icons/arrow-right-long.njk' %}
+                </a>
+              </li>
+              <li>
+                <a href="/improve_cash_flow">
+                  <span>資金繰りを改善したい</span>
+                  {% include 'component/icons/arrow-right-long.njk' %}
+                </a>
+              </li>
+            </ul>
+
+            <div class="nav__dropdown__back">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 9.198 9.679"
+              >
+                <g
+                  id="矢印アイコン_左3"
+                  data-name="矢印アイコン　左3"
+                  transform="translate(22.934) scale(-1, 1)"
+                >
+                  <path
+                    id="Path_43786"
+                    data-name="Path 43786"
+                    d="M17.094,0l-.766.766L19.859,4.3H12.736V5.382h7.123L16.328,8.913l.766.766,4.84-4.84Z"
+                    fill="#00758c"
+                  />
+                </g>
+              </svg>
+            </div>
+          </div>
+        </div>
       </li>
-      <li class="nav__item__dropdown__support">
-        <span>サポート情報</span>
-        <svg xmlns="http://www.w3.org/2000/svg" width="15.848" height="15.848" viewBox="0 0 15.848 15.848">
-          <path id="Path_1214" data-name="Path 1214" d="M9.706,0V9.706H0" transform="translate(0 7.924) rotate(-45)"
-            fill="none" stroke="#0497b5" stroke-width="3" />
+      <li class="nav__item__dropdown__support header_menu_trigger _sp">
+        <a><span>サポート情報</span></a>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="15.848"
+          height="15.848"
+          viewBox="0 0 15.848 15.848"
+        >
+          <path
+            id="Path_1214"
+            data-name="Path 1214"
+            d="M9.706,0V9.706H0"
+            transform="translate(0 7.924) rotate(-45)"
+            fill="none"
+            stroke="#0497b5"
+            stroke-width="3"
+          />
         </svg>
+        <div class="nav__dropdown__list__support sub-menu sp-only">
+          <div class="nav__dropdown__list">
+            <ul class="nav__dropdown__list__first">
+              <li>
+                <a href="/whitepaper">
+                  <span>お役立ちコラム</span>
+                  {% include 'component/icons/arrow-right-long.njk' %}
+                </a>
+              </li>
+
+              <li>
+                <a href="/case_list">
+                  <span>導入事例</span>
+                  {% include 'component/icons/arrow-right-long.njk' %}
+                </a>
+              </li>
+
+              <li>
+                <a href="/faq">
+                  <span>よくある質問</span>
+                  {% include 'component/icons/arrow-right-long.njk' %}
+                </a>
+              </li>
+            </ul>
+
+            <div class="nav__dropdown__back">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 9.198 9.679"
+              >
+                <g
+                  id="矢印アイコン_左3"
+                  data-name="矢印アイコン　左3"
+                  transform="translate(22.934) scale(-1, 1)"
+                >
+                  <path
+                    id="Path_43786"
+                    data-name="Path 43786"
+                    d="M17.094,0l-.766.766L19.859,4.3H12.736V5.382h7.123L16.328,8.913l.766.766,4.84-4.84Z"
+                    fill="#00758c"
+                  />
+                </g>
+              </svg>
+            </div>
+          </div>
+        </div>
       </li>
     </ul>
     <div class="nav__button">
@@ -225,140 +306,5 @@
       </div>
     </div>
   </div>
-
-  <div class="nav__dropdown__list__search sp-only">
-    <div class="nav__dropdown__list">
-      <ul class="nav__dropdown__list__first">
-        <li>
-          <a href="#">
-            <span>ビジネスカードを作りたい</span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="9.198" height="9.679" viewBox="0 0 9.198 9.679">
-              <g id="矢印アイコン_右3" data-name="矢印アイコン　右3" transform="translate(-12.736)">
-                <path id="Path_43786" data-name="Path 43786"
-                  d="M17.094,0l-.766.766L19.859,4.3H12.736V5.382h7.123L16.328,8.913l.766.766,4.84-4.84Z"
-                  fill="#00758c" />
-              </g>
-            </svg>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <span>業務を効率化したい</span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="9.198" height="9.679" viewBox="0 0 9.198 9.679">
-              <g id="矢印アイコン_右3" data-name="矢印アイコン　右3" transform="translate(-12.736)">
-                <path id="Path_43786" data-name="Path 43786"
-                  d="M17.094,0l-.766.766L19.859,4.3H12.736V5.382h7.123L16.328,8.913l.766.766,4.84-4.84Z"
-                  fill="#00758c" />
-              </g>
-            </svg>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <span>福利厚生を充実させたい</span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="9.198" height="9.679" viewBox="0 0 9.198 9.679">
-              <g id="矢印アイコン_右3" data-name="矢印アイコン　右3" transform="translate(-12.736)">
-                <path id="Path_43786" data-name="Path 43786"
-                  d="M17.094,0l-.766.766L19.859,4.3H12.736V5.382h7.123L16.328,8.913l.766.766,4.84-4.84Z"
-                  fill="#00758c" />
-              </g>
-            </svg>
-          </a>
-        </li>
-
-        <li>
-          <a href="#">
-            <span>経費を削減したい</span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="9.198" height="9.679" viewBox="0 0 9.198 9.679">
-              <g id="矢印アイコン_右3" data-name="矢印アイコン　右3" transform="translate(-12.736)">
-                <path id="Path_43786" data-name="Path 43786"
-                  d="M17.094,0l-.766.766L19.859,4.3H12.736V5.382h7.123L16.328,8.913l.766.766,4.84-4.84Z"
-                  fill="#00758c" />
-              </g>
-            </svg>
-          </a>
-        </li>
-        <li>
-          <a href="/improve_cash_flow">
-            <span>資金繰りを改善したい</span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="9.198" height="9.679" viewBox="0 0 9.198 9.679">
-              <g id="矢印アイコン_右3" data-name="矢印アイコン　右3" transform="translate(-12.736)">
-                <path id="Path_43786" data-name="Path 43786"
-                  d="M17.094,0l-.766.766L19.859,4.3H12.736V5.382h7.123L16.328,8.913l.766.766,4.84-4.84Z"
-                  fill="#00758c" />
-              </g>
-            </svg>
-          </a>
-        </li>
-      </ul>
-
-      <div class="nav__dropdown__back">
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 9.198 9.679">
-          <g id="矢印アイコン_左3" data-name="矢印アイコン　左3" transform="translate(22.934) scale(-1, 1)">
-            <path id="Path_43786" data-name="Path 43786"
-              d="M17.094,0l-.766.766L19.859,4.3H12.736V5.382h7.123L16.328,8.913l.766.766,4.84-4.84Z" fill="#00758c" />
-          </g>
-        </svg>
-      </div>
-    </div>
-  </div>
-
-  <div class="nav__dropdown__list__support sp-only">
-    <div class="nav__dropdown__list">
-      <ul class="nav__dropdown__list__first">
-        <li>
-          <a href="/whitepaper">
-            <span>お役立ちコラム</span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="9.198" height="9.679" viewBox="0 0 9.198 9.679">
-              <g id="矢印アイコン_右3" data-name="矢印アイコン　右3" transform="translate(-12.736)">
-                <path id="Path_43786" data-name="Path 43786"
-                  d="M17.094,0l-.766.766L19.859,4.3H12.736V5.382h7.123L16.328,8.913l.766.766,4.84-4.84Z"
-                  fill="#00758c" />
-              </g>
-            </svg>
-          </a>
-        </li>
-
-        <li>
-          <a href="/case_list">
-            <span>導入事例</span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="9.198" height="9.679" viewBox="0 0 9.198 9.679">
-              <g id="矢印アイコン_右3" data-name="矢印アイコン　右3" transform="translate(-12.736)">
-                <path id="Path_43786" data-name="Path 43786"
-                  d="M17.094,0l-.766.766L19.859,4.3H12.736V5.382h7.123L16.328,8.913l.766.766,4.84-4.84Z"
-                  fill="#00758c" />
-              </g>
-            </svg>
-          </a>
-        </li>
-
-        <li>
-          <a href="/faq_list">
-            <span>よくある質問</span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="9.198" height="9.679" viewBox="0 0 9.198 9.679">
-              <g id="矢印アイコン_右3" data-name="矢印アイコン　右3" transform="translate(-12.736)">
-                <path id="Path_43786" data-name="Path 43786"
-                  d="M17.094,0l-.766.766L19.859,4.3H12.736V5.382h7.123L16.328,8.913l.766.766,4.84-4.84Z"
-                  fill="#00758c" />
-              </g>
-            </svg>
-          </a>
-        </li>
-      </ul>
-
-      <div class="nav__dropdown__back">
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 9.198 9.679">
-          <g id="矢印アイコン_左3" data-name="矢印アイコン　左3" transform="translate(22.934) scale(-1, 1)">
-            <path id="Path_43786" data-name="Path 43786"
-              d="M17.094,0l-.766.766L19.859,4.3H12.736V5.382h7.123L16.328,8.913l.766.766,4.84-4.84Z" fill="#00758c" />
-          </g>
-        </svg>
-      </div>
-    </div>
-  </div>
-
-  {# This is for preventing all min js errors #}
-  <div class="show"></div>
-  <div class="hide"></div>
-  <div class="floating"></div>
 </header>
+<div class="header_menu_bg"></div>
