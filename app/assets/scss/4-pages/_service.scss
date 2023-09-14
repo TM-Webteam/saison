@@ -191,6 +191,8 @@
       img {
         width: 215px;
         height: 136px;
+        object-fit: contain;
+        padding: 0 5px;
       }
 
       .content {
