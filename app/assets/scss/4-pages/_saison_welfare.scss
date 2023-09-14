@@ -15,6 +15,10 @@
       font-weight: bold;
       color: $primary-color;
       margin-bottom: 45px;
+
+      @media #{$sp} {
+        margin-bottom: 20px;
+      }
     }
     .ttl-primary {
       font-size: 32px;
@@ -137,12 +141,18 @@
             line-height: 28px;
             transform: skew(10deg);
             font-size: 21px;
+
+            @media #{$sp} {
+              font-size: 16px;
+            }
+
             .yellow-txt {
               color: $yellow-color;
             }
           }
           @media #{$sp} {
-            margin: 0 15px;
+            margin-inline: 15px;
+            margin-bottom: 20px;
           }
         }
         .ttl-primary {
@@ -151,9 +161,6 @@
           text-align: left;
           margin-bottom: 20px;
           text-shadow: 0px 0px 20px #05172c8d;
-          @media #{$sp} {
-            font-size: 24px;
-          }
         }
         .ttl-tertiary {
           font-size: 24px;
@@ -283,25 +290,23 @@
     }
 
     .section-welcome-right-sp {
+      margin-top: 20px;
       .info-list {
         color: $white-color;
         text-align: left;
         margin: auto;
         width: 85%;
-        font-size: 20px;
+        margin-top: 20px;
+        font-size: 18px;
         font-weight: 700;
         display: grid;
         gap: 20px;
-        @media #{$sp} {
-          font-size: 18px;
+        li {
+          background-color: $primary-color;
+          border-radius: 4px;
+          padding: 10px 20px;
         }
       }
-      @media #{$sp} {
-        margin-top: 20px;
-      }
-    }
-    @media #{$sp} {
-      height: auto;
     }
   }
 
@@ -310,13 +315,14 @@
     padding: 74px 0;
 
     @media #{$sp} {
-      padding: 35px 15px;
+      padding: 30px 15px;
     }
 
     .ttl-primary {
       font-size: 32px;
       @media #{$sp} {
-        font-size: 24px;
+        font-size: 22px;
+        margin-bottom: 20px;
       }
     }
 
@@ -327,7 +333,7 @@
       margin-bottom: 30px;
 
       @media #{$sp} {
-        font-size: 18px;
+        font-size: 14px;
       }
     }
 
@@ -396,10 +402,14 @@
           max-width: 860px;
           box-shadow: 0px 3px 20px #0000001c;
           margin: 60px auto 50px;
-          transition: all .3s;
+          transition: all 0.3s;
           a {
             width: 100%;
             padding: 35px 30px;
+
+            @media #{$sp} {
+              padding: 30px 15px;
+            }
           }
           ul {
             display: inline-block;
@@ -427,7 +437,7 @@
             }
           }
           &:hover {
-            box-shadow: 0 0 10px rgba(0,0,0,.4);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
           }
           @media #{$sp} {
             margin: 30px auto 20px;
@@ -485,6 +495,11 @@
     color: $white-color;
     background-color: $blue-color-4;
     padding: 70px 0 80px 0;
+
+    @media #{$sp} {
+      padding: 50px 15px;
+    }
+
     .section-tertiary-container {
       margin: auto;
       text-align: center;
@@ -493,7 +508,7 @@
         margin-bottom: 100px;
         @media #{$sp} {
           font-size: 20px;
-          margin-bottom: 160px;
+          margin-bottom: 100px;
         }
       }
       .act-more {
@@ -520,14 +535,14 @@
             color: $white-color;
             border: 1px solid white;
             padding: 10px 20px;
-
+            white-space: pre;
             display: flex;
             align-items: center;
             justify-content: center;
 
             @media #{$sp} {
               font-size: 14px;
-              white-space: pre-wrap;
+              padding: 10px;
               top: -35px;
             }
 
@@ -547,7 +562,7 @@
             }
           }
           @media #{$sp} {
-            top: -90px;
+            top: -35px;
           }
         }
 
@@ -608,16 +623,13 @@
         }
       }
     }
-    @media #{$sp} {
-      padding: 50px 15px;
-    }
   }
 
   .section-quinary {
     background-color: #f5f5f5;
     padding: 70px 0;
     @media #{$sp} {
-      padding: 50px 15px;
+      padding: 30px 15px;
     }
     .section-primary__wrapper {
       .containers {
@@ -716,7 +728,7 @@
     padding: 70px 0;
 
     @media #{$sp} {
-      padding: 35px 15px;
+      padding: 30px 15px;
     }
 
     .container {
@@ -800,7 +812,7 @@
             max-width: 502px;
             box-shadow: 0px 3px 20px #00000029;
             background-color: $white-color;
-            transition: all .3s;
+            transition: all 0.3s;
             .card {
               display: flex;
               gap: 32px;
@@ -815,7 +827,7 @@
               }
             }
             &:hover {
-              box-shadow: 0 0 10px rgba(0,0,0,.4);
+              box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
               a {
                 opacity: 1;
               }
@@ -859,6 +871,11 @@
 
   .section-senary {
     padding: 70px 0;
+
+    @media #{$sp} {
+      padding: 30px 0;
+    }
+
     .ttl-tertiary {
       line-height: 28px;
     }
@@ -1023,7 +1040,7 @@
     margin: auto;
 
     @media #{$sp} {
-      padding: 35px 15px;
+      padding: 30px 15px;
     }
 
     &__description {
