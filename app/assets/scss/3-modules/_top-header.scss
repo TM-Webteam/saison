@@ -160,6 +160,9 @@ header {
 
         @media #{$sp} {
           width: 100%;
+          a {
+            width: 100%;
+          }
         }
 
         li {
@@ -194,13 +197,18 @@ header {
     }
     &__sp {
       width: 100%;
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
       overflow: hidden;
       height: 0;
       background-color: $white-color;
       padding: 0 25px;
       transition: 0.3s ease-in-out;
       &.open {
-        display: block;
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
         height: calc(100vh - 50px);
         overflow: auto;
         padding: 50px 25px;
@@ -330,6 +338,7 @@ header {
         position: absolute;
         top: 50px;
         left: 0;
+        z-index: 99;
       }
 
       .nav__dropdown__list {

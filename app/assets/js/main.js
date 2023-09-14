@@ -39,7 +39,6 @@ $(function () {
   $(window).on("scroll", function () {
     if ($(".header_menu_bg._active").length > 0) return;
 
-
     if ($(this).scrollTop() < pos || $(this).scrollTop() < 400) {
       header.removeClass("hide");
     } else {
@@ -84,14 +83,14 @@ $(window).on("scroll", function () {
 //　アコーディオンメニュー
 //--------------------------------------
 
-(function ($) {
-  $(function () {
-    $("#nav-toggle").on("click", function () {
-      $("header").toggleClass("open");
-      $("#gloval-nav").slideToggle();
-    });
-  });
-})(jQuery);
+// (function ($) {
+//   $(function () {
+//     $("#nav-toggle").on("click", function () {
+//       $("header").toggleClass("open");
+//       $("#gloval-nav").slideToggle();
+//     });
+//   });
+// })(jQuery);
 
 //--------------------------------------
 //　アニメーション　ふわっと演出
@@ -259,7 +258,7 @@ $(window).on("load", function () {
         $(this).removeClass(openClass);
         $headerBg.removeClass(activeClass);
       } else {
-        $(menuOpenBtn).removeClass(openClass)
+        $(menuOpenBtn).removeClass(openClass);
         $(this).addClass(openClass);
         $headerBg.addClass(activeClass);
       }
@@ -282,13 +281,26 @@ $(window).on("load", function () {
     var $menuList = $(".nav__dropdown__sp");
     var $toggleMenu = $("#nav-toggle");
 
-    var $searchList = $(".nav__dropdown__list__search");
-    var $supportList = $(".nav__dropdown__list__support");
+    var menuOpenBtn = ".header_menu_trigger._sp";
+    var openClass = "open";
 
     $toggleMenu.on("click", function () {
       $menuList.toggleClass("open");
-      $supportList.removeClass("open");
-      $searchList.removeClass("open");
+    });
+
+    // TODO: fix back menu list by button
+    // $(".nav__dropdown__back").each(function (index) {
+    //   $(this).on("click", function (e) {
+    //     $(this).closest(".nav__dropdown__sp").find(".header_menu_trigger._sp.open").removeClass(openClass);
+    //   });
+    // });
+
+    $(menuOpenBtn).on("click", function (e) {
+      if (!$(this).hasClass(openClass)) {
+        $(this).toggleClass(openClass);
+      } else {
+        $(this).removeClass(openClass);
+      }
     });
   });
 })(jQuery);
