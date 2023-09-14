@@ -13,7 +13,7 @@
 
       .ttl-primary {
         font-size: 42px;
-        margin-bottom: 29px;
+        margin-bottom: 40px;
 
         @media #{$sp} {
           font-size: 32px;
@@ -21,7 +21,7 @@
       }
 
       .ttl-tertiary {
-        font-size: 20px;
+        font-size: 18px;
         font-weight: 400;
         margin-bottom: 0;
 
@@ -42,6 +42,14 @@
     }
 
     .refine-search {
+      .ttl-secondary {
+        font-size: 32px;
+
+        @media #{$sp} {
+          font-size: 22px;
+        }
+      }
+
       .section-wrapper {
         display: flex;
         flex-direction: column;
@@ -189,7 +197,7 @@
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        gap: 16px;
+        gap: 10px;
         flex: 1;
 
         .title {
@@ -198,6 +206,7 @@
 
           span.primary {
             color: white;
+            font-size: 14px;
             background: #029844;
             padding: 6px 12px;
             margin-right: 10px;
@@ -242,6 +251,7 @@
         .description {
           font-size: 17px;
           font-weight: 400;
+          margin-bottom: 10px;
         }
 
         .list-button {
@@ -279,26 +289,40 @@
   }
 
   .section-tertiary {
-    padding: 70px 0;
+    padding: 70px 0 80px;
     text-align: center;
     background-color: $green-color;
     color: #ffffff;
+
+    @media #{$sp} {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
 
     .ttl-sub {
       font-size: 14px;
       font-weight: bold;
       font-family: "Futura";
+      @media #{$sp} {
+        font-size: 16px;
+      }
     }
 
     .ttl-secondary {
       font-size: 32px;
       margin-bottom: 40px;
+      @media #{$sp} {
+        font-size: 22px;
+      }
     }
 
     .ttl-tertiary {
       font-size: 20px;
       font-weight: 400;
       margin-bottom: 50px;
+      @media #{$sp} {
+        font-size: 16px;
+      }
     }
   }
 }
