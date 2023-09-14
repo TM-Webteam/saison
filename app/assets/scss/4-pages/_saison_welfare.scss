@@ -1184,6 +1184,9 @@
 
     .card-type22 .useful-wp .containers .card .card__box {
       padding: 38px 44px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
 
       .blue_gradient_btn {
         padding: 12px 20px;
@@ -1199,8 +1202,10 @@
 
       .card__box--cont {
         margin-bottom: 30px;
+        flex: 1;
         .card__box--txt {
           text-align: left;
+          -webkit-line-clamp: unset;
         }
       }
     }
