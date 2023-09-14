@@ -1190,6 +1190,7 @@
 
       .blue_gradient_btn {
         padding: 12px 20px;
+        font-size: 18px;
       }
 
       @media #{$sp} {
@@ -1198,10 +1199,11 @@
 
       .card__box--ttl {
         font-size: 20px;
+        margin-bottom: 30px;
       }
 
       .card__box--cont {
-        margin-bottom: 30px;
+        margin-bottom: 10px;
         flex: 1;
         .card__box--txt {
           text-align: left;
