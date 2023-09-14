@@ -288,18 +288,19 @@ $(window).on("load", function () {
       $menuList.toggleClass("open");
     });
 
-    // TODO: fix back menu list by button
-    // $(".nav__dropdown__back").each(function (index) {
-    //   $(this).on("click", function (e) {
-    //     $(this).closest(".nav__dropdown__sp").find(".header_menu_trigger._sp.open").removeClass(openClass);
-    //   });
-    // });
+    $(".nav__dropdown__back").each(function () {
+      $(this).on("click", function () {
+        $(this).closest(".nav__dropdown__sp").find(".header_menu_trigger._sp.open").removeClass(openClass);
+      });
+    });
 
     $(menuOpenBtn).on("click", function (e) {
-      if (!$(this).hasClass(openClass)) {
-        $(this).toggleClass(openClass);
-      } else {
-        $(this).removeClass(openClass);
+      if ($(e.target).hasClass('header_menu_trigger')) {
+        if ($(this).hasClass(openClass)) {
+          $(this).removeClass(openClass);
+        } else {
+          $(this).toggleClass(openClass);
+        }
       }
     });
   });
