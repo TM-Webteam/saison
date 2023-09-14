@@ -1,7 +1,7 @@
 {
   "common": {
     "button": {
-      "download": "まとめて資料をダウンロードする",
+      "download": "サポート担当に無料で相談するに修正してください。",
       "solution": "解決策！",
       "detail": "カードの詳細はこちら",
       "more": "をもっと詳しく"
@@ -354,7 +354,7 @@
           "title": "中小企業の経営者様・ 個人事業主様 におすすめ!",
           "content": [
             {
-              "image": "/assets/img/search_by_purpose_page/card-1.png",
+              "image": "/assets/img/credit_cards/american-express-01.png",
               "sub_title": "ポイント・マイルの還元率を重視したい方へ",
               "title": "セゾンプラチナ・ビジネス・アメリカン・ エキスプレス®・カード",
               "list_option": [
@@ -368,7 +368,7 @@
               ]
             },
             {
-              "image": "/assets/img/search_by_purpose_page/card-2.png",
+              "image": "/assets/img/credit_cards/american-express-02.png",
               "sub_title": "年会費無料にこだわりたい方へ",
               "title": "セゾンコバルト・ビジネス・アメリカン・ エキスプレス®・カード",
               "list_option": [
@@ -382,7 +382,7 @@
           "title": "中小企業様 におすすめ!",
           "content": [
             {
-              "image": "/assets/img/search_by_purpose_page/card-1.png",
+              "image": "/assets/img/credit_cards/saison-03.png",
               "sub_title": "キャッシュバックを重視したい方へ",
               "title": "セゾンプラチナ・ビジネス プロ・アメリカン・エキスプレス®・カード",
               "list_option": [
@@ -394,7 +394,7 @@
               ]
             },
             {
-              "image": "/assets/img/search_by_purpose_page/card-3.png",
+              "image": "/assets/img/credit_cards/saison-01.png",
               "sub_title": "年会費を重視したい方へ",
               "title": "セゾンゴールド・ビジネス プロ・カード",
               "list_option": [
@@ -406,7 +406,7 @@
               ]
             },
             {
-              "image": "/assets/img/search_by_purpose_page/card-4.png",
+              "image": "/assets/img/credit_cards/saison-02.png",
               "sub_title": "紛失盗難等による不正利用のリスクを軽減したい方へ",
               "title": "セゾン・アメリカン・エキスプレス®・ ビジネス プロ・パーチェシング・カード",
               "list_option": [
@@ -423,7 +423,7 @@
       }
     },
     "tertiary": {
-      "description": "当社のサポート担当がご利用用途やご要望をおうかがいさせていただきお客様にピッタリのカードをご提案いたします。 お気軽にサポート担当にご相談ください。",
+      "description": "当社のサポート担当がご利用用途やご要望をおうかがいさせていただきお客様にピッタリのカードをご提案いたします。<br /> お気軽にサポート担当にご相談ください。",
       "button": "サポート担当に無料で相談する"
     },
     "license": {
