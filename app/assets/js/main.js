@@ -37,9 +37,8 @@ $(function () {
   var header = $("header");
 
   $(window).on("scroll", function () {
-    if ($(this).scrollTop() > 50) {
-      hideDropdownMenu();
-    }
+    if ($(".header_menu_bg._active").length > 0) return;
+
 
     if ($(this).scrollTop() < pos || $(this).scrollTop() < 400) {
       header.removeClass("hide");
@@ -243,69 +242,36 @@ $(window).on("load", function () {
 });
 
 //--------------------------------------
-//　dropdown header
+//Toggle menu pc
 //--------------------------------------
 
 (function ($) {
   $(function () {
-    var $searchDropdown = $(".nav__item__dropdown__search");
-    var $supportDropdown = $(".nav__item__dropdown__support");
-    var $searchList = $(".nav__dropdown__list__search");
-    var $supportList = $(".nav__dropdown__list__support");
+    var $headerBg = $(".header_menu_bg");
 
-    var $listBack = $(".nav__dropdown__back");
+    var menuOpenBtn = ".header_menu_trigger._pc";
+    var openClass = "open";
+    var activeClass = "_active";
+    var subMenuClass = ".sub-menu";
 
-    $searchDropdown.on("click", function () {
-      $(".nav__dropdown__list__search").toggleClass("open");
-
-      $supportDropdown.removeClass("open");
-      $supportList.removeClass("open");
-      $searchDropdown.toggleClass("open");
+    $(menuOpenBtn).on("click", function () {
+      if ($(this).hasClass(openClass)) {
+        $(this).removeClass(openClass);
+        $headerBg.removeClass(activeClass);
+      } else {
+        $(menuOpenBtn).removeClass(openClass)
+        $(this).addClass(openClass);
+        $headerBg.addClass(activeClass);
+      }
     });
 
-    $supportDropdown.on("click", function () {
-      $(".nav__dropdown__list__support").toggleClass("open");
-      $searchDropdown.removeClass("open");
-      $searchList.removeClass("open");
-      $supportDropdown.toggleClass("open");
-    });
-
-    $listBack.on("click", function () {
-      $supportList.removeClass("open");
-      $searchList.removeClass("open");
-    });
-
-    $("main").on("click", function () {
-      hideDropdownMenu();
-    });
-    $("footer").on("click", function () {
-      hideDropdownMenu();
+    $headerBg.on("click", function () {
+      $(menuOpenBtn).removeClass(openClass);
+      $(subMenuClass).removeClass(openClass);
+      $headerBg.removeClass(activeClass);
     });
   });
 })(jQuery);
-
-function hideDropdownMenu() {
-  // TODO: refactor to use observer
-  var $searchDropdown = $(".nav__item__dropdown__search");
-  var $supportDropdown = $(".nav__item__dropdown__support");
-  var $searchList = $(".nav__dropdown__list__search");
-  var $supportList = $(".nav__dropdown__list__support");
-
-  if (!$supportList.hasClass("hiding")) {
-    $supportList.toggleClass("hiding");
-  }
-
-  if (!$searchList.hasClass("hiding")) {
-    $searchList.toggleClass("hiding");
-  }
-
-  setTimeout(function () {
-    $searchDropdown.removeClass("open");
-    $searchList.removeClass("hiding").removeClass("open");
-    $supportDropdown.removeClass("open");
-    $supportList.removeClass("hiding").removeClass("open");
-  }, 300);
-}
 
 //--------------------------------------
 // Toggle menu Sp
