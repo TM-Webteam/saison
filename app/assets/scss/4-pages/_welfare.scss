@@ -301,7 +301,7 @@
 
             .welfare-more-tooltip {
               position: relative;
-              width: calc(50% - 20px);
+              width: calc(50% - 10px);
               font-weight: 500;
               flex-shrink: 0;
               text-align: left;
@@ -315,16 +315,10 @@
 
               .welfare-more-tooltip__content {
                 position: relative;
-                font-size: 14px;
-                font-weight: 600;
-                margin-bottom: 25px;
+                font-size: 19px;
+                font-weight: bold;
                 background-color: #fff;
                 border-radius: 3px;
-                padding: 10px 20px;
-
-                display: flex;
-                align-items: center;
-                justify-content: center;
               }
               &::before {
                 left: -4px;
@@ -344,7 +338,7 @@
               &::after {
                 position: absolute;
                 content: "";
-                width: 40px;
+                width: 20px;
                 height: 55px;
                 background-color: #fff;
                 z-index: 3;
