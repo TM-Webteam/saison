@@ -10,43 +10,43 @@
 
 {# Breadcrumb #}
 {% set breadcrumb = [
-{
-text: "セゾンインボイス",
-link: "#"
-}
+  {
+    text: "セゾンインボイス",
+    link: "#"
+  }
 ] %}
 
 {% set menuSidebar = [
-{
-text: "TOP",
-link: "#top"
-}, {
-text: "セゾンインボイスとは",
-link: "#saison-invoice"
-}, {
-text: "セゾンインボイスの特長",
-link: "#feature"
-}, {
-text: "類似サービスとの違い",
-link: "#services"
-}, {
-text: "ご利用者様の声",
-link: "#comment"
-}, {
-text: "ご利用までの流れ",
-link: "#usage"
-}, {
-text: "ご利用料金",
-link: "#fee"
-},
-{
-text: "よくある質問",
-link: "#faq"
-},
-{
-text: "お問い合わせ",
-link: "#application"
-}
+  {
+    text: "TOP",
+    link: "#top"
+  }, {
+    text: "セゾンインボイスとは",
+    link: "#saison-invoice"
+  }, {
+    text: "セゾンインボイスの特長",
+    link: "#feature"
+  }, {
+    text: "類似サービスとの違い",
+    link: "#services"
+  }, {
+    text: "ご利用者様の声",
+    link: "#comment"
+  }, {
+    text: "ご利用までの流れ",
+    link: "#usage"
+  }, {
+    text: "ご利用料金",
+    link: "#fee"
+  },
+  {
+    text: "よくある質問",
+    link: "#faq"
+  },
+  {
+    text: "お問い合わせ",
+    link: "#application"
+  }
 ] %}
 
 {# Custom tags before </head> #}
@@ -57,11 +57,11 @@ link: "#application"
 
 {# Main content #}
 {% block content %}
-{% include 'partial/sidebar.njk' %}
-<main class="saison-invoice-page">
+  {% include 'partial/sidebar.njk' %}
+  <main class="saison-invoice-page">
   <section id="top" class="section-welcome fadein">
     <div class="section-welcome__banner">
-      <img src="/assets/img/saison_invoice/saison_invoice_banner.png" />
+      <img src="/assets/img/saison_invoice/saison_invoice_banner.png"/>
     </div>
 
     <div class="section-welcome-info">
@@ -73,7 +73,7 @@ link: "#application"
           <h1 class="ttl-primary">セゾンインボイス</h1>
         </div>
         <div class="section-welcome__desc">
-          <h5 class="ttl-quaternary">最短翌⽇⼊⾦。未⼊⾦対応をゼロに。<br />
+          <h5 class="ttl-quaternary">最短翌⽇⼊⾦。未⼊⾦対応をゼロに。<br/>
             毎⽉の請求業務を最短15分に短縮！
           </h5>
         </div>
@@ -89,7 +89,7 @@ link: "#application"
 
       <div class="section-welcome-info-right pc-only">
         <div class="section-welcome-right__img">
-          <img src="/assets/img/saison_invoice/saison-invoice_inner.png" />
+          <img src="/assets/img/saison_invoice/saison-invoice_inner.png"/>
 
           <ul class="info-list">
             <li class="info-item">月額固定費0円・手数料率は<span class="special">業界最低水準！</span></li>
@@ -100,7 +100,7 @@ link: "#application"
       </div>
 
       <div class="section-welcome-info-right-sp sp-only">
-        <img src="/assets/img/saison_invoice/saison-invoice_inner.png" />
+        <img src="/assets/img/saison_invoice/saison-invoice_inner.png"/>
 
         <ul class="info-list">
           <li class="info-item">月額固定費0円・手数料率は<span class="special">業界最低水準！</span></li>
@@ -111,643 +111,460 @@ link: "#application"
     </div>
   </section>
 
-  <section id="saison-invoice" class="section-primary fadein">
-    <h4 class="ttl-secondary">セゾンインボイスとは</h4>
-    <h2 class="ttl-primary">BtoB向け後払い決済・請求代⾏サービスです。</h2>
-    <p class="ttl-tertiary">BtoB決済における請求/回収業務のすべてを代⾏。</br>『請求/回収業務の削減』『未回収リスクゼロ』『売掛⾦の回収期間短縮』を実現できます。</h5>
-    <div class="list__wrapper">
-      <div class="containers">
-        <ul class="inherit card-list">
-          <li class="card-type6">
-            <a href="#" class="card">
-              <div class="ttl-quaternary-container">
-                <h5 class="ttl-quinary">請求/回収業務の</h5>
-                <h4 class="ttl-quaternary">すべてを代⾏</h4>
-              </div>
-              <div class="card-image">
-                <img src="/assets/img/saison_invoice/saison_invoice1.png" />
-              </div>
-              <div class="card-description">
-                業務は <strong>「顧客情報」と「取引内容」をWEB画面から情報を入力するだけ！ </strong></br>
-                請求・回収業務にかかっている時間を削減できます。
-              </div>
-            </a>
-          </li>
-          <li class="card-type6">
-            <a href="#" class="card">
-              <div class="ttl-quaternary-container">
-                <h5 class="ttl-quinary">顧客の与信枠内であれば</h5>
-                <h4 class="ttl-quaternary">未回収リスクゼロ</h4>
-              </div>
-              <div class="card-image">
-                <img src="/assets/img/saison_invoice/saison_invoice2.png" />
-              </div>
-              <div class="card-description">
-                取引先の与信枠内であれば、<strong>未払いがあった場合も全額保証</strong>いたします。
-              </div>
-            </a>
-          </li>
-          <li class="card-type6">
-            <a href="#" class="card">
-              <div class="ttl-quaternary-container">
-                <h5 class="ttl-quinary">最短翌⽇にご⼊⾦できるから</h5>
-                <h4 class="ttl-quaternary">売掛⾦の回収期間短縮</h4>
-              </div>
-              <div class="card-image">
-                <img src="/assets/img/saison_invoice/saison_invoice3.png" />
-              </div>
-              <div class="card-description">
-                早期の資⾦ニーズがある場合には取引内容の登録後、<strong>最短翌⽇に⼊⾦</strong>します。
-              </div>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="saison-introduce">
-        <div class="saison-introduce-video">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/30p1gPtcbDE?si=VGH5C1OZVzEYvjT8"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe>
-        </div>
-
-        <div class="saison-introduce-description">
-          <h5 class="ttl-quinary">【サービス紹介動画（2分）】</h5>
-          <h4 class="ttl-quaternary">クレディセゾンが送るBtoB向け後払い決済・請求代行サービス「セゾンインボイス」</h4>
-          <p class="ttl-quinary">セゾンインボイスができることをわかりやすく動画でご紹介しています。</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section-secondary fadein">
-    <div class="container">
-      <h4 class="ttl-secondary">セゾンインボイスの仕組み</h4>
-      <h2 class="ttl-primary">顧客・取引データを入力したら、あとはお任せ下さい。</h2>
-      <p class="ttl-tertiary">請求・回収業務の負担や資⾦繰りの不安から解消され、営業先開拓や商品開発に100%注⼒できます。</h5>
-
-      <div class="content">
-        <img id="zoomImg" src="/assets/img/saison_invoice/saison_work.png">
-      </div>
-    </div>
-  </section>
-
-  <section class="section-tertiary fadein">
-    <h2 class="ttl-primary">このようなお悩みをお持ちの企業向けのサービスです。</h2>
-    <div class="list__wrapper">
-      <div class="containers">
-        <ul class="inherit card-list">
-          <li class="card-type24">
-            <div class="card">
-              <div class="card-index">お悩み①</div>
-              <h4 class="ttl-quaternary"><span class="yellow-bottom">請求・回収業務に</span></br>人と時間が奪われてしまう</h4>
-              <div class="card-image">
-                <img src="/assets/img/saison_invoice/worry1.png" />
-              </div>
-              <ul class="card-description">
-                <li class="card-description__detail">
-                  {% include 'component/icons/circle-checked.njk' %}
-                  <span>請求数がとにかく多く、紙での請求・督促処理に手間・コストがかかっている</span>
-                </li>
-                <li class="card-description__detail">
-                  {% include 'component/icons/circle-checked.njk' %}
-                  <span>新規取引先が拡大する中で、滞り無く請求・回収業務を回したい</span>
-                </li>
-              </ul>
+    <section id="saison-invoice" class="section-primary fadein">
+      <h4 class="ttl-secondary">セゾンインボイスとは</h4>
+      <h2 class="ttl-primary">BtoB向け後払い決済・請求代⾏サービスです。</h2>
+      <p class="ttl-tertiary">BtoB決済における請求/回収業務のすべてを代⾏。</br>『請求/回収業務の削減』『未回収リスクゼロ』『売掛⾦の回収期間短縮』を実現できます。</h5>
+      <div class="list__wrapper">
+        <div class="containers">
+          <ul class="inherit card-list">
+            <li class="card-type6">
+              <a href="#" class="card">
+                <div class="ttl-quaternary-container">
+                  <h5 class="ttl-quinary">請求/回収業務の</h5>
+                  <h4 class="ttl-quaternary">すべてを代⾏</h4>
+                </div>
+                <div class="card-image">
+                  <img src="/assets/img/saison_invoice/saison_invoice1.png"/>
+                </div>
+                <div class="card-description">
+                  業務は <strong>「顧客情報」と「取引内容」をWEB画面から情報を入力するだけ！ </strong></br>
+                  請求・回収業務にかかっている時間を削減できます。
+                </div>
               </a>
-          </li>
-          <li class="card-type24">
-            <div class="card">
-              <div class="card-index">お悩み②</div>
-              <h4 class="ttl-quaternary">取引先の業績悪化による</br><span class="yellow-bottom">未払いのリスク</span></h4>
-              <div class="card-image">
-                <img src="/assets/img/saison_invoice/worry2.png" />
-              </div>
-              <ul class="card-description">
-                <li class="card-description__detail">
-                  {% include 'component/icons/circle-checked.njk' %}
-                  <span>取引先の支払いが遅延しがちで不安</span>
-                </li>
-                <li class="card-description__detail">
-                  {% include 'component/icons/circle-checked.njk' %}
-                  <span>取引先からの入金を、そのまま支払いの費用に充当しているので、未払いが起きると大問題になる</span>
-                </li>
-              </ul>
+            </li>
+            <li class="card-type6">
+              <a href="#" class="card">
+                <div class="ttl-quaternary-container">
+                  <h5 class="ttl-quinary">顧客の与信枠内であれば</h5>
+                  <h4 class="ttl-quaternary">未回収リスクゼロ</h4>
+                </div>
+                <div class="card-image">
+                  <img src="/assets/img/saison_invoice/saison_invoice2.png"/>
+                </div>
+                <div class="card-description">
+                  取引先の与信枠内であれば、<strong>未払いがあった場合も全額保証</strong>いたします。
+                </div>
               </a>
-          </li>
-          <li class="card-type24">
-            <div class="card">
-              <div class="card-index">お悩み③</div>
-              <h4 class="ttl-quaternary">支払い日までの</br><span class="yellow-bottom">運転資金確保が大変</span></h4>
-              <div class="card-image">
-                <img src="/assets/img/saison_invoice/worry3.png" />
-              </div>
-              <ul class="card-description">
-                <li class="card-description__detail">
-                  {% include 'component/icons/circle-checked.njk' %}
-                  <span>バイヤーからの入金が遅い</span>
-                </li>
-                <li class="card-description__detail">
-                  {% include 'component/icons/circle-checked.njk' %}
-                  <span>仕入れの出金が早い</span>
-                </li>
-                <li class="card-description__detail">
-                  {% include 'component/icons/circle-checked.njk' %}
-                  <span>手元資金が少なくなりやすく、キャッシュフローに課題を持っている</span>
-                </li>
-              </ul>
+            </li>
+            <li class="card-type6">
+              <a href="#" class="card">
+                <div class="ttl-quaternary-container">
+                  <h5 class="ttl-quinary">最短翌⽇にご⼊⾦できるから</h5>
+                  <h4 class="ttl-quaternary">売掛⾦の回収期間短縮</h4>
+                </div>
+                <div class="card-image">
+                  <img src="/assets/img/saison_invoice/saison_invoice3.png"/>
+                </div>
+                <div class="card-description">
+                  早期の資⾦ニーズがある場合には取引内容の登録後、<strong>最短翌⽇に⼊⾦</strong>します。
+                </div>
               </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <section class="section-sub-content fadein">
-    <div class="sub-content-container">
-      <h1 class="ttl-primary">セゾンインボイスが、「請求・回収業務の負荷」や「資⾦繰り」に</br>関するお悩みを解決します。</h1>
-      <div class="act-more">
-        <div class="act-more-tooltip">
-          <h4 class="act-more-tooltip__content">{{"セゾンインボイスの仕組みとメリットが\n3分でわかる！" | safe}}</h4>
+            </li>
+          </ul>
         </div>
-        <div class="act-more-content">
-          <div class="act-more-content-btn">
-            <a href="#" class="blue_gradient_btn small">
-              サービス資料ダウンロード
-            </a>
+      </div>
+
+      <div class="container">
+        <div class="saison-introduce">
+          <div class="saison-introduce-video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/30p1gPtcbDE?si=VGH5C1OZVzEYvjT8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+
+          <div class="saison-introduce-description">
+            <h5 class="ttl-quinary">【サービス紹介動画（2分）】</h5>
+            <h4 class="ttl-quaternary">クレディセゾンが送るBtoB向け後払い決済・請求代行サービス「セゾンインボイス」</h4>
+            <p class="ttl-quinary">セゾンインボイスができることをわかりやすく動画でご紹介しています。</p>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="feature" class="section-quaternary fadein">
-    <h4 class="ttl-secondary">セゾンインボイスの特長</h4>
-    <h2 class="ttl-primary">請求・回収代行はもちろん、キッシュフロー改善もサポート</h2>
-    <div class="container">
-      <ul class="saison-feature-list">
-        <li class="card-type25">
-          <div class="card-heading">
-            <span class="card-index">お悩み①</span>
-            <h3 class="card-issue-title"><span>請求・回収業務に人と時間が奪われてしまう</span></h3>
-          </div>
-          <div class="triangle"></div>
-          <h1 class="card-solution-title">請求業務はすべて代行。毎⽉の請求業務が<span>最短15分で完</span>了！</h1>
-          <div class="card-solution-content">
-            <div class="card-solution-content__img">
-              <img src="/assets/img/saison_invoice/saison_solution1.png" />
-            </div>
-            <div class="card-image">
-              <img src="/assets/img/saison_invoice/saison_invoice1.png" />
-            </div>
-            <div class="card-description">
-              業務は <strong>「顧客情報」と「取引内容」をWEB画面から情報を入力するだけ！ </strong></br>
-              請求・回収業務にかかっている時間を削減できます。
-            </div>
-            </a>
-        </li>
-        <li class="card-type6">
-          <a href="#" class="card">
-            <div class="ttl-quaternary-container">
-              <h5 class="ttl-quinary">顧客の与信枠内であれば</h5>
-              <h4 class="ttl-quaternary">未回収リスクゼロ</h4>
-            </div>
-            <div class="card-image">
-              <img src="/assets/img/saison_invoice/saison_invoice2.png" />
-            </div>
-            <div class="card-description">
-              取引先の与信枠内であれば、<strong>未払いがあった場合も全額保証</strong>いたします。
-            </div>
-          </a>
-        </li>
-        <li class="card-type6">
-          <a href="#" class="card">
-            <div class="ttl-quaternary-container">
-              <h5 class="ttl-quinary">最短翌⽇にご⼊⾦できるから</h5>
-              <h4 class="ttl-quaternary">売掛⾦の回収期間短縮</h4>
-            </div>
-            <div class="card-image">
-              <img src="/assets/img/saison_invoice/saison_invoice3.png" />
-            </div>
-            <div class="card-description">
-              早期の資⾦ニーズがある場合には取引内容の登録後、<strong>最短翌⽇に⼊⾦</strong>します。
-            </div>
-          </a>
-        </li>
-      </ul>
-    </div>
-    </div>
+    <section class="section-secondary fadein">
+      <div class="container">
+        <h4 class="ttl-secondary">セゾンインボイスの仕組み</h4>
+        <h2 class="ttl-primary">顧客・取引データを入力したら、あとはお任せ下さい。</h2>
+        <p class="ttl-tertiary">請求・回収業務の負担や資⾦繰りの不安から解消され、営業先開拓や商品開発に100%注⼒できます。</h5>
 
-    <div class="container">
-      <div class="saison-introduce">
-        <div class="saison-introduce-video">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/30p1gPtcbDE?si=VGH5C1OZVzEYvjT8"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe>
-        </div>
-
-        <div class="saison-introduce-description">
-          <h5 class="ttl-quinary">【サービス紹介動画（2分）】</h5>
-          <h4 class="ttl-quaternary">クレディセゾンが送るBtoB向け後払い決済・請求代行サービス「セゾンインボイス」</h4>
-          <p class="ttl-quinary">セゾンインボイスができることをわかりやすく動画でご紹介しています。</p>
+        <div class="content">
+          <img id="zoomImg" class="zoomImg" src="/assets/img/saison_invoice/saison_work.png">
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="feature" class="section-secondary fadein">
-    <div class="container">
-      <h4 class="ttl-secondary">セゾンインボイスの仕組み</h4>
-      <h2 class="ttl-primary">顧客・取引データを入力したら、あとはお任せ下さい。</h2>
-      <p class="ttl-tertiary">請求・回収業務の負担や資⾦繰りの不安から解消され、営業先開拓や商品開発に100%注⼒できます。</h5>
-
-      <div class="content">
-        <img id="zoomImg" src="/assets/img/saison_invoice/saison_work.png">
-      </div>
-    </div>
-  </section>
-
-  <section class="section-tertiary fadein">
-    <h2 class="ttl-primary">このようなお悩みをお持ちの企業様向けのサービスです。</h2>
-    <div class="list__wrapper">
-      <div class="containers">
-        <ul class="inherit card-list">
-          <li class="card-type24">
-            <div class="card">
-              <div class="card-index">お悩み①</div>
-              <h4 class="ttl-quaternary"><span class="yellow-bottom">請求・回収業務に</span></br>人と時間が奪われてしまう</h4>
-              <div class="card-image">
-                <img src="/assets/img/saison_invoice/worry1.png" />
-              </div>
-              <ul class="card-description">
-                <li class="card-description__detail">
-                  {% include 'component/icons/circle-checked.njk' %}
-                  <span>請求数がとにかく多く、紙での請求・督促処理に手間・コストがかかっている</span>
-                </li>
-                <li class="card-description__detail">
-                  {% include 'component/icons/circle-checked.njk' %}
-                  <span>新規取引先が拡大する中で、滞り無く請求・回収業務を回したい</span>
-                </li>
-              </ul>
+    <section class="section-tertiary fadein">
+      <h2 class="ttl-primary">このようなお悩みをお持ちの企業向けのサービスです。</h2>
+      <div class="list__wrapper">
+        <div class="containers">
+          <ul class="inherit card-list">
+            <li class="card-type24">
+              <div class="card">
+                <div class="card-index">お悩み①</div>
+                <h4 class="ttl-quaternary"><span class="yellow-bottom">請求・回収業務に</span></br>人と時間が奪われてしまう</h4>
+                <div class="card-image">
+                  <img src="/assets/img/saison_invoice/worry1.png"/>
+                </div>
+                <ul class="card-description">
+                  <li class="card-description__detail">
+                    {% include 'component/icons/circle-checked.njk' %}
+                    <span>請求数がとにかく多く、紙での請求・督促処理に手間・コストがかかっている</span>
+                  </li>
+                  <li class="card-description__detail">
+                    {% include 'component/icons/circle-checked.njk' %}
+                    <span>新規取引先が拡大する中で、滞り無く請求・回収業務を回したい</span>
+                  </li>
+                </ul>
               </a>
-          </li>
-          <li class="card-type24">
-            <div class="card">
-              <div class="card-index">お悩み②</div>
-              <h4 class="ttl-quaternary">取引先の業績悪化による</br><span class="yellow-bottom">未払いのリスク</span></h4>
-              <div class="card-image">
-                <img src="/assets/img/saison_invoice/worry2.png" />
-              </div>
-              <ul class="card-description">
-                <li class="card-description__detail">
-                  {% include 'component/icons/circle-checked.njk' %}
-                  <span>取引先の支払いが遅延しがちで不安</span>
-                </li>
-                <li class="card-description__detail">
-                  {% include 'component/icons/circle-checked.njk' %}
-                  <span>取引先からの入金を、そのまま支払いの費用に充当しているので、未払いが起きると大問題になる</span>
-                </li>
-              </ul>
+            </li>
+            <li class="card-type24">
+              <div class="card">
+                <div class="card-index">お悩み②</div>
+                <h4 class="ttl-quaternary">取引先の業績悪化による</br><span class="yellow-bottom">未払いのリスク</span></h4>
+                <div class="card-image">
+                  <img src="/assets/img/saison_invoice/worry2.png"/>
+                </div>
+                <ul class="card-description">
+                  <li class="card-description__detail">
+                    {% include 'component/icons/circle-checked.njk' %}
+                    <span>取引先の支払いが遅延しがちで不安</span>
+                  </li>
+                  <li class="card-description__detail">
+                    {% include 'component/icons/circle-checked.njk' %}
+                    <span>取引先からの入金を、そのまま支払いの費用に充当しているので、未払いが起きると大問題になる</span>
+                  </li>
+                </ul>
               </a>
-          </li>
-          <li class="card-type24">
-            <div class="card">
-              <div class="card-index">お悩み③</div>
-              <h4 class="ttl-quaternary">支払い日までの</br><span class="yellow-bottom">運転資金確保が大変</span></h4>
-              <div class="card-image">
-                <img src="/assets/img/saison_invoice/worry3.png" />
-              </div>
-              <ul class="card-description">
-                <li class="card-description__detail">
-                  {% include 'component/icons/circle-checked.njk' %}
-                  <span>バイヤーからの入金が遅い</span>
-                </li>
-                <li class="card-description__detail">
-                  {% include 'component/icons/circle-checked.njk' %}
-                  <span>仕入れの出金が早い</span>
-                </li>
-                <li class="card-description__detail">
-                  {% include 'component/icons/circle-checked.njk' %}
-                  <span>手元資金が少なくなりやすく、キャッシュフローに課題を持っている</span>
-                </li>
-              </ul>
+            </li>
+            <li class="card-type24">
+              <div class="card">
+                <div class="card-index">お悩み③</div>
+                <h4 class="ttl-quaternary">支払い日までの</br><span class="yellow-bottom">運転資金確保が大変</span></h4>
+                <div class="card-image">
+                  <img src="/assets/img/saison_invoice/worry3.png"/>
+                </div>
+                <ul class="card-description">
+                  <li class="card-description__detail">
+                    {% include 'component/icons/circle-checked.njk' %}
+                    <span>バイヤーからの入金が遅い</span>
+                  </li>
+                  <li class="card-description__detail">
+                    {% include 'component/icons/circle-checked.njk' %}
+                    <span>仕入れの出金が早い</span>
+                  </li>
+                  <li class="card-description__detail">
+                    {% include 'component/icons/circle-checked.njk' %}
+                    <span>手元資金が少なくなりやすく、キャッシュフローに課題を持っている</span>
+                  </li>
+                </ul>
               </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <section class="section-sub-content fadein">
-    <div class="sub-content-container">
-      <h1 class="ttl-primary">セゾンインボイスが、「請求・回収業務の負荷」や「資⾦繰り」に</br>関するお悩みを解決します。</h1>
-      <div class="act-more">
-        <div class="act-more-tooltip">
-          <h4 class="act-more-tooltip__content">{{"セゾンインボイスの仕組みとメリットが\n3分でわかる！" | safe}}</h4>
+            </li>
+          </ul>
         </div>
-        <div class="act-more-content">
-          <div class="act-more-content-img">
-            <img class="primary-img" src="/assets/img/common/documents_image.png" alt="Documents image 1">
-            <img class="secondary-img" src="/assets/img/common/documents_image.png" alt="Documents image 2">
+      </div>
+    </section>
+
+    <section class="section-sub-content fadein">
+      <div class="sub-content-container">
+        <h1 class="ttl-primary">セゾンインボイスが、「請求・回収業務の負荷」や「資⾦繰り」に</br>関するお悩みを解決します。</h1>
+        <div class="act-more">
+          <div class="act-more-tooltip">
+            <h4 class="act-more-tooltip__content">{{"セゾンインボイスの仕組みとメリットが\n3分でわかる！" | safe}}</h4>
           </div>
-          <div class="act-more-content-btn">
-            <a href="#" class="blue_gradient_btn small">
-              サービス資料ダウンロード
-            </a>
+          <div class="act-more-content">
+            <div class="act-more-content-btn">
+              <a href="#" class="blue_gradient_btn small">
+                サービス資料ダウンロード
+              </a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="feature" class="section-quaternary fadein">
-    <h4 class="ttl-secondary">セゾンインボイスの特長</h4>
-    <h2 class="ttl-primary">請求・回収代行はもちろん、キッシュフロー改善もサポート</h2>
-    <div class="container">
-      <ul class="saison-feature-list">
-        <li class="card-type25">
-          <div class="card-heading">
-            <span class="card-index">お悩み①</span>
-            <h3 class="card-issue-title"><span>請求・回収業務に人と時間が奪われてしまう</span></h3>
-          </div>
-          <div class="triangle"></div>
-          <h1 class="card-solution-title">請求業務はすべて代行。毎⽉の請求業務が<span>最短15分で完</span>了！</h1>
-          <div class="card-solution-content">
-            <div class="card-solution-content__img">
-              <img src="/assets/img/saison_invoice/saison_solution1.png" />
+    <section id="feature" class="section-quaternary fadein">
+      <h4 class="ttl-secondary">セゾンインボイスの特長</h4>
+      <h2 class="ttl-primary">請求・回収代行はもちろん、キッシュフロー改善もサポート</h2>
+      <div class="container">
+        <ul class="saison-feature-list">
+          <li class="card-type25">
+            <div class="card-heading">
+              <span class="card-index">お悩み①</span>
+              <h3 class="card-issue-title"><span>請求・回収業務に人と時間が奪われてしまう</span></h3>
             </div>
-            <div class="card-solution-content__text">
-              顧客を登録し、取引情報を入力するだけ。与信審査、請求書作成・発行、入金確認、督促まですべてクレディセゾンが代行いたします。
+            <div class="triangle"></div>
+            <h1 class="card-solution-title">請求業務はすべて代行。毎⽉の請求業務が<span>最短15分で完</span>了！</h1>
+            <div class="card-solution-content">
+              <div class="card-solution-content__img">
+                <img src="/assets/img/saison_invoice/saison_solution1.png" />
+              </div>
+              <div class="card-solution-content__text">
+                顧客を登録し、取引情報を入力するだけ。与信審査、請求書作成・発行、入金確認、督促まですべてクレディセゾンが代行いたします。
+              </div>
             </div>
-          </div>
-        </li>
-        <li class="card-type25">
-          <div class="card-heading">
-            <span class="card-index">お悩み②</span>
-            <h3 class="card-issue-title"><span>取引先の業績悪化による未払いのリスク</span></h3>
-          </div>
-          <div class="triangle"></div>
-          <h1 class="card-solution-title">未払いでも全額振込。<span>未回収リスク100%保証</span>。</h1>
-          <div class="card-solution-content">
-            <div class="card-solution-content__img">
-              <img src="/assets/img/saison_invoice/saison_solution2.png" />
+          </li>
+          <li class="card-type25">
+            <div class="card-heading">
+              <span class="card-index">お悩み②</span>
+              <h3 class="card-issue-title"><span>取引先の業績悪化による未払いのリスク</span></h3>
             </div>
-            <div class="card-solution-content__text">
-              顧客の与信枠内であれば、その後未払いになったとしても貴社に振込。</br>
-              取引先の未払い等の経営リスクを縮小可能です。
+            <div class="triangle"></div>
+            <h1 class="card-solution-title">未払いでも全額振込。<span>未回収リスク100%保証</span>。</h1>
+            <div class="card-solution-content">
+              <div class="card-solution-content__img">
+                <img src="/assets/img/saison_invoice/saison_solution2.png" />
+              </div>
+              <div class="card-solution-content__text">
+                顧客の与信枠内であれば、その後未払いになったとしても貴社に振込。</br>
+                取引先の未払い等の経営リスクを縮小可能です。
+              </div>
             </div>
-          </div>
-        </li>
-        <li class="card-type25">
-          <div class="card-heading">
-            <span class="card-index">お悩み③</span>
-            <h3 class="card-issue-title"><span>支払い日までの運転資金確保が大変</span></h3>
-          </div>
-          <div class="triangle"></div>
-          <h1 class="card-solution-title">最短翌日の入金<span>で、運転資金をスピード確保。</span>。</h1>
-          <div class="card-solution-content">
-            <div class="card-solution-content__img">
-              <img src="/assets/img/saison_invoice/saison_solution3.png" />
+          </li>
+          <li class="card-type25">
+            <div class="card-heading">
+              <span class="card-index">お悩み③</span>
+              <h3 class="card-issue-title"><span>支払い日までの運転資金確保が大変</span></h3>
             </div>
-            <div class="card-solution-content__text">
-              顧客情報、取引内容を入力するだけ。与信審査、請求書作成・発行、入金確認、督促まですべてクレディセゾンが代行いたします。
+            <div class="triangle"></div>
+            <h1 class="card-solution-title">最短翌日の入金<span>で、運転資金をスピード確保。</span>。</h1>
+            <div class="card-solution-content">
+              <div class="card-solution-content__img">
+                <img src="/assets/img/saison_invoice/saison_solution3.png" />
+              </div>
+              <div class="card-solution-content__text">
+                顧客情報、取引内容を入力するだけ。与信審査、請求書作成・発行、入金確認、督促まですべてクレディセゾンが代行いたします。
+              </div>
             </div>
-          </div>
-        </li>
+          </li>
         <ul>
-    </div>
-  </section>
-
-  <section id="services" class="section-quinary fadein">
-    <div class="container">
-      <h4 class="ttl-secondary">類似サービスとの違い</h4>
-      <h2 class="ttl-primary">請求・回収業務の効率化+キャッシュフロー改善</h2>
-      <p class="ttl-tertiary">高い信頼性と審査ノウハウを持つクレディセゾンだから、請求書発行だけでなく未回収保証までトータルサポート。</br>キャッシュフロー改善にも貢献いたします。</h5>
-
-      <div class="content">
-        <img src="/assets/img/saison_invoice/saison_operations.png">
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="comment" class="section-voice fadein">
-    <h5 class="ttl-sub">VOICE</h5>
-    <h2 class="ttl-primary">ご利用者様の声</h2>
-    <div class="list__wrapper">
-      <div class="containers">
-        <ul class="inherit card-list">
-          <a href="#">
-            <div class="card-type10">
-              <h5 class="ttl-quinary">
-                コワーキングスペース運営会社　様
-              </h5>
-              <h6 class="ttl-senary">
-                請求業務に十分な人員を割く事ができず、請求・回収・督促業務の効率化が課題。</br>
-                新たな人員を追加することなく請求体制を構築できた上、毎月一定数発生する督促・回収対応もセゾンインボイスへアウトソースすることで効率化できました。
-              </h6>
-            </div>
-          </a>
+    <section id="services" class="section-quinary fadein">
+      <div class="container">
+        <h4 class="ttl-secondary">類似サービスとの違い</h4>
+        <h2 class="ttl-primary">請求・回収業務の効率化+キャッシュフロー改善</h2>
+        <p class="ttl-tertiary">高い信頼性と審査ノウハウを持つクレディセゾンだから、請求書発行だけでなく未回収保証までトータルサポート。</br>キャッシュフロー改善にも貢献いたします。</h5>
 
-          <a href="#">
-            <div class="card-type10">
-              <h5 class="ttl-quinary">
-                広告代理店会社　様
-              </h5>
-              <h6 class="ttl-senary">
-                事業拡大に伴い、手元の運転資金の確保を思案していた中、手間のかかる融資ではない方法で何か方法がないか探していました。</br>
-                セゾンインボイスを活用することで、毎月数千万円の売掛金回収に30日〜60日かかっていたところが1日に短縮されました。事業拡大に向けて手元資金の心配がなくなりました。
-              </h6>
-            </div>
-          </a>
+        <div class="content">
+          <img src="/assets/img/saison_invoice/saison_operations.png">
+        </div>
+      </div>
+    </section>
 
-          <a href="#">
-            <div class="card-type10">
-              <h5 class="ttl-quinary">
-                OA機器販売・電力会社　様
-              </h5>
-              <h6 class="ttl-senary">
-                もともと光コラボや、トナー事業の発注・請求をマンパワーで処理していましたが、徐々に当社の新しいサービスが増えていく中で、金額もお取引先様も増加し、担当者の負担が増えていきました。</br>
-                請求書の発行、代金の回収、督促、問い合わせ対応まで全てやってくれるおかげで、営業担当の時間を作りだすことができ、非常に業務削減につながりました。
-              </h6>
+    <section id="comment" class="section-voice fadein">
+      <h5 class="ttl-sub">VOICE</h5>
+      <h2 class="ttl-primary">ご利用者様の声</h2>
+      <div class="list__wrapper">
+        <div class="containers">
+          <ul class="inherit card-list">
+            <a href="#">
+              <div class="card-type10">
+                <h5 class="ttl-quinary">
+                  コワーキングスペース運営会社　様
+                </h5>
+                <h6 class="ttl-senary">
+                  請求業務に十分な人員を割く事ができず、請求・回収・督促業務の効率化が課題。</br>
+                  新たな人員を追加することなく請求体制を構築できた上、毎月一定数発生する督促・回収対応もセゾンインボイスへアウトソースすることで効率化できました。
+                </h6>
+              </div>
+            </a>
+
+            <a href="#">
+              <div class="card-type10">
+                <h5 class="ttl-quinary">
+                  広告代理店会社　様
+                </h5>
+                <h6 class="ttl-senary">
+                  事業拡大に伴い、手元の運転資金の確保を思案していた中、手間のかかる融資ではない方法で何か方法がないか探していました。</br>
+                  セゾンインボイスを活用することで、毎月数千万円の売掛金回収に30日〜60日かかっていたところが1日に短縮されました。事業拡大に向けて手元資金の心配がなくなりました。
+                </h6>
+              </div>
+            </a>
+
+            <a href="#">
+              <div class="card-type10">
+                <h5 class="ttl-quinary">
+                  OA機器販売・電力会社　様
+                </h5>
+                <h6 class="ttl-senary">
+                  もともと光コラボや、トナー事業の発注・請求をマンパワーで処理していましたが、徐々に当社の新しいサービスが増えていく中で、金額もお取引先様も増加し、担当者の負担が増えていきました。</br>
+                  請求書の発行、代金の回収、督促、問い合わせ対応まで全てやってくれるおかげで、営業担当の時間を作りだすことができ、非常に業務削減につながりました。
+                </h6>
+              </div>
+            </a>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="usage" class="section-flow bg-gray">
+      <div class="container">
+        <h4 class="ttl-secondary">ご利用までの流れ</h4>
+        <h2 class="ttl-primary">ご利用開始までは３ステップのみ。</h2>
+
+        <ul class="flow-container">
+          <li class="flow-item">
+            <div class="flow-item-detail">
+              <h5 class="ttl-tertiary bold">お問い合わせ</h5>
+              <div class="flow-item-image">
+                <img src="/assets/img/saison_invoice/flow1.png">
+              </div>
+              <p class="flow-item-desc">お問い合わせいただければ、導入にあたっての不安を解消し、貴社の運用フローに合わせた導入方法をご提案いたします。</p>
             </div>
-          </a>
+          </li>
+          <li class="flow-item">
+            <div class="flow-item-detail">
+              <h5 class="ttl-tertiary bold">必要情報の登録・審査</h5>
+              <div class="flow-item-image">
+                <img src="/assets/img/saison_invoice/flow2.png">
+              </div>
+              <p class="flow-item-desc">お問い合わせいただければ、導入にあたっての不安を解消し、貴社の運用フローに合わせた導入方法をご提案いたします。</p>
+            </div>
+          </li>
+          <li class="flow-item">
+            <div class="flow-item-detail">
+              <h5 class="ttl-tertiary bold">ご利用開始</h5>
+              <div class="flow-item-image">
+                <img src="/assets/img/saison_invoice/flow3.png">
+              </div>
+              <p class="flow-item-desc">お問い合わせいただければ、導入にあたっての不安を解消し、貴社の運用フローに合わせた導入方法をご提案いたします。</p>
+            </div>
+          </li>
         </ul>
+
+        <div class="section-more">
+          <a href="/contact" class="act-more blue_gradient_btn">
+            <div class="act-more-tooltip">
+              <h4 class="act-more-tooltip__content">{{"貴社の課題に合わせて \n プランなどをご紹介いたします。 \n まずはお気軽にご相談ください。" | safe}}</h4>
+            </div>
+            導入のご相談・お問い合わせはこちら（無料）
+          </a>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="usage" class="section-flow bg-gray">
-    <div class="container">
-      <h4 class="ttl-secondary">ご利用までの流れ</h4>
-      <h2 class="ttl-primary">ご利用開始までは３ステップのみ。</h2>
+    <section id="fee" class="section-usage fadein">
+      <div class="container">
+        <h4 class="ttl-secondary">ご利用料金</h4>
+        <h2 class="ttl-primary">月額固定費0円・手数料率は業界最低水準！</h2>
+      </div>
 
-      <ul class="flow-container">
-        <li class="flow-item">
-          <div class="flow-item-detail">
-            <h5 class="ttl-tertiary bold">お問い合わせ</h5>
-            <div class="flow-item-image">
-              <img src="/assets/img/saison_invoice/flow1.png">
-            </div>
-            <p class="flow-item-desc">お問い合わせいただければ、導入にあたっての不安を解消し、貴社の運用フローに合わせた導入方法をご提案いたします。</p>
-          </div>
-        </li>
-        <li class="flow-item">
-          <div class="flow-item-detail">
-            <h5 class="ttl-tertiary bold">必要情報の登録・審査</h5>
-            <div class="flow-item-image">
-              <img src="/assets/img/saison_invoice/flow2.png">
-            </div>
-            <p class="flow-item-desc">お問い合わせいただければ、導入にあたっての不安を解消し、貴社の運用フローに合わせた導入方法をご提案いたします。</p>
-          </div>
-        </li>
-        <li class="flow-item">
-          <div class="flow-item-detail">
-            <h5 class="ttl-tertiary bold">ご利用開始</h5>
-            <div class="flow-item-image">
-              <img src="/assets/img/saison_invoice/flow3.png">
-            </div>
-            <p class="flow-item-desc">お問い合わせいただければ、導入にあたっての不安を解消し、貴社の運用フローに合わせた導入方法をご提案いたします。</p>
-          </div>
-        </li>
-      </ul>
+      <div class="list__wrapper">
+        <div class="containers">
+          <ul class="inherit card-list">
+            <a href="#" class="scene">
+              <h4 class="ttl-quaternary scene-name">月額費用</h4>
+              <h3 class="scene-desc">機能制限なし。</br>ずっと</h3>
+              <p class="scene-cost"><span>￥</span>0</p>
+            </a>
+
+            <a href="#" class="scene seagreen">
+              <h4 class="ttl-quaternary scene-name">手数料（目安）</h4>
+              <h3 class="scene-desc">取引金額の</h3>
+              <p class="scene-cost">1.5 ~ 5.5%</p>
+            </a>
+
+            <a href="#" class="scene green">
+              <h4 class="ttl-quaternary scene-name">1請求ごとの事務手数料</h4>
+              <h3 class="scene-desc">メール送付の場合</h3>
+              <p class="scene-cost"><span>￥</span>0</p>
+            </a>
+          </ul>
+        </div>
+      </div>
 
       <div class="section-more">
         <a href="/contact" class="act-more blue_gradient_btn">
           <div class="act-more-tooltip">
-            <h4 class="act-more-tooltip__content">{{"貴社の課題に合わせて \n プランなどをご紹介いたします。 \n まずはお気軽にご相談ください。" | safe}}</h4>
+            <h4 class="act-more-tooltip__content">{{"手数料率は取引金額等をもとに\nアカウント審査時に決定します。\nお気軽にご相談ください。" | safe}}</h4>
           </div>
           導入のご相談・お問い合わせはこちら（無料）
         </a>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="fee" class="section-usage fadein">
-    <div class="container">
-      <h4 class="ttl-secondary">ご利用料金</h4>
-      <h2 class="ttl-primary">月額固定費0円・手数料率は業界最低水準！</h2>
-    </div>
-
-    <div class="list__wrapper">
-      <div class="containers">
-        <ul class="inherit card-list">
-          <a href="#" class="scene">
-            <h4 class="ttl-quaternary scene-name">月額費用</h4>
-            <h3 class="scene-desc">機能制限なし。</br>ずっと</h3>
-            <p class="scene-cost"><span>￥</span>0</p>
-          </a>
-
-          <a href="#" class="scene seagreen">
-            <h4 class="ttl-quaternary scene-name">手数料（目安）</h4>
-            <h3 class="scene-desc">取引金額の</h3>
-            <p class="scene-cost">1.5 ~ 5.5%</p>
-          </a>
-
-          <a href="#" class="scene green">
-            <h4 class="ttl-quaternary scene-name">1請求ごとの事務手数料</h4>
-            <h3 class="scene-desc">メール送付の場合</h3>
-            <p class="scene-cost"><span>￥</span>0</p>
-          </a>
-        </ul>
+    <section id="faq" class="section-question-and-answer fadein">
+      <h5 class="ttl-secondary">FAQ</h5>
+      <h2 class="ttl-primary">よくある質問</h2>
+      <p class="ttl-tertiary">お客様からよくいただくご質問にお答えします。この他にご質問がある方は、<a href="/contact">お問い合わせフォーム</a>より、お気軽にご連絡ください。</br>
+        2営業日以内に担当者からご連絡させて頂きます。
+      </p>
+      <div class="container qa-list">
+        {% for i in range(1, 5) %}
+          <div class="qa">
+            <div class="flex gap20 question-tab">
+              <div class="qa-marker">
+                <h2 class="ttl-secondary">Q</h2>
+              </div>
+              <div class="qa-content">
+                <h3 class="ttl-tertiary">
+                  質問内容が入ります。質問内容が入ります。質問内容が入ります。質問内容が入ります。質問内容が入ります。
+                </h3>
+              </div>
+              <button class="qa-button">
+                <span class="svg__plus">{% include 'component/icons/plus.njk' %}</span>
+                <span class="svg__minus">{% include 'component/icons/minus.njk' %}</span>
+              </button>
+            </div>
+            <div class="flex gap20 answer-tab">
+              <div class="qa-marker">
+                <h2 class="ttl-secondary">A</h2>
+              </div>
+              <div class="qa-content">
+                <h3 class="ttl-tertiary">
+                  質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。
+                </h3>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
       </div>
-    </div>
-
-    <div class="section-more">
-      <a href="/contact" class="act-more blue_gradient_btn">
-        <div class="act-more-tooltip">
-          <h4 class="act-more-tooltip__content">{{"手数料率は取引金額等をもとに\nアカウント審査時に決定します。\nお気軽にご相談ください。" | safe}}</h4>
-        </div>
-        導入のご相談・お問い合わせはこちら（無料）
+      <a href="#" class="bondi_blue_outline_btn">
+        <span class="bondi_blue_outline_btn__tittle">
+          もっと見る
+        </span>
       </a>
-    </div>
-  </section>
+    </section>
 
-  <section id="faq" class="section-question-and-answer fadein">
-    <h5 class="ttl-secondary">FAQ</h5>
-    <h2 class="ttl-primary">よくある質問</h2>
-    <p class="ttl-tertiary">お客様からよくいただくご質問にお答えします。この他にご質問がある方は、<a href="/contact">お問い合わせフォーム</a>より、お気軽にご連絡ください。</br>
-      2営業日以内に担当者からご連絡させて頂きます。
-    </p>
-    <div class="container qa-list">
-      {% for i in range(1, 5) %}
-      <div class="qa">
-        <div class="flex gap20 question-tab">
-          <div class="qa-marker">
-            <h2 class="ttl-secondary">Q</h2>
-          </div>
-          <div class="qa-content">
-            <h3 class="ttl-tertiary">
-              質問内容が入ります。質問内容が入ります。質問内容が入ります。質問内容が入ります。質問内容が入ります。
-            </h3>
-          </div>
-          <button class="qa-button">
-            <span class="svg__plus">{% include 'component/icons/plus.njk' %}</span>
-            <span class="svg__minus">{% include 'component/icons/minus.njk' %}</span>
-          </button>
-        </div>
-        <div class="flex gap20 answer-tab">
-          <div class="qa-marker">
-            <h2 class="ttl-secondary">A</h2>
-          </div>
-          <div class="qa-content">
-            <h3 class="ttl-tertiary">
-              質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。
-            </h3>
-          </div>
-        </div>
-      </div>
-      {% endfor %}
-    </div>
-    <a href="#" class="bondi_blue_outline_btn">
-      <span class="bondi_blue_outline_btn__tittle">
-        もっと見る
-      </span>
-    </a>
-  </section>
-
-  <section id="application" class="section-contact fadein">
-    <div class="card-type22">
-      <div class="ttl-notice">CONTACT</div>
-      <h3 class="ttl-tertiary">セゾンインボイスをご検討中の方へ</h3>
-      <div class="useful-wp container">
-        <div class="containers">
-          <div class="flex jcC gap60">
-            <div href="#" class="card">
-              <summary class="card__box">
-                <div class="card__box--ttl">サービス内容について詳しく知りたい方はこちら</div>
-                <div class="card__box--cont">
-                  <div class="card__box--image">
-                    <img src="/assets/img/payment_com/payment_contact2.png" />
+    <section id="application" class="section-contact fadein">
+      <div class="card-type22">
+        <div class="ttl-notice">CONTACT</div>
+        <h3 class="ttl-tertiary">セゾンインボイスをご検討中の方へ</h3>
+        <div class="useful-wp container">
+          <div class="containers">
+            <div class="flex jcC gap60">
+              <div href="#" class="card">
+                <summary class="card__box">
+                  <div class="card__box--ttl">サービス内容について詳しく知りたい方はこちら</div>
+                  <div class="card__box--cont">
+                    <div class="card__box--image">
+                      <img src="/assets/img/payment_com/payment_contact2.png"/>
+                    </div>
+                    <div class="card__box--txt">
+                      セゾンインボイスのサービス資料をダウンロートできます。フォーム入力後リアルタイムでお送りいたします。
+                    </div>
                   </div>
-                  <div class="card__box--txt">
-                    セゾンインボイスのサービス資料をダウンロートできます。フォーム入力後リアルタイムでお送りいたします。
-                  </div>
-                </div>
-                <div><a class="blue_gradient_btn" href="#">ご相談・お問い合わせ（無料）</a></div>
-              </summary>
+                  <div><a class="blue_gradient_btn" href="#">ご相談・お問い合わせ（無料）</a></div>
+                </summary>
             </div>
             <div href="#" class="card">
               <summary class="card__box">
                 <div class="card__box--ttl">利用イメージを知りたい方はこちら</div>
                 <div class="card__box--cont">
-                  <div class="card__box--image">
-                    <img src="/assets/img/common/contact_inner2.png" />
+                    <div class="card__box--image">
+                      <img src="/assets/img/common/contact_inner2.png"/>
+                    </div>
+                    <div class="card__box--txt">
+                      導入にあたってのご相談や、貴社の運用フローに合わせた導入方法をご提案させていただきます。
+                    </div>
                   </div>
-                  <div class="card__box--txt">
-                    導入にあたってのご相談や、貴社の運用フローに合わせた導入方法をご提案させていただきます。
-                  </div>
-                </div>
                 <div><a class="blue_gradient_btn" href="/contact/">導入のご相談・お問い合わせ（無料）</a></div>
               </summary>
             </div>
           </div>
         </div>
       </div>
-  </section>
+    </section>
 
-</main>
+  </main>
 {% endblock %}
