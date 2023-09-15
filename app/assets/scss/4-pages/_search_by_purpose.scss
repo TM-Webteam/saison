@@ -307,6 +307,7 @@
           .card__box-wrapper {
             @media #{$sp} {
               flex-direction: column;
+              width: 100%;
             }
           }
 
@@ -334,6 +335,9 @@
               white-space: pre-line;
               word-break: keep-all;
               margin-top: 5px;
+              @media #{$sp} {
+                word-break: normal;
+              }
             }
 
             .price-list {
@@ -347,6 +351,9 @@
                   white-space: pre-line;
                   word-break: keep-all;
                   line-height: 26px;
+                  @media #{$sp} {
+                    word-break: normal;
+                  }
                 }
               }
             }

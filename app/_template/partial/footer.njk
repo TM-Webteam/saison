@@ -3,16 +3,13 @@
     {% if breadcrumb %}
     <section class="breadcrumb">
       <ul class="flex">
-        <li>
-          <a href="/">TOP</a>
-        </li>
-
         {% for crumb in breadcrumb %}
         <li>
-          <a href="{{ crumb.link }}">{{ crumb.text }}</a>
+          <a href="{{ crumb.link }}">{{ crumb.head or crumb.text }}</a>
         </li>
         {% endfor %}
       </ul>
+
     </section>
     {% endif %}
 
@@ -132,8 +129,8 @@
         </li>
 
         <li>
-        <a href="https://www.saisoncard.co.jp/info/privacy-policy/" target="_blank">プライバシーポリシー
-          {% include 'component/icons/external.njk' %}
+          <a href="https://www.saisoncard.co.jp/info/privacy-policy/" target="_blank">プライバシーポリシー
+            {% include 'component/icons/external.njk' %}
           </a>
         </li>
 

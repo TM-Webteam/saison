@@ -10,12 +10,15 @@
 
 {# Breadcrumb #}
 {% set breadcrumb = [{
-  text:"セミナー情報",
-  link:"seminar"
-  },{
-  text:"セミナータイトルが入ります",
-  link:"#"
-  }] %}
+head:"TOP",
+link:"/"
+},{
+text:"セミナー情報",
+link:"seminar"
+},{
+text:"セミナータイトルが入ります",
+link:"#"
+}] %}
 
 {# Custom tags before </head> #}
 {% block customHead %}{% endblock %}
