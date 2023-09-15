@@ -397,24 +397,22 @@ $(window).on("popstate", function () {
 $(document).ready(function () {
   var windowsize = $(window).width();
 
-  if (windowsize <= 768) {
-    // Get the modal
-    var modal = $("#imageModal");
+  // Get the modal
+  var modal = $("#imageModal");
 
-    var modalImg = $("#image-in-modal");
+  var modalImg = $("#image-in-modal");
 
-    $("#zoomImg").each(function (index) {
-      $(this).on("click", function () {
-        modal.addClass("flex-center");
-        modal.attr("style", "display: flex");
-        modalImg.attr("src", $(this).attr("src"));
-      });
+  $("#zoomImg").each(function (index) {
+    $(this).on("click", function () {
+      modal.addClass("flex-center");
+      modal.attr("style", "display: flex");
+      modalImg.attr("src", $(this).attr("src"));
     });
+  });
 
-    $(".close-modal").each(function () {
-      $(this).on("click", function () {
-        $(this).closest(".modal").attr("style", "display: none");
-      });
+  $(".close-modal").each(function () {
+    $(this).on("click", function () {
+      $(this).closest(".modal").attr("style", "display: none");
     });
-  }
+  });
 });
