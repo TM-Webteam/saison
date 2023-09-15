@@ -8,6 +8,14 @@
 {# Page settings and also body class #}
 {% set page = "" %}
 
+{# Breadcrumb #}
+{% set breadcrumb = [
+  {
+    text: "経費を削減したい",
+    link: "#"
+  }
+] %}
+
 {# Custom tags before </head> #}
 {% block customHead %}{% endblock %}
 
@@ -42,7 +50,8 @@
     </section>
 
     <section class="section-search-result">
-      <h2 class="ttl-primary">{{ search_by_purpose.search_result.title }}</h2>
+      <h2 class="ttl-primary pc-only">{{ search_by_purpose.search_result.title }}</h2>
+      <h2 class="ttl-primary sp-only">{{ search_by_purpose.search_result.title_sp | safe}}</h2>
       <div class="section-search-result-wrapper">
         <div class="containers">
           <ul class="inherit card-list">
@@ -75,46 +84,6 @@
         <h3 class="sub-title">{{ search_by_purpose.reduce_expenses.sub_title }}</h3>
 
         <h2 class="title">{{ search_by_purpose.reduce_expenses.title }}</h2>
-
-        <ul class="flex gap30 card-list individual-business">
-          <li class="card-type17">
-            <div class="card__left">{{ search_by_purpose.reduce_expenses.list_card.individual_business.title }}</div>
-            <div class="card__right">
-              <ul class="card-item-list">
-                {% for content_item in search_by_purpose.reduce_expenses.list_card.individual_business.content %}
-                  <li class="flex card-item02 gap20">
-                    <div class="flex gap20 card__box-wrapper">
-                      <div class="credit-card02">
-                        <img src="{{ content_item.image }}" alt="Your Image"
-                          class="credit-card-img">
-                      </div>
-
-                      <div class="card__box-title">
-                        <h4 class="ttl-quternary">{{ content_item.sub_title }}</h4>
-
-                        <h3>{{ content_item.title }}</h3>
-
-                        <ul class="price-list">
-                          {% for option in content_item.list_option %}
-                          <li>
-                           {% for option_item in option %}
-                            <dd>{{ option_item }}</dd>
-                            {% endfor %}
-                          </li>
-                          {% endfor %}
-                        </ul>
-                      </div>
-                    </div>
-
-                    <div class="action">
-                      <a class="bondi_green_btn">詳細はこちら</a>
-                    </div>
-                  </li>
-                {% endfor %}
-              </ul>
-            </div>
-          </li>
-        </ul>
 
         <ul class="flex gap30 card-list medium-sized-businesses">
           <li class="card-type17">
@@ -149,6 +118,46 @@
 
                     <div class="action">
                       <a class="bondi_blue_btn">詳細はこちら</a>
+                    </div>
+                  </li>
+                {% endfor %}
+              </ul>
+            </div>
+          </li>
+        </ul>
+
+         <ul class="flex gap30 card-list individual-business">
+          <li class="card-type17">
+            <div class="card__left">{{ search_by_purpose.reduce_expenses.list_card.individual_business.title }}</div>
+            <div class="card__right">
+              <ul class="card-item-list">
+                {% for content_item in search_by_purpose.reduce_expenses.list_card.individual_business.content %}
+                  <li class="flex card-item02 gap20">
+                    <div class="flex gap20 card__box-wrapper">
+                      <div class="credit-card02">
+                        <img src="{{ content_item.image }}" alt="Your Image"
+                          class="credit-card-img">
+                      </div>
+
+                      <div class="card__box-title">
+                        <h4 class="ttl-quternary">{{ content_item.sub_title }}</h4>
+
+                        <h3>{{ content_item.title }}</h3>
+
+                        <ul class="price-list">
+                          {% for option in content_item.list_option %}
+                          <li>
+                           {% for option_item in option %}
+                            <dd>{{ option_item }}</dd>
+                            {% endfor %}
+                          </li>
+                          {% endfor %}
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="action">
+                      <a class="bondi_green_btn">詳細はこちら</a>
                     </div>
                   </li>
                 {% endfor %}

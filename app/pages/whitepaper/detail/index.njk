@@ -8,6 +8,18 @@
 {# Page settings and also body class #}
 {% set page = "" %}
 
+{# Breadcrumb #}
+{% set breadcrumb = [
+  {
+    text: "お役立ち資料",
+    link: "#"
+  },
+  {
+    text: "資料名が入ります。",
+    link: "#"
+  }
+] %}   
+
 {# Custom tags before </head> #}
 {% block customHead %}{% endblock %}
 

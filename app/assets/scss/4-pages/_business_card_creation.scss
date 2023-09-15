@@ -214,7 +214,7 @@
 
     .grid-card-container {
       display: grid;
-      grid-template-columns: 290px 150px 120px 100px 100px 100px 100px 110px;
+      grid-template-columns: 290px 150px 100px 100px 100px 100px 100px 130px;
       grid-gap: 10px;
       overflow: auto;
       .title-row {
@@ -303,14 +303,25 @@
       display: grid;
       grid-template-columns: repeat(3, 1fr);
 
+      li {
+        border: 1px solid #0297b5;
+      }
+
       .card-title {
         padding: 10px 25px;
+        min-height: 114px;
         background: #0297b5;
+        align-items: center;
         color: #fff;
         font-weight: bold;
-        display: grid;
-        grid-template-columns: repeat(2, auto);
-        gap: 20px;
+        text-align: left;
+        display: flex;
+        gap: 15px;
+
+        @media #{$sp} {
+          min-height: unset;
+        }
+
         .circle-child {
           width: 70px;
           height: 70px;
@@ -332,7 +343,7 @@
 
       .card-type9 {
         padding: 20px;
-        border: 1px solid #0297b5;
+
         min-height: 500px;
         @media #{$sp} {
           min-height: unset;
