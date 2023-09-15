@@ -18,10 +18,10 @@
     "welcome": {
       "image": "/assets/img/smaller_companies/business_banner.png",
       "inner": "<strong>業務効率化</strong>から<strong>資金繰り</strong>まで",
-      "title": "中小企業様向けサービス"
+      "title": "中小企業向けサービス"
     },
     "primary": {
-      "sub_title": "中小企業の経営者様・経理ご担当者様へ",
+      "sub_title": "中小企業の経営者・経理のご担当者の方へ",
       "title": "こんなニーズやお悩みありませんか？",
       "list": [
         {
@@ -158,16 +158,16 @@
         "issue": "課題：福利厚生サービスを導入したい",
         "highlight": "「セゾンフクリコ」",
         "title": "で従業員の満足度を高めて人材が定着する会社に。",
-        "description": "セゾンフクリコとは、従業員のみなさまの暮らしに役立つ様々なサービスを、<strong>最大66％OFFで利用できるお得な福利厚生優待サービス</strong>です。1人あたり月額385円（税込）とお手頃な価格なので、はじめての福利厚生を導入する企業様でもお気軽に利用できますす。",
+        "description": "セゾンフクリコとは、従業員のみなさまの暮らしに役立つ様々なサービスを、<strong>最大66％OFFで利用できるお得な福利厚生優待サービス</strong>です。1人あたり月額385円（税込）とお手頃な価格なので、はじめての福利厚生を導入する企業でもお気軽に利用できますす。",
         "image": "/assets/img/common/saison-fukurico.png",
         "detail": [
           "<span class='yellow-bottom'>全国25,000以上</span>の施設で使えるコンテンツ",
           "ビジネスサポートメニューで<span class='yellow-bottom'>大幅コスト削減</span>が可能",
           "<span class='yellow-bottom'>完全アウトソーシングで手間がかからない</span>",
-          "会員様だけでなく、<span class='yellow-bottom'>ご家族※もご利用できます</span>"
+          "会員だけでなく、<span class='yellow-bottom'>ご家族※もご利用できます</span>"
         ],
         "sub_list": [
-          "ご利用者の範囲は会員様と配偶者、およびそれぞれの二親等内（両親・祖父母・兄弟・子・孫）のご家族となります。",
+          "ご利用者の範囲は会員と配偶者、およびそれぞれの二親等内（両親・祖父母・兄弟・子・孫）のご家族となります。",
           "施設によって会員特典が適用される範囲や人数が異なる場合がございます。"
         ],
         "more": "セゾンフクリコをもっと詳しく"
@@ -177,7 +177,7 @@
         "issue": "課題：出張費用の適正化・削減をしたい",
         "highlight": "「CosPro」",
         "title": "で従業員の満足度を高めて人材が定着する会社に。",
-        "description": "CosProとは、法人企業様の出張手配に関わる様々な課題を解決するために生まれた出張手配サービスです。<strong>社員様が予約されたチケットの料金が適正かどうかのチェックを行う、弊社独自の「適正化チェック」</strong>のサービスで<strong>法人企業様の出張コスト削減</strong>に寄与いたします。",
+        "description": "CosProとは、法人企業の出張手配に関わる様々な課題を解決するために生まれた出張手配サービスです。<strong>社員の方が予約されたチケットの料金が適正かどうかのチェックを行う、弊社独自の「適正化チェック」</strong>のサービスで<strong>法人企業の出張コスト削減</strong>に寄与いたします。",
         "image": "/assets/img/common/cos-pro.png",
         "detail": [
           "出張手配に社内ルールを!<br><span class='yellow-bottom'>手配を一本化して業務の透明化とコスト削減を実現</span>",
@@ -295,6 +295,7 @@
     },
     "search_result": {
       "title": "ビジネスカードの活用で経費削減を目指してみませんか",
+      "title_sp": "ビジネスカードの活用で <br/> 経費削減を目指してみませんか",
       "list": [
         {
           "href": "#",
@@ -351,7 +352,7 @@
       "title": "経費削減につながるセゾンのビジネスカード",
       "list_card": {
         "individual_business": {
-          "title": "中小企業の経営者様・ 個人事業主様 におすすめ!",
+          "title": "中小企業の経営者・ 個人事業主 におすすめ!",
           "content": [
             {
               "image": "/assets/img/credit_cards/american-express-01.png",
@@ -379,7 +380,7 @@
           ]
         },
         "medium_sized_businesses": {
-          "title": "中小企業様 におすすめ!",
+          "title": "中小企業 におすすめ!",
           "content": [
             {
               "image": "/assets/img/credit_cards/saison-03.png",
