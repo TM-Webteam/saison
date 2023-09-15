@@ -196,6 +196,11 @@ $grid-breakpoints: (
     align-content: space-around;
   }
 }
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 .core {
   display: flex;
