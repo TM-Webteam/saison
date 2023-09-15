@@ -790,6 +790,12 @@
         .card-solution-content__text {
           font-size: 16px;
           padding-top: 0;
+
+          .link {
+            color: $primary-color;
+            text-decoration: underline;
+            text-underline-offset: 4px;
+          }
         }
       }
 
