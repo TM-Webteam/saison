@@ -1,0 +1,315 @@
+{% extends "layout/default.njk" %}
+
+{# Custom SEO tags, leave blank to apply the default values #}
+{% set title = "" %}
+{% set description = "" %}
+{% set keywords = "" %}
+
+{# Page settings and also body class #}
+{% set page = "" %}
+
+{# Breadcrumb #}
+{% set breadcrumb = [
+{
+text:"Concur Expense",
+link:"/concur_expense"
+}
+] %}
+
+{% set menuSidebar = [
+{
+text: "TOP",
+link: "#top"
+},
+{
+text: "Concur Expenseとは",
+link: "#payment"
+},
+{
+text: "Concur Expenseの特長",
+link: "#flow-of-usage"
+},
+{
+text: "ご利用者様の声",
+link: "#reason-chosing"
+},
+{
+text: "ご利用までの流れ",
+link: "#comment"
+},
+{
+text: "ご利用料金",
+link: "#faq"
+},
+{
+text: "よくある質問",
+link: "#material"
+},
+{
+text: "資料・お問い合わせ",
+link: "#material"
+}
+] %}
+
+{# Custom tags before </head> #}
+{% block customHead %}{% endblock %}
+
+{# Custom tags before </body> #}
+{% block customJs %}{% endblock %}
+
+{# Main content #}
+{% block content %}
+<div class="concur_expense">
+  {% include 'partial/sidebar.njk' %}
+</div>
+<main class="concur_expense-page">
+  <section id="top" class="section-welcome fadein">
+    <div class="section-welcome__banner">
+      <img src="/assets/img/concur_expense/banner_concur_expense.png" />
+    </div>
+
+    <div class="section-welcome-info">
+      <div class="section-welcome-info-left">
+        <div class="section-welcome__inner">
+          <h3 class="ttl-tertiary">{{"中小企業様向け経費精算・管理クラウド" | safe}}</h3>
+        </div>
+        <div class="section-welcome__title">
+          <h1 class="ttl-primary">Concur Expense</h1>
+        </div>
+        <div class="section-welcome__desc">
+          <h5 class="ttl-quaternary">仮払い・立替払いを廃止! <br />
+            経費精算を自動化できる!
+          </h5>
+        </div>
+        <div class="section-welcome__act">
+          <a href="#" class="act-more black_more">
+            <div class="act-more-tooltip">
+              <h4 class="act-more-tooltip__content">Concur Expenseが3分でわかる!</h4>
+            </div>
+            資料ダウンロード
+          </a>
+        </div>
+      </div>
+
+      <div class="section-welcome-info-right pc-only">
+        <div class="section-welcome-right__img">
+          <img src="/assets/img/concur_expense/macbook_banner.png" />
+          <ul class="info-list">
+            <li class="info-item">
+              <span>スマホ・モバイルで、</span>
+              <br />
+              <span class="special"> いつでも申請・承認が可能</span>
+            </li>
+            <li class="info-item">
+              <span>さまざまな決済手段と連携。</span>
+              <br />
+              <span class="special">経費明細が自動で取り込み!</span>
+            </li>
+            <li class="info-item">
+              <span>定期券経路分は自動で控除＆</span>
+              <br />
+              <span class="special">二重申請も自動的にチェック</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section-welcome-info-right-sp sp-only">
+        <img src="/assets/img/concur_expense/macbook_banner.png" />
+        <ul class="info-list">
+          <li class="info-item">
+            <span>月額固定費0円・手数料率は</span>
+            <span class="special">業界最低水準！</span>
+          </li>
+          <li class="info-item">
+            <span>請求から回収業務の督促まで</span>
+            <span class="special">すべて委託！</span>
+          </li>
+          <li class="info-item">
+            <span>最短翌日入金で、</span>
+            <span class="special">キャッシュフローも改善</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="introduction" class="section-primary fadein">
+    <h5 class="ttl-secondary">Concur Expenseとは</h5>
+    <h1 class="ttl-primary">経費精算の「効率化」と「見える化」を実現するクラウドシステムです</h1>
+    <h3 class="description">ビジネスカード、交通系ICカード（Suica、PASMOなど）、ホテル手配やタクシー配車アプリなど <br /> さまざまなサービスと連携。経費明細が自動で Concur
+      Expense に取り込まれるので、 <br />ペーパーレス化はもちろん経費精算を自動化することができます。</h3>
+    <div class="container">
+      <ul class="concur_expense-introduction">
+        <li class="introduction-list-item fullsize">
+          <div class="introduction-list-title">事前申請</div>
+          <div class="introduction-list-content">
+            <div class="introduction-context-txt">事前申請</div>
+            <div class="introduction-context-image">
+              <img src="/assets/img/concur_expense/intro_1_1.png" alt="introduction img 1_1">
+              <img src="/assets/img/concur_expense/intro_1_2.png" alt="introduction img 1_2">
+            </div>
+          </div>
+        </li>
+        <li class="introduction-list-item double-horizontal">
+          <div class="introduction-list-title">入力・電子化</div>
+          <div class="introduction-list-content">
+            <div class="introduction-content-section">
+              <img src="/assets/img/concur_expense/intro_2.png" alt="introduction img 2">
+              <div class="introduction-context-txt">デジタル明細 <br /> →自動連携</div>
+            </div>
+            <div class="introduction-content-section">
+              <img src="/assets/img/concur_expense/intro_3.png" alt="introduction img 3">
+              <div class="introduction-context-txt">紙領収書 <br /> →スキャナ保存/OCR</div>
+            </div>
+          </div>
+        </li>
+        <li class="introduction-list-item double-vertical">
+          <div class="introduction-list-title">承認・ワークフロー</div>
+          <div class="introduction-list-content">
+            <div class="introduction-content-section">
+              <div class="introduction-context-txt">規程自動 <br /> チェック</div>
+              <img src="/assets/img/concur_expense/intro_4.png" alt="introduction img 4">
+            </div>
+            <div class="introduction-content-section">
+              <div class="introduction-context-txt">モバイル <br /> 電子承認</div>
+              <img src="/assets/img/concur_expense/intro_5.png" alt="introduction img 5">
+            </div>
+          </div>
+        </li>
+        <li class="introduction-list-item double-vertical bg-2">
+          <div class="introduction-list-title">管理・分析</div>
+          <div class="introduction-list-content">
+            <div class="introduction-content-section">
+              <div class="introduction-context-txt">予算 <br /> 管理</div>
+              <img src="/assets/img/concur_expense/intro_6.png" alt="introduction img 6">
+            </div>
+            <div class="introduction-content-section">
+              <div class="introduction-context-txt">経費 <br /> の見える化</div>
+              <img src="/assets/img/concur_expense/intro_7.png" alt="introduction img 7">
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section-secondary">
+    <div class="containers">
+      <h4 class="ttl-primary">このようなお悩みをお持ちの企業様向けのサービスです。</h4>
+      <div class="grid-card-containers">
+        <a class="card" href="#worry1">
+          <div class="card-head">現場社員のお悩み</div>
+          <h2 class="ttl-head">手入力の作業や<br> 立替払いが負担</h2>
+          <img src="/assets/img/saison_invoice/worry2.png" alt="work image" class="card-img">
+          <ul class="ttl-normal">
+            <li>{% include 'component/icons/circle-checked.njk' %} 経費精算の入力手作業が大変</li>
+            <li>{% include 'component/icons/circle-checked.njk' %} 利用路線、電車賃を再検索が面倒!</li>
+            <li>{% include 'component/icons/circle-checked.njk' %} 経費精算のためだけに会社に行きたくない</li>
+            <li>{% include 'component/icons/circle-checked.njk' %} 立替払いが負担</li>
+          </ul>
+          <span class="more-btn">{% include 'component/icons/circle-arrow.njk' %}</span>
+        </a>
+
+        <a class="card" href="#worry2">
+          <div class="card-head">経理担当者のお悩み</div>
+          <h2 class="ttl-head">申請内容のチェック・ <br>差し戻しの負荷をなくしたい</h2>
+          <img src="/assets/img/saison_invoice/worry3.png" alt="work image" class="card-img">
+          <ul class="ttl-normal">
+            <li>{% include 'component/icons/circle-checked.njk' %} 社員が経費規程を守ってくれない</li>
+            <li>{% include 'component/icons/circle-checked.njk' %} 差し戻しが多くやりとりが大変</li>
+            <li>{% include 'component/icons/circle-checked.njk' %} 申請内容の目検チェックが不安</li>
+            <li>{% include 'component/icons/circle-checked.njk' %} 紙の原本回収や保管をやめたい</li>
+          </ul>
+          <span class="more-btn">{% include 'component/icons/circle-arrow.njk' %}</span>
+        </a>
+
+        <a class="card" href="#worry3">
+          <div class="card-head">社長のお悩み</div>
+          <h2 class="ttl-head">ブラックボックスになっている<br> 経費支出の全体を把握したい</h2>
+          <img src="/assets/img/cospro/card4.png" alt="work image" class="card-img">
+          <ul class="ttl-normal">
+            <li>{% include 'component/icons/circle-checked.njk' %} 経費の不正支出が心配</li>
+            <li>{% include 'component/icons/circle-checked.njk' %} 支払いを先延ばししたいが、対応策が ない</li>
+            <li>{% include 'component/icons/circle-checked.njk' %} コストを削減したいが、ムダがわからない！</li>
+          </ul>
+          <span class="more-btn">{% include 'component/icons/circle-arrow.njk' %}</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-tertiary fadein">
+    <div class="section-tertiary-container">
+      <h1 class="ttl-primary">Concur Expenseが、経費精算に関するお悩みを解決します。</h1>
+      <div class="act-more">
+        <div class="act-more-tooltip">
+          <h4 class="act-more-tooltip__content">{{"「Concur Expense」の仕組みとメリットが3分でわかる" | safe}}</h4>
+        </div>
+        <div class="act-more-content">
+          <div class="act-more-content-btn">
+            <a href="#" class="blue_gradient_btn small">
+              サービス資料ダウンロード
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="usage" class="section-flow fadein bg-gray">
+    <div class="container">
+      <h4 class="ttl-secondary">ご利用までの流れ</h4>
+      <h2 class="ttl-primary">お申し込み後、2ヵ月～3ヵ月での運用開始が可能です。</h2>
+
+      <ul class="flow-container">
+        <li class="flow-item">
+          <div class="flow-item-detail">
+            <h5 class="ttl-tertiary bold">お問い合わせ</h5>
+            <div class="flow-item-image">
+              <img src="/assets/img/saison_invoice/flow1.png">
+            </div>
+            <p class="flow-item-desc">お問い合わせいただければ、導入にあたっての不安を解消し、貴社の運用フローに合わせた導入方法をご提案いたします。</p>
+          </div>
+        </li>
+        <li class="flow-item">
+          <div class="flow-item-detail">
+            <h5 class="ttl-tertiary bold">必要情報の登録・審査</h5>
+            <div class="flow-item-image">
+              <img src="/assets/img/saison_invoice/flow2.png">
+            </div>
+            <p class="flow-item-desc">お問い合わせいただければ、導入にあたっての不安を解消し、貴社の運用フローに合わせた導入方法をご提案いたします。</p>
+          </div>
+        </li>
+        <li class="flow-item">
+          <div class="flow-item-detail">
+            <h5 class="ttl-tertiary bold">ご利用開始</h5>
+            <div class="flow-item-image">
+              <img src="/assets/img/saison_invoice/flow3.png">
+            </div>
+            <p class="flow-item-desc">お問い合わせいただければ、導入にあたっての不安を解消し、貴社の運用フローに合わせた導入方法をご提案いたします。</p>
+          </div>
+        </li>
+        <li class="flow-item">
+          <div class="flow-item-detail">
+            <h5 class="ttl-tertiary bold">ご利用開始</h5>
+            <div class="flow-item-image">
+              <img src="/assets/img/saison_invoice/flow3.png">
+            </div>
+            <p class="flow-item-desc">お問い合わせいただければ、導入にあたっての不安を解消し、貴社の運用フローに合わせた導入方法をご提案いたします。</p>
+          </div>
+        </li>
+      </ul>
+
+      <div class="section-more">
+        <a href="/contact" class="act-more blue_gradient_btn">
+          <div class="act-more-tooltip">
+            <h4 class="act-more-tooltip__content">{{"貴社の課題に合わせて \n プランなどをご紹介いたします。 \n まずはお気軽にご相談ください。" | safe}}</h4>
+          </div>
+          導入のご相談・お問い合わせはこちら（無料）
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+{% endblock %}

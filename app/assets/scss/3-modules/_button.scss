@@ -1051,7 +1051,7 @@
   }
 }
 
-.orange_more2 {
+.orange_more2, .black_more {
   display: block;
   max-width: 384px;
   color: #fff;
@@ -1152,6 +1152,11 @@
       content: none;
     }
   }
+}
+
+.black_more {
+  max-width: 310px;
+  background: $gradient-bg-2;
 }
 
 .green_btn {
