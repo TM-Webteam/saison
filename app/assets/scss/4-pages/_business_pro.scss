@@ -43,7 +43,7 @@
         font-size: 39px;
       }
     }
-    
+
     &.gold {
       background-image: url("/assets/img/gold_business_pro/gold_business_pro_banner.png");
     }
@@ -247,6 +247,9 @@
       font-size: 32px;
       font-weight: bold;
       line-height: 51px;
+      @media #{$sp} {
+        font-size: 22px;
+      }
     }
 
     .grid-card-containers {
@@ -390,7 +393,7 @@
     }
     @media #{$sp} {
       .ttl-secondary {
-        font-size: 24px;
+        font-size: 22px;
       }
       .card-list {
         grid-template-columns: 1fr;
@@ -432,6 +435,9 @@
       font-size: 32px;
       font-weight: bold;
       line-height: 70px;
+      @media #{$sp} {
+        font-size: 22px;
+      }
     }
 
     .card-contents {
@@ -607,6 +613,10 @@
       font-size: 32px;
       font-weight: bold;
       line-height: 70px;
+
+      @media #{$sp} {
+        font-size: 22px;
+      }
     }
 
     .grid-card-containers {
@@ -628,6 +638,10 @@
         gap: 20px;
         .ttl-quaternary {
           margin-bottom: 10px;
+          font-size: 20px;
+        }
+        .ttl-normal {
+          font-size: 15px;
         }
         .card-img {
           aspect-ratio: 1;
@@ -720,6 +734,12 @@
     max-width: 1200px;
     background: $white-color;
 
+    .ttl-secondary{
+      @media #{$sp} {
+        font-size: 22px;
+      }
+    }
+
     .btn-actions {
       margin-top: 50px;
 
@@ -752,6 +772,9 @@
     .ttl-primary {
       font-size: 32px;
       line-height: 70px;
+      @media #{$sp} {
+        font-size: 22px;
+      }
     }
 
     .container-content {
@@ -841,6 +864,10 @@
     }
     .card-comparison {
       margin-top: 30px;
+
+      .text-muted {
+        font-size: 14px;
+      }
     }
     .contact-us {
       margin-top: 40px;
@@ -875,6 +902,7 @@
 
       @media #{$sp} {
         margin-bottom: 20px;
+        font-size: 22px;
       }
     }
     .grid-card-containers {
@@ -923,6 +951,9 @@
 
       .ttl-quaternary {
         margin-bottom: 0;
+        font-size: 26px;
+        font-family: "Futura";
+        font-weight: 500;
       }
 
       .arrowStep {
