@@ -23,27 +23,27 @@ link: "#top"
 },
 {
 text: "Concur Expenseとは",
-link: "#payment"
+link: "#introduction"
 },
 {
 text: "Concur Expenseの特長",
-link: "#flow-of-usage"
+link: "#feature-concur"
 },
 {
 text: "ご利用者様の声",
-link: "#reason-chosing"
+link: "#user-voice"
 },
 {
 text: "ご利用までの流れ",
-link: "#comment"
+link: "#flow-usage"
 },
 {
 text: "ご利用料金",
-link: "#faq"
+link: "#usage-fee"
 },
 {
 text: "よくある質問",
-link: "#material"
+link: "#faq"
 },
 {
 text: "資料・お問い合わせ",
@@ -194,7 +194,7 @@ link: "#material"
     </div>
   </section>
 
-  <section class="section-secondary">
+  <section id="user-voice" class="section-secondary fadein">
     <div class="containers">
       <h4 class="ttl-primary">このようなお悩みをお持ちの企業様向けのサービスです。</h4>
       <div class="grid-card-containers">
@@ -210,7 +210,6 @@ link: "#material"
           </ul>
           <span class="more-btn">{% include 'component/icons/circle-arrow.njk' %}</span>
         </a>
-
         <a class="card" href="#worry2">
           <div class="card-head">経理担当者のお悩み</div>
           <h2 class="ttl-head">申請内容のチェック・ <br>差し戻しの負荷をなくしたい</h2>
@@ -223,7 +222,6 @@ link: "#material"
           </ul>
           <span class="more-btn">{% include 'component/icons/circle-arrow.njk' %}</span>
         </a>
-
         <a class="card" href="#worry3">
           <div class="card-head">社長のお悩み</div>
           <h2 class="ttl-head">ブラックボックスになっている<br> 経費支出の全体を把握したい</h2>
@@ -248,7 +246,7 @@ link: "#material"
         </div>
         <div class="act-more-content">
           <div class="act-more-content-btn">
-            <a href="#" class="blue_gradient_btn small">
+            <a href="#" class="blue_gradient_btn">
               サービス資料ダウンロード
             </a>
           </div>
@@ -257,46 +255,148 @@ link: "#material"
     </div>
   </section>
 
-  <section id="usage" class="section-flow fadein bg-gray">
+  <section id="feature-concur" class="section-quaternary fadein">
+    <h4 class="ttl-secondary">Concur Expenseの特長</h4>
+    <h2 class="ttl-primary">経費精算と管理に関わるすべての人のお悩みをまとてめ解決!</h2>
+    <div class="container">
+      <ul class="saison-feature-list">
+        <li id="worry1" class="card-type25">
+          <div class="card-heading">
+            <span class="card-index">現場社員のお悩み</span>
+            <h3 class="card-issue-title">請求・回収業務に人と時間が奪われてしまう</h3>
+          </div>
+          <div class="triangle"></div>
+          <h1 class="card-solution-title"><span>モバイルアプリ・連携サービスで、</span>ムダな時間と業務を削減!</h1>
+          <div class="card-solution-content__text">
+            各種連携により、入力業務を大幅削減できます。OCRアプリで、領収書を撮影すれば金額や取引先がデータ化され、外出先やスキマ時間で申請・承認ができるようになります。
+          </div>
+          <ul class="card-solution-content">
+            <li>
+              <div class="card">
+                <img src="/assets/img/concur_expense/concern_1.png" alt="employee concern 1">
+                <div class="preferential-service-description">
+                  <div class="title">交通系ICカード、ビジネスカー ド、QRコード決済アプリと連携 可能!</div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="card">
+                <img src="/assets/img/concur_expense/concern_2.png" alt="employee concern 2">
+                <div class="preferential-service-description">
+                  <div class="title">OCR、モバイル対応で時間や場所を選ばず経費精算!</div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <li id="worry2" class="card-type25">
+          <div class="card-heading">
+            <span class="card-index">経理担当者のお悩み</span>
+            <h3 class="card-issue-title">申請内容のチェック・差し戻しの負荷をなくしたい</h3>
+          </div>
+          <div class="triangle"></div>
+          <h1 class="card-solution-title">規程に準拠して、<span>自動でチェック＆差し戻し</span></h1>
+          <div class="concur-expense-accountant">
+            <div class="concur-expense-accountant-title">「Concur Expense」が経理担当者に替わってここまで対応</div>
+            <div class="concur-expense-accountant-container">
+              <div class="accountant-section">
+                <div class="accountant-section-title">①申請時</div>
+                <ul class="accountant-section-content">
+                  <li>{% include 'component/icons/circle-checked.njk' %}申請方法のナビゲート</li>
+                  <li>{% include 'component/icons/circle-checked.njk' %}データ連携（正確性担保）</li>
+                  <li>{% include 'component/icons/circle-checked.njk' %}自動で規定チェック</li>
+                </ul>
+              </div>
+              <div class="accountant-section section-2">
+                <div class="accountant-section-title">②承認時</div>
+                <ul class="accountant-section-content">
+                  <li>{% include 'component/icons/circle-checked.njk' %}妥当性判断</li>
+                  <li>{% include 'component/icons/circle-checked.njk' %}承認・非承認の連絡</li>
+                </ul>
+              </div>
+              <div class="accountant-section section-3">
+                <div class="accountant-section-title">③承認後</div>
+                <ul class="accountant-section-content">
+                  <li>{% include 'component/icons/circle-checked.njk' %}事後チェックで異常値を検出</li>
+                  <li>{% include 'component/icons/circle-checked.njk' %}分析機能で集計作業の手間を削減</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li id="worry3" class="card-type25">
+          <div class="card-heading">
+            <span class="card-index">社長のお悩み</span>
+            <h3 class="card-issue-title"><span>ブラックボックスになっている 経費支出の全体を把握したい</span></h3>
+          </div>
+          <div class="triangle"></div>
+          <h1 class="card-solution-title"><span>多様な経費レポート</span>で、経費支出の分析・改善!</h1>
+          <div class="card-solution-content__text">
+            Concur Expense に蓄積されたデータを活用し、すべての経費支出の可視化が可能です。高額の取引先一覧や規程違反の多い従業員一覧など、さまざまな切り口のレポートを作成し、業務改善に役立てることができます。
+          </div>
+          <div class="expense-black-box">
+            <div class="expense-black-box-img">
+              <img src="/assets/img/concur_expense/black_box_1.png" alt="black box 1">
+              <img src="/assets/img/concur_expense/black_box_2.png" alt="black box 2">
+            </div>
+            <div class="expense-black-box-content">
+              <div class="content-title">レポート例</div>
+              <ul class="content-list">
+                <li>月別経費推移</li>
+                <li>交際費の同席者別集計</li>
+                <li>部門別交際費</li>
+                <li>交通費タイプ別の利用推移</li>
+                <li>規定違反者ランキング</li>
+                <li>ルール別違反件数</li>
+                <li>プロジェクト別経費一覧</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <ul>
+    </div>
+  </section>
+
+  <section id="flow-usage" class="section-flow fadein bg-gray">
     <div class="container">
       <h4 class="ttl-secondary">ご利用までの流れ</h4>
       <h2 class="ttl-primary">お申し込み後、2ヵ月～3ヵ月での運用開始が可能です。</h2>
 
       <ul class="flow-container">
-        <li class="flow-item">
+        <li class="flow-item flow-1">
           <div class="flow-item-detail">
-            <h5 class="ttl-tertiary bold">お問い合わせ</h5>
+            <h5 class="ttl-tertiary bold">お問合せ</h5>
             <div class="flow-item-image">
               <img src="/assets/img/saison_invoice/flow1.png">
             </div>
             <p class="flow-item-desc">お問い合わせいただければ、導入にあたっての不安を解消し、貴社の運用フローに合わせた導入方法をご提案いたします。</p>
           </div>
         </li>
-        <li class="flow-item">
+        <li class="flow-item flow-2">
           <div class="flow-item-detail">
             <h5 class="ttl-tertiary bold">必要情報の登録・審査</h5>
             <div class="flow-item-image">
+              <img src="/assets/img/concur_expense/flow_2.png">
+            </div>
+            <p class="flow-item-desc">設定ガイドを見ながら設定に必要な情報を準備します。</p>
+          </div>
+        </li>
+        <li class="flow-item flow-3">
+          <div class="flow-item-detail">
+            <h5 class="ttl-tertiary bold">ご利用開始</h5>
+            <div class="flow-item-image">
+              <img src="/assets/img/concur_expense/flow_3.png">
+            </div>
+            <p class="flow-item-desc">導入担当者がオンラインにて説明し、画面とマニュアルに従って、必要な情報を入力します。</p>
+          </div>
+        </li>
+        <li class="flow-item flow-4">
+          <div class="flow-item-detail">
+            <h5 class="ttl-tertiary bold">ご利用開始</h5>
+            <div class="flow-item-image">
               <img src="/assets/img/saison_invoice/flow2.png">
             </div>
-            <p class="flow-item-desc">お問い合わせいただければ、導入にあたっての不安を解消し、貴社の運用フローに合わせた導入方法をご提案いたします。</p>
-          </div>
-        </li>
-        <li class="flow-item">
-          <div class="flow-item-detail">
-            <h5 class="ttl-tertiary bold">ご利用開始</h5>
-            <div class="flow-item-image">
-              <img src="/assets/img/saison_invoice/flow3.png">
-            </div>
-            <p class="flow-item-desc">お問い合わせいただければ、導入にあたっての不安を解消し、貴社の運用フローに合わせた導入方法をご提案いたします。</p>
-          </div>
-        </li>
-        <li class="flow-item">
-          <div class="flow-item-detail">
-            <h5 class="ttl-tertiary bold">ご利用開始</h5>
-            <div class="flow-item-image">
-              <img src="/assets/img/saison_invoice/flow3.png">
-            </div>
-            <p class="flow-item-desc">お問い合わせいただければ、導入にあたっての不安を解消し、貴社の運用フローに合わせた導入方法をご提案いたします。</p>
+            <p class="flow-item-desc">お使いいただく方々へログイン情報を連絡すればすぐにご利用になれます。</p>
           </div>
         </li>
       </ul>
@@ -304,12 +404,128 @@ link: "#material"
       <div class="section-more">
         <a href="/contact" class="act-more blue_gradient_btn">
           <div class="act-more-tooltip">
-            <h4 class="act-more-tooltip__content">{{"貴社の課題に合わせて \n プランなどをご紹介いたします。 \n まずはお気軽にご相談ください。" | safe}}</h4>
+            <h4 class="act-more-tooltip__content">{{"まずは相談したいという方はお気軽にご連絡下さい！" | safe}}</h4>
           </div>
-          導入のご相談・お問い合わせはこちら（無料）
+          ご相談・お問い合わせ（無料）
         </a>
       </div>
     </div>
+  </section>
+
+  <section id="usage-fee" class="section-usage fadein">
+    <div class="container">
+      <h4 class="ttl-secondary">ご利用料金</h4>
+      <h2 class="ttl-primary">業界最安水準です!</h2>
+    </div>
+
+    <div class="list__wrapper">
+      <div class="containers">
+        <ul class="inherit card-list">
+          <a href="#" class="scene">
+            <h4 class="ttl-quaternary scene-name">導入費用</h4>
+            <p class="scene-cost"><span class="special-1">0</span><span>円〜*</span></p>
+          </a>
+
+          <a href="#" class="scene seagreen">
+            <h4 class="ttl-quaternary scene-name">運用費用</h4>
+            <p class="scene-cost"><span class="special">3万円台〜</span><span>*/月額</span></p>
+          </a>
+        </ul>
+        <div class="text-muted">*Concur Expense Standardプランを50ユーザーでご利用の場合</div>
+      </div>
+    </div>
+
+    <div class="section-more">
+      <a href="#" class="act-more blue_gradient_btn">
+        <div class="act-more-tooltip">
+          <h4 class="act-more-tooltip__content">{{"ご利用したい機能に応じて4つの料金プランをご用意しています。詳しく知りたい方はサービス資料をご覧ください!" | safe}}</h4>
+        </div>
+        サービス資料ダウンロード
+      </a>
+    </div>
+  </section>
+
+  <section id="faq" class="section-question-and-answer fadein">
+    <h5 class="ttl-secondary">FAQ</h5>
+    <h2 class="ttl-primary">よくある質問</h2>
+    <p class="ttl-tertiary">お客様からよくいただくご質問にお答えします。この他にご質問がある方は、<a href="/contact">お問い合わせフォーム</a>より、お気軽にご連絡ください。</br>
+      2営業日以内に担当者からご連絡させて頂きます。
+    </p>
+    <div class="container qa-list">
+      {% for i in range(1, 5) %}
+      <div class="qa">
+        <div class="flex gap20 question-tab">
+          <div class="qa-marker">
+            <h2 class="ttl-secondary">Q</h2>
+          </div>
+          <div class="qa-content">
+            <h3 class="ttl-tertiary">
+              質問内容が入ります。質問内容が入ります。質問内容が入ります。質問内容が入ります。質問内容が入ります。
+            </h3>
+          </div>
+          <button class="qa-button">
+            <span class="svg__plus">{% include 'component/icons/plus.njk' %}</span>
+            <span class="svg__minus">{% include 'component/icons/minus.njk' %}</span>
+          </button>
+        </div>
+        <div class="flex gap20 answer-tab">
+          <div class="qa-marker">
+            <h2 class="ttl-secondary">A</h2>
+          </div>
+          <div class="qa-content">
+            <h3 class="ttl-tertiary">
+              質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。
+            </h3>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    <a href="#" class="bondi_blue_outline_btn">
+      <span class="bondi_blue_outline_btn__tittle">
+        もっと見る
+      </span>
+    </a>
+  </section>
+
+  <section id="material" class="section-contact fadein">
+    <div class="card-type22">
+      <div class="ttl-notice">CONTACT</div>
+      <h3 class="ttl-tertiary">Concur Expenseをご検討中の方へ</h3>
+      <div class="useful-wp container">
+        <div class="containers">
+          <div class="flex jcC gap60">
+            <div href="#" class="card">
+              <summary class="card__box">
+                <div class="card__box--ttl">サービス内容について詳しく知りたい方はこちら</div>
+                <div class="card__box--cont">
+                  <div class="card__box--image">
+                    <img src="/assets/img/payment_com/payment_contact2.png" />
+                  </div>
+                  <div class="card__box--txt">
+                    Concur Expenseのサービス資料をダウンロートできます。フォーム入力後リアルタイムでお送りいたします。
+                  </div>
+                </div>
+                <div><a class="blue_gradient_btn" href="#">サービス資料ダウンロード</a></div>
+              </summary>
+            </div>
+            <div href="#" class="card">
+              <summary class="card__box">
+                <div class="card__box--ttl">営業担当に相談・お問い合わせをしたい方はこちら</div>
+                <div class="card__box--cont">
+                  <div class="card__box--image">
+                    <img src="/assets/img/common/contact_inner2.png" />
+                  </div>
+                  <div class="card__box--txt">
+                    導入にあたってのご相談や、お客様の現状、課題、ご興味にあわせたサービスのご案内をさせていただきます。
+                  </div>
+                </div>
+                <div><a class="blue_gradient_btn" href="/contact/">導入のご相談・お問い合わせ（無料）</a></div>
+              </summary>
+            </div>
+          </div>
+        </div>
+      </div>
   </section>
 </main>
 {% endblock %}

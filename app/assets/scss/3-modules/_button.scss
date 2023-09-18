@@ -1157,6 +1157,10 @@
 .black_more {
   max-width: 310px;
   background: $gradient-bg-2;
+  transition: all .3s;
+  &:hover {
+    background: $gradient-bg-reverse-2;
+  }
 }
 
 .green_btn {
