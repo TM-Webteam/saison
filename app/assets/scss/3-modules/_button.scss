@@ -1051,7 +1051,7 @@
   }
 }
 
-.orange_more2 {
+.orange_more2, .black_more {
   display: block;
   max-width: 384px;
   color: #fff;
@@ -1151,6 +1151,15 @@
     &:before {
       content: none;
     }
+  }
+}
+
+.black_more {
+  max-width: 310px;
+  background: $gradient-bg-2;
+  transition: all .3s;
+  &:hover {
+    background: $gradient-bg-reverse-2;
   }
 }
 
