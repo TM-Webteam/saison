@@ -1,5 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap");
 
+.business_pro_mega_menu {
+  .rbt-list {
+    .rbt-item {
+      &:hover {
+        background: $orange-color;
+      }
+
+      &.active {
+        background: transparent
+          linear-gradient(90deg, $primary-color 0%, $green-color-2 100%) 0% 0%
+          no-repeat padding-box;
+
+        &:hover {
+          background: $orange-color;
+        }
+      }
+    }
+  }
+}
 .business_pro-page {
   .section-welcome {
     background-size: cover;
@@ -9,6 +28,13 @@
 
     &.platinum {
       background-image: url("/assets/img/platinum_business_pro/platinum_business_pro_banner.png");
+    }
+
+    &.cobalt {
+      background-image: url("/assets/img/cobalt_business/banner.png");
+      .banner-containers .banner-left .card-description {
+        font-size: 32px;
+      }
     }
 
     .containers {
@@ -328,6 +354,10 @@
         }
         p {
           font-size: 16px;
+
+          .note {
+            font-size: 14px;
+          }
         }
       }
     }
@@ -379,6 +409,8 @@
 
     .card-contents {
       margin-top: 30px;
+      margin-inline: auto;
+      max-width: 1044px;
     }
     .grid-card-containers {
       display: grid;
@@ -388,6 +420,14 @@
 
       @media #{$sp} {
         margin-bottom: 30px;
+        grid-template-columns: auto;
+        gap: 0;
+      }
+
+      &:last-child {
+        @media #{$sp} {
+          margin-bottom: 0;
+        }
       }
 
       .col-left {
@@ -403,33 +443,24 @@
       .col-right {
         background: #ffffff 0% 0% no-repeat padding-box;
         padding: 30px;
-        height: 140px;
+        height: 100px;
+
+        @media #{$sp} {
+          padding: 15px;
+        }
 
         .ttl-quaternary {
           font-size: 20px;
           margin-bottom: 10px;
+
+          @media #{$sp} {
+            font-size: 16px;
+          }
+
         }
         .normal-text {
           font-size: 14px;
           font-weight: normal;
-        }
-      }
-    }
-
-    @media #{$sp} {
-      .grid-card-containers {
-        grid-template-columns: 1fr 4fr;
-      }
-      .col-left {
-        font-size: 13px !important;
-      }
-      .col-right {
-        height: 250px !important;
-        .ttl-quaternary {
-          font-size: 14px !important;
-        }
-        .normal-text {
-          font-size: 13px !important;
         }
       }
     }
@@ -458,6 +489,7 @@
     }
     .ttl-quaternary {
       font-size: 16px;
+      margin-bottom: 0;
     }
     .ttl-primary {
       width: fit-content;
@@ -468,6 +500,7 @@
       grid-template-columns: 38.5% auto;
       gap: 30px;
       margin-top: 50px;
+      align-items: center;
     }
 
     .content-img {
@@ -486,7 +519,7 @@
         &.img-top {
           position: relative;
           z-index: 10;
-          box-shadow: 3px 3px 2px #00000029;
+          box-shadow: 5px 5px 20px #00000080;
           border: 1px solid #707070;
         }
       }
@@ -538,6 +571,10 @@
   }
 
   .section-septenary {
+    .containers {
+      padding-inline: 15px;
+    }
+
     .ttl-primary {
       font-size: 32px;
       font-weight: bold;
@@ -557,7 +594,7 @@
         box-shadow: 0px 3px 20px #00000029;
         border: 1px solid #f5f5f5;
         border-radius: 3px;
-        padding: 30px 30px 10px 30px;
+        padding: 30px;
         display: grid;
         grid-template-columns: 160px auto;
         gap: 20px;
@@ -596,10 +633,19 @@
   .section-octonary {
     background: #eeeeee;
     text-align: center;
+
+    .containers {
+      padding-inline: 0;
+      @media #{$sp} {
+        padding-inline: 15px;
+      }
+    }
+
     .ttl-primary {
       font-size: 32px;
       font-weight: bold;
       line-height: 70px;
+      margin-bottom: 20px;
     }
 
     .ttl-quaternary {
@@ -691,7 +737,7 @@
         grid-template-columns: 120px 1fr 1fr 1fr;
       }
       @media #{$sp} {
-        width: 800px;
+        width: 1200px;
       }
       .credit-card-img {
         max-width: 210px;
@@ -727,6 +773,10 @@
         display: flex;
         align-items: center;
 
+        &.pl-45 {
+          padding-left: 45px;
+        }
+
         &.aiS {
           align-items: flex-start;
         }
@@ -741,6 +791,10 @@
           width: 248px;
           max-width: 90%;
           padding: 10px;
+
+          &.aiS {
+            margin-left: 15px;
+          }
           .bondi_blue_outline_btn__tittle {
             margin: 0px;
           }
@@ -781,6 +835,10 @@
     background: #eeeeee;
     .containers {
       padding-top: 55px;
+
+      @media #{$sp} {
+        padding-top: 30px;
+      }
     }
     .ttl-primary {
       margin-bottom: -10px;
@@ -799,11 +857,25 @@
       flex-wrap: wrap;
       margin-top: 36px;
       grid-template-columns: repeat(5, 1fr);
+
       @media #{$sp} {
         display: grid;
         grid-template-columns: 1fr;
         gap: 90px;
         justify-content: center;
+      }
+
+      &.four {
+        grid-template-columns: repeat(4, 1fr);
+        max-width: 1044px;
+        margin-inline: auto;
+
+        @media #{$sp} {
+          display: grid;
+          grid-template-columns: 1fr;
+          gap: 90px;
+          justify-content: center;
+        }
       }
     }
     .step {
@@ -858,15 +930,23 @@
         justify-content: center;
         width: 100%;
         margin-top: 20px;
+
         .bondi_blue_btn {
           max-width: 100%;
           padding: 15px 30px;
+          width: 90%;
+          justify-content: center;
         }
       }
     }
 
     .btn-container {
       margin-top: 30px;
+
+      &.small {
+        max-width: 1044px;
+        margin-inline: auto;
+      }
     }
   }
 
