@@ -26,6 +26,11 @@
     padding: 15px 0;
     background-position: center;
 
+    @media #{$sp} {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
     &.platinum {
       background-image: url("/assets/img/platinum_business_pro/platinum_business_pro_banner.png");
     }
@@ -355,6 +360,10 @@
     background: #f5f5f5;
     .containers {
       padding-inline: 0;
+
+      @media #{$sp} {
+        padding: 35px 15px;
+      }
     }
     .ttl-secondary {
       font-size: 32px;
