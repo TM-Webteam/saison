@@ -1,0 +1,566 @@
+{% extends "layout/default.njk" %}
+
+{# Custom SEO tags, leave blank to apply the default values #}
+{% set title = "" %}
+{% set description = "" %}
+{% set keywords = "" %}
+
+{# Page settings and also body class #}
+{% set page = "" %}
+
+{# Custom tags before </head> #}
+{% block customHead %}{% endblock %}
+
+{# Custom tags before </body> #}
+{% block customJs %}{% endblock %}
+
+{# Breadcrumb #}
+{% set breadcrumb = [
+{
+text: "セゾンプラチナ・ビジネス プロ・アメリカン・エキスプレス®・カード",
+link: "#"
+}
+] %}
+
+
+{% set menuSidebar = [
+{
+text: "年会費・入会資格",
+link: "#membership-fee"
+},
+{
+text: "付帯サービス",
+link: "#additional-services"
+},
+{
+text: "カード比較",
+link: "#usage"
+},
+{
+text: "よくある質問",
+link: "#card-comparison"
+},
+{
+text: "お申し込みまでの流れ",
+link: "#faq"
+},
+{
+text: "お申し込み",
+link: "#application-flow"
+}
+] %}
+
+{# Main content #}
+{% block content %}
+{% include 'partial/sidebar.njk' %}
+<main class="business_pro-page">
+  <section id="top" class="section-welcome purchasing_card fadein">
+    <div class="containers">
+      <div class="banner-containers">
+        <div class="banner-left">
+          <div class="title-notice">
+            <h3 class="title-content">
+              法人与信型ビジネスカード
+              {% include 'component/icons/circle-question.njk' %}
+            </h3>
+          </div>
+          <h1 class="ttl-primary">
+            セゾン・アメリカン・エキスプレス®・<br> ビジネス プロ・パーチェシング・カード
+          </h1>
+
+          <div class="card-contents">
+            <div class="card-img">
+              <img src="/assets/img/credit_cards/saison-02.png" alt="Your Image" class="credit-card-img">
+            </div>
+            <div class="card-description">
+              <span>選べる機能で中小企業様の経営をサポート</span>
+              <div class="card-description__options">
+                <div class="option">
+                  <span>0.5％<br />
+                    のキャッシュバック
+                  </span>
+                </div>
+                OR
+                <div class="option">
+                  <span>お支払いを最長84日後・<br />
+                    手数料0円＋0.25% <br/>
+                    のキャッシュバック
+                  </span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="banner-btn">
+            <a class="banner-btn__option blue_gradient_btn" href="#">お申し込みはこちら</a>
+            <a class="banner-btn__option bondi_blue_outline_btn" href="#">お問い合わせはこちら</a>
+          </div>
+
+        </div>
+        <div class="banner-right pc-only">
+          効率化とコスト削減を
+          <br /> 目指すなら
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-tertiary fadein">
+    <div class="containers">
+      <h2 class="ttl-primary">選べる2つの特典</h2>
+
+      <div class="grid-card-containers or">
+        <div class="card-item">
+          <a class="card or">
+            <div class="card-head">キッシュバックサービス</div>
+            <div class="card-content">
+              <div>支払い金額の<span class="percent blue-text">0.5％</span>をキャッシュバック</div>
+            </div>
+          </a>
+          <p class="card-description">カードでお支払いいただくだけで、毎日の業務にかかわる費用はもちろん、公共料金や税金の支払い、広告費や資材購入費など経費の支払いが自動的にキャッシュバックされます。
+          </p>
+        </div>
+        <div class="card-item">
+          <a class="card">
+            <div class="card-head">お支払い１ヵ月スキップ払い</div>
+            <div class="card-content">
+              <div>お支払いを最長<span class="percent blue-text">84</span>日後・手数料<span class="percent blue-text">0</span>円<br/>
+                <span class="percent blue-text">0.25%</span>のキャッシュバック
+              </div>
+            </div>
+          </a>
+          <p class="card-description">カードご利用からお支払日まで最大84日間のお支払猶予があるため、支払いサイトと入金サイトの課題解決をサポート。さらに支払い額の0.25％がキャッシュバックされ、社用資金の効率的な運用が可能となります。
+          </p>
+        </div>
+      </div>
+
+      <p class="card-note">※「1％のキャッシュバック」と「最長84日間の支払いサイトのサービス」はご選択型のサービスです。</p>
+    </div>
+  </section>
+
+  <section class="section-secondary fadein">
+    <div class="containers">
+      <h2 class="ttl-secondary">中小企業の皆様にうれしいビジネス機能が充実</h2>
+
+      <ul class="card-list">
+        <li class="card">
+          <h2>経費管理業務も削減</h2>
+          <div class="grid__card--img"><img src="/assets/img/business_pro/business_pro1.png" alt="work image"></div>
+          <p><strong>最長15ヵ月分のご利用明細をWEB上でご確認</strong>いただけます。明細データはPDFやCSVでダウンロード可能。お支払い時の詳細が記 載されているので、精算事務作業を大幅に軽減できます。</p>
+        </li>
+        <li class="card">
+          <h2>柔軟なご利用枠</h2>
+          <div class="grid__card--img"><img src="/assets/img/business_pro/business_pro2.png" alt="work image"></div>
+          <p>ビジネスに対応する<strong>ゆとりのご利用可能</strong>枠で、従業員の皆様のご利用をサポート。<br/><strong>「仮払い」</strong>や<strong>「立替払い」が不要</strong>になり、従業員の皆様の事務の手間が軽減されます。
+          </p>
+        </li>
+        <li class="card">
+          <h2>不正利用リスクを軽減</h2>
+          <div class="grid__card--img"><img src="/assets/img/business_pro/purchasing_card_3.png" alt="work image"></div>
+          <p>プラスチックカードを発行しないため※1、紛失盗難等による<strong>不正利用のリスクを軽減</strong>できます。また、利用可能な加盟店や決済先を制限することで、さらにリスクを低減することができます※2。 <br/>
+            <span class="note">※1 カード番号は通知書にてお知らせします。<br/></span>
+            <span class="note">※2 ご入会後のお手続きです。</span>
+          </p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section-quaternary fadein">
+    <div class="containers">
+
+      <h2 class="ttl-primary">登記簿や決算書の提出は不要です！</h2>
+      <h4 class="ttl-tertiary">登記簿や決算書といった業務内容や実績を示す書類の提出が不要です。<br>
+        <strong>書類郵送に取られる期間がなくなるため、発行までにかかる期間の短縮ができます。</strong>
+      </h4>
+      <div>
+        <a href="" class="blue_gradient_btn">お申し込みはこちら</a>
+      </div>
+      <p class="note">※申込み時にフォームにて、決算内容の入力は必要です。決算内容がわかるもののご用意をお願いいたします。</p>
+    </div>
+  </section>
+
+  <section id="membership-fee" class="section-quinary fadein">
+    <div class="containers">
+      <h2 class="ttl-primary">年会費・入会資格</h2>
+
+      <div class="card-contents">
+        <div class="grid-card-containers">
+          <div class="col-left">
+            年会費
+          </div>
+          <div class="col-right">
+            <div class="ttl-quaternary">11,000円（税込）   追加カード年会費：1,100円（税込）</div>
+            <div class="ttl-quaternary normal-text">年会費は会計上経費として計上可能です。詳しくは税理士等にご確認ください。</div>
+          </div>
+        </div>
+
+        <div class="grid-card-containers">
+          <div class="col-left">
+            入会資格
+          </div>
+          <div class="col-right">
+            <div class="ttl-quaternary">法人代表者（未成年を除く）</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-senary fadein">
+    <div class="containers">
+      <h3 class="ttl-tertiary">DOCUMENTS</h3>
+      <h1 class="ttl-quaternary">ビジネスカードを検討しているなら、知らないともったいない！</h1>
+      <h4 class="ttl-primary"><span class="blue-bottom">「ビジネスカードの🉐活用ガイド」</span></h4>
+
+      <div class="senary-content">
+        <div class="content-img">
+          <img src="/assets/img/business_card_creation/business_card _usage_guide.png" alt="work image" class="img-top">
+        </div>
+        <div class="content-detail">
+          <div class="content-head">ビジネスカードのメリットを使い倒すためのオトクな活用方法をまるっと紹介！</div>
+          <p>
+            ビジネスカードが役立つ場面はたくさんありますが、多くの場合においてそのメリットや特典を使いこなしていないケースもあります。本資料では、ビジネスカードのメリットや特典を使い倒すために具体的な使い方や活用シーンを紹介しています。これからビジネスカードを利用したいという方は参考にしてみてください。
+          </p>
+        </div>
+      </div>
+
+      <div class="btn-container">
+        <a class="blue_gradient_btn" href="#">資料ダウンロード（無料）</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="card-comparison" class="section-card-info fadein">
+    <div class="containers">
+      <h4 class="ttl-primary">カード比較</h4>
+
+      <div class="scroll container-content">
+        <div class="card-row three card-row-1">
+          <div class="card-type">
+            <div></div>
+          </div>
+          <div class="card-type card-type-0">
+            <div>
+              <div class="ttl-quinary">セゾンプラチナ・ビジネス プロ・アメリカ<br />ン・エキスプレス®・カード</div>
+              <img src="/assets/img/credit_cards/saison-03.png" alt="amex-pro" class="credit-card-img">
+            </div>
+          </div>
+          <div class="card-type card-type-1">
+            <div>
+              <div class="ttl-quinary">セゾンゴールド・<br />ビジネス プロ・カード</div>
+              <img src="/assets/img/credit_cards/saison-01.png" alt="saison" class="credit-card-img">
+            </div>
+          </div>
+          <div class="card-type card-type-1">
+            <div>
+              <div class="ttl-quinary">セゾン・アメリカン・エキスプレス®・<br />ビジネス プロ・パーチェシング・カード</div>
+              <img src="/assets/img/credit_cards/saison-02.png" alt="purchasing" class="credit-card-img">
+            </div>
+          </div>
+        </div>
+        <div class="card-row three card-row-2">
+          <div class="title-col item-1">
+            <div>特長</div>
+          </div>
+          <div class="">
+            <div class="content-col aiS">
+              <ul>
+                <li>プラチナカード</li>
+                <li>キャッシュバック率 1％※1</li>
+                <li>支払いサイト 最長84日間※1</li>
+                <li>海外最高1億円、国内最高5,000万円の<br />旅行傷害保険</li>
+              </ul>
+            </div>
+          </div>
+          <div class="">
+            <div class="content-col aiS">
+              <ul>
+                <li>ゴールドカード</li>
+                <li>キャッシュバック率 0.5％※1</li>
+                <li>支払いサイト 最長84日間※1</li>
+                <li>海外最高5,000万円、国内最高5,000万円の旅行傷害保険</li>
+              </ul>
+            </div>
+          </div>
+          <div class="">
+            <div class="content-col aiS">
+              <ul>
+                <li>カードの発行なし</li>
+                <li>キャッシュバック率 0.5％※1</li>
+                <li>支払いサイト 最長84日間</li>
+                <li>＋キャッシュバック率0.25％※1</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="card-row three card-row-3">
+          <div class="title-col">
+            <div>代表者 <br> 年会費</div>
+          </div>
+          <div class="">
+            <div class="content-col height-80">
+              <div class="normal-text">
+                27,500円（税込）
+              </div>
+            </div>
+          </div>
+          <div class="">
+            <div class="content-col height-80">
+              <div class="normal-text">
+                3,300円（税込）
+              </div>
+            </div>
+          </div>
+          <div class="">
+            <div class="content-col height-80">
+              <div class="normal-text">
+                11,000円（税込）
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-row three card-row-4">
+          <div class="title-col">
+            <div>追加カード <br> 年会費</div>
+          </div>
+          <div class="first-column">
+            <div class="content-col height-80">
+              <div class="normal-text">
+                3,300円（税込）
+              </div>
+            </div>
+          </div>
+          <div class="second-column">
+            <div class="content-col height-80">
+              <div class="normal-text">
+                1,100円（税込）
+              </div>
+            </div>
+          </div>
+          <div class="third-column">
+            <div class="content-col height-80">
+              <div class="normal-text">
+                1,100円（税込）
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-row three card-row-5">
+          <div class="title-col">
+            <div>追加カード <br> 年会費</div>
+          </div>
+          <div class="first-column">
+            <div class="content-col height-80">
+              <div class="normal-text">
+                100枚（代表者カード含）
+              </div>
+            </div>
+          </div>
+          <div class="second-column">
+            <div class="content-col height-80">
+              <div class="normal-text">
+                100枚（代表者カード含）
+              </div>
+            </div>
+          </div>
+          <div class="third-column">
+            <div class="content-col height-80">
+              <div class="normal-text">
+                100枚（代表者カード含）
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-row three card-row-6">
+          <div class="title-col">
+            <div>申し込み <br> 資格</div>
+          </div>
+          <div class="first-column">
+            <div class="content-col height-80">
+              <div class="normal-text">
+                中小規模法人代表者（未成年者除く）
+              </div>
+            </div>
+          </div>
+          <div class="second-column">
+            <div class="content-col height-80">
+              <div class="normal-text">
+                個人事業主またはフリーランス、経営者の方（高校生除く）
+              </div>
+            </div>
+          </div>
+          <div class="third-column">
+            <div class="content-col height-80">
+              <div class="normal-text">
+                個人事業主またはフリーランス、経営者の方（高校生除く）
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-row three card-row-7">
+          <div class="title-col">
+            <div>MORE</div>
+          </div>
+          <div class="first-column">
+            <div class="content-col direction-col aiS">
+              <ul>
+                <li>プラチナ会員専用デスク</li>
+                <li>AMEXセンチュリオンデザイン採用</li>
+                <li>通常429米ドルのプライオリティパスを代表者様は無料でご登録可能</li>
+              </ul>
+              <a href="#" class="bondi_blue_outline_btn">
+                <span class="bondi_blue_outline_btn__tittle">詳細はこちら</span>
+              </a>
+            </div>
+          </div>
+          <div class="second-column">
+            <div class="content-col direction-col aiS">
+              <ul>
+                <li>国内ラウンジサービス</li>
+              </ul>
+              <a href="#" class="bondi_blue_outline_btn">
+                <span class="bondi_blue_outline_btn__tittle">詳細はこちら</span>
+              </a>
+            </div>
+          </div>
+          <div class="third-column">
+            <div class="content-col direction-col aiS">
+              <ul>
+                <li>部署名・費用項目名での発番可能 </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-comparison">
+        <p class="text-muted">※1：サービスはカードごとに選択いただくサービスとなります。</p>
+        <p class="text-muted">※上記一覧は概要となります。詳しくはサービス記載項目をご確認ください。</p>
+      </div>
+
+      <div class="contact-us">
+        <p>「どのビジネスカードがよいかわからない」という方はお気軽にご相談下さい。<br />
+          担当者がカード選びをサポートさせていただきます。
+        </p>
+
+        <a href="#" class="bondi_blue_btn more btn-contact">お問い合わせはこちら</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" class="section-question-and-answer fadein">
+    <h5 class="ttl-sub">FAQ</h5>
+    <h2 class="ttl-secondary">よくある質問</h2>
+    {% for i in range(1, 5) %}
+    <div class="qa">
+      <div class="flex gap20 question-tab">
+        <div class="qa-marker">
+          <h2 class="ttl-secondary">Q</h2>
+        </div>
+        <div class="qa-content">
+          <h3 class="ttl-tertiary">
+            質問内容が入ります。質問内容が入ります。質問内容が入ります。質問内容が入ります。質問内容が入ります。
+          </h3>
+        </div>
+        <button class="qa-button">
+          <span class="svg__plus">{% include 'component/icons/plus.njk' %}</span>
+          <span class="svg__minus">{% include 'component/icons/minus.njk' %}</span>
+        </button>
+      </div>
+      <div class="flex gap20 answer-tab">
+        <div class="qa-marker">
+          <h2 class="ttl-secondary">A</h2>
+        </div>
+        <div class="qa-content">
+          <h3 class="ttl-tertiary">
+            質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。
+          </h3>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+
+    <div class="btn-actions">
+      <a href="#" class="btn bondi_blue_outline_btn">もっと見る</a>
+      <a href="#" class="btn bondi_blue_btn more btn-other-question">その他のご質問をしたい方はこちら</a>
+    </div>
+
+  </section>
+
+  <section id="application-flow" class="section-application-flow fadein">
+    <div class="containers">
+      <div class="ttl-primary">お申し込みまでの流れ</div>
+
+      <div class="grid-card-containers">
+        <div class="step">
+          <div class="ttl-quaternary">STEP 1</div>
+          <div class="svg-step">
+            {% include "component/icons/step1.njk" %}
+          </div>
+          <div class="ttl-quinary">Webから <br /> 簡単お申し込み</div>
+          <div class="arrowStep"> {% include "component/icons/arrowStep.njk" %}</div>
+        </div>
+
+
+        <div class="step">
+          <div class="ttl-quaternary">STEP 2</div>
+          <div class="svg-step">
+            {% include "component/icons/step2.njk" %}
+          </div>
+          <div class="ttl-quinary">契約確認書類の <br /> 受領</div>
+          <div class="arrowStep"> {% include "component/icons/arrowStep.njk" %}</div>
+        </div>
+
+
+        <div class="step">
+          <div class="ttl-quaternary">STEP 3</div>
+          <div class="svg-step">
+            {% include "component/icons/step3.njk" %}
+          </div>
+          <div class="ttl-quinary">審査結果の <br /> ご案内</div>
+          <div class="arrowStep"> {% include "component/icons/arrowStep.njk" %}</div>
+        </div>
+
+
+        <div class="step">
+          <div class="ttl-quaternary">STEP 4</div>
+          <div class="svg-step">
+            {% include "component/icons/step4.njk" %}
+          </div>
+          <div class="ttl-quinary">郵送で <br /> カードお受け取り</div>
+          <div class="arrowStep"> {% include "component/icons/arrowStep.njk" %}</div>
+        </div>
+
+
+        <div class="step">
+          <div class="ttl-quaternary">STEP 5</div>
+          <div class="svg-step">
+            {% include "component/icons/step5.njk" %}
+          </div>
+          <div class="ttl-quinary">カードと一緒に届く <br /> 口座設定用紙を返送</div>
+        </div>
+      </div>
+
+      <div class="btn-container">
+        <span class="bondi_blue_btn">
+          お申し込みはこちら
+          <svg xmlns="http://www.w3.org/2000/svg" width="15.095" height="15.095" viewBox="0 0 15.095 15.095">
+            <path id="Path_44704" data-name="Path 44704" d="M9.674,0V9.674H0" transform="translate(0 7.548) rotate(-45)"
+              fill="none" stroke="#fff" stroke-width="2" />
+          </svg>
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-subinfo">
+    <div class="sub-infos">
+      <div class="containers">
+        ※「アメリカン・エキスプレス」は、アメリカン・エキスプレスの登録商標です。(株)クレディセゾンは、アメリカン・エキスプレスのライセンスに基づき使用しています。
+      </div>
+    </div>
+  </section>
+</main>
+{% endblock %}
