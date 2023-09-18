@@ -43,6 +43,10 @@
         font-size: 39px;
       }
     }
+    
+    &.gold {
+      background-image: url("/assets/img/gold_business_pro/gold_business_pro_banner.png");
+    }
 
     .containers {
       padding-right: 0;
@@ -52,6 +56,12 @@
     .banner-containers {
       display: flex;
       justify-content: space-between;
+
+      &.gold {
+        @media #{$sp} {
+          display: block;
+        }
+      }
       .banner-left {
         .title-notice {
           position: relative;
@@ -475,7 +485,6 @@
           @media #{$sp} {
             font-size: 16px;
           }
-
         }
         .normal-text {
           font-size: 14px;
