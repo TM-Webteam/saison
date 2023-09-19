@@ -37,6 +37,7 @@
       margin-bottom: 40px;
       @media #{$sp} {
         margin-bottom: 30px;
+        text-align: left;
       }
     }
     .ttl-category {
@@ -86,7 +87,7 @@
       height: 100%;
       border-radius: inherit;
       overflow: hidden;
-      background: $primary-color;
+      background: #99cb2b;
 
       img {
         position: static;
@@ -160,10 +161,15 @@
           text-align: left;
           margin-bottom: 20px;
           text-shadow: 0px 0px 20px #05172c8d;
+
+          @media #{$sp} {
+            font-size: 30px;
+            line-height: 1.75;
+          }
         }
         .ttl-tertiary {
           font-size: 24px;
-          font-weight: 400;
+          font-weight: 500;
           color: $white-color;
           margin-bottom: 105px;
           text-align: left;
@@ -171,8 +177,11 @@
           text-shadow: 0px 0px 20px #05172c8d;
 
           @media #{$sp} {
-            font-size: 20px;
+            font-size: 16px;
+            line-height: 1.75;
             text-align: center;
+            margin-bottom: 30px;
+            padding-inline: 15px;
           }
 
           .special {
@@ -180,18 +189,17 @@
             text-shadow: 0px 0px 20px #05172c8d;
           }
         }
-        .btn-action {
-          display: inline-flex;
-          gap: 20px;
+        .section-welcome__act {
           .act-more {
             font-weight: 500;
-            margin: auto;
+            margin-left: 0;
             position: relative;
             padding: 14px 64px 14px 48px;
             white-space: nowrap;
+            max-width: 310px;
 
             @media #{$sp} {
-              max-width: unset;
+              margin: auto;
             }
 
             &-tooltip {
@@ -246,6 +254,11 @@
         position: relative;
         width: 772px;
         height: 405px;
+        @media #{$sp} {
+          width: 100%;
+          height: unset;
+        }
+
         img {
           width: 100%;
           height: 100%;
@@ -255,6 +268,12 @@
           position: absolute;
           bottom: -50px;
           right: 40px;
+
+          @media #{$sp} {
+            position: unset;
+            margin-top: 30px;
+          }
+
           li {
             max-width: 440px;
             text-align: left;
@@ -265,10 +284,22 @@
             padding: 10px 20px;
             border-radius: 3px;
             margin-bottom: 10px;
+
+            @media #{$sp} {
+              font-size: 14px;
+              margin-bottom: 10px;
+              text-align: left;
+              margin-inline: auto;
+              width: 85%;
+            }
+
+            .special {
+              font-size: 24px;
+              @media #{$sp} {
+                font-size: 14px;
+              }
+            }
           }
-        }
-        @media #{$sp} {
-          width: 100%;
         }
       }
       @media #{$sp} {
@@ -322,7 +353,8 @@
     .ttl-primary {
       font-size: 32px;
       @media #{$sp} {
-        font-size: 22px;
+        font-size: 20px;
+        line-height: 1.75;
         margin-bottom: 20px;
       }
     }
@@ -330,7 +362,6 @@
     .ttl-quaternary {
       font-size: 20px;
       margin: 0;
-      text-align: center;
       margin-bottom: 30px;
 
       @media #{$sp} {
@@ -404,7 +435,7 @@
           box-shadow: 0px 3px 20px #0000001c;
           margin: 60px auto 50px;
           transition: all 0.3s;
-          a {
+          .content {
             width: 100%;
             padding: 35px 30px;
 
@@ -437,9 +468,13 @@
               }
             }
           }
-          &:hover {
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+          .ttl-quaternary {
+            @media #{$sp} {
+              font-size: 16px;
+              line-height: 1.75;
+            }
           }
+
           @media #{$sp} {
             margin: 30px auto 20px;
           }
@@ -473,6 +508,10 @@
             text-align: left;
             .ttl-quinary {
               margin-bottom: 10px;
+              @media #{$sp} {
+                font-size: 14px;
+                line-height: 1.75;
+              }
             }
 
             .ttl-quaternary {
@@ -830,7 +869,7 @@
               }
               @media #{$sp} {
                 gap: 10px;
-                padding: 15px;
+                padding: 15px 10px;
               }
             }
             &:hover {
@@ -860,13 +899,23 @@
             font-size: 20px;
             font-weight: bold;
             color: $primary-color;
+            @media #{$sp} {
+              font-size: 16px;
+              line-height: 1.75;
+            }
           }
           .muted {
             font-size: 15px;
+            @media #{$sp} {
+              font-size: 14px;
+            }
           }
           .special {
             font-size: 23px;
             font-weight: bold;
+            @media #{$sp} {
+              font-size: 20px;
+            }
           }
         }
       }
@@ -886,6 +935,12 @@
     .ttl-tertiary {
       line-height: 28px;
     }
+    .ttl-quaternary {
+      @media #{$sp} {
+        font-size: 16px;
+      }
+    }
+
     .flow-container {
       display: grid;
       grid-template-columns: 35% 35% 30%;
@@ -994,7 +1049,7 @@
           transform: translateX(-50%);
 
           @media #{$sp} {
-            top: -90px;
+            top: -70px;
           }
 
           &__content {
@@ -1015,6 +1070,7 @@
 
             @media #{$sp} {
               white-space: pre;
+              font-size: 14px;
             }
 
             &::before {
@@ -1061,6 +1117,7 @@
 
       @media #{$sp} {
         font-size: 16px;
+        text-align: left;
       }
     }
 
@@ -1183,8 +1240,6 @@
 
   .section-contact {
     .ttl-notice {
-      font-family: "Futura";
-      margin-bottom: 0;
       color: $white-color;
     }
 
@@ -1195,17 +1250,14 @@
       flex-direction: column;
 
       .blue_gradient_btn {
-        padding: 12px 20px;
-        font-size: 18px;
+        @media #{$pc} {
+          padding: 12px 20px;
+          font-size: 18px;
+        }
       }
 
       @media #{$sp} {
         padding: 30px 15px;
-      }
-
-      .card__box--ttl {
-        font-size: 20px;
-        margin-bottom: 30px;
       }
 
       .card__box--cont {
