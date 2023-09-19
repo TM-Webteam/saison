@@ -61,7 +61,7 @@ link: "#material"
 <main class="payment_com-page">
   <section id="top" class="section-welcome fadein">
     <div class="section-welcome__banner">
-      <img class="pc-only" src="/assets/img/common/banner_service.png"/>
+      <img class="pc-only" src="/assets/img/common/banner_service.png" />
     </div>
 
     <div class="section-welcome-container">
@@ -223,7 +223,7 @@ link: "#material"
               </div>
             </div>
           </div>
-          <div  class="card">
+          <div class="card">
             <div class="card-title">
               <div class="step-no">STEP02</div>
               <div class="step-title">支払い.comが代わりに振込</div>
@@ -252,7 +252,7 @@ link: "#material"
           </div>
         </div>
         <div class="information">
-          <span class="primary-txt">振込名義は自由に指定OK</span> <br class="sp-only"/> 　お客様の名前で振り込みできるので、支払先へは利用を知られません
+          <span class="primary-txt">振込名義は自由に指定OK</span> <br class="sp-only" /> 　お客様の名前で振り込みできるので、支払先へは利用を知られません
         </div>
         <div>
           <a href="https://shi-harai.com/signup/" target="_blank" class="act-more blue_gradient_btn">
@@ -306,7 +306,7 @@ link: "#material"
           <h4 class="ttl-primary_note">※1 2023年6月現在時点の導入企業数です。</h4>
         </div>
       </div>
-      </div>
+    </div>
     </div>
   </section>
 
@@ -317,14 +317,14 @@ link: "#material"
       <div class="containers">
         <ul class="inherit card-list">
           {% for comment in payment_page.voice.comments %}
-            <div class="card-type10">
-              <h5 class="ttl-quinary">
-                {{ comment.title }}
-              </h5>
-              <h6 class="ttl-senary">
-                {{ comment.content | safe}}
-              </h6>
-            </div>
+          <div class="card-type10">
+            <h5 class="ttl-quinary">
+              {{ comment.title }}
+            </h5>
+            <h6 class="ttl-senary">
+              {{ comment.content | safe}}
+            </h6>
+          </div>
           {% endfor %}
         </ul>
       </div>
@@ -342,32 +342,32 @@ link: "#material"
       </span>
       <ul class="section-question-and-answer__list">
         {% for i in range(1, 5) %}
-          <li class="qa">
-            <div class="flex gap20 question-tab">
-              <div class="qa-marker">
-                <h2 class="ttl-secondary">Q</h2>
-              </div>
-              <div class="qa-content">
-                <h3 class="ttl-tertiary">
-                  質問内容が入ります。質問内容が入ります。質問内容が入ります。質問内容が入ります。質問内容が入ります。
-                </h3>
-              </div>
-              <button class="qa-button">
-                <span class="svg__plus">{% include 'component/icons/plus.njk' %}</span>
-                <span class="svg__minus">{% include 'component/icons/minus.njk' %}</span>
-              </button>
+        <li class="qa">
+          <div class="flex gap20 question-tab">
+            <div class="qa-marker">
+              <h2 class="ttl-secondary">Q</h2>
             </div>
-            <div class="flex gap20 answer-tab">
-              <div class="qa-marker">
-                <h2 class="ttl-secondary">A</h2>
-              </div>
-              <div class="qa-content">
-                <h3 class="ttl-tertiary">
-                  質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。
-                </h3>
-              </div>
+            <div class="qa-content">
+              <h3 class="ttl-tertiary">
+                質問内容が入ります。質問内容が入ります。質問内容が入ります。質問内容が入ります。質問内容が入ります。
+              </h3>
             </div>
-          </li>
+            <button class="qa-button">
+              <span class="svg__plus">{% include 'component/icons/plus.njk' %}</span>
+              <span class="svg__minus">{% include 'component/icons/minus.njk' %}</span>
+            </button>
+          </div>
+          <div class="flex gap20 answer-tab">
+            <div class="qa-marker">
+              <h2 class="ttl-secondary">A</h2>
+            </div>
+            <div class="qa-content">
+              <h3 class="ttl-tertiary">
+                質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。
+              </h3>
+            </div>
+          </div>
+        </li>
         {% endfor %}
       </ul>
       {# <a href="/contact" class="faq_more bondi_blue_outline_btn">
@@ -390,32 +390,35 @@ link: "#material"
                 <div class="card__box--ttl">サービス内容について詳しく知りたい方はこちら</div>
                 <div class="card__box--cont">
                   <div class="card__box--image">
-                    <img src="/assets/img/payment_com/payment_contact1.png"/>
+                    <img src="/assets/img/payment_com/payment_contact1.png" />
                   </div>
                   <div class="card__box--txt">
                     支払い.comのサービス資料をダウンロートできます。フォーム入力後リアルタイムでお送りいたします。
                   </div>
                 </div>
-                <div><a href="https://shi-harai.com/signup/" class="blue_gradient_btn" target="_blank">サービス資料ダウンロード</a></div>
+                <div><a href="https://shi-harai.com/signup/" class="blue_gradient_btn" target="_blank">サービス資料ダウンロード</a>
+                </div>
               </summary>
-          </div>
-          <div href="#" class="card">
-            <summary class="card__box">
-              <div class="card__box--ttl">利用イメージを知りたい方はこちら</div>
-              <div class="card__box--cont">
+            </div>
+            <div href="#" class="card">
+              <summary class="card__box">
+                <div class="card__box--ttl">利用イメージを知りたい方はこちら</div>
+                <div class="card__box--cont">
                   <div class="card__box--image">
-                    <img src="/assets/img/payment_com/payment_contact2.png"/>
+                    <img src="/assets/img/payment_com/payment_contact2.png" />
                   </div>
                   <div class="card__box--txt">
-                    支払い.comのサービス資料をダウンロートできます。フォーム入力後リアルタイムでお送りいたします。
+                    <strong>Web</strong>から無料登録してすぐにお試しいただけます。
+                    面倒な面談や、書類提出は必要ありません。
                   </div>
                 </div>
-              <div><a href="https://shi-harai.com/signup/" target="_blank" class="blue_gradient_btn" href="#">今すぐ無料で登録</a></div>
-            </summary>
+                <div><a href="https://shi-harai.com/signup/" target="_blank" class="blue_gradient_btn"
+                    href="#">今すぐ無料で登録</a></div>
+              </summary>
+            </div>
           </div>
         </div>
       </div>
-    </div>
   </section>
 </main>
 {% endblock %}

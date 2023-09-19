@@ -427,6 +427,10 @@
       font-size: 20px;
       font-weight: 700;
       border-bottom: none;
+
+      @media #{$sp} {
+        line-height: 51px;
+      }
     }
 
     .tooltip-container {
