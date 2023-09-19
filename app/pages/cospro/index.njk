@@ -16,43 +16,43 @@
 
 {# Breadcrumb #}
 {% set breadcrumb = [
-  {
-    text: "CosPro",
-    link: "#"
-  }
+{
+text: "CosPro",
+link: "#"
+}
 ] %}
 
 
 {% set menuSidebar = [
-  {
-  text: "TOP",
-  link: "#top"
-  },
-  {
-  text: "CosProとは",
-  link: "#cospro-index"
-  },
-  {
-  text: "CosProの特長",
-  link: "#cospro-feature"
-  },
-  {
-  text: "法人カード会員特典",
-  link: "#membership"
-  },
-  {
-  text: "ご利用までの流れ",
-  link: "#flow-usage"
-  },
-  {
-  text: "よくある質問",
-  link: "#faq"
-  },
-  {
-  text: "資料・お問い合わせ",
-  link: "#contact"
-  }
-  ] %}
+{
+text: "TOP",
+link: "#top"
+},
+{
+text: "CosProとは",
+link: "#cospro-index"
+},
+{
+text: "CosProの特長",
+link: "#cospro-feature"
+},
+{
+text: "法人カード会員特典",
+link: "#membership"
+},
+{
+text: "ご利用までの流れ",
+link: "#flow-usage"
+},
+{
+text: "よくある質問",
+link: "#faq"
+},
+{
+text: "資料・お問い合わせ",
+link: "#contact"
+}
+] %}
 
 {# Main content #}
 {% block content %}
@@ -62,7 +62,7 @@
 <main class="cospro-page">
   <section id="top" class="section-welcome fadein">
     <div class="section-welcome__banner">
-      <img src="/assets/img/common/banner_cospro.png"/>
+      <img class="pc-only" src="/assets/img/common/banner_cospro.png" />
     </div>
 
     <div class="section-welcome-info">
@@ -79,7 +79,7 @@
         </div>
         <div class="section-welcome__act">
           <a href="#" class="act-more orange_more2">
-            <div class="act-more-tooltip">
+            <div class="act-more-tooltip pc-only">
               <h4 class="act-more-tooltip__content">CosProの仕組みとメリットが3分でわかる!</h4>
             </div>
             資料ダウンロード
@@ -89,7 +89,7 @@
 
       <div class="section-welcome-info-right">
         <div class="section-welcome-right__img">
-          <img src="/assets/img/cospro/travel.png"/>
+          <img class="pc-only" src="/assets/img/cospro/travel.png" />
 
           <div class="content-absolute">
             <div>初期費用・ランニングコスト無料!</div>
@@ -155,7 +155,7 @@
           <span class="more-btn">{% include 'component/icons/circle-arrow.njk' %}</span>
         </a>
 
-        <a class="card"  href="#worry3">
+        <a class="card" href="#worry3">
           <div class="card-head">お悩み３</div>
           <h2 class="ttl-head">出張手配のルールがない。<br> ガバナンスが不安・・・</h2>
           <img src="/assets/img/cospro/card6.png" alt="work image" class="card-img">
@@ -177,7 +177,7 @@
       <div class="tooltip-container">
         「CosPro」の仕組みとメリットが3分でわかる!
       </div>
-      
+
       <div class="act-more-content">
         <div class="act-more-content-btn">
           <a href="#" class="blue_gradient_btn">
@@ -216,7 +216,8 @@
           <div class="title">出張手配に時間がかかり、「見えないコスト」が上昇</div>
         </div>
         <div class="step-arrow">{% include 'component/icons/step-arrow.njk' %} </div>
-        <div class="ttl-secondary">規程に準拠して、<div class="text-underline"> 自動でチェック＆差し戻し !</div></div>
+        <div class="ttl-secondary">規程に準拠して、<div class="text-underline"> 自動でチェック＆差し戻し !</div>
+        </div>
 
         <div class="grid-card-containers">
           <div class="card">
@@ -229,7 +230,8 @@
             </div>
 
             <div class="card-description">
-              社員の手配内容は、データ管理システムからダウンロードすることができるので、経理データとしてご活用いただけます。もちろん、<span class="font-bold">予約システム・データ管理システムも無償</span>でご利用いただけます。
+              社員の手配内容は、データ管理システムからダウンロードすることができるので、経理データとしてご活用いただけます。もちろん、<span
+                class="font-bold">予約システム・データ管理システムも無償</span>でご利用いただけます。
             </div>
           </div>
 
@@ -243,7 +245,8 @@
             </div>
 
             <div class="card-description">
-              コールセンターは年中無休!出張の移動中やちょっとした <span class="font-bold">空き時間に、数分で出張の予約や変更が行えます。</span>  社員の方一人ひとりに出張手配における秘書がいる感覚でご利用いただけます。
+              コールセンターは年中無休!出張の移動中やちょっとした <span class="font-bold">空き時間に、数分で出張の予約や変更が行えます。</span>
+              社員の方一人ひとりに出張手配における秘書がいる感覚でご利用いただけます。
             </div>
           </div>
 
@@ -261,7 +264,9 @@
           <div class="title">出張手配のルールがない。ガバナンスが不安・・・</div>
         </div>
         <div class="step-arrow">{% include 'component/icons/step-arrow.njk' %} </div>
-        <div class="ttl-secondary"><div class="text-underline"> 出張状況をデータ化・可視化。</div> ガバナンスを強化できます。</div>
+        <div class="ttl-secondary">
+          <div class="text-underline"> 出張状況をデータ化・可視化。</div> ガバナンスを強化できます。
+        </div>
 
         <div class="ttl-quinary">
           社員の方からのご予約を同じ条件でさらに安く手配できないか、取り間違いがないかなど当社のトラベルマネージャーがチェックを行い、問題がないものをご予約完了とするサービスです。ノウハウをもった「人」でないと解決できない独自のスキームです。
@@ -358,7 +363,7 @@
         </li>
         <li class="flow-item">
           <div class="flow-item-detail">
-            <div class="ttl-head">社員のご通知  <br> ご予約開始</div>
+            <div class="ttl-head">社員のご通知 <br> ご予約開始</div>
             <div class="flow-image">
               <img src="/assets/img/cospro/step4.png" alt="work image" class="card-img">
             </div>
@@ -375,87 +380,87 @@
     </div>
   </section>
 
-  <section id="faq" class="section-question-and-answer">
-    <div class="containers">
-      <h5 class="ttl-sub">FAQ</h5>
-      <h2 class="ttl-secondary">よくある質問</h2>
-      <h4 class="ttl-tertiary">お客様からよくいただくご質問にお答えします。この他にご質問がある方は、<a href="/contact" class="link-item">お問い合わせフォーム</a>より、お気軽にご連絡ください。 2営業日以内に担当者からご連絡させて頂きます。</h4>
+  <section id="faq" class="section-question-and-answer fadein">
+    <h5 class="ttl-secondary">FAQ</h5>
+    <h2 class="ttl-primary">よくある質問</h2>
+    <p class="ttl-tertiary">お客様からよくいただくご質問にお答えします。この他にご質問がある方は、<a href="/contact">お問い合わせフォーム</a>より、お気軽にご連絡ください。</br>
+      2営業日以内に担当者からご連絡させて頂きます。
+    </p>
+    <div class="container qa-list">
       {% for i in range(1, 5) %}
-        <div class="qa">
-          <div class="flex gap20 question-tab">
-            <div class="qa-marker">
-              <h2 class="ttl-secondary">Q</h2>
-            </div>
-            <div class="qa-content">
-              <h3 class="ttl-tertiary">
-                質問内容が入ります。質問内容が入ります。質問内容が入ります。質問内容が入ります。質問内容が入ります。
-              </h3>
-            </div>
-            <button class="qa-button">
-              <span class="svg__plus">{% include 'component/icons/plus.njk' %}</span>
-              <span class="svg__minus">{% include 'component/icons/minus.njk' %}</span>
-            </button>
+      <div class="qa">
+        <div class="flex gap20 question-tab">
+          <div class="qa-marker">
+            <h2 class="ttl-secondary">Q</h2>
           </div>
-          <div class="flex gap20 answer-tab">
-            <div class="qa-marker">
-              <h2 class="ttl-secondary">A</h2>
-            </div>
-            <div class="qa-content">
-              <h3 class="ttl-tertiary">
-                質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。
-              </h3>
-            </div>
+          <div class="qa-content">
+            <h3 class="ttl-tertiary">
+              質問内容が入ります。質問内容が入ります。質問内容が入ります。質問内容が入ります。質問内容が入ります。
+            </h3>
+          </div>
+          <button class="qa-button">
+            <span class="svg__plus">{% include 'component/icons/plus.njk' %}</span>
+            <span class="svg__minus">{% include 'component/icons/minus.njk' %}</span>
+          </button>
+        </div>
+        <div class="flex gap20 answer-tab">
+          <div class="qa-marker">
+            <h2 class="ttl-secondary">A</h2>
+          </div>
+          <div class="qa-content">
+            <h3 class="ttl-tertiary">
+              質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。
+            </h3>
           </div>
         </div>
+      </div>
       {% endfor %}
     </div>
+    <a href="#" class="bondi_blue_outline_btn">
+      <span class="bondi_blue_outline_btn__tittle">
+        もっと見る
+      </span>
+    </a>
   </section>
 
-  <section id="contact" class="section-contact section">
+  <section id="application" class="section-contact fadein">
     <div class="card-type22">
       <div class="ttl-notice">CONTACT</div>
       <h3 class="ttl-tertiary">CosProをご検討中の方へ</h3>
-      <div class="useful-wp">
+      <div class="useful-wp container">
         <div class="containers">
           <div class="flex jcC gap60">
-            <div href="#" class="card">
+            <div class="card">
               <summary class="card__box">
-                <h2 class="ttl-head">サービス内容について詳しく知りたい方はこちら</h2>
-                <div class="card__info">
-                  <div class="card__info-image">
-                    <img src="/assets/img/cospro/card9.png" alt="work image" class="card-img">
+                <div class="card__box--ttl">サービス内容について詳しく知りたい方はこちら</div>
+                <div class="card__box--cont">
+                  <div class="card__box--image">
+                    <img src="/assets/img/payment_com/payment_contact2.png" />
                   </div>
-                  <div class="card__info-content">
-
-                    <span>CosProのサービス資料をダウンロートできます。フォーム入力後リアルタイムでお送りいたします。</span>
+                  <div class="card__box--txt">
+                    CosProのサービス資料をダウンロートできます。フォーム入力後リアルタイムでお送りいたします。
                   </div>
-
                 </div>
-                <div class="btn-container">
-                  <a class="blue_gradient_btn" href="#">サービス資料ダウンロード</a>
-                </div>
+                <div><a class="blue_gradient_btn" href="#">サービス資料ダウンロード</a></div>
               </summary>
             </div>
-            <div href="#" class="card">
+            <div class="card">
               <summary class="card__box">
-                <h2 class="ttl-head">営業担当に相談・お問い合わせをしたい方はこちら</h2>
-                <div class="card__info col-right">
-                  <div class="card__info-image">
-                    <img src="/assets/img/cospro/card10.png" alt="work image" class="card-img">
+                <div class="card__box--ttl">営業担当に相談・お問い合わせをしたい方はこちら</div>
+                <div class="card__box--cont">
+                  <div class="card__box--image">
+                    <img src="/assets/img/common/contact_inner2.png" />
                   </div>
-                  <div class="card__info-content">
-                    <span>営業担当者によるサービスのご説明、導入にあたってのご相談をさせていただきます。</span>
+                  <div class="card__box--txt">
+                    営業担当者によるサービスのご説明、導入にあたってのご相談をさせていただきます。
                   </div>
                 </div>
-                <div class="btn-container">
-                  <a class="blue_gradient_btn" href="#">導入のご相談・お問い合わせ（無料）</a>
-                </div>
+                <div><a class="blue_gradient_btn" href="/contact/">導入のご相談・お問い合わせ（無料）</a></div>
               </summary>
             </div>
           </div>
         </div>
       </div>
-    </div>
   </section>
 </main>
 {% endblock %}
