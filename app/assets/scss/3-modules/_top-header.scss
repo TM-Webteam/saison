@@ -68,7 +68,7 @@ header {
               &:hover {
                 opacity: 1;
                 &::before {
-                  width: 100%;
+                  // width: 100%;
                 }
               }
             }
@@ -131,7 +131,7 @@ header {
       }
       .bondi_blue_outline_btn {
         max-width: 200px;
-        padding: 12px 23px;
+        padding: 12px 23px !important;
         color: $blue-color;
         font-size: 16px;
         font-weight: lighter;
@@ -187,11 +187,15 @@ header {
       li {
         padding: 20px 0 10px;
         border-bottom: 1px solid $gray-color-7;
+        transition: all .3s linear;
         a,
         div {
           display: flex;
           justify-content: space-between;
           align-items: center;
+        }
+        &:hover {
+          border-bottom: 1px solid #333;
         }
       }
     }

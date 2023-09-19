@@ -1,5 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap");
 
+.business_pro_mega_menu {
+  .rbt-list {
+    .rbt-item {
+      &:hover {
+        background: $orange-color;
+      }
+
+      &.active {
+        background: transparent
+          linear-gradient(90deg, $primary-color 0%, $green-color-2 100%) 0% 0%
+          no-repeat padding-box;
+
+        &:hover {
+          background: $orange-color;
+        }
+      }
+    }
+  }
+}
 .business_pro-page {
   .section-welcome {
     background-size: cover;
@@ -7,8 +26,31 @@
     padding: 15px 0;
     background-position: center;
 
+    @media #{$sp} {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
     &.platinum {
       background-image: url("/assets/img/platinum_business_pro/platinum_business_pro_banner.png");
+    }
+
+    &.cobalt {
+      background-image: url("/assets/img/cobalt_business/banner.png");
+      .banner-containers .banner-left .card-description {
+        font-size: 32px;
+      }
+    }
+
+    &.purchasing_card {
+      background-image: url("/assets/img/purchasing_card/purchasing_card_banner.png");
+      .banner-containers .banner-left .ttl-primary {
+        font-size: 39px;
+      }
+    }
+
+    &.gold {
+      background-image: url("/assets/img/gold_business_pro/gold_business_pro_banner.png");
     }
 
     .containers {
@@ -19,6 +61,12 @@
     .banner-containers {
       display: flex;
       justify-content: space-between;
+
+      &.gold {
+        @media #{$sp} {
+          display: block;
+        }
+      }
       .banner-left {
         .title-notice {
           position: relative;
@@ -105,13 +153,14 @@
 
           &__options {
             margin-top: 10px;
-            display: flex;
+            display: grid;
+            grid-template-columns: auto 40px auto;
             align-items: center;
             text-align: center;
             gap: 10px;
 
             @media #{$sp} {
-              flex-direction: column;
+              grid-template-columns: auto;
             }
 
             .option {
@@ -120,6 +169,10 @@
               padding: 10px 15px;
               white-space: nowrap;
               font-size: 17px;
+              line-height: 22px;
+              height: 100%;
+              display: flex;
+              align-items: center;
 
               &::before {
                 position: absolute;
@@ -135,7 +188,8 @@
               }
 
               @media #{$sp} {
-                width: 70%;
+                width: 100%;
+                justify-content: center;
               }
             }
           }
@@ -198,6 +252,9 @@
       font-size: 32px;
       font-weight: bold;
       line-height: 51px;
+      @media #{$sp} {
+        font-size: 22px;
+      }
     }
 
     .grid-card-containers {
@@ -220,6 +277,7 @@
       .card {
         box-shadow: 0px 3px 20px #00000029;
         border-radius: 3px;
+        height: fit-content;
 
         &.or {
           position: relative;
@@ -230,7 +288,7 @@
             top: 50%;
             right: -70px;
             font-family: "Futura";
-            font-weight: bold;
+            font-weight: 500;
             font-size: 32px;
 
             @media #{$sp} {
@@ -254,9 +312,11 @@
           justify-content: center;
           align-items: center;
           font-size: 25px;
+          line-height: 40px;
           font-weight: bold;
           flex-direction: column;
-          height: 185px;
+          height: 144px;
+          text-align: center;
 
           @media #{$sp} {
             padding: 0 15px;
@@ -270,6 +330,7 @@
           }
           .percent {
             font-size: 42px;
+            font-weight: 500;
           }
         }
       }
@@ -299,6 +360,10 @@
     background: #f5f5f5;
     .containers {
       padding-inline: 0;
+
+      @media #{$sp} {
+        padding: 35px 15px;
+      }
     }
     .ttl-secondary {
       font-size: 32px;
@@ -328,12 +393,16 @@
         }
         p {
           font-size: 16px;
+
+          .note {
+            font-size: 14px;
+          }
         }
       }
     }
     @media #{$sp} {
       .ttl-secondary {
-        font-size: 24px;
+        font-size: 22px;
       }
       .card-list {
         grid-template-columns: 1fr;
@@ -375,10 +444,15 @@
       font-size: 32px;
       font-weight: bold;
       line-height: 70px;
+      @media #{$sp} {
+        font-size: 22px;
+      }
     }
 
     .card-contents {
       margin-top: 30px;
+      margin-inline: auto;
+      max-width: 1044px;
     }
     .grid-card-containers {
       display: grid;
@@ -388,6 +462,14 @@
 
       @media #{$sp} {
         margin-bottom: 30px;
+        grid-template-columns: auto;
+        gap: 0;
+      }
+
+      &:last-child {
+        @media #{$sp} {
+          margin-bottom: 0;
+        }
       }
 
       .col-left {
@@ -402,34 +484,26 @@
       }
       .col-right {
         background: #ffffff 0% 0% no-repeat padding-box;
-        padding: 30px;
-        height: 140px;
+        padding: 20px 30px;
+        height: 100px;
+        display: grid;
+        align-items: center;
+
+        @media #{$sp} {
+          padding: 15px;
+        }
 
         .ttl-quaternary {
           font-size: 20px;
           margin-bottom: 10px;
+
+          @media #{$sp} {
+            font-size: 16px;
+          }
         }
         .normal-text {
           font-size: 14px;
           font-weight: normal;
-        }
-      }
-    }
-
-    @media #{$sp} {
-      .grid-card-containers {
-        grid-template-columns: 1fr 4fr;
-      }
-      .col-left {
-        font-size: 13px !important;
-      }
-      .col-right {
-        height: 250px !important;
-        .ttl-quaternary {
-          font-size: 14px !important;
-        }
-        .normal-text {
-          font-size: 13px !important;
         }
       }
     }
@@ -458,6 +532,7 @@
     }
     .ttl-quaternary {
       font-size: 16px;
+      margin-bottom: 0;
     }
     .ttl-primary {
       width: fit-content;
@@ -468,6 +543,7 @@
       grid-template-columns: 38.5% auto;
       gap: 30px;
       margin-top: 50px;
+      align-items: center;
     }
 
     .content-img {
@@ -486,7 +562,7 @@
         &.img-top {
           position: relative;
           z-index: 10;
-          box-shadow: 3px 3px 2px #00000029;
+          box-shadow: 5px 5px 20px #00000080;
           border: 1px solid #707070;
         }
       }
@@ -538,10 +614,18 @@
   }
 
   .section-septenary {
+    .containers {
+      padding-inline: 15px;
+    }
+
     .ttl-primary {
       font-size: 32px;
       font-weight: bold;
       line-height: 70px;
+
+      @media #{$sp} {
+        font-size: 22px;
+      }
     }
 
     .grid-card-containers {
@@ -557,12 +641,16 @@
         box-shadow: 0px 3px 20px #00000029;
         border: 1px solid #f5f5f5;
         border-radius: 3px;
-        padding: 30px 30px 10px 30px;
+        padding: 30px;
         display: grid;
         grid-template-columns: 160px auto;
         gap: 20px;
         .ttl-quaternary {
           margin-bottom: 10px;
+          font-size: 20px;
+        }
+        .ttl-normal {
+          font-size: 15px;
         }
         .card-img {
           aspect-ratio: 1;
@@ -596,10 +684,19 @@
   .section-octonary {
     background: #eeeeee;
     text-align: center;
+
+    .containers {
+      padding-inline: 0;
+      @media #{$sp} {
+        padding-inline: 15px;
+      }
+    }
+
     .ttl-primary {
       font-size: 32px;
       font-weight: bold;
       line-height: 70px;
+      margin-bottom: 20px;
     }
 
     .ttl-quaternary {
@@ -646,6 +743,12 @@
     max-width: 1200px;
     background: $white-color;
 
+    .ttl-secondary{
+      @media #{$sp} {
+        font-size: 22px;
+      }
+    }
+
     .btn-actions {
       margin-top: 50px;
 
@@ -678,6 +781,9 @@
     .ttl-primary {
       font-size: 32px;
       line-height: 70px;
+      @media #{$sp} {
+        font-size: 22px;
+      }
     }
 
     .container-content {
@@ -691,7 +797,7 @@
         grid-template-columns: 120px 1fr 1fr 1fr;
       }
       @media #{$sp} {
-        width: 800px;
+        width: 1200px;
       }
       .credit-card-img {
         max-width: 210px;
@@ -727,6 +833,10 @@
         display: flex;
         align-items: center;
 
+        &.pl-45 {
+          padding-left: 45px;
+        }
+
         &.aiS {
           align-items: flex-start;
         }
@@ -741,6 +851,10 @@
           width: 248px;
           max-width: 90%;
           padding: 10px;
+
+          &.aiS {
+            margin-left: 15px;
+          }
           .bondi_blue_outline_btn__tittle {
             margin: 0px;
           }
@@ -759,6 +873,10 @@
     }
     .card-comparison {
       margin-top: 30px;
+
+      .text-muted {
+        font-size: 14px;
+      }
     }
     .contact-us {
       margin-top: 40px;
@@ -781,6 +899,10 @@
     background: #eeeeee;
     .containers {
       padding-top: 55px;
+
+      @media #{$sp} {
+        padding-top: 30px;
+      }
     }
     .ttl-primary {
       margin-bottom: -10px;
@@ -789,6 +911,7 @@
 
       @media #{$sp} {
         margin-bottom: 20px;
+        font-size: 22px;
       }
     }
     .grid-card-containers {
@@ -799,11 +922,25 @@
       flex-wrap: wrap;
       margin-top: 36px;
       grid-template-columns: repeat(5, 1fr);
+
       @media #{$sp} {
         display: grid;
         grid-template-columns: 1fr;
         gap: 90px;
         justify-content: center;
+      }
+
+      &.four {
+        grid-template-columns: repeat(4, 1fr);
+        max-width: 1044px;
+        margin-inline: auto;
+
+        @media #{$sp} {
+          display: grid;
+          grid-template-columns: 1fr;
+          gap: 90px;
+          justify-content: center;
+        }
       }
     }
     .step {
@@ -823,6 +960,9 @@
 
       .ttl-quaternary {
         margin-bottom: 0;
+        font-size: 26px;
+        font-family: "Futura";
+        font-weight: 500;
       }
 
       .arrowStep {
@@ -858,15 +998,23 @@
         justify-content: center;
         width: 100%;
         margin-top: 20px;
+
         .bondi_blue_btn {
           max-width: 100%;
           padding: 15px 30px;
+          width: 90%;
+          justify-content: center;
         }
       }
     }
 
     .btn-container {
       margin-top: 30px;
+
+      &.small {
+        max-width: 1044px;
+        margin-inline: auto;
+      }
     }
   }
 

@@ -17,7 +17,7 @@
 {# Breadcrumb #}
 {% set breadcrumb = [
 {
-text: "セゾンプラチナ・ビジネス プロ・アメリカン・エキスプレス®・カード",
+text: "セゾンゴールド・ビジネスプロ・カード",
 link: "#"
 }
 ] %}
@@ -54,7 +54,7 @@ link: "#top"
 {% block content %}
 {% include 'partial/sidebar.njk' %}
 <main class="business_pro-page">
-  <section id="top" class="section-welcome platinum fadein">
+  <section id="top" class="section-welcome purchasing_card fadein">
     <div class="containers">
       <div class="banner-containers">
         <div class="banner-left">
@@ -65,25 +65,26 @@ link: "#top"
             </h3>
           </div>
           <h1 class="ttl-primary">
-            セゾンプラチナ・ビジネス プロ・<br> アメリカン・エキスプレス®・カード
+            セゾン・アメリカン・エキスプレス®・<br> ビジネス プロ・パーチェシング・カード
           </h1>
 
           <div class="card-contents">
             <div class="card-img">
-              <img src="/assets/img/credit_cards/saison-03.png" alt="Your Image" class="credit-card-img">
+              <img src="/assets/img/credit_cards/saison-02.png" alt="Your Image" class="credit-card-img">
             </div>
             <div class="card-description">
               <span>選べる機能で中小企業様の経営をサポート</span>
               <div class="card-description__options">
                 <div class="option">
-                  <span>1％<br />
+                  <span>0.5％<br />
                     のキャッシュバック
                   </span>
                 </div>
                 OR
                 <div class="option">
-                  <span>お支払いを<br />
-                    最長84日後・手数料0円
+                  <span>お支払いを最長84日後・<br />
+                    手数料0円＋0.25% <br/>
+                    のキャッシュバック
                   </span>
                 </div>
               </div>
@@ -98,14 +99,14 @@ link: "#top"
 
         </div>
         <div class="banner-right pc-only">
-          その挑戦に、
-          <br /> 即戦力を
+          効率化とコスト削減を
+          <br /> 目指すなら
         </div>
       </div>
     </div>
   </section>
 
-  <section class="section-tertiary">
+  <section class="section-tertiary fadein">
     <div class="containers">
       <h2 class="ttl-primary">選べる2つの特典</h2>
 
@@ -114,20 +115,22 @@ link: "#top"
           <a class="card or">
             <div class="card-head">キッシュバックサービス</div>
             <div class="card-content">
-              <div>支払い金額の<span class="percent blue-text">1％</span>をキャッシュバック</div>
+              <div>支払い金額の<span class="percent blue-text">0.5％</span>をキャッシュバック</div>
             </div>
           </a>
-          <p class="card-description">カードでお支払いするだけで、毎日の業務にかかわる費用はもちろん、公共料金や税金の支払い、広告費や資材購入費など経費の支払いが自動的にキャッシュバックされます。
+          <p class="card-description">カードでお支払いいただくだけで、毎日の業務にかかわる費用はもちろん、公共料金や税金の支払い、広告費や資材購入費など経費の支払いが自動的にキャッシュバックされます。
           </p>
         </div>
         <div class="card-item">
           <a class="card">
             <div class="card-head">お支払い１ヵ月スキップ払い</div>
             <div class="card-content">
-              <div>お支払いを最長<span class="percent blue-text">84</span>日後・手数料<span class="percent blue-text">0</span>円</div>
+              <div>お支払いを最長<span class="percent blue-text">84</span>日後・手数料<span class="percent blue-text">0</span>円<br/>
+                <span class="percent blue-text">0.25%</span>のキャッシュバック
+              </div>
             </div>
           </a>
-          <p class="card-description">カードご利用からお支払日まで最大84日間のお支払猶予があるため、支払いサイトと入金サイトの課題解決をサポート、社用資金の効率的な運用が可能となります。
+          <p class="card-description">カードご利用からお支払日まで最大84日間のお支払猶予があるため、支払いサイトと入金サイトの課題解決をサポート。さらに支払い額の0.25％がキャッシュバックされ、社用資金の効率的な運用が可能となります。
           </p>
         </div>
       </div>
@@ -136,7 +139,7 @@ link: "#top"
     </div>
   </section>
 
-  <section class="section-secondary">
+  <section class="section-secondary fadein">
     <div class="containers">
       <h2 class="ttl-secondary">中小企業の皆様にうれしいビジネス機能が充実</h2>
 
@@ -153,15 +156,18 @@ link: "#top"
           </p>
         </li>
         <li class="card">
-          <h2>カード毎に利用枠の設定可能</h2>
-          <div class="grid__card--img"><img src="/assets/img/business_pro/business_pro3.png" alt="work image"></div>
-          <p><strong>カード毎に利用枠の設定</strong>ができますので、1枚ずつ異なった利用枠の設定が可能です。<br/>WEB明細でカード使用者ごとの経費支出が確認できますので、ガバナンス強化にも役立ちます。</p>
+          <h2>不正利用リスクを軽減</h2>
+          <div class="grid__card--img"><img src="/assets/img/business_pro/purchasing_card_3.png" alt="work image"></div>
+          <p>プラスチックカードを発行しないため※1、紛失盗難等による<strong>不正利用のリスクを軽減</strong>できます。また、利用可能な加盟店や決済先を制限することで、さらにリスクを低減することができます※2。 <br/>
+            <span class="note">※1 カード番号は通知書にてお知らせします。<br/></span>
+            <span class="note">※2 ご入会後のお手続きです。</span>
+          </p>
         </li>
       </ul>
     </div>
   </section>
 
-  <section class="section-quaternary">
+  <section class="section-quaternary fadein">
     <div class="containers">
 
       <h2 class="ttl-primary">登記簿や決算書の提出は不要です！</h2>
@@ -175,7 +181,7 @@ link: "#top"
     </div>
   </section>
 
-  <section id="membership-fee" class="section-quinary">
+  <section id="membership-fee" class="section-quinary fadein">
     <div class="containers">
       <h2 class="ttl-primary">年会費・入会資格</h2>
 
@@ -185,7 +191,7 @@ link: "#top"
             年会費
           </div>
           <div class="col-right">
-            <div class="ttl-quaternary">27,500円（税込）   追加カード年会費：3,300円（税込）</div>
+            <div class="ttl-quaternary">11,000円（税込）   追加カード年会費：1,100円（税込）</div>
             <div class="ttl-quaternary normal-text">年会費は会計上経費として計上可能です。詳しくは税理士等にご確認ください。</div>
           </div>
         </div>
@@ -202,64 +208,7 @@ link: "#top"
     </div>
   </section>
 
-  <section id="additional-services" class="section-septenary">
-    <div class="containers">
-      <h4 class="ttl-primary">付帯サービス</h4>
-      <div class="grid-card-containers">
-        <div class="card">
-          <div class="card-img">
-            <img src="/assets/img/common/plat5.png" alt="work image">
-          </div>
-          <div class="card-content">
-            <h4 class="ttl-quaternary">国内空港ラウンジ</h4>
-            <div class="ttl-normal">国内の主要空港ラウンジを無料でご利用いただけます。ご搭乗までのひとときを、ゆったりとお過ごしください。従業員様のカードでもご利用可能です。</div>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-img">
-            <img src="/assets/img/common/plat6.png" alt="work image">
-          </div>
-          <div class="card-content">
-            <h4 class="ttl-quaternary">海外空港ラウンジ</h4>
-            <div class="ttl-normal">
-              148以上の国や地域、1,300ヵ所以上の空港ラウンジをご利用いただける「プライオリティ・パス（通常年会費469米ドル／プレステージ会員）」に、代表者様カード限定の特別なサービスとして無料でご登録いただけます※1。
-            </div>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-img">
-            <img src="/assets/img/common/plat2.png" alt="work image">
-          </div>
-          <div class="card-content">
-            <h4 class="ttl-quaternary">プラチナ会員専用コールセンター</h4>
-            <div class="ttl-normal">出張の手配や会食の設定などは、専用のコールセンターへ。<br> 24時間365日、専任のスタッフが誠心誠意お応えします。</div>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-img">
-            <img src="/assets/img/common/plat1.png" alt="work image">
-          </div>
-          <div class="card-content">
-            <h4 class="ttl-quaternary">従業員も対象の旅行傷害保険</h4>
-            <div class="ttl-normal">
-              海外・国内の旅行中の事故について補償いたします。海外旅行中の事故について最高１億円※2まで、国内旅行中の事故について最高5,000万円※3まで補償いたします。
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="sub-content">
-        ※1 別途「プライオリティ・パス」へのご登録が必要です。<br>
-        ※2 海外旅行傷害保険の死亡・後遺障害保険金額。事前のカード決済等の条件により適用される金額です。決済等がない場合は最高5,000万円となります。 <br>
-        ※3 国内旅行傷害保険の死亡・後遺障害保険金額
-      </div>
-    </div>
-  </section>
-
-  <section class="section-senary">
+  <section class="section-senary fadein">
     <div class="containers">
       <h3 class="ttl-tertiary">DOCUMENTS</h3>
       <h1 class="ttl-quaternary">ビジネスカードを検討しているなら、知らないともったいない！</h1>
@@ -283,7 +232,7 @@ link: "#top"
     </div>
   </section>
 
-  <section id="card-comparison" class="section-card-info">
+  <section id="card-comparison" class="section-card-info fadein">
     <div class="containers">
       <h4 class="ttl-primary">カード比較</h4>
 
@@ -455,12 +404,15 @@ link: "#top"
             <div>MORE</div>
           </div>
           <div class="first-column">
-            <div class="content-col ">
+            <div class="content-col direction-col aiS">
               <ul>
                 <li>プラチナ会員専用デスク</li>
                 <li>AMEXセンチュリオンデザイン採用</li>
                 <li>通常429米ドルのプライオリティパスを代表者様は無料でご登録可能</li>
               </ul>
+              <a href="#" class="bondi_blue_outline_btn">
+                <span class="bondi_blue_outline_btn__tittle">詳細はこちら</span>
+              </a>
             </div>
           </div>
           <div class="second-column">
@@ -478,9 +430,6 @@ link: "#top"
               <ul>
                 <li>部署名・費用項目名での発番可能 </li>
               </ul>
-              <a href="#" class="bondi_blue_outline_btn">
-                <span class="bondi_blue_outline_btn__tittle">詳細はこちら</span>
-              </a>
             </div>
           </div>
         </div>
@@ -501,7 +450,7 @@ link: "#top"
     </div>
   </section>
 
-  <section id="faq" class="section-question-and-answer">
+  <section id="faq" class="section-question-and-answer fadein">
     <h5 class="ttl-sub">FAQ</h5>
     <h2 class="ttl-secondary">よくある質問</h2>
     {% for i in range(1, 5) %}
@@ -540,7 +489,7 @@ link: "#top"
 
   </section>
 
-  <section id="application-flow" class="section-application-flow">
+  <section id="application-flow" class="section-application-flow fadein">
     <div class="containers">
       <div class="ttl-primary">お申し込みまでの流れ</div>
 
