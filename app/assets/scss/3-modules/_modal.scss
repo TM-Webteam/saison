@@ -17,8 +17,7 @@
   width: 100vw;
   height: 100vh;
   overflow: auto;
-  background-color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: #fdfdfd;
 }
 
 .modal-content {
@@ -68,9 +67,9 @@
 .close-modal {
   position: absolute;
   top: 15px;
-  right: 35px;
-  color: #f1f1f1;
-  font-size: 40px;
+  right: 20px;
+  color: #707070;
+  font-size: 36px;
   font-weight: bold;
   transition: 0.3s;
 }
