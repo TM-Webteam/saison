@@ -137,6 +137,8 @@
 
     @media #{$sp} {
       font-size: 16px;
+      line-height: 1.75;
+      text-align: left;
     }
   }
 
@@ -156,6 +158,12 @@
     font-weight: bold;
     font-family: "Futura";
     color: $primary-color;
+
+    @media #{$sp} {
+      font-size: 16px;
+      line-height: 1.75;
+      margin-bottom: 20px;
+    }
   }
 
   .ttl-secondary {

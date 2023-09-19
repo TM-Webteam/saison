@@ -194,10 +194,10 @@
           @media #{$sp} {
             max-width: unset;
             padding-right: 25px;
-          }
 
-          &::before {
-            right: 3vw;
+            &::before {
+              right: 3vw;
+            }
           }
 
           &-tooltip {
