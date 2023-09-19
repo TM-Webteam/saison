@@ -65,7 +65,7 @@ link: "#application"
 <main class="saison_welfare-page">
   <section id="top" class="section-welcome fadein">
     <div class="section-welcome__banner">
-      <img src="/assets/img/saison_welfare/banner_saison_welfare.png" />
+      <img class="pc-only" src="/assets/img/saison_welfare/banner_saison_welfare.png" />
     </div>
 
     <div class="section-welcome-container">
@@ -78,27 +78,19 @@ link: "#application"
           </div>
           <h1 class="ttl-primary">セゾンフクリコ</h1>
           <h3 class="ttl-tertiary">従業員が喜ぶ優待メニューが充実！<br />月額385円（税込）～で始められる福利厚生サービス</h3>
-          <div class="btn-action">
+
+          <div class="section-welcome__act">
             <a href="#" class="act-more orange_more2">
-              <div class="act-more-tooltip">
-                <h4 class="act-more-tooltip__content">セゾンフクリコの優待内容が分かる！</h4>
+              <div class="act-more-tooltip pc-only">
+                <h4 class="act-more-tooltip__content">セゾンインボイスが3分でわかる！</h4>
               </div>
               資料ダウンロード
             </a>
           </div>
         </div>
 
-        <div class="section-welcome-info-right pc-only">
-          <img src="/assets/img/saison_welfare/banner_saison_welfare_ic.png">
-          <ul class="info-list">
-            <li>全国25,000 以上の施設を<span class="special">最大 66% OFF </span>で利用できる！</li>
-            <li><span class="special">完全アウトソーシング</span>で手間がかからない！</li>
-            <li><span class="special">外国籍の従業員も利用しやすい環境</span>を整備！</li>
-          </ul>
-        </div>
-
-        <div class="section-welcome-right-sp sp-only">
-          <img src="/assets/img/saison_welfare/banner_saison_welfare_ic.png">
+        <div class="section-welcome-info-right">
+          <img class="pc-only" src="/assets/img/saison_welfare/banner_saison_welfare_ic.png">
           <ul class="info-list">
             <li>全国25,000 以上の施設を<span class="special">最大 66% OFF </span>で利用できる！</li>
             <li><span class="special">完全アウトソーシング</span>で手間がかからない！</li>
@@ -170,7 +162,7 @@ link: "#application"
             </li>
           </ul>
           <div class="jumbotron_welfare_service">
-            <a href="#">
+            <div class="content">
               <h3 class="ttl-quaternary">このような中小企業にピッタリの福利厚生サービスです。</h3>
               <ul class="jumbotron_welfare_service_content">
                 <li>
@@ -192,12 +184,15 @@ link: "#application"
                   <div><span class="font-weight-bold">外国人の従業員が多い</span>ため、日本語以外の言語にも対応してほしい</div>
                 </li>
               </ul>
-            </a>
+            </div>
 
           </div>
           <div class="saison-introduce">
             <div class="saison-introduce-video">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/-5XByce-M0c?si=4GKe6tfxMde7nnas" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/-5XByce-M0c?si=4GKe6tfxMde7nnas"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
             </div>
             <div class="saison-introduce-description">
               <h5 class="ttl-quinary bold">【サービス紹介動画（43秒）】</h5>
@@ -315,7 +310,7 @@ link: "#application"
                     <div class="muted"> 東京ドームシティ得10チケット 1冊最大6,000円相当が</span><span class="special">2,790円(税込)</span>
                     </div>
                   </div>
-                </a>
+                  </a>
               </li>
               <li>
                 <div class="card">
@@ -331,8 +326,9 @@ link: "#application"
                   <img src="/assets/img/saison_welfare/preferential_service_6.png" alt="preferential service 6">
                   <div class="preferential-service-description">
                     <div class="title">eラーニングで</div>
-                    <div class="muted">通常室料</div>
-                    <div class="special"> →約800講座の受講が無料</div>
+                    <div class="muted">通常室料 <br />
+                      →<span class="special"> 約800講座の受講が無料</span>
+                    </div>
                   </div>
                 </div>
               </li>
@@ -541,13 +537,12 @@ link: "#application"
 
   <section id="faq" class="section-question-and-answer fadein">
     <div class="container">
-      <h5 class="ttl-sub">FAQ</h5>
-      <h2 class="ttl-secondary">よくある質問</h2>
-      <span class="section-question-and-answer__description">
-        お客様からよくいただくご質問にお答えします。この他にご質問がある方は、<a href="/contact">お問い合わせフォーム</a>より、お気軽にご連絡ください。
-        </br>
+      <h5 class="ttl-notice">FAQ</h5>
+      <h2 class="ttl-primary">よくある質問</h2>
+      <p class="section-question-and-answer__description">
+        お客様からよくいただくご質問にお答えします。この他にご質問がある方は、<a href="/contact">お問い合わせフォーム</a>より、お気軽にご連絡ください。<br />
         2営業日以内に担当者からご連絡させて頂きます。
-      </span>
+      </p>
       <ul class="section-question-and-answer__list">
         {% for i in range(1, 5) %}
         <li class="qa">
@@ -598,7 +593,7 @@ link: "#application"
                 <div class="card__box--ttl">サービス内容について詳しく知りたい方はこちら</div>
                 <div class="card__box--cont">
                   <div class="card__box--image">
-                    <img src="/assets/img/payment_com/payment_contact2.png"/>
+                    <img src="/assets/img/payment_com/payment_contact2.png" />
                   </div>
                   <div class="card__box--txt">
                     セゾンフクリコのサービス資料をダウンロートできます。フォーム入力後リアルタイムでお送りいたします。
@@ -606,24 +601,24 @@ link: "#application"
                 </div>
                 <div><a class="blue_gradient_btn" href="#">サービス資料ダウンロード</a></div>
               </summary>
-          </div>
-          <div href="#" class="card">
-            <summary class="card__box">
-              <div class="card__box--ttl">営業担当に相談・お問い合わせをしたい方はこちら</div>
-              <div class="card__box--cont">
+            </div>
+            <div href="#" class="card">
+              <summary class="card__box">
+                <div class="card__box--ttl">営業担当に相談・お問い合わせをしたい方はこちら</div>
+                <div class="card__box--cont">
                   <div class="card__box--image">
-                    <img src="/assets/img/common/contact_inner2.png"/>
+                    <img src="/assets/img/common/contact_inner2.png" />
                   </div>
                   <div class="card__box--txt">
                     導入にあたってのご相談や、各種優待サービスなどをご紹介させていただきます。
                   </div>
                 </div>
-              <div><a class="blue_gradient_btn" href="/contact/">導入のご相談・お問い合わせ（無料）</a></div>
-            </summary>
+                <div><a class="blue_gradient_btn" href="/contact/">導入のご相談・お問い合わせ（無料）</a></div>
+              </summary>
+            </div>
           </div>
         </div>
       </div>
-    </div>
   </section>
 </main>
 {% endblock %}

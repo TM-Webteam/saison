@@ -88,7 +88,7 @@
 
         @media #{$tab} {
           font-size: 32px;
-          line-height: 38px;
+          line-height: 1.75;
           margin-bottom: 30px;
         }
       }
@@ -111,8 +111,8 @@
         line-height: 28px;
 
         @media #{$tab} {
-          font-size: 16px;
-          line-height: 30px;
+          font-size: 20px;
+          line-height: 1.75;
         }
       }
     }
@@ -233,6 +233,7 @@
 
       @media #{$sp} {
         font-size: 20px;
+        line-height: 1.75;
       }
     }
 
@@ -336,6 +337,7 @@
               word-break: keep-all;
               margin-top: 5px;
               @media #{$sp} {
+                font-size: 16px;
                 word-break: normal;
               }
             }
@@ -352,6 +354,7 @@
                   word-break: keep-all;
                   line-height: 26px;
                   @media #{$sp} {
+                    font-size: 14px;
                     word-break: normal;
                   }
                 }
@@ -430,7 +433,8 @@
 
       @media #{$sp} {
         font-size: 16px;
-        line-height: 24px;
+        line-height: 1.75;
+        text-align: left;
       }
     }
 

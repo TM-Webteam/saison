@@ -1610,7 +1610,7 @@
     margin-bottom: 60px;
 
     @media #{$sp} {
-      margin-bottom: 30px;
+      margin-bottom: 50px;
     }
   }
 
@@ -1619,6 +1619,11 @@
     align-items: flex-start;
     flex-wrap: nowrap;
     margin-bottom: 30px;
+
+    @media #{$sp} {
+      flex-direction: column;
+      margin-bottom: 0px;
+    }
 
     .sec-left-wrapper {
       // border: 1px solid #F5F5F5;
@@ -1679,6 +1684,9 @@
             font-size: 24px;
             font-weight: bold;
             align-self: flex-start;
+            @media #{$sp} {
+              font-size: 16px;
+            }
           }
 
           .ttl-senary {
@@ -1690,7 +1698,7 @@
             white-space: normal;
 
             @media #{$sp} {
-              font-size: 18px;
+              font-size: 16px;
             }
 
             .yellow-bottom {
@@ -2060,6 +2068,7 @@
 
     @media #{$sp} {
       font-size: 20px;
+      line-height: 1.75;
       margin-bottom: 20px;
     }
   }
@@ -2382,6 +2391,7 @@
       padding-top: 20px;
       @media #{$sp} {
         padding-top: 0;
+        text-align: left;
       }
     }
   }

@@ -137,6 +137,8 @@
 
     @media #{$sp} {
       font-size: 16px;
+      line-height: 1.75;
+      text-align: left;
     }
   }
 
@@ -156,6 +158,12 @@
     font-weight: bold;
     font-family: "Futura";
     color: $primary-color;
+
+    @media #{$sp} {
+      font-size: 16px;
+      line-height: 1.75;
+      margin-bottom: 20px;
+    }
   }
 
   .ttl-secondary {
@@ -281,6 +289,11 @@
 
     .card__box--ttl {
       font-size: 20px;
+
+      @media #{$sp} {
+        font-size: 16px;
+        line-height: 1.5;
+      }
     }
 
     .card__box--cont {
@@ -290,6 +303,12 @@
         @media #{$sp} {
           margin-bottom: 0;
         }
+      }
+    }
+
+    .blue_gradient_btn {
+      @media #{$sp} {
+        font-size: 14px;
       }
     }
   }
@@ -368,12 +387,23 @@
         align-items: center;
         justify-content: center;
         width: 100%;
+
+        @media #{$sp} {
+          font-size: 16px;
+          line-height: 1.5;
+        }
       }
 
       &--cont {
         margin-bottom: 30px;
         .card__box--txt {
           text-align: left;
+        }
+      }
+
+      .blue_gradient_btn {
+        @media #{$sp} {
+          font-size: 14px;
         }
       }
     }
@@ -397,7 +427,11 @@
       font-size: 20px;
       font-weight: 700;
       border-bottom: none;
-    } 
+
+      @media #{$sp} {
+        line-height: 51px;
+      }
+    }
 
     .tooltip-container {
       position: relative;
@@ -407,7 +441,8 @@
         height: 1px;
         background-color: $white-color;
       }
-      &::before, &::after {
+      &::before,
+      &::after {
         content: "";
         position: absolute;
         width: calc(50% - 11px);
