@@ -281,6 +281,11 @@
 
     .card__box--ttl {
       font-size: 20px;
+
+      @media #{$sp} {
+        font-size: 16px;
+        line-height: 1.5;
+      }
     }
 
     .card__box--cont {
@@ -397,7 +402,7 @@
       font-size: 20px;
       font-weight: 700;
       border-bottom: none;
-    } 
+    }
 
     .tooltip-container {
       position: relative;
@@ -407,7 +412,8 @@
         height: 1px;
         background-color: $white-color;
       }
-      &::before, &::after {
+      &::before,
+      &::after {
         content: "";
         position: absolute;
         width: calc(50% - 11px);

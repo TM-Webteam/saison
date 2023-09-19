@@ -26,6 +26,7 @@
       }
       @media #{$sp} {
         margin-bottom: 30px;
+        text-align: left;
       }
     }
     .yellow-underline {
@@ -43,6 +44,7 @@
 
     @media #{$sp} {
       padding: 70px 0;
+      height: auto;
     }
     text-align: center;
     position: relative;
@@ -56,7 +58,7 @@
       height: 100%;
       border-radius: inherit;
       overflow: hidden;
-      background: $primary-color;
+      background: $green-color-5;
 
       img {
         position: static;
@@ -141,6 +143,9 @@
           line-height: 28px;
           transform: skew(10deg);
           font-size: 21px;
+          @media #{$sp} {
+            font-size: 16px;
+          }
           .yellow-txt {
             color: $yellow-color;
           }
@@ -153,12 +158,12 @@
         margin-bottom: 20px;
         text-shadow: 0px 0px 20px #05172c8d;
         @media #{$sp} {
-          font-size: 24px;
+          font-size: 32px;
         }
       }
       .ttl-tertiary {
         color: $white-color;
-        margin-bottom: 105px;
+        margin-bottom: 30px;
         text-align: left;
 
         @media #{$sp} {
@@ -168,6 +173,9 @@
         .special {
           font-size: 28px;
           text-shadow: 0px 0px 20px #05172c8d;
+          @media #{$sp} {
+            font-size: 16px;
+          }
         }
       }
       .btn-action {
@@ -176,13 +184,19 @@
         .act-more {
           margin: auto;
           position: relative;
-          padding: 14px 64px 14px 48px;
           white-space: nowrap;
+
+          @media #{$pc} {
+            padding: 14px 64px 14px 48px;
+          }
 
           @media #{$sp} {
             max-width: unset;
-            // padding: 0;
-            // margin: 14px 0;
+            padding-right: 25px;
+          }
+
+          &::before {
+            right: 3vw;
           }
 
           &-tooltip {
@@ -226,10 +240,10 @@
           }
         }
 
-        @media #{$sp} {
-          flex-direction: column;
-          gap: 100px;
-        }
+        // @media #{$sp} {
+        //   flex-direction: column;
+        //   gap: 100px;
+        // }
       }
     }
     .section-welcome-info-right {
@@ -239,10 +253,24 @@
       background-image: url("/assets/img/common/payment_com_banner.png");
       background-size: contain;
       background-repeat: no-repeat;
+
+      @media #{$sp} {
+        width: 100%;
+        background-image: unset;
+        height: unset;
+      }
+
       ul {
         position: absolute;
         bottom: -27px;
         right: 0;
+
+        @media #{$sp} {
+          position: relative;
+          margin: auto;
+          width: 85%;
+        }
+
         li {
           color: $white-color;
           font-size: 16px;
@@ -251,40 +279,25 @@
           padding: 10px 20px;
           border-radius: 3px;
           margin-bottom: 10px;
+
+          @media #{$sp} {
+            font-size: 14px;
+            background-color: #0e7878;
+            margin-bottom: 10px;
+            text-align: left;
+          }
+
           .special {
             font-size: 24px;
+
+            @media #{$sp} {
+              font-size: 14px;
+            }
           }
         }
       }
-      @media #{$sp} {
-        width: 100%;
-      }
     }
 
-    .section-welcome-right-sp {
-      .info-list {
-        color: $white-color;
-        text-align: left;
-        margin: auto;
-        width: 85%;
-        font-size: 20px;
-        font-weight: 700;
-        display: grid;
-        gap: 10px;
-        li {
-          color: $white-color;
-          background-color: #0e7878;
-          padding: 10px 20px;
-          border-radius: 3px;
-        }
-      }
-      .info-note-sp {
-        display: grid;
-        width: 85%;
-        margin: 20px auto 0 auto;
-        text-align: left;
-      }
-    }
     .info-note {
       position: absolute;
       bottom: -65px;
@@ -295,9 +308,14 @@
       font-size: 13px;
       color: $gray-color-8;
       line-height: 22px;
-    }
-    @media #{$sp} {
-      height: auto;
+
+      @media #{$sp} {
+        margin-top: 56px;
+        position: unset;
+        width: 85%;
+        margin-inline: auto;
+        align-items: flex-start;
+      }
     }
   }
 
@@ -574,10 +592,12 @@
         background-color: $blue-color-2;
         border-radius: 3px;
         margin: 60px 0 105px;
+        text-align: center;
 
         @media #{$sp} {
           padding: 15px;
           margin: 60px 0 125px;
+          font-size: 14px;
         }
 
         span {
@@ -591,6 +611,10 @@
         padding: 14px 62px 14px 62px;
         background: $gradient-bg;
         white-space: nowrap;
+
+        @media #{$sp} {
+          font-size: 16px;
+        }
 
         &-tooltip {
           position: absolute;
@@ -820,30 +844,7 @@
 
   .section-contact {
     .ttl-notice {
-      font-family: "Futura";
-      margin-bottom: 0;
       color: $white-color;
-    }
-
-    .card-type22 .useful-wp .containers .card .card__box {
-      padding: 38px 44px;
-      @media #{$sp} {
-        padding: 30px 15px;
-      }
-
-      .card__box--ttl {
-        font-size: 20px;
-      }
-
-      .card__box--cont {
-        margin-bottom: 30px;
-        .card__box--txt {
-          text-align: left;
-          @media #{$sp} {
-            margin-bottom: 0;
-          }
-        }
-      }
     }
   }
 
