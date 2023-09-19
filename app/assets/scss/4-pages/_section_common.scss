@@ -297,6 +297,12 @@
         }
       }
     }
+
+    .blue_gradient_btn {
+      @media #{$sp} {
+        font-size: 14px;
+      }
+    }
   }
 }
 
@@ -373,12 +379,23 @@
         align-items: center;
         justify-content: center;
         width: 100%;
+
+        @media #{$sp} {
+          font-size: 16px;
+          line-height: 1.5;
+        }
       }
 
       &--cont {
         margin-bottom: 30px;
         .card__box--txt {
           text-align: left;
+        }
+      }
+
+      .blue_gradient_btn {
+        @media #{$sp} {
+          font-size: 14px;
         }
       }
     }
