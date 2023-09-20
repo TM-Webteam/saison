@@ -50,7 +50,7 @@ link: "#application-flow"
 },
 {
 text: "お申し込み",
-link: "#top"
+link: "#application-flow"
 }
 ] %}
 
@@ -79,7 +79,7 @@ link: "#top"
             <div class="card-description"><span class="yellow-bottom">初年度年会費無料</span></div>
           </div>
 
-          <div class="banner-btn"><a class="blue_gradient_btn" href="#">お申し込みはこちら</a></div>
+          <div class="banner-btn"><a class="blue_gradient_btn" href="https://entry.saisoncard.co.jp/cardapp3/entry?cd=14A6&sd=80F" target="_blank">お申し込みはこちら</a></div>
 
         </div>
         <div class="banner-right pc-only">
@@ -94,13 +94,13 @@ link: "#top"
       <h2 class="ttl-primary">使うだけ「得」をする！2つの特典</h2>
 
       <div class="grid-card-containers">
-        <a class="card">
+        <div class="card">
           <div class="card-head">SAISON MILE CLUB</div>
           <div class="card-content">
             <div>JALのマイル還元率 : <span class="percent blue-text"> 1.125％</span></div>
           </div>
-        </a>
-        <a class="card">
+        </div>
+        <div class="card">
           <div class="card-head">永久不滅ポイント優遇</div>
           <div class="card-content">
             <div><span class="blue-text"> 国内：</span> 1,000円で <span class="percent blue-text">1</span> <span
@@ -108,7 +108,7 @@ link: "#top"
             <div class="minus-margin"><span class="blue-text"> 海外：</span> 1,000円で <span
                 class="percent blue-text">2</span> <span class="blue-text">ポイント</span></div>
           </div>
-        </a>
+        </div>
       </div>
     </div>
   </section>
@@ -144,7 +144,7 @@ link: "#top"
       <h4 class="ttl-tertiary">登記簿や決算書といった業務内容や実績を示す書類の提出が不要です。<br> 書類郵送に取られる期間がなくなるため、発行までにかかる期間の短縮ができます。
       </h4>
       <div>
-        <a href="" class="blue_gradient_btn">お申し込みはこちら</a>
+        <a href="https://entry.saisoncard.co.jp/cardapp3/entry?cd=14A6&sd=80F" target="_blank" class="blue_gradient_btn">お申し込みはこちら</a>
       </div>
 
 
@@ -175,10 +175,6 @@ link: "#top"
             <div class="ttl-quaternary">個人事業主・経営者をはじめ、安定した収入があり、<br> 社会的信用を有するご連絡可能な方（学生、未成年を除く）</div>
           </div>
         </div>
-      </div>
-
-      <div>
-        <a href="" class="blue_gradient_btn">お申し込みはこちら</a>
       </div>
     </div>
   </section>
@@ -457,7 +453,7 @@ link: "#top"
               <ul>
                 <li>コバルトビジネスカードの特典・優待サービス</li>
               </ul>
-              <a class="bondi_blue_outline_btn">
+              <a class="bondi_blue_outline_btn" href="/cobalt_business/">
                 <span class="bondi_blue_outline_btn__tittle">詳細はこちら</span>
               </a>
             </div>
@@ -500,58 +496,70 @@ link: "#top"
     {% endfor %}
   </section>
 
-  <section id="application-flow" class="section-steps">
+   <section id="application-flow" class="section-application-flow">
     <div class="containers">
       <div class="ttl-primary">お申し込みまでの流れ</div>
 
       <div class="grid-card-containers">
         <div class="step">
-          <div class="ttl-quaternary">Step 1</div>
-          {% include "component/icons/step1.njk" %}
-          <div class="ttl-quinary">Webから 簡単お申し込み</div>
+          <div class="ttl-quaternary">STEP 1</div>
+          <div class="svg-step">
+            {% include "component/icons/step1.njk" %}
+          </div>
+          <div class="ttl-quinary">Webから <br /> 簡単お申し込み</div>
+          <div class="arrowStep"> {% include "component/icons/arrowStep.njk" %}</div>
         </div>
 
-        <div class="arrowStep"> {% include "component/icons/arrowStep.njk" %}</div>
 
         <div class="step">
-          <div class="ttl-quaternary">Step 2</div>
-          {% include "component/icons/step2.njk" %}
-          <div class="ttl-quinary">契約確認書類の 受領</div>
+          <div class="ttl-quaternary">STEP 2</div>
+          <div class="svg-step">
+            {% include "component/icons/step2.njk" %}
+          </div>
+          <div class="ttl-quinary">契約確認書類の <br /> 受領</div>
+          <div class="arrowStep"> {% include "component/icons/arrowStep.njk" %}</div>
         </div>
 
-        <div class="arrowStep"> {% include "component/icons/arrowStep.njk" %}</div>
 
         <div class="step">
-          <div class="ttl-quaternary">Step 3</div>
-          {% include "component/icons/step3.njk" %}
-          <div class="ttl-quinary">審査結果の ご案内</div>
+          <div class="ttl-quaternary">STEP 3</div>
+          <div class="svg-step">
+            {% include "component/icons/step3.njk" %}
+          </div>
+          <div class="ttl-quinary">審査結果の <br /> ご案内</div>
+          <div class="arrowStep"> {% include "component/icons/arrowStep.njk" %}</div>
         </div>
 
-        <div class="arrowStep"> {% include "component/icons/arrowStep.njk" %}</div>
 
         <div class="step">
-          <div class="ttl-quaternary">Step 4</div>
-          {% include "component/icons/step4.njk" %}
-          <div class="ttl-quinary">郵送で カードお受け取り</div>
+          <div class="ttl-quaternary">STEP 4</div>
+          <div class="svg-step">
+            {% include "component/icons/step4.njk" %}
+          </div>
+          <div class="ttl-quinary">郵送で <br /> カードお受け取り</div>
+          <div class="arrowStep"> {% include "component/icons/arrowStep.njk" %}</div>
         </div>
 
-        <div class="arrowStep"> {% include "component/icons/arrowStep.njk" %}</div>
 
         <div class="step">
-          <div class="ttl-quaternary">Step 5</div>
-          {% include "component/icons/step5.njk" %}
-          <div class="ttl-quinary">カードと一緒に届く 口座設定用紙を返送</div>
+          <div class="ttl-quaternary">STEP 5</div>
+          <div class="svg-step">
+            {% include "component/icons/step5.njk" %}
+          </div>
+          <div class="ttl-quinary">カードと一緒に届く <br /> 口座設定用紙を返送</div>
         </div>
       </div>
 
       <div class="btn-container">
-        <span class="bondi_blue_btn">
-          お申し込みはこちら
-          <svg xmlns="http://www.w3.org/2000/svg" width="15.095" height="15.095" viewBox="0 0 15.095 15.095">
-            <path id="Path_44704" data-name="Path 44704" d="M9.674,0V9.674H0" transform="translate(0 7.548) rotate(-45)"
-              fill="none" stroke="#fff" stroke-width="2" />
-          </svg>
-        </span>
+        <a href="https://entry.saisoncard.co.jp/cardapp3/entry?cd=14A6&sd=80F" target="_blank">
+          <span class="bondi_blue_btn">
+            お申し込みはこちら
+            <svg xmlns="http://www.w3.org/2000/svg" width="15.095" height="15.095" viewBox="0 0 15.095 15.095">
+              <path id="Path_44704" data-name="Path 44704" d="M9.674,0V9.674H0" transform="translate(0 7.548) rotate(-45)"
+                fill="none" stroke="#fff" stroke-width="2" />
+            </svg>
+          </span>
+        </a>
       </div>
     </div>
   </section>
