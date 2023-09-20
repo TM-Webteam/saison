@@ -17,7 +17,7 @@
     padding: 114px 0;
     text-align: left;
     color: #fff;
-    background: url("../img/common/banner_4.png") 50% / cover no-repeat;
+    background: url("../img/common/banner_4.png") 20% / cover no-repeat;
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -44,6 +44,10 @@
         line-height: 28px;
         transform: skew(10deg);
         font-size: 21px;
+        @media #{$sp} {
+          font-size: 16px;
+          line-height: 1.75;
+        }
       }
     }
 
@@ -97,13 +101,15 @@
     @media #{$sp} {
       padding: 35px 15px;
       .ttl-primary {
-        font-size: 32px;
+        font-size: 30px;
+        line-height: 1.75;
       }
       .ttl-tertiary {
         font-size: 18px;
       }
       .ttl-quaternary {
-        font-size: 14px;
+        font-size: 16px;
+        line-height: 1.75;
       }
     }
   }
@@ -138,10 +144,11 @@
     @media #{$sp} {
       .anc01__box {
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 15px;
         li {
           margin: auto;
-          width: 280px;
+          width: 100%;
           a {
             height: 70px;
             font-size: 13px !important;
@@ -400,6 +407,9 @@
       text-align: center;
       font-weight: normal;
       font-size: 20px;
+      @media #{$sp} {
+        text-align: left;
+      }
     }
 
     .card-list {
@@ -655,6 +665,9 @@
       text-align: center;
       font-size: 20px;
       font-weight: normal;
+      @media #{$sp} {
+        text-align: left;
+      }
     }
 
     .card-list-grid {
@@ -762,6 +775,9 @@
           font-size: 16px !important;
           line-height: 25px;
         }
+      }
+      @media #{$sp} {
+        text-align: left;
       }
     }
   }

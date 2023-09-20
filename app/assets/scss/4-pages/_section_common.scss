@@ -356,6 +356,9 @@
 
       span {
         background: linear-gradient(180deg, rgba(0, 0, 0, 0) 70%, #0297b5 0);
+        @media #{$sp} {
+          line-height: 1.75;
+        }
       }
 
       strong {
@@ -368,6 +371,10 @@
       font-size: 20px;
       color: $white-color;
       margin-bottom: 60px;
+      @media #{$sp} {
+        font-size: 16px;
+        line-height: 1.75;
+      }
     }
 
     .card__box {

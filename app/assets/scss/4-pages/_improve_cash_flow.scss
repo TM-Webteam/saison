@@ -82,9 +82,9 @@
         font-weight: 600;
 
         @media #{$tab} {
-          font-size: 32px;
-          line-height: 38px;
+          font-size: 30px;
           margin-bottom: 30px;
+          line-height: 1.75;
         }
       }
 
@@ -98,6 +98,11 @@
       line-height: 30px;
       font-size: 18px;
       font-weight: 500;
+
+      @media #{$tab} {
+        font-size: 16px;
+        line-height: 1.75;
+      }
 
       .ttl-primary {
         text-align: left;
@@ -139,6 +144,11 @@
       font-size: 32px;
       line-height: 46px;
       margin-bottom: 50px;
+      @media #{$sp} {
+        font-size: 20px;
+        line-height: 1.75;
+        margin-bottom: 25px;
+      }
     }
 
     .section-wrapper {
@@ -458,6 +468,9 @@
 
           .sec-right-wrapper.visa {
             width: 194px;
+            @media #{$sp} {
+              width: 100%;
+            }
           }
         }
 
@@ -479,6 +492,18 @@
           .card-body {
             border: unset;
             padding: 30px;
+
+            @media #{$sp} {
+              display: flex;
+              gap: 10px;
+              padding: 10px;
+            }
+            .sec__img {
+              @media #{$sp} {
+                max-width: 35px;
+                margin: auto;
+              }
+            }
 
             p {
               font-size: 14px;
@@ -531,6 +556,12 @@
           .container .card__box-wrapper .card__box-title {
             max-width: unset;
             flex: 1;
+            .ttl-terianry {
+              @media #{$sp} {
+                font-size: 16px;
+                line-height: 1.75;
+              }
+            }
           }
 
           .container .card__box-wrapper .box-item:first-child {
@@ -577,6 +608,9 @@
         font-size: 16px;
         line-height: 20px;
         max-width: 522px;
+        @media #{$sp} {
+          height: auto;
+        }
       }
     }
 
