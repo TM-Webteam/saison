@@ -33,6 +33,10 @@
 
     &.platinum {
       background-image: url("/assets/img/platinum_business_pro/platinum_business_pro_banner.png");
+      background-position: left;
+      @media #{$sp} {
+        background-position: center;
+      }
     }
 
     &.cobalt {
