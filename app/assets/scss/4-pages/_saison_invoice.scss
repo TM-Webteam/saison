@@ -182,9 +182,16 @@
               font-size: 16px;
               font-weight: 700;
               background-color: $primary-color;
-              padding: 10px 20px;
+              padding: 10px 15px;
               border-radius: 3px;
               margin-bottom: 10px;
+              line-height: 35px;
+              text-align: left;
+
+              &:first-child {
+                color: $yellow-color;
+                background-color: $purple-color;
+              }
 
               @media #{$sp} {
                 font-size: 14px;
@@ -196,6 +203,7 @@
 
               .special {
                 font-size: 24px;
+                line-height: 35px;
                 @media #{$sp} {
                   font-size: 14px;
                 }
@@ -320,6 +328,10 @@
       padding: 35px 15px;
     }
 
+    .ttl-tertiary {
+      margin-bottom: 95px;
+    }
+
     .section-primary-wrapper {
       .containers {
         max-width: unset;
@@ -420,6 +432,9 @@
       .ttl-quaternary {
         margin-top: 10px;
       }
+      .card-image {
+        margin: 20px 0;
+      }
     }
   }
 
@@ -464,6 +479,11 @@
     .saison-feature-list {
       display: grid;
       gap: 40px;
+      .card-type25 {
+        .card-solution-content__text {
+          text-align: left;
+        }
+      }
 
       @media #{$sp} {
         gap: 20px;
@@ -531,7 +551,7 @@
             flex-grow: 1;
           }
 
-          .ttl-tertiary  {
+          .ttl-tertiary {
             text-align: center;
           }
         }
@@ -776,6 +796,47 @@
           .ttl-quaternary-container {
             display: grid;
             margin-bottom: 0;
+            position: relative;
+            .act-more-tooltip {
+              position: absolute;
+              top: -75px;
+              left: calc(50% - 128.5px);
+              width: auto;
+              height: auto;
+
+              &__content {
+                position: relative;
+                width: fit-content;
+                font-size: 20px;
+                font-weight: 700;
+                margin-bottom: 25px;
+                background-color: $yellow-color;
+                border-radius: 3px;
+                color: #000000;
+                border: 1px solid #000000;
+                padding: 11px 20px;
+                line-height: 35px;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                &::before {
+                  position: absolute;
+                  content: "\A";
+                  top: calc(100% - 1px);
+                  left: 50%;
+                  width: 15px;
+                  height: 15px;
+                  background: $yellow-color;
+                  border: 1px solid #000000;
+                  border-top: none;
+                  border-left: none;
+                  transform: rotate(45deg) translateX(-50%);
+                  z-index: 1;
+                }
+              }
+            }
           }
         }
 

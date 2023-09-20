@@ -92,9 +92,9 @@
           <img class="pc-only" src="/assets/img/saison_invoice/saison-invoice_inner.png"/>
 
           <ul class="info-list">
-            <li class="info-item">月額固定費0円・手数料率は<span class="special">業界最低水準！</span></li>
-            <li class="info-item">請求から回収業務の督促まで<span class="special">すべて委託！</span></li>
             <li class="info-item">最短翌日入金で、<span class="special">キャッシュフローも改善</span></li>
+            <li class="info-item">請求から回収業務の督促まで<span class="special">すべて委託！</span></li>
+            <li class="info-item">月額固定費0円・手数料率は<span class="special">業界最低水準！</span></li>
           </ul>
         </div>
       </div>
@@ -111,6 +111,23 @@
             <li class="card-type6">
               <a href="#" class="card">
                 <div class="ttl-quaternary-container">
+                  <div class="act-more-tooltip">
+                    <h4 class="act-more-tooltip__content">{{"一番喜ばれています！" | safe}}</h4>
+                  </div>
+                  <h5 class="ttl-quinary">請求/最短翌⽇にご⼊⾦できるから</h5>
+                  <h4 class="ttl-quaternary"> 売掛⾦の回収期間短縮</h4>
+                </div>
+                <div class="card-image">
+                  <img src="/assets/img/saison_invoice/saison_invoice3.png"/>
+                </div>
+                <div class="card-description">
+                  早期の資⾦ニーズがある場合には取引内容の登録後、<strong>最短翌⽇に⼊⾦</strong>します。
+                </div>
+              </a>
+            </li>
+            <li class="card-type6">
+              <a href="#" class="card">
+                <div class="ttl-quaternary-container">
                   <h5 class="ttl-quinary">請求/回収業務の</h5>
                   <h4 class="ttl-quaternary">すべてを代⾏</h4>
                 </div>
@@ -118,8 +135,7 @@
                   <img src="/assets/img/saison_invoice/saison_invoice1.png"/>
                 </div>
                 <div class="card-description">
-                  業務は <strong>「顧客情報」と「取引内容」をWEB画面から情報を入力するだけ！ </strong></br>
-                  請求・回収業務にかかっている時間を削減できます。
+                  業務は<strong>「顧客情報」と「取引内容」をWEB画面から情報を入力するだけ！</strong><br />請求・回収業務にかかっている時間を削減できます。
                 </div>
               </a>
             </li>
@@ -134,20 +150,6 @@
                 </div>
                 <div class="card-description">
                   取引先の与信枠内であれば、<strong>未払いがあった場合も全額保証</strong>いたします。
-                </div>
-              </a>
-            </li>
-            <li class="card-type6">
-              <a href="#" class="card">
-                <div class="ttl-quaternary-container">
-                  <h5 class="ttl-quinary">最短翌⽇にご⼊⾦できるから</h5>
-                  <h4 class="ttl-quaternary">売掛⾦の回収期間短縮</h4>
-                </div>
-                <div class="card-image">
-                  <img src="/assets/img/saison_invoice/saison_invoice3.png"/>
-                </div>
-                <div class="card-description">
-                  早期の資⾦ニーズがある場合には取引内容の登録後、<strong>最短翌⽇に⼊⾦</strong>します。
                 </div>
               </a>
             </li>
@@ -190,6 +192,29 @@
             <li class="card-type24">
               <div class="card">
                 <div class="card-index">お悩み①</div>
+                <h4 class="ttl-quaternary">支払い日までの</br><span class="yellow-bottom">運転資金確保が大変</span></h4>
+                <div class="card-image">
+                  <img src="/assets/img/saison_invoice/worry3.png"/>
+                </div>
+                <ul class="card-description">
+                  <li class="card-description__detail">
+                    {% include 'component/icons/circle-checked.njk' %}
+                    <span>バイヤーからの入金が遅い</span>
+                  </li>
+                  <li class="card-description__detail">
+                    {% include 'component/icons/circle-checked.njk' %}
+                    <span>仕入れの出金が早い</span>
+                  </li>
+                  <li class="card-description__detail">
+                    {% include 'component/icons/circle-checked.njk' %}
+                    <span>手元資金が少なくなりやすく、キャッシュフローに課題を持っている</span>
+                  </li>
+                </ul>
+              </a>
+            </li>
+            <li class="card-type24">
+              <div class="card">
+                <div class="card-index">お悩み②</div>
                 <h4 class="ttl-quaternary"><span class="yellow-bottom">請求・回収業務に</span></br>人と時間が奪われてしまう</h4>
                 <div class="card-image">
                   <img src="/assets/img/saison_invoice/worry1.png"/>
@@ -208,7 +233,7 @@
             </li>
             <li class="card-type24">
               <div class="card">
-                <div class="card-index">お悩み②</div>
+                <div class="card-index">お悩み③</div>
                 <h4 class="ttl-quaternary">取引先の業績悪化による</br><span class="yellow-bottom">未払いのリスク</span></h4>
                 <div class="card-image">
                   <img src="/assets/img/saison_invoice/worry2.png"/>
@@ -221,29 +246,6 @@
                   <li class="card-description__detail">
                     {% include 'component/icons/circle-checked.njk' %}
                     <span>取引先からの入金を、そのまま支払いの費用に充当しているので、未払いが起きると大問題になる</span>
-                  </li>
-                </ul>
-              </a>
-            </li>
-            <li class="card-type24">
-              <div class="card">
-                <div class="card-index">お悩み③</div>
-                <h4 class="ttl-quaternary">支払い日までの</br><span class="yellow-bottom">運転資金確保が大変</span></h4>
-                <div class="card-image">
-                  <img src="/assets/img/saison_invoice/worry3.png"/>
-                </div>
-                <ul class="card-description">
-                  <li class="card-description__detail">
-                    {% include 'component/icons/circle-checked.njk' %}
-                    <span>バイヤーからの入金が遅い</span>
-                  </li>
-                  <li class="card-description__detail">
-                    {% include 'component/icons/circle-checked.njk' %}
-                    <span>仕入れの出金が早い</span>
-                  </li>
-                  <li class="card-description__detail">
-                    {% include 'component/icons/circle-checked.njk' %}
-                    <span>手元資金が少なくなりやすく、キャッシュフローに課題を持っている</span>
                   </li>
                 </ul>
               </a>
@@ -279,10 +281,26 @@
           <li class="card-type25">
             <div class="card-heading">
               <span class="card-index">お悩み①</span>
+              <h3 class="card-issue-title"><span>支払い日までの運転資金確保が大変</span></h3>
+            </div>
+            <div class="triangle"></div>
+            <h1 class="card-solution-title"><span>最短翌日の入金</span>で、運転資金をスピード確保。</h1>
+            <div class="card-solution-content">
+              <div class="card-solution-content__img">
+                <img src="/assets/img/saison_invoice/saison_solution3.png" />
+              </div>
+              <div class="card-solution-content__text">
+                顧客情報、取引内容を入力するだけ。与信審査、請求書作成・発行、入金確認、督促まですべてクレディセゾンが代行いたします。
+              </div>
+            </div>
+          </li>
+          <li class="card-type25">
+            <div class="card-heading">
+              <span class="card-index">お悩み②</span>
               <h3 class="card-issue-title"><span>請求・回収業務に人と時間が奪われてしまう</span></h3>
             </div>
             <div class="triangle"></div>
-            <h1 class="card-solution-title">請求業務はすべて代行。毎⽉の請求業務が<span>最短15分で完</span>了！</h1>
+            <h1 class="card-solution-title">請求業務はすべて代行。毎⽉の請求業務が<span>最短15分で完了！</span></h1>
             <div class="card-solution-content">
               <div class="card-solution-content__img">
                 <img src="/assets/img/saison_invoice/saison_solution1.png" />
@@ -294,34 +312,17 @@
           </li>
           <li class="card-type25">
             <div class="card-heading">
-              <span class="card-index">お悩み②</span>
+              <span class="card-index">お悩み③</span>
               <h3 class="card-issue-title"><span>取引先の業績悪化による未払いのリスク</span></h3>
             </div>
             <div class="triangle"></div>
-            <h1 class="card-solution-title">未払いでも全額振込。<span>未回収リスク100%保証</span>。</h1>
+            <h1 class="card-solution-title">未払いでも全額振込。<span>未回収リスク100%保証。</span></h1>
             <div class="card-solution-content">
               <div class="card-solution-content__img">
                 <img src="/assets/img/saison_invoice/saison_solution2.png" />
               </div>
               <div class="card-solution-content__text">
-                顧客の与信枠内であれば、その後未払いになったとしても貴社に振込。</br>
-                取引先の未払い等の経営リスクを縮小可能です。
-              </div>
-            </div>
-          </li>
-          <li class="card-type25">
-            <div class="card-heading">
-              <span class="card-index">お悩み③</span>
-              <h3 class="card-issue-title"><span>支払い日までの運転資金確保が大変</span></h3>
-            </div>
-            <div class="triangle"></div>
-            <h1 class="card-solution-title">最短翌日の入金<span>で、運転資金をスピード確保</span>。</h1>
-            <div class="card-solution-content">
-              <div class="card-solution-content__img">
-                <img src="/assets/img/saison_invoice/saison_solution3.png" />
-              </div>
-              <div class="card-solution-content__text">
-                顧客情報、取引内容を入力するだけ。与信審査、請求書作成・発行、入金確認、督促まですべてクレディセゾンが代行いたします。
+                顧客の与信枠内であれば、その後未払いになったとしても貴社に振込。 取引先の未払い等の経営リスクを縮小可能です。
               </div>
             </div>
           </li>
