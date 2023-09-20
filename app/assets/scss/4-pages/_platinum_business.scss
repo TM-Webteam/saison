@@ -45,6 +45,10 @@
           color: #ffffff;
           text-align: start;
           text-shadow: 0pt 0pt 20pt #05172c8d;
+
+          @media #{$sp} {
+            font-size: 30px;
+          }
         }
 
         .card-img {
@@ -121,6 +125,11 @@
       font-size: 32px;
       font-weight: bold;
       line-height: 51px;
+
+      @media #{$sp} {
+        font-size: 20px;
+        line-height: 1.7;
+      }
     }
 
     .grid-card-containers {
@@ -211,7 +220,7 @@
     }
     @media #{$sp} {
       .ttl-secondary {
-        font-size: 24px;
+        font-size: 20px;
       }
       .card-list {
         grid-template-columns: 1fr;
@@ -228,6 +237,11 @@
       font-size: 32px;
       font-weight: bold;
       line-height: 51px;
+
+      @media #{$sp} {
+        font-size: 20px;
+        line-height: 1.7;
+      }
     }
 
     .sub-content {
@@ -244,6 +258,10 @@
       font-size: 32px;
       font-weight: bold;
       line-height: 70px;
+
+      @media #{$sp} {
+        font-size: 20px;
+      }
     }
 
     .card-contents {
@@ -370,7 +388,7 @@
 
     @media #{$sp} {
       .ttl-primary {
-        font-size: 21px;
+        font-size: 20px;
         &::after {
           height: 10px;
           margin-top: -10px;
@@ -393,6 +411,10 @@
       font-size: 32px;
       font-weight: bold;
       line-height: 70px;
+
+      @media #{$sp} {
+        font-size: 20px;
+      }
     }
 
     .grid-card-containers {
@@ -451,6 +473,10 @@
       font-size: 32px;
       font-weight: bold;
       line-height: 70px;
+
+      @media #{$sp} {
+        font-size: 20px;
+      }
     }
 
     .ttl-quaternary {
@@ -517,6 +543,7 @@
 
       @media #{$sp} {
         margin-bottom: 30px;
+        font-size: 20px;
       }
     }
 
@@ -615,6 +642,10 @@
     .ttl-primary {
       font-size: 32px;
       line-height: 70px;
+
+      @media #{$sp} {
+        font-size: 20px;
+      }
     }
 
     .container-content {
@@ -796,7 +827,6 @@
         .bondi_blue_btn {
           max-width: 100%;
           padding: 15px 30px;
-          width: 90%;
           justify-content: center;
         }
       }
