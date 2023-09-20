@@ -52,31 +52,63 @@ $(function () {
 //　TOP　下部のボタン
 //--------------------------------------
 
-$(window).on("scroll", function () {
-  var scrollPosition = $(this).scrollTop();
-  var footerPosition = $("footer").offset().top; // フッターの位置を取得
-  var fadeOutThreshold = footerPosition - 500; // フッター手前の位置を設定
-  var visualHeight = $("#top").height() + $("header").height() - 200;
+$(document).ready(function () {
+  var sideBarTimeToClose = null;
   var menuSidebar = $(".rbt-sidearea");
+  var scrollPosition = null;
 
-  if (scrollPosition > visualHeight) {
-    if (!menuSidebar.hasClass("rbt-loaded")) {
-      menuSidebar.toggleClass("rbt-loaded");
+  if (menuSidebar) {
+    var rbtLoaded = "rbt-loaded";
+    var scrollPosition = $(this).scrollTop();
+    var visualHeight = $("#top").height() + $("header").height() - 200;
+
+    setInterval(function () {
+      if (
+        sideBarTimeToClose &&
+        Math.floor($.now() / 1000) > sideBarTimeToClose
+      ) {
+        menuSidebar.removeClass(rbtLoaded);
+        sideBarTimeToClose = null;
+      }
+    }, 200);
+  }
+
+  $(window).on("scroll", function () {
+    scrollPosition = $(this).scrollTop();
+    var footerPosition = $("footer").offset().top; // フッターの位置を取得
+    var fadeOutThreshold = footerPosition - 500; // フッター手前の位置を設定
+
+    if (scrollPosition > 500 && scrollPosition < fadeOutThreshold) {
+      $(".roundbtn").addClass("show");
+      $(".roundbtn").removeClass("fade-out"); // フェードアウトクラスを削除
+    } else if (scrollPosition >= fadeOutThreshold) {
+      $(".roundbtn").removeClass("show");
+      $(".roundbtn").addClass("fade-out"); // フェードアウトクラスを追加
+    } else {
+      $(".roundbtn").removeClass("show");
+      $(".roundbtn").removeClass("fade-out"); // フェードアウトクラスを削除
     }
-  } else {
-    menuSidebar.removeClass("rbt-loaded");
-  }
 
-  if (scrollPosition > 500 && scrollPosition < fadeOutThreshold) {
-    $(".roundbtn").addClass("show");
-    $(".roundbtn").removeClass("fade-out"); // フェードアウトクラスを削除
-  } else if (scrollPosition >= fadeOutThreshold) {
-    $(".roundbtn").removeClass("show");
-    $(".roundbtn").addClass("fade-out"); // フェードアウトクラスを追加
-  } else {
-    $(".roundbtn").removeClass("show");
-    $(".roundbtn").removeClass("fade-out"); // フェードアウトクラスを削除
-  }
+    clearTimeout(scrollTimer);
+    var scrollTimer = setTimeout(function () {
+      // main view check
+      if (scrollPosition > visualHeight) {
+        if (sideBarTimeToClose == null) {
+          sideBarTimeToClose = Math.floor($.now() / 1000) + 2;
+        }
+
+        if (!menuSidebar.hasClass(rbtLoaded)) {
+          // current closed, need to open
+          menuSidebar.addClass(rbtLoaded);
+        }
+      } else {
+        menuSidebar.removeClass(rbtLoaded);
+        sideBarTimeToClose = null;
+      }
+    }, 300);
+
+    sideBarTimeToClose = null;
+  });
 });
 
 //--------------------------------------
