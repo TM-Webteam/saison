@@ -709,6 +709,14 @@
         line-height: 1.5;
       }
     }
+
+    .card-type22 {
+      .ttl-tertiary {
+        span {
+          line-height: 1.75;
+        }
+      }
+    }
   }
 
   .section-contact2 .tooltip {
@@ -724,6 +732,8 @@
     @media #{$sp} {
       white-space: pre;
       font-size: 12px;
+      line-height: 1.75;
+      padding: 10px 20px;
     }
   }
 }
