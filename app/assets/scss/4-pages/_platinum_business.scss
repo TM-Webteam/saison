@@ -687,8 +687,16 @@
       }
     }
   }
-  .section-steps {
+
+  .section-application-flow {
     background: #eeeeee;
+    .containers {
+      padding-top: 55px;
+
+      @media #{$sp} {
+        padding-top: 30px;
+      }
+    }
     .ttl-primary {
       margin-bottom: -10px;
       font-size: 32px;
@@ -696,37 +704,86 @@
 
       @media #{$sp} {
         margin-bottom: 20px;
+        font-size: 20px;
+        line-height: 1.75;
       }
     }
     .grid-card-containers {
-      display: flex;
+      display: grid;
       justify-content: space-between;
       width: 100%;
       align-items: center;
       flex-wrap: wrap;
+      margin-top: 36px;
+      grid-template-columns: repeat(5, 1fr);
+
       @media #{$sp} {
         display: grid;
         grid-template-columns: 1fr;
+        gap: 90px;
         justify-content: center;
-        * {
-          margin: auto;
+      }
+
+      &.four {
+        grid-template-columns: repeat(4, 1fr);
+        max-width: 1044px;
+        margin-inline: auto;
+
+        @media #{$sp} {
+          display: grid;
+          grid-template-columns: 1fr;
+          gap: 90px;
+          justify-content: center;
         }
       }
     }
     .step {
       text-align: center;
-      display: flex;
-      flex-direction: column;
+      display: grid;
+      grid-template-rows: auto 1fr auto;
       align-items: center;
       justify-content: center;
-      height: 300px;
       max-width: 230px;
+      height: 100%;
+      position: relative;
+      gap: 25px;
+
+      @media #{$sp} {
+        max-width: unset;
+      }
+
+      .ttl-quaternary {
+        margin-bottom: 0;
+        font-size: 20px;
+        font-family: "Futura";
+        font-weight: 500;
+      }
+
+      .arrowStep {
+        position: absolute;
+        top: 75px;
+        right: -13px;
+
+        @media #{$sp} {
+          top: unset;
+          right: unset;
+          bottom: -75px;
+          left: calc(50% - 12.25px);
+        }
+      }
+
+      .svg-step {
+        justify-content: center;
+        display: flex;
+        align-items: center;
+      }
+      .ttl-quinary {
+        font-weight: bold;
+        flex-grow: 1;
+      }
     }
 
     @media #{$sp} {
-      .step {
-        height: 200px;
-      }
       .arrowStep {
         transform: rotate(90deg);
       }
@@ -735,10 +792,22 @@
         justify-content: center;
         width: 100%;
         margin-top: 20px;
+
         .bondi_blue_btn {
           max-width: 100%;
           padding: 15px 30px;
+          width: 90%;
+          justify-content: center;
         }
+      }
+    }
+
+    .btn-container {
+      margin-top: 30px;
+
+      &.small {
+        max-width: 1044px;
+        margin-inline: auto;
       }
     }
   }

@@ -240,6 +240,9 @@
           &__option {
             margin: unset;
             min-width: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
 
             @media #{$sp} {
               width: 70%;
@@ -361,14 +364,11 @@
             padding: 0 15px;
             text-align: center;
           }
-          .minus-margin {
-            margin-top: -35px;
-          }
           .blue-text {
             color: #0297b5;
           }
           .percent {
-            font-size: 42px;
+            font-size: 30px;
             font-weight: 500;
           }
         }
@@ -1031,7 +1031,7 @@
 
       .ttl-quaternary {
         margin-bottom: 0;
-        font-size: 26px;
+        font-size: 20px;
         font-family: "Futura";
         font-weight: 500;
       }
