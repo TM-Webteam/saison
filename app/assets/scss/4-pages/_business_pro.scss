@@ -880,6 +880,21 @@
         line-height: 21px;
         font-weight: bold;
       }
+
+      .second-column {
+        .purchasing {
+          display: flex;
+          justify-content: space-between;
+        }
+      }
+
+      .third-column {
+        .gold {
+          display: flex;
+          justify-content: space-between;
+        }
+      }
+
       .card-type {
         margin-bottom: 40px;
         display: flex;
