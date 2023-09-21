@@ -38,7 +38,7 @@
         <h1 class="ttl-primary">{{ smaller_companies.welcome.title }}</h1>
       </div>
       <div>
-        <a href="#" class="blue_gradient_btn">{{ common.button.download }}</a>
+        <a href="/catalog_list/" class="blue_gradient_btn">{{ common.button.download }}</a>
       </div>
     </section>
 
@@ -121,7 +121,9 @@
                     <li class="card-type12">
                       <h3 class="card__box--ttl" style="font-weight:normal !important;">{{ item.title }}</h3>
                       <div class="credit-card">
-                        <img src={{ item.image }} class="credit-card-img">
+                        <a href={{ item.link }}>
+                          <img src={{ item.image }} class="credit-card-img">
+                        </a>
                       </div>
                       <div class="card__box--des">
                         <h3 class="ttl-terianry centered-text">{{ item.content | safe }}</h3>
@@ -133,7 +135,7 @@
                           {% endfor %}
                         </ul>
                       </div>
-                      <a href="#" class="bondi_blue_outline_btn">{{ common.button.detail }}</a>
+                      <a class="bondi_blue_outline_btn" href={{ item.btn_link }}>{{ common.button.detail }}</a>
                     </li>
                   {% endfor %}
                 </ul>
@@ -163,7 +165,7 @@
                     {% endfor %}
                   </div>
                 </div>
-                <a href="#" class="bondi_blue_outline_btn">「Concur Expense」{{ common.button.more }}</a>
+                <a href="/concur_expense/" class="bondi_blue_outline_btn">「Concur Expense」{{ common.button.more }}</a>
               </div>
             </div>
           </div>
@@ -214,7 +216,7 @@
                 </div>
               </div>
 
-              <a href="#" class="bondi_blue_outline_btn">{{ solution.more }}</a>
+              <a href={{ solution.link }} class="bondi_blue_outline_btn">{{ solution.more }}</a>
             </div>
           </div>
         {% endfor %}
