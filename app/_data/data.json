@@ -376,7 +376,8 @@
                   "年間200万円以上のご利用で、次年度年会費11,000円（税込）"
                 ],
                 ["申込資格 :　個人事業者、中小規模ビジネスオーナー"]
-              ]
+              ],
+              "link": "/platinum_business/"
             },
             {
               "image": "/assets/img/credit_cards/american-express-02.png",
@@ -385,7 +386,8 @@
               "list_option": [
                 ["本会員・追加カード会員ともに年会費永年無料"],
                 ["申込資格 :　個人事業者、中小規模ビジネスオーナー"]
-              ]
+              ],
+              "link": "/cobalt_business/"
             }
           ]
         },
@@ -402,7 +404,8 @@
                   "追加カード年会費：3,300円（税込）"
                 ],
                 ["申込資格 : 法人事業者"]
-              ]
+              ],
+              "link": "/platinum_business_pro/"
             },
             {
               "image": "/assets/img/credit_cards/saison-01.png",
@@ -414,7 +417,8 @@
                   "追加カード年会費：1,100円（税込）"
                 ],
                 ["申込資格 : 法人事業者"]
-              ]
+              ],
+              "link": "/gold_business_pro/"
             },
             {
               "image": "/assets/img/credit_cards/saison-02.png",
@@ -427,7 +431,8 @@
                 ],
                 ["申込資格 : 法人事業者"]
               ],
-              "note": "※プラスチックカードは発行されません。"
+              "note": "※プラスチックカードは発行されません。",
+              "link": "/purchasing_card/"
             }
           ]
         }
