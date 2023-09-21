@@ -36,6 +36,7 @@
       background-position: left;
       @media #{$sp} {
         background-position: center;
+        background: #000000;
       }
     }
 
@@ -43,6 +44,7 @@
       background-image: url("/assets/img/cobalt_business/banner.png");
       @media #{$sp} {
         background-position: 35%;
+        background: #32518b;
       }
       .banner-containers .banner-left .card-description {
         font-size: 32px;
@@ -53,6 +55,7 @@
       background-image: url("/assets/img/purchasing_card/purchasing_card_banner.png");
       @media #{$sp} {
         background-position: 47%;
+        background: $blue-color-5;
       }
       .banner-containers .banner-left .ttl-primary {
         font-size: 39px;
@@ -67,6 +70,7 @@
       background-image: url("/assets/img/gold_business_pro/gold_business_pro_banner.png");
       @media #{$sp} {
         background-position: 35%;
+        background: #945b29;
       }
     }
 
@@ -984,6 +988,7 @@
       }
     }
   }
+
   .section-application-flow {
     background: #eeeeee;
     .containers {
@@ -1092,7 +1097,6 @@
         .bondi_blue_btn {
           max-width: 100%;
           padding: 15px 30px;
-          width: 90%;
           justify-content: center;
         }
       }
