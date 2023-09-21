@@ -265,9 +265,11 @@
           max-width: 150px;
         }
         .card-btn {
-          padding: 25px;
           color: #fff;
           transition: 0.1s ease-in-out;
+          a {
+            padding: 25px;
+          }
           &.card-type-1 {
             background: #0297b5;
             &:hover {
