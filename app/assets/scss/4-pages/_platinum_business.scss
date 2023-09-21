@@ -8,6 +8,10 @@
     padding: 15px 0;
     background-position: center;
 
+    @media #{$sp} {
+      background: #343434;
+    }
+
     .banner-containers {
       display: flex;
       justify-content: space-between;
