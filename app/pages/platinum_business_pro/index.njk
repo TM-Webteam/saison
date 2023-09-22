@@ -53,50 +53,56 @@ link: "#application-flow"
 {# Main content #}
 {% block content %}
 {% include 'partial/sidebar.njk' %}
-<main class="business_pro-page">
+<main class="business_pro-page platinum-business-pro-page">
   <section id="top" class="section-welcome platinum fadein">
-    <div class="containers">
-      <div class="banner-containers">
-        <div class="banner-left">
-          <div class="title-notice">
-            <h3 class="title-content">
-              法人与信型ビジネスカード
-              {# {% include 'component/icons/circle-question.njk' %} #}
-            </h3>
-          </div>
-          <h1 class="ttl-primary">
-            セゾンプラチナ・ビジネス プロ・<br> アメリカン・エキスプレス®・カード
-          </h1>
+    <div class="row">
+      <div class="left">
+        <div class="containers">
+          <div class="banner-containers">
+            <div class="banner-left">
+              <div class="title-notice">
+                <h3 class="title-content">
+                  法人与信型ビジネスカード
+                  {# {% include 'component/icons/circle-question.njk' %} #}
+                </h3>
+              </div>
+              <h1 class="ttl-primary">
+                セゾンプラチナ・ビジネス プロ・<br> アメリカン・エキスプレス®・カード
+              </h1>
 
-          <div class="card-contents">
-            <div class="card-img">
-              <img src="/assets/img/credit_cards/saison-03.png" alt="Your Image" class="credit-card-img">
-            </div>
-            <div class="card-description">
-              <span>選べる機能で中小企業の経営をサポート</span>
-              <div class="card-description__options">
-                <div class="option">
-                  <span>1％<br />
-                    のキャッシュバック
-                  </span>
+              <div class="card-contents">
+                <div class="card-img">
+                  <img src="/assets/img/credit_cards/saison-03.png" alt="Your Image" class="credit-card-img">
                 </div>
-                OR
-                <div class="option">
-                  <span>お支払いを<br />
-                    最長84日後・手数料0円
-                  </span>
+                <div class="card-description">
+                  <span>選べる機能で中小企業の経営をサポート</span>
+                  <div class="card-description__options">
+                    <div class="option">
+                      <span>1％<br />
+                        のキャッシュバック
+                      </span>
+                    </div>
+                    OR
+                    <div class="option">
+                      <span>お支払いを<br />
+                        最長84日後・手数料0円
+                      </span>
+                    </div>
+                  </div>
                 </div>
               </div>
-
+              <div class="banner-btn">
+                <a class="banner-btn__option blue_gradient_btn"
+                  href="https://www.saisoncard.co.jp/bizpro/kiyaku?app_card=1&pioneer_store_number=3166968&referral_store_number=0000001&referral_contact_number="
+                  target="_blank">お申込みはこちら</a>
+                <a class="banner-btn__option bondi_blue_outline_btn" href="/contact/">お問い合わせはこちら</a>
+              </div>
             </div>
           </div>
-
-          <div class="banner-btn">
-            <a class="banner-btn__option blue_gradient_btn" href="https://www.saisoncard.co.jp/bizpro/kiyaku?app_card=1&pioneer_store_number=3166968&referral_store_number=0000001&referral_contact_number=" target="_blank">お申込みはこちら</a>
-            <a class="banner-btn__option bondi_blue_outline_btn" href="/contact/">お問い合わせはこちら</a>
-          </div>
-
         </div>
+      </div>
+
+      <div class="right pc-only">
         <div class="banner-right pc-only">
           その挑戦に、
           <br /> 即戦力を
@@ -144,18 +150,21 @@ link: "#application-flow"
         <li class="card">
           <h2>経費管理業務も削減</h2>
           <div class="grid__card--img"><img src="/assets/img/business_pro/business_pro1.png" alt="work image"></div>
-          <p><strong>最長15ヵ月分のご利用明細をWEB上でご確認</strong>いただけます。明細データはPDFやCSVでダウンロード可能。お支払い時の詳細が記 載されているので、精算事務作業を大幅に軽減できます。</p>
+          <p><strong>最長15ヵ月分のご利用明細をWEB上でご確認</strong>いただけます。明細データはPDFやCSVでダウンロード可能。お支払い時の詳細が記 載されているので、精算事務作業を大幅に軽減できます。
+          </p>
         </li>
         <li class="card">
           <h2>柔軟なご利用枠</h2>
           <div class="grid__card--img"><img src="/assets/img/business_pro/business_pro2.png" alt="work image"></div>
-          <p>ビジネスに対応する<strong>ゆとりのご利用可能</strong>枠で、従業員の皆様のご利用をサポート。<br/><strong>「仮払い」</strong>や<strong>「立替払い」が不要</strong>になり、従業員の皆様の事務の手間が軽減されます。
+          <p>
+            ビジネスに対応する<strong>ゆとりのご利用可能</strong>枠で、従業員の皆様のご利用をサポート。<br /><strong>「仮払い」</strong>や<strong>「立替払い」が不要</strong>になり、従業員の皆様の事務の手間が軽減されます。
           </p>
         </li>
         <li class="card">
           <h2>カード毎に利用枠の設定可能</h2>
           <div class="grid__card--img"><img src="/assets/img/business_pro/business_pro3.png" alt="work image"></div>
-          <p><strong>カード毎に利用枠の設定</strong>ができますので、1枚ずつ異なった利用枠の設定が可能です。<br/>WEB明細でカード使用者ごとの経費支出が確認できますので、ガバナンス強化にも役立ちます。</p>
+          <p><strong>カード毎に利用枠の設定</strong>ができますので、1枚ずつ異なった利用枠の設定が可能です。<br />WEB明細でカード使用者ごとの経費支出が確認できますので、ガバナンス強化にも役立ちます。
+          </p>
         </li>
       </ul>
     </div>
@@ -169,7 +178,8 @@ link: "#application-flow"
         <strong>書類郵送に取られる期間がなくなるため、発行までにかかる期間の短縮ができます。</strong>
       </h4>
       <div>
-        <a href="https://www.saisoncard.co.jp/bizpro/kiyaku?app_card=1&pioneer_store_number=3166968&referral_store_number=0000001&referral_contact_number=" target="_blank" class="blue_gradient_btn">お申し込みはこちら</a>
+        <a href="https://www.saisoncard.co.jp/bizpro/kiyaku?app_card=1&pioneer_store_number=3166968&referral_store_number=0000001&referral_contact_number="
+          target="_blank" class="blue_gradient_btn">お申し込みはこちら</a>
       </div>
       <p class="note">※申込み時にフォームにて、決算内容の入力は必要です。決算内容がわかるもののご用意をお願いいたします。</p>
     </div>
@@ -185,7 +195,7 @@ link: "#application-flow"
             年会費
           </div>
           <div class="col-right">
-            <div class="ttl-quaternary">27,500円（税込）   追加カード年会費：3,300円（税込）</div>
+            <div class="ttl-quaternary">27,500円（税込） 追加カード年会費：3,300円（税込）</div>
             <div class="ttl-quaternary normal-text">年会費は会計上経費として計上可能です。詳しくは税理士等にご確認ください。</div>
           </div>
         </div>
@@ -535,7 +545,8 @@ link: "#application-flow"
 
     <div class="btn-actions">
       <a href="#" class="btn bondi_blue_outline_btn">もっと見る</a>
-      <a href="https://saison-test.tmedia.jp/contact/" class="btn bondi_blue_btn more btn-other-question">その他のご質問をしたい方はこちら</a>
+      <a href="https://saison-test.tmedia.jp/contact/"
+        class="btn bondi_blue_btn more btn-other-question">その他のご質問をしたい方はこちら</a>
     </div>
 
   </section>
@@ -595,12 +606,13 @@ link: "#application-flow"
       </div>
 
       <div class="btn-container">
-        <a href="https://www.saisoncard.co.jp/bizpro/kiyaku?app_card=1&pioneer_store_number=3166968&referral_store_number=0000001&referral_contact_number=" target="_blank">
+        <a href="https://www.saisoncard.co.jp/bizpro/kiyaku?app_card=1&pioneer_store_number=3166968&referral_store_number=0000001&referral_contact_number="
+          target="_blank">
           <span class="bondi_blue_btn">
             お申し込みはこちら
             <svg xmlns="http://www.w3.org/2000/svg" width="15.095" height="15.095" viewBox="0 0 15.095 15.095">
-              <path id="Path_44704" data-name="Path 44704" d="M9.674,0V9.674H0" transform="translate(0 7.548) rotate(-45)"
-                fill="none" stroke="#fff" stroke-width="2" />
+              <path id="Path_44704" data-name="Path 44704" d="M9.674,0V9.674H0"
+                transform="translate(0 7.548) rotate(-45)" fill="none" stroke="#fff" stroke-width="2" />
             </svg>
           </span>
         </a>
