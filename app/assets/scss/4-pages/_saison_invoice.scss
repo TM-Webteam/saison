@@ -191,6 +191,10 @@
               &:first-child {
                 color: $yellow-color;
                 background-color: $purple-color;
+
+                @media #{$sp} {
+                  background-color: #021054
+                }
               }
 
               @media #{$sp} {
