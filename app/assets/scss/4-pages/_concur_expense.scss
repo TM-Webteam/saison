@@ -189,6 +189,7 @@
             bottom: -25px;
             left: 60px;
             font-size: 13px;
+            line-height: 22px;
             color: #797979;
           }
         }
@@ -216,6 +217,18 @@
             @media #{$sp} {
               padding: 10px 20px;
             }
+          }
+        }
+
+        .sub-note {
+          @media #{$sp} {
+            width: 85%;
+            text-align: left;
+            margin: auto;
+            margin-top: 25px;
+            color: #797979;
+            font-size: 13px;
+            line-height: 22px;
           }
         }
       }
