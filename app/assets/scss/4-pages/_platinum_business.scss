@@ -2,19 +2,48 @@
 
 .platinum_business-page {
   .section-welcome {
-    background-image: url("/assets/img/common/platinum_business_banner.png");
+    background-image: url("/assets/img/common/platinum_banner.png");
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 15px 0;
     background-position: center;
-
     @media #{$sp} {
       background: #343434;
     }
 
+    .row {
+      display: grid;
+      grid-template-columns: 62% 38%;
+
+      @media #{$sp} {
+        grid-template-columns: auto;
+      }
+
+      .right {
+        height: 100%;
+        width: 100%;
+        background: #343434;
+        clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);
+        position: relative;
+
+        .banner-right {
+          color: #fff;
+          font-size: 29px;
+          font-family: "Sawarabi Mincho", serif;
+          padding-top: 88px;
+          padding-left: 188px;
+        }
+      }
+    }
+
     .banner-containers {
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
+      padding-left: 78px;
+
+      @media #{$sp} {
+        padding-left: 0;
+      }
+
       .banner-left {
         .title-notice {
           position: relative;
@@ -45,7 +74,7 @@
 
             @media #{$sp} {
               font-size: 16px;
-            }            
+            }
           }
         }
         .ttl-primary {
@@ -109,12 +138,6 @@
         .banner-btn {
           margin-top: 40px;
         }
-      }
-      .banner-right {
-        color: #fff;
-        font-size: 29px;
-        margin-left: -30px;
-        font-family: "Sawarabi Mincho", serif;
       }
     }
 
