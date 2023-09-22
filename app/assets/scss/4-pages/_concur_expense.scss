@@ -183,6 +183,14 @@
               }
             }
           }
+
+          .sub-note {
+            position: absolute;
+            bottom: -25px;
+            left: 60px;
+            font-size: 13px;
+            color: #797979;
+          }
         }
       }
 
@@ -340,7 +348,7 @@
             content: "";
             position: absolute;
             top: 0;
-            right: -45px;
+            right: -44px;
             width: 0;
             height: 0;
             border-top: 39px solid transparent;
