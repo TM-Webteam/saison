@@ -335,14 +335,21 @@
           width: 70px;
           height: 70px;
           border-radius: 70px;
+
           &.first {
             background: url("../img/common/circle_chosing1.png");
+            background-repeat: no-repeat;
+            background-size: cover;
           }
           &.second {
             background: url("../img/common/circle_chosing2.png");
+            background-repeat: no-repeat;
+            background-size: cover;
           }
           &.third {
             background: url("../img/common/circle_chosing3.png");
+            background-repeat: no-repeat;
+            background-size: cover;
           }
         }
         .normal-child {
