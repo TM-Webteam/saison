@@ -121,6 +121,15 @@
               background: #ffffff 0% 0% no-repeat padding-box;
               border: 2px solid #aaaaaa;
               border-radius: 5px;
+
+              &::after {
+                left: 12px;
+                top: -8px;
+                width: 8px;
+                height: 20px;
+                border-width: 0 3px 3px 0;
+              }
+
               .checkbox-icon {
                 width: 26px;
                 height: 10px;
