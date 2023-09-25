@@ -488,8 +488,6 @@ $(document).ready(function () {
               currentFilters.push(text);
             }
 
-            console.log(currentFilters);
-
             applyFilter();
           });
         });
