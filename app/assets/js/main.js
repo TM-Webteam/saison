@@ -448,3 +448,63 @@ $(document).ready(function () {
     });
   });
 });
+
+// ----- サービス一覧絞り込み --------
+$(document).ready(function () {
+  if ($(".service-page").length) {
+    var currentFilters = [];
+    var sectionTags = [];
+
+    var resultSections = $("#result .card-section");
+
+    resultSections.each(function (index) {
+      var thisSectionTags = [];
+
+      $(this)
+        .find(".list-button")
+        .children()
+        .each(function () {
+          thisSectionTags.push($(this).text());
+        });
+
+      sectionTags.push(thisSectionTags);
+    });
+
+    $("#dataFilter .card-section").each(function () {
+      $(this)
+        .find(".right-content")
+        .children()
+        .each(function () {
+          $(this).on("click", function (e) {
+            e.preventDefault();
+
+            $(this).toggleClass("click-hover");
+            var text = $(this).text();
+
+            if (currentFilters.includes(text)) {
+              var index = currentFilters.indexOf(text);
+              currentFilters.splice(index, 1);
+            } else {
+              currentFilters.push(text);
+            }
+
+            console.log(currentFilters);
+
+            applyFilter();
+          });
+        });
+    });
+
+    function applyFilter() {
+      for (var i = 0; i < sectionTags.length; i++) {
+        $(resultSections[i]).show();
+
+        var diff = $(currentFilters).not(sectionTags[i]).get();
+
+        if (diff.length) {
+          $(resultSections[i]).hide();
+        }
+      }
+    }
+  }
+});

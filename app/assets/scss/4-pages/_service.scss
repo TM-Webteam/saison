@@ -122,12 +122,13 @@
             }
 
             .bondi_blue_outline_btn {
+              background: #ffffff;
               max-width: unset;
               margin: unset;
             }
 
             .bondi_green_outline_btn {
-              background: white;
+              background: #ffffff;
 
               &:hover {
                 background-color: $green-color-3;
@@ -338,5 +339,30 @@
         font-size: 16px;
       }
     }
+  }
+}
+
+.bondi_blue_outline_btn.click-hover {
+  background-color: $blue-color !important;
+  color: #ffffff;
+  opacity: 1;
+  &::before {
+    content: none !important ;
+  }
+  span {
+    color: white;
+  }
+}
+
+.bondi_green_outline_btn.click-hover {
+  background-color: $green-color-3 !important;
+  color: #ffffff;
+  opacity: 1;
+  &::before {
+    border-top: 3px solid $white-color;
+    border-right: 3px solid $white-color;
+  }
+  span {
+    color: white;
   }
 }
