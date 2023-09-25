@@ -61,10 +61,12 @@
         gap: 30px;
         .list-item {
           width: 380px;
-          height: 438px;
           background: #f5f5f5 0% 0% no-repeat padding-box;
           box-shadow: 0px 3px 20px #00000029;
           transition: all 0.3s;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
           .item-thumbnail {
             position: relative;
             text-align: center;
@@ -112,7 +114,6 @@
             padding: 30px 30px 0 30px;
             display: flex;
             gap: 20px;
-            align-items: center;
             .checkbox {
               width: 25px;
               padding-left: 2px;
@@ -152,6 +153,12 @@
             letter-spacing: 0px;
             color: #000000;
             padding: 20px 30px 0 30px;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            word-break: break-word;
           }
           .item-button {
             margin: 20px auto;
