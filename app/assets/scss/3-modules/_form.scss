@@ -438,6 +438,12 @@
   align-items: center;
   flex-wrap: nowrap;
 
+  &.show {
+    .checkmark::after {
+      display: block;
+    }
+  }
+
   input[type="checkbox"] {
     display: none;
   }
