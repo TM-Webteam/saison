@@ -427,26 +427,13 @@ $(window).on("popstate", function () {
 // Open Image modal
 // ----------------------------------
 $(document).ready(function () {
-  var windowsize = $(window).width();
 
-  // Get the modal
-  var modal = $("#imageModal");
-
-  var modalImg = $("#image-in-modal");
-
-  $("#zoomImg").each(function (index) {
-    $(this).on("click", function () {
-      modal.addClass("flex-center");
-      modal.attr("style", "display: flex");
-      modalImg.attr("src", $(this).attr("src"));
-    });
+  $(".btn-open-image").modaal({
+    type: "image",
+    custom_class: "bg-white sp-only",
   });
 
-  $(".close-modal").each(function () {
-    $(this).on("click", function () {
-      $(this).closest(".modal").attr("style", "display: none");
-    });
-  });
+
 });
 
 // ----- サービス一覧絞り込み --------

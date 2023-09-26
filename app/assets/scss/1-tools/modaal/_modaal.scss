@@ -84,6 +84,17 @@ $modaal-grey: #afb7bc;
 		-webkit-appearance: none;
 	}
 
+	&.bg-white {
+		background-color: $white-color;
+		.modaal-inner-wrapper {
+			padding-inline: 5px;
+		}
+
+		.modaal-close {
+			background: #ccc;
+		}
+	}
+
 	&.modaal-start_none {
 		display: none;
 		opacity: 1;
