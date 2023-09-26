@@ -506,3 +506,34 @@ $(document).ready(function () {
     }
   }
 });
+
+// Slick slider
+$(document).ready(function (e) {
+
+  if ($(".carousel-single").length) {
+    $(window).on('load', function () {
+      setTimeout(function () {
+        $(".carousel-single").not('.slick-initialized').slick({
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: false,
+          useTransform: false,
+          prevArrow: '<button type="button" class="slick-prev"><svg xmlns="http://www.w3.org/2000/svg" width="15.095" height="15.095" viewBox="0 0 15.095 15.095"><path id="Path_44704" data-name="Path 44704" d="M9.674,9.674V0H0" transform="translate(8.255 14.388) rotate(-135)" fill="none" stroke="#fff" stroke-width="2"/></svg></button>',
+          nextArrow: '<button type="button" class="slick-next"><svg xmlns="http://www.w3.org/2000/svg" width="15.095" height="15.095" viewBox="0 0 15.095 15.095"><path id="Path_44704" data-name="Path 44704" d="M9.674,0V9.674H0" transform="translate(0 7.548) rotate(-45)" fill="none" stroke="#fff" stroke-width="2"/></svg></button>',
+          responsive: [
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            }
+          ]
+        });
+  
+          $(".carousel-single").show();
+      }, 100);
+    });
+  }
+  
+});
