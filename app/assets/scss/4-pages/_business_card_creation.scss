@@ -461,8 +461,7 @@
             font-size: 15px;
             display: flex;
             justify-content: center;
-            align-items: center;
-            height: 75px;
+            flex-grow: 1;
           }
           img {
             max-width: 100%;
@@ -479,6 +478,30 @@
       margin-top: 50px;
       .bondi_blue_outline_btn {
         max-width: 384px;
+        width: 50%;
+
+        @media #{$sp} {
+          width: unset;
+        }
+      }
+
+      .checkOpen {
+        pointer-events: none;
+        opacity: 0.5;
+
+        &.show {
+          pointer-events: auto;
+          opacity: 1;
+          background-color: $blue-color;
+          color: #ffffff;
+          opacity: 1;
+          &::before {
+            content: none !important ;
+          }
+          span {
+            color: white;
+          }
+        }
       }
     }
     .banner-btn {

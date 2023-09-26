@@ -509,31 +509,108 @@ $(document).ready(function () {
 
 // Slick slider
 $(document).ready(function (e) {
-
   if ($(".carousel-single").length) {
-    $(window).on('load', function () {
+    $(window).on("load", function () {
       setTimeout(function () {
-        $(".carousel-single").not('.slick-initialized').slick({
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          dots: false,
-          useTransform: false,
-          prevArrow: '<button type="button" class="slick-prev"><svg xmlns="http://www.w3.org/2000/svg" width="15.095" height="15.095" viewBox="0 0 15.095 15.095"><path id="Path_44704" data-name="Path 44704" d="M9.674,9.674V0H0" transform="translate(8.255 14.388) rotate(-135)" fill="none" stroke="#fff" stroke-width="2"/></svg></button>',
-          nextArrow: '<button type="button" class="slick-next"><svg xmlns="http://www.w3.org/2000/svg" width="15.095" height="15.095" viewBox="0 0 15.095 15.095"><path id="Path_44704" data-name="Path 44704" d="M9.674,0V9.674H0" transform="translate(0 7.548) rotate(-45)" fill="none" stroke="#fff" stroke-width="2"/></svg></button>',
-          responsive: [
-            {
-              breakpoint: 768,
-              settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
-              }
-            }
-          ]
-        });
-  
-          $(".carousel-single").show();
+        $(".carousel-single")
+          .not(".slick-initialized")
+          .slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            dots: false,
+            useTransform: false,
+            prevArrow:
+              '<button type="button" class="slick-prev"><svg xmlns="http://www.w3.org/2000/svg" width="15.095" height="15.095" viewBox="0 0 15.095 15.095"><path id="Path_44704" data-name="Path 44704" d="M9.674,9.674V0H0" transform="translate(8.255 14.388) rotate(-135)" fill="none" stroke="#fff" stroke-width="2"/></svg></button>',
+            nextArrow:
+              '<button type="button" class="slick-next"><svg xmlns="http://www.w3.org/2000/svg" width="15.095" height="15.095" viewBox="0 0 15.095 15.095"><path id="Path_44704" data-name="Path 44704" d="M9.674,0V9.674H0" transform="translate(0 7.548) rotate(-45)" fill="none" stroke="#fff" stroke-width="2"/></svg></button>',
+            responsive: [
+              {
+                breakpoint: 768,
+                settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 1,
+                },
+              },
+            ],
+          });
+
+        $(".carousel-single").show();
       }, 100);
     });
   }
-  
+});
+
+// ----------------------------------
+// Card Comparison
+// ----------------------------------
+$(function () {
+  $(".inline").modaal({
+    content_source: "#inline",
+  });
+
+  // modal_open
+  if ($(".campaign-modal").length) {
+    $(".campaign-modal").each(function () {
+      $(this).modaal({
+        content_source: "#js-comparison-modal",
+      });
+    });
+
+    $(".comparison_item_close").on("click", function () {
+      var selectCard = $(this).parent("th").attr("id");
+      $("." + selectCard).toggleClass("show");
+
+      $(".check[data-select_card='" + selectCard + "']").removeClass("show");
+      if ($(".comparison_item.show").length == 0) {
+        document.getElementById("modaal-close").click();
+        $("#checkOpen").removeClass("show");
+        return false;
+      }
+    });
+
+    $(".check").on("click", function () {
+      $(this).toggleClass("show");
+
+      var onSelectCard = $("." + $(this).data("select_card"));
+      $.when($(onSelectCard).toggleClass("show")).done(function () {
+        if ($(".check").hasClass("show")) {
+          $("#checkOpen").addClass("show");
+        } else {
+          $("#checkOpen").removeClass("show");
+        }
+      });
+
+      if ($(".check.show").length > 3) {
+        alert("譛螟ｧ3縺､縺ｾ縺ｧ驕ｸ謚槫庄閭ｽ縺ｧ縺�");
+        $(this).removeClass("show");
+        onSelectCard.removeClass("show");
+        return false;
+      }
+    });
+
+    $("#checkOpen").on("click", function () {
+      var count = 0;
+      $(".comparison_table tbody tr").each(function () {
+        var $col = $(this);
+        $col.children().each(function (index) {
+          $(this).addClass("row-" + index);
+          if (count <= index) {
+            count = index;
+          }
+        });
+      });
+      for (var i = 0; i <= count; i++) {
+        var h = 0;
+        $(".row-" + i).each(function (index) {
+          var cellH = $(this).outerHeight();
+          if (h <= cellH) {
+            h = cellH;
+          }
+        });
+        $(".row-" + i).height(h);
+      }
+      var thH = $(".comparison_table thead .comparison_item th").outerHeight();
+      $(".free_box").css("height", thH + "px");
+    });
+  }
 });
