@@ -249,7 +249,7 @@
 
               img {
                 padding: 0 10px;
-                transition: all .3s;
+                transition: all 0.3s;
               }
               &:hover {
                 opacity: 1;
@@ -601,6 +601,17 @@
           padding: 30px 32px 30px 32px;
           box-shadow: 0 3px 20px $gray-color-4;
 
+          &:hover {
+            .grid__card--img {
+              transform: scale(1.03);
+              transition: all 0.3s;
+
+              img {
+                transform: none;
+              }
+            }
+          }
+
           .ttl-quaternary {
             text-align: left;
             font-size: 20px;
@@ -617,21 +628,8 @@
             position: relative;
 
             .primary-img {
-              position: absolute;
-              top: 0;
-              left: 0;
-              width: 237.5px;
+              width: 100%;
               height: 164.43px;
-              z-index: 10;
-            }
-
-            .secondary-img {
-              position: absolute;
-              bottom: 0;
-              right: 0;
-              width: 237.5px;
-              height: 164.43px;
-              z-index: 1;
             }
           }
 

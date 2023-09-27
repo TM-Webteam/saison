@@ -14,7 +14,7 @@
   text-align: center;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.35);
   opacity: 0;
-  transition: all .3s;
+  transition: all 0.3s;
   display: none;
   @media #{$sp} {
     padding: 10px 0;
@@ -45,7 +45,7 @@
     position: relative;
     border-radius: 3px;
     margin: 0 auto;
-    transition: all .3s;
+    transition: all 0.3s;
     border: 2px solid #0497b5;
     background: #0497b5;
     @media #{$sp} {
@@ -68,7 +68,7 @@
       border-top: 2px solid #fff;
       border-right: 2px solid #fff;
       transform: rotate(45deg);
-      transition: all .3s;
+      transition: all 0.3s;
     }
     &:hover {
       opacity: 1;
@@ -85,4 +85,12 @@
 .cursor-pointer {
   cursor: pointer;
   pointer-events: auto;
+}
+
+.btn-open-image {
+  pointer-events: none;
+
+  @media #{$sp} {
+    pointer-events: auto;
+  }
 }

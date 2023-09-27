@@ -381,46 +381,14 @@ link: "#contact"
   </section>
 
   <section id="faq" class="section-question-and-answer fadein">
-    <h5 class="ttl-secondary">FAQ</h5>
-    <h2 class="ttl-primary">よくある質問</h2>
-    <p class="ttl-tertiary">お客様からよくいただくご質問にお答えします。この他にご質問がある方は、<a href="/contact">お問い合わせフォーム</a>より、お気軽にご連絡ください。</br>
-      2営業日以内に担当者からご連絡させて頂きます。
-    </p>
-    <div class="container qa-list">
-      {% for i in range(1, 5) %}
-      <div class="qa">
-        <div class="flex gap20 question-tab">
-          <div class="qa-marker">
-            <h2 class="ttl-secondary">Q</h2>
-          </div>
-          <div class="qa-content">
-            <h3 class="ttl-tertiary">
-              質問内容が入ります。質問内容が入ります。質問内容が入ります。質問内容が入ります。質問内容が入ります。
-            </h3>
-          </div>
-          <button class="qa-button">
-            <span class="svg__plus">{% include 'component/icons/plus.njk' %}</span>
-            <span class="svg__minus">{% include 'component/icons/minus.njk' %}</span>
-          </button>
-        </div>
-        <div class="flex gap20 answer-tab">
-          <div class="qa-marker">
-            <h2 class="ttl-secondary">A</h2>
-          </div>
-          <div class="qa-content">
-            <h3 class="ttl-tertiary">
-              質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。
-            </h3>
-          </div>
-        </div>
-      </div>
-      {% endfor %}
+    <div class="container">
+      <h5 class="ttl-secondary">FAQ</h5>
+      <h2 class="ttl-primary">よくある質問</h2>
+      <p class="ttl-tertiary">お客様からよくいただくご質問にお答えします。この他にご質問がある方は、<a href="/contact">お問い合わせフォーム</a>より、お気軽にご連絡ください。</br>
+        2営業日以内に担当者からご連絡させて頂きます。
+      </p>
+      {% include 'partial/qa_section.njk' %}
     </div>
-    <a href="#" class="bondi_blue_outline_btn">
-      <span class="bondi_blue_outline_btn__tittle">
-        もっと見る
-      </span>
-    </a>
   </section>
 
   <section id="application" class="section-contact fadein">
