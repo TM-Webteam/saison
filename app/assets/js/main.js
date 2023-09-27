@@ -230,7 +230,6 @@ $(document).ready(function () {
   sectionQA(5, ".QA__content", ".show-faq-list");
 });
 
-
 //______________________________________
 // QA
 //______________________________________
@@ -458,24 +457,22 @@ $(window).on("popstate", function () {
 // Open Image modal
 // ----------------------------------
 $(document).ready(function () {
-
   $(".btn-open-image").modaal({
     type: "image",
     custom_class: "bg-white sp-only",
   });
-
-
 });
 
 // ----- サービス一覧絞り込み --------
 $(document).ready(function () {
   if ($(".service-page").length) {
-    var currentFilters = [];
+    var currentFilters1 = [];
+    var currentFilters2 = [];
     var sectionTags = [];
 
     var resultSections = $("#result .card-section");
 
-    resultSections.each(function (index) {
+    resultSections.each(function () {
       var thisSectionTags = [];
 
       $(this)
@@ -499,11 +496,10 @@ $(document).ready(function () {
             $(this).toggleClass("click-hover");
             var text = $(this).text();
 
-            if (currentFilters.includes(text)) {
-              var index = currentFilters.indexOf(text);
-              currentFilters.splice(index, 1);
-            } else {
-              currentFilters.push(text);
+            if ($(this).hasClass("bondi_blue_outline_btn")) {
+              updateFilters(currentFilters1, text);
+            } else if ($(this).hasClass("bondi_green_outline_btn")) {
+              updateFilters(currentFilters2, text);
             }
 
             applyFilter();
@@ -511,16 +507,70 @@ $(document).ready(function () {
         });
     });
 
+    function updateFilters(filters, text) {
+      if (filters.includes(text)) {
+        var index = filters.indexOf(text);
+        filters.splice(index, 1);
+      } else {
+        filters.push(text);
+      }
+    }
+
     function applyFilter() {
       for (var i = 0; i < sectionTags.length; i++) {
-        $(resultSections[i]).show();
+        checkAndApplySection(i);
+      }
+    }
 
-        var diff = $(currentFilters).not(sectionTags[i]).get();
+    function checkAndApplySection(index) {
+      console.log("filter1", currentFilters1);
+      console.log("filter2", currentFilters2);
 
-        if (diff.length) {
-          $(resultSections[i]).hide();
+      console.log("current checking section tags", sectionTags[index]);
+      console.log(
+        "contain filter1?",
+        arrayContainAnyItemOfAnotherArray(sectionTags[index], currentFilters1)
+      );
+      console.log(
+        "contain filter2?",
+        arrayContainAnyItemOfAnotherArray(sectionTags[index], currentFilters2)
+      );
+      console.log("========================");
+
+      var checkingElement = $(resultSections[index]);
+
+      if (
+        arrayContainAnyItemOfAnotherArray(
+          sectionTags[index],
+          currentFilters1
+        ) &&
+        arrayContainAnyItemOfAnotherArray(sectionTags[index], currentFilters2)
+      ) {
+        if (checkingElement.is(":hidden")) {
+          checkingElement.fadeIn(1000);
+        }
+      } else {
+        if (checkingElement.is(":visible")) {
+          checkingElement.fadeOut(1000);
         }
       }
+    }
+
+    function arrayContainAnyItemOfAnotherArray(arr1, arr2) {
+      var containsAny = false;
+
+      if (arr2.length == 0) {
+        containsAny = true;
+      }
+
+      for (var i = 0; i < arr2.length; i++) {
+        if (arr1.includes(arr2[i])) {
+          containsAny = true;
+          break;
+        }
+      }
+
+      return containsAny;
     }
   }
 });

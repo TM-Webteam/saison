@@ -2,7 +2,8 @@
   .section-welcome {
     text-align: center;
     padding: 119px 0;
-    background: url("https://ferret-one.akamaized.net/images/651135a6e5a7361250f6df8d/original.png?utime=1695626662") 50% / cover no-repeat;
+    background: url("https://ferret-one.akamaized.net/images/651135a6e5a7361250f6df8d/original.png?utime=1695626662")
+      50% / cover no-repeat;
 
     @media #{$sp} {
       padding: 30px 10px;
@@ -344,7 +345,7 @@
 
 .bondi_blue_outline_btn.click-hover {
   background-color: $blue-color !important;
-  color: #ffffff;
+  color: #ffffff !important;
   opacity: 1;
   &::before {
     content: none !important ;
@@ -356,7 +357,7 @@
 
 .bondi_green_outline_btn.click-hover {
   background-color: $green-color-3 !important;
-  color: #ffffff;
+  color: #ffffff !important;
   opacity: 1;
   &::before {
     border-top: 3px solid $white-color;
