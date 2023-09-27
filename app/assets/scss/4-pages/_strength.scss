@@ -1,15 +1,15 @@
 .strength-page {
   margin: auto;
-  padding: 133px 0 0px;
+  // padding: 133px 0 0px;
 
   @media #{$sp} {
-    padding: 50px 0 0px;
+    // padding: 50px 0 0px;
   }
 
   .section-welcome {
     text-align: center;
     padding: 119px 0;
-    background: url(../img/common/lower_visual.png) 50% / cover no-repeat;
+    background: url("https://ferret-one.akamaized.net/images/651135a6e5a7361250f6df8d/original.png?utime=1695626662") 50% / cover no-repeat;
 
     @media #{$sp} {
       padding: 30px 10px;
@@ -197,19 +197,19 @@
                 }
 
                 &.anc__box_image_1 {
-                  background-image: url("/assets/img/common/search_1.png");
+                  background-image: url("https://ferret-one.akamaized.net/images/650d729a6ecd564665f6af3f/original.png?utime=1695380122");
                 }
                 &.anc__box_image_2 {
-                  background-image: url("/assets/img/common/search_2.png");
+                  background-image: url("https://ferret-one.akamaized.net/images/650d72a1e6dc930776060bd7/original.png?utime=1695380129");
                 }
                 &.anc__box_image_3 {
-                  background-image: url("/assets/img/common/search_3.png");
+                  background-image: url("https://ferret-one.akamaized.net/images/650d72ae00bd894b0fcd9625/original.png?utime=1695380142");
                 }
                 &.anc__box_image_4 {
-                  background-image: url("/assets/img/common/search_4.png");
+                  background-image: url("https://ferret-one.akamaized.net/images/650d72b56ecd564665f6afaf/original.png?utime=1695380149");
                 }
                 &.anc__box_image_5 {
-                  background-image: url("/assets/img/common/search_5.png");
+                  background-image: url("https://ferret-one.akamaized.net/images/650d72ba00bd894b0fcd9690/original.png?utime=1695380154");
                 }
 
                 &::before {
@@ -299,6 +299,10 @@
           width: 270px;
           font-weight: 500;
           margin: unset;
+          color: #fff;
+          &:hover {
+            color: #0497b5;
+          }
 
           @media #{$sp} {
             padding-top: 10px;

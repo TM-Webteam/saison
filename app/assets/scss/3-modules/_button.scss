@@ -435,7 +435,7 @@
 .black_pill_btn {
   display: block;
   max-width: 560px;
-  color: #fff;
+  color: #fff !important;
   font-size: 16px;
   font-weight: bold;
   text-align: center;
@@ -646,7 +646,7 @@
 .bondi_blue_btn {
   display: inline-flex;
   max-width: 560px;
-  color: #fff;
+  color: #fff !important;
   font-size: 16px;
   font-weight: bold;
   text-align: center;
@@ -669,7 +669,7 @@
     border: 2px solid #0497b5;
     opacity: 1;
     background: white;
-    color: #0497b5;
+    color: #0497b5 !important;
 
     svg {
       path {
@@ -747,7 +747,7 @@
   display: block;
   margin: auto;
 
-  color: $primary-color;
+  color: #0297b5 !important;
   background-color: transparent;
   transition: background-color 0.3s ease-in;
   padding: 18px 0;
@@ -787,7 +787,7 @@
   }
   &:hover {
     background-color: $blue-color !important;
-    color: #ffffff;
+    color: #ffffff !important;
     opacity: 1;
     &::before {
       content: none !important ;
@@ -807,7 +807,7 @@
 .blue_gradient_btn {
   display: block;
   max-width: 384px;
-  color: #fff;
+  color: #fff !important;
   font-size: 20px;
   font-weight: 500;
   text-align: center;
@@ -1212,7 +1212,7 @@
 .bondi_green_btn {
   display: inline-flex;
   max-width: 560px;
-  color: #fff;
+  color: #fff !important;
   font-size: 16px;
   font-weight: bold;
   text-align: center;
@@ -1235,7 +1235,7 @@
     border: 2px solid $green-color-2;
     opacity: 1;
     background: white;
-    color: $green-color-2;
+    color: #24a4a4 !important;
 
     svg {
       path {

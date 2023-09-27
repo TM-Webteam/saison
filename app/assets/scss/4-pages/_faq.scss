@@ -1,16 +1,16 @@
 .faq-page {
   margin: auto;
-  padding: 130px 0 0;
+  // padding: 130px 0 0;
 
-  @media #{$sp} {
-    padding: 54px 0 0;
-  }
+  // @media #{$sp} {
+  //   padding: 54px 0 0;
+  // }
 
   .section-welcome {
     position: relative;
     padding: 138px 0;
     text-align: center;
-    background-image: url("/assets/img/common/lower_visual.png");
+    background-image: url("https://ferret-one.akamaized.net/images/651135a6e5a7361250f6df8d/original.png?utime=1695626662");
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -161,7 +161,7 @@
   .octonary-section {
     position: relative;
     color: white;
-    background-image: url("/assets/img/common/contact_banner.png");
+    background-image: url("https://ferret-one.akamaized.net/images/651135ee67b38c10a0a09676/original.png?utime=1695626734");
     background-size: cover;
     background-repeat: no-repeat;
     padding: 70px 0;

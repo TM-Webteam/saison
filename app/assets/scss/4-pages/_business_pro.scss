@@ -32,7 +32,7 @@
     }
 
     &.platinum {
-      background-image: url("/assets/img/platinum_business_pro/platinum_business_pro_banner.png");
+      background-image: url("https://ferret-one.akamaized.net/images/6511353967b38c0fa3a17124/original.png?utime=1695626553");
       background-position: left;
       @media #{$sp} {
         background-position: center;
@@ -41,7 +41,7 @@
     }
 
     &.cobalt {
-      background-image: url("/assets/img/cobalt_business/banner.png");
+      background-image: url("https://ferret-one.akamaized.net/images/651134c1e5a73611bcf6ef21/original.png?utime=1695626433");
       @media #{$sp} {
         background-position: 35%;
         background: #32518b;
@@ -52,7 +52,7 @@
     }
 
     &.purchasing_card {
-      background-image: url("/assets/img/purchasing_card/purchasing_card_banner.png");
+      background-image: url("https://ferret-one.akamaized.net/images/651134fbe5a73611bcf6f12e/original.png?utime=1695626491");
       @media #{$sp} {
         background-position: 47%;
         background: $blue-color-5;
@@ -67,7 +67,7 @@
     }
 
     &.gold {
-      background-image: url("/assets/img/gold_business_pro/gold_business_pro_banner.png");
+      background-image: url("https://ferret-one.akamaized.net/images/651137892b509e1045bba33f/original.png?utime=1695627145");
       @media #{$sp} {
         background-position: 35%;
         background: #945b29;
