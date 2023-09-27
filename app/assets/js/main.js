@@ -200,6 +200,37 @@ $(document).ready(function () {
   });
 });
 
+// _____________________________________
+// SHOW FAQ
+// _____________________________________
+
+function sectionQA(initialQAs, qaSelector, showBtnSelector) {
+  var totalQAs = $(qaSelector).length;
+  var showBtn = $(showBtnSelector);
+
+  $(qaSelector + ":gt(" + (initialQAs - 1) + ")").addClass("hidden-qa");
+
+  if (totalQAs <= initialQAs) {
+    showBtn.hide();
+  } else {
+    showBtn.click(function (e) {
+      e.preventDefault();
+
+      $(qaSelector + ".hidden-qa:lt(5)").removeClass("hidden-qa");
+
+      if ($(qaSelector + ".hidden-qa").length === 0) {
+        showBtn.hide();
+      }
+    });
+  }
+}
+
+$(document).ready(function () {
+  sectionQA(5, ".qa", ".show-more-button");
+  sectionQA(5, ".QA__content", ".show-faq-list");
+});
+
+
 //______________________________________
 // QA
 //______________________________________

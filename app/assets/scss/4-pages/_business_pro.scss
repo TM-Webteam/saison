@@ -804,44 +804,11 @@
   }
 
   .section-question-and-answer {
-    max-width: 1200px;
     background: $white-color;
 
-    .ttl-secondary {
-      @media #{$sp} {
-        font-size: 20px;
-        line-height: 1.75;
-      }
-    }
-
-    .btn-actions {
-      margin-top: 50px;
-
-      .btn {
-        width: 400px;
-        max-width: unset;
-        padding: 18px;
-        &.bondi_blue_outline_btn {
-          @media #{$sp} {
-            font-size: 14px;
-          }
-        }
-
-        @media #{$sp} {
-          width: 100%;
-        }
-      }
-      .btn-other-question {
-        margin-top: 20px;
-        justify-content: center;
-
-        &::before {
-          right: 20px;
-          @media #{$sp} {
-            right: 13px;
-          }
-        }
-      }
+    h5.ttl-secondary {
+      font-family: Futura;
+      margin-bottom: 0;
     }
   }
 

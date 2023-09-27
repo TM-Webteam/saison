@@ -134,6 +134,21 @@
         transform: rotate(180deg);
       }
     }
+    
+    .hidden-qa {
+      display: none;
+    }
+
+    .bondi_blue_outline_btn {
+      margin: 35px auto;
+      &:hover {
+        &::before {
+          content: "" !important;
+          border-top: 3px solid white;
+          border-right: 3px solid white;
+        }
+      }
+    }
   }
 
   .section-tertiary {
