@@ -58,6 +58,7 @@
       .grid-container {
         display: grid;
         grid-template-columns: repeat(3, minmax(0, 1fr));
+        grid-template-rows: repeat(4, 1fr);
         grid-gap: 30px;
         padding: 0 120px;
         transition: all 0.3s;
@@ -74,8 +75,9 @@
           background: #444444;
           position: relative;
 
-          a {
+          .grid-item__detail {
             width: 100%;
+            height: 100%;
             padding: 50px 30px;
             transition: all 0.3s;
             &:hover {
