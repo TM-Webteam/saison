@@ -1,0 +1,35 @@
+<div class="container qa-list">
+  {% for i in range(0, 11) %}
+  <div class="qa {% if i > 5 %}hidden-qa{% endif %}">
+    <div class="flex gap20 question-tab">
+      <div class="qa-marker">
+        <h2 class="ttl-secondary">Q</h2>
+      </div>
+      <div class="qa-content">
+        <h3 class="ttl-tertiary">
+          質問内容が入ります。質問内容が入ります。質問内容が入ります。質問内容が入ります。質問内容が入ります。
+        </h3>
+      </div>
+      <button class="qa-button">
+        <span class="svg__plus">{% include 'component/icons/plus.njk' %}</span>
+        <span class="svg__minus">{% include 'component/icons/minus.njk' %}</span>
+      </button>
+    </div>
+    <div class="flex gap20 answer-tab">
+      <div class="qa-marker">
+        <h2 class="ttl-secondary">A</h2>
+      </div>
+      <div class="qa-content">
+        <h3 class="ttl-tertiary">
+          質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。質問回答が入ります。
+        </h3>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+<a class="bondi_blue_outline_btn show-more-button">
+  <span class="bondi_blue_outline_btn__tittle">
+    もっと見る
+  </span>
+</a>

@@ -1345,22 +1345,6 @@
     }
   }
 
-  .section-question-and-answer {
-    .ttl-tertiary {
-      @media #{$sp} {
-        text-align: left;
-        font-weight: 400;
-      }
-    }
-    .bondi_blue_outline_btn {
-      .bondi_blue_outline_btn__tittle {
-        @media #{$sp} {
-          font-size: 14px;
-        }
-      }
-    }
-  }
-
   //============ COMMON SECTION ===========
   .section-more {
     margin-top: 115px;
