@@ -58,12 +58,15 @@
       .grid-container {
         display: grid;
         grid-template-columns: repeat(3, minmax(0, 1fr));
+        grid-template-rows: repeat(4, 1fr);
         grid-gap: 30px;
         padding: 0 120px;
         transition: all 0.3s;
 
         @media #{$sp} {
-          display: block;
+          grid-template-columns: auto;
+          grid-template-rows: repeat(11, 1fr);
+          grid-gap: 15px;
           width: 100%;
           padding: 0 20px;
         }
@@ -74,15 +77,21 @@
           background: #444444;
           position: relative;
 
-          a {
+          .grid-item__detail {
             width: 100%;
+            height: 100%;
             padding: 50px 30px;
             transition: all 0.3s;
+
             &:hover {
               opacity: 1;
               img {
                 bottom: 15%;
               }
+            }
+
+            @media #{$sp} {
+              padding: 30px 15px;
             }
           }
 
@@ -103,7 +112,7 @@
           }
 
           @media #{$sp} {
-            margin-bottom: 10px;
+            margin-bottom: 0px;
           }
         }
       }
