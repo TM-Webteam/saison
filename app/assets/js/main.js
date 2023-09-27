@@ -523,20 +523,6 @@ $(document).ready(function () {
     }
 
     function checkAndApplySection(index) {
-      console.log("filter1", currentFilters1);
-      console.log("filter2", currentFilters2);
-
-      console.log("current checking section tags", sectionTags[index]);
-      console.log(
-        "contain filter1?",
-        arrayContainAnyItemOfAnotherArray(sectionTags[index], currentFilters1)
-      );
-      console.log(
-        "contain filter2?",
-        arrayContainAnyItemOfAnotherArray(sectionTags[index], currentFilters2)
-      );
-      console.log("========================");
-
       var checkingElement = $(resultSections[index]);
 
       if (
