@@ -644,7 +644,9 @@ $(function () {
       }
     });
 
-    $("#checkOpen").on("click", function () {
+    $("#checkOpen").on("click", function (e) {
+      e.preventDefault();
+
       $(".modaal-overlay").addClass("show");
       $(".modaal-wrapper").addClass("show");
 
