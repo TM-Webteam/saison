@@ -97,10 +97,17 @@
       .question__content {
         cursor: pointer;
         display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .question__title {
+          display: flex;
+          align-items: center;
+        }
       }
       .answer__content {
         display: none;
         margin-top: 10px;
+        align-items: center;
       }
       .QA__content-head {
         font-size: 32px;
