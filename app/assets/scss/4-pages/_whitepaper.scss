@@ -194,7 +194,16 @@
             text-align: center;
             .blue_gradient_btn {
               border: 2px solid #0497b5;
-              background: #0497b5 0 0 no-repeat padding-box !important;
+              background: #0497b5 0 0 no-repeat padding-box;
+
+              &:hover {
+                color: #0497b5 !important;
+                background: white;
+                &::before {
+                  border-top: 2px solid #0497b5;
+                  border-right: 2px solid #0497b5;
+                }
+              }
             }
           }
 
@@ -391,7 +400,7 @@
         border: 2px solid $blue-color;
         background: #0497b5 0% 0% no-repeat padding-box !important;
         &:hover {
-          color: $blue-color;
+          color: $blue-color !important;
           background-color: transparent !important;
           border: 2px solid $blue-color;
 
