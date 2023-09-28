@@ -57,9 +57,20 @@ $modaal-grey: #afb7bc;
 	height: 100%;
 	z-index: 999;
 	opacity: 0;
+	display: none;
+
+	&.show {
+		display: block;
+		animation: modalFadein 0.3s;
+	}
+
+	&.hide {
+		opacity: 0;
+		animation: fadeout2 0.3s;
+	}
 }
 .modaal-wrapper {
-	display: block;
+	display: none;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -70,6 +81,17 @@ $modaal-grey: #afb7bc;
 	opacity: 1;
 	box-sizing: border-box;
 	-webkit-overflow-scrolling: touch;
+
+	&.show {
+		display: block;
+		animation: fadein1 0.3s;
+	}
+
+	&.hide {
+		opacity: 0;
+		animation: fadeout2 0.3s;
+	}
+
 	@include modaal-transition(all, 0.3s);
 	& * {
 		box-sizing: border-box;
@@ -275,6 +297,18 @@ $modaal-grey: #afb7bc;
 @-ms-keyframes instaReveal {
 	0%	{ opacity: 0; }
 	100% { opacity: 1; }
+}
+@keyframes fadein1 {
+	0%	{ opacity: 0; }
+	100% { opacity: 1; }
+}
+@keyframes fadeout1 {
+	100% { opacity: 1; }
+	0%	{ opacity: 0; }
+}
+@keyframes modalFadein {
+	0%	{ opacity: 0; }
+	100% { opacity: 0.8; }
 }
 
 // Instagram Photo
