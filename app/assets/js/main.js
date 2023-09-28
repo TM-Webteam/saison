@@ -598,16 +598,18 @@ $(document).ready(function (e) {
 // Card Comparison
 // ----------------------------------
 $(function () {
-  $(".inline").modaal({
-    content_source: "#inline",
-  });
-
   // modal_open
   if ($(".campaign-modal").length) {
-    $(".campaign-modal").each(function () {
-      $(this).modaal({
-        content_source: "#js-comparison-modal",
-      });
+    // $(".campaign-modal").each(function () {
+    //   $(this).modaal({
+    //     content_source: "#js-comparison-modal",
+    //   });
+    // });
+
+    $(document).on("keydown", function (event) {
+      if (event.key == "Escape" && $(".modaal-wrapper.show").length ) {
+        $("#modaal-close").click();
+      }
     });
 
     $(".comparison_item_close").on("click", function () {
@@ -643,6 +645,9 @@ $(function () {
     });
 
     $("#checkOpen").on("click", function () {
+      $(".modaal-overlay").addClass("show");
+      $(".modaal-wrapper").addClass("show");
+
       var count = 0;
       $(".comparison_table tbody tr").each(function () {
         var $col = $(this);
@@ -665,6 +670,22 @@ $(function () {
       }
       var thH = $(".comparison_table thead .comparison_item th").outerHeight();
       $(".free_box").css("height", thH + "px");
+    });
+
+    $(".modaal-inner-wrapper").on("click", function (e) {
+      if ($(e.target).hasClass("modaal-inner-wrapper")) {
+        $("#modaal-close").click();
+      }
+    });
+
+    $("#modaal-close").on("click", function () {
+      $(".modaal-overlay").addClass("hide");
+      $(".modaal-wrapper").addClass("hide");
+
+      setTimeout(function () {
+        $(".modaal-overlay").removeClass("show").removeClass("hide");
+        $(".modaal-wrapper").removeClass("show").removeClass("hide");
+      }, 300);
     });
   }
 });
