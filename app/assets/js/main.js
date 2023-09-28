@@ -654,7 +654,7 @@ $(function () {
       $(".comparison_table tbody tr").each(function () {
         var $col = $(this);
         $col.children().each(function (index) {
-          $(this).addClass("row-" + index);
+          $(this).addClass("comparison-row-" + index);
           if (count <= index) {
             count = index;
           }
@@ -662,13 +662,13 @@ $(function () {
       });
       for (var i = 0; i <= count; i++) {
         var h = 0;
-        $(".row-" + i).each(function (index) {
+        $(".comparison-row-" + i).each(function (index) {
           var cellH = $(this).outerHeight();
           if (h <= cellH) {
             h = cellH;
           }
         });
-        $(".row-" + i).height(h);
+        $(".comparison-row-" + i).height(h);
       }
       var thH = $(".comparison_table thead .comparison_item th").outerHeight();
       $(".free_box").css("height", thH + "px");
