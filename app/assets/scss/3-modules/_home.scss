@@ -419,7 +419,7 @@
                 border: 2px solid $blue-color;
                 opacity: 1;
                 background: $white-color;
-                color: $blue-color;
+                color: $blue-color !important;
                 svg {
                   path {
                     stroke: #0497b5;

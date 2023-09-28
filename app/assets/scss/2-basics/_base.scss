@@ -281,12 +281,12 @@ a,button[type="submit"] {
 
 /*** その他 ***/
 
-// main {
-//   padding-top: 133px;
-//   @media #{$sp} {
-//     padding-top: 50px;
-//   }
-// }
+main {
+  padding-top: 133px;
+  @media #{$sp} {
+    padding-top: 50px;
+  }
+}
 
 .disabled {
   pointer-events: none;
