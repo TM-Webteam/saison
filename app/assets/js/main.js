@@ -216,11 +216,6 @@ $(document).ready(function () {
   }
 });
 
-$(document).ready(function () {
-  sectionQA(5, ".qa", ".show-more-button");
-  sectionQA(5, ".QA__content", ".show-faq-list");
-});
-
 //______________________________________
 // QA
 //______________________________________
