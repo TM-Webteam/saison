@@ -9,7 +9,8 @@
   .section-welcome {
     text-align: center;
     padding: 140px 0;
-    background: url("https://ferret-one.akamaized.net/images/651135a6e5a7361250f6df8d/original.png?utime=1695626662") 50% / cover no-repeat;
+    background: url("https://ferret-one.akamaized.net/images/651135a6e5a7361250f6df8d/original.png?utime=1695626662")
+      50% / cover no-repeat;
 
     @media #{$sp} {
       padding: 50px 10px;
@@ -65,7 +66,7 @@
         width: 100%;
         padding: 0;
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.11);
-        transition: all .3s;
+        transition: all 0.3s;
 
         .card--img {
           position: relative;
@@ -133,6 +134,15 @@
         }
         &:hover {
           opacity: 1;
+          .black_pill_btn {
+            color: #000 !important;
+            background: #fff;
+            border: 2px solid #000;
+          }
+
+          .bondi_blue_btn {
+            color: #0497b5 !important;
+          }
         }
       }
     }

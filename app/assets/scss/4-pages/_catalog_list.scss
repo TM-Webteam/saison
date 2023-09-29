@@ -54,19 +54,24 @@
     }
     .content-list {
       .list-row {
-        display: flex;
-        justify-content: center;
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
         margin-bottom: 30px;
-        flex-wrap: wrap;
         gap: 30px;
+
+        @media #{$sp} {
+          grid-template-columns: auto;
+          width: 100%;
+        }
         .list-item {
           width: 380px;
           background: #f5f5f5 0% 0% no-repeat padding-box;
           box-shadow: 0px 3px 20px #00000029;
           transition: all 0.3s;
-          display: flex;
-          flex-direction: column;
-          justify-content: space-between;
+
+          @media #{$sp} {
+            max-width: 345px;
+          }
           .item-thumbnail {
             position: relative;
             text-align: center;
