@@ -204,26 +204,17 @@ $(document).ready(function () {
 // SHOW FAQ
 // _____________________________________
 
-function sectionQA(initialQAs, qaSelector, showBtnSelector) {
-  var totalQAs = $(qaSelector).length;
-  var showBtn = $(showBtnSelector);
+$(document).ready(function () {
+  var initialQAs = 5;
+  var totalQAs = $(".qa").length;
+  var showBtn = $(".show-more-button");
 
-  $(qaSelector + ":gt(" + (initialQAs - 1) + ")").addClass("hidden-qa");
+  $(".qa:gt(" + (initialQAs - 1) + ")").addClass("hidden-qa");
 
-  if (totalQAs <= initialQAs) {
+  if (totalQAs <= 5) {
     showBtn.hide();
-  } else {
-    showBtn.click(function (e) {
-      e.preventDefault();
-
-      $(qaSelector + ".hidden-qa:lt(5)").removeClass("hidden-qa");
-
-      if ($(qaSelector + ".hidden-qa").length === 0) {
-        showBtn.hide();
-      }
-    });
   }
-}
+});
 
 $(document).ready(function () {
   sectionQA(5, ".qa", ".show-more-button");
