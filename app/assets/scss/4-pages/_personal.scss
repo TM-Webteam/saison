@@ -295,17 +295,15 @@
         }
         .card-type10 {
           padding: 0;
-          a.card-type10-container {
+          .card-type10-container {
             padding: 35px 30px 30px;
             transition: all 0.3s;
             .bondi_blue_outline_btn {
               font-weight: 700;
-            }
-            &:hover {
-              opacity: 1;
-              .bondi_blue_outline_btn {
-                color: $white-color;
+              &:hover {
+                color: $white-color !important;
                 background-color: $blue-color;
+                cursor: pointer;
                 &::before {
                   border-top: 3px solid $white-color;
                   border-right: 3px solid $white-color;
