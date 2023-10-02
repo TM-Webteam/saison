@@ -305,6 +305,7 @@
                 background-color: $blue-color;
                 cursor: pointer;
                 &::before {
+                  content: "" !important;
                   border-top: 3px solid $white-color;
                   border-right: 3px solid $white-color;
                 }
